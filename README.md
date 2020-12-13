@@ -1,2 +1,35 @@
-# cis106
-files and guides for cis 106
+# Welcome to the CIS-106-Linux Fundamentals
+Here you will find all the information for the course.
+
+# Presentations
+1. Lecture 1
+   1. Topic:
+   2. Cheat Sheet
+   3. Resources
+
+2. Lecture 2
+3. Lecture 3
+4. Lecture 4
+5. Lecture 5
+6. Lecture 6
+7. Lecture 7
+8. Lecture 8
+9.  Lecture 9
+10. Lecture 10
+11. Lecture 11
+12. Lecture 12
+13. Lecture 13
+---
+# Labs
+
+---
+# Homework
+
+---
+# Discussion Topics
+
+---
+
+# Final Project
+
+---
