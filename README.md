@@ -4,7 +4,7 @@ Here you will find all the information for the course.
 # Requirements
 * Access to a computer whrere Linux can be installed, the following are options:
   * A virtual machine (Prefered)
-  * A spair laptop/Desktop computer
+  * A laptop/Desktop computer that you can wipe.
   * A Raspberry Pi 4 or other capable single board computer
 * A Github account
 * A Text editoer
