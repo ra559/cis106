@@ -7,9 +7,8 @@ Here you will find all the information for the course.
   * A laptop/Desktop computer that you can wipe.
   * A Raspberry Pi 4 or other capable single board computer
 * A Github account
-* A Text editoer
+* A Text editor. We will be using vs code but you can use whatever you want
 
-* 
 # Resources
 
 # Presentations
