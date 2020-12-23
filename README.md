@@ -8,7 +8,7 @@ Here you will find all the information for the course.
   * A Raspberry Pi 4 or other capable single board computer
 * Access to Blackboard
 * A Github account
-* A Text editor. We will be using [V Code](https://code.visualstudio.com/) but you can use whatever you want
+* A Text editor. We will be using [VS Code](https://code.visualstudio.com/) but you can use whatever you want
 * How to install VS Code on Windows?
 * How to install VS Code on macOS?
 * How to install VS Code on Ubuntu?
