@@ -65,7 +65,7 @@ Here you will find all the information for the course.
      * [Heroes in the Bash Shell](https://www.redhat.com/en/command-line-heroes/season-3/heroes-in-a-bash-shell)
      * [Any Podcast from season 4](https://www.redhat.com/en/command-line-heroes/season-4)
 3. [Linux is Freaking Weird](https://www.youtube.com/watch?v=xPbAXKMCDkY)
-4. 
+4. [Windows is AWESOME!](https://www.youtube.com/watch?v=Zu0l-Ac7fTU)
 
 
 ---
