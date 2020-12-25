@@ -54,6 +54,15 @@ Here you will find all the information for the course.
 
 ---
 # Discussion Topics
+1. [Linux is not for everyone](https://www.youtube.com/watch?v=8x_DdsJdkGw)
+2. Command Line Heroes
+   * The history of Linux: 
+     * [OS WARS PART 1](https://www.redhat.com/en/command-line-heroes/season-1/os-wars-part-1)
+     * [OS WARS PART 2](https://www.redhat.com/en/command-line-heroes/season-1/os-wars-part-2-rise-of-linux)
+     * [Heroes in the Bash Shell](https://www.redhat.com/en/command-line-heroes/season-3/heroes-in-a-bash-shell)
+     * [Any Podcast from season 4](https://www.redhat.com/en/command-line-heroes/season-4)
+3. 
+
 
 ---
 
