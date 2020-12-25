@@ -15,7 +15,10 @@ Here you will find all the information for the course.
 
 # Resources
 * [Virtual machine ready to use](https://linkhere.com)
-***this virtual machine does not have guest additions and must be updated right after importing***
+***This virtual machine does not have guest additions and must be updated right after importing***
+  * Snaphots:
+  * 1. After installation and update
+  * 2. After installation of basic software:
 * **Books** 
 * [The Linux Command Line By William Shotts](https://sourceforge.net/projects/linuxcommand/files/TLCL/19.01/TLCL-19.01.pdf/download)
 * [Raspberry Pi Beginner's Guide 4th Edition](https://magpi.raspberrypi.org/books/beginners-guide-4th-ed) 
@@ -61,7 +64,8 @@ Here you will find all the information for the course.
      * [OS WARS PART 2](https://www.redhat.com/en/command-line-heroes/season-1/os-wars-part-2-rise-of-linux)
      * [Heroes in the Bash Shell](https://www.redhat.com/en/command-line-heroes/season-3/heroes-in-a-bash-shell)
      * [Any Podcast from season 4](https://www.redhat.com/en/command-line-heroes/season-4)
-3. 
+3. [Linux is Freaking Weird](https://www.youtube.com/watch?v=xPbAXKMCDkY)
+4. 
 
 
 ---
