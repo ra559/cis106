@@ -2,7 +2,7 @@
 Here you will find all the information for the course.
 
 # TABLE OF CONTENT
-* [Requirements](#-Requirements)
+* [Requirements](#Requirements)
 * []
 * []
 * []
