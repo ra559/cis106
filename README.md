@@ -1,7 +1,16 @@
 # Welcome to the CIS-106-Linux Fundamentals
 Here you will find all the information for the course.
-# Description
+
+# TABLE OF CONTENT
+* [Requirements](#-Requirements)
+* []
+* []
+* []
+* []
+* []
+* 
 # Requirements
+---
 * Access to a computer whrere Linux can be installed. The following are options:
   * A virtual machine (Prefered)
   * A laptop/Desktop computer that you can wipe.
@@ -14,19 +23,29 @@ Here you will find all the information for the course.
 * How to install VS Code on Ubuntu?
 
 # Resources
+---
 * [Virtual machine ready to use](https://linkhere.com)
-***This virtual machine does not have guest additions and must be updated right after importing***
+:warning: **WARNING!** :warning: 
+**This virtual machine does not have guest additions and must be updated right after importing**
   * Snaphots:
-  * 1. After installation and update
-  * 2. After installation of basic software:
+    1. After installation and update
+    2. After installation of basic software:
+  * Virtual Machine Specs:
+    * Hardrive:
+    * RAM:
+    * CPU:
+    * Video Graphics:
+    * Audio controller:
+    * Network Card:
 * **Books** 
-* [The Linux Command Line By William Shotts](https://sourceforge.net/projects/linuxcommand/files/TLCL/19.01/TLCL-19.01.pdf/download)
-* [Raspberry Pi Beginner's Guide 4th Edition](https://magpi.raspberrypi.org/books/beginners-guide-4th-ed) 
-* [Free Linux Magazine with good command line reference](https://www.raspberrypi.org/magpi-issues/Essentials_Bash_v2.pdf)
-* [Free book. wont be used but it is good to have](http://www.it-docs.net/ddata/900.pdf)
-* [Raspberry Models Comparison](https://socialcompare.com/en/comparison/raspberrypi-models-comparison)
-* 
+  * [The Linux Command Line By William Shotts](https://sourceforge.net/projects/linuxcommand/files/TLCL/19.01/TLCL-19.01.pdf/download)
+  * [Raspberry Pi Beginner's Guide 4th Edition](https://magpi.raspberrypi.org/books/beginners-guide-4th-ed) 
+  * [Free Linux Magazine with good command line reference](https://www.raspberrypi.org/magpi-issues/Essentials_Bash_v2.pdf)
+  * [Free book. wont be used but it is good to have](http://www.it-docs.net/ddata/900.pdf)
+  * [Raspberry Models Comparison](https://socialcompare.com/en/comparison/raspberrypi-models-comparison)
+ 
 # Presentations
+---
 0. Lecture 0: Introduction to the course. 
 1. Lecture 1: Introduction to Linux
    * [Introduction to the Linux Operating System](https://docs.google.com/presentation/d/e/2PACX-1vRz0o9wE9BNy4cIDmUBcA9G-YNtPq-P4kDoIEoLPntOhMA_mek9Ems9ip1BsXjevJrKVVa3gb6qPOct/pub?start=false&loop=false&delayms=3000&slide=id.g418ddefa4d_0_31)
@@ -49,14 +68,15 @@ Here you will find all the information for the course.
 11. Lecture 11
 12. Lecture 12
 13. Lecture 13
----
+
 # Labs
-
 ---
+
 # Homework
-
 ---
+
 # Discussion Topics
+---
 1. [Linux is not for everyone](https://www.youtube.com/watch?v=8x_DdsJdkGw)
 2. Command Line Heroes
    * The history of Linux: 
@@ -68,8 +88,5 @@ Here you will find all the information for the course.
 4. [Windows is AWESOME!](https://www.youtube.com/watch?v=Zu0l-Ac7fTU)
 
 
----
-
 # Final Project
-
 ---
