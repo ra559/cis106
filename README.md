@@ -24,8 +24,9 @@ Here you will find all the information for the course.
 
 # Resources
 ---
-* [Virtual machine ready to use](https://linkhere.com)<br>
-<p align='center'> :warning: **WARNING!** :warning: <p><br>
+* [Virtual machine ready to use](https://linkhere.com)
+
+<p align='center'> :warning: **WARNING!** :warning: <p>
 
  **This virtual machine does not have guest additions and must be updated right after importing** <br>
   * Snaphots:
