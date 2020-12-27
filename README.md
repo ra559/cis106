@@ -25,7 +25,7 @@ Here you will find all the information for the course.
 # Resources
 ---
 * [Virtual machine ready to use](https://linkhere.com)<br>
-:warning:**WARNING!**:warning:<br>
+<p align='center'>:warning:**WARNING!**:warning:<p>
  **This virtual machine does not have guest additions and must be updated right after importing** <br>
   * Snaphots:
     1. After installation and update
@@ -43,6 +43,9 @@ Here you will find all the information for the course.
   * [Free Linux Magazine with good command line reference](https://www.raspberrypi.org/magpi-issues/Essentials_Bash_v2.pdf)
   * [Free book. wont be used but it is good to have](http://www.it-docs.net/ddata/900.pdf)
   * [Raspberry Models Comparison](https://socialcompare.com/en/comparison/raspberrypi-models-comparison)
+* **Github Markdown**
+  * [Github Markdown Syntax Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+  * [Github Markdown syntax official documentation](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax) 
  
 # Presentations
 ---
