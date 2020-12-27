@@ -24,9 +24,9 @@ Here you will find all the information for the course.
 
 # Resources
 ---
-* [Virtual machine ready to use](https://linkhere.com)
-:warning: **WARNING!** :warning: 
-**This virtual machine does not have guest additions and must be updated right after importing**
+* [Virtual machine ready to use](https://linkhere.com)<br>
+:warning: <span style="color:red;">**WARNING!**</span> :warning:
+ **This virtual machine does not have guest additions and must be updated right after importing** <br>
   * Snaphots:
     1. After installation and update
     2. After installation of basic software:
@@ -48,7 +48,7 @@ Here you will find all the information for the course.
 ---
 0. Lecture 0: Introduction to the course. 
 1. Lecture 1: Introduction to Linux
-   * [Introduction to the Linux Operating System](https://docs.google.com/presentation/d/e/2PACX-1vRz0o9wE9BNy4cIDmUBcA9G-YNtPq-P4kDoIEoLPntOhMA_mek9Ems9ip1BsXjevJrKVVa3gb6qPOct/pub?start=false&loop=false&delayms=3000&slide=id.g418ddefa4d_0_31)
+   * [Introduction to Linux](https://docs.google.com/presentation/d/e/2PACX-1vRz0o9wE9BNy4cIDmUBcA9G-YNtPq-P4kDoIEoLPntOhMA_mek9Ems9ip1BsXjevJrKVVa3gb6qPOct/pub?start=false&loop=false&delayms=3000&slide=id.g418ddefa4d_0_31)
    * [What is Ubuntu?](https://docs.google.com/presentation/d/e/2PACX-1vSC9YRs8z1pgbOFsXzF7yp3BWtBfv2kJVNVZrMiX4BtgHNK_A3IaCULIs7SmW3LW9b_Cu-sQIVUdxqI/pub?start=false&loop=false&delayms=3000&slide=id.g8fbc7d3744_0_0)
 
 2. Lecture 2: Installing Ubuntu, Virtualization, and the Raspberry PI
@@ -77,7 +77,7 @@ Here you will find all the information for the course.
 
 # Discussion Topics
 ---
-1. [Linux is not for everyone](https://www.youtube.com/watch?v=8x_DdsJdkGw)
+1. Introduce yourself
 2. Command Line Heroes
    * The history of Linux: 
      * [OS WARS PART 1](https://www.redhat.com/en/command-line-heroes/season-1/os-wars-part-1)
@@ -85,7 +85,7 @@ Here you will find all the information for the course.
      * [Heroes in the Bash Shell](https://www.redhat.com/en/command-line-heroes/season-3/heroes-in-a-bash-shell)
      * [Any Podcast from season 4](https://www.redhat.com/en/command-line-heroes/season-4)
 3. [Linux is Freaking Weird](https://www.youtube.com/watch?v=xPbAXKMCDkY)
-4. [Windows is AWESOME!](https://www.youtube.com/watch?v=Zu0l-Ac7fTU)
+4. [Linux is not for everyone](https://www.youtube.com/watch?v=8x_DdsJdkGw)
 
 
 # Final Project
