@@ -2,13 +2,15 @@
 Here you will find all the information for the course.
 
 # TABLE OF CONTENT
-* [Requirements](#Requirements)
-* []
-* []
-* []
-* []
-* []
-* 
+- [Welcome to the CIS-106-Linux Fundamentals](#welcome-to-the-cis-106-linux-fundamentals)
+- [TABLE OF CONTENT](#table-of-content)
+  - [# Requirements](#-requirements)
+  - [# Resources](#-resources)
+  - [# Presentations](#-presentations)
+  - [# Labs](#-labs)
+  - [# Homework](#-homework)
+  - [# Discussion Topics](#-discussion-topics)
+  - [# Final Project](#-final-project)
 # Requirements
 ---
 * Access to a computer whrere Linux can be installed. The following are options:
