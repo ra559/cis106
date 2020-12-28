@@ -1,6 +1,16 @@
 # Welcome to CIS-106-Linux Fundamentals
 Here you will find all the information for the course.
 
+## TABLE OF CONTENT
+  - [COURSE LEARNING OUTCOMES](#COURSE-LEARNING-OUTCOMES)
+  - [Requirements](#requirements)
+  - [Resources](#resources)
+  - [Presentations](#presentations)
+  - [Labs](#labs)
+  - [Homework](#homework)
+  - [Discussion Topics](#discussion-topics)
+  - [Final Project](#final-project)
+
 ## COURSE LEARNING OUTCOMES 
 * Demonstrate fluency in Linux terminology.
 * Install Linux and identify features of various distros.
@@ -12,14 +22,6 @@ Here you will find all the information for the course.
 * Understanding of virtualization with Virtualbox
 * Understanding of Markdown and proper documentation techniques
 
-# TABLE OF CONTENT
-  - [Requirements](#requirements)
-  - [Resources](#resources)
-  - [Presentations](#presentations)
-  - [Labs](#labs)
-  - [Homework](#homework)
-  - [Discussion Topics](#discussion-topics)
-  - [Final Project](#final-project)
 # Requirements
 ---
 * Access to a computer whrere Linux can be installed. The following are options:
@@ -92,7 +94,7 @@ Here you will find all the information for the course.
 12. #### Lecture 12
 13. #### Lecture 13
 
-# [Labs](labs/)
+# Labs
 ---
 
 # Homework
