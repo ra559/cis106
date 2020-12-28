@@ -1,5 +1,16 @@
-# Welcome to the CIS-106-Linux Fundamentals
+# Welcome to CIS-106-Linux Fundamentals
 Here you will find all the information for the course.
+
+## COURSE LEARNING OUTCOMES 
+* Demonstrate fluency in Linux terminology.
+* Install Linux and identify features of various distros.
+* Manage files in the Linux environment.
+* Administer user accounts and groups efficiently.
+* Use Linux Utilities to manage data.
+* Install software and third-party utilities.
+* Managing Resources in the Linux networking environment.
+* Understanding of virtualization with Virtualbox
+* Understanding of Markdown and proper documentation techniques
 
 # TABLE OF CONTENT
   - [Requirements](#requirements)
@@ -52,6 +63,8 @@ Here you will find all the information for the course.
 # Presentations
 ---
 0. Lecture 0: Introduction to the course. 
+   1. [How am I going to earn my grade]()
+   2. [How am I going to succeed in this class?](https://docs.google.com/presentation/d/e/2PACX-1vQyEIOFrht46fxPPWdCuoYQdj8QEz0DQKCYbHQadpMMK9cu2OdHz1sQCZ4Nm2A6Bo4FRcc-LeFsInNu/pub?start=false&loop=false&delayms=3000)
 1. Lecture 1: Introduction to Linux
    * [Introduction to Linux](https://docs.google.com/presentation/d/e/2PACX-1vRz0o9wE9BNy4cIDmUBcA9G-YNtPq-P4kDoIEoLPntOhMA_mek9Ems9ip1BsXjevJrKVVa3gb6qPOct/pub?start=false&loop=false&delayms=3000&slide=id.g418ddefa4d_0_31)
    * [What is Ubuntu?](https://docs.google.com/presentation/d/e/2PACX-1vSC9YRs8z1pgbOFsXzF7yp3BWtBfv2kJVNVZrMiX4BtgHNK_A3IaCULIs7SmW3LW9b_Cu-sQIVUdxqI/pub?start=false&loop=false&delayms=3000&slide=id.g8fbc7d3744_0_0)
@@ -89,8 +102,9 @@ Here you will find all the information for the course.
      * [OS WARS PART 2](https://www.redhat.com/en/command-line-heroes/season-1/os-wars-part-2-rise-of-linux)
      * [Heroes in the Bash Shell](https://www.redhat.com/en/command-line-heroes/season-3/heroes-in-a-bash-shell)
      * [Any Podcast from season 4](https://www.redhat.com/en/command-line-heroes/season-4)
-3. [Linux is Freaking Weird](https://www.youtube.com/watch?v=xPbAXKMCDkY)
-4. [Linux is not for everyone](https://www.youtube.com/watch?v=8x_DdsJdkGw)
+3. [The Rise of Opensource Software](https://www.youtube.com/watch?v=SpeDK1TPbew)
+4. [Linux is Freaking Weird](https://www.youtube.com/watch?v=xPbAXKMCDkY)
+5. [Linux is not for everyone](https://www.youtube.com/watch?v=8x_DdsJdkGw)
 
 
 # Final Project
