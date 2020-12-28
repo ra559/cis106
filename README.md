@@ -100,7 +100,7 @@ Here you will find all the information for the course.
 # Homework
 ---
 
-# Discussion Topics
+# [Discussion Topics](discussion/)
 ---
 1. Introduce yourself
 2. Command Line Heroes
