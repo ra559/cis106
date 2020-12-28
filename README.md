@@ -44,7 +44,7 @@ Here you will find all the information for the course.
     1. After installation and update
     2. After installation of basic software:
   * Virtual Machine Specs:
-    * Hardrive:
+    * Hard drive:
     * RAM:
     * CPU:
     * Video Graphics:
@@ -70,7 +70,7 @@ Here you will find all the information for the course.
    * [What is Ubuntu?](https://docs.google.com/presentation/d/e/2PACX-1vSC9YRs8z1pgbOFsXzF7yp3BWtBfv2kJVNVZrMiX4BtgHNK_A3IaCULIs7SmW3LW9b_Cu-sQIVUdxqI/pub?start=false&loop=false&delayms=3000&slide=id.g8fbc7d3744_0_0)
 
 2. Lecture 2: Installing Ubuntu, Virtualization, and the Raspberry PI
-* [The basics of Virtualiztion](https://docs.google.com/presentation/d/e/2PACX-1vSwjKH4jswd7r2OV_C-b4K1LJlAhdScHVvgDAtZgb1J6kpPoYkQIxZpjYqg_4bbPClbh85VVvbKzJV1/pub?start=false&loop=false&delayms=3000&slide=id.p1)
+* [The basics of Virtualization](https://docs.google.com/presentation/d/e/2PACX-1vSwjKH4jswd7r2OV_C-b4K1LJlAhdScHVvgDAtZgb1J6kpPoYkQIxZpjYqg_4bbPClbh85VVvbKzJV1/pub?start=false&loop=false&delayms=3000&slide=id.p1)
 * [Using Virtualbox](https://docs.google.com/presentation/d/e/2PACX-1vTwJsImCvHoM2mQX6c5E2J11NPKGE90ip6kWV_LMPDCKQTG1QtcKTUGmsqkV1vKXdCUFtz66qan4PjJ/pub?start=false&loop=false&delayms=3000&slide=id.p)
 * [Installing Ubuntu 20.04 in virtualbox](https://docs.google.com/presentation/d/e/2PACX-1vQVjjsIYAyyDF9-yjC4tpfuKwFz3HPGCTFUH4KkUMeE7Ka7A_TD60kv-bx4wcReZGbqAp_KnbS260oZ/pub?start=false&loop=false&delayms=3000&slide=id.g52c6da636c_0_0)
 * [What is a Raspberry pi](https://docs.google.com/presentation/d/e/2PACX-1vRf9IwAdDKGgJHC--ZSUbbdhcs7cQESeBB0wZsJJljZdUY0jHdVI9YYLmYEGeBKFucl2vPRvf8v6i3k/pub?start=false&loop=false&delayms=3000&slide=id.p)
