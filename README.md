@@ -94,7 +94,7 @@ Here you will find all the information for the course.
 12. #### Lecture 12
 13. #### Lecture 13
 
-# Labs
+# [Labs](labs/)
 ---
 
 # Homework
