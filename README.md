@@ -63,8 +63,8 @@ Here you will find all the information for the course.
 # Presentations
 ---
 0. Lecture 0: Introduction to the course. 
-   1.How am I going to earn my grade><br> 
-   ![img](imgs/GradingTable.png)<br>
+   1.How am I going to earn my grade 
+   <br>![img](imgs/GradingTable.png)<br>
    2. [How am I going to succeed in this class?](http://bit.ly/3pqo3bw)
 1. Lecture 1: Introduction to Linux
    * [Introduction to Linux](http://bit.ly/3hmdLX6)
