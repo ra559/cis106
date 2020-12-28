@@ -62,7 +62,7 @@ Here you will find all the information for the course.
  
 # Presentations
 ---
-0. Lecture 0: Introduction to the course. 
+0. #### Lecture 0: Introduction to the course. 
   1. How am I going to earn my grade 
    
    ![img](imgs/GradingTable.png)
@@ -92,7 +92,7 @@ Here you will find all the information for the course.
 12. #### Lecture 12
 13. #### Lecture 13
 
-# Labs
+# [Labs](labs/)
 ---
 
 # Homework
