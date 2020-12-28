@@ -118,5 +118,5 @@ Here you will find all the information for the course.
 5. [Linux is Freaking Weird](https://www.youtube.com/watch?v=xPbAXKMCDkY)
 
 
-# Final Project
+# [Final Project](finalProject/)
 ---
