@@ -102,9 +102,13 @@ Here you will find all the information for the course.
      * [OS WARS PART 2](https://www.redhat.com/en/command-line-heroes/season-1/os-wars-part-2-rise-of-linux)
      * [Heroes in the Bash Shell](https://www.redhat.com/en/command-line-heroes/season-3/heroes-in-a-bash-shell)
      * [Any Podcast from season 4](https://www.redhat.com/en/command-line-heroes/season-4)
-3. [The Rise of Opensource Software](https://www.youtube.com/watch?v=SpeDK1TPbew)
-4. [Linux is Freaking Weird](https://www.youtube.com/watch?v=xPbAXKMCDkY)
-5. [Linux is not for everyone](https://www.youtube.com/watch?v=8x_DdsJdkGw)
+3. [The Rise of Open-Source Software](https://www.youtube.com/watch?v=SpeDK1TPbew)
+4. What is IoT (Internet of Things)?
+   1. [What is IoT?](https://www.youtube.com/watch?v=6mBO2vqLv38)
+   2. What are the dangers of IoT?
+   * [Video 1](https://www.youtube.com/watch?v=vgoX_m6Mkko)
+   * [Video 2](https://www.youtube.com/watch?v=pGtnC1jKpMg)     
+5. [Linux is Freaking Weird](https://www.youtube.com/watch?v=xPbAXKMCDkY)
 
 
 # Final Project
