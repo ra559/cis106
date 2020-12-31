@@ -1,6 +1,6 @@
 # Markdown
 ---
-![md logo](imgs/mdlogo.png)
+![md logo](https://cdn.svgporn.com/logos/markdown.svg)
 An introduction and cheat sheet to Markdown
 
 # What is Markdown?
