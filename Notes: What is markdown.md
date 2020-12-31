@@ -1,5 +1,8 @@
 # Markdown
 ---
+![md logo](imgs/mdlogo.png)
+An introduction and cheat sheet to Markdown
+
 # What is Markdown?
 * Is a markup language to write plain text documents.
 * Created by John Gruber in 2004.
@@ -34,20 +37,94 @@
 
 ## Formatting in Markdown
 
-### Headings
-
-* Bold
-
+* **Headings**
+To write heading start with the `#` sign. For example:
+This is heading 1: `# Potatoes`
+This is heading 2: `## Potatoes 2`
+This is heading 3: `### Potatoes 3`
+Noticed that the number of `#` indicates the type of heading.
+This is the equivalent of the `<h#></h#>` HTML tag.
+* **Bold**
+To bold any word soround the word with double `*` or double  `_`.
+For example:
+  * `The cat **eats** the food`
+  * `The dog __plays__ with the food`
+This will render:
+  * The cat **eats** the food
+  * The dog __plays__ with the food
 * Italics
+For italics use a single `*` or `_`
+For example:
+  * `The cat *eats* the food`
+  * `The dog _plays_ with the food`
+This will render:
+  * The cat *eats* the food
+  * The dog _plays_ with the food
 
 * Strike through
+For strike through use double tilde `~~` character:
+For example:
+  * `The cat ~~eats~~ plays the food`
+  * `The dog ~~plays~~ eats with the food`
+This will render:
+  * The cat ~~eats~~ plays the food
+  * The dog ~~plays~~ eats with the food
 
 ### Working with lists
 
-* Ordered List
+* **Ordered List**
+For order list, start with the number and a period. For example:
+This:
+```
+1. Pets
+    1. Dog
+    2. Cat
+    3. Parrot
+2. Food
+    1. Hamburger
+    2. Pizza
+    3. Pasta
+3. Jobs
+    1. Programmer
+    2. Engineer
+    3. Administrator
+```
+Will render like this:
+1. Pets
+    1. Dog
+    2. Cat
+    3. Parrot
+2. Food
+    1. Hamburger
+    2. Pizza
+    3. Pasta
+3. Jobs
+    1. Programmer
+    2. Engineer
+    3. Administrator
 
-* Unordered List
+* **Unordered List**
+To create unordered lists, use a single `*`, `+`, or `-` characters followed by a space. For example:
+This
+```
+* List of Pets
+    + Dog
+      + Pitbull
+    + Cat
+      + Persian
+    + Parrot
+      + Cockatiel
+```
+Will render like this:
+* List of Pets
+    + Dog
+      + Pitbull
+    + Cat
+      + Persian
+    + Parrot
+      + Cockatiel
 
+Notice that the regardless of the symbol used, the rendering was the same.
 ### Blockquotes
 
 ### Code blocks 
@@ -63,4 +140,6 @@ Regular and reference
 ### Comments
 
 
-there is no way to underline text because on the web underline signifies a link
+
+
+There is no way to underline text because on the web underline signifies a link
