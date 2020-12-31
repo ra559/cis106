@@ -1,3 +1,5 @@
+[_metadata_:author]:- "Robert Alberto"
+[_metadata:tags]:- "my notes on Markdown"
 # Markdown
 ---
 ![md logo](https://cdn.svgporn.com/logos/markdown.svg)
@@ -128,6 +130,34 @@ Notice that the regardless of the symbol used, the rendering was the same.
 ### Blockquotes
 
 ### Code blocks 
+To write a code block you can surround the text with the back tick character or start the text with a tab.
+For example, lets write hello world in python:
+
+Using a back tick
+```
+#!/usr/bin/python3
+print('Hello world')
+```
+Using a tab
+
+    #!/usr/bin/python3
+    print('hello world')
+
+If you want to place inline code in your text, use a single back tick. This is is useful when you are writing about a command. for example:
+This paragraph:
+```
+>**How to Update Ubuntu 20.04** 
+>>To Update Ubuntu use the command: **`sudo apt update; sudo apt upgrade -y`** where **`sudo`** gives us super user
+ privileges, **`apt`** is the program that will update our system, **`update`** is going to refresh the database of
+  software locations so that we download upgrades from the right place, and **`upgrade`** will install the new software
+   upgrade.
+```
+
+
+>**How to Update Ubuntu 20.04** 
+>>To Update Ubuntu use the command: **`sudo apt update; sudo apt upgrade -y`** where **`sudo`** gives us super user privileges, **`apt`** is the program that will update our system, **`update`** is going to refresh the database of software locations so that we download upgrades from the right place, and **`upgrade`** will install the new software upgrade. The **`-y`** option allows us to auto answer yes to any Yes|No question that may be asked by the **`upgrade`** command.
+
+Notice that the words surrounded by back tics are rendered in a different font. Also, noticed that I have mixed the bold and code formatting.
 
 ### Links
 Regular and reference
@@ -137,7 +167,16 @@ Regular and reference
 
 ### Tables
 
-### Comments
+### Adding metadata (Information about the document)
+At the begining of your document use the following syntax:
+```
+[_metadata_:author]:- "John Doe"
+[_metadata:tags]:- "my notes on Markdown"
+```
+
+
+YAML
+
 
 
 
