@@ -3,6 +3,7 @@
 # Markdown
 ---
 ![md logo](https://cdn.svgporn.com/logos/markdown.svg)
+
 An introduction and cheat sheet to Markdown
 
 # What is Markdown?
@@ -54,6 +55,10 @@ For example:
 This will render:
   * The cat **eats** the food
   * The dog __plays__ with the food
+
+> ***IMPORTANT!***
+> Github Flavored Markdown (GFM) does not use _ for bold.  
+
 * Italics
 For italics use a single `*` or `_`
 For example:
@@ -67,10 +72,8 @@ This will render:
 For strike through use double tilde `~~` character:
 For example:
   * `The cat ~~eats~~ plays the food`
-  * `The dog ~~plays~~ eats with the food`
 This will render:
   * The cat ~~eats~~ plays the food
-  * The dog ~~plays~~ eats with the food
 
 ### Working with lists
 
@@ -152,6 +155,9 @@ This paragraph:
   software locations so that we download upgrades from the right place, and **`upgrade`** will install the new software
    upgrade.
 ```
+> ***IMPORTANT***
+> The tab codeblocks formatting is GFM feature therefore some other renderers may not understand it correctly. Advise: stick to the triple back tics
+
 
 
 >**How to Update Ubuntu 20.04** 
@@ -165,20 +171,42 @@ Regular and reference
 
 ### Table of content
 
-### Tables
-
-### Adding metadata (Information about the document)
-At the begining of your document use the following syntax:
-```
-[_metadata_:author]:- "John Doe"
-[_metadata:tags]:- "my notes on Markdown"
-```
-
-
-YAML
-
-
-
-
-
 There is no way to underline text because on the web underline signifies a link
+
+### Github Specific Markdown
+* Support for checkboxes:
+  * Example:
+    * `[x] This is checked`
+    * [x] This is checked
+    * `[ ] This is not checked`
+    * [ ] This is not checked
+* Auto-Hotlinking
+  * When you insert a link into your document, it will make it clickable by default
+    * Example: https://google.com
+* Tables
+|PERSON | AGE |
+|-------|----
+|Bob|27|
+|Mary|28|
+|Joe|32|
+
+
+* Code syntax highlight
+  * Examples:
+
+Python
+```python  
+print("hello world")
+```
+Bash
+```bash
+echo "hello world"
+```
+C++
+```c++
+#include <iostream>
+int main() {
+    std::cout << "Hello World!";
+    return 0;
+}
+```
