@@ -1,0 +1,114 @@
+\hypertarget{markdown}{%
+\section{Markdown}\label{markdown}}
+
+\begin{frame}{What is Markdown?}
+\protect\hypertarget{what-is-markdown}{}
+
+\begin{itemize}
+\tightlist
+\item
+  Is a markup language to write plain text documents.
+\item
+  Created by John Gruber in 2004.
+\item
+  Easy to read and write
+\item
+  Content focus which means that the user does not need to worry about
+  tags like in HTML.
+\item
+  Easy to learn and portable
+\item
+  Markdown is future proof since it works with plain text instead of
+  proprietary document formats.
+\item
+  Multiple implementations of Markdown exists, these are examples:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    CommonMark
+  \item
+    Github Flavored - This is what we are using
+  \item
+    MultiMarkdown
+  \end{itemize}
+\item
+  Widely use in the industry for:
+
+  \begin{itemize}
+  \item
+    Adding formatting elements to plain text documents
+  \item
+    Convert plain text documents to HTML Pages
+  \item
+    Writing projects documentation
+  \item
+    Used by many notes taking apps
+  \item
+  \end{itemize}
+\item
+  Markdown is not a replacement for HTML.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Formatting in Markdown}
+\protect\hypertarget{formatting-in-markdown}{}
+
+\begin{block}{Headings}
+
+\end{block}
+
+\begin{block}{Bold}
+
+\end{block}
+
+\begin{block}{Italics}
+
+\end{block}
+
+\begin{block}{Strike through}
+
+\end{block}
+
+\begin{block}{Lists}
+
+\begin{itemize}
+\item
+  Ordered List
+\item
+  Unordered List
+\end{itemize}
+
+\end{block}
+
+\begin{block}{Blockquotes}
+
+\end{block}
+
+\begin{block}{Code blocks}
+
+\end{block}
+
+\begin{block}{Links}
+
+Regular and reference \#\#\# Images
+
+\end{block}
+
+\begin{block}{Table of content}
+
+\end{block}
+
+\begin{block}{Tables}
+
+\end{block}
+
+\begin{block}{}
+
+there is no way to underline text because on the web underline signifies
+a link
+
+\end{block}
+
+\end{frame}

@@ -72,8 +72,8 @@ Here you will find all the information for the course.
   2. [How am I going to succeed in this class?](http://bit.ly/3pqo3bw)
 
   3. What is Git and Github?
-  4. The basics of Markdown (Github's implementation)
-  5. [How to write good documentation by Victoria Drake](https://www.freecodecamp.org/news/how-to-write-good-documentation/)
+4. #### Lecture 4
+5. #### Lecture 5oria Drake](https://www.freecodecamp.org/news/how-to-write-good-documentation/)
   6. Where is the Syllabus? - In Blackboard
 
 1. #### Lecture 1: Introduction to Linux
