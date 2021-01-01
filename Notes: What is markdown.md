@@ -1,10 +1,28 @@
 [_metadata_:author]:- "Robert Alberto"
 [_metadata:tags]:- "my notes on Markdown"
+
 # Markdown
 ---
 ![md logo](https://cdn.svgporn.com/logos/markdown.svg)
 
 An introduction and cheat sheet to Markdown
+
+
+# Table of Content
+- [Table of Content](#table-of-content)
+- [What is Markdown?](#what-is-markdown)
+  - [Why should you learn Markdown?](#why-should-you-learn-markdown)
+  - [But What can you do with Markdown](#but-what-can-you-do-with-markdown)
+  - [What markdown isn't](#what-markdown-isnt)
+  - [Formatting in Markdown](#formatting-in-markdown)
+    - [Working with lists](#working-with-lists)
+    - [Blockquotes](#blockquotes)
+    - [Code blocks](#code-blocks)
+    - [Links](#links)
+    - [Images](#images)
+    - [Github Specific Markdown](#github-specific-markdown)
+
+
 
 # What is Markdown?
 * Is a markup language to write plain text documents.
@@ -26,12 +44,14 @@ An introduction and cheat sheet to Markdown
   * Used by many notes taking apps, social media pages and even chatting apps like Slack.
   * Used by Github
   * Used by Jekyll and HUGO for static Websites
-## But... What can you do with Markdown
+
+## But What can you do with Markdown
   * Write presentations fast
   * Generate simple HTML websites fast
   * Generate static websites
   * Have your notes in Github for all your courses
   * Write better documentation
+
 ## What markdown isn't
 * Markdown is not a replacement for HTML, In the word of its author:
 > Markdown is not a replacement for HTML, or even close to it. Its syntax is very small, corresponding only to a very small subset of HTML tags. The idea is not to create a syntax that makes it easier to insert HTML tags. In my opinion, HTML tags are already easy to insert. The idea for Markdown is to make it easy to read, write, and edit prose. HTML is a publishing format; Markdown is a writing format. Thus, Markdown’s formatting syntax only addresses issues that can be conveyed in plain text.
@@ -130,7 +150,19 @@ Will render like this:
       + Cockatiel
 
 Notice that the regardless of the symbol used, the rendering was the same.
+
 ### Blockquotes
+To create a blockquote start with a `>` sign. For example:
+This text:
+```
+> Intelligence is the ability to avoid doing work, 
+yet getting the work done. 
+Linus Torvalds
+```
+will render as:
+> Intelligence is the ability to avoid doing work, yet getting the work done. 
+Linus Torvalds
+
 
 ### Code blocks 
 To write a code block you can surround the text with the back tick character or start the text with a tab.
@@ -166,12 +198,24 @@ This paragraph:
 Notice that the words surrounded by back tics are rendered in a different font. Also, noticed that I have mixed the bold and code formatting.
 
 ### Links
-Regular and reference
+To use links, use this formula:
+`[Text here](url here)`
+For example:
+`[Google](https://google.com) is a search engine`
+will render like this
+[Google](https://google.com) is a search engine.
+
+Notice that in the rendering, the word `google` appears formatted as a hyperlink.
+
 ### Images
+Images work similarly to links but with a `!` at the begining. For example:
+This text:
+```
+![Github Logo](https://cdn.svgporn.com/logos/github.svg)
+```
+![Github Logo](https://cdn.svgporn.com/logos/github.svg)
 
-### Table of content
-
-There is no way to underline text because on the web underline signifies a link
+If you hover over the image,  you can see that the text displayed is the one you entered in the brackets.
 
 ### Github Specific Markdown
 * Support for checkboxes:
@@ -183,14 +227,7 @@ There is no way to underline text because on the web underline signifies a link
 * Auto-Hotlinking
   * When you insert a link into your document, it will make it clickable by default
     * Example: https://google.com
-* Tables
-|PERSON | AGE |
-|-------|----
-|Bob|27|
-|Mary|28|
-|Joe|32|
-
-
+* Tablesunderline
 * Code syntax highlight
   * Examples:
 
