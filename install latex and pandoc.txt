@@ -1,1 +1,2 @@
 sudo apt install pandoc texlive-latex-base texlive-latex-recommended textlive-full
+install python3-sphinxcontrib.svg2pdfconverter

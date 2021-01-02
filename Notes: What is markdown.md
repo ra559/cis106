@@ -188,7 +188,7 @@ This paragraph:
    upgrade.
 ```
 > ***IMPORTANT***
-> The tab codeblocks formatting is GFM feature therefore some other renderers may not understand it correctly. Advise: stick to the triple back tics
+> The tab codeblocks formatting is a GFM feature therefore some other renderers may not understand it correctly. Advise: stick to the triple back tics
 
 
 
@@ -227,7 +227,6 @@ If you hover over the image,  you can see that the text displayed is the one you
 * Auto-Hotlinking
   * When you insert a link into your document, it will make it clickable by default
     * Example: https://google.com
-* Tablesunderline
 * Code syntax highlight
   * Examples:
 
