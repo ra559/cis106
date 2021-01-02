@@ -66,7 +66,7 @@ Here you will find all the information for the course.
  
 # Presentations
 ---
-0. ## Lecture 0: Introduction to the course. 
+## Lecture 0: Introduction to the course. 
   1. Where is the Syllabus? - In Blackboard
   2. How am I going to earn my grade 
    
@@ -77,27 +77,27 @@ Here you will find all the information for the course.
   5. [Markdown Presentation](http://bit.ly/2KJyqbV)
   
 
-1. ## Lecture 1: Introduction to Linux
+## Lecture 1: Introduction to Linux
    * [Introduction to Linux](http://bit.ly/3hmdLX6)
    * [What is Ubuntu?](http://bit.ly/2JrgKkA)
 
-2. ## Lecture 2: Installing Ubuntu, Virtualization, and the Raspberry PI
+## Lecture 2: Installing Ubuntu, Virtualization, and the Raspberry PI
 * [The basics of Virtualization](http://bit.ly/2KIAlNA)
 * [Using Virtualbox](http://bit.ly/3hk03nI)
 * [Installing Ubuntu 20.04 in virtualbox](http://bit.ly/2WR4i0o)
 * [What is a Raspberry pi?](http://bit.ly/3nXAP0P)
 
-3. ## Lecture 3
-4. ## Lecture 4
-5. ## Lecture 5
-6. ## Lecture 6
-7. ## Lecture 7
-8. ## Lecture 8
-9. ## Lecture 9
-10. ## Lecture 10
-11. ## Lecture 11
-12. ## Lecture 12
-13. ## Lecture 13
+## Lecture 3
+## Lecture 4
+## Lecture 5
+## Lecture 6
+## Lecture 7
+## Lecture 8
+## Lecture 9
+## Lecture 10
+## Lecture 11
+## Lecture 12
+## Lecture 13
 
 # [Labs](labs/)
 ---
