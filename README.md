@@ -1,6 +1,8 @@
 # Welcome to CIS-106-Linux Fundamentals
 Here you will find all the information for the course.
 
+![logo](img/../imgs/logo_1_100x100.png)
+
 ## TABLE OF CONTENT
   - [COURSE LEARNING OUTCOMES](#COURSE-LEARNING-OUTCOMES)
   - [Requirements](#requirements)
