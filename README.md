@@ -65,16 +65,15 @@ Here you will find all the information for the course.
 # Presentations
 ---
 0. #### Lecture 0: Introduction to the course. 
-  1. How am I going to earn my grade 
+  1. Where is the Syllabus? - In Blackboard
+  2. How am I going to earn my grade 
    
    ![img](imgs/GradingTable.png)
-   
-  2. [How am I going to succeed in this class?](http://bit.ly/3pqo3bw)
-
-  3. What is Git and Github?
-4. #### Lecture 4
-5. #### Lecture 5oria Drake](https://www.freecodecamp.org/news/how-to-write-good-documentation/)
-  6. Where is the Syllabus? - In Blackboard
+  
+  3. [How am I going to succeed in this class?](http://bit.ly/3pqo3bw)
+  4. What is Git and Github?
+  5. [Markdown Presentation](http://bit.ly/2KJyqbV)
+  
 
 1. #### Lecture 1: Introduction to Linux
    * [Introduction to Linux](http://bit.ly/3hmdLX6)
