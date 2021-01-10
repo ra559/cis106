@@ -1,78 +1,105 @@
-# Raspberry Pi Ubuntu Setup **(Gnome 3 Edition)**:
+# Raspberry Pi Ubuntu 20.10 Setup **(Gnome 3 Edition)**
 ![Desktop](imgs/desktop.png)
-1. Update the system: 
 
-    `sudo apt update; sudo apt upgrade -y;`
 
-2. Install the necessary software:
 
-    `sudo apt install gcc make perl nemo ubuntu-restricted-extras ubuntu-restricted-addons git python3-pip flameshot pandoc vlc gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vlc peek vim deluge geany tilix neofetch midori -y`
 
-    ## VS Code:
-    >Download deb package from: *https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
-    >2. Run this command (assuming that you downloaded the file to your Downloads directory) 
-    >**`sudo apt install $HOME/Downloads/code*.deb`**
+**Description:**
+This is a guide to make Ubuntu 20.10 more efficient so that it consumes less resources.The version of the Raspberry Pi used to complete this guide was: Raspberry Pi 400, 4 (2GB, 4GB, and 8GB). **No Overclock!**
 
-3. Remove error reporting, IRQ Balance, and other not needed software:
 
-    `sudo apt purge apport irqbalance aisleriot gnome-mahjongg gnome-sudoku gnome-mines thunderbird transmission-common  -y`
+### 1. Update the system: 
+Before installing any software, make sure the system is update with: 
 
-4. Enable Gnome Extensions:
-   * Go to: https://extensions.gnome.org/ click on `Click here to install Gnome Extensions`. Install the following extensions:
-     1. Dash to panel 
-     2. caffeine
-     3. Blur my shell
-     4. cpufeq by konkor
-        1. Increase the minimum frequency to 1Ghz
-        2. Disable splash screen
+`sudo apt update; sudo apt upgrade -y;`
 
-5. Disable Animations
+### 2. Install the necessary software:
+These are the applications that are not installed by default but that are needed for our day to day work on the pi. These applications are not essential, THIS IS AN OPINION! Ubuntu is ready to use out of the box!
+
+`sudo apt install gcc make perl nemo ubuntu-restricted-extras ubuntu-restricted-addons git python3-pip flameshot pandoc vlc gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vlc peek vim deluge geany tilix neofetch midori -y`
+
+>**VS Code:**
+>Download deb package from: *https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
+>2. Run this command (assuming that you downloaded the file to your Downloads directory) 
+>**`sudo apt install $HOME/Downloads/code*.deb`**
+
+### 3. Remove non-essential software:
+The command below will remove some applications that I have no need for. This step is optional since you may find some use for these apps.
+
+`sudo apt purge apport irqbalance aisleriot gnome-mahjongg gnome-sudoku gnome-mines thunderbird transmission-common  -y`
+
+>**Explanation:**
+>* `apport`: package that does error reporting.
+>* `irqbalance`: It is useless in the Raspberry Pi.
+>* `aisleriot gnome-mahjongg gnome-sudoku gnome-mines`: office games. I dont play them so I dont need them.
+>* `thunderbird`: Mozilla email client that I do not use so I don't need.
+>* `transmission-common`: I do not use trasmission. I use deluge so I remove it.
+
+### 4. Enable Gnome Extensions:
+The default Gnome 3 DE is too heavy for the Raspberry Pi. Thankfully there are extensions that we can use to remove/improve the performance of Gnome 3 on the Pi.
+* Go to: https://extensions.gnome.org/ click on `Click here to install Gnome Extensions`. Install the following extensions:
+   1. **Dash to panel:** will move the favorite bar to the bottom and turn it into a panel.
+   2. **caffeine:** will allow us to prevent the screen from locking.
+   3. **Blur my shell:** (Not essential!) It blurs the wallpaper when you open the activities menu.
+   4. **cpufeq by konkor:** will allow us to set a minimum frequency to all cores in the Pi
+      1. Increase the minimum frequency to 1Ghz
+      2. Disable splash screen
+
+###  5. Disable Animations
+Animations make the system slower. Less effects = faster system.
    1. Tweaks -> General -> Animations -> Off
-   2. Tweaks -> Suspend laptop lid -> Off
+   2. Tweaks -> Suspend laptop lid -> Off (We are not using a laptop)
 
-6. Turn off desktop icons
+### 6. Turn off desktop icons
+I do not use desktop icons but if you do, keep this option on.
    1. Extensions -> Desktop icons -> Off
 
-7. Remove the frequently used program from gnome shell
-   
-   `gsettings set org.gnome.desktop.privacy remember-app-usage false`
+### 7. Remove the frequently used program from gnome shell
+By default, Gnome 3 keeps the frequently used apps in the menu. This is not very useful to me but if it is useful to you, keep it!
 
-8. Tweak Dash to Panel
+`gsettings set org.gnome.desktop.privacy remember-app-usage false`
+
+### 8. Tweak Dash to Panel
+There are a couple of things that we need to do to make our experience better. Open the extensions manager app and then open the settings of **Dash to Panel**
    1. Under Position
-      1. Replace Applications Button with [Ubuntu logo](https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png)
-   2. Under Styles
-      1. Reduce the panel size to 32
-      2. Reduce Icon Margin to 4
-      3. Set Icon padding to 2
-      4. Enable Panel background opacity
-   3. Under Behavior
-      1. **Disable:** Show favorite applications on secondary panels
-      2. **Disable:** Show window previews on hover
-      3. **Enable:** Ungroup applications
-         1. set Maximum width to 50
-   4. Under Fine-tune:
-      1. **Disable:** Animate switching applications and animate launching new windows
-   5. Remove all favorite apps and add *Tilix, VS Code, and Firefox, and nemo*
+      * Replace Applications Button with [Ubuntu logo](https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png). this is not important, I just prefer the Ubuntu logo over the dots!
    
-9. VS Code Extensions:
-   1.  Live Server
-   2.  Markdown All in one
-   3.  Markdown Preview Enhanced
-   4.  Markdown PDF
-   5.  PDF Preview
-   6.  Code Spell Checker
+   2. Under Styles
+      * Reduce the panel size to 32 or any number that works better for you.
+      * Reduce Icon Margin to 4 or any number that works better for you.
+      * Set Icon padding to 2 or any number that works better for you.
+      * Enable Panel background opacity if you want to change the opacity of the panel. I like full transparent.
+   
+   3. Under Behavior
+      * **Disable:** Show favorite applications on secondary panels
+      * **Disable:** Show window previews on hover
+      * **Enable:** Ungroup applications
+        * Set Maximum width to 50
+   
+   4. Under Fine-tune:
+      * **Disable:** Animate switching applications and animate launching new windows
+      * Remove all favorite apps and add *Tilix, VS Code, and Firefox, and nemo*
+   
+### 9.  VS Code Extensions:
+   * Live Server
+   * Markdown All in one
+   * Markdown Preview Enhanced
+   * Markdown PDF
+   * PDF Preview
+   * Code Spell Checker
 
-10. Enable Dark Theme
-    1.  Settings -> Appearance -> Dark 
+### 10.  Enable Dark Theme
+Settings -> Appearance -> Dark 
 
-11. Replace Screenshot tool with flameshot:
-   ![replace screenshot tool shortcut](imgs/settingflameshot.gif)
+### 11.  Replace Screenshot tool:
+![replace screenshot tool shortcut](imgs/settingflameshot.gif)
 
-13. Install cursor themes:
-    1.  [Materia Light Cursor theme](https://www.gnome-look.org/p/1346778/)
-    2.  [Layan](https://www.gnome-look.org/p/1365214/)
-    3.  
-
-14. Install icon themes:
-    Papirus: `sudo apt install papirus-icon-theme -y`
-
+### 12. Install cursor themes:
+This is optional. 
+* [Materia Light Cursor theme](https://www.gnome-look.org/p/1346778/)
+* [Layan](https://www.gnome-look.org/p/1365214/)
+  
+### 14. Extra:
+This is optional. I like the Powerline bash prompt  
+* Install Powerline with this script: 
+* **https://raw.githubusercontent.com/ra559/cis106/main/powerlineinstaller.sh**
