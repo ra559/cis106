@@ -12,6 +12,10 @@ Raspberry Pi Ubuntu Setup **(Gnome 3 Version)**:
     From URL: 
     >*https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
 
+    1. Open URL and download the deb file.
+    2. Run this command (assuming that you downloaded the file to your Downloads directory)
+    >`sudo apt install $HOME/Downloads/code*.deb`
+
 3. Remove error reporting and IRQ Balance:
 
     `sudo apt purge apport irqbalance -y`
