@@ -8,6 +8,10 @@ Raspberry Pi Ubuntu Setup **(Gnome 3 Version)**:
 
     `sudo apt install gcc make perl nemo ubuntu-restricted-extras ubuntu-restricted-addons git python3-pip flameshot pandoc vlc gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vlc peek vim geany tilix -y`
 
+    ## VS Code:
+    From URL: 
+    >*https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
+
 3. Remove error reporting and IRQ Balance:
 
     `sudo apt purge apport irqbalance -y`
