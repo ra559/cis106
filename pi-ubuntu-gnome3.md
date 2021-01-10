@@ -1,5 +1,5 @@
 # Raspberry Pi Ubuntu Setup **(Gnome 3 Edition)**:
-
+![Desktop](imgs/desktop.png)
 1. Update the system: 
 
     `sudo apt update; sudo apt upgrade -y;`
@@ -66,7 +66,7 @@
     1.  Settings -> Appearance -> Dark 
 
 11. Replace Screenshot tool with flameshot:
-   
+   ![replace screenshot tool shortcut](imgs/settingflameshot.gif)
 
 13. Install cursor themes:
     1.  [Materia Light Cursor theme](https://www.gnome-look.org/p/1346778/)
