@@ -19,6 +19,7 @@ These are the applications that are not installed by default but that are needed
 `sudo apt install gcc make perl nemo ubuntu-restricted-extras ubuntu-restricted-addons git python3-pip flameshot pandoc vlc gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vlc peek vim deluge geany tilix neofetch midori -y`
 
 >**VS Code:**
+
 >Download deb package from: *https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
 >2. Run this command (assuming that you downloaded the file to your Downloads directory) 
 >**`sudo apt install $HOME/Downloads/code*.deb`**
