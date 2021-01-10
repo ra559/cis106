@@ -19,13 +19,13 @@ These are the applications that are not installed by default but that are needed
 `sudo apt install gcc make perl nemo ubuntu-restricted-extras ubuntu-restricted-addons git python3-pip flameshot pandoc vlc gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vlc peek vim deluge geany tilix neofetch midori -y`
 
 >**VS Code:**
-
+>
 >Download deb package from: *https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
 >2. Run this command (assuming that you downloaded the file to your Downloads directory) 
 >**`sudo apt install $HOME/Downloads/code*.deb`**
 
 ### 3. Remove non-essential software:
-The command below will remove some applications that I have no need for. This step is optional since you may find some use for these apps.
+The command below will remove some applications that I have no need for. This step is optional since you may find some use for these apps. However, you want to make sure that you remove irqbalance since it does not help the Raspberry Pi CPU.
 
 `sudo apt purge apport irqbalance aisleriot gnome-mahjongg gnome-sudoku gnome-mines thunderbird transmission-common  -y`
 
@@ -89,18 +89,27 @@ There are a couple of things that we need to do to make our experience better. O
    * PDF Preview
    * Code Spell Checker
 
-### 10.  Enable Dark Theme
-Settings -> Appearance -> Dark 
-
-### 11.  Replace Screenshot tool:
+### 10.  Replace Screenshot tool:
 ![replace screenshot tool shortcut](imgs/settingflameshot.gif)
 
-### 12. Install cursor themes:
-This is optional. 
+
+### 11.  Enable Dark Theme
+These steps are optional.
+
+**Enable Dark Theme**
+* Settings -> Appearance -> Dark 
+
+**Install cursor themes:**
 * [Materia Light Cursor theme](https://www.gnome-look.org/p/1346778/)
 * [Layan](https://www.gnome-look.org/p/1365214/)
+
+**Install Powerline:**
+Just run this script if you want to prompt to look like this:
+* https://raw.githubusercontent.com/ra559/cis106/main/powerlineinstaller.sh
+
+
+
+
+
   
-### 14. Extra:
-This is optional. I like the Powerline bash prompt  
-* Install Powerline with this script: 
-* **https://raw.githubusercontent.com/ra559/cis106/main/powerlineinstaller.sh**
+### 14. Extra: 
