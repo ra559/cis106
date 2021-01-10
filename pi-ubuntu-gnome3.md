@@ -28,7 +28,7 @@
 
 5. Disable Animations
    1. Tweaks -> General -> Animations -> Off
-   2. Tweaks -> Suspend laptop lid -> -> Off
+   2. Tweaks -> Suspend laptop lid -> Off
 
 6. Turn off desktop icons
    1. Extentions -> Desktop icons -> Off
@@ -38,19 +38,21 @@
    `gsettings set org.gnome.desktop.privacy remember-app-usage false`
 
 8. Tweak Dash to Panel
-   1. Under Styles
+   1. Under Position
+      1. Replace Applications Button with [Ubuntu logo](https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png)
+   2. Under Styles
       1. Reduce the panel size to 32
       2. Reduce Icon Margin to 4
       3. Set Icon padding to 2
       4. Enable Panel background opacity
-   2. Under Behavior
+   3. Under Behavior
       1. **Disable:** Show favorite applications on secondary panels
       2. **Disable:** Show window previews on hover
       3. **Enable:** Ungroup applications
-         1. set Maximun width to 50
-   3. Under Fine-tune:
+         1. set Maximum width to 50
+   4. Under Fine-tune:
       1. **Disable:** Animate switching applications and animate launching new windows
-   4. Remove all favorite apps and add *Tilix, VS Code, and Firefox, and nemo*
+   5. Remove all favorite apps and add *Tilix, VS Code, and Firefox, and nemo*
    
 9. VS Code Extensions:
    1.  Live Server
@@ -63,5 +65,5 @@
 10. Enable Dark Theme
     1.  Settings -> Appearance -> Dark 
 
-Raspberry Pi Ubuntu Setup Gnome 3 Edition
-
+11. Install [Materia Dark Cursor theme](https://www.gnome-look.org/p/1346778/)
+12. 
