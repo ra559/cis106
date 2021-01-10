@@ -15,7 +15,7 @@
 
 3. Remove error reporting, IRQ Balance, and other not needed software:
 
-    `sudo apt purge apport irqbalance aisleriot gnome-mahjongg gnome-sudoku thunderbird transmission-common -y`
+    `sudo apt purge apport irqbalance aisleriot gnome-mahjongg gnome-sudoku gnome-mines thunderbird transmission-common  -y`
 
 4. Enable Gnome Extensions:
    * Go to: https://extensions.gnome.org/ click on `Click here to install Gnome Extensions`. Install the following extensions:
@@ -31,7 +31,7 @@
    2. Tweaks -> Suspend laptop lid -> Off
 
 6. Turn off desktop icons
-   1. Extentions -> Desktop icons -> Off
+   1. Extensions -> Desktop icons -> Off
 
 7. Remove the frequently used program from gnome shell
    
