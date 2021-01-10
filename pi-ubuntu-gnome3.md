@@ -6,16 +6,16 @@
 
 2. Install the necessary software:
 
-    `sudo apt install gcc make perl nemo ubuntu-restricted-extras ubuntu-restricted-addons git python3-pip flameshot pandoc vlc gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vlc peek vim geany tilix neofetch -y`
+    `sudo apt install gcc make perl nemo ubuntu-restricted-extras ubuntu-restricted-addons git python3-pip flameshot pandoc vlc gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vlc peek vim deluge geany tilix neofetch midori -y`
 
     ## VS Code:
     >Download deb package from: *https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
     >2. Run this command (assuming that you downloaded the file to your Downloads directory) 
     >**`sudo apt install $HOME/Downloads/code*.deb`**
 
-3. Remove error reporting and IRQ Balance:
+3. Remove error reporting, IRQ Balance, and other not needed software:
 
-    `sudo apt purge apport irqbalance -y`
+    `sudo apt purge apport irqbalance aisleriot gnome-mahjongg gnome-sudoku thunderbird transmission-common -y`
 
 4. Enable Gnome Extensions:
    * Go to: https://extensions.gnome.org/ click on `Click here to install Gnome Extensions`. Install the following extensions:
@@ -66,8 +66,13 @@
     1.  Settings -> Appearance -> Dark 
 
 11. Replace Screenshot tool with flameshot:
-   Settings -> 
-13. Install [Materia Light Cursor theme](https://www.gnome-look.org/p/1346778/)
+   
 
-14. Install papirus icon theme:
-    `sudo apt install papirus-icon-theme -y`
+13. Install cursor themes:
+    1.  [Materia Light Cursor theme](https://www.gnome-look.org/p/1346778/)
+    2.  [Layan](https://www.gnome-look.org/p/1365214/)
+    3.  
+
+14. Install icon themes:
+    Papirus: `sudo apt install papirus-icon-theme -y`
+
