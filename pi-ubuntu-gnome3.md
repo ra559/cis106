@@ -93,7 +93,7 @@ There are a couple of things that we need to do to make our experience better. O
 ![replace screenshot tool shortcut](imgs/settingflameshot.gif)
 
 
-### 11.  Enable Dark Theme
+### 11.  Extra (non-essential) customization
 These steps are optional.
 
 **Enable Dark Theme**
@@ -107,9 +107,3 @@ These steps are optional.
 Just run this script if you want to prompt to look like this:
 * https://raw.githubusercontent.com/ra559/cis106/main/powerlineinstaller.sh
 
-
-
-
-
-  
-### 14. Extra: 
