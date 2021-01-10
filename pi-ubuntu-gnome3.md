@@ -1,4 +1,4 @@
-Raspberry Pi Ubuntu Setup **(Gnome 3 Version)**:
+# Raspberry Pi Ubuntu Setup **(Gnome 3 Edition)**:
 
 1. Update the system: 
 
@@ -9,12 +9,9 @@ Raspberry Pi Ubuntu Setup **(Gnome 3 Version)**:
     `sudo apt install gcc make perl nemo ubuntu-restricted-extras ubuntu-restricted-addons git python3-pip flameshot pandoc vlc gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vlc peek vim geany tilix -y`
 
     ## VS Code:
-    From URL: 
-    >*https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
-
-    1. Open URL and download the deb file.
-    2. Run this command (assuming that you downloaded the file to your Downloads directory)
-    >`sudo apt install $HOME/Downloads/code*.deb`
+    >Download deb package from: *https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
+    >2. Run this command (assuming that you downloaded the file to your Downloads directory) 
+    >**`sudo apt install $HOME/Downloads/code*.deb`**
 
 3. Remove error reporting and IRQ Balance:
 
@@ -51,7 +48,20 @@ Raspberry Pi Ubuntu Setup **(Gnome 3 Version)**:
       2. **Disable:** Show window previews on hover
       3. **Enable:** Ungroup applications
          1. set Maximun width to 50
-   3. Under Finetune:
+   3. Under Fine-tune:
       1. **Disable:** Animate switching applications and animate launching new windows
    4. Remove all favorite apps and add *Tilix, VS Code, and Firefox, and nemo*
-   5.   
+   
+9. VS Code Extensions:
+   1.  Live Server
+   2.  Markdown All in one
+   3.  Markdown Preview Enhanced
+   4.  Markdown PDF
+   5.  PDF Preview
+   6.  Code Spell Checker
+
+10. Enable Dark Theme
+    1.  Settings -> Appearance -> Dark 
+
+Raspberry Pi Ubuntu Setup Gnome 3 Edition
+
