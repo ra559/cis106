@@ -6,7 +6,7 @@
 
 2. Install the necessary software:
 
-    `sudo apt install gcc make perl nemo ubuntu-restricted-extras ubuntu-restricted-addons git python3-pip flameshot pandoc vlc gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vlc peek vim geany tilix -y`
+    `sudo apt install gcc make perl nemo ubuntu-restricted-extras ubuntu-restricted-addons git python3-pip flameshot pandoc vlc gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vlc peek vim geany tilix neofetch -y`
 
     ## VS Code:
     >Download deb package from: *https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
@@ -65,5 +65,9 @@
 10. Enable Dark Theme
     1.  Settings -> Appearance -> Dark 
 
-11. Install [Materia Dark Cursor theme](https://www.gnome-look.org/p/1346778/)
-12. 
+11. Replace Screenshot tool with flameshot:
+   Settings -> 
+13. Install [Materia Light Cursor theme](https://www.gnome-look.org/p/1346778/)
+
+14. Install papirus icon theme:
+    `sudo apt install papirus-icon-theme -y`
