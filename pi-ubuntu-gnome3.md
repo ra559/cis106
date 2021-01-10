@@ -1,12 +1,25 @@
 # Raspberry Pi Ubuntu 20.10 Setup **(Gnome 3 Edition)**
 ![Desktop](imgs/desktop.png)
 
-
+# Table of content
+- [Raspberry Pi Ubuntu 20.10 Setup **(Gnome 3 Edition)**](#raspberry-pi-ubuntu-2010-setup-gnome-3-edition)
+- [Table of content](#table-of-content)
+    - [1. Update the system:](#1-update-the-system)
+    - [2. Install the necessary software:](#2-install-the-necessary-software)
+    - [3. Remove non-essential software:](#3-remove-non-essential-software)
+    - [4. Enable Gnome Extensions:](#4-enable-gnome-extensions)
+    - [5. Disable Animations](#5-disable-animations)
+    - [6. Turn off desktop icons](#6-turn-off-desktop-icons)
+    - [7. Remove the frequently used program from gnome shell](#7-remove-the-frequently-used-program-from-gnome-shell)
+    - [8. Tweak Dash to Panel](#8-tweak-dash-to-panel)
+    - [9.  VS Code Extensions:](#9--vs-code-extensions)
+    - [10.  Replace Screenshot tool:](#10--replace-screenshot-tool)
+    - [11.  Extra (non-essential) customization](#11--extra-non-essential-customization)
 
 
 **Description:**
 This is a guide to make Ubuntu 20.10 more efficient so that it consumes less resources.The version of the Raspberry Pi used to complete this guide was: Raspberry Pi 400, 4 (2GB, 4GB, and 8GB). **No Overclock!**
-
+This guide is for those taking CIS-106 Linux Fundamentals and wish to use a Raspberry Pi over a Virtual Machine as their learning environment.
 
 ### 1. Update the system: 
 Before installing any software, make sure the system is update with: 
