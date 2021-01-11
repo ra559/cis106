@@ -50,11 +50,14 @@ Remove error reporting, IRQ Balance, and other not needed software:
 :warning: **Before Overclocking the system keep this in mind** :warning:
 * Make sure that you are using either a case with a fan or a case with passive cooling if you are using a Raspberry Pi 4
 * If you are using a Raspberry Pi 400, you do not have to worry about cooling since it comes with a good heat sink.
-
-Overclock Pi 400 or Pi 4 on Ubuntu:
-Open the file: `/boot/firmware/config.txt`
-add the following lines to the end of the file:
+* To overclock the system follow these steps:
+1. Open the file: `/boot/firmware/config.txt` in a text editor like nano or vim.
+2. Add the following lines to the end of the file for the raspberry pi 400:
 `force_turbo=1`
 `over_voltage=8`
 `arm_freq=2200`
-Rebopt with: `sudo reboot` or `telinit 6`
+3. If you are using a Raspberry Pi 4, add this lines instead:
+`over_voltage=6`
+`arm_freq=2000`
+4. Reboot your Pi with: `sudo reboot` or `telinit 6`
+
