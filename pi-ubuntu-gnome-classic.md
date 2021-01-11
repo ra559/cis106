@@ -1,6 +1,17 @@
 # Raspberry Pi Ubuntu 20.10 Setup **(Gnome Classic Edition)**
 ![Desktop](imgs/desktopuc.png)
 
+## Table of Content
+- [Raspberry Pi Ubuntu 20.10 Setup **(Gnome Classic Edition)**](#raspberry-pi-ubuntu-2010-setup-gnome-classic-edition)
+  - [Table of Content](#table-of-content)
+  - [What is Gnome Classic?](#what-is-gnome-classic)
+  - [Install Gnome classic](#install-gnome-classic)
+  - [Add necessary software](#add-necessary-software)
+  - [VS Code](#vs-code)
+  - [Remove unnecessary software](#remove-unnecessary-software)
+  - [Enable Dark Theme](#enable-dark-theme)
+  - [Adding some adjustments](#adding-some-adjustments)
+  - [Extra](#extra)
 
 ## What is Gnome Classic?
 GNOME Classic is a feature for users who prefer a more traditional desktop experience. While GNOME Classic is based on GNOME 3 technologies, it provides a number of changes to the user interface, such as the Applications and Places menus on the top bar, and a window list at the bottom of the screen.
@@ -12,7 +23,7 @@ Update the system and install gnome classic: `sudo apt update; sudo apt upgrade 
 ## Add necessary software
 `sudo apt install gcc make perl nemo ubuntu-restricted-extras ubuntu-restricted-addons git python3-pip flameshot pandoc vlc gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vlc peek vim deluge geany tilix neofetch midori caffeine -y`
 
-## VS Code:
+## VS Code
 1. Download deb package from: *https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
 2. Run this command (assuming that you downloaded the file to your Downloads directory):
 `sudo apt install $HOME/Downloads/code*.deb`
@@ -21,8 +32,9 @@ Update the system and install gnome classic: `sudo apt update; sudo apt upgrade 
    2.  Markdown All in one
    3.  Markdown Preview Enhanced
    4.  Markdown PDF
-   5.  PDF Preview
-   6.  Code Spell Checker
+   5.  Markdown TOC
+   6.  PDF Preview
+   7.  Code Spell Checker
 
 ## Remove unnecessary software
 Remove error reporting, IRQ Balance, and other not needed software:
