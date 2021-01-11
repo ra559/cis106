@@ -1,5 +1,5 @@
 # Raspberry Pi Ubuntu 20.10 Setup **(Gnome Classic Edition)**
-![Desktop](imgs/desktopuc.png)
+![Desktop](../imgs/desktopuc.png)
 
 ## Table of Content
 - [Raspberry Pi Ubuntu 20.10 Setup **(Gnome Classic Edition)**](#raspberry-pi-ubuntu-2010-setup-gnome-classic-edition)
@@ -41,22 +41,22 @@ Remove error reporting, IRQ Balance, and other not needed software:
 `sudo apt purge apport irqbalance aisleriot gnome-mahjongg gnome-sudoku gnome-mines thunderbird transmission-common  -y`
 
 ## Enable Dark Theme 
-![Dark Theme](imgs/darktheme.png)
+![Dark Theme](../imgs/darktheme.png)
 
 ## Adding some adjustments
 1. Replace nautilus with nemo: `xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search`
 
 2. Replace Screenshot tool with flameshot:
-   ![replace screenshot tool shortcut](imgs/settingflameshot.gif)
+   ![replace screenshot tool shortcut](../imgs/settingflameshot.gif)
 
 3.  Disable animations
 4.  Disable Suspend when laptop lid is closed
-![Animations](imgs/disableAnimations.png)
+![Animations](../imgs/disableAnimations.png)
 
 5.  Disable desktop icons: `gsettings set org.gnome.gnome-flashback.desktop show-icons false`
 
 6. Set caffeine and flameshot to start with system startup.
-![System Startup](imgs/systemstartup.png)
+![System Startup](../imgs/systemstartup.png)
 
 ## Extra
 :warning: **Before Overclocking the system keep this in mind** :warning:
