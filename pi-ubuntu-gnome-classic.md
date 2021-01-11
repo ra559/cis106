@@ -33,18 +33,39 @@
    6.  Code Spell Checker
 
 6. Enable Dark Theme
-    1.  Settings -> Appearance -> Dark 
+   * Tweaks -> Appearance: 
+7. Replace nautilus with nemo:
+   `xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search`
 
-7. Replace Screenshot tool with flameshot:
+
+
+
+8. Replace Screenshot tool with flameshot:
    ![replace screenshot tool shortcut](imgs/settingflameshot.gif)
 
-8.  Install cursor themes:
+9.  Install cursor themes:
     1.  [Materia Light Cursor theme](https://www.gnome-look.org/p/1346778/)
     2.  [Layan](https://www.gnome-look.org/p/1365214/)
     3.  
 
-9.  Install icon themes:
+10. Install icon themes:
     Papirus: `sudo apt install papirus-icon-theme -y`
 
-10. Extra:
+11. Extra:
     1.  Install Powerline with this script: https://raw.githubusercontent.com/ra559/cis106/main/powerlineinstaller.sh 
+12. Disable animations
+13. Disable Suspend when laptop lid is closed
+14. disable desktop icons:
+    `gsettings set org.gnome.gnome-flashback.desktop show-icons false`
+15. install caffeine
+16. add flameshot and caffeine indicator to system startup
+
+# Extra
+17. Overclock Pi 400 or Pi 4 on Ubuntu:
+18. Open the file: `/boot/firmware/config.txt`
+19. add the following lines to the end of the file:
+ `force_turbo=1`
+ `over_voltage=8`
+ `arm_freq=2200`
+
+Rebopt with: `sudo reboot` or `telinit 6`

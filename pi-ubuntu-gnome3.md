@@ -21,6 +21,8 @@
 This is a guide to make Ubuntu 20.10 more efficient so that it consumes less resources.The version of the Raspberry Pi used to complete this guide was: Raspberry Pi 400, 4 (2GB, 4GB, and 8GB). **No Overclock!**
 This guide is for those taking CIS-106 Linux Fundamentals and wish to use a Raspberry Pi over a Virtual Machine as their learning environment.
 
+There is a version of this guide using [Gnome classic](pi-ubuntu-gnome-classic.md) for those who want to use Gnome Classic over Gnome 3.
+
 ### 1. Update the system: 
 Before installing any software, make sure the system is update with: 
 
