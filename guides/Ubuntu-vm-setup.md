@@ -4,10 +4,11 @@
 
 ## Installation
 
+
 ## Setting up Gnome Classic
- * System update:
- * Necessary software installation:
- * Removing unnecessary software:
+ * System update: `sudo apt update; sudo apt upgrade -y`
+ * Necessary software installation: `sudo apt install gcc make perl nemo ubuntu-restricted-extras ubuntu-restricted-addons git python3-pip flameshot pandoc vlc gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vlc peek vim deluge geany tilix neofetch caffeine gnome-session-flashback -y`
+ * Removing unnecessary software: `sudo apt purge apport irqbalance aisleriot gnome-mahjongg gnome-sudoku gnome-mines thunderbird transmission-common  -y`
 
 ## VS Code installation and extensions
 1. Download deb package from: *https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
