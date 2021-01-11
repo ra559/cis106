@@ -15,6 +15,7 @@
     - [9.  VS Code Extensions:](#9--vs-code-extensions)
     - [10.  Replace Screenshot tool:](#10--replace-screenshot-tool)
     - [11.  Extra (non-essential) customization](#11--extra-non-essential-customization)
+  - [Extra](#extra)
 
 
 **Description:**
@@ -123,3 +124,17 @@ These steps are optional.
 Just run this script if you want to prompt to look like this:
 * https://raw.githubusercontent.com/ra559/cis106/main/powerlineinstaller.sh
 
+## Extra
+:warning: **Before Overclocking the system keep this in mind** :warning:
+* Make sure that you are using either a case with a fan or a case with passive cooling if you are using a Raspberry Pi 4
+* If you are using a Raspberry Pi 400, you do not have to worry about cooling since it comes with a good heat sink.
+* To overclock the system follow these steps:
+1. Open the file: `/boot/firmware/config.txt` in a text editor like nano or vim.
+2. Add the following lines to the end of the file for the raspberry pi 400:
+`force_turbo=1`
+`over_voltage=8`
+`arm_freq=2200`
+3. If you are using a Raspberry Pi 4, add this lines instead:
+`over_voltage=6`
+`arm_freq=2000`
+4. Reboot your Pi with: `sudo reboot` or `telinit 6`
