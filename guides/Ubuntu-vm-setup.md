@@ -39,4 +39,4 @@
 ![System Startup](../imgs/systemstartup.png)
 
 7. Enable Dark Theme 
-![Dark Theme](../imgs/darktheme.png
+![Dark Theme](../imgs/darktheme.png)
