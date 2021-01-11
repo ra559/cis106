@@ -1,5 +1,5 @@
 # Raspberry Pi Ubuntu 20.10 Setup **(Gnome 3 Edition)**
-![Desktop](imgs/desktop.png)
+![Desktop](../imgs/desktop.png)
 
 # Table of content
 - [Raspberry Pi Ubuntu 20.10 Setup **(Gnome 3 Edition)**](#raspberry-pi-ubuntu-2010-setup-gnome-3-edition)
@@ -107,7 +107,7 @@ There are a couple of things that we need to do to make our experience better. O
    * Code Spell Checker
 
 ### 10.  Replace Screenshot tool:
-![replace screenshot tool shortcut](imgs/settingflameshot.gif)
+![replace screenshot tool shortcut](../imgs/settingflameshot.gif)
 
 
 ### 11.  Extra (non-essential) customization
