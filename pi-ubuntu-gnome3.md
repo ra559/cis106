@@ -101,6 +101,7 @@ There are a couple of things that we need to do to make our experience better. O
    * Markdown All in one
    * Markdown Preview Enhanced
    * Markdown PDF
+   * Markdown TOC
    * PDF Preview
    * Code Spell Checker
 
