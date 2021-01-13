@@ -1,6 +1,7 @@
-# Ubuntu Setup Cloud Evn.
+# Ubuntu Setup Cloud Machine
+---
 
-# Virtual Machine Specifications
+## Virtual Machine Specifications
 * OS: Ubuntu 20.04 64 Bits [ISO URL](https://ubuntu.com/download/desktop) 
 * HDD: 50 GB
 * RAM: 4GB
@@ -13,7 +14,7 @@
 * Shared Clipboard: Enabled - Bidirectional (For Virtualbox setting only N/A cloud) 
 
 
-# During Installation Settings:
+## During Installation Settings:
 * Keyboard layout: English US
 * Installation type: Normal with third party software, Erase disk 
 * Timezone: NY
@@ -24,7 +25,7 @@
   * Password: pccc
   * Require login (Important)
 
-# Post Installation Settings:
+## Post Installation Settings:
 * Update and upgrade
 * Remove unnecessary software
 * Essential software install
@@ -34,7 +35,7 @@
 * Enable Dark Theme
 * One liner to complete this task: curl https://raw.githubusercontent.com/ra559/cis106/main/guides/oneliner.sh | bash
  
-# VS Code setup
+### VS Code setup
 1. Download deb package from: *https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
 2. Run this command (assuming that you downloaded the file to your Downloads directory):
 `sudo apt install $HOME/Downloads/code*.deb`
@@ -47,18 +48,8 @@
    6.  PDF Preview
    7.  Code Spell Checker
 
-# Change Desktop Environment
-* Default Desktop Environment: Gnome Flashback
-
-
-
-# VS Code Extentions:
-   1.  Live Server
-   2.  Markdown All in one
-   3.  Markdown Preview Enhanced
-   4.  Markdown PDF
-   5.  Markdown TOC
-   6.  PDF Preview
-   7.  Code Spell Checker
+## Change Desktop Environment
+* Replace GDM with Lightdm: `sudo apt install lightdm -y`
+* Set default Desktop Environment to Gnome Flashback
 
 
