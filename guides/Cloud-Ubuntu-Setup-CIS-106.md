@@ -14,7 +14,7 @@
 * Shared Clipboard: Enabled - Bidirectional (For Virtualbox setting only N/A cloud) 
 
 
-## During Installation Settings:
+## During Installation Settings
 * Keyboard layout: English US
 * Installation type: Normal with third party software, Erase disk 
 * Timezone: NY
@@ -25,7 +25,7 @@
   * Password: pccc
   * Require login (Important)
 
-## Post Installation Settings:
+## Post Installation Settings
 * Update and upgrade
 * Remove unnecessary software
 * Essential software install
@@ -33,7 +33,8 @@
 * Change Default File Manager: Nemo
 * Change Default screenshot tool with flameshot
 * Enable Dark Theme
-* One liner to complete this task: curl https://raw.githubusercontent.com/ra559/cis106/main/guides/oneliner.sh | bash
+* One liner to complete these tasks: 
+`curl https://raw.githubusercontent.com/ra559/cis106/main/guides/oneliner.sh | bash`
  
 ### VS Code setup
 1. Download deb package from: *https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
