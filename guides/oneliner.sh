@@ -12,8 +12,6 @@ gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak \
 gnome-software-plugin-snap wget tree htop net-tools vlc peek \
 vim deluge geany tilix neofetch caffeine samba smbclient cifs-utils -y
 
-echo msttcorefonts msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
-sudo apt install ubuntu-restricted-extras
 #Replace nautilus with nemo: 
 xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
 
