@@ -7,7 +7,7 @@ sudo apt purge apport aisleriot gnome-mahjongg gnome-sudoku gnome-mines thunderb
 
 # Add essential software:
 sudo apt install gcc make perl gnome-session-flashback nemo  \
-ubuntu-restricted-addons git python3-pip flameshot pandoc vlc \
+ git python3-pip flameshot pandoc vlc \
 gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak \
 gnome-software-plugin-snap wget tree htop net-tools vlc peek \
 vim deluge geany tilix neofetch caffeine samba smbclient cifs-utils -y

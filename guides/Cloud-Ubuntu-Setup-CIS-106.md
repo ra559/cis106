@@ -36,7 +36,7 @@
 * One liner to complete these tasks: 
 `sudo apt install curl -y; curl https://raw.githubusercontent.com/ra559/cis106/main/guides/oneliner.sh | bash`
 
-* Install restricted extras: `sudo apt install ubuntu-restricted-extras` 
+* Install restricted extras: `sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y` 
 ### VS Code setup
 1. Download deb package from: *https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
 2. Run this command (assuming that you downloaded the file to your Downloads directory):
