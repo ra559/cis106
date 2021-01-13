@@ -34,7 +34,7 @@
 * Change Default screenshot tool with flameshot
 * Enable Dark Theme
 * One liner to complete these tasks: 
-`curl https://raw.githubusercontent.com/ra559/cis106/main/guides/oneliner.sh | bash`
+`sudo apt install curl -y; curl https://raw.githubusercontent.com/ra559/cis106/main/guides/oneliner.sh | bash`
  
 ### VS Code setup
 1. Download deb package from: *https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64*
