@@ -53,3 +53,7 @@
 
 ![Gnome Classic](../imgs/setGnomeClassic.gif)
 
+## Install Guest Additions
+This step is for VirtualBox only. Skip if using any other hypervisor
+
+![Guest additions](../imgs/install%20guest%20additions.gif)
