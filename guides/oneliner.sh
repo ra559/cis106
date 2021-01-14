@@ -11,6 +11,7 @@ sudo apt install gcc make perl gnome-session-flashback nemo  \
 gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak \
 gnome-software-plugin-snap wget tree htop net-tools vlc peek \
 vim deluge geany tilix neofetch caffeine samba smbclient cifs-utils -y
+sudo snap install code --classic
 
 #Replace nautilus with nemo: 
 xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
@@ -20,6 +21,7 @@ gsettings set org.gnome.desktop.interface enable-animations false
 
 #Dark theme:
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+gsettings set org.gnome.desktop.interface icon-theme 'Yaru'
 
 #Replace default screenshot tool with flameshot (credit to: https://askubuntu.com/users/950843/philipp) (og: https://askubuntu.com/questions/1036473/ubuntu-18-how-to-change-screenshot-application-to-flameshot)
 gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot '[]'
