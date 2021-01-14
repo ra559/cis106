@@ -1,6 +1,7 @@
 # How to Setup Git and Github in Ubuntu 20.04
-## Asumptions:
-I asume the following:
+
+## Assumptions:
+I assume the following:
 * You have a computer running Ubuntu and VS Code is installed in it.
 * You have a basic understanding of the Linux Command Line and your Terminal Emulator
 * You have a Github Account
@@ -33,3 +34,4 @@ Install command: `sudo apt install git -y `
    * 2 weeks in seconds: **1209600**
    * 1 month in seconds: **2419200**
    * 1 year in seconds: **31557600**
+
