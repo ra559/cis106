@@ -14,6 +14,9 @@ Make sure to install virtualbox in your host computer. For Windows follow this [
   * **Password:** pccc
 * Shared Clipboard: Enabled - Bidirectional
 
+![Create VM](../imgs/createVM.gif)
+
+
 
 ## During Installation Settings
 Once you have created the virtual machine, turn it on and start the installation process. During the installation, make sure that you follow these specifications:
@@ -26,6 +29,8 @@ Once you have created the virtual machine, turn it on and start the installation
   * Username: Student
   * Password: pccc
   * Require login (Important)
+
+![Installation](../imgs/installation.gif)
 
 ## Post Installation Settings
 Once the operating system has been installed, make sure to take a snapshot of your machine. This is a good idea because if something goes wrong, you can revert back to the virtual machine state. Think of snapshots as a way of traveling back in time!
