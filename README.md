@@ -33,17 +33,17 @@ Here you will find all the information for the course.
 * Access to Blackboard
 * A Github account
 * A Text editor. We will be using [VS Code](https://code.visualstudio.com/) but you can use whatever you want
-* How to install VS Code on Windows?
-* How to install VS Code on macOS?
-* How to install VS Code on Ubuntu?
+
 
 # Resources
 ---
-* [Virtual machine ready to use](https://linkhere.com)
+* VIRTUAL MACHINE READY TO USE: [Download here](https://mega.nz/file/GVZRzaKR#AwSoUVgodyMLi08lu2sqCENRGoxfTGvbA4e8MS91oLU)
 
 :warning: **WARNING!** :warning:
 
- **This virtual machine does not have guest additions and must be updated right after importing** <br>
+ **This virtual machine may not have guest additions and must be updated right after importing** 
+
+
   * Snaphots:
     1. After installation and update
     2. After installation of basic software:
@@ -82,6 +82,7 @@ Here you will find all the information for the course.
 ## Lecture 1: Introduction to Linux
    * [Introduction to Linux](http://bit.ly/3hmdLX6)
    * [What is Ubuntu?](http://bit.ly/2JrgKkA)
+
 
 ## Lecture 2: Installing Ubuntu, Virtualization, and the Raspberry PI
 * [The basics of Virtualization](http://bit.ly/2KIAlNA)
