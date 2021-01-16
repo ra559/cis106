@@ -67,16 +67,10 @@ Here you will find all the information for the course.
 # Presentations
 ---
 ## Lecture 0: Introduction to the course. 
-  1. Where is the Syllabus? - In Blackboard
-  2. Where can I find the surveys? - In Blackboard
-  3. Where can I find the information to join Slack? - In Blackboard
-  4. How am I going to earn my grade - See image
-   
-   ![img](imgs/GradingTable.png)
-  
-  5. [How am I going to succeed in this class?](http://bit.ly/3pqo3bw)
-  6. What is Git and Github?
-  7. [Markdown Presentation](http://bit.ly/2KJyqbV)
+  1. [Lecture 0 Introduction to the course](http://bit.ly/39D3x1d)
+  2. [How am I going to succeed in this class?](http://bit.ly/3pqo3bw)
+  3. What is Git and Github?
+  4. [Markdown Presentation](http://bit.ly/2KJyqbV)
   
 
 ## Lecture 1: Introduction to Linux
