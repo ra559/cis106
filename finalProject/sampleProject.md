@@ -81,7 +81,10 @@ Setup SSH
 Before installing sftp, update the system with: `sudo apt update; sudo apt upgrade  -y` this should go smoothly since you updated the pi earlier. To install sftp, run this command: `sudo apt install openssh-server openssh-sftp-server -y`.  These packages should be installed already but if they are not they will be after running the installation command.
 
 ## Configure SFTP
-Configure SFTP
+1. First we need to create a user and a group for connecting to the ftp server.
+   1. To create a user use: `sudo adduser ftpu` where ftpu is the name of the user. When you get prompter for a password make sure to type one. The wizard will ask you for some basic information and it is optional to add it.
+   2. To create a group use: `sudo addgroup ftpg` where ftpg is the name of the group
+   3. 
 
 ## Take FTP Server online
 Setup a DDNS Service for static Address
