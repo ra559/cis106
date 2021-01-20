@@ -1,7 +1,19 @@
 # Setup an FTP Server
 
 ## Table of Content
-<!-- TOC -->autoauto- [Setup an FTP Server](#setup-an-ftp-server)auto    - [Table of Co<!-- TOC -->autoauto- [Setup an FTP Server](#setup-an-ftp-server)auto    - [Table of Content](#table-of-content)auto    - [Hardware Specifications](#hardware-specifications)auto    - [Software Specifications](#software-specifica<!-- TOC -->autoauto- [Setup an FTP Server](#setup-an-ftp-server)auto    - [Table of Content](#table-of-content)auto    - [Hardware Requirements](#hardware-requirements)auto    - [Software Specifications](#software-specifications)auto    - [Setup Operating System](#setup-operating-system)auto        - [Connecting the Raspberry Pi to the Network.](#connecting-the-raspberry-pi-to-the-network)auto        - [Connect to the Pi](#connect-to-the-pi)auto    - [Install FTP Server](#install-ftp-server)auto    - [Take FTP Server online](#take-ftp-server-online)auto    - [Challenges](#challenges)auto    - [Take this project further](#take-this-project-further)autoauto<!-- /TOC -->tions)auto    - [Setup Operating System](#setup-operating-system)auto    - [Install FTP Server](#install-ftp-server)auto    - [Take FTP Server online](#take-ftp-server-online)auto    - [Challenges](#challenges)auto    - [Take this project further](#take-this-project-further)autoauto<!-- /TOC -->ntent](#table-of-content)autoauto<!-- /TOC -->
+
+- [Setup an FTP Server](#setup-an-ftp-server)
+  - [Table of Content](#table-of-content)
+  - [Hardware Requirements](#hardware-requirements)
+  - [Software Specifications](#software-specifications)
+  - [Setup Operating System](#setup-operating-system)
+    - [Connecting the Pi to the Network.](#connecting-the-pi-to-the-network)
+    - [Connect to the Pi](#connect-to-the-pi)
+  - [Install FTP Server](#install-ftp-server)
+  - [Configure SFTP](#configure-sftp)
+  - [Take FTP Server online](#take-ftp-server-online)
+  - [Challenges](#challenges)
+  - [Take this project further](#take-this-project-further)
 
 
 ## Hardware Requirements
@@ -38,7 +50,7 @@ Once the process is done, disconnect the sd card from your computer and insert i
 - Username: pi
 - Password: raspberry
 
-### Connecting the Raspberry Pi to the Network.
+### Connecting the Pi to the Network.
 If you are using ethernet, skip this part. Otherwise, follow these steps to connect your raspberry pi your wireless network:
 1. Type: `sudo raspi-config`
 2. Select option 1: System Options

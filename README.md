@@ -26,24 +26,24 @@ Here you will find all the information for the course.
 
 # Requirements
 ---
-* Access to a computer whrere Linux can be installed. The following are options:
-  * A virtual machine (Prefered)
+* Access to a computer where Linux can be installed. The following are options:
+  * A virtual machine (Preferred)
   * A laptop/Desktop computer that you can wipe.
   * A Raspberry Pi 4 or other capable single board computer
 * Access to Blackboard
 * A Github account
 * A Text editor. We will be using [VS Code](https://code.visualstudio.com/) but you can use whatever you want
-* How to install VS Code on Windows?
-* How to install VS Code on macOS?
-* How to install VS Code on Ubuntu?
+
 
 # Resources
 ---
-* [Virtual machine ready to use](https://linkhere.com)
+* VIRTUAL MACHINE READY TO USE: [Download here](https://mega.nz/file/GVZRzaKR#AwSoUVgodyMLi08lu2sqCENRGoxfTGvbA4e8MS91oLU)
 
 :warning: **WARNING!** :warning:
 
- **This virtual machine does not have guest additions and must be updated right after importing** <br>
+ **This virtual machine may not have guest additions and must be updated right after importing** 
+
+
   * Snaphots:
     1. After installation and update
     2. After installation of basic software:
@@ -57,31 +57,26 @@ Here you will find all the information for the course.
 * **Books** 
   * [The Linux Command Line By William Shotts](https://bit.ly/34Og1Bp)
   * [Raspberry Pi Beginner's Guide 4th Edition](http://bit.ly/34QaA4O) 
-  * [Free Linux Magazine with good command line reference](https://www.raspberrypi.org/magpi-issues/Essentials_Bash_v2.pdf)
+  * [Free Linux Magazine with good command line reference](https://bit.ly/2LY0JTW)
   * [Free book. wont be used but it is good to have](http://www.it-docs.net/ddata/900.pdf)
-  * [Raspberry Models Comparison](https://socialcompare.com/en/comparison/raspberrypi-models-comparison)
+  * [Raspberry Models Comparison](http://bit.ly/3qrkjHb)
 * **Github Markdown**
-  * [Github Markdown Syntax Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+  * [Github Markdown Syntax Cheatsheet](https://bit.ly/3p3WLIp)
   * [Github Markdown syntax official documentation](http://bit.ly/3pvKZpE) 
  
 # Presentations
 ---
 ## Lecture 0: Introduction to the course. 
-  1. Where is the Syllabus? - In Blackboard
-  2. Where can I find the surveys? - In Blackboard
-  3. Where can I find the information to join Slack? - In Blackboard
-  4. How am I going to earn my grade - See image
-   
-   ![img](imgs/GradingTable.png)
-  
-  5. [How am I going to succeed in this class?](http://bit.ly/3pqo3bw)
-  6. What is Git and Github?
-  7. [Markdown Presentation](http://bit.ly/2KJyqbV)
+  1. [Lecture 0 Introduction to the course](http://bit.ly/39D3x1d)
+  2. [How am I going to succeed in this class?](http://bit.ly/3pqo3bw)
+  3. What is Git and Github?
+  4. [Markdown Presentation](http://bit.ly/2KJyqbV)
   
 
 ## Lecture 1: Introduction to Linux
    * [Introduction to Linux](http://bit.ly/3hmdLX6)
    * [What is Ubuntu?](http://bit.ly/2JrgKkA)
+
 
 ## Lecture 2: Installing Ubuntu, Virtualization, and the Raspberry PI
 * [The basics of Virtualization](http://bit.ly/2KIAlNA)
@@ -112,11 +107,11 @@ Here you will find all the information for the course.
 1. Introduce yourself
 2. Command Line Heroes
    * The history of Linux: 
-     * [OS WARS PART 1](https://www.redhat.com/en/command-line-heroes/season-1/os-wars-part-1)
-     * [OS WARS PART 2](https://www.redhat.com/en/command-line-heroes/season-1/os-wars-part-2-rise-of-linux)
-     * [Heroes in the Bash Shell](https://www.redhat.com/en/command-line-heroes/season-3/heroes-in-a-bash-shell)
-     * [Any Podcast from season 4](https://www.redhat.com/en/command-line-heroes/season-4)
-3. [The Rise of Open-Source Software](https://www.youtube.com/watch?v=SpeDK1TPbew)
+     * [OS WARS PART 1](http://red.ht/39ASp4V)
+     * [OS WARS PART 2](http://red.ht/3nQ7Uej)
+     * [Heroes in the Bash Shell](http://red.ht/38S8yDX)
+     * [Any Podcast from season 4](http://red.ht/3qm9hms)
+3. [The Rise of Open-Source Software](https://bit.ly/38Q2ls5)
 4. What is IoT (Internet of Things)?
    1. [What is IoT?](https://www.youtube.com/watch?v=6mBO2vqLv38)
    2. What are the dangers of IoT?
