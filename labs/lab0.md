@@ -1,5 +1,7 @@
 # Markdown Tutorial + Practice
 
+> Find the video here: https://youtu.be/ruOsyHJNK30
+
 ## Question 1
 Install VS Code and install the following extensions:
 * Live Server
