@@ -28,3 +28,22 @@ Directory | What is it used for?
 /var    | answer here
 /proc   | answer here
 /usr    | answer here
+
+6. **How does a period at the beginning of a file name means (example .bashrc)?**
+
+
+7. **Which command would you use to list all the files inside the /usr/share/ directory?**
+
+
+
+8. **If you are working in the /usr/share/icons directory and want to move to your home directory, which command would you use?**
+
+9. **Explain what these commands do:**
+
+`cd .config/.htop; cd ../; ls -lX`
+
+
+
+10. **John has a lot of files in the directory /var/www/html/webapp. He wants to long list all the files, including hidden files, by modification time (newest first), and with human-readable file sizes. Which command should he use conjuring that his current working directory is:** 
+    
+`/home/john/.git/`
