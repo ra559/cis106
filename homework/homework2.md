@@ -21,7 +21,6 @@ Research online for open-source or free software alternatives for the applicatio
 
 
 
-
 ### Example
 | application name | open source alternative | License used by alternative|
 |------|-------|-------|
