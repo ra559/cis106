@@ -71,4 +71,5 @@ VS Code is the text editor that we will use through out the semester to write ou
    4.  Markdown PDF
    5.  Markdown TOC
    6.  PDF Preview
-   7.  Code Spell Checker
+   7.  Markdown Converter
+   8.  Code Spell Checker

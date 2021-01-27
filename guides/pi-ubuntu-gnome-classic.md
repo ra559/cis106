@@ -33,8 +33,9 @@ Update the system and install gnome classic: `sudo apt update; sudo apt upgrade 
    3.  Markdown Preview Enhanced
    4.  Markdown PDF
    5.  Markdown TOC
-   6.  PDF Preview
-   7.  Code Spell Checker
+   6.  Markdown Converter
+   7.  PDF Preview
+   8.  Code Spell Checker
 
 ## Remove unnecessary software
 Remove error reporting, IRQ Balance, and other not needed software:

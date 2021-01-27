@@ -1,16 +1,16 @@
 # Markdown Tutorial + Practice
 
 ## Question 1
-Install VS Code and install the following extentions:
+Install VS Code and install the following extensions:
 * Live Server
 * Markdown All in one
 * Markdown Preview Enhanced
 * Markdown PDF
 * Markdown TOC
+* Markdown Converter
 * PDF Preview
 * Code Spell Checker
   
-
 ## Question 2
 * Download the following PDF File: [What is Ubuntu?](https://github.com/ra559/cis106/blob/main/docs/What%20is%20Ubuntu_%20.pdf)
 * In VS Code, create a new file and name it `Notes-0.md`
@@ -23,8 +23,16 @@ Install VS Code and install the following extentions:
 
 ## Question 5 
 * Export the markdown file to PDF.
+  * Open command palets (Ctrl, Shift+P)
+  * Type: Markdown: Convert
+  * select the option that converts to HTML
+  
+* Export the markdown file to HTML.
+  * Open command palets (Ctrl, Shift+P)
+  * Type: Markdown 
+  * select the option that converts to HTML
 
 ## Submission
-In blackboard, submit the markdown file and the PDF file. Both files are required, if you are missing any of the 2 I will give you 50 points since that is half the work.
+In blackboard, submit the markdown file and the PDF file. Both files are required, if you are missing any of the 2 I will give you 50 points since that is half the work. THE HTML FILE IS NOT NEEDED.
 
 **Late submissions will lose 40 points!**

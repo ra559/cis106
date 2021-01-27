@@ -44,8 +44,9 @@
    3.  Markdown Preview Enhanced
    4.  Markdown PDF
    5.  Markdown TOC
-   6.  PDF Preview
-   7.  Code Spell Checker
+   6.  Markdown Converter
+   7.  PDF Preview
+   8.  Code Spell Checker
 
 ## Change Desktop Environment
 * Replace GDM with Lightdm: `sudo apt install lightdm -y`

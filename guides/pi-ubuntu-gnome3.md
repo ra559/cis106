@@ -103,6 +103,7 @@ There are a couple of things that we need to do to make our experience better. O
    * Markdown Preview Enhanced
    * Markdown PDF
    * Markdown TOC
+   * Markdown Converter
    * PDF Preview
    * Code Spell Checker
 
