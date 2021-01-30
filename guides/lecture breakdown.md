@@ -66,7 +66,7 @@
 * Managing processes
 
 
-# MIDTERM AT THIS POINT
+## MIDTERM AT THIS POINT
 * Midterm covers lectures 2 to 6.
 * Midterm is performance based. 
 * Midterm has 10 questions.
@@ -99,3 +99,4 @@
 * Flow control: Case statements
 * Strings vs Numbers
 * Working with Arrays
+
