@@ -48,12 +48,12 @@ Here you will find all the information for the course.
     1. After installation and update
     2. After installation of basic software:
   * Virtual Machine Specs:
-    * Hard drive:
-    * RAM:
-    * CPU:
-    * Video Graphics:
-    * Audio controller:
-    * Network Card:
+    * Hard drive: 50GB
+    * RAM: 2GB
+    * CPU: 2 cores
+    * Video Graphics: 128MB
+    * Audio controller: N/A
+    * Network Card: 1 NAT Card
 * **Books** 
   * [The Linux Command Line By William Shotts](https://bit.ly/34Og1Bp)
   * [Raspberry Pi Beginner's Guide 4th Edition](http://bit.ly/34QaA4O) 
