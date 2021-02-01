@@ -2,11 +2,11 @@ your name and last name here
 # Lab 1 Exploring Linux Distributions
 ---
 ## Requirements:
-* **Go over the Git and Github Guide and complete the Git and Github Lab before doing this lab.**
+* **You will use Github to submit this Lab. Watch the 'What is Git and Github?' video before your start**
 * Submit the URL for this Github Repository. Anything else will not be graded.
 * Bold your answers (2 points)
 * Add your name and last name before the title as a paragraph.
-* Format your screenshots accordingly (not too big, not too small). If I can’t read it, I cannot grade it..
+* Format your screenshots accordingly (not too big, not too small). If I can’t read it, I cannot grade it.
 
 
 ## Working with Distrowatch

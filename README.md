@@ -43,7 +43,6 @@ Here you will find all the information for the course.
 
  **This virtual machine may not have guest additions and must be updated right after importing** 
 
-
   * Snaphots:
     1. After installation and update
     2. After installation of basic software:
@@ -69,7 +68,8 @@ Here you will find all the information for the course.
 ## Lecture 0: Introduction to the course. 
   1. [Lecture 0 Introduction to the course](http://bit.ly/39D3x1d)
   2. [How am I going to succeed in this class?](http://bit.ly/3pqo3bw)
-  3. What is Git and Github?
+  3. [What is Git and Github?](https://www.youtube.com/watch?v=wpISo9TNjfU)
+     * We will not be using Git/Github for code but for our markdown files.
   4. [Markdown Presentation](http://bit.ly/2KJyqbV)
   
 
