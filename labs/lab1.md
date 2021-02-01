@@ -1,9 +1,9 @@
-your name and last name here
+Your name and Last name here
 # Lab 1 Exploring Linux Distributions
 ---
 ## Requirements:
 * **You will use Github to submit this Lab. Watch the 'What is Git and Github?' video before your start**
-* Submit the URL for this Github Repository. Anything else will not be graded.
+* Create a Github account before your start this lab.
 * Bold your answers (2 points)
 * Add your name and last name before the title as a paragraph.
 * Format your screenshots accordingly (not too big, not too small). If I can’t read it, I cannot grade it.
@@ -33,7 +33,7 @@ Go to [Distrowatch](https://distrowatch.com/). Explore the website to get famili
 
 ### Question 2
 On the top left corner, click on “Random Distribution” and answer the following questions from the distro you got.
-1. What is the OS Type: 
+1. What is the name of the distribution and the OS Type: 
    * **Type your answer here**
 
 2. Which major distro is it based on?  
@@ -51,8 +51,13 @@ On the top left corner, click on “Random Distribution” and answer the follow
 ### Question 3
 On the top of the page, right in the middle, you will find an option that allows you to search for distributions. 
 Click on **“Search”** and after the page loads, fill in the following information in the **“Search Distribution by Criteria”** section and Click on Submit Query.
+* OS Type: Linux
+* Architecture: x86_64
+* Status: Active
+* Leave the rest as default.
 
 From the query results, choose any distribution and answer the following question about the distro you chose.
+
 1. What is the name of the distribution? 
    * **Type your answer here**
   
@@ -93,7 +98,7 @@ On the Distrowatch homepage in the menu located in the middle of the page, you w
 
 ## Working with DistroTest.net
 ### Question 6
-DistroTest.net is a project that allows you to test Linux/BSD distributions on your web browser. This website is great for trying out distributions before you even download the ISO file. Go to [Distrotest.net](https://distrotest.net/) and click on any of the distributions. Start the distribution and take a screenshot of the browser window that just poped up.
+DistroTest.net is a project that allows you to test Linux/BSD distributions on your web browser. This website is great for trying out distributions before you even download the ISO file. Go to [Distrotest.net](https://distrotest.net/) and click on any of the distributions. Start the distribution and take a screenshot of the browser window that just popped up.
 **Place Screenshot here**
 
 Locate the terminal application in the distribution you started and type the following command: `uname -a` Take a screenshot of the browser window showing the terminal application open.
@@ -103,3 +108,9 @@ Stop the machine and take a screenshot of the browser window showing that the ma
 **Place Screenshot here**
 
 
+---
+# What to submit?
+* Submit the URL of this file in your Github repository. 
+* Convert this markdown file as PDF and submit it in with the URL.
+* Each submission is worth 50 Points. If you only submit 1 you will get half the grade.
+---
