@@ -110,7 +110,7 @@ Stop the machine and take a screenshot of the browser window showing that the ma
 
 
 ---
-# What to submit?
+# What to submit? (Delete this section before submitting)
 * Submit the URL of this file in your Github repository. 
 * Convert this markdown file as PDF and submit it in with the URL.
 * Each submission is worth 50 Points. If you only submit 1 you will get half the grade.
