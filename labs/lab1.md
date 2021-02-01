@@ -5,6 +5,7 @@
 * Create a Github account before your start this lab.
 * Bold your answers *(2 points)*
 * Format your screenshots accordingly (not too big, not too small). If I can’t read it, I cannot grade it.
+* Video: https://youtu.be/8Sa52S527Qc
 
 
 ## Working with Distrowatch
