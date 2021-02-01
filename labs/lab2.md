@@ -15,7 +15,7 @@
 ## Question 1 | Enable virtualization
 Before you can create virtual machines, you need to know if your computer can virtualize. There are a couple of steps you need to follow to find out the answer for this question:
 
-1. For those using MacOS, if you have a recent Apple computer, chances are that you can virtualize with no problem. Follow [this video](https://www.youtube.com/watch?v=fyx53lJyAoc) to know how to install VirtualBox in macOS. Once you have installed VirtualBox, make sure to install the Extension Pack and move along to question 2. For those using a Macbook with only 2 cores and 4GB of RAM, know that your computer will be very slow for this class and you may want to consider using an alternative. Contact me if this is your case. 
+1. For those using MacOS, if you have a recent Apple computer, chances are that you can virtualize with no problem. Once you have installed VirtualBox, make sure to install the Extension Pack and move along to question 2. For those using a Macbook with only 2 cores and 4GB of RAM, know that your computer will be very slow for this class and you may want to consider using an alternative. Contact me if this is your case. 
    
 2. For those using Windows, follow these steps:
    1. Find out what hardware does your computer have:
