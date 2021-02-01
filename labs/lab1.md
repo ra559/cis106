@@ -1,11 +1,9 @@
-Your name and Last name here
 # Lab 1 Exploring Linux Distributions
 ---
 ## Requirements:
 * **You will use Github to submit this Lab. Watch the 'What is Git and Github?' video before your start**
 * Create a Github account before your start this lab.
-* Bold your answers (2 points)
-* Add your name and last name before the title as a paragraph.
+* Bold your answers *(2 points)*
 * Format your screenshots accordingly (not too big, not too small). If I can’t read it, I cannot grade it.
 
 
