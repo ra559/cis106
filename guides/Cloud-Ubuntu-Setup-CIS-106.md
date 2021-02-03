@@ -1,40 +1,17 @@
 # Ubuntu Setup Cloud Machine
 ---
-
-## Virtual Machine Specifications
-* OS: Ubuntu 20.04 64 Bits [ISO URL](https://ubuntu.com/download/desktop) 
-* HDD: 50 GB
-* RAM: 4GB
-* Video: 128 MB or Higher
-* Audio Controller: Disabled (if possible)
-* CPU: 2 Cores
-* Hostname: cis106vm
-* User: student
-* Password: pccc
-* Shared Clipboard: Enabled - Bidirectional (For Virtualbox setting only N/A cloud) 
-
-
-## During Installation Settings
-* Keyboard layout: English US
-* Installation type: Normal with third party software, Erase disk 
-* Timezone: NY
-* User Details
-  * Name: Student
-  * Hostname: cis106vm
-  * Username: Student
-  * Password: pccc
-  * Require login (Important)
-
-## Post Installation Settings
+ 
+## Post Sign in Tasks
 * Update and upgrade
 * Remove unnecessary software
 * Essential software install
 * Disable animations
-* Change Default File Manager: Nemo
 * Change Default screenshot tool with flameshot
 * Enable Dark Theme
-* One liner to complete these tasks: 
-`sudo apt install curl -y; curl https://raw.githubusercontent.com/ra559/cis106/main/guides/oneliner.sh | bash`
+* use this one-liner to complete these tasks:  
+  
+  `sudo apt install curl -y; curl https://raw.githubusercontent.com/ra559/cis106/main/guides/oneliner.sh | bash`
+  
 * Install restricted extras: `sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y` 
 
 ### VS Code setup
@@ -44,13 +21,13 @@
    3.  Markdown Preview Enhanced
    4.  Markdown PDF
    5.  Markdown TOC
-   6.  Markdown Converter
-   7.  PDF Preview
-   8.  Code Spell Checker
+   6.  PDF Preview
+   7.  Code Spell Checker
 
-
-
-
+# Replace Gnome 3 with Gnome Classic
+1. Run this command: `sudo update-alternatives --config x-session-manager`
+2. In the options that will be presented to you choose: `/usr/lib/gnome-flashback/gnome-flashback-metacity`
+3. Log out and log back in.
 
 
 
