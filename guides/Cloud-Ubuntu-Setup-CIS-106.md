@@ -48,20 +48,7 @@
    7.  PDF Preview
    8.  Code Spell Checker
 
-## Change Desktop Environment
-* Replace GDM with Lightdm: `sudo apt install lightdm -y`
-* Set default Desktop Environment to Gnome Flashback
 
-![Gnome Classic](../imgs/setGnomeClassic.gif)
-
-## Install Guest Additions
-This step is for VirtualBox only. Skip if using any other hypervisor
-
-![Guest additions](../imgs/install%20guest%20additions.gif)
-
-## Virtual machine ready to use
-
-[Download here](https://mega.nz/file/GVZRzaKR#AwSoUVgodyMLi08lu2sqCENRGoxfTGvbA4e8MS91oLU)
 
 
 
