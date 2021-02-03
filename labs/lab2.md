@@ -97,7 +97,7 @@ Vs Code was already installed in the previous question but the extensions have n
 * Markdown Converter
 * Code Spell Checker
 
-Once you have completed these steps, follow the guide: ['How to Setup Git and Github in Ubuntu 20.04'](../guides/Ubuntu%20Github%20Setup.md) to install and setup Git and Github in your virtual machine. This is the environment that we are going to use for this point one. Windows/MacOS will no longer be used for completing labs or any other assignment.
+Once you have completed these steps, follow the guide: ['How to Setup Git and Github in Ubuntu 20.04'](../guides/Ubuntu%20Github%20Setup.md) to install and setup Git and Github in your virtual machine. This is the environment that we are going to use from this point on. Windows/MacOS will no longer be used for completing labs or any other assignment.
 
 Take a screenshot of your virtual machine with VS Code running.
 
