@@ -7,6 +7,7 @@
   * [Video here](https://youtu.be/cMRqcbx8JTs)
 * [Installing Ubuntu 20.04 in VirtualBox](https://docs.google.com/presentation/d/e/2PA*CX-1vQVjjsIYAyyDF9-yjC4tpfuKwFz3HPGCTFUH4KkUMeE7Ka7A_TD60kv-bx4wcReZGbqAp_KnbS260oZ/pub?start=false&loop=false&delayms=3000&slide=id.g52c6da636c_0_0)
    * [Video here](https://youtu.be/2MEN_IX8gJ8)
+   * [Video 2 here](https://youtu.be/02kB7mpEW38)
 
 ## Requirements
 * Please go over the presentations before you do this lab. It will give you an idea of what we are trying to do here.
