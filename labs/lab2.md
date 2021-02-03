@@ -8,9 +8,6 @@
 ## Requirements
 * Please go over the presentations before you do this lab. It will give you an idea of what we are trying to do here.
 * Please go slow and take your time to do this lab. It is long but it is the core of this course.
-* This lab has more than 1 video to make your work easier. Part 1 covers, virtualization and creating virtual machines. Part 2 covers Ubuntu's installation.
-* [Video 1]()
-* [Video 2]()
 
 ## Question 1 | Enable virtualization
 Before you can create virtual machines, you need to know if your computer can virtualize. There are a couple of steps you need to follow to find out the answer for this question:
