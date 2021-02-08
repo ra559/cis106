@@ -70,33 +70,30 @@ Make sure to install VirtualBox in your host computer. For Windows follow this [
 ![Create VM](../imgs/createVM.gif)
 
 
-> Take a screenshot of your virtual machine settings and place it here. You screenshot must show all the settings of your VM.
+> Take a screenshot of your virtual machine settings. You screenshot must show all the settings of your VM.
 
 ---
 ## Question 3 |  Install Ubuntu 20.04
 Follow the [Ubuntu-vm-setup](../guides/Ubuntu-vm-setup.md) for installing Ubuntu 20.04 in your virtual machine. Make sure to go over the presentation "Installing Ubuntu 20.04 in VirtualBox" where I have laid out every step explained. I will do it in the video as well but it will benefit you more to read the presentation. 
 
-Take a screenshot of the last screen before rebooting Ubuntu.
+> Take a screenshot of the last screen before rebooting Ubuntu. 
 
-**Place your screenshot here**
-
-
+---
 ## Question 4 | Prepare Ubuntu 20.04 
-Follow the [Ubuntu-vm-setup](../guides/Ubuntu-vm-setup.md) for a the post installation configuration. Once you have completed the installation of all the applications and have switched your desktop environment, take a screenshot of virtual machine.
+Follow the [Ubuntu-vm-setup guide](../guides/Ubuntu-vm-setup.md) for a the post installation configuration. Once you have completed the installation of all the applications and have switched your desktop environment, take a screenshot of virtual machine.
 
 These are the tasks that you need to complete before taking the screenshots:
 * Update and upgrade
 * Remove unnecessary software
-* Essential software install
+* Essential software installation
 * Disable animations
 * Change Default File Manager: Nemo
 * Change Default screenshot tool with flameshot
 * Enable Dark Theme (optional)
 * Change the desktop environment
 
-**Place your screenshot here**
 
-
+---
 ## Question 5 | Setup VS Code, Git and Github
 Vs Code was already installed in the previous question but the extensions have not been installed. Install all of these extensions:
 * Live Server
@@ -110,6 +107,18 @@ Vs Code was already installed in the previous question but the extensions have n
 
 Once you have completed these steps, follow the guide: ['How to Setup Git and Github in Ubuntu 20.04'](../guides/Ubuntu%20Github%20Setup.md) to install and setup Git and Github in your virtual machine. This is the environment that we are going to use from this point on. Windows/MacOS will no longer be used for completing labs or any other assignment.
 
-Take a screenshot of your virtual machine with VS Code running.
+> Take a screenshot of your virtual machine with VS Code running.
 
-**Place your screenshot here**
+## What will you Submit:
+* Create a markdown document with the following:
+```
+# Question 2 Screenshot
+![](url to screenshot here)
+# Question 3 Screenshot
+![](url to screenshot here)
+# Question 4 Screenshot
+![](url to screenshot here)
+# Question 5 Screenshot
+
+Assignment description [here](https://raw.githubusercontent.com/ra559/cis106/main/labs/lab2.md)
+``` 
