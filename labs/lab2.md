@@ -7,7 +7,7 @@ Video for the lab can be found here:
   * [Video here](https://youtu.be/_HnwxnvS-8w)
 * [Using VirtualBox](https://docs.google.com/presentation/d/e/2PACX-1vTwJsImCvHoM2mQX6c5E2J11NPKGE90ip6kWV_LMPDCKQTG1QtcKTUGmsqkV1vKXdCUFtz66qan4PjJ/pub?start=false&loop=false&delayms=3000&slide=id.p)
   * [Video here](https://youtu.be/cMRqcbx8JTs)
-* [Installing Ubuntu 20.04 in VirtualBox](https://docs.google.com/presentation/d/e/2PA*CX-1vQVjjsIYAyyDF9-yjC4tpfuKwFz3HPGCTFUH4KkUMeE7Ka7A_TD60kv-bx4wcReZGbqAp_KnbS260oZ/pub?start=false&loop=false&delayms=3000&slide=id.g52c6da636c_0_0)
+* [Installing Ubuntu 20.04 in VirtualBox](http://bit.ly/2WR4i0o)
    * [Video here](https://youtu.be/2MEN_IX8gJ8)
    * [Video 2 here](https://youtu.be/02kB7mpEW38)
 
