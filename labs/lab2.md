@@ -109,6 +109,8 @@ Once you have completed these steps, follow the guide: ['How to Setup Git and Gi
 
 > Take a screenshot of your virtual machine with VS Code running.
 
+> **ADVICE!**
+> Take a snapshot of your system. This will come handy in the case that you break your system.
 ## What will you Submit:
 * Create a markdown document with the following:
 ```
