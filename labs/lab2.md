@@ -1,4 +1,6 @@
 # Lab 2: Installing Ubuntu 20.04 in VirtualBox.
+Video for the lab can be found here:
+
 
 ## Presentations:
 * [The basics of Virtualization](https://docs.google.com/presentation/d/e/2PACX-1vSwjKH4jswd7r2OV_C-b4K1LJlAhdScHVvgDAtZgb1J6kpPoYkQIxZpjYqg_4bbPClbh85VVvbKzJV1/pub?start=false&loop=false&delayms=3000&slide=id.p1)
@@ -10,11 +12,17 @@
    * [Video 2 here](https://youtu.be/02kB7mpEW38)
 
 ## Requirements
-* Please go over the presentations before you do this lab. It will give you an idea of what we are trying to do here.
-* Please go slow and take your time to do this lab. It is long but it is the core of this course.
+* Please go over the presentations before you do this lab. It will give you an idea of what we are trying to do here. IF you do not want to read the presentations, I went ahead and recorded videos for your convenience. The videos are very detailed and therefore they are a little long (30 to 40 minutes). Watch the videos if the presentation is not clear enough. Ask me questions if you have any. 
+* Please go slow and take your time to do this lab. It is long but it is the core of this course. 
+* For those who will be using the cloud environment only, you need to do this lab anyways since virtualization is part of the curriculum.
+* For those who do not have a computer powerful enough, you have a separate assignment to complete.
+
+## WARNING! 
+Only start this lab after you have watched the videos or read the presentations.
+
 
 ## Question 1 | Enable virtualization
-Before you can create virtual machines, you need to know if your computer can virtualize. There are a couple of steps you need to follow to find out the answer for this question:
+Before you can create virtual machines, you need to know if your computer can virtualize. There are a couple of steps you need to follow to find out the answer to this question:
 
 1. For those using MacOS, if you have a recent Apple computer, chances are that you can virtualize with no problem. Once you have installed VirtualBox, make sure to install the Extension Pack and move along to question 2. For those using a Macbook with only 2 cores and 4GB of RAM, know that your computer will be very slow for this class and you may want to consider using an alternative. Contact me if this is your case. 
    
@@ -25,14 +33,16 @@ Before you can create virtual machines, you need to know if your computer can vi
       3. Amount of Free Storage
    2. If your computer does not meet this criteria, stop this lab and get in contact with me. We may be able to find an alternative for you but this can only be done on a 1 on 1 basis.
    
-   **SPECIFICATIONS:**
+   **RECOMMENDED SPECIFICATIONS:**
       1. CPU: Quad core CPU or Dual Core with base frequency of 2.0GHz
       2. RAM: 6GB or More
       3. Free Storage: 60GB or more
    
    1. If your computer meets or exceeds the above capabilities, then you need to check if virtualization is enabled. Follow [this guide](https://support.bluestacks.com/hc/en-us/articles/115003174386-How-to-enable-Virtualization-VT-on-Windows-10-for-BlueStacks-4) to know if your computer has virtualization enabled and if it does not, use the same guide to learn how to enable it.
+   2. You can also use Speccy to find out if your computer has virtualization enabled.
+   3. If you are having troubles enabling virtualization, let me know immediately. **DO NOT WAIT FOR THE LAST MINUTE!** This part can take time!
    
-   2. If you are having troubles enabling virtualization, let me know immediately. **DO NOT WAIT FOR THE LAST MINUTE!** This part can take time!
+> This questions does not require a submission. You can delete this question from your Lab if you want to since there is nothing to grade in this question.
 
 ## Question 2 | Create Virtual Machine
 Before you can create virtual machines, you need to install VirtualBox and VirtualBox Extension Pack. To download Vbox and the extension pack go to:
@@ -59,10 +69,10 @@ Make sure to install VirtualBox in your host computer. For Windows follow this [
 
 ![Create VM](../imgs/createVM.gif)
 
-Take a screenshot of your virtual machine settings.
 
-**Place your screenshot here**
+> Take a screenshot of your virtual machine settings and place it here. You screenshot must show all the settings of your VM.
 
+---
 ## Question 3 |  Install Ubuntu 20.04
 Follow the [Ubuntu-vm-setup](../guides/Ubuntu-vm-setup.md) for installing Ubuntu 20.04 in your virtual machine. Make sure to go over the presentation "Installing Ubuntu 20.04 in VirtualBox" where I have laid out every step explained. I will do it in the video as well but it will benefit you more to read the presentation. 
 
