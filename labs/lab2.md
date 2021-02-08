@@ -121,4 +121,6 @@ Once you have completed these steps, follow the guide: ['How to Setup Git and Gi
 # Question 5 Screenshot
 
 Assignment description [here](https://raw.githubusercontent.com/ra559/cis106/main/labs/lab2.md)
-``` 
+```
+* Upload this document to Github and submit the URL in Blackboard. 
+   
