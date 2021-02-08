@@ -19,11 +19,6 @@
 * The Difference between Linux, Windows, and macOS
 * The History of GNU/Linux
 * Open Source Vs Closed Source Vs Free Software 
-* The GUI VS The CLI
-* Desktop Environments
-* Shells
-* Terminal Emulators
-
 
 ## Lecture 02 | Installing Ubuntu
 ### Topics:
@@ -44,6 +39,10 @@
 * The Linux Filesystem
 * Navigating the filesystem
 * Getting basic information about your system
+* The GUI VS The CLI
+* Desktop Environments
+* Shells
+* Terminal Emulators
 
 ## Lecture 04 | Manipulating files and directories
 ### Topics:
