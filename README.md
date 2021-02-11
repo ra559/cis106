@@ -15,7 +15,7 @@ Here you will find all the information for the course.
 * Understanding of Markdown and proper documentation techniques
 
 # Requirements
----
+
 * Access to a computer where Linux can be installed. The following are options:
   * A virtual machine (Preferred)
   * A laptop/Desktop computer that you can wipe.
@@ -26,7 +26,7 @@ Here you will find all the information for the course.
 
 
 # Resources
----
+
 * VIRTUAL MACHINE READY TO USE: [Download here](https://mega.nz/file/GVZRzaKR#AwSoUVgodyMLi08lu2sqCENRGoxfTGvbA4e8MS91oLU)
 
 :warning: **WARNING!** :warning:
@@ -54,7 +54,6 @@ Here you will find all the information for the course.
   * [Github Markdown syntax official documentation](http://bit.ly/3pvKZpE) 
  
 # Presentations
----
 ## Lecture 0: Introduction to the course. 
   1. [Lecture 0 Introduction to the course](http://bit.ly/39D3x1d)
   2. [How am I going to succeed in this class?](http://bit.ly/3pqo3bw)
