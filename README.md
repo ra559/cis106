@@ -88,40 +88,69 @@ Here you will find all the information for the course.
 * [What is a Raspberry pi?](http://bit.ly/3nXAP0P)
 
 ## Lecture 3
+* Exploring Desktop Environments
+  * What is a Shell?
+  * GUI VS CLI
+  * Using the Terminal Emulator
+  * Some basic Linux commands
+* Managing Software
+* The Linux filesystem
+  * Navigating the filesystem
+  
 ## Lecture 4
-## Lecture 5
-## Lecture 6
-## Lecture 7
-## Lecture 8
-## Lecture 9
-## Lecture 10
-## Lecture 11
-## Lecture 12
-## Lecture 13
+* Managing files and directories
+* Getting help
+* Working with wildcards
+* Output redirection
+* Formatting output
+* Shell Expansion
 
+## Lecture 5
+* The Basics of Nano
+* The Basics of Vim
+
+## Lecture 6
+* Managing data
+* File permissions
+* Managing processes
+---
+## MIDTERM AT THIS POINT
+* Midterm covers lectures 2 to 6.
+* Midterm is performance based.
+* Midterm has 10 questions.
+* Each question is a different problem for you to solve
+* The midterm is open book/open notes and it is **CHALLENGING!**
+* The only way to get a good grade is by practicing * the commands a lot.
+---
+## Lecture 7
+* Managing users
+* Managing groups
+## Lecture 8
+* Monitoring a network
+* Working with files over a network
+* Secured shell communication
+## Lecture 9
+* Writing your first script
+* Working with variables
+* Working with functions
+* Flow control: if/else
+
+## Lecture 10
+* Flow control: Looping
+* Flow control: Case statements
+* Strings vs Numbers
+* Working with Arrays
 # [Labs](labs/)
 ---
-
-# Homework
+See Labs section
+# Homework(homework/)
 ---
+See Homework section
 
 # [Discussion Topics](discussion/)
 ---
-1. Introduce yourself
-2. Command Line Heroes
-   * The history of Linux: 
-     * [OS WARS PART 1](http://red.ht/39ASp4V)
-     * [OS WARS PART 2](http://red.ht/3nQ7Uej)
-     * [Heroes in the Bash Shell](http://red.ht/38S8yDX)
-     * [Any Podcast from season 4](http://red.ht/3qm9hms)
-3. [The Rise of Open-Source Software](https://bit.ly/38Q2ls5)
-4. What is IoT (Internet of Things)?
-   1. [What is IoT?](https://www.youtube.com/watch?v=6mBO2vqLv38)
-   2. What are the dangers of IoT?
-   * [Video 1](https://www.youtube.com/watch?v=vgoX_m6Mkko)
-   * [Video 2](https://www.youtube.com/watch?v=pGtnC1jKpMg)     
-5. [Linux is Freaking Weird](https://www.youtube.com/watch?v=xPbAXKMCDkY)
 
 
 # [Final Project](finalProject/)
 ---
+See final project section
