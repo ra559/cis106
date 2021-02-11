@@ -3,12 +3,6 @@ Here you will find all the information for the course.
 
 ![logo](img/../imgs/logo_1_100x100.png)
 
-## TABLE OF CONTENT
-  - [COURSE LEARNING OUTCOMES](#COURSE-LEARNING-OUTCOMES)
-  - [Requirements](#requirements)
-  - [Resources](#resources)
-  - [Presentations](#presentations)
-  
 ## COURSE LEARNING OUTCOMES 
 * Demonstrate fluency in Linux terminology.
 * Install Linux and identify features of various distros.
