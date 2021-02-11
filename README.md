@@ -140,17 +140,4 @@ Here you will find all the information for the course.
 * Flow control: Case statements
 * Strings vs Numbers
 * Working with Arrays
-# [Labs](labs/)
----
-See Labs section
-# Homework(homework/)
----
-See Homework section
 
-# [Discussion Topics](discussion/)
----
-
-
-# [Final Project](finalProject/)
----
-See final project section
