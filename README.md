@@ -8,11 +8,7 @@ Here you will find all the information for the course.
   - [Requirements](#requirements)
   - [Resources](#resources)
   - [Presentations](#presentations)
-  - [Labs](#labs)
-  - [Homework](#homework)
-  - [Discussion Topics](#discussion-topics)
-  - [Final Project](#final-project)
-
+  
 ## COURSE LEARNING OUTCOMES 
 * Demonstrate fluency in Linux terminology.
 * Install Linux and identify features of various distros.
