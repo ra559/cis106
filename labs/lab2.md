@@ -1,5 +1,5 @@
 # Lab 2: Installing Ubuntu 20.04 in VirtualBox.
-Video for the lab can be found here:
+Video for the lab can be found here: https://youtu.be/8miYpGvxZL8
 
 
 ## Presentations:
