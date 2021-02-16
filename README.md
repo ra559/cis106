@@ -82,7 +82,7 @@ Here you will find all the information for the course.
   * GUI VS CLI
   * Using the Terminal Emulator
   * Some basic Linux commands
-* Managing Software
+* [Managing Software](https://youtu.be/_PoTDzMfi0o)
 * The Linux filesystem
   * Navigating the filesystem
   
