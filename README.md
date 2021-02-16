@@ -77,15 +77,11 @@ Here you will find all the information for the course.
 * [What is a Raspberry pi?](http://bit.ly/3nXAP0P)
 
 ## Lecture 3
-* Exploring Desktop Environments
-  * What is a Shell?
-  * GUI VS CLI
-  * Using the Terminal Emulator
-  * Some basic Linux commands
+* [Exploring Desktop Environments](https://bit.ly/3u1QcsC)
+* [What is a Shell?](https://bit.ly/3jS8fNa)
 * [Managing Software](https://youtu.be/_PoTDzMfi0o)
-* The Linux filesystem
-  * Navigating the filesystem
-  
+* [The Linux filesystem](https://bit.ly/3alPqPm)
+
 ## Lecture 4
 * Managing files and directories
 * Getting help
