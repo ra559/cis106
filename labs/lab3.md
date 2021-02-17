@@ -59,10 +59,10 @@ Use the command line to search for an alternative web browser (you already have 
 
 
 ## Question 2 | The pwd and cd command
-**pwd**: Print the full filename of the current working directory.
-**cd**: Change the shell working directory.
+* **pwd**: Print the full filename of the current working directory.
+* **cd**: Change the shell working directory.
 
-### Using pwd and cd with absolute path (remember to use bash autocompletion feature)
+### Using pwd and cd with absolute path (remember to use the bash autocompletion feature)
 
 1. Start a terminal. What is your present working directory?
 2. Change your present working directory to `/usr/share/themes`
@@ -71,7 +71,7 @@ Use the command line to search for an alternative web browser (you already have 
 5. Change your present working directory to `/etc/firefox/pref`
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
 
-### Using pwd and cd with a relative path (remember to use bash autocompletion feature)
+### Using pwd and cd with a relative path (remember to use the bash autocompletion feature)
 6. Clear your terminal window. Change the working directory to *YOUR* home directory.
 7. Change the working directory to the Downloads directory.
 8. Go back 2 directories.
