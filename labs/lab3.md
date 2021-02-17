@@ -45,11 +45,12 @@ git push
 1. Using the command line look for software packages that match the following search criteria:
 * 'icon theme'
 * 'gtk theme'
-* **Which command did you use?**
 
-2. Using the command line, install one of the icon themes and one of the gtk themes that you got from your search. **Which command did you use?**
+**Which command did you use?**
+
+1. Using the command line, install one of the icon themes and one of the gtk themes that you got from your search. **Which command did you use?**
    
-3. Set the new icon and gtk themes using Gnome tweaks.
+2. Set the new icon and gtk themes using Gnome tweaks.
 
 ![Gnome Tweaks](../imgs/GnomeTweaks.gif)
    
