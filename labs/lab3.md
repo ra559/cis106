@@ -14,6 +14,7 @@ Before you start working on this lab, do the following:
 * In Ubuntu, Open VS Code and open your CIS-106 folder where you have all your files for this class.
 * Inside the CIS106 repository (the folder in VS Code), create a file called lab3.md inside the labs folder. This is the file where you will put the answer to questions.
 * Add the following text to the lab3.md file:
+
 ```
 # Lab 3 | Installing software and navigating the file system | Answers
 Assignment description [here](https://raw.githubusercontent.com/ra559/cis106/main/labs/lab3.md)
@@ -28,13 +29,16 @@ Assignment description [here](https://raw.githubusercontent.com/ra559/cis106/mai
 
 ## Question 5
 ```
+
 * Commit and push your changes to the repository using the following commands:
+
 ```
 git pull
 git add .
 git commit -m "Task: started work on lab3"
 git push
 ```
+
 ![Pre work](../imgs/lab3-prework.gif)
 
 ## Question 1 | Installing applications
@@ -68,7 +72,7 @@ git push
 3. What is your present working directory?
 4. Change your present working directory to the root of the filesystem
 5. Change your present working directory to `/etc/firefox/pref`
-**Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
 
 ### Using pwd and cd with a relative path (remember to use bash autocompletion feature)
 6. Clear your terminal window. Change the working directory to *YOUR* home directory.
@@ -77,7 +81,7 @@ git push
 9. Where are you now?. 
 10. Change the working directory to the Documents directory.
 
-**Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 6-10.**
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 6-10.**
 
 
 ## Question 3 | The ls command
@@ -93,7 +97,7 @@ git push
 4. Long list all the files in your Downloads directory including hidden files and human readable file sizes.
 5. Long list all the files in your Downloads directory excluding hidden files, file owner and group, and include human readable file sizes.
 
-**Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
 
 
 ## Question 4 | The tree command
@@ -105,7 +109,7 @@ git push
 4. List all the files inside the `/usr/share/themes` directory sorted by modification time.
 5. List all the files inside the `/usr/share/themes` directory by lines instead of columns and sorted alphabetically.
 
-**Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
 
 ## Question 5 | Bringing it all together
 Utilities like ls are a bit old and many developers are starting to write replacements for these tools. One example, is the program exa which is a modern replacement for the ls program. Using the decryption found the projects website:
@@ -122,8 +126,20 @@ Unfortunately, exa is not available via the default reposorities in Ubuntu 20.04
 1. Long list all the files in your Downloads directory (using exa).
 2. Long list all the files in your Downloads directory with a header and modified by timestamps.
 
-Another command that is also very useful
+Another command that is also very useful is `tree`. This program allows you to list files in a tree like format which is very useful when you are working with multiple sub directories. 
+
+3. Install the tree program. Open another terminal and use the `tree --help` command to list all (or most) of the options of the tree command
+4. Use tree to list all the files in your home directory including the file owner and group.
+5. Use tree to list all the files in your home directory including their file size and in human readable format.
+
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
 
 
-
+## What to submit?
+> **ADVICE!**
+> Take a snapshot of your system. This will come handy in the case that you break your system.
+## What will you Submit:
+* Place all the screenshots and answers to your questions in a the lab3.md file. You can format the questions however you like to make it more readable.
+* Push the changes to Github 
+* and submit the URL of Lab3.md
 
