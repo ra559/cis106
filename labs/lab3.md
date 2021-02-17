@@ -42,21 +42,17 @@ git push
 ![Pre work](../imgs/lab3-prework.gif)
 
 ## Question 1 | Installing applications
-1. Using the command line look for software packages that match the following search criteria:
-* 'icon theme'
-* 'gtk theme'
-
-**Which command did you use?**
-
-1. Using the command line, install one of the icon themes and one of the gtk themes that you got from your search. **Which command did you use?**
-   
-2. Set the new icon and gtk themes using Gnome tweaks.
+Using the command line, look for software packages that match the following search criteria: `theme`. Read the output of your search and find a GTK Theme (style theme, appearance) and an icon theme as well. Install the icon and gtk theme and then change your system's GTK and icon theme. 
 
 ![Gnome Tweaks](../imgs/GnomeTweaks.gif)
-   
-4. Use the command line to search for an alternative web browser (you already have chromium and firefox so look for something else). Install the alternative web browser. **Which commands did you use to find and install the web browser?**
 
-5. Use the command line to find a 3D or 2D racing game. Answer the following questions about the game:
+1. Which command did you use to search for the themes and to install them?
+
+Use the command line to search for an alternative web browser (you already have chromium and firefox so look for something else). Install the alternative web browser. 
+
+2. Which commands did you use to find and install the web browser?
+
+3. Use the command line to find a 3D or 2D racing game. Answer the following questions about the game:
    1. **What is the name of the package?**
    2. **What dependencies are needed in order to install the package? (you can either take a screenshot of the terminal or copy and paste from the terminal)**
    3. **How much disk space will the package utilize after installation?**
