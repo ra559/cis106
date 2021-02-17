@@ -7,6 +7,7 @@
 * Presentation available [here](https://youtu.be/_PoTDzMfi0o)
 * Navigating the filesystem cheat sheet available [here](https://rebrand.ly/3bdn1)
 * Presentation available [here](https://bit.ly/3alPqPm)
+* Amazing video explaining the linux file system [here](https://www.youtube.com/watch?v=HbgzrKJvDRw)
 
 ## Environment setup pre-work
 Before you start working on this lab, do the following:
@@ -56,11 +57,47 @@ git push
    3. **How much disk space will the package utilize after installation?**
 
 
-## Question 2 
+## Question 2 | The pwd and cd command
+**pwd**: Print the full filename of the current working directory.
+**cd**: Change the shell working directory.
 
-## Question 3
+### Using pwd and cd with absolute path (remember to use bash autocompletion feature)
 
-## Question 4
+1. Start a terminal. What is your present working directory?
+2. Change your present working directory to `/usr/share/themes`
+3. What is your present working directory?
+4. Change your present working directory to the root of the filesystem
+5. Change your present working directory to `/etc/udev/rules.d`
+**Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
 
-## Question 5
+### Using pwd and cd with a relative path (remember to use bash autocompletion feature)
+6. Clear your terminal window. Change the working directory to *YOUR* home directory.
+7. Change the working directory to the Downloads directory.
+8. Go back 2 directories.
+9. Where are you now?. 
+10. Change the working directory to the Documents directory.
+**Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 6-10.**
+
+
+## Question 3 | The ls command
+
+
+## Question 4 | The tree command
+
+
+## Question 5 | Bringing it all together
+Utilities like ls are a bit old and many developers are starting to write replacements for these tools. One example, is the program exa which is a modern replacement for the ls program. Using the decription found the projects website:
+
+> exa is an improved file lister with more features and better defaults. It uses colours to distinguish file types and metadata. It knows about symlinks, extended attributes, and Git. And it’s small, fast, and just one single binary.
+
+Unfortunately, exa is not available via the default reposorities in Ubuntu 20.04. However, this package is available for Ubuntu 20.10 and further releases. This however, does not mean that we cannot install the program. As you saw during the presentation, we can also install software using .deb files. To download the .deb file for exa use this command:
+
+* `wget http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb`
+* To install the .deb file we can use apt: `sudo apt install ./exa_0.9.0-4_amd64.deb`
+* Once we have installed the package we do not need the .deb file so lets delete it with: `rm exa_0.9.0-4_amd64.deb`
+
+
+
+
+
 
