@@ -45,6 +45,7 @@ git push
 1. Using the command line look for software packages that match the following search criteria:
 * 'icon theme'
 * 'gtk theme'
+
 **Which command did you use?**
 
 2. Using the command line, install one of the icon themes and one of the gtk themes that you got from your search. **Which command did you use?**
