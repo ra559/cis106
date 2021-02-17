@@ -109,27 +109,27 @@ Use the command line to search for an alternative web browser (you already have 
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
 
 ## Question 5 | Bringing it all together
-Utilities like ls are a bit old and many developers are starting to write replacements for these tools. One example, is the program exa which is a modern replacement for the ls program. Using the decryption found the projects website:
+Utilities like `ls` are a bit old and many developers are starting to write replacements for these tools. One example, is the program `exa`. As per the project's website:
 
 > exa is an improved file lister with more features and better defaults. It uses colours to distinguish file types and metadata. It knows about symlinks, extended attributes, and Git. And it’s small, fast, and just one single binary.
 
-Unfortunately, exa is not available via the default reposorities in Ubuntu 20.04. However, this package is available for Ubuntu 20.10 and further releases. This however, does not mean that we cannot install the program. As you saw during the presentation, we can also install software using .deb files. To download the .deb file for exa use this command:
+Unfortunately, exa is not available via the default reposorities in Ubuntu 20.04. However, this package is available for Ubuntu 20.10 and further releases. This however, does not mean that we cannot install the program. As you saw during the presentation, we can also install software using `.deb files.` To download the `.deb file` for `exa` use this command:
 
 * `wget http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb`
 * To install the .deb file we can use apt: `sudo apt install ./exa_0.9.0-4_amd64.deb`
-* Once we have installed the package we do not need the .deb file so lets delete it with: `rm exa_0.9.0-4_amd64.deb`
-* Open a second terminal a use the command `exa --help` to see all the options of the exa command. Using these options as a reference answer the following questions:
+* Once we have installed the package we do not need the `.deb file` so lets delete it with: `rm exa_0.9.0-4_amd64.deb`
+* Open a second terminal a use the command `exa --help` to see all the options of the exa command. Using these options as a reference, answer the following questions:
 
-1. Long list all the files in your Downloads directory (using exa).
+1. Long list all the files in your Downloads directory.
 2. Long list all the files in your Downloads directory with a header and modified by timestamps.
 
 Another command that is also very useful is `tree`. This program allows you to list files in a tree like format which is very useful when you are working with multiple sub directories. 
 
 3. Install the tree program. Open another terminal and use the `tree --help` command to list all (or most) of the options of the tree command
-4. Use tree to list all the files in your home directory including the file owner and group.
-5. Use tree to list all the files in your home directory including their file size and in human readable format.
+4. Use `tree` to list all the files in your home directory including the file owner and group.
+5. Use `tree` to list all the files in your home directory including their file size and in human readable format.
 
-> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1,2,4 and 5.**
 
 
 ## What to submit?
