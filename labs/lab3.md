@@ -67,7 +67,7 @@ git push
 2. Change your present working directory to `/usr/share/themes`
 3. What is your present working directory?
 4. Change your present working directory to the root of the filesystem
-5. Change your present working directory to `/etc/udev/rules.d`
+5. Change your present working directory to `/etc/firefox/pref`
 **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
 
 ### Using pwd and cd with a relative path (remember to use bash autocompletion feature)
@@ -76,17 +76,39 @@ git push
 8. Go back 2 directories.
 9. Where are you now?. 
 10. Change the working directory to the Documents directory.
+
 **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 6-10.**
 
 
 ## Question 3 | The ls command
+* For this question we are going to use relative path only.
+* Clear your terminal.
+* Download 3 files from the internet (pictures, audio, document, or anything else).
+* Make sure that the files you downloaded are stored in your Downloads directory.
+* Mare sure that your working directory is your home directory.
+
+1. List all the files in your Downloads directory.
+2. List all the files in your Downloads directory including hidden files.
+3. Long list all the files in your Downloads directory including hidden files.
+4. Long list all the files in your Downloads directory including hidden files and human readable file sizes.
+5. Long list all the files in your Downloads directory excluding hidden files, file owner and group, and include human readable file sizes.
+
+**Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
 
 
 ## Question 4 | The tree command
+* For this question we are going to use Absolute path only.
+* Clear your terminal screen.
+1. List all the files inside the `/usr/share/themes` directory.
+2. Long list all the files inside the `/usr/share/themes` directory showing the modification time, excluding hidden files, file owner and group.
+3. List all the files inside the `/usr/share/themes` directory separated by a comma.
+4. List all the files inside the `/usr/share/themes` directory sorted by modification time.
+5. List all the files inside the `/usr/share/themes` directory by lines instead of columns and sorted alphabetically.
 
+**Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
 
 ## Question 5 | Bringing it all together
-Utilities like ls are a bit old and many developers are starting to write replacements for these tools. One example, is the program exa which is a modern replacement for the ls program. Using the decription found the projects website:
+Utilities like ls are a bit old and many developers are starting to write replacements for these tools. One example, is the program exa which is a modern replacement for the ls program. Using the decryption found the projects website:
 
 > exa is an improved file lister with more features and better defaults. It uses colours to distinguish file types and metadata. It knows about symlinks, extended attributes, and Git. And it’s small, fast, and just one single binary.
 
@@ -95,8 +117,12 @@ Unfortunately, exa is not available via the default reposorities in Ubuntu 20.04
 * `wget http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb`
 * To install the .deb file we can use apt: `sudo apt install ./exa_0.9.0-4_amd64.deb`
 * Once we have installed the package we do not need the .deb file so lets delete it with: `rm exa_0.9.0-4_amd64.deb`
+* Open a second terminal a use the command `exa --help` to see all the options of the exa command. Using these options as a reference answer the following questions:
 
+1. Long list all the files in your Downloads directory (using exa).
+2. Long list all the files in your Downloads directory with a header and modified by timestamps.
 
+Another command that is also very useful
 
 
 
