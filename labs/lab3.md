@@ -106,11 +106,11 @@ Use the command line to search for an alternative web browser (you already have 
 ## Question 4 | The tree command
 * For this question we are going to use Absolute path only.
 * Clear your terminal screen.
-1. List all the files inside the `/usr/share/themes` directory.
-2. Long list all the files inside the `/usr/share/themes` directory showing the modification time, excluding hidden files, file owner and group.
-3. List all the files inside the `/usr/share/themes` directory separated by a comma.
-4. List all the files inside the `/usr/share/themes` directory sorted by modification time.
-5. List all the files inside the `/usr/share/themes` directory by lines instead of columns and sorted alphabetically.
+1. List all the files inside the `Downloads` directory.
+2. List all the files inside the `Downloads` directory showing the permissions(protections), file owner, group owner, and human readable file size.
+3. List all the files inside the `Downloads` directory showing the date of last modified and sorted by modification time.
+4. List all the files inside the `Downloads` directory sorted by modification time.
+5. List all the files inside the `Downloads` directory by lines instead of columns and sorted alphabetically.
 
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
 
