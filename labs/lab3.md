@@ -98,7 +98,7 @@ Use the command line to search for an alternative web browser (you already have 
 2. List all the files in your Downloads directory including hidden files.
 3. Long list all the files in your Downloads directory including hidden files.
 4. Long list all the files in your Downloads directory including hidden files and human readable file sizes.
-5. Long list all the files in your Downloads directory excluding hidden files, file owner and group, and include human readable file sizes.
+5. Long list all the files in your Downloads directory excluding hidden files, file owner and group, and including human readable file sizes.
 
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
 
