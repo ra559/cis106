@@ -12,7 +12,7 @@
 ## Environment setup pre-work
 Before you start working on this lab, do the following:
 * In Ubuntu, Open VS Code and open your CIS-106 folder where you have all your files for this class.
-* Inside the CIS106 repository (the folder in VS Code), create a file called lab3.md inside the labs folder. This is the file where you will put the answer to questions.
+* Inside the CIS106 repository (the folder in VS Code), create a file called `lab3.md` inside the labs folder. This is the file where you will put the answer to questions.
 * Add the following text to the lab3.md file:
 
 ```
@@ -20,6 +20,12 @@ Before you start working on this lab, do the following:
 Assignment description [here](https://raw.githubusercontent.com/ra559/cis106/main/labs/lab3.md)
 
 ## Question 1
+1. Which command did you use to search for the themes and to install them?
+2. Which commands did you use to find and install the web browser?
+3.1 What is the name of the package?
+3.2 What dependencies are needed in order to install the package? (you can either take a screenshot of the terminal or copy and paste from the terminal)
+3.3 How much disk space will the package utilize after installation?
+ 
 
 ## Question 2
 
