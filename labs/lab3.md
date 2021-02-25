@@ -109,8 +109,8 @@ Use the command line to search for an alternative web browser (you already have 
 1. List all the files inside the `Downloads` directory.
 2. List all the files inside the `Downloads` directory showing the permissions(protections), file owner, group owner, and human readable file size.
 3. List all the files inside the `Downloads` directory showing the date of last modified and sorted by modification time.
-4. List all the files inside the `Downloads` directory sorted by modification time.
-5. List all the files inside the `Downloads` directory by lines instead of columns and sorted alphabetically.
+4. List all the files inside the `Downloads` directory in HTML format
+5. List all the files inside the `Downloads` directory in HTML format and save it to a file.
 
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
 

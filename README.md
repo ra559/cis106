@@ -52,6 +52,7 @@ Here you will find all the information for the course.
 * **Github Markdown**
   * [Github Markdown Syntax Cheatsheet](https://bit.ly/3p3WLIp)
   * [Github Markdown syntax official documentation](http://bit.ly/3pvKZpE) 
+  * [Git Cheat sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
  
 # Presentations
 ## Lecture 0: Introduction to the course. 
