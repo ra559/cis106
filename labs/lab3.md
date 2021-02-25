@@ -1,6 +1,7 @@
 # Lab 3 | Installing software and navigating the file system
 
 ## IMPORTANT - READ ME
+Lab video [here](https://youtu.be/bCW14r6YCuY)
 * You have to complete labs 0 1 and 2 before attempting lab 3.
 * If you are using the Cloud environment (Apporto), Make sure that you have complete the Setup per this [video](https://youtu.be/w_nyTC-tuv8) before doing this lab. 
 * Software installation cheat sheet available [here](https://bit.ly/3djIsfy)
