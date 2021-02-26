@@ -1,4 +1,6 @@
 # Lab 3 | Installing software and navigating the file system
+DO NOT START WORKING ON THIS LAB. IT IS A WORK IN PROGRESS
+
 
 ## IMPORTANT - READ ME
 Lab video [here]()
