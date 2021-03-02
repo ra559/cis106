@@ -85,9 +85,12 @@ Here you will find all the information for the course.
 
 ## Lecture 4
 * [Managing files and directories](https://rapurl.live/jya)
-  * Getting help
-  * Working with wildcards
-  * Shell Expansion
+  * Managing Files - Slide 3
+  * Managing Directories - Slide 5 
+  * Moving and copying files - Slide 8
+  * Getting help - Slide 19
+  * Working with wildcards - Slide 24
+  * Shell Expansion - Slide 34
 
 ## Lecture 5
 * Handling Text Files
