@@ -84,16 +84,18 @@ Here you will find all the information for the course.
 * [The Linux filesystem](https://bit.ly/3alPqPm)
 
 ## Lecture 4
-* Managing files and directories
-* Getting help
-* Working with wildcards
-* Output redirection
-* Formatting output
-* Shell Expansion
+* [Managing files and directories](https://rapurl.live/jya)
+  * Getting help
+  * Working with wildcards
+  * Shell Expansion
 
 ## Lecture 5
-* The Basics of Nano
-* The Basics of Vim
+* Handling Text Files
+  * Output redirection
+  * Formatting output
+* Command Line Text Editors
+  * The Basics of Nano
+  * The Basics of Vim
 
 ## Lecture 6
 * Managing data
