@@ -1,4 +1,4 @@
-# Lab 3 | Installing software and navigating the file system
+# Lab 4 | Managing files and directories
 DO NOT START WORKING ON THIS LAB. IT IS A WORK IN PROGRESS
 
 
@@ -8,8 +8,8 @@ Lab video [here]()
 * If you are using the Cloud environment (Apporto), Make sure that you have complete the Setup per this [video](https://youtu.be/w_nyTC-tuv8) before doing this lab. 
 * [Managing files and directories](https://rebrand.ly/enooum3)
 * All the questions in this lab will be in your midterm. 
-* Questions 1 - 4 are worth 20 points
-* Questions 5 - 6 are worth 10 points
+* Questions 1 - 4 are worth 25 points
+* Questions 5 does not require a submission.
 
 # Question 1: Creating Files and Directories
 1. Create a Directory in **YOUR** home directory labeled: `lab4`. Change your current working directory to `~/lab4`. 
@@ -18,7 +18,7 @@ Lab video [here]()
 4. list the `lab4` directory recursively.
 5. Use the `tree` command to list the lab4 directory.
 
-> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots is allowed**
 
 # Question 2: Removing Files and Directories
 1. Change your current working directory to: `/srv/`
@@ -27,7 +27,7 @@ Lab video [here]()
 4. Remove the `docs` and `songs` directories without changing your current working directory.
 5. Remove the `lab4` directory without changing your current working directory.
 
-> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots is allowed**
 
 
 # Question 3: Moving Files and Directories
@@ -37,7 +37,7 @@ Lab video [here]()
 4. Inside the  `lab4` directory, you will find a directory called `Wallpaperlab4`. Move this directory to your `Pictures` directory and rename it to `NewWallpapers`.
 5. Rename the `lab4` directory to `Lab-4`.
 
-> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots is allowed**
 
 
 # Question 4: Copying Files and Directories
@@ -47,22 +47,15 @@ Lab video [here]()
 4. Copy your new directory to the Pictures directory.
 5. Remove the new directory in your Downloads directory.
 
-> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots is allowed**
 
 
 # Question 5: Getting Help
-This question requires no screenshot! It is just to practice the man command.
+This part of this question requires no screenshot! It is just to practice the man command. You can use the less pager commands to move around the man page:
+
+![Less pager commands](../imgs/less-pager-commands.png)
+<br>*From the book on page: 19.*
+
 1. Open the man page of the ls command.
 2. Open the help page of the man page. Read it!
 3. Make sure that you learn how to Quit and Move around.
-
-# Question 6: File Globing 
-## Wildcards
-1. here
-2. here
-3. here
-## Brace Expansion
-4. here
-5. here
-
-
