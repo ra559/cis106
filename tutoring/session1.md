@@ -47,7 +47,7 @@ First lets generate some files to work with:
 4. Move the files to their respective directories.
 5. Create a new directory called `website` and copy all the files to the website directory.
 
-
+> Don't forget to practice!!!
 
 
 
