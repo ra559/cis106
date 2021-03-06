@@ -1,4 +1,5 @@
 # Managing files and directories:
+Video: https://youtu.be/d7jC11neXVI
 
 1. Create a directory called `books` in your `~/Documents` directory.
 2. Inside the `books` directory, create 3 directories called:
