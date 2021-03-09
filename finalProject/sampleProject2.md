@@ -1,5 +1,4 @@
 # Build a LAMP Stack
-By R. Alberto
 ![LAMP STACK](../imgs/LAMP.jpg)
 
 ## Table of content here
