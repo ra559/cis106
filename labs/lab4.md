@@ -1,5 +1,4 @@
 # Lab 4 | Managing files and directories
-DO NOT START WORKING ON THIS LAB. IT IS A WORK IN PROGRESS
 
 
 ## IMPORTANT - READ ME
@@ -59,3 +58,6 @@ This part of this question requires no screenshot! It is just to practice the ma
 1. Open the man page of the ls command.
 2. Open the help page of the man page. Read it!
 3. Make sure that you learn how to Quit and Move around.
+
+## What to submit?
+1. Place all your images in a markdown file titled lab4.1.md and submit the github url of the file in blackboard.
