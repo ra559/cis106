@@ -2,7 +2,7 @@
 
 
 ## IMPORTANT - READ ME
-Lab video [here]()
+Lab video [here](https://youtu.be/HpkJghX_P1Q)
 * You have to complete labs 0, 1, 2, and 3 before attempting lab 4.
 * If you are using the Cloud environment (Apporto), Make sure that you have complete the Setup per this [video](https://youtu.be/w_nyTC-tuv8) before doing this lab. 
 * [Managing files and directories](https://rebrand.ly/enooum3)
