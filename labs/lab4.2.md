@@ -34,17 +34,18 @@ What if you want to move a bunch of files from 1 directory to another. For examp
 In the previous questions, we learned how to match multiple characters in a filename. Now, what happens when we want to match a specific number of characters. The following scenarios explore the use of the `?` wildcard for matching a given number of characters.
 
 **Problem 1:**<br>
-You want to move the following xml files to the xmlfixmlfilesles directory: bad.xml, bid.xml, and bed.xml. Notice that these files have multiple things in common. For instance they all start with lowercase b and end in d.xml. We can use the ? wildcard to move all these files in a single command. Notice that using the star wildcard like this: *.xml will not work since there are other xml files in the current directory and we do not wish to move them. How can we do this then?
+You want to move the following `xml` files to the `xmlfilesles` directory: `bad.xml`, `bid.xml`, and `bed.xml`. Notice that these files have multiple things in common. For instance they all start with `lowercase b` and end in `d.xml`. We can use the ? wildcard to move all these files in a single command. Notice that using the star wildcard like this: `*.xml` will not work since there are other xml files in the current directory and we do not wish to move them. **How can we do this then?** Use the `~/lab4/question2` directory to solve this problem
 
 **Problem 2:**<br>
-The ? wildcard is also useful when we want to work with hidden files. Remember that in linux hidden files have a . at the beginning of the filename. Now, you may be wondering, can I do the same thing with the * wildcard? Well, no. In Linux the present working directory and its parent directory have a name. The present working directory is represented by a single period and the parent directory is represented by two periods. For instance if you use the ls -a command to list all the files in your present working directory, notice that the first two entries are . and ..
-So if you were to list all the hidden files in a given directory, ls -a .* will not work as expected since the present working directory will also be listed. To solve this bug-turn-into-feature, we can use the .??* wildcard. You can also use: ./.* for the present working directory or ../.* for the parent directory. Now to put this into practice, list all the hidden files inside the question2 directory. 
+The ? wildcard is also useful when we want to work with hidden files. Remember that in linux, hidden files have a `.` at the beginning of the filename. Now, you may be wondering, **can I do the same thing with the * wildcard?** Well, NO! In Linux the present working directory and its parent directory have a name. The present working directory is represented by a single period and the parent directory is represented by two periods. For instance if you use the `ls -a` command to list all the files in your present working directory, notice that the first two entries are `.` and `..`
+
+So if you were to list all the hidden files in a given directory, `ls -a .*` will not work as expected since the present working directory will also be listed. To solve this bug-turn-into-feature problem, we can use the `.??*` wildcard. You can also use: `./.*` for the present working directory or `../.*` for the parent directory. Now to put this into practice, list all the hidden files inside the `~/lab4/question2` directory. 
 
 **Problem 3:**<br>
-Since the ? wildcard matches only 1 character, we can use multiple ? to match multiple characters. For instance, how do you list all the files in a given directory that have a 4 letter file extension?
+Since the `?` wildcard matches only 1 character, we can use multiple `?` to match multiple characters. For instance, how do you list all the files in a given directory that have a 4 letters in their respective file extension?
 
 **Problem 4:**<br> 
-Lets see another example, try to list all the files that have two letters between letter f and letter t. Try to do this one on your own!
+Lets see another example, try to list all the files that have two letters between letter `f` and letter `t`. Try to do this one on your own!
 
 **Take a screenshot of your terminal showing all the commands that you used to complete this question.**
 
