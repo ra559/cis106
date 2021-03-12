@@ -52,10 +52,10 @@ Lets see another example, try to list all the files that have two letters betwee
 
 
 ## Question 3 | Using the [] Wildcard
-In the previous question we learned how to match a single or a given number of characters in a filename. Now, sometimes you want to match a range of characters. For example, all the files that start with a capital letter or a digit. This is possible with the [] wildcard which matches the range specified inside the [].
+In the previous question we learned how to match a single or a given number of characters in a filename. Now, sometimes you want to match a range of characters. For example, all the files that start with a capital letter or a digit. This is possible with the `[]` wildcard which matches the range specified inside the `[]`. Use the `~/lab4/question3` directory to solve this question.
 
 **Problem 1:**<br>
-You want to list all the hidden python files that start with a lowercase letter. How would you do that?
+You want to list all the hidden python files that start with a lowercase letter. **How would you do that?**
 
 **Problem 2:**<br>
 You want to list all the files that start with an uppercase letter, are followed by a lowercase letter, and have a number before the file extension. How would you do that?
