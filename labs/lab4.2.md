@@ -3,6 +3,7 @@
 
 ![wildcards](../imgs/wildcards.png)
 
+Video here: https://youtu.be/tMzcAoITzR4
 
 > **Note:** Wildcards are all about pattern matching. They can be confusing but once you get a hold of them, you will never forget them. The table above gives you a summary of each wildcard. The goal of this lab is to give you enough practice for you to master wildcards in their basics form. Wildcards are very powerful because they can be combined to match pretty much any pattern that you can think of. 
 
