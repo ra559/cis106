@@ -93,7 +93,7 @@ Here you will find all the information for the course.
   * Shell Expansion - Slide 34
 
 ## Lecture 5
-* Handling Text Files
+* [Handling Text Files](https://rapurl.live/nsd)
   * Output redirection
   * Formatting output
 * Command Line Text Editors
