@@ -1,4 +1,4 @@
-# Lab 5 | Handling Text Files 
+# Lab 5.1 | Handling Text Files 
 
 The `/etc/passwd` file stores user’s account information. Each account data occupies a single line in a file and when a new account is created a new entry with the new user’s information is added. The `/etc/passwd` records contain several fields, 7 in total. These fields are described in the image below. In this lab, we are going to use the passwd file in combination with the commands for handling text files. The goal is to demonstrate how to use these commands successfully for administering a system. 
 
