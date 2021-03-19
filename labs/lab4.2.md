@@ -69,7 +69,7 @@ You want to list all the files that do not start with capital letters and do not
 
 **Take a screenshot of your terminal showing all the commands that you used to complete this question.**
 
-## Question 5 | Using brace expansion. 
+## Question 4 | Using brace expansion. 
 The curly braces are not a wildcard but they are equally useful. The curly braces allow you to generate arbitrary strings to use with commands. 
 
 **Problem 1:**<br>
