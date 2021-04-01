@@ -7,6 +7,8 @@ The `/etc/passwd` file stores user’s account information. Each account data oc
  ## Pre Work: 
  * Create a directory called `Lab5` and change your current working directory to `Lab5`. You will complete the entire lab from this directory. 
  * Before you start working on this lab, prepare your submission file and make an initial commit.
+ * For examples of commands go to: [Linux Commands](https://robertalberto.com/linuxcommands/home.html)
+ * For the presentation go [here](https://rapurl.live/nsd)
 
 ## Question 1 
 Cat, head and tail commands are used for displaying the content of a file.
