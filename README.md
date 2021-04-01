@@ -96,6 +96,7 @@ Here you will find all the information for the course.
 * [Handling Text Files](https://rapurl.live/nsd)
   * Output redirection
   * Formatting output
+  * [Bash Aliases](https://youtu.be/iB3_wwlfMEQ)
 * Command Line Text Editors
   * The Basics of Nano
   * The Basics of Vim

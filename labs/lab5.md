@@ -1,9 +1,13 @@
-# Lab 5.1 | Handling Text Files 
+# Lab 5 | Handling Text Files 
 
 The `/etc/passwd` file stores user’s account information. Each account data occupies a single line in a file and when a new account is created a new entry with the new user’s information is added. The `/etc/passwd` records contain several fields, 7 in total. These fields are described in the image below. In this lab, we are going to use the passwd file in combination with the commands for handling text files. The goal is to demonstrate how to use these commands successfully for administering a system. 
 
 ![etc/passwd](https://rapurl.live/j37)
  
+ ## Pre Work: 
+ * Create a directory called `Lab5` and change your current working directory to `Lab5`. You will complete the entire lab from this directory. 
+ * Before you start working on this lab, prepare your submission file and make an initial commit.
+
 ## Question 1 
 Cat, head and tail commands are used for displaying the content of a file.
 1. Display the content of the `/etc/passwd` file.
@@ -42,14 +46,32 @@ Grep is the holy grail of command line tools. It allows us to search for specifi
 
 ## Question 4
 
-The ip command is used to manage network interfaces. To display the current NICs configuration type: `ip addr` which is short for `ip address`. We are going to use the commands we learned to parse the output of the ip command.
+The ip command is used to manage network interfaces. To display the current NICs configuration, type: `ip ad` which is short for `ip address`. We are going to use the commands we learned to parse the output of the ip command.
 
 ![ip address cmd](../imgs/ipaddr.png)
 
-1. Run the `ip addr` command and display all the lines that match the string `inet`. How many lines did you get? 
-2. Run the `ip addr` command and display all the lines that match the string `inet6`. Display the output in reverse order.
-3. Run the `ip addr` command and display all the lines that match the string `inet` or `inet6` sort the output and save it to a file.
-4. Run the `ip addr` command and display only the 3rd line that matches the string `inet`.
-5. Run the `ip addr` command and display all the ipv4 addresses sorted.
+1. Run the `ip ad` command and display all the lines that match the string `inet`. How many lines did you get? 
+2. Run the `ip ad` command and display all the lines that match the string `inet6`. Display the output in reverse order.
+3. Run the `ip ad` command and display all the lines that match the string `inet` or `inet6` sort the output and save it to a file.
+4. Run the `ip ad` command and display only the 3rd line that matches the string `inet`.
+5. Run the `ip ad` command and display all the ipv4 addresses sorted.
+
+> Take a screenshot of **YOUR TERMINAL ONLY** showing all the commands that you used to complete this question
+
+## Question 5
+
+1. Run the following command and save the output to a markdown file: `echo "# Information about my pc"`. You can use any naming convention you want for the file as long as it is a markdown file.
+3. Run the following command and append the output to the markdown file you created earlier: `echo ## CPU Information`
+2. The `lscpu` command displays a lot of information about the CPU the computer has. Use the `lscpu`, `grep`, and the pipe (|) to extract, and append to the file you created earlier, the following information from the output of the `lscpu` command:
+   * Architecture
+   * Threads
+   * Cores
+   * Model name
+   * CPU Frequency
+   * Virtualiation technology supported
+3. Run the following command and append the output to the markdown file you created earlier: `echo ## RAM Information`
+4. The command `lshw -c memory` displays information about the RAM installed in your system. Extract and append to the file the following information:
+    * Memory size:
+5. Display the content of the file you created earlier showing all the data that has been appended so far.
 
 > Take a screenshot of **YOUR TERMINAL ONLY** showing all the commands that you used to complete this question
