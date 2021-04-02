@@ -97,12 +97,13 @@ Here you will find all the information for the course.
   * Output redirection
   * Formatting output
   * [Bash Aliases](https://youtu.be/iB3_wwlfMEQ)
-* Command Line Text Editors
-  * The Basics of Nano
-  * The Basics of Vim
+
 * [Review](https://youtu.be/lOsNLdm7OWY)
 
 ## Lecture 6
+* Command Line Text Editors
+  * The Basics of Nano
+  * The Basics of Vim
 * Managing data
 * File permissions
 * Managing processes
