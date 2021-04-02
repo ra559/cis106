@@ -100,6 +100,7 @@ Here you will find all the information for the course.
 * Command Line Text Editors
   * The Basics of Nano
   * The Basics of Vim
+* [Review](https://youtu.be/lOsNLdm7OWY)
 
 ## Lecture 6
 * Managing data
