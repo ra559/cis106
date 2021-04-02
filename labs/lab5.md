@@ -63,7 +63,7 @@ The ip command is used to manage network interfaces. To display the current NICs
 ## Question 5
 
 1. Run the following command and save the output to a markdown file: `echo "# Information about my pc"`. You can use any naming convention you want for the file as long as it is a markdown file.
-3. Run the following command and append the output to the markdown file you created earlier: `echo ## CPU Information`
+3. Run the following command and append the output to the markdown file you created earlier: `echo "## CPU Information"`
 2. The `lscpu` command displays a lot of information about the CPU the computer has. Use the `lscpu`, `grep`, and the pipe (|) to extract, and append to the file you created earlier, the following information from the output of the `lscpu` command:
    * Architecture
    * Threads
