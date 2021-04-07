@@ -1,6 +1,6 @@
 # Lab 6 | Using VIM
 
-> **NOTE:** You do not need to be a pro using VIM you do not plan to use it a a development environment. However, you do need 
+> **NOTE:** You do not need to be a pro using VIM if you do not plan to use it a a development environment. However, you do need 
 > to know the following things relatively well for your day to day work as a Linux User.
 > * Opening a file
 > * Saving a file and saving as another name
