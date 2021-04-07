@@ -103,7 +103,10 @@ Here you will find all the information for the course.
 ## Lecture 6
 * Command Line Text Editors
   * The Basics of Nano
-  * The Basics of Vim
+   * VIDEOS:
+      * [Nano Editor Fundamentals](https://www.youtube.com/watch?v=gyKiDczLIZ4) by [HackerSploit](https://www.youtube.com/channel/UC0ZTPkdxlAKf-V33tqXwi3Q)
+      * [Nano Text Editor Basics (pico) - How to Use Nano on Linux / Mac (Beginners Guide on Ubuntu 20.04)](https://www.youtube.com/watch?v=Jf0ZJZJ8jlI)
+  * [The Basics of Vim](https://rapurl.live/5mi)
 * Managing data
 * File permissions
 * Managing processes
