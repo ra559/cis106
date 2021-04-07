@@ -1,6 +1,16 @@
 # Lab 6 | Using VIM
 
-## Question 1
+> **NOTE:** You do not need to be a pro using VIM you do not plan to use it a a development environment. However, you do need 
+> to know the following things relatively well for your day to day work as a Linux User.
+> * Opening a file
+> * Saving a file and saving as another name
+> * Editing a file (working with vim multiple modes)
+> * Replacing text
+> * Vim search tools
+> Vim does a lot more than that, to a degree that a lot of Developers prefer to write code on VIM because its keyboard centric approach is a productivity enhancer. Once you learn VIM, you will hate every other text editor.~~~~
+
+
+## Question 
 Do all the practices in the [vim presentation](https://rapurl.live/w4n)
 
 ## Question 2
