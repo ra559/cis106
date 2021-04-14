@@ -107,7 +107,7 @@ Here you will find all the information for the course.
       * [Nano Editor Fundamentals](https://www.youtube.com/watch?v=gyKiDczLIZ4) by [HackerSploit](https://www.youtube.com/channel/UC0ZTPkdxlAKf-V33tqXwi3Q)
       * [Nano Text Editor Basics (pico) - How to Use Nano on Linux / Mac (Beginners Guide on Ubuntu 20.04)](https://www.youtube.com/watch?v=Jf0ZJZJ8jlI)
   * [The Basics of Vim](https://rapurl.live/5mi)
-* Managing data
+* [Managing data](https://docs.google.com/presentation/d/e/2PACX-1vSNDKSBCDak77Kyvee9ONij9ezZ82mCZsXVNMLLQbpD7tQj5KG7fygET45LwKqwx6YsDGlww5S9jarW/pub?start=false&loop=false&delayms=3000)
 * File permissions
 * Managing processes
 ---
