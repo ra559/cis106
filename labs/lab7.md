@@ -9,7 +9,10 @@
     * zip
 
 ## Question 1 | Tar Utility
-1. In the question1 directory, you will find 5 text files. Create an archive called `allfiles.tar` that includes all the files. Try to use a wildcard to be more efficient. 
+1. In the `question1` directory, you will find 5 text files. Create an archive called `allfiles.tar` that includes:
+   1. All text files
+   2. All imgs that have a number in their file names
+Try to use a wildcard to be more efficient. 
 2. List all the members of the archive.
 3. Create another text file with some text. Use the command lorem to generate the text and then output redirection to save it to a file. If the lorem command does not work, it means that you need to install it. The package name is: `libtext-lorem-perl`
 If the package is not available use the following command and redirect its output to a file: `curl http://metaphorpsum.com/sentences/5`
