@@ -9,7 +9,7 @@
     * zip
     * ffmpeg
   * The script will install all the necessary packages.
-> Make sure to do all the practices in the [Lecture](https://docs.google.com/presentation/d/e/2PACX-1vSNDKSBCDak77Kyvee9ONij9ezZ82mCZsXVNMLLQbpD7tQj5KG7fygET45LwKqwx6YsDGlww5S9jarW/pub?start=false&loop=false&delayms=3000) Presentation before doing this lab.
+> Make sure to do all the practices in the [Lecture](https://rapurl.live/46n) Presentation before doing this lab.
 
 ## Question 1 | Tar Utility
 1. In the `question1` directory, you will find a bunch of files. Create an archive called `allfiles.tar` that includes:
