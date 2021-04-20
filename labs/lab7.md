@@ -47,3 +47,4 @@ If the package is not available use the following command and redirect its outpu
 4. Create a rar archive using 7zip of all the files.
 5. Long list all the archives. Which one gave you the best compression ratio?
 > Take a screenshot of all the commands you used to complete this question
+
