@@ -9,6 +9,7 @@
     * zip
     * ffmpeg
   * The script will install all the necessary packages.
+[* Video here](https://youtu.be/xfjUif_kEMg)
 > Make sure to do all the practices in the [Lecture](https://rapurl.live/46n) Presentation before doing this lab.
 
 ## Question 1 | Tar Utility
