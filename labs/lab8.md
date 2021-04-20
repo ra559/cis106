@@ -1,10 +1,10 @@
 # Lab 11: File Permissions
 
-* For this lab, Download and run this script: https://robertalberto.com/cis106/lab11.sh 
-* Use: curl https://robertalberto.com/cis106/lab11.sh | bash
+* For this lab, Download and run this script: https://robertalberto.com/cis106/lab8.sh 
+* Use: curl https://robertalberto.com/cis106/lab8.sh | bash
 
 ## Question 1 | Use symbolic notation
-1. Long list all the files in directory1.
+1. Long list all the files in directory1. 
 2. Modify the files permissions such that:
 **Directory**      = Owner: rwx        Group: rw        Other: r <br>
 **Image file**     = Owner: rw         Group: r-x       Other: --- <br>
