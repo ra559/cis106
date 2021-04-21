@@ -1,7 +1,7 @@
 # Lab 11: File Permissions
 
 * For this lab, Download and run this script: https://robertalberto.com/cis106/lab8.sh 
-* Use: curl https://robertalberto.com/cis106/lab8.sh | bash
+* Use: `curl https://robertalberto.com/cis106/lab8.sh | bash`
 
 ## Question 1 | Use symbolic notation
 1. Long list all the files in directory1. 
