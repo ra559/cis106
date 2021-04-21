@@ -15,7 +15,7 @@
 | Text         |rwx    |rwx    |r--   |
  
 
-1. Long list all the files in directory1
+3. Long list all the files in directory1
 > Take a screenshot of all the commands that you used to complete this question
 
 ## Question 2 | Use numeric notation
@@ -29,7 +29,7 @@
 | Python       |rw-    |rw-    |---   |
 | Text         |rwx    |rwx    |r--   |
 
-1. Long list all the files in directory2
+3. Long list all the files in directory2
 > Take a screenshot of all the commands that you used to complete this question
 
 ## Question 3 | Use numeric notation
@@ -43,7 +43,7 @@
 | Python       |rwx    |r-x     |rw-  |
 | Text         |r-x    |rw-     |---  |
 
-1. Long list all the files in directory3
+3. Long list all the files in directory3
 > Take a screenshot of all the commands that you used to complete this question
 
 ## Question 4 | Use symbolic notation
@@ -57,5 +57,5 @@
 | Python       |-w-    |-x-    |r--   |
 | Text         |r-x    |r-w    |-wx   |
 
-1. Long list all the files in directory4
+3. Long list all the files in directory4
 > Take a screenshot of all the commands that you used to complete this question
