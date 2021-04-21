@@ -109,7 +109,7 @@ Here you will find all the information for the course.
   * [The Basics of Vim](https://rapurl.live/5mi)
 * [Managing data](https://docs.google.com/presentation/d/e/2PACX-1vSNDKSBCDak77Kyvee9ONij9ezZ82mCZsXVNMLLQbpD7tQj5KG7fygET45LwKqwx6YsDGlww5S9jarW/pub?start=false&loop=false&delayms=3000)
 * [File permissions](https://rapurl.live/wht)
-* Managing processes
+
 ---
 ## MIDTERM AT THIS POINT
 * Midterm covers lectures 2 to 6.
