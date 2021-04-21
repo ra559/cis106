@@ -59,3 +59,6 @@
 
 3. Long list all the files in directory4
 > Take a screenshot of all the commands that you used to complete this question
+
+## What will you submit?
+The URL of lab8.md with all the screenshots.
