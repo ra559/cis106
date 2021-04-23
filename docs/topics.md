@@ -16,7 +16,7 @@
 	- ~
 	- ../
 - How to save the output of a command to a file
-- How to apppend the ouput of a command to a file
+- How to append the output of a command to a file
 - How to use basic commands (mkdir, mv, cp, ls) to organize files in directories and subdirectories
 - How to use vim to add text to a file
 - How to use grep to search for strings inside a file
