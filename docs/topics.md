@@ -29,6 +29,6 @@
 - How to display the absolute path of a file
 - How to use the cut, head, and tail commands with the pipe to filter the ouput of a command
 - How to use wildcards to match specific file names: *,?,[],{}
-
+- How to manage data with tar and compression tools
 
 
