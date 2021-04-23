@@ -113,6 +113,7 @@ Here you will find all the information for the course.
 ---
 ## MIDTERM AT THIS POINT
 * Midterm covers lectures 2 to 6.
+  * [Topics to study](./docs/topics.md)
 * Midterm is performance based.
 * Midterm has 10 questions.
 * Each question is a different problem for you to solve
