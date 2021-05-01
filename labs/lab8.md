@@ -39,7 +39,7 @@
 
 | Type of file | Owner | Group | Other|
 |--------------|-------|-------|------|
-| Directory    |r-x    |rw-     |-x-  |
+| Directory    |r-x    |rw-     |--X  |
 | Image        |rwx    |rwx     |rwx  |
 | Python       |rwx    |r-x     |rw-  |
 | Text         |r-x    |rw-     |---  |
@@ -53,9 +53,9 @@
 
 | Type of file | Owner | Group | Other|
 |--------------|-------|-------|------|
-| Directory    |-x-    |-wx    |rw-   |
+| Directory    |--X    |-wx    |rw-   |
 | Image        |rwx    |r-x    |---   |
-| Python       |-w-    |-x-    |r--   |
+| Python       |-w-    |--X    |r--   |
 | Text         |r-x    |r-w    |-wx   |
 
 3. Long list all the files in directory4
