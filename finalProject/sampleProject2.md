@@ -1,9 +1,9 @@
 # Build a LAMP Stack
 ![LAMP STACK](../imgs/LAMP.jpg)
 
-## Table of content here
+## Table of Contents
 - [Build a LAMP Stack](#build-a-lamp-stack)
-  - [Table of content here](#table-of-content-here)
+  - [Table of Contents](#table-of-contents)
   - [Project Description](#project-description)
   - [Requirements](#requirements)
   - [Setting Up The Server Environment](#setting-up-the-server-environment)
