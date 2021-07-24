@@ -1,7 +1,7 @@
 # Welcome to CIS-106-Linux Fundamentals
 Here you will find all the information for the course.
 
-![logo](img/../imgs/Linux_Workshop_logo_COLOR_ScreenSize-01.png)
+![logo](img/../imgs/lwlogosmall.png)
 
 ## COURSE LEARNING OUTCOMES 
 * Demonstrate fluency in Linux terminology.
