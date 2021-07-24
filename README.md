@@ -24,7 +24,6 @@ Here you will find all the information for the course.
 * A Github account
 * A Text editor. We will be using [VS Code](https://code.visualstudio.com/) but you can use whatever you want
 
-
 # Resources
 
 * VIRTUAL MACHINE READY TO USE: [Download here](https://mega.nz/file/GVZRzaKR#AwSoUVgodyMLi08lu2sqCENRGoxfTGvbA4e8MS91oLU)
