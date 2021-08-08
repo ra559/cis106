@@ -55,7 +55,7 @@ Here you will find all the information for the course.
  
 # Presentations
 ## Lecture 0: Introduction to the course. 
-  1. [Lecture 0 Introduction to the course](http://bit.ly/39D3x1d)
+  1. [Lecture 0 Introduction to the course](https://rapurl.live/g4h)
   2. [How am I going to succeed in this class?](http://bit.ly/3pqo3bw)
   3. [What is Git and Github?](https://www.youtube.com/watch?v=wpISo9TNjfU)
      * We will not be using Git/Github for code but for our markdown files.

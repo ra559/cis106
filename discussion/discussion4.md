@@ -1,5 +1,5 @@
 # Discussion board 4: What is IoT?
-Linux is at the forefront the Internet Of Things.Watch the following videos about IoT to learn more and discuss its impact in our society. After you watch the videos on IoT, watch the videos on The Right To Repair and answer the questions.
+Linux is at the forefront the Internet Of Things. Watch the following videos about IoT to learn more and discuss its impact in our society. After you watch the videos on IoT, watch the videos on The Right To Repair and answer the questions.
 
 ## What is IoT (Internet of Things)?
    1. [What is IoT?](https://www.youtube.com/watch?v=6mBO2vqLv38)

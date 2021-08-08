@@ -1,11 +1,11 @@
 # Discussion 3: The Rise of Open Source
-Watch the documentary "The Rice of Open Source" and answer the following questions:
+Watch the documentary ["The Rice of Open Source"](https://www.youtube.com/watch?v=SpeDK1TPbew) and answer the following questions:
 1. Do you believe that Open-Source software is here to stay or is it just a fashion of the moment?
 2. What advantage does open source software have over proprietary software?
 3. Do you believe that Microsoft, as a for profit company, is right in embracing Open-Source software?
 4. As an individual, what can you do to help the Open-Source movement?
 
-**Due Date: 05/12/2020 @ 11:59 PM**
+**Due Date: End-Of-Semester @ 11:59 PM**
    
 ## RULES:
 
