@@ -35,6 +35,6 @@ Install VS Code and install the following extensions:
   * select the option that converts to HTML
 
 ## Submission
-In blackboard, submit the markdown file and the PDF file. Both files are required, if you are missing any of the 2 I will give you 50 points since that is half the work. THE HTML FILE IS NOT NEEDED.
+In blackboard, submit the PDF file.
 
 **Late submissions will lose 40 points!**
