@@ -2,6 +2,9 @@
 
 ## IMPORTANT - READ ME
 Lab video [here](https://youtu.be/bCW14r6YCuY)
+
+> Watch video for the ls command [here](https://youtu.be/xKjTcr4m9l8)
+
 * You have to complete labs 0 1 and 2 before attempting lab 3.
 * If you are using the Cloud environment (Apporto), Make sure that you have complete the Setup per this [video](https://youtu.be/w_nyTC-tuv8) before doing this lab. 
 * Software installation cheat sheet available [here](https://bit.ly/3djIsfy)
@@ -146,4 +149,5 @@ Another command that is also very useful is `tree`. This program allows you to l
 * Place all the screenshots and answers to your questions in a the lab3.md file. You can format the questions however you like to make it more readable.
 * Push the changes to Github 
 * and submit the URL of Lab3.md
+* Convert your markdown file to pdf and submit it with the URL
 

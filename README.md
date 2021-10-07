@@ -81,6 +81,7 @@ Here you will find all the information for the course.
 * [What is a Shell?](https://bit.ly/3jS8fNa)
 * [Managing Software](https://youtu.be/_PoTDzMfi0o)
 * [The Linux filesystem](https://bit.ly/3alPqPm)
+* [video of LS command](https://youtu.be/xKjTcr4m9l8)
 
 ## Lecture 4
 * [Managing files and directories](https://rapurl.live/jya)
