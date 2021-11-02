@@ -2,7 +2,7 @@
 * _Presentation [here](https://docs.google.com/presentation/d/e/2PACX-1vRXQhdRviYicst8RhPxAcgQmj8-8YCuNSSy4NjmCv1ekxfQuI3KvDmdfuAztj1hbDo6dXPsuF8RezsZ/pub?start=false&loop=false&delayms=3000&slide=id.p)
 * _Video [here]()
  
-## Question 1: Creatin directories.
+## Question 1: Creating directories.
 
 1. Start a terminal window. In your home directory, create a directory called movies. In the movies directory, create 5 directories called: action, romance, adventure, animated, and scifi. 
 2. From the root of the filesystem, using absolute path only, create a directory called 2020 in each of the movies categories directories. 
