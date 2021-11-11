@@ -123,19 +123,29 @@ Here you will find all the information for the course.
 ## Lecture 7
 * Managing users
 * Managing groups
+  * [Presentation](https://rapurl.live/8l6)
+
 ## Lecture 8
-* Monitoring a network
-* Working with files over a network
-* Secured shell communication
-## Lecture 9
 * Writing your first script
 * Working with variables
 * Working with functions
 * Flow control: if/else
+  * [Presentation](https://rapurl.live/c3l)
 
-## Lecture 10
+## Lecture 9
 * Flow control: Looping
 * Flow control: Case statements
 * Strings vs Numbers
 * Working with Arrays
+  * [Presentation](https://rapurl.live/c3l)
+
+## Lecture 11
+* Scheduling tasks
+  * [Presentation](https://rapurl.live/arf)
+
+## Lecture 12
+* Monitoring a network
+* Working with files over a network
+* Secured shell communication
+
 
