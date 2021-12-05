@@ -1,6 +1,7 @@
 # Lab 9 Shell scripting part 1
 
 * Video [here](https://youtu.be/aJCx-X42Mko)
+* Link to presentation: https://rapurl.live/4x7
 
 > **Special Note:** Try to do each script before you see the solution. This will allow you practice your critical thinking. If you complete the script in a way that gives you the same output as mine, submit your script instead of mine. Do not overthink it, if you feel like it is too much, simple continue with the video but try to understand the script before you continue with the next.
 
