@@ -1,0 +1,16 @@
+The History of Ubuntu
+As mentioned previously, Ubuntu is one of a number of Linux distributions. The source code that makes up the Ubuntu Linux distribution originates from another, much older Linux distribution known as Debian (so called because it was started by two people named Debra and Ian). Debian is still a widely respected operating system but came under criticism for infrequent updates and less than user friendly installation and maintenance (though these areas have shown improvement recently).
+
+A South African internet mogul (who made his fortune selling his company to VeriSign for around $500 million) decided it was time for a more user friendly Linux. He took the Debian distribution and worked to make it a more human friendly distribution which he called Ubuntu. He subsequently formed a company called Canonical Ltd to promote and provide support for Ubuntu Linux. In addition Shuttleworth has formed and funded (to the tune of $10 million) a foundation to guarantee the future of Ubuntu.
+
+The rest, as they say, is history. Ubuntu has since gone from strength to strength. Dell and other hardware vendors now ship computers pre-loaded with Ubuntu Linux and Ubuntu usually tops the chart at DistroWatch.com (a web site which tracks the popularity of the various Linux distributions).
+
+If you are new to Linux, or already use Linux and want to try a different Linux distro it is unlikely you will find a better option than Ubuntu Linux.
+
+Ubuntu (/ʊˈbʊntuː/ (About this soundlisten) uu-BUUN-too)[7] is a Linux distribution based on Debian and mostly composed of free and open-source software.[8][9][10] Ubuntu is officially released in three editions: Desktop,[11] Server,[12] and Core[13] for Internet of things devices[14] and robots.[15][16] All the editions can run on the computer alone, or in a virtual machine.[17] Ubuntu is a popular operating system for cloud computing, with support for OpenStack.[18] Ubuntu's default desktop has been GNOME, since version 17.10.[19]
+
+Ubuntu is released every six months, with long-term support (LTS) releases every two years.[7][20][21] As of 22 October 2020, the most recent long-term support release is 20.04 ("Focal Fossa"), which is supported until 2025 under public support and until 2030 as a paid option. The latest standard release is 20.10 ("Groovy Gorilla"), which is supported for nine months.
+
+Ubuntu is developed by Canonical,[22] and a community of other developers, under a meritocratic governance model.[7][23] Canonical provides security updates and support for each Ubuntu release, starting from the release date and until the release reaches its designated end-of-life (EOL) date.[7][24][25] Canonical generates revenue through the sale of premium services related to Ubuntu.[26][27]
+
+Ubuntu is named after the Nguni philosophy of ubuntu, which Canonical indicates means "humanity to others" with a connotation of "I am what I am because of who we all are".[7]

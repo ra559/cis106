@@ -1,0 +1,71 @@
+{
+    "numFound": 1,
+    "start": 0,
+    "docs": [
+        {
+            "cover_i": 8231990,
+            "has_fulltext": false,
+            "title": "The Subtle Art of Not Giving A FUCK",
+            "title_suggest": "The Subtle Art of Not Giving A FUCK",
+            "type": "work",
+            "ebook_count_i": 0,
+            "edition_count": 2,
+            "key": "/works/OL17590212W",
+            "last_modified_i": 1597563129,
+            "cover_edition_key": "OL26193423M",
+            "first_publish_year": 2016,
+            "author_name": [
+                "Mark Manson"
+            ],
+            "publish_year": [
+                2016
+            ],
+            "author_key": [
+                "OL2964000A"
+            ],
+            "seed": [
+                "/books/OL26193423M",
+                "/books/OL26986089M",
+                "/works/OL17590212W",
+                "/subjects/self-realization",
+                "/subjects/conduct_of_life",
+                "/authors/OL2964000A"
+            ],
+            "subject": [
+                "Self-realization",
+                "Conduct of life"
+            ],
+            "isbn": [
+                "0062457713",
+                "9780062457714"
+            ],
+            "edition_key": [
+                "OL26193423M",
+                "OL26986089M"
+            ],
+            "publisher": [
+                "Harper One",
+                "Mark Manson "
+            ],
+            "text": [
+                "OL26193423M",
+                "OL26986089M",
+                "0062457713",
+                "9780062457714",
+                "Mark Manson",
+                "OL2964000A",
+                "Self-realization",
+                "Conduct of life",
+                "A counterintuitive approach to living a better life",
+                "The Subtle Art of Not Giving A FUCK",
+                "/works/OL17590212W",
+                "Harper One",
+                "Mark Manson "
+            ],
+            "publish_date": [
+                "2016"
+            ]
+        }
+    ],
+    "num_found": 1
+}
