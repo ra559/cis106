@@ -43,7 +43,7 @@ The project requires the use of a LAMP Stack (Linux, Apache, Mysql, and PHP). I 
 ### Virtual Machine Specifications
 The virtual machine is built on HyperV in a Windows 10 Pro64 bit host. The host hardware specifications are:
 
-![vm specs](../finalProject/imgs/vmspecs.png)
+![vm specs](/assets/vmspecs.png)
 
 The Virtual machine specifications are:
 * RAM: 2GB
@@ -74,12 +74,12 @@ Ubuntu uses ufw (uncomplicated firewall) as the default firewall configuration t
 For this project, It is necessary to make sure that the firewall is working and that at least for now ssh connections are permitted. To accomplish this use the following 1 liner: `
 sudo ufw allow openssh; sudo ufw enable; sudo ufw status`
 
-![Firewall check](../finalProject/imgs/firewallcheck.png)
+![Firewall check](/assets/firewallcheck.png)
 
 #### Setting up SSH
 Before setting up SSH keys, it is important to make sure that a connection with only the username and password can be made. In Windows, you can use [Putty](https://bit.ly/32UtZl4) which is a free SSH and Telnet client, or If your Windows 10 host computer is updated to the latest version, you should be able to use OpenSSH in Powershell or the [Windows terminal.](https://bit.ly/39rB4L0) To connect to the virtual machine, all is needed is the IP address of the machine and making sure that the server has a network interface card in bridge mode. In Hyper-V, you need to [create a virtual switch](https://rapurl.live/p8w) and then assign the virtual switch to the NIC of the VM. In the virtual switch management dialog box, the new switch needs to be set to External Network, and Allow management of the OS to share the network adapter needs to be checked. 
 
-![Hyper V Virtual Switch](../finalProject/imgs/hperv-vswitch.png)
+![Hyper V Virtual Switch](/assets/hperv-vswitch.png)
 
 To obtain the IP address of the server using any of the following commands:
 * The hostname command will display all the IP addresses assigned to the host. `hostname -I`
@@ -105,9 +105,9 @@ Once you have copied the SSH key, connect to the server one more time so that yo
 1. `ssh your-username-in-the-server@ip-of-your-server`
 2. `cat id_rsa.pub >> .ssh/authorized_keys`
 
-![SSH Setup 1](../finalProject/imgs/sshcopyid.png)
+![SSH Setup 1](/assets/sshcopyid.png)
 
-![SSH Setup 2](../finalProject/imgs/sshcopyid2.png)
+![SSH Setup 2](/assets/sshcopyid2.png)
 
 Now you should be able to connect to the server without the need of a password.
 
@@ -128,7 +128,7 @@ In the command above the Systemctl program is used for managing Systemd which is
 
 To check if your Apache Web server is running, open a web browser and type your server’s IP address in the URL bar. If your server is running, you should see the page below. If your server is not running, you can use the Systemctl useful commands and Apache log files to find the root cause of the problem. Keep in mind that the server must be in the same network as the client machine from where you attempted to visit the server’s IP.
 
-![Apache works](../finalProject/imgs/apacheworks.png)
+![Apache works](/assets/apacheworks.png)
 
 #### Useful systemctl commands
 * To view active Systemd jobs:
@@ -155,13 +155,13 @@ Apache saves logs files in the directory `/var/log/apache2`. The apache2 directo
 Another useful tool when troubleshooting issues with logs is the program `Journalctl`. Journalctl is used for querying and displaying logs from journald, systemd’s logging service. Without any argument, journalctl returns the full contents of the journal, starting with the oldest entry collected. Journalctl is efficient in outputting logs in multiple formats, for example, the following command will show Apache logs formatted in JSON:
 `journalctl -u apache2.service -r -o json-pretty`
 
-![Journaltcl example](../finalProject/imgs/journalctl.png)
+![Journaltcl example](/assets/journalctl.png)
 
 ### MySQL 
 To install MySQL in Ubuntu use the following command: `sudo apt install mysql-server`. After installing mysql-server, it is vital to run mysql_secure_installation to remove some insecure default settings and lock down access to the database. 
 `sudo mysql_secure_installation`
 
-![mysql secure installation](../finalProject/imgs/mysqlseqinstall.png)
+![mysql secure installation](/assets/mysqlseqinstall.png)
  
 ### PHP
 PHP is an open-source general-purpose scripting language for the web. PHP was invented by Rasmus Lerdorf in 1994. In PHP, different from JavaScript, the code is executed on the web server and then the client receives the result of the execution in HTML.  To install PHP in Ubuntu Server run the following command:
@@ -170,12 +170,12 @@ PHP is an open-source general-purpose scripting language for the web. PHP was in
 
 To test if PHP has been installed and it is running correctly, we can build a simple PHP page that will show the information about your PHP installation. First, make a backup of your index.html page then create a file called index.php and in it, type `<?php phpinfo(); ?>`.
 
-![PHP Installed](../finalProject/imgs/php.png)
+![PHP Installed](/assets/php.png)
 
 ### PHPMyAdmin
 Since PHP is a server-side programming language, it is useful when dealing with databases. However, managing databases via the command line can easily become a cumbersome chore. PHPMyAdmin is a web-based client that allows developers to manage databases with a simple to use interface.  You can use phpMyAdmin to perform most administration tasks, such as creating a database, running queries, and adding user accounts. Before installing PHPMyAdmin, log in to your database, and check the password validation policy. The PHPMyAdmin installer will ask you for a password that matches the validation rules. Here is an example of how it looks:
 
-![phpmyadmin installed](../finalProject/imgs/phpmyadmininstalled.png)
+![phpmyadmin installed](/assets/phpmyadmininstalled.png)
 
 To install PHPMyAdmin use the following command: `sudo apt install phpmyadmin php-mbstring`
 
@@ -195,7 +195,7 @@ FLUSH PRIVILEGES;`
 
 To test PHPMyAdmin, go to your web browser and type the username and password you created:
 
-![phpmyadmin login page](../finalProject/imgs/phpmyadminloginpage.png)
+![phpmyadmin login page](/assets/phpmyadminloginpage.png)
 
 
 
@@ -204,13 +204,13 @@ To test PHPMyAdmin, go to your web browser and type the username and password yo
 Once the system is configured and all the software is installed. I proceeded to write the base of the code. The first part is to write a basic HTML form where the user can enter the Glucose number and select the time and day. The HTML is then connected to a PHP script that sends the imputed data into the database. Once the data is in the database, the script runs another query to show all the values that have been entered so far. 
 You can download a copy of the source code here: https://robertalberto.com/it640.tar  
 
-![HTML Part](../finalProject/imgs/htmlcode.png)
+![HTML Part](/assets/htmlcode.png)
 
-![CSS Part](../finalProject/imgs/css.png)
+![CSS Part](/assets/css.png)
 
-![PHP Part](../finalProject/imgs/phpcode.png)
+![PHP Part](/assets/phpcode.png)
 
-![Code Demonstration](../finalProject/imgs/codedemonstration.png)
+![Code Demonstration](/assets/codedemonstration.png)
 
 
 ## Difficulties Encountered 
