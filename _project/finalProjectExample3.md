@@ -4,7 +4,7 @@ title: "Final Project Example 3"
 ---
 
 # Build a LAMP Stack
-![LAMP STACK](../imgs/LAMP.jpg)
+![LAMP STACK](/assets/LAMP.jpg)
 
 ## Table of Contents
 - [Build a LAMP Stack](#build-a-lamp-stack)
