@@ -1,0 +1,97 @@
+I"«<h1 id="ubuntu-2004-virtual-machine-setup">Ubuntu 20.04 Virtual Machine Setup</h1>
+
+<h2 id="virtual-machine-specifications">Virtual Machine Specifications</h2>
+<p>Make sure to install virtualbox in your host computer. For Windows follow this <a href="https://www.youtube.com/watch?v=2lGmCwpFYi8">video</a>. For macOS follow this <a href="https://www.youtube.com/watch?v=fyx53lJyAoc">video.</a> Once you have installed VirtualBox, create a virtual machine that meets these specifications:</p>
+<ul>
+  <li>OS: Ubuntu 20.04 64 Bits <a href="https://ubuntu.com/download/desktop">ISO URL</a></li>
+  <li>HDD: 50 GB</li>
+  <li>RAM: 2GB</li>
+  <li>Video: 64 MB or Higher</li>
+  <li>Audio Controller: Disabled (audio wonâ€™t be needed)</li>
+  <li>CPU: 2 Cores</li>
+  <li>Add this to description:
+    <ul>
+      <li><strong>Hostname:</strong> cis106vm</li>
+      <li><strong>User:</strong> student</li>
+      <li><strong>Password:</strong> pccc</li>
+    </ul>
+  </li>
+  <li>Shared Clipboard: Enabled - Bidirectional</li>
+</ul>
+
+<p><img src="../imgs/createVM.gif" alt="Create VM" /></p>
+
+<h2 id="during-installation-settings">During Installation Settings</h2>
+<p>Once you have created the virtual machine, turn it on and start the installation process. During the installation, make sure that you follow these specifications:</p>
+<ul>
+  <li>Keyboard layout: English US</li>
+  <li>Installation type: Normal with third party software, Erase disk</li>
+  <li>Timezone: NY</li>
+  <li>User Details
+    <ul>
+      <li>Name: Student</li>
+      <li>Hostname: cis106vm</li>
+      <li>Username: Student</li>
+      <li>Password: pccc</li>
+      <li>Require login (Important)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="../imgs/installation.gif" alt="Installation" /></p>
+
+<h2 id="post-installation-settings">Post Installation Settings</h2>
+<p>Once the operating system has been installed, make sure to take a snapshot of your machine. This is a good idea because if something goes wrong, you can revert back to the virtual machine state. Think of snapshots as a way of traveling back in time!</p>
+
+<ul>
+  <li>Update and upgrade</li>
+  <li>Remove unnecessary software</li>
+  <li>Essential software install</li>
+  <li>Disable animations</li>
+  <li>Change Default File Manager: Nemo</li>
+  <li>Change Default screenshot tool with flameshot</li>
+  <li>Enable Dark Theme</li>
+</ul>
+
+<p>You can do all of the above with a single command.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">sudo apt install curl -y; curl https://raw.githubusercontent.com/ra559/cis106/main/guides/oneliner.sh | bash</code></li>
+</ul>
+
+<p>Install restricted extras, which is a package that contains other essential software that is normally not included by default because of copyright issues, being closed source or any other controversial reason. For instance, Microsoft core fonts are part of the restricted extras.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y</code></li>
+</ul>
+
+<h2 id="install-guest-additions">Install Guest Additions</h2>
+<p>This step is for VirtualBox only. Skip if using any other hypervisor. For instance, in VMware Workstation Player, these are installed via the command line without the need of a virtual disk. Guest Additions are a collection of software that gives the virtual machine more functionality and better performance. For instance, you having the Guest Additions installed allows you to use the full resolution of your monitor and to share the clipboard between your host and the guest OS.</p>
+
+<p><img src="../imgs/install%20guest%20additions.gif" alt="Guest additions" /></p>
+
+<h2 id="change-desktop-environment">Change Desktop Environment</h2>
+<p>The default desktop environment in Ubuntu 20.04 is Gnome 3. However, Gnome 3 is a heavy desktop environment not recommended for a low end machine with the specifications such as the one our virtual machine has. This is the reason why we will be using Gnome Classic which is a fork of the old Gnome 2 Desktop environment. Gnome Classic consumes considerably less system resources while remaining easy to use and functional enough.</p>
+
+<ul>
+  <li>Replace GDM with Lightdm: <code class="language-plaintext highlighter-rouge">sudo apt install lightdm -y</code></li>
+  <li>Set default Desktop Environment to Gnome Flashback</li>
+</ul>
+
+<p><img src="../imgs/setGnomeClassic.gif" alt="Gnome Classic" /></p>
+
+<h3 id="vs-code-setup">VS Code setup</h3>
+<p>VS Code is the text editor that we will use through out the semester to write our notes, labs, homeworks, and final project documentation. To make VS Code more functional, we will install a series of extensions.</p>
+<ol>
+  <li>Install VS Code Extensions:
+    <ol>
+      <li>Live Server</li>
+      <li>Markdown All in one</li>
+      <li>Markdown Preview Enhanced</li>
+      <li>Markdown PDF</li>
+      <li>Markdown TOC</li>
+      <li>PDF Preview</li>
+      <li>Markdown Converter</li>
+      <li>Code Spell Checker</li>
+    </ol>
+  </li>
+</ol>
+:ET

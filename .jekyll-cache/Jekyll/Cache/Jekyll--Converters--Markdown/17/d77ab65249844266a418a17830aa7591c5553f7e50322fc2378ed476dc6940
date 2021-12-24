@@ -1,0 +1,37 @@
+I"™<h1 id="how-to-setup-git-and-github-in-ubuntu-2004">How to Setup Git and Github in Ubuntu 20.04</h1>
+
+<h2 id="assumptions">Assumptions:</h2>
+<p>I assume the following:</p>
+<ul>
+  <li>You have a computer running Ubuntu and VS Code is installed in it.</li>
+  <li>You have a basic understanding of the Linux Command Line and your Terminal Emulator</li>
+  <li>You have a Github Account</li>
+</ul>
+
+<h1 id="install-and-setup-git">Install and setup git</h1>
+
+<p>Install command: <code class="language-plaintext highlighter-rouge">sudo apt install git -y </code></p>
+
+<p><strong>Set up Git</strong></p>
+<ol>
+  <li>Set your username:  <code class="language-plaintext highlighter-rouge">git config --global user.name 'your username here'</code></li>
+  <li>Set your email address: <code class="language-plaintext highlighter-rouge">git config --global user.email 'your email here'</code></li>
+  <li>Set credential caching (so you donâ€™t have to type your password all the time):
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   git config --global credential.helper cache   
+   git config --global credential.helper 'cache --timeout=time-here-in-seconds'
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Here is a little cheat cheat:</p>
+<ul>
+  <li>24 hours in seconds: <strong>86400</strong></li>
+  <li>48 hours in seconds: <strong>172800</strong></li>
+  <li>72 hours in seconds: <strong>259200</strong></li>
+  <li>1 week in seconds: <strong>604800</strong></li>
+  <li>2 weeks in seconds: <strong>1209600</strong></li>
+  <li>1 month in seconds: <strong>2419200</strong></li>
+  <li>1 year in seconds: <strong>31557600</strong></li>
+</ul>
+
+:ET

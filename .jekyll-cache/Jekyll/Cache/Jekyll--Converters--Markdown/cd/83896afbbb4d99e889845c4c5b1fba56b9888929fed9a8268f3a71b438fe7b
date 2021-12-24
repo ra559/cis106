@@ -1,0 +1,54 @@
+I"<h1 id="how-to-create-a-website-launcher-in-ubuntu-2004">How to create a website launcher in Ubuntu 20.04</h1>
+
+<h2 id="problem-description">Problem description</h2>
+<p>I want to launch Google Slides, Google Docs, and Google Sheets from the Gnome Menu.</p>
+
+<h2 id="solution">Solution</h2>
+<ol>
+  <li>Create a file with the name of the website you want to launch in the directory: <code class="language-plaintext highlighter-rouge">/usr/share/applications/</code> with the <code class="language-plaintext highlighter-rouge">.desktop</code> extension
+    <ol>
+      <li>In my case I will create 3 files: <code class="language-plaintext highlighter-rouge">Slides, Docs, Sheets</code></li>
+      <li>Use this command: <code class="language-plaintext highlighter-rouge">sudo touch /usr/share/applications/{Slides,Docs,Sheets}.desktop</code></li>
+    </ol>
+  </li>
+  <li>Inside each file, place the following lines of text:
+    <h3 id="in-slidesdesktop">In Slides.desktop</h3>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Desktop Entry]
+Type=Application 
+Terminal=false
+Exec=/snap/bin/chromium 'https://docs.google.com/presentation/u/0/'
+Name=Slides
+Comment=Launcher for Google Slides
+Icon=/usr/share/icons/.customIcons/googleslides.png
+</code></pre></div>    </div>
+    <h3 id="in-docsdesktop">In Docs.desktop</h3>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Desktop Entry]
+Type=Application 
+Terminal=false
+Exec=/snap/bin/chromium 'https://docs.google.com/document/u/0/'
+Name=Docs
+Comment=Launcher for Google Docs
+Icon=/usr/share/icons/.customIcons/googledocs.png
+</code></pre></div>    </div>
+    <h3 id="in-sheetsdesktop">In Sheets.desktop</h3>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Desktop Entry]
+Type=Application 
+Terminal=false
+Exec=/snap/bin/chromium 'https://docs.google.com/spreadsheets/u/0/'
+Name=Sheets
+Comment=Launcher for Google Docs
+Icon=/usr/share/icons/.customIcons/googlesheets.png
+</code></pre></div>    </div>
+    <blockquote>
+      <p><strong>Notes:</strong>
+<code class="language-plaintext highlighter-rouge">Exec</code> is the command that will be launched when you click on the launcher. You need to use absolute path to call the commands. In my case, I have Chromium installed as snap package, therefore I will use the following command to run Chromium and open the designated website: <code class="language-plaintext highlighter-rouge">/snap/bin/chromium 'https://docs.google.com/presentation/u/0/'</code> if you want to know the absolute path of your web browser, use the <code class="language-plaintext highlighter-rouge">whereis</code> command followed by the web browser to see its full path.
+<code class="language-plaintext highlighter-rouge">Icon</code> represents the absolute path of the icon file/img used by the launcher. I downloaded the icon of each file and placed it in a directory inside <code class="language-plaintext highlighter-rouge">/usr/share/icons</code></p>
+    </blockquote>
+  </li>
+  <li>Make the files executable.
+    <ol>
+      <li>In my case:  <code class="language-plaintext highlighter-rouge">sudo chmod u+x /usr/share/applications/{Slides,Docs,Sheets}.desktop</code></li>
+    </ol>
+  </li>
+</ol>
+:ET

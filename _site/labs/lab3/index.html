@@ -1,4 +1,29 @@
-<!DOCTYPE html> <html lang="en-US"> <head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=Edge"> <title>Lab 3 - Installing software and navigating the file system - Linux Fundamentals</title> <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> <link rel="stylesheet" href="/assets/css/just-the-docs-default.css"> <script type="text/javascript" src="/assets/js/vendor/lunr.min.js"></script> <script type="text/javascript" src="/assets/js/just-the-docs.js"></script> <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Begin Jekyll SEO tag v2.7.1 --> <title>Lab 3 - Installing software and navigating the file system | Linux Fundamentals</title> <meta name="generator" content="Jekyll v4.2.1" /> <meta property="og:title" content="Lab 3 - Installing software and navigating the file system" /> <meta property="og:locale" content="en_US" /> <meta name="description" content="IMPORTANT - READ ME Lab video here" /> <meta property="og:description" content="IMPORTANT - READ ME Lab video here" /> <link rel="canonical" href="http://localhost:4000/labs/lab3/" /> <meta property="og:url" content="http://localhost:4000/labs/lab3/" /> <meta property="og:site_name" content="Linux Fundamentals" /> <meta property="og:type" content="article" /> <meta property="article:published_time" content="2021-12-23T01:31:53-05:00" /> <meta name="twitter:card" content="summary" /> <meta property="twitter:title" content="Lab 3 - Installing software and navigating the file system" /> <script type="application/ld+json"> {"@type":"BlogPosting","url":"http://localhost:4000/labs/lab3/","headline":"Lab 3 - Installing software and navigating the file system","dateModified":"2021-12-23T01:31:53-05:00","datePublished":"2021-12-23T01:31:53-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/labs/lab3/"},"description":"IMPORTANT - READ ME Lab video here","@context":"https://schema.org"}</script> <!-- End Jekyll SEO tag --> </head> <body> <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"> <symbol id="svg-link" viewBox="0 0 24 24"> <title>Link</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"> <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path> </svg> </symbol> <symbol id="svg-search" viewBox="0 0 24 24"> <title>Search</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"> <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line> </svg> </symbol> <symbol id="svg-menu" viewBox="0 0 24 24"> <title>Menu</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"> <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line> </svg> </symbol> <symbol id="svg-arrow-right" viewBox="0 0 24 24"> <title>Expand</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"> <polyline points="9 18 15 12 9 6"></polyline> </svg> </symbol> <symbol id="svg-doc" viewBox="0 0 24 24"> <title>Document</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"> <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline> </svg> </symbol> </svg> <div class="side-bar"> <div class="site-header"> <a href="http://localhost:4000/" class="site-title lh-tight"> Linux Fundamentals </a> <a href="#" id="menu-button" class="site-button"> <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg> </a> </div> <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav"> <div class="nav-category">Documentation</div> <ul class="nav-list"><li class="nav-list-item"><a href="http://localhost:4000/docs/finaProject/" class="nav-list-link">Final Project Description</a></li><li class="nav-list-item"><a href="http://localhost:4000/docs/WeekLectureSchedule/" class="nav-list-link">Weekly Lecture Schedule</a></li></ul> <div class="nav-category">Modules</div> <ul class="nav-list"><li class="nav-list-item"><a href="http://localhost:4000/modules/module1/" class="nav-list-link">Module 1</a></li><li class="nav-list-item"><a href="http://localhost:4000/modules/module2/" class="nav-list-link">Module 2</a></li><li class="nav-list-item"><a href="http://localhost:4000/modules/module3/" class="nav-list-link">Module 3</a></li><li class="nav-list-item"><a href="http://localhost:4000/modules/module4/" class="nav-list-link">Module 4</a></li></ul> <div class="nav-category">Guides</div> <ul class="nav-list"><li class="nav-list-item"><a href="http://localhost:4000/guides/create-a-website-laucher/" class="nav-list-link">Create a website launcher</a></li><li class="nav-list-item"><a href="http://localhost:4000/guides/Ubuntu%20Github%20Setup/" class="nav-list-link">How to Setup Git and Github in Ubuntu 20.04</a></li><li class="nav-list-item"><a href="http://localhost:4000/guides/pi-ubuntu-gnome3/" class="nav-list-link">Raspberry Pi Ubuntu 20.10 Setup Gnome 3 Edition</a></li><li class="nav-list-item"><a href="http://localhost:4000/guides/pi-ubuntu-gnome-classic/" class="nav-list-link">Raspberry Pi Ubuntu 20.10 Setup Gnome Classic Edition</a></li><li class="nav-list-item"><a href="http://localhost:4000/guides/Ubuntu-vm-setup/" class="nav-list-link">Ubuntu 20.04 Virtual Machine Setup</a></li><li class="nav-list-item"><a href="http://localhost:4000/guides/Cloud-Ubuntu-Setup-CIS-106/" class="nav-list-link">Ubuntu Setup Cloud Machine</a></li></ul> <div class="nav-category">Discussions</div> <ul class="nav-list"></ul> <div class="nav-category">Labs</div> <ul class="nav-list"><li class="nav-list-item"><a href="http://localhost:4000/labs/lab0/" class="nav-list-link">Lab 0 - Learning Markdown</a></li><li class="nav-list-item"><a href="http://localhost:4000/labs/lab1/" class="nav-list-link">Lab 1 - Exploring Linux Distributions</a></li><li class="nav-list-item"><a href="http://localhost:4000/labs/lab2/" class="nav-list-link">Lab 2 - Installing Ubuntu 20.04 in VirtualBox.</a></li><li class="nav-list-item"><a href="http://localhost:4000/labs/lab2.1/" class="nav-list-link">Lab 2.1 - Performing Basic Tasks In Ubuntu 20.04</a></li><li class="nav-list-item active"><a href="http://localhost:4000/labs/lab3/" class="nav-list-link active">Lab 3 - Installing software and navigating the file system</a></li><li class="nav-list-item"><a href="http://localhost:4000/labs/lab4.3/" class="nav-list-link">Lab 4</a></li><li class="nav-list-item"><a href="http://localhost:4000/labs/lab5/" class="nav-list-link">Lab 5</a></li><li class="nav-list-item"><a href="http://localhost:4000/labs/lab6/" class="nav-list-link">Lab 6</a></li><li class="nav-list-item"><a href="http://localhost:4000/labs/lab7/" class="nav-list-link">Lab 7</a></li><li class="nav-list-item"><a href="http://localhost:4000/labs/lab8/" class="nav-list-link">Lab 8</a></li><li class="nav-list-item"><a href="http://localhost:4000/labs/lab9/" class="nav-list-link">Lab 9</a></li></ul> <div class="nav-category">Final Project</div> <ul class="nav-list"></ul> <div class="nav-category">Homework</div> <ul class="nav-list"><li class="nav-list-item"><a href="http://localhost:4000/homework:/homework0" class="nav-list-link">Homework 0</a></li><li class="nav-list-item"><a href="http://localhost:4000/homework:/homework1" class="nav-list-link">Homework 1</a></li><li class="nav-list-item"><a href="http://localhost:4000/homework:/homework2" class="nav-list-link">Homework 2</a></li><li class="nav-list-item"><a href="http://localhost:4000/homework:/homework3" class="nav-list-link">Homework 3</a></li><li class="nav-list-item"><a href="http://localhost:4000/homework:/homework4" class="nav-list-link">Homework 4</a></li><li class="nav-list-item"><a href="http://localhost:4000/homework:/homework5" class="nav-list-link">Homework 5</a></li><li class="nav-list-item"><a href="http://localhost:4000/homework:/homework6" class="nav-list-link">Homework 6</a></li><li class="nav-list-item"><a href="http://localhost:4000/homework:/homework7" class="nav-list-link">Homework 7</a></li><li class="nav-list-item"><a href="http://localhost:4000/homework:/homework8" class="nav-list-link">Homework 8</a></li><li class="nav-list-item"><a href="http://localhost:4000/homework:/homework9" class="nav-list-link">Homework 9</a></li></ul> </nav> <footer class="site-footer"> This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll. </footer> </div> <div class="main" id="top"> <div id="main-header" class="main-header"> <div class="search"> <div class="search-input-wrap"> <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Linux Fundamentals" aria-label="Search Linux Fundamentals" autocomplete="off"> <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label> </div> <div id="search-results" class="search-results"></div> </div> </div> <div id="main-content-wrap" class="main-content-wrap"> <div id="main-content" class="main-content" role="main"> <h2 id="important---read-me"> <a href="#important---read-me" class="anchor-heading" aria-labelledby="important---read-me"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> IMPORTANT - READ ME </h2> <p>Lab video <a href="https://youtu.be/bCW14r6YCuY">here</a></p> <blockquote> <p>Watch video for the ls command <a href="https://youtu.be/xKjTcr4m9l8">here</a></p> </blockquote> <ul> <li>You have to complete labs 0 1 and 2 before attempting lab 3.</li> <li>If you are using the Cloud environment (Apporto), Make sure that you have complete the Setup per this <a href="https://youtu.be/w_nyTC-tuv8">video</a> before doing this lab.</li> <li>Software installation cheat sheet available <a href="https://bit.ly/3djIsfy">here</a></li> <li>Presentation available <a href="https://youtu.be/_PoTDzMfi0o">here</a></li> <li>Navigating the filesystem cheat sheet available <a href="https://rebrand.ly/3bdn1">here</a></li> <li>Presentation available <a href="https://bit.ly/3alPqPm">here</a></li> <li>Amazing video explaining the linux file system <a href="https://www.youtube.com/watch?v=HbgzrKJvDRw">here</a></li> </ul> <h2 id="environment-setup-pre-work"> <a href="#environment-setup-pre-work" class="anchor-heading" aria-labelledby="environment-setup-pre-work"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Environment setup pre-work </h2> <p>Before you start working on this lab, do the following:</p> <ul> <li>In Ubuntu, Open VS Code and open your CIS-106 folder where you have all your files for this class.</li> <li>Inside the CIS106 repository (the folder in VS Code), create a file called <code class="language-plaintext highlighter-rouge">lab3.md</code> inside the labs folder. This is the file where you will put the answer to questions.</li> <li>Add the following text to the lab3.md file:</li> </ul> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Lab 3 | Installing software and navigating the file system | Answers
+<h2 id="important---read-me">IMPORTANT - READ ME</h2>
+<p>Lab video <a href="https://youtu.be/bCW14r6YCuY">here</a></p>
+
+<blockquote>
+  <p>Watch video for the ls command <a href="https://youtu.be/xKjTcr4m9l8">here</a></p>
+</blockquote>
+
+<ul>
+  <li>You have to complete labs 0 1 and 2 before attempting lab 3.</li>
+  <li>If you are using the Cloud environment (Apporto), Make sure that you have complete the Setup per this <a href="https://youtu.be/w_nyTC-tuv8">video</a> before doing this lab.</li>
+  <li>Software installation cheat sheet available <a href="https://bit.ly/3djIsfy">here</a></li>
+  <li>Presentation available <a href="https://youtu.be/_PoTDzMfi0o">here</a></li>
+  <li>Navigating the filesystem cheat sheet available <a href="https://rebrand.ly/3bdn1">here</a></li>
+  <li>Presentation available <a href="https://bit.ly/3alPqPm">here</a></li>
+  <li>Amazing video explaining the linux file system <a href="https://www.youtube.com/watch?v=HbgzrKJvDRw">here</a></li>
+</ul>
+
+<h2 id="environment-setup-pre-work">Environment setup pre-work</h2>
+<p>Before you start working on this lab, do the following:</p>
+<ul>
+  <li>In Ubuntu, Open VS Code and open your CIS-106 folder where you have all your files for this class.</li>
+  <li>Inside the CIS106 repository (the folder in VS Code), create a file called <code class="language-plaintext highlighter-rouge">lab3.md</code> inside the labs folder. This is the file where you will put the answer to questions.</li>
+  <li>Add the following text to the lab3.md file:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Lab 3 | Installing software and navigating the file system | Answers
 Assignment description [here](https://raw.githubusercontent.com/ra559/cis106/main/labs/lab3.md)
 
 ## Question 1
@@ -16,8 +41,160 @@ Assignment description [here](https://raw.githubusercontent.com/ra559/cis106/mai
 ## Question 4
 
 ## Question 5
-</code></pre></div></div> <ul> <li>Commit and push your changes to the repository using the following commands:</li> </ul> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull
+</code></pre></div></div>
+
+<ul>
+  <li>Commit and push your changes to the repository using the following commands:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull
 git add .
 git commit -m "Task: started work on lab3"
 git push
-</code></pre></div></div> <p><img src="../imgs/lab3-prework.gif" alt="Pre work" /></p> <h2 id="question-1--installing-applications"> <a href="#question-1--installing-applications" class="anchor-heading" aria-labelledby="question-1--installing-applications"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Question 1 | Installing applications </h2> <p>Using the command line, look for software packages that match the following search criteria: <code class="language-plaintext highlighter-rouge">theme</code>. Read the output of your search and find a GTK Theme (style theme, appearance) and an icon theme as well. Install the icon and gtk theme and then change your system’s GTK and icon theme.</p> <p><img src="../imgs/GnomeTweaks.gif" alt="Gnome Tweaks" /></p> <ol> <li>Which command did you use to search for the themes and to install them?</li> </ol> <p>Use the command line to search for an alternative web browser (you already have chromium and firefox so look for something else). Install the alternative web browser.</p> <ol> <li> <p>Which commands did you use to find and install the web browser?</p> </li> <li> <p>Use the command line to find a 3D or 2D racing game. Answer the following questions about the game:</p> <ol> <li><strong>What is the name of the package?</strong></li> <li><strong>What dependencies are needed in order to install the package? (you can either take a screenshot of the terminal or copy and paste from the terminal)</strong></li> <li><strong>How much disk space will the package utilize after installation?</strong></li> </ol> </li> </ol> <h2 id="question-2--the-pwd-and-cd-command"> <a href="#question-2--the-pwd-and-cd-command" class="anchor-heading" aria-labelledby="question-2--the-pwd-and-cd-command"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Question 2 | The pwd and cd command </h2> <ul> <li><strong>pwd</strong>: Print the full filename of the current working directory.</li> <li><strong>cd</strong>: Change the shell working directory.</li> </ul> <h3 id="using-pwd-and-cd-with-absolute-path-remember-to-use-the-bash-autocompletion-feature"> <a href="#using-pwd-and-cd-with-absolute-path-remember-to-use-the-bash-autocompletion-feature" class="anchor-heading" aria-labelledby="using-pwd-and-cd-with-absolute-path-remember-to-use-the-bash-autocompletion-feature"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Using pwd and cd with absolute path (remember to use the bash autocompletion feature) </h3> <ol> <li>Start a terminal. What is your present working directory?</li> <li>Change your present working directory to <code class="language-plaintext highlighter-rouge">/usr/share/themes</code></li> <li>What is your present working directory?</li> <li>Change your present working directory to the root of the filesystem</li> <li>Change your present working directory to <code class="language-plaintext highlighter-rouge">/etc/firefox/pref</code> <blockquote> <p><strong>Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.</strong></p> </blockquote> </li> </ol> <h3 id="using-pwd-and-cd-with-a-relative-path-remember-to-use-the-bash-autocompletion-feature"> <a href="#using-pwd-and-cd-with-a-relative-path-remember-to-use-the-bash-autocompletion-feature" class="anchor-heading" aria-labelledby="using-pwd-and-cd-with-a-relative-path-remember-to-use-the-bash-autocompletion-feature"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Using pwd and cd with a relative path (remember to use the bash autocompletion feature) </h3> <ol> <li>Clear your terminal window. Change the working directory to <em>YOUR</em> home directory.</li> <li>Change the working directory to the Downloads directory.</li> <li>Go back 2 directories.</li> <li>Where are you now?.</li> <li>Change the working directory to the Documents directory.</li> </ol> <blockquote> <p><strong>Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 6-10.</strong></p> </blockquote> <h2 id="question-3--the-ls-command"> <a href="#question-3--the-ls-command" class="anchor-heading" aria-labelledby="question-3--the-ls-command"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Question 3 | The ls command </h2> <ul> <li>For this question we are going to use relative path only.</li> <li>Clear your terminal.</li> <li>Download 3 files from the internet (pictures, audio, document, or anything else).</li> <li>Make sure that the files you downloaded are stored in your Downloads directory.</li> <li>Mare sure that your working directory is your home directory.</li> </ul> <ol> <li>List all the files in your Downloads directory.</li> <li>List all the files in your Downloads directory including hidden files.</li> <li>Long list all the files in your Downloads directory including hidden files.</li> <li>Long list all the files in your Downloads directory including hidden files and human readable file sizes.</li> <li>Long list all the files in your Downloads directory excluding hidden files, file owner and group, and including human readable file sizes.</li> </ol> <blockquote> <p><strong>Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.</strong></p> </blockquote> <h2 id="question-4--the-tree-command"> <a href="#question-4--the-tree-command" class="anchor-heading" aria-labelledby="question-4--the-tree-command"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Question 4 | The tree command </h2> <ul> <li>For this question we are going to use Absolute path only.</li> <li>Clear your terminal screen. <ol> <li>List all the files inside the <code class="language-plaintext highlighter-rouge">Downloads</code> directory.</li> <li>List all the files inside the <code class="language-plaintext highlighter-rouge">Downloads</code> directory showing the permissions(protections), file owner, group owner, and human readable file size.</li> <li>List all the files inside the <code class="language-plaintext highlighter-rouge">Downloads</code> directory showing the date of last modified and sorted by modification time.</li> <li>List all the files inside the <code class="language-plaintext highlighter-rouge">Downloads</code> directory in HTML format</li> <li>List all the files inside the <code class="language-plaintext highlighter-rouge">Downloads</code> directory in HTML format and save it to a file.</li> </ol> </li> </ul> <blockquote> <p><strong>Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.</strong></p> </blockquote> <h2 id="question-5--bringing-it-all-together"> <a href="#question-5--bringing-it-all-together" class="anchor-heading" aria-labelledby="question-5--bringing-it-all-together"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Question 5 | Bringing it all together </h2> <p>Utilities like <code class="language-plaintext highlighter-rouge">ls</code> are a bit old and many developers are starting to write replacements for these tools. One example, is the program <code class="language-plaintext highlighter-rouge">exa</code>. As per the project’s website:</p> <blockquote> <p>exa is an improved file lister with more features and better defaults. It uses colours to distinguish file types and metadata. It knows about symlinks, extended attributes, and Git. And it’s small, fast, and just one single binary.</p> </blockquote> <p>Unfortunately, exa is not available via the default reposorities in Ubuntu 20.04. However, this package is available for Ubuntu 20.10 and further releases. This however, does not mean that we cannot install the program. As you saw during the presentation, we can also install software using <code class="language-plaintext highlighter-rouge">.deb files.</code> To download the <code class="language-plaintext highlighter-rouge">.deb file</code> for <code class="language-plaintext highlighter-rouge">exa</code> use this command:</p> <ul> <li><code class="language-plaintext highlighter-rouge">wget http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb</code></li> <li>To install the .deb file we can use apt: <code class="language-plaintext highlighter-rouge">sudo apt install ./exa_0.9.0-4_amd64.deb</code></li> <li>Once we have installed the package we do not need the <code class="language-plaintext highlighter-rouge">.deb file</code> so lets delete it with: <code class="language-plaintext highlighter-rouge">rm exa_0.9.0-4_amd64.deb</code></li> <li>Open a second terminal a use the command <code class="language-plaintext highlighter-rouge">exa --help</code> to see all the options of the exa command. Using these options as a reference, answer the following questions:</li> </ul> <ol> <li>Long list all the files in your Downloads directory.</li> <li>Long list all the files in your Downloads directory with a header and modified by timestamps.</li> </ol> <p>Another command that is also very useful is <code class="language-plaintext highlighter-rouge">tree</code>. This program allows you to list files in a tree like format which is very useful when you are working with multiple sub directories.</p> <ol> <li>Install the tree program. Open another terminal and use the <code class="language-plaintext highlighter-rouge">tree --help</code> command to list all (or most) of the options of the tree command</li> <li>Use <code class="language-plaintext highlighter-rouge">tree</code> to list all the files in your home directory including the file owner and group.</li> <li>Use <code class="language-plaintext highlighter-rouge">tree</code> to list all the files in your home directory including their file size and in human readable format.</li> </ol> <blockquote> <p><strong>Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1,2,4 and 5.</strong></p> </blockquote> <h2 id="what-to-submit"> <a href="#what-to-submit" class="anchor-heading" aria-labelledby="what-to-submit"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> What to submit? </h2> <blockquote> <p><strong>ADVICE!</strong> Take a snapshot of your system. This will come handy in the case that you break your system.</p> <h2 id="what-will-you-submit"> <a href="#what-will-you-submit" class="anchor-heading" aria-labelledby="what-will-you-submit"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> What will you Submit: </h2> <ul> <li>Place all the screenshots and answers to your questions in a the lab3.md file. You can format the questions however you like to make it more readable.</li> <li>Push the changes to Github</li> <li>and submit the URL of Lab3.md</li> <li>Convert your markdown file to pdf and submit it with the URL</li> </ul> </blockquote> </div> </div> <div class="search-overlay"></div> </div> </body> </html>
+</code></pre></div></div>
+
+<p><img src="../imgs/lab3-prework.gif" alt="Pre work" /></p>
+
+<h2 id="question-1--installing-applications">Question 1 | Installing applications</h2>
+<p>Using the command line, look for software packages that match the following search criteria: <code class="language-plaintext highlighter-rouge">theme</code>. Read the output of your search and find a GTK Theme (style theme, appearance) and an icon theme as well. Install the icon and gtk theme and then change your system’s GTK and icon theme.</p>
+
+<p><img src="../imgs/GnomeTweaks.gif" alt="Gnome Tweaks" /></p>
+
+<ol>
+  <li>Which command did you use to search for the themes and to install them?</li>
+</ol>
+
+<p>Use the command line to search for an alternative web browser (you already have chromium and firefox so look for something else). Install the alternative web browser.</p>
+
+<ol>
+  <li>
+    <p>Which commands did you use to find and install the web browser?</p>
+  </li>
+  <li>
+    <p>Use the command line to find a 3D or 2D racing game. Answer the following questions about the game:</p>
+    <ol>
+      <li><strong>What is the name of the package?</strong></li>
+      <li><strong>What dependencies are needed in order to install the package? (you can either take a screenshot of the terminal or copy and paste from the terminal)</strong></li>
+      <li><strong>How much disk space will the package utilize after installation?</strong></li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="question-2--the-pwd-and-cd-command">Question 2 | The pwd and cd command</h2>
+<ul>
+  <li><strong>pwd</strong>: Print the full filename of the current working directory.</li>
+  <li><strong>cd</strong>: Change the shell working directory.</li>
+</ul>
+
+<h3 id="using-pwd-and-cd-with-absolute-path-remember-to-use-the-bash-autocompletion-feature">Using pwd and cd with absolute path (remember to use the bash autocompletion feature)</h3>
+
+<ol>
+  <li>Start a terminal. What is your present working directory?</li>
+  <li>Change your present working directory to <code class="language-plaintext highlighter-rouge">/usr/share/themes</code></li>
+  <li>What is your present working directory?</li>
+  <li>Change your present working directory to the root of the filesystem</li>
+  <li>Change your present working directory to <code class="language-plaintext highlighter-rouge">/etc/firefox/pref</code>
+    <blockquote>
+      <p><strong>Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.</strong></p>
+    </blockquote>
+  </li>
+</ol>
+
+<h3 id="using-pwd-and-cd-with-a-relative-path-remember-to-use-the-bash-autocompletion-feature">Using pwd and cd with a relative path (remember to use the bash autocompletion feature)</h3>
+<ol>
+  <li>Clear your terminal window. Change the working directory to <em>YOUR</em> home directory.</li>
+  <li>Change the working directory to the Downloads directory.</li>
+  <li>Go back 2 directories.</li>
+  <li>Where are you now?.</li>
+  <li>Change the working directory to the Documents directory.</li>
+</ol>
+
+<blockquote>
+  <p><strong>Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 6-10.</strong></p>
+</blockquote>
+
+<h2 id="question-3--the-ls-command">Question 3 | The ls command</h2>
+<ul>
+  <li>For this question we are going to use relative path only.</li>
+  <li>Clear your terminal.</li>
+  <li>Download 3 files from the internet (pictures, audio, document, or anything else).</li>
+  <li>Make sure that the files you downloaded are stored in your Downloads directory.</li>
+  <li>Mare sure that your working directory is your home directory.</li>
+</ul>
+
+<ol>
+  <li>List all the files in your Downloads directory.</li>
+  <li>List all the files in your Downloads directory including hidden files.</li>
+  <li>Long list all the files in your Downloads directory including hidden files.</li>
+  <li>Long list all the files in your Downloads directory including hidden files and human readable file sizes.</li>
+  <li>Long list all the files in your Downloads directory excluding hidden files, file owner and group, and including human readable file sizes.</li>
+</ol>
+
+<blockquote>
+  <p><strong>Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.</strong></p>
+</blockquote>
+
+<h2 id="question-4--the-tree-command">Question 4 | The tree command</h2>
+<ul>
+  <li>For this question we are going to use Absolute path only.</li>
+  <li>Clear your terminal screen.
+    <ol>
+      <li>List all the files inside the <code class="language-plaintext highlighter-rouge">Downloads</code> directory.</li>
+      <li>List all the files inside the <code class="language-plaintext highlighter-rouge">Downloads</code> directory showing the permissions(protections), file owner, group owner, and human readable file size.</li>
+      <li>List all the files inside the <code class="language-plaintext highlighter-rouge">Downloads</code> directory showing the date of last modified and sorted by modification time.</li>
+      <li>List all the files inside the <code class="language-plaintext highlighter-rouge">Downloads</code> directory in HTML format</li>
+      <li>List all the files inside the <code class="language-plaintext highlighter-rouge">Downloads</code> directory in HTML format and save it to a file.</li>
+    </ol>
+  </li>
+</ul>
+
+<blockquote>
+  <p><strong>Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.</strong></p>
+</blockquote>
+
+<h2 id="question-5--bringing-it-all-together">Question 5 | Bringing it all together</h2>
+<p>Utilities like <code class="language-plaintext highlighter-rouge">ls</code> are a bit old and many developers are starting to write replacements for these tools. One example, is the program <code class="language-plaintext highlighter-rouge">exa</code>. As per the project’s website:</p>
+
+<blockquote>
+  <p>exa is an improved file lister with more features and better defaults. It uses colours to distinguish file types and metadata. It knows about symlinks, extended attributes, and Git. And it’s small, fast, and just one single binary.</p>
+</blockquote>
+
+<p>Unfortunately, exa is not available via the default reposorities in Ubuntu 20.04. However, this package is available for Ubuntu 20.10 and further releases. This however, does not mean that we cannot install the program. As you saw during the presentation, we can also install software using <code class="language-plaintext highlighter-rouge">.deb files.</code> To download the <code class="language-plaintext highlighter-rouge">.deb file</code> for <code class="language-plaintext highlighter-rouge">exa</code> use this command:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">wget http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb</code></li>
+  <li>To install the .deb file we can use apt: <code class="language-plaintext highlighter-rouge">sudo apt install ./exa_0.9.0-4_amd64.deb</code></li>
+  <li>Once we have installed the package we do not need the <code class="language-plaintext highlighter-rouge">.deb file</code> so lets delete it with: <code class="language-plaintext highlighter-rouge">rm exa_0.9.0-4_amd64.deb</code></li>
+  <li>Open a second terminal a use the command <code class="language-plaintext highlighter-rouge">exa --help</code> to see all the options of the exa command. Using these options as a reference, answer the following questions:</li>
+</ul>
+
+<ol>
+  <li>Long list all the files in your Downloads directory.</li>
+  <li>Long list all the files in your Downloads directory with a header and modified by timestamps.</li>
+</ol>
+
+<p>Another command that is also very useful is <code class="language-plaintext highlighter-rouge">tree</code>. This program allows you to list files in a tree like format which is very useful when you are working with multiple sub directories.</p>
+
+<ol>
+  <li>Install the tree program. Open another terminal and use the <code class="language-plaintext highlighter-rouge">tree --help</code> command to list all (or most) of the options of the tree command</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">tree</code> to list all the files in your home directory including the file owner and group.</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">tree</code> to list all the files in your home directory including their file size and in human readable format.</li>
+</ol>
+
+<blockquote>
+  <p><strong>Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1,2,4 and 5.</strong></p>
+</blockquote>
+
+<h2 id="what-to-submit">What to submit?</h2>
+<blockquote>
+  <p><strong>ADVICE!</strong>
+Take a snapshot of your system. This will come handy in the case that you break your system.</p>
+  <h2 id="what-will-you-submit">What will you Submit:</h2>
+  <ul>
+    <li>Place all the screenshots and answers to your questions in a the lab3.md file. You can format the questions however you like to make it more readable.</li>
+    <li>Push the changes to Github</li>
+    <li>and submit the URL of Lab3.md</li>
+    <li>Convert your markdown file to pdf and submit it with the URL</li>
+  </ul>
+</blockquote>
+

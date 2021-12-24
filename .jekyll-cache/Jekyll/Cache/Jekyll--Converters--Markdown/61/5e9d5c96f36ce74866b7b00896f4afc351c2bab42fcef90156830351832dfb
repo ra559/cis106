@@ -1,0 +1,90 @@
+I"�<h1 id="lab-4--managing-files-and-directories">Lab 4 | Managing files and directories</h1>
+<ul>
+  <li>_Presentation <a href="https://docs.google.com/presentation/d/e/2PACX-1vRXQhdRviYicst8RhPxAcgQmj8-8YCuNSSy4NjmCv1ekxfQuI3KvDmdfuAztj1hbDo6dXPsuF8RezsZ/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.p">here</a></li>
+  <li>_Video <a href="https://youtu.be/1edV7BUOfY0">here</a></li>
+</ul>
+
+<h2 id="question-1-creating-directories">Question 1: Creating directories.</h2>
+
+<ol>
+  <li>Start a terminal window. In your home directory, create a directory called movies. In the movies directory, create 5 directories called: action, romance, adventure, animated, and scifi.</li>
+  <li>From the root of the filesystem, using absolute path only, create a directory called 2020 in each of the movies categories directories.</li>
+  <li>Print a tree of the directory structure you created.</li>
+  <li>Take a screenshot showing all the commands you used in each step. Highlight the command using Flameshot’s line or square feature. Your screenshot must show most of the output of your command. More than one screenshot may be required.
+    <blockquote>
+      <p>Note: If I do not see the command used, you will not be given credit.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="question-2-creating-files">Question 2: Creating files</h2>
+<ol>
+  <li>From the movies directory created in question 1, create a file called moviesList.txt  in each movie category.</li>
+  <li>From the root of the filesystem, using absolute path only, create 2 more files in each movie category called: new.doc and old.pdf</li>
+  <li>Long List all the files in the movies directory recursively, sorted by modified time, with inode numbers, and without the owner or group permissions.</li>
+  <li>Take a screenshot showing all the commands you used in each step. Highlight the command using Flameshot’s line or square feature. Your screenshot must show most of the output of your command. More than one screenshot may be required.
+    <blockquote>
+      <p>Note: If I do not see the command used, you will not be given credit.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="question-3-removing-files">Question 3: Removing files</h2>
+<ol>
+  <li>From the /usr/share/ directory, remove all the files new.docx and old.pdf from all the categories directories.</li>
+  <li>From the /usr/bin directory, remove all the categories movies.</li>
+  <li>From your home directory remove the movies directory.</li>
+  <li>Take a screenshot showing all the commands you used in each step. Highlight the command using Flameshot’s line or square feature. Your screenshot must show most of the output of your command. More than one screenshot may be required.
+    <blockquote>
+      <p>Note: If I do not see the command used, you will not be given credit.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="question-4-moving-files-and-directories">Question 4: Moving files and directories</h2>
+<ol>
+  <li>Recreate the movies directory with all the subdirectories and files. Try to use braze expansion to make your workflow faster.</li>
+  <li>Go to the website Pexels.com and download 5 images. Move those images to the movies directory.</li>
+  <li>Rename the images as follows:
+    <ul>
+      <li>Image 1 -&gt; adventure.png</li>
+      <li>Image 2 - &gt; action.png</li>
+      <li>Image 3 - &gt; romance.png</li>
+      <li>Image 4 -&gt; scifi.png</li>
+      <li>Image 5 -&gt; animated.png</li>
+    </ul>
+  </li>
+  <li>From the root of the filesystem, move each image to its respective directory.</li>
+  <li>Take a screenshot showing all the commands you used in each step. Highlight the command using Flameshot’s line or square feature. Your screenshot must show most of the output of your command. More than one screenshot may be required.
+    <blockquote>
+      <p>Note: If I do not see the command used, you will not be given credit.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="question-5-copying-files">Question 5: Copying files</h2>
+<ol>
+  <li>Copy all the movies directory to the Videos directory.</li>
+  <li>Download 3 songs from this page http://dig.ccmixter.org/</li>
+  <li>Using a wildcard, copy all the songs to your Music directory.</li>
+  <li>Download 3 videos from the site https://www.pexels.com/ rename the videos as follows:
+    <ul>
+      <li>Video 1 - Video1.mp4</li>
+      <li>Video 2 - video2.mkv</li>
+      <li>Video 3 - new-vid.avi</li>
+    </ul>
+  </li>
+  <li>Copy the videos to your Videos directory using a wildcard.</li>
+  <li>Take a screenshot showing all the commands you used in each step. Highlight the command using Flameshot’s line or square feature. Your screenshot must show most of the output of your command. More than one screenshot may be required.
+    <blockquote>
+      <p>Note: If I do not see the command used, you will not be given credit.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="what-to-submit">What to submit</h2>
+<ol>
+  <li>The pdf file of this lab completed</li>
+  <li>the url from your github repo that shows this lab completed.</li>
+</ol>
+:ET
