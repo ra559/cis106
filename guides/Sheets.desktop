@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application 
-Terminal=false
-Exec=/snap/bin/chromium 'https://docs.google.com/spreadsheets/u/0/'
-Name=Sheets
-Comment=Launcher for Google Docs
-Icon=/usr/share/icons/.customIcons/googlesheets.png
