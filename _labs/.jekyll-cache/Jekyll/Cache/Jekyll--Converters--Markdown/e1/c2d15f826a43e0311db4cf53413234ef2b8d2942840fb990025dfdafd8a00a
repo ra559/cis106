@@ -1,0 +1,215 @@
+I"�<h1 id="lab-8-file-permissions">Lab 8: File Permissions</h1>
+
+<ul>
+  <li>For this lab, Download and run this script: https://robertalberto.com/cis106/lab8.sh</li>
+  <li>Use: <code class="language-plaintext highlighter-rouge">curl https://robertalberto.com/cis106/lab8.sh | bash</code>.</li>
+  <li>Video <a href="https://youtu.be/aJCx-X42Mko">here</a></li>
+</ul>
+
+<h2 id="question-1--use-symbolic-notation">Question 1 | Use symbolic notation</h2>
+<ol>
+  <li>Long list all the files in directory1.</li>
+  <li>Modify the files permissions such that:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type of file</th>
+      <th>Owner</th>
+      <th>Group</th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Directory</td>
+      <td>rwx</td>
+      <td>rw-</td>
+      <td>r–</td>
+    </tr>
+    <tr>
+      <td>Image</td>
+      <td>rw-</td>
+      <td>r-x</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td>rw-</td>
+      <td>rw-</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Text</td>
+      <td>rwx</td>
+      <td>rwx</td>
+      <td>r–</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>Long list all the files in directory1
+    <blockquote>
+      <p>Take a screenshot of all the commands that you used to complete this question</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="question-2--use-numeric-notation">Question 2 | Use numeric notation</h2>
+<ol>
+  <li>Long list all the files in directory2.</li>
+  <li>Modify the files permissions such that:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type of file</th>
+      <th>Owner</th>
+      <th>Group</th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Directory</td>
+      <td>rwx</td>
+      <td>rw-</td>
+      <td>r–</td>
+    </tr>
+    <tr>
+      <td>Image</td>
+      <td>rw-</td>
+      <td>r-x</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td>rw-</td>
+      <td>rw-</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Text</td>
+      <td>rwx</td>
+      <td>rwx</td>
+      <td>r–</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>Long list all the files in directory2
+    <blockquote>
+      <p>Take a screenshot of all the commands that you used to complete this question</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="question-3--use-numeric-notation">Question 3 | Use numeric notation</h2>
+<ol>
+  <li>Long list all the files in directory3</li>
+  <li>Modify the files permission such that:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type of file</th>
+      <th>Owner</th>
+      <th>Group</th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Directory</td>
+      <td>r-x</td>
+      <td>rw-</td>
+      <td>–X</td>
+    </tr>
+    <tr>
+      <td>Image</td>
+      <td>rwx</td>
+      <td>rwx</td>
+      <td>rwx</td>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td>rwx</td>
+      <td>r-x</td>
+      <td>rw-</td>
+    </tr>
+    <tr>
+      <td>Text</td>
+      <td>r-x</td>
+      <td>rw-</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>Long list all the files in directory3
+    <blockquote>
+      <p>Take a screenshot of all the commands that you used to complete this question</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="question-4--use-symbolic-notation">Question 4 | Use symbolic notation</h2>
+<ol>
+  <li>Long list all the files in directory4</li>
+  <li>Modify the files permission such that:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type of file</th>
+      <th>Owner</th>
+      <th>Group</th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Directory</td>
+      <td>–X</td>
+      <td>-wx</td>
+      <td>rw-</td>
+    </tr>
+    <tr>
+      <td>Image</td>
+      <td>rwx</td>
+      <td>r-x</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td>-w-</td>
+      <td>–X</td>
+      <td>r–</td>
+    </tr>
+    <tr>
+      <td>Text</td>
+      <td>r-x</td>
+      <td>r-w</td>
+      <td>-wx</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>Long list all the files in directory4
+    <blockquote>
+      <p>Take a screenshot of all the commands that you used to complete this question</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="what-will-you-submit">What will you submit?</h2>
+<p>The URL of lab8.md with all the screenshots.</p>
+:ET

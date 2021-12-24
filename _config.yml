@@ -1,0 +1,55 @@
+title: Linux Fundamentals
+email: linuxworkshop67@gmail.com
+description: >-
+        Here you will find all the information about CIS 106 Linux fundamentals.
+baseurl: "" 
+url: "" 
+
+theme: just-the-docs
+color_scheme: nil
+search_enabled: true
+
+collections:
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
+  modules:
+    permalink: "/:collection/:path/"
+    output: true
+
+  guides:
+    permalink: "/:collection/:path/"
+    output: true
+
+  discussions:
+    permalink: "/:collection/:path/"
+    output: true
+
+  finalproject:
+    permalink: "/:collection/:path/"
+    output: true
+
+  labs:
+    permalink: "/:collection/:path/"
+    output: true
+  homework:
+    permalink: "/:collection:/:path"
+    output: true
+
+just_the_docs:
+  collections:
+    docs:
+      name: Documentation
+    modules:
+      name: Modules    
+    guides:
+      name: Guides
+    discussions:
+      name: Discussions
+    labs:
+      name: Labs
+    finalproject:
+      name: "Final Project"
+    homework:
+      name: Homework
+    

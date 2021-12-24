@@ -1,0 +1,82 @@
+I"¸<h1 id="lab-7--managing-data">Lab 7 | Managing Data</h1>
+
+<ul>
+  <li>For this lab, Download and run this script: https://robertalberto.com/cis106/lab7.sh</li>
+  <li><strong>Use:</strong> <code class="language-plaintext highlighter-rouge">curl https://robertalberto.com/cis106/lab7.sh | bash</code></li>
+  <li>For this lab we will be using the following packages:
+    <ul>
+      <li>unrar</li>
+      <li>p7zip-full</li>
+      <li>libtext-lorem-perl</li>
+      <li>zip</li>
+      <li>ffmpeg</li>
+      <li>The script will install all the necessary packages.
+<a href="https://youtu.be/xfjUif_kEMg">* Video here</a>
+        <blockquote>
+          <p>Make sure to do all the practices in the <a href="https://rapurl.live/46n">Lecture</a> Presentation before doing this lab.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="question-1--tar-utility">Question 1 | Tar Utility</h2>
+<ol>
+  <li>In the <code class="language-plaintext highlighter-rouge">question1</code> directory, you will find a bunch of files. Create an archive called <code class="language-plaintext highlighter-rouge">allfiles.tar</code> that includes:
+    <ol>
+      <li>All text files</li>
+      <li>All images that have a number in their file names</li>
+      <li>All video files</li>
+    </ol>
+  </li>
+  <li>List all the members of the archive.</li>
+  <li>Create another text file with some text. Use the command <code class="language-plaintext highlighter-rouge">lorem</code> to generate the text and then output redirection to save it to a file. If the lorem command does not work, it means that you need to install it. The package name is: <code class="language-plaintext highlighter-rouge">libtext-lorem-perl</code>
+If the package is not available use the following command and redirect its output to a file: <code class="language-plaintext highlighter-rouge">curl http://metaphorpsum.com/sentences/5</code></li>
+  <li>Add the new file to the archive.</li>
+  <li>List all the members of the archive.
+    <blockquote>
+      <p>Take a screenshot of all the commands you used to complete this question</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="question-2--cpio-utility">Question 2 | Cpio Utility</h2>
+<ol>
+  <li>Move the <code class="language-plaintext highlighter-rouge">allfiles.tar</code> archive from question 1 to the question2 directory and extract all the files.</li>
+  <li>Remove the archive and create a new archive with cpio of all the files.</li>
+  <li>Create a tar archive with cpio of all the files including the cpio archive.</li>
+  <li>Remove all the files except the tar archive.</li>
+  <li>Extract all the archive using cpio
+    <blockquote>
+      <p>Take a screenshot of all the commands you used to complete this question</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="question-3--gzip-bzip2-xz">Question 3 | Gzip, bzip2, xz</h2>
+<ol>
+  <li>In the question3 directory you will find 1 file called <code class="language-plaintext highlighter-rouge">mynotes.txt</code>. What is the size of this file?</li>
+  <li>Compress <code class="language-plaintext highlighter-rouge">mynotes.txt</code>. using gzip keeping the original file.</li>
+  <li>Compress <code class="language-plaintext highlighter-rouge">smynotes.txt</code>. using bzip2 keeping the original file.</li>
+  <li>Compress <code class="language-plaintext highlighter-rouge">smynotes.txt</code>. using xz keeping the original file.</li>
+  <li>Long list all the files. Which tool gave you the best compression?
+    <blockquote>
+      <p>Take a screenshot of all the commands you used to complete this question</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="question-4--zip-7zip-and-rar">Question 4 | Zip, 7zip and Rar</h2>
+<ol>
+  <li>Decompress all the compressed files from question 3 in the <code class="language-plaintext highlighter-rouge">question4</code> directory. Make sure to rename the file after decompressing them.</li>
+  <li>Using zip, create a zip archive of all the files.</li>
+  <li>Create a 7zip archive of all the files.</li>
+  <li>Create a rar archive using 7zip of all the files.</li>
+  <li>Long list all the archives. Which one gave you the best compression ratio?
+    <blockquote>
+      <p>Take a screenshot of all the commands you used to complete this question</p>
+    </blockquote>
+  </li>
+</ol>
+
+:ET

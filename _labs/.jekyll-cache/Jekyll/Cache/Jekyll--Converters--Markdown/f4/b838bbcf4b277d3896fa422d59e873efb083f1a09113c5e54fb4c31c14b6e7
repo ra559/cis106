@@ -1,0 +1,201 @@
+I"v.<h2 id="important---read-me">IMPORTANT - READ ME</h2>
+<p>Lab video <a href="https://youtu.be/bCW14r6YCuY">here</a></p>
+
+<blockquote>
+  <p>Watch video for the ls command <a href="https://youtu.be/xKjTcr4m9l8">here</a></p>
+</blockquote>
+
+<ul>
+  <li>You have to complete labs 0 1 and 2 before attempting lab 3.</li>
+  <li>If you are using the Cloud environment (Apporto), Make sure that you have complete the Setup per this <a href="https://youtu.be/w_nyTC-tuv8">video</a> before doing this lab.</li>
+  <li>Software installation cheat sheet available <a href="https://bit.ly/3djIsfy">here</a></li>
+  <li>Presentation available <a href="https://youtu.be/_PoTDzMfi0o">here</a></li>
+  <li>Navigating the filesystem cheat sheet available <a href="https://rebrand.ly/3bdn1">here</a></li>
+  <li>Presentation available <a href="https://bit.ly/3alPqPm">here</a></li>
+  <li>Amazing video explaining the linux file system <a href="https://www.youtube.com/watch?v=HbgzrKJvDRw">here</a></li>
+</ul>
+
+<h2 id="environment-setup-pre-work">Environment setup pre-work</h2>
+<p>Before you start working on this lab, do the following:</p>
+<ul>
+  <li>In Ubuntu, Open VS Code and open your CIS-106 folder where you have all your files for this class.</li>
+  <li>Inside the CIS106 repository (the folder in VS Code), create a file called <code class="language-plaintext highlighter-rouge">lab3.md</code> inside the labs folder. This is the file where you will put the answer to questions.</li>
+  <li>Add the following text to the lab3.md file:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Lab 3 | Installing software and navigating the file system | Answers
+Assignment description [here](https://raw.githubusercontent.com/ra559/cis106/main/labs/lab3.md)
+
+## Question 1
+1. Which command did you use to search for the themes and to install them?
+2. Which commands did you use to find and install the web browser?
+3.1 What is the name of the package?
+3.2 What dependencies are needed in order to install the package? (you can either take a screenshot of the terminal or copy and paste from the terminal)
+3.3 How much disk space will the package utilize after installation?
+ 
+
+## Question 2
+
+## Question 3
+
+## Question 4
+
+## Question 5
+</code></pre></div></div>
+
+<ul>
+  <li>Commit and push your changes to the repository using the following commands:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull
+git add .
+git commit -m "Task: started work on lab3"
+git push
+</code></pre></div></div>
+
+<p><img src="../imgs/lab3-prework.gif" alt="Pre work" /></p>
+
+<h2 id="question-1--installing-applications">Question 1 | Installing applications</h2>
+<p>Using the command line, look for software packages that match the following search criteria: <code class="language-plaintext highlighter-rouge">theme</code>. Read the output of your search and find a GTK Theme (style theme, appearance) and an icon theme as well. Install the icon and gtk theme and then change your system’s GTK and icon theme.</p>
+
+<p><img src="../imgs/GnomeTweaks.gif" alt="Gnome Tweaks" /></p>
+
+<ol>
+  <li>Which command did you use to search for the themes and to install them?</li>
+</ol>
+
+<p>Use the command line to search for an alternative web browser (you already have chromium and firefox so look for something else). Install the alternative web browser.</p>
+
+<ol>
+  <li>
+    <p>Which commands did you use to find and install the web browser?</p>
+  </li>
+  <li>
+    <p>Use the command line to find a 3D or 2D racing game. Answer the following questions about the game:</p>
+    <ol>
+      <li><strong>What is the name of the package?</strong></li>
+      <li><strong>What dependencies are needed in order to install the package? (you can either take a screenshot of the terminal or copy and paste from the terminal)</strong></li>
+      <li><strong>How much disk space will the package utilize after installation?</strong></li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="question-2--the-pwd-and-cd-command">Question 2 | The pwd and cd command</h2>
+<ul>
+  <li><strong>pwd</strong>: Print the full filename of the current working directory.</li>
+  <li><strong>cd</strong>: Change the shell working directory.</li>
+</ul>
+
+<h3 id="using-pwd-and-cd-with-absolute-path-remember-to-use-the-bash-autocompletion-feature">Using pwd and cd with absolute path (remember to use the bash autocompletion feature)</h3>
+
+<ol>
+  <li>Start a terminal. What is your present working directory?</li>
+  <li>Change your present working directory to <code class="language-plaintext highlighter-rouge">/usr/share/themes</code></li>
+  <li>What is your present working directory?</li>
+  <li>Change your present working directory to the root of the filesystem</li>
+  <li>Change your present working directory to <code class="language-plaintext highlighter-rouge">/etc/firefox/pref</code>
+    <blockquote>
+      <p><strong>Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.</strong></p>
+    </blockquote>
+  </li>
+</ol>
+
+<h3 id="using-pwd-and-cd-with-a-relative-path-remember-to-use-the-bash-autocompletion-feature">Using pwd and cd with a relative path (remember to use the bash autocompletion feature)</h3>
+<ol>
+  <li>Clear your terminal window. Change the working directory to <em>YOUR</em> home directory.</li>
+  <li>Change the working directory to the Downloads directory.</li>
+  <li>Go back 2 directories.</li>
+  <li>Where are you now?.</li>
+  <li>Change the working directory to the Documents directory.</li>
+</ol>
+
+<blockquote>
+  <p><strong>Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 6-10.</strong></p>
+</blockquote>
+
+<h2 id="question-3--the-ls-command">Question 3 | The ls command</h2>
+<ul>
+  <li>For this question we are going to use relative path only.</li>
+  <li>Clear your terminal.</li>
+  <li>Download 3 files from the internet (pictures, audio, document, or anything else).</li>
+  <li>Make sure that the files you downloaded are stored in your Downloads directory.</li>
+  <li>Mare sure that your working directory is your home directory.</li>
+</ul>
+
+<ol>
+  <li>List all the files in your Downloads directory.</li>
+  <li>List all the files in your Downloads directory including hidden files.</li>
+  <li>Long list all the files in your Downloads directory including hidden files.</li>
+  <li>Long list all the files in your Downloads directory including hidden files and human readable file sizes.</li>
+  <li>Long list all the files in your Downloads directory excluding hidden files, file owner and group, and including human readable file sizes.</li>
+</ol>
+
+<blockquote>
+  <p><strong>Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.</strong></p>
+</blockquote>
+
+<h2 id="question-4--the-tree-command">Question 4 | The tree command</h2>
+<ul>
+  <li>For this question we are going to use Absolute path only.</li>
+  <li>Clear your terminal screen.
+    <ol>
+      <li>List all the files inside the <code class="language-plaintext highlighter-rouge">Downloads</code> directory.</li>
+      <li>List all the files inside the <code class="language-plaintext highlighter-rouge">Downloads</code> directory showing the permissions(protections), file owner, group owner, and human readable file size.</li>
+      <li>List all the files inside the <code class="language-plaintext highlighter-rouge">Downloads</code> directory showing the date of last modified and sorted by modification time.</li>
+      <li>List all the files inside the <code class="language-plaintext highlighter-rouge">Downloads</code> directory in HTML format</li>
+      <li>List all the files inside the <code class="language-plaintext highlighter-rouge">Downloads</code> directory in HTML format and save it to a file.</li>
+    </ol>
+  </li>
+</ul>
+
+<blockquote>
+  <p><strong>Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.</strong></p>
+</blockquote>
+
+<h2 id="question-5--bringing-it-all-together">Question 5 | Bringing it all together</h2>
+<p>Utilities like <code class="language-plaintext highlighter-rouge">ls</code> are a bit old and many developers are starting to write replacements for these tools. One example, is the program <code class="language-plaintext highlighter-rouge">exa</code>. As per the project’s website:</p>
+
+<blockquote>
+  <p>exa is an improved file lister with more features and better defaults. It uses colours to distinguish file types and metadata. It knows about symlinks, extended attributes, and Git. And it’s small, fast, and just one single binary.</p>
+</blockquote>
+
+<p>Unfortunately, exa is not available via the default reposorities in Ubuntu 20.04. However, this package is available for Ubuntu 20.10 and further releases. This however, does not mean that we cannot install the program. As you saw during the presentation, we can also install software using <code class="language-plaintext highlighter-rouge">.deb files.</code> To download the <code class="language-plaintext highlighter-rouge">.deb file</code> for <code class="language-plaintext highlighter-rouge">exa</code> use this command:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">wget http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb</code></li>
+  <li>To install the .deb file we can use apt: <code class="language-plaintext highlighter-rouge">sudo apt install ./exa_0.9.0-4_amd64.deb</code></li>
+  <li>Once we have installed the package we do not need the <code class="language-plaintext highlighter-rouge">.deb file</code> so lets delete it with: <code class="language-plaintext highlighter-rouge">rm exa_0.9.0-4_amd64.deb</code></li>
+  <li>Open a second terminal a use the command <code class="language-plaintext highlighter-rouge">exa --help</code> to see all the options of the exa command. Using these options as a reference, answer the following questions:</li>
+</ul>
+
+<ol>
+  <li>Long list all the files in your Downloads directory.</li>
+  <li>Long list all the files in your Downloads directory with a header and modified by timestamps.</li>
+</ol>
+
+<p>Another command that is also very useful is <code class="language-plaintext highlighter-rouge">tree</code>. This program allows you to list files in a tree like format which is very useful when you are working with multiple sub directories.</p>
+
+<ol>
+  <li>Install the tree program. Open another terminal and use the <code class="language-plaintext highlighter-rouge">tree --help</code> command to list all (or most) of the options of the tree command</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">tree</code> to list all the files in your home directory including the file owner and group.</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">tree</code> to list all the files in your home directory including their file size and in human readable format.</li>
+</ol>
+
+<blockquote>
+  <p><strong>Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1,2,4 and 5.</strong></p>
+</blockquote>
+
+<h2 id="what-to-submit">What to submit?</h2>
+<blockquote>
+  <p><strong>ADVICE!</strong>
+Take a snapshot of your system. This will come handy in the case that you break your system.</p>
+  <h2 id="what-will-you-submit">What will you Submit:</h2>
+  <ul>
+    <li>Place all the screenshots and answers to your questions in a the lab3.md file. You can format the questions however you like to make it more readable.</li>
+    <li>Push the changes to Github</li>
+    <li>and submit the URL of Lab3.md</li>
+    <li>Convert your markdown file to pdf and submit it with the URL</li>
+  </ul>
+</blockquote>
+
+:ET

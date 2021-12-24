@@ -1,0 +1,59 @@
+I"Ú<h1 id="lab-6--using-vim">Lab 6 | Using VIM</h1>
+
+<blockquote>
+  <p>Lab explanation video: https://youtu.be/V9etQNzVpvw</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>NOTE:</strong> You do not need to be a pro using VIM if you do not plan to use it a a development environment. However, you do need 
+to know the following things relatively well for your day to day work as a Linux User.</p>
+  <ul>
+    <li>Opening a file</li>
+    <li>Saving a file and saving as another name</li>
+    <li>Editing a file (working with vim multiple modes)</li>
+    <li>Replacing text</li>
+    <li>Vim search tools
+Vim does a lot more than that, to a degree that a lot of Developers prefer to write code on VIM because its keyboard centric approach is a productivity enhancer. Once you learn VIM, you will hate every other text editor.~~~~</li>
+  </ul>
+</blockquote>
+
+<h2 id="question">Question</h2>
+<p>Do all the practices in the <a href="https://rapurl.live/w4n">vim presentation</a></p>
+
+<h2 id="question-2">Question 2</h2>
+<ol>
+  <li>Start vim.</li>
+  <li>In insert mode, enter the following text:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># What is Linux?
+(You need to write something here)
+# 3 Reasons to use Linux:
+* Reason 1 (You need to write something here)
+* Reason 2 (You need to write something here)
+* Reason 3 (You need to write something here)
+</code></pre></div>    </div>
+  </li>
+  <li>Save the file as <strong>linux.md</strong></li>
+  <li>Quit vim.</li>
+  <li>Open the the <strong>linux.md</strong> file in vim.</li>
+  <li>Add the following text:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Other operating systems
+* **Microsoft Windows** is a group of several proprietary graphical operating system families, all of which are developed and marketed by Microsoft. 
+* **macOS** is a series of proprietary graphical operating systems developed and marketed by Apple Inc. 
+* **FreeBSD** is a free and open-source Unix-like operating system descended from the Berkeley Software Distribution (BSD), which was based on Research Unix.
+* **RISC OS** is a computer operating system originally designed by Acorn Computers Ltd in Cambridge, England. 
+</code></pre></div>    </div>
+  </li>
+  <li>Save the file as <strong>linux+other.md</strong></li>
+  <li>Open the file <strong>linux+other.md</strong> and replace every instance of the word <code class="language-plaintext highlighter-rouge">Linux</code> with <code class="language-plaintext highlighter-rouge">GNU+Linux</code>. Save the file as <code class="language-plaintext highlighter-rouge">GNU+Linux.md</code>.</li>
+  <li>Open <code class="language-plaintext highlighter-rouge">GNU+Linux.md</code>, look for the logo of each operating system and insert the image bellow the description of the OS. Use a URL Shortener service like  <a href="https://www.rebrandly.com/">Rebrandly</a> to make the URL short if it happens to be a very long string. You must use Markdown syntax to add the image.</li>
+  <li>Display the content of all files and take a screenshot per file (you can use any of the commands you have learned so far).</li>
+  <li>Move the 3 files to your github repository.</li>
+</ol>
+
+<h2 id="what-will-you-submit">What will you submit?</h2>
+<p>The URL of <code class="language-plaintext highlighter-rouge">lab6.md</code>. The <code class="language-plaintext highlighter-rouge">lab6.md</code> file must contain the following:</p>
+<ul>
+  <li>The 3 screenshots</li>
+  <li>The URL of each of the files: <code class="language-plaintext highlighter-rouge">linux.md</code>, <code class="language-plaintext highlighter-rouge">linux+other.md</code>, <code class="language-plaintext highlighter-rouge">GNU+linux.md</code>.</li>
+</ul>
+:ET
