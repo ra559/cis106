@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Final Project Example
+title: Default Final Project Example Layout
 ---
 
 # Using Ubuntu 20.04 as an every day computer
