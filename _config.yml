@@ -25,16 +25,17 @@ collections:
   discussions:
     permalink: "/:collection/:path/"
     output: true
-
-  finalproject:
-    permalink: "/:collection/:path/"
-    output: true
-
+    
   labs:
     permalink: "/:collection/:path/"
     output: true
+
   homework:
     permalink: "/:collection:/:path"
+    output: true
+
+  project:
+    permalink: "/:collection/:path/"
     output: true
 
 just_the_docs:
@@ -49,8 +50,7 @@ just_the_docs:
       name: Discussions
     labs:
       name: Labs
-    finalproject:
-      name: "Final Project"
     homework:
       name: Homework
-    
+    project:
+      name: Project    

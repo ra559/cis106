@@ -35,6 +35,8 @@ This project is easy by design and it is meant to cover all or most of the topic
 
 > For every application provide a basic description, how to install and remove it and how to do something simple in it.
 
+Your final document should look like this: 
+
 ## Web Development
 1. Build a LAMP Stack in Ubuntu Server 🌟🌟
 2. Host a simple website in Ubuntu Server using Apache/NGINX  🌟
