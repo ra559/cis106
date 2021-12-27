@@ -1,0 +1,45 @@
+I"~<h2 id="lecture-4">Lecture 4</h2>
+<ul>
+  <li><a href="https://rapurl.live/jya">Managing files and directories</a>
+    <ul>
+      <li>Managing Files - Slide 3</li>
+      <li>Managing Directories - Slide 5</li>
+      <li>Moving and copying files - Slide 8</li>
+      <li>Getting help - Slide 19</li>
+      <li>Working with wildcards - Slide 24</li>
+      <li>Shell Expansion - Slide 34</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="lecture-5">Lecture 5</h2>
+<ul>
+  <li><a href="https://rapurl.live/nsd">Handling Text Files</a>
+    <ul>
+      <li>Output redirection</li>
+      <li>Formatting output</li>
+      <li><a href="https://youtu.be/iB3_wwlfMEQ">Bash Aliases</a></li>
+    </ul>
+  </li>
+  <li><a href="https://youtu.be/lOsNLdm7OWY">Review</a></li>
+</ul>
+
+<h2 id="lecture-6">Lecture 6</h2>
+<ul>
+  <li>Command Line Text Editors
+    <ul>
+      <li>The Basics of Nano</li>
+      <li>VIDEOS:
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=gyKiDczLIZ4">Nano Editor Fundamentals</a> by <a href="https://www.youtube.com/channel/UC0ZTPkdxlAKf-V33tqXwi3Q">HackerSploit</a></li>
+          <li><a href="https://www.youtube.com/watch?v=Jf0ZJZJ8jlI">Nano Text Editor Basics (pico) - How to Use Nano on Linux / Mac (Beginners Guide on Ubuntu 20.04)</a></li>
+        </ul>
+      </li>
+      <li><a href="https://rapurl.live/5mi">The Basics of Vim</a></li>
+    </ul>
+  </li>
+  <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vSNDKSBCDak77Kyvee9ONij9ezZ82mCZsXVNMLLQbpD7tQj5KG7fygET45LwKqwx6YsDGlww5S9jarW/pub?start=false&amp;loop=false&amp;delayms=3000">Managing data</a></li>
+  <li><a href="https://rapurl.live/ger">File permissions</a></li>
+</ul>
+
+:ET

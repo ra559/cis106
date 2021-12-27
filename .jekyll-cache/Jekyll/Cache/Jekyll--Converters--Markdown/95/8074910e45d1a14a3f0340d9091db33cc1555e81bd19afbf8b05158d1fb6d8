@@ -1,0 +1,109 @@
+I";	<table>
+  <thead>
+    <tr>
+      <th>Week #</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Topic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>00</td>
+      <td>01/19</td>
+      <td>01/25</td>
+      <td>Lecture 00 - Introduction To CIS 106</td>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td>01/26</td>
+      <td>02/01</td>
+      <td>Lecture 01 - Introduction to the Linux Operating System</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>02/02</td>
+      <td>02/08</td>
+      <td>Lecture 02 - Virtualization and The Raspberry Pi</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td>02/09</td>
+      <td>02/15</td>
+      <td>Lecture 03 - Installing Linux and the GUI</td>
+    </tr>
+    <tr>
+      <td>04</td>
+      <td>02/16</td>
+      <td>03/22</td>
+      <td>Lecture 04 - Shell and The Filesystem</td>
+    </tr>
+    <tr>
+      <td>05</td>
+      <td>02/23</td>
+      <td>03/01</td>
+      <td>Lecture 05 - Managing Files and Directories</td>
+    </tr>
+    <tr>
+      <td>06</td>
+      <td>03/02</td>
+      <td>03/08</td>
+      <td>Lecture 06 - Managing Text</td>
+    </tr>
+    <tr>
+      <td>07</td>
+      <td>03/09</td>
+      <td>03/15</td>
+      <td>Lecture 07 - Command Line Text Editors</td>
+    </tr>
+    <tr>
+      <td>08</td>
+      <td>03/16</td>
+      <td>03/22</td>
+      <td>Lecture 08 - Managing Software via The CLI (<strong>Spring Break Week Learn at home</strong>)</td>
+    </tr>
+    <tr>
+      <td>09</td>
+      <td>03/23</td>
+      <td>03/29</td>
+      <td>Lecture 09 - Managing Data and File Permissions</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>03/30</td>
+      <td>04/05</td>
+      <td>Lecture 10 - Managing Users and Groups</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>04/06</td>
+      <td>04/02</td>
+      <td>Lecture 11 - Managing Processes</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>04/13</td>
+      <td>04/19</td>
+      <td>Lecture 12 - Scheduling Tasks</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>04/20</td>
+      <td>04/26</td>
+      <td>Lecture 13 - Shell Scripting Part 1</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>04/27</td>
+      <td>05/03</td>
+      <td>Lecture 14 - Shell Scripting Part 2</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>05/04</td>
+      <td>05/10</td>
+      <td>Lecture 15 - <strong>Final Exam</strong></td>
+    </tr>
+  </tbody>
+</table>
+:ET

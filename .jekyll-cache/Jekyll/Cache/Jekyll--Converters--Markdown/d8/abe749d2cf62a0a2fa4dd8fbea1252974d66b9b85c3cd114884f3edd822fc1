@@ -1,0 +1,42 @@
+I"<h1 id="ubuntu-setup-cloud-machine">Ubuntu Setup Cloud Machine</h1>
+<hr />
+
+<h2 id="post-sign-in-tasks">Post Sign in Tasks</h2>
+<ul>
+  <li>Update and upgrade</li>
+  <li>Remove unnecessary software</li>
+  <li>Essential software install</li>
+  <li>Disable animations</li>
+  <li>Change Default screenshot tool with flameshot</li>
+  <li>Enable Dark Theme</li>
+  <li>
+    <p>use this one-liner to complete these tasks:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">sudo apt install curl -y; curl https://raw.githubusercontent.com/ra559/cis106/main/guides/oneliner.sh | bash</code></p>
+  </li>
+  <li>Install restricted extras: <code class="language-plaintext highlighter-rouge">sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y</code></li>
+</ul>
+
+<h3 id="vs-code-setup">VS Code setup</h3>
+<ol>
+  <li>Install VS Code Extensions:
+    <ol>
+      <li>Live Server</li>
+      <li>Markdown All in one</li>
+      <li>Markdown Preview Enhanced</li>
+      <li>Markdown PDF</li>
+      <li>Markdown TOC</li>
+      <li>PDF Preview</li>
+      <li>Code Spell Checker</li>
+    </ol>
+  </li>
+</ol>
+
+<h1 id="replace-gnome-3-with-gnome-classic">Replace Gnome 3 with Gnome Classic</h1>
+<ol>
+  <li>Run this command: <code class="language-plaintext highlighter-rouge">sudo update-alternatives --config x-session-manager</code></li>
+  <li>In the options that will be presented to you choose: <code class="language-plaintext highlighter-rouge">/usr/lib/gnome-flashback/gnome-flashback-metacity</code></li>
+  <li>Log out and log back in.</li>
+</ol>
+
+:ET

@@ -1,0 +1,144 @@
+I"�!<h1 id="setup-an-ftp-server">Setup an FTP Server</h1>
+
+<h2 id="table-of-content">Table of Content</h2>
+
+<ul>
+  <li><a href="#setup-an-ftp-server">Setup an FTP Server</a>
+    <ul>
+      <li><a href="#table-of-content">Table of Content</a></li>
+      <li><a href="#hardware-requirements">Hardware Requirements</a></li>
+      <li><a href="#software-specifications">Software Specifications</a></li>
+      <li><a href="#setup-operating-system">Setup Operating System</a>
+        <ul>
+          <li><a href="#connecting-the-pi-to-the-network">Connecting the Pi to the Network.</a></li>
+          <li><a href="#connect-to-the-pi">Connect to the Pi</a></li>
+        </ul>
+      </li>
+      <li><a href="#install-ftp-server">Install FTP Server</a></li>
+      <li><a href="#configure-sftp">Configure SFTP</a></li>
+      <li><a href="#take-ftp-server-online">Take FTP Server online</a></li>
+      <li><a href="#challenges">Challenges</a></li>
+      <li><a href="#take-this-project-further">Take this project further</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="hardware-requirements">Hardware Requirements</h2>
+<ul>
+  <li>Raspberry Pi 3b+ or better</li>
+  <li>Micro SD Card 64GB Class 10 (or any other size larger than 16GB)</li>
+  <li>Monitor for initial setup only</li>
+  <li>keyboard and mouse also for initial setup</li>
+  <li>Raspberry pi power supply</li>
+</ul>
+
+<p>You can buy a Raspberry Pi 3B+ starter kit from <a href="https://rebrand.ly/fcef9">Amazon</a> or <a href="https://rebrand.ly/gzyz0">Microcenter.</a> Make sure that your starter kit contains a power supply, microSD card and microSD card USB Adapter if your computer does not have an SD reader.</p>
+
+<p>Since the FTP Server will be used to store files that are at least 2GB, it is recommended that you either select a big SD Card or attach an external storage to your Raspberry Pi via the USB port. In the case of this project, I will be using the SD Card. If you are setting this up for an environment where performance matters a lot, you should use a Raspberry Pi 4 and an SSD for storage.</p>
+
+<h2 id="software-specifications">Software Specifications</h2>
+<p>Raspberry Pi OS is the default operating system (Linux Distribution) for the Raspberry Pi. Raspberry Pi OS, previously known as Raspbian, is developed by the Raspberry Pi foundation and it is based on Debian. This means that this guide can be followed on any computer running Debian or Ubuntu.</p>
+
+<p>SSH or Secured Shell is a network protocol that allows us to create a secured connection between two computers. We will be using SSH to manage our Pi, install software, and setup a secure FTP server.</p>
+
+<p>SFTP is a secure file transfer protocol. Basically, FTP over SSH.</p>
+
+<h2 id="setup-operating-system">Setup Operating System</h2>
+<p>First, make sure to assemble the Raspberry Pi. This step will vary depending on the Pi kit that you buy but all kits come with instructions that you can follow. Once you have assembled the Raspberry Pi, connect the raspberry Pi to the monitor and connect the,keyboard and mouse. Do not connect the Raspberry Pi to the electricity since we have not setup the microSD card yet.</p>
+
+<p>Insert image here</p>
+
+<p>To install Raspberry Pi OS in the microSD card we are going to use a software called Raspberry Pi Imager which is provided by the Raspberry Pi Foundation. You can download the software from <a href="https://www.raspberrypi.org/software/">here.</a>. Once you have downloaded and installed the Raspberry Pi imager, start it. In Windows, make sure to run it as Administrator. If you are using Linux, you can start the application normally and you will be asked for your password before flashing the image into the SD Card.
+To flash Raspberry Pi OS follow these steps:</p>
+<ol>
+  <li>Select the operating system (Raspberry Pi OS (other) -&gt; Raspberry Pi OS (Lite))2. Insert the micro SD card to your computer.</li>
+  <li>Select the micro SD card.</li>
+  <li>Click on write.</li>
+</ol>
+
+<p>Once the process is done, disconnect the sd card from your computer and insert it in the micro sd card slot in the Raspberry Pi. Now, you can connect the raspberry pi power supply. The Raspberry Pi will do its initial configuration and once it is done you will be presented with a CLI login prompt. Use the following credentials to log in:</p>
+<ul>
+  <li>Username: pi</li>
+  <li>Password: raspberry</li>
+</ul>
+
+<h3 id="connecting-the-pi-to-the-network">Connecting the Pi to the Network.</h3>
+<p>If you are using ethernet, skip this part. Otherwise, follow these steps to connect your raspberry pi your wireless network:</p>
+<ol>
+  <li>Type: <code class="language-plaintext highlighter-rouge">sudo raspi-config</code></li>
+  <li>Select option 1: System Options</li>
+  <li>Select option 1: Wireless Lan</li>
+  <li>Select your country</li>
+  <li>In the prompt <code class="language-plaintext highlighter-rouge">Please Enter SSID</code> enter the name of your wireless network (This is case sensitive)</li>
+  <li>Enter your wireless network password</li>
+</ol>
+
+<p>There are a couple of more things to do:</p>
+<ul>
+  <li>Change your password
+    <ul>
+      <li>Select “System Options” -&gt; “Password” -&gt; “Enter new password”</li>
+    </ul>
+  </li>
+  <li>Change your hostname
+    <ul>
+      <li>Select “System Options” -&gt; “Set Hostname” -&gt; “Enter hostname (I call mine sftpserver)”</li>
+    </ul>
+  </li>
+  <li>Enable SSH
+    <ul>
+      <li>Select “Interface options” -&gt; “SSH” -&gt; “Yes”</li>
+    </ul>
+  </li>
+  <li>Update the system
+    <ul>
+      <li>Select “Update”</li>
+      <li>Finish and Reboot</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="connect-to-the-pi">Connect to the Pi</h3>
+<p>First you need to know the Raspberry Pi’s Ip address. To find this information you can use several commands:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">hostname -I</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ifconfig</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ip addr</code></li>
+</ul>
+
+<p>In your regular computer, you can use ssh to connect to the raspberry pi. Windows 10, Mac OS, and Most Linux distros come with an SSH client already installed. To connect to your Raspberry Pi use the following command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">ssh username@ip-address-of-your-pi</code> for example: <code class="language-plaintext highlighter-rouge">ssh pi@192.168.1.169</code></p>
+
+<p>Once you run the command, a message similar to this will be prompted:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The authenticity of host '192.168.1.169 (192.168.1.169)' can't be established.
+ECDSA key fingerprint is SHA256:BJlQmHyFwLGExcwkSvaasdasWty1BwSq2mxVVsumDqGc.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+</code></pre></div></div>
+<p>Make sure that you answer “yes”. You will be asked for the password of the pi user and upon entering it you will be connected to your raspberry pi. Now you can disconnect the raspberry pi from the monitor and also the keyboard and mouse since we can control the Pi from any other computer even after a reboot.
+Setup SSH</p>
+
+<h2 id="install-ftp-server">Install FTP Server</h2>
+<p>Before installing sftp, update the system with: <code class="language-plaintext highlighter-rouge">sudo apt update; sudo apt upgrade  -y</code> this should go smoothly since you updated the pi earlier. To install sftp, run this command: <code class="language-plaintext highlighter-rouge">sudo apt install openssh-server openssh-sftp-server -y</code>.  These packages should be installed already but if they are not they will be after running the installation command.</p>
+
+<h2 id="configure-sftp">Configure SFTP</h2>
+<ol>
+  <li>First we need to create a user and a group for connecting to the ftp server.
+    <ol>
+      <li>To create a user use: <code class="language-plaintext highlighter-rouge">sudo adduser ftpu</code> where ftpu is the name of the user. When you get prompter for a password make sure to type one. The wizard will ask you for some basic information and it is optional to add it.</li>
+      <li>To create a group use: <code class="language-plaintext highlighter-rouge">sudo addgroup ftpg</code> where ftpg is the name of the group</li>
+      <li></li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="take-ftp-server-online">Take FTP Server online</h2>
+<p>Setup a DDNS Service for static Address
+Test FTP Server</p>
+
+<h2 id="challenges">Challenges</h2>
+<p>TBA</p>
+
+<h2 id="take-this-project-further">Take this project further</h2>
+<p>TBA</p>
+:ET

@@ -1,0 +1,106 @@
+I"<p><img src="/assets/logo100x100.png" alt="logo" /><br /></p>
+
+<h1 id="welcome-to-cis-106-linux-fundamentals">Welcome to CIS-106-Linux Fundamentals</h1>
+<p>Here you will find all the information for the course.</p>
+
+<h2 id="course-learning-outcomes">COURSE LEARNING OUTCOMES</h2>
+<ul>
+  <li>Demonstrate fluency in Linux terminology.</li>
+  <li>Install Linux and identify features of various distributions.</li>
+  <li>Manage files in the Linux environment.</li>
+  <li>Administer user accounts and groups efficiently.</li>
+  <li>Use Linux Utilities to manage data.</li>
+  <li>Install software and third-party utilities.</li>
+  <li>Managing Resources in the Linux networking environment.</li>
+  <li>Understanding of virtualization with Virtualbox</li>
+  <li>Understanding of Markdown and proper documentation techniques</li>
+</ul>
+
+<h1 id="requirements">Requirements</h1>
+
+<ul>
+  <li>Access to a computer where Linux can be installed. The following are options:
+    <ul>
+      <li>A virtual machine (Preferred)</li>
+      <li>A laptop/Desktop computer that you can wipe.</li>
+      <li>A Raspberry Pi 4 or other capable single board computer</li>
+    </ul>
+  </li>
+  <li>Access to Blackboard</li>
+  <li>A Github account</li>
+  <li>A Text editor. We will be using <a href="https://code.visualstudio.com/">VS Code</a> but you can use whatever you want</li>
+  <li>2 Hours of study time</li>
+  <li>Capable to adjust to fast paced course</li>
+  <li><strong>For virtualization</strong>
+    <ul>
+      <li>A decent PC that meets or exceeds these requirements:
+        <ul>
+          <li>Quad-Core Processor or modern Dual-Core Processor 2.5 Ghz</li>
+          <li>8 Gb of RAM</li>
+          <li>Windows 10/11 or MacOS</li>
+          <li>100 Gb of free space</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Knowledge of the following</strong>
+    <ul>
+      <li>Basic components of a personal computer
+        <ul>
+          <li>Basic usage of a persona computer</li>
+          <li>Internet browsing</li>
+          <li>Reading emails</li>
+          <li>Chat Applications</li>
+          <li>Office Productivity Suites (MS Office, Google Docs, etc)</li>
+          <li>Install/Remove Software</li>
+          <li>Difference between web browser, the internet, and a search engine
+            <blockquote>
+              <p>Not knowing this things does not mean you will fail the course. It means that you will have to spend extra time studying for the course.</p>
+            </blockquote>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="advice">Advice</h2>
+<p>If you find that the content of the course is too much or that you have too many gaps in your knowledge, I suggest that you take this course after CIS 180 and CIS 116.</p>
+
+<h1 id="resources">Resources</h1>
+
+<ul>
+  <li>Snapshots:
+    <ol>
+      <li>After installation and update</li>
+      <li>After installation of basic software:</li>
+    </ol>
+  </li>
+  <li>Virtual Machine Specs:
+    <ul>
+      <li>Hard drive: 50GB</li>
+      <li>RAM: 2GB</li>
+      <li>CPU: 2 cores</li>
+      <li>Video Graphics: 128MB</li>
+      <li>Audio controller: N/A</li>
+      <li>Network Card: 1 NAT Card</li>
+    </ul>
+  </li>
+  <li><strong>Books</strong>
+    <ul>
+      <li><a href="https://bit.ly/34Og1Bp">The Linux Command Line By William Shotts</a></li>
+      <li><a href="http://bit.ly/34QaA4O">Raspberry Pi Beginner’s Guide 4th Edition</a></li>
+      <li><a href="https://bit.ly/2LY0JTW">Free Linux Magazine with good command line reference</a></li>
+      <li><a href="http://www.it-docs.net/ddata/900.pdf">Free book. wont be used but it is good to have</a></li>
+      <li><a href="http://bit.ly/3qrkjHb">Raspberry Models Comparison</a></li>
+    </ul>
+  </li>
+  <li><strong>Github Markdown</strong>
+    <ul>
+      <li><a href="https://bit.ly/3p3WLIp">Github Markdown Syntax Cheat sheet</a></li>
+      <li><a href="http://bit.ly/3pvKZpE">Github Markdown syntax official documentation</a></li>
+      <li><a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet">Git Cheat sheet</a></li>
+    </ul>
+  </li>
+</ul>
+:ET

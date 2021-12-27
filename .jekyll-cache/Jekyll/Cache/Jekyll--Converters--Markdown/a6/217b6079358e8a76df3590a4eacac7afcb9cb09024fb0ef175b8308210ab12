@@ -1,0 +1,88 @@
+I"�<h2 id="project-ideas-divided-by-areas-of-interests">Project ideas divided by areas of interests</h2>
+<p>The level of difficulty is indicated by: 🌟</p>
+<ul>
+  <li>🌟 = Easy</li>
+  <li>🌟🌟 = Moderate</li>
+  <li>🌟🌟🌟 = Difficult</li>
+</ul>
+
+<h2 id="default-project">Default Project</h2>
+<p>This project is easy by design and it is meant to cover all or most of the topics that we cover during our lectures. Pick this project if you have no idea what to do. This project can be completed in a Raspberry Pi or Virtual Machine</p>
+
+<ul>
+  <li><strong>Topic:</strong> Using Ubuntu 20.04 as an every day computer</li>
+  <li><strong>Description:</strong> Your goal is to prepare and document a computer setup for every day using Ubuntu (or an Ubuntu Flavor) as the main operating system. Your document must include the following:
+    <ul>
+      <li>Detailed step by step instructions on how to:
+        <ul>
+          <li>Install Ubuntu 20.04</li>
+          <li>Update Ubuntu and best practices</li>
+          <li>Install software via the command line and graphically using the software center</li>
+          <li>Basic commands covered in the class</li>
+          <li>How to connect your computer to the internet</li>
+          <li>How to perform the following every day tasks including 2 alternative applications and one that you recommend.
+            <ul>
+              <li>Internet browsing</li>
+              <li>Reading email</li>
+              <li>Remote assistance</li>
+              <li>Office productivity (writing documents, editing spreadsheets and doing presentations)</li>
+              <li>Streaming music and video</li>
+              <li>Video games</li>
+              <li>Video Chatting/calling/conferencing</li>
+              <li>Texting/Instant messaging</li>
+              <li>Programing</li>
+              <li>Educational Applications (dictionaries and that kind of stuff)</li>
+            </ul>
+          </li>
+          <li>How to get help with your Ubuntu machine</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>For every application provide a basic description, how to install and remove it and how to do something simple in it.</p>
+</blockquote>
+
+<p>Your final document should look like <a href="/project/finalProjectExample/">this</a></p>
+
+<h1 id="other-project-ideas">Other Project Ideas</h1>
+<blockquote>
+  <p>If you choose to do any of the projects listed here, make an appointment with me to discuss it. I will give you an outline that you can follow.</p>
+</blockquote>
+
+<h2 id="web-development">Web Development</h2>
+<ol>
+  <li>Build a LAMP Stack in Ubuntu Server 🌟🌟</li>
+  <li>Host a simple website in Ubuntu Server using Apache/NGINX  🌟</li>
+</ol>
+
+<h2 id="networking">Networking</h2>
+<h3 id="virtual-machine-projects">Virtual Machine Projects</h3>
+<ol>
+  <li>Build a file server with Ubuntu Server or Debian 🌟🌟</li>
+  <li>Build a Dropbox alternative with NextCloud 🌟🌟</li>
+  <li>Build a media center that plays files from a file server or media server 🌟🌟</li>
+</ol>
+
+<h3 id="raspberry-pi-projects">Raspberry Pi Projects</h3>
+<ol>
+  <li>Build a DNS/DHCP server and ads blocker with the Pi-hole 🌟🌟</li>
+  <li>Build a wireless access Point🌟🌟</li>
+  <li>Build a Tor Router 🌟🌟🌟</li>
+  <li>Build a print server 🌟</li>
+  <li>Build a camera server🌟🌟</li>
+  <li>Build a media center that plays files from a file server or media server 🌟🌟</li>
+</ol>
+
+<h3 id="ethical-hacking-computer-forensics-tinkerers">Ethical Hacking, Computer Forensics, Tinkerers</h3>
+<ol>
+  <li>Build a portable Hacking Machine with a Raspberry Pi and Kali Linux 🌟</li>
+  <li>Recover Data from an erased disk with Kali Linux and a Raspberry Pi 🌟</li>
+  <li>Build a small lab to simulate packet sniffing with Kali Linux and Wireshark 🌟🌟🌟</li>
+  <li>Build a Rogue access point with Kali Linux and a Raspberry Pi 🌟🌟🌟</li>
+  <li>Build a portable Raspberry Pi mini-computer with a battery pack and a small display  🌟🌟🌟</li>
+</ol>
+
+:ET

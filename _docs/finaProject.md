@@ -35,7 +35,10 @@ This project is easy by design and it is meant to cover all or most of the topic
 
 > For every application provide a basic description, how to install and remove it and how to do something simple in it.
 
-Your final document should look like this: 
+Your final document should look like [this](/project/finalProjectExample/)
+
+# Other Project Ideas
+> If you choose to do any of the projects listed here, make an appointment with me to discuss it. I will give you an outline that you can follow. 
 
 ## Web Development
 1. Build a LAMP Stack in Ubuntu Server 🌟🌟
@@ -52,10 +55,10 @@ Your final document should look like this:
 2. Build a wireless access Point🌟🌟
 3. Build a Tor Router 🌟🌟🌟
 4. Build a print server 🌟
-5. Build a camera server
+5. Build a camera server🌟🌟
 6. Build a media center that plays files from a file server or media server 🌟🌟
 
-## Ethical Hacking, Computer Forensics, Tinkerers 
+### Ethical Hacking, Computer Forensics, Tinkerers 
 1. Build a portable Hacking Machine with a Raspberry Pi and Kali Linux 🌟
 2. Recover Data from an erased disk with Kali Linux and a Raspberry Pi 🌟 
 3. Build a small lab to simulate packet sniffing with Kali Linux and Wireshark 🌟🌟🌟

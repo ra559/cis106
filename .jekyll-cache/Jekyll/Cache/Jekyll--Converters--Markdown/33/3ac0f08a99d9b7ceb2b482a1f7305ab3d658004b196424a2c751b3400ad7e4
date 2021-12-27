@@ -1,0 +1,98 @@
+I"`<h1 id="raspberry-pi-ubuntu-2010-setup-gnome-classic-edition">Raspberry Pi Ubuntu 20.10 Setup <strong>(Gnome Classic Edition)</strong></h1>
+<p><img src="../imgs/desktopuc.png" alt="Desktop" /></p>
+
+<h2 id="table-of-content">Table of Content</h2>
+<ul>
+  <li><a href="#raspberry-pi-ubuntu-2010-setup-gnome-classic-edition">Raspberry Pi Ubuntu 20.10 Setup <strong>(Gnome Classic Edition)</strong></a>
+    <ul>
+      <li><a href="#table-of-content">Table of Content</a></li>
+      <li><a href="#what-is-gnome-classic">What is Gnome Classic?</a></li>
+      <li><a href="#install-gnome-classic">Install Gnome classic</a></li>
+      <li><a href="#add-necessary-software">Add necessary software</a></li>
+      <li><a href="#vs-code">VS Code</a></li>
+      <li><a href="#remove-unnecessary-software">Remove unnecessary software</a></li>
+      <li><a href="#enable-dark-theme">Enable Dark Theme</a></li>
+      <li><a href="#adding-some-adjustments">Adding some adjustments</a></li>
+      <li><a href="#extra">Extra</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="what-is-gnome-classic">What is Gnome Classic?</h2>
+<p>GNOME Classic is a feature for users who prefer a more traditional desktop experience. While GNOME Classic is based on GNOME 3 technologies, it provides a number of changes to the user interface, such as the Applications and Places menus on the top bar, and a window list at the bottom of the screen.
+<a href="https://help.gnome.org/users/gnome-help/stable/gnome-classic.html.en">source</a></p>
+
+<h2 id="install-gnome-classic">Install Gnome classic</h2>
+<p>Update the system and install gnome classic: <code class="language-plaintext highlighter-rouge">sudo apt update; sudo apt upgrade -y; sudo apt install gnome-session-flashback -y</code></p>
+
+<h2 id="add-necessary-software">Add necessary software</h2>
+<p><code class="language-plaintext highlighter-rouge">sudo apt install gcc make perl nemo ubuntu-restricted-extras ubuntu-restricted-addons git python3-pip flameshot pandoc vlc gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vlc peek vim deluge geany tilix neofetch midori caffeine -y</code></p>
+
+<h2 id="vs-code">VS Code</h2>
+<ol>
+  <li>Download deb package from: <em>https://code.visualstudio.com/sha/download?build=stable&amp;os=linux-deb-arm64</em></li>
+  <li>Run this command (assuming that you downloaded the file to your Downloads directory):
+<code class="language-plaintext highlighter-rouge">sudo apt install $HOME/Downloads/code*.deb</code></li>
+  <li>Install VS Code Extensions:
+    <ol>
+      <li>Live Server</li>
+      <li>Markdown All in one</li>
+      <li>Markdown Preview Enhanced</li>
+      <li>Markdown PDF</li>
+      <li>Markdown TOC</li>
+      <li>Markdown Converter</li>
+      <li>PDF Preview</li>
+      <li>Code Spell Checker</li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="remove-unnecessary-software">Remove unnecessary software</h2>
+<p>Remove error reporting, IRQ Balance, and other not needed software:
+<code class="language-plaintext highlighter-rouge">sudo apt purge apport irqbalance aisleriot gnome-mahjongg gnome-sudoku gnome-mines thunderbird transmission-common  -y</code></p>
+
+<h2 id="enable-dark-theme">Enable Dark Theme</h2>
+<p><img src="../imgs/darktheme.png" alt="Dark Theme" /></p>
+
+<h2 id="adding-some-adjustments">Adding some adjustments</h2>
+<ol>
+  <li>
+    <p>Replace nautilus with nemo: <code class="language-plaintext highlighter-rouge">xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search</code></p>
+  </li>
+  <li>
+    <p>Replace Screenshot tool with flameshot:
+<img src="../imgs/settingflameshot.gif" alt="replace screenshot tool shortcut" /></p>
+  </li>
+  <li>Disable animations</li>
+  <li>
+    <p>Disable Suspend when laptop lid is closed
+<img src="../imgs/disableAnimations.png" alt="Animations" /></p>
+  </li>
+  <li>
+    <p>Disable desktop icons: <code class="language-plaintext highlighter-rouge">gsettings set org.gnome.gnome-flashback.desktop show-icons false</code></p>
+  </li>
+  <li>Set caffeine and flameshot to start with system startup.
+<img src="../imgs/systemstartup.png" alt="System Startup" /></li>
+</ol>
+
+<h2 id="extra">Extra</h2>
+<p>:warning: <strong>Before Overclocking the system keep this in mind</strong> :warning:</p>
+<ul>
+  <li>Make sure that you are using either a case with a fan or a case with passive cooling if you are using a Raspberry Pi 4</li>
+  <li>If you are using a Raspberry Pi 400, you do not have to worry about cooling since it comes with a good heat sink.</li>
+  <li>To overclock the system follow these steps:
+    <ol>
+      <li>Open the file: <code class="language-plaintext highlighter-rouge">/boot/firmware/config.txt</code> in a text editor like nano or vim.</li>
+      <li>Add the following lines to the end of the file for the raspberry pi 400:
+<code class="language-plaintext highlighter-rouge">force_turbo=1</code>
+<code class="language-plaintext highlighter-rouge">over_voltage=8</code>
+<code class="language-plaintext highlighter-rouge">arm_freq=2200</code></li>
+      <li>If you are using a Raspberry Pi 4, add this lines instead:
+<code class="language-plaintext highlighter-rouge">over_voltage=6</code>
+<code class="language-plaintext highlighter-rouge">arm_freq=2000</code></li>
+      <li>Reboot your Pi with: <code class="language-plaintext highlighter-rouge">sudo reboot</code> or <code class="language-plaintext highlighter-rouge">telinit 6</code></li>
+    </ol>
+  </li>
+</ul>
+
+:ET
