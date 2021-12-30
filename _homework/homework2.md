@@ -5,7 +5,8 @@ title: Homework 2
 ## Complete the following tasks
 1. Complete lab 2 Installing Ubuntu in Virtualbox and Lab 2.1 Performing basic tasks
 2. Complete discussion board 2
-3. Week 2 Report most contain the following:
+3. This week you will not work on your final project due to the fact that you have two labs assigned
+4. Week 2 Report most contain the following:
    1. A summary of the presentations:
       1. The basics of virtualization
       2. Installing Ubuntu in Virtualbox

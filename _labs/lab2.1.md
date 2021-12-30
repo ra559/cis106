@@ -2,7 +2,7 @@
 layout: post
 title: Lab 2.1 - Performing Basic Tasks In Ubuntu 20.04
 ---
-Perform this tasks
+# Perform these tasks
 1. Take a screenshot
 2. Create a desktop launcher for any app
 3. Write a simple website
@@ -18,7 +18,7 @@ Perform this tasks
 13. Install some programs
    1. A game
    2. An email client
-   3. Organ
+   3. A web browser
 14. Organize some files
 15. Change your password
 16. Install a font
