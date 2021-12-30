@@ -22,8 +22,8 @@ title: Homework 1
 
 Use the following template for your weekly report:
 ```
-# Week Report 0
-## Summary of Presentation: Introduction to CIS 106
+# Week Report 1
+## Summary of Presentation: Introduction to Linux
 Write your summary here
 
 ## Final Project Research Questions and answers

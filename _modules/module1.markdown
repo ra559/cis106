@@ -17,11 +17,8 @@ title: Module 1
 
 ## Lecture 2: Installing Ubuntu, Virtualization, and the Raspberry PI
 * [The basics of Virtualization](http://bit.ly/2KIAlNA)
-  * [Video here](https://youtu.be/_HnwxnvS-8w)
 * [Using VirtualBox](http://bit.ly/3hk03nI)
-  * [Video here](https://youtu.be/cMRqcbx8JTs)
 * [Installing Ubuntu 20.04 in virtualbox](http://bit.ly/2WR4i0o)
-  * [Video here](https://youtu.be/2MEN_IX8gJ8)
 * [What is a Raspberry pi?](http://bit.ly/3nXAP0P)
 
 ## Lecture 3
