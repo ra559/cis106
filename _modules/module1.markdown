@@ -11,8 +11,8 @@ title: Module 1
   
 
 ## Lecture 1: Introduction to Linux
-   * [Introduction to Linux](http://bit.ly/3hmdLX6)
-   * [What is Ubuntu?](http://bit.ly/2JrgKkA)
+   * [Introduction to Linux](https://rapurl.live/dbx)
+
 
 
 ## Lecture 2: Installing Ubuntu, Virtualization, and the Raspberry PI
