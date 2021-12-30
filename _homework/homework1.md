@@ -26,9 +26,6 @@ Use the following template for your weekly report:
 ## Summary of Presentation: Introduction to CIS 106
 Write your summary here
 
-## My github account
-![my github account](imageHere.png)
-
 ## Final Project Research Questions and answers
 Questions and answers go here
 

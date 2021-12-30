@@ -50,10 +50,7 @@ On the top left corner, click on “Random Distribution” and answer the follow
 ### Question 3
 On the top of the page, right in the middle, you will find an option that allows you to search for distributions. 
 Click on **“Search”** and after the page loads, fill in the following information in the **“Search Distribution by Criteria”** section and Click on Submit Query.
-* OS Type: Linux
-* Architecture: x86_64
-* Status: Active
-* Leave the rest as default.
+* OS Type: Linuxhttps://youtu.be/8Sa52S527Qcefault.
 
 From the query results, choose any distribution and answer the following question about the distro you chose.
 
