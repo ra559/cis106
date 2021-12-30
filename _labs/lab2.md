@@ -3,25 +3,18 @@ layout: post
 title: Lab 2 - Installing Ubuntu 20.04 in VirtualBox.
 ---
 
-Video for the lab can be found here: https://youtu.be/8miYpGvxZL8
-
-
 ## Presentations:
 * [The basics of Virtualization](https://docs.google.com/presentation/d/e/2PACX-1vSwjKH4jswd7r2OV_C-b4K1LJlAhdScHVvgDAtZgb1J6kpPoYkQIxZpjYqg_4bbPClbh85VVvbKzJV1/pub?start=false&loop=false&delayms=3000&slide=id.p1)
-  * [Video here](https://youtu.be/_HnwxnvS-8w)
 * [Using VirtualBox](https://docs.google.com/presentation/d/e/2PACX-1vTwJsImCvHoM2mQX6c5E2J11NPKGE90ip6kWV_LMPDCKQTG1QtcKTUGmsqkV1vKXdCUFtz66qan4PjJ/pub?start=false&loop=false&delayms=3000&slide=id.p)
-  * [Video here](https://youtu.be/cMRqcbx8JTs)
 * [Installing Ubuntu 20.04 in VirtualBox](http://bit.ly/2WR4i0o)
-   * [Video here](https://youtu.be/2MEN_IX8gJ8)
-   * [Video 2 here](https://youtu.be/02kB7mpEW38)
+
 
 ## Requirements
-* Please go over the presentations before you do this lab. It will give you an idea of what we are trying to do here. IF you do not want to read the presentations, I went ahead and recorded videos for your convenience. The videos are very detailed and therefore they are a little long (30 to 40 minutes). Watch the videos if the presentation is not clear enough. Ask me questions if you have any. 
+* Please go over the presentations before you do this lab. It will give you an idea of what we are trying to do here. 
 * Please go slow and take your time to do this lab. It is long but it is the core of this course. 
-* For those who will be using the cloud environment only, you need to do this lab anyways since virtualization is part of the curriculum.
 * For those who do not have a computer powerful enough, you have a separate assignment to complete.
 
-## WARNING! 
+## NOTE! 
 Only start this lab after you have watched the videos or read the presentations.
 
 
@@ -71,7 +64,7 @@ Make sure to install VirtualBox in your host computer. For Windows follow this [
 * Shared Clipboard: Enabled - Bidirectional
 * Drag n' Drop: Enabled - Bidirectional
 
-![Create VM](../imgs/createVM.gif)
+![Create VM](/assets/createVM.gif)
 
 
 > Take a screenshot of your virtual machine settings. You screenshot must show all the settings of your VM.

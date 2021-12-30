@@ -16,11 +16,11 @@ title: Lab 2.1 - Performing Basic Tasks In Ubuntu 20.04
 11. Set up data backup
 12. Update the system
 13. Install some programs
-   1. A game
-   2. An email client
-   3. A web browser
-14. Organize some files
-15. Change your password
-16. Install a font
-17. compress a file
-18. Share a folder on the network
+   - A game
+   - An email client
+   - A web browser
+1.  Organize some files
+2.  Change your password
+3.  Install a font
+4.  compress a file
+5.  Share a folder on the network
