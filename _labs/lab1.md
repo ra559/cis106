@@ -3,10 +3,8 @@ layout: post
 title: Lab 1 - Exploring Linux Distributions
 ---
 ## Requirements:
-* **You will use Github to submit this Lab. Watch the 'What is Git and Github?' video before your start**
-* Create a Github account before your start this lab.
 * Bold your answers *(2 points)*
-* Format your screenshots accordingly (not too big, not too small). If I can’t read it, I cannot grade it.
+* Take proper screenshots. Sloppy work = lower grade
 * Video: https://youtu.be/8Sa52S527Qc
 
 
@@ -78,23 +76,28 @@ From the query results, choose any distribution and answer the following questio
 Now that you know how to use Distrowatch. Find a Linux distribution for the following scenarios. For each distribution provide the website, name, and supported architecture.
 
 1. A Linux distribution used for Data Rescue/Data recovery
-* Distro Name: **Type your answer here**
-* Website: **Type your answer here**
-* Desktop Environment: **Type your answer here**
+
+| Distro Name | Website | Desktop Environment|
+|-------------|---------|--------------------|
+| ANSWER HERE | ANSWER HERE | ANSWER HERE    | 
+
 
 2. A Linux distribution used for Education that supports the ix86 processor architecture.
-* Distro Name: **Type your answer here**
-* Website: **Type your answer here**
-* Desktop Environment: **Type your answer here**
+
+| Distro Name | Website | Desktop Environment|
+|-------------|---------|--------------------|
+| ANSWER HERE | ANSWER HERE | ANSWER HERE    | 
 
 3. A Linux distribution that supports the OEM installation method
-* Distro Name: **Type your answer here**
-* Website: **Type your answer here**
-* Desktop Environment: **Type your answer here**
+
+| Distro Name | Website | Desktop Environment|
+|-------------|---------|--------------------|
+| ANSWER HERE | ANSWER HERE | ANSWER HERE    | 
 
 ### Question 5 (Extra credit 2 pts - Optional)
 On the Distrowatch homepage in the menu located in the middle of the page, you will find an option called **“Submit Distribution”.** This option lists all the Linux distros that are pending evaluation, on development or that are experiencing some sort of legal constraint.  Select one of these distributions and in a paragraph, share your thoughts. (keep it simple 5 to 8 sentences).
-**Type your paragraph here**
+
+> **Type your paragraph here**
 
 
 ## Working with DistroTest.net
@@ -116,5 +119,4 @@ Stop the machine and take a screenshot of the browser window showing that the ma
 # What to submit? (Delete this section before submitting)
 * Submit the URL of this file in your Github repository. 
 * Convert this markdown file as PDF and submit it in with the URL.
-* Each submission is worth 50 Points. If you only submit 1 you will get half the grade.
 ---
