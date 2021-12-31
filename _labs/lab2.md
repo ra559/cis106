@@ -4,8 +4,8 @@ title: Lab 2 - Installing Ubuntu 20.04 in VirtualBox.
 ---
 
 ## Presentations:
-* [The basics of Virtualization](https://docs.google.com/presentation/d/e/2PACX-1vSwjKH4jswd7r2OV_C-b4K1LJlAhdScHVvgDAtZgb1J6kpPoYkQIxZpjYqg_4bbPClbh85VVvbKzJV1/pub?start=false&loop=false&delayms=3000&slide=id.p1)
-* [Using VirtualBox](https://docs.google.com/presentation/d/e/2PACX-1vTwJsImCvHoM2mQX6c5E2J11NPKGE90ip6kWV_LMPDCKQTG1QtcKTUGmsqkV1vKXdCUFtz66qan4PjJ/pub?start=false&loop=false&delayms=3000&slide=id.p)
+* [The basics of Virtualization](https://rapurl.live/est)
+* [Using VirtualBox](https://rapurl.live/t0h)
 * [Installing Ubuntu 20.04 in VirtualBox](http://bit.ly/2WR4i0o)
 
 
@@ -21,27 +21,31 @@ Only start this lab after you have watched the videos or read the presentations.
 ## Question 1 | Enable virtualization
 Before you can create virtual machines, you need to know if your computer can virtualize. There are a couple of steps you need to follow to find out the answer to this question:
 
+### MacOS users
 1. For those using MacOS, if you have a recent Apple computer, chances are that you can virtualize with no problem. Once you have installed VirtualBox, make sure to install the Extension Pack and move along to question 2. For those using a Macbook with only 2 cores and 4GB of RAM, know that your computer will be very slow for this class and you may want to consider using an alternative. Contact me if this is your case. 
-   
+
+>If you have an **M1 Macbook**, Virtualbox is not supported and you will not be able to use it for this course. You will need to either get a Raspberry Pi or an spare computer. There is a program called UTM that you can use but I cannot provide you support for it as I do not own an M1 Mac.
+
+### Windows Users   
 2. For those using Windows, follow these steps:
-   1. Find out what hardware does your computer have:
+   1. Find out what hardware your computer has:
       1. CPU and number of cores
       2. Amount of RAM
       3. Amount of Free Storage
-   2. If your computer does not meet this criteria, stop this lab and get in contact with me. We may be able to find an alternative for you but this can only be done on a 1 on 1 basis.
+   2. If your computer does not meet the criteria below, stop this lab and get in contact with me. We may be able to find an alternative for you but this can only be done on a 1 on 1 basis.
    
    **RECOMMENDED SPECIFICATIONS:**
-      1. CPU: Quad core CPU or Dual Core with base frequency of 2.0GHz
-      2. RAM: 6GB or More
-      3. Free Storage: 60GB or more
+      - CPU: Quad core CPU or Dual Core with base frequency of 2.0GHz
+      - RAM: 6GB or More
+      - Free Storage: 60GB or more
    
-   1. If your computer meets or exceeds the above capabilities, then you need to check if virtualization is enabled. Follow [this guide](https://support.bluestacks.com/hc/en-us/articles/115003174386-How-to-enable-Virtualization-VT-on-Windows-10-for-BlueStacks-4) to know if your computer has virtualization enabled and if it does not, use the same guide to learn how to enable it.
-   2. You can also use Speccy to find out if your computer has virtualization enabled.
-   3. If you are having troubles enabling virtualization, let me know immediately. **DO NOT WAIT FOR THE LAST MINUTE!** This part can take time!
+   3. If your computer meets or exceeds the above capabilities, then you need to check if virtualization is enabled. Follow [this guide](https://rapurl.live/vaj) to know if your computer has virtualization enabled and if it does not, use the same guide to learn how to enable it.
+   4. You can also use Speccy to find out if your computer has virtualization enabled.
+   5. If you are having troubles enabling virtualization, let me know immediately. **DO NOT WAIT FOR THE LAST MINUTE!** This part can take time!
    
-> This questions does not require a submission. You can delete this question from your Lab if you want to since there is nothing to grade in this question.
+> This questions does not require a submission.
 
-## Question 2 | Create Virtual Machine
+## Question 2 | Create a Virtual Machine
 Before you can create virtual machines, you need to install VirtualBox and VirtualBox Extension Pack. To download Vbox and the extension pack go to:
 
 * [Virtualbox Download Page](https://www.virtualbox.org/wiki/Downloads)
