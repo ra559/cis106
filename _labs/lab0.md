@@ -17,27 +17,28 @@ Install VS Code and install the following extensions:
 * Code Spell Checker
   
 ## Question 2
-* Download the following PDF File: [What is Ubuntu?](https://github.com/ra559/cis106/blob/main/docs/What%20is%20Ubuntu_%20.pdf)
-* In VS Code, create a new file and name it `Notes-0.md`
+1. In your Documents folder, create a folder called "lab0" all lowercase
+2. Download the following compressed file: https://github.com/ra559/cis106/blob/main/lab0files.zip 
+ 
+![labzerodownload](/assets/labzerodownload.gif)<br>
+
+3. Decompress the zip file inside you `lab0` folder
+4. Open VS Code and open the lab0 folder
 
 ## Question 3
 * Read the presentation ['What is Markdown'](http://bit.ly/2KJyqbV)
+  > The goal of this lab is to learn and practice markdown. Before following along with the video, read the presentation.
 
 ## Question 4
-* Using markdown, replicate the document you downloaded in your Notes-0.md file. Make sure to copy and paste the text. The goal of this lab is to practice markdown syntax not typing!
+* Create a new file called `what_is_ubuntu_submission.md` inside your `lab0` folder.
+* 
+* Using markdown, replicate the document `whatisubuntu.pdf` that is located inside the `lab0` folder. Make sure to copy and paste the text. The goal of this lab is to practice markdown syntax not typing!
 
 ## Question 5 
-* Export the markdown file to PDF.
-  * Open command palets (Ctrl, Shift+P)
-  * Type: Markdown: Convert
-  * select the option that converts to HTML
-  
-* Export the markdown file to HTML.
-  * Open command palets (Ctrl, Shift+P)
-  * Type: Markdown 
-  * select the option that converts to HTML
+* Export the markdown file to PDF, Docx, and HTML
+
 
 ## Submission
-In blackboard, submit the PDF file.
+In blackboard, submit the PDF file and the markdown file.
 
-**Late submissions will lose 40 points!**
+**Late submissions will not be accepted**
