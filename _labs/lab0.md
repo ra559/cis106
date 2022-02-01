@@ -3,7 +3,7 @@ layout: post
 title: Lab 0 - Learning Markdown
 ---
 
-> Find the video here: [Video](https://youtu.be/ruOsyHJNK30)
+> Find the video here: [Video](https://youtu.be/YOdW-fI4GhY)
 
 ## Question 1
 1. Install VS Code and install the following extensions:
