@@ -52,7 +52,7 @@ Before you can create virtual machines, you need to install VirtualBox and Virtu
 
 Make sure to select the right installer for your operating system:
 
-![VirtualBox Download page](../imgs/vboxdownloadpage.png)
+![VirtualBox Download page](/assets/vboxdownloadpage.png)
 
 Make sure to install VirtualBox in your host computer. For Windows follow this [video](https://www.youtube.com/watch?v=2lGmCwpFYi8). For macOS follow this [video.](https://www.youtube.com/watch?v=fyx53lJyAoc) Once you have installed VirtualBox, create a virtual machine that meets these specifications:
 * OS: Ubuntu 20.04 64Bits [ISO URL](https://ubuntu.com/download/desktop) 
