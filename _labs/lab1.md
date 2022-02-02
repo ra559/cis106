@@ -5,7 +5,7 @@ title: Lab 1 - Exploring Linux Distributions
 ## Requirements:
 * Bold your answers *(2 points)*
 * Take proper screenshots. Sloppy work = lower grade
-* Video: 
+* Video: [here](https://youtu.be/mV0iIJcnV_o)
 
 
 ## Working with Distrowatch

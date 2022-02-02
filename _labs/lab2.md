@@ -160,6 +160,8 @@ git commit -m "Files organized"
 git push
 ```
 * Open your github repository and your web browser and noticed how the files are now organized as they are in your computer.
+* 
+
 
 ## What will you Submit:
 * Create a markdown document with the following:
