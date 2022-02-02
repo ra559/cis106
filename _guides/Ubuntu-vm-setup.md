@@ -2,27 +2,8 @@
 layout: page
 title: Ubuntu 20.04 Virtual Machine Setup
 ---
-# Ubuntu 20.04 Virtual Machine Setup
 
-## Virtual Machine Specifications
-Make sure to install virtualbox in your host computer. For Windows follow this [video](https://www.youtube.com/watch?v=2lGmCwpFYi8). For macOS follow this [video.](https://www.youtube.com/watch?v=fyx53lJyAoc) Once you have installed VirtualBox, create a virtual machine that meets these specifications:
-* OS: Ubuntu 20.04 64 Bits [ISO URL](https://ubuntu.com/download/desktop) 
-* HDD: 50 GB
-* RAM: 2GB
-* Video: 64 MB or Higher
-* Audio Controller: Disabled (audio won't be needed)
-* CPU: 2 Cores
-* Add this to description:
-  * **Hostname:** cis106vm
-  * **User:** student
-  * **Password:** pccc
-* Shared Clipboard: Enabled - Bidirectional
-
-![Create VM](../imgs/createVM.gif)
-
-
-
-## During Installation Settings
+# During Installation Settings
 Once you have created the virtual machine, turn it on and start the installation process. During the installation, make sure that you follow these specifications:
 * Keyboard layout: English US
 * Installation type: Normal with third party software, Erase disk 
@@ -36,7 +17,7 @@ Once you have created the virtual machine, turn it on and start the installation
 
 ![Installation](../imgs/installation.gif)
 
-## Post Installation Settings
+# Post Installation Settings
 Once the operating system has been installed, make sure to take a snapshot of your machine. This is a good idea because if something goes wrong, you can revert back to the virtual machine state. Think of snapshots as a way of traveling back in time!
 
 * Update and upgrade

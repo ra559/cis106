@@ -73,57 +73,64 @@ Make sure to install VirtualBox in your host computer. For Windows follow this [
 
 > Take a screenshot of your virtual machine settings. You screenshot must show all the settings of your VM.
 
----
+
 ## Question 3 |  Install Ubuntu 20.04
-Follow the [Ubuntu-vm-setup](../guides/Ubuntu-vm-setup.md) for installing Ubuntu 20.04 in your virtual machine. Make sure to go over the presentation "Installing Ubuntu 20.04 in VirtualBox" where I have laid out every step explained. I will do it in the video as well but it will benefit you more to read the presentation. 
+For installing Ubuntu 20.04 in your virtual machine. Make sure to go over the presentation ["Installing Ubuntu 20.04 in VirtualBox"](https://docs.google.com/presentation/d/e/2PACX-1vQVjjsIYAyyDF9-yjC4tpfuKwFz3HPGCTFUH4KkUMeE7Ka7A_TD60kv-bx4wcReZGbqAp_KnbS260oZ/pub?start=false&loop=false&delayms=3000&slide=id.g52c6da636c_0_0) where I have laid out every step explained. I will do it in the video as well but it will benefit you more to read the presentation. 
 
 > Take a screenshot of the last screen before rebooting Ubuntu. 
 
----
-## Question 4 | Prepare Ubuntu 20.04 
-Follow the [Ubuntu-vm-setup guide](../guides/Ubuntu-vm-setup.md) for a the post installation configuration. Once you have completed the installation of all the applications and have switched your desktop environment, take a screenshot of virtual machine.
 
+## Question 4 | Post Installation Tasks
 These are the tasks that you need to complete before taking the screenshots:
 * Update and upgrade
-* Remove unnecessary software
-* Essential software installation
-* Disable animations
-* Change Default File Manager: Nemo
-* Change Default screenshot tool with flameshot
-* Enable Dark Theme (optional)
-* Change the desktop environment
+* Add canonical partners in the software settings
+* Set update daily reminder to never
+* Take snapshot.
 
+> Take a screenshot of your virtual machine showing the snapshot
 
----
-## Question 5 | Setup VS Code, Git and Github
-Vs Code was already installed in the previous question but the extensions have not been installed. Install all of these extensions:
-* Live Server
-* Markdown All in one
-* Markdown Preview Enhanced
-* Markdown PDF
-* Markdown TOC
-* PDF Preview
-* Markdown Converter
-* Code Spell Checker
+## Question 5 | Complete the following tasks
+* Install the guest additions for virtualbox. Use this command:
+```
+sudo apt install build-essential linux-headers-$(uname -r) virtualbox-guest-additions-iso virtualbox-guest-x11 -y
+```
+* Reboot the VM
+* Using the software center, Install VS Code
+  * Install all the extensions of VS Code
+  * Live Server
+  * Markdown All in one
+  * Markdown Preview Enhanced
+  * Markdown PDF
+  * Markdown TOC
+  * Markdown Converter
+  * PDF Preview
+  * Code Spell Checker
+* Using the terminal, remove all unnecessary applications from Ubuntu 20.04. Use this command:
+```
+sudo apt purge apport aisleriot gnome-mahjongg gnome-sudoku gnome-mines  -y
+```
+* Using the software center install the following applications: 
+  * flameshot 
+  * vlc 
+  * deluge 
+  * geany 
+  * tilix 
+* Using the terminal install the following applications: gcc make perl nemo git python3-pip gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree  htop net-tools vim neofetch caffeine samba smbclient cifs-utils. You can use the following command:
+```
+sudo apt install gcc make perl nemo git python3-pip gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree  htop net-tools vim neofetch caffeine samba smbclient -y
+```
+* replace the default screenshot tool with flameshot. Use this command:
+* 
 
-Once you have completed these steps, follow the guide: ['How to Setup Git and Github in Ubuntu 20.04'](../guides/Ubuntu%20Github%20Setup.md) to install and setup Git and Github in your virtual machine. This is the environment that we are going to use from this point on. Windows/MacOS will no longer be used for completing labs or any other assignment.
+      
 
-> Take a screenshot of your virtual machine with VS Code running.
-
-> **ADVICE!**
-> Take a snapshot of your system. This will come handy in the case that you break your system.
+* 
 ## What will you Submit:
 * Create a markdown document with the following:
+
 ```
 # Question 2 Screenshot
 ![](url to screenshot here)
 # Question 3 Screenshot
 ![](url to screenshot here)
-# Question 4 Screenshot
-![](url to screenshot here)
-# Question 5 Screenshot
-
-Assignment description [here](https://raw.githubusercontent.com/ra559/cis106/main/labs/lab2.md)
 ```
-* Upload this document to Github and submit the URL in Blackboard. 
-   
