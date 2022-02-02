@@ -15,8 +15,7 @@ title: Lab 2 - Installing Ubuntu 20.04 in VirtualBox.
 * Please go slow and take your time to do this lab. It is long but it is the core of this course. 
 * For those who do not have a computer powerful enough, you have a separate assignment to complete.
 
-## NOTE! 
-Only start this lab after you have watched the videos or read the presentations.
+> **NOTE!** <br> Only start this lab after you have watched the videos or read the presentations.
 
 
 ## Question 1 | Enable virtualization
@@ -46,6 +45,8 @@ Before you can create virtual machines, you need to know if your computer can vi
    
 > This questions does not require a submission.
 
+<hr>
+
 ## Question 2 | Create a Virtual Machine
 Before you can create virtual machines, you need to install VirtualBox and VirtualBox Extension Pack. To download Vbox and the extension pack go to:
 
@@ -74,12 +75,14 @@ Make sure to install VirtualBox in your host computer. For Windows follow this [
 
 > Take a screenshot of your virtual machine settings. You screenshot must show all the settings of your VM.
 
+<hr>
 
 ## Question 3 |  Install Ubuntu 20.04
 For installing Ubuntu 20.04 in your virtual machine. Make sure to go over the presentation ["Installing Ubuntu 20.04 in VirtualBox"](https://docs.google.com/presentation/d/e/2PACX-1vQVjjsIYAyyDF9-yjC4tpfuKwFz3HPGCTFUH4KkUMeE7Ka7A_TD60kv-bx4wcReZGbqAp_KnbS260oZ/pub?start=false&loop=false&delayms=3000&slide=id.g52c6da636c_0_0) where I have laid out every step explained. I will do it in the video as well but it will benefit you more to read the presentation. 
 
 > Take a screenshot of the last screen before rebooting Ubuntu. 
 
+<hr>
 
 ## Question 4 | Post Installation Tasks
 These are the tasks that you need to complete before taking the screenshots:
@@ -90,10 +93,13 @@ These are the tasks that you need to complete before taking the screenshots:
 
 > Take a screenshot of your virtual machine showing the snapshot
 
+<hr>
+
 ## Question 5 | Complete the following tasks
 * Install the guest additions for virtualbox. Use this command:
 ```
-sudo apt install build-essential linux-headers-$(uname -r) virtualbox-guest-additions-iso virtualbox-guest-x11 -y
+sudo apt install build-essential linux-headers-$(uname -r) \ 
+virtualbox-guest-additions-iso virtualbox-guest-x11 -y
 ```
 * Reboot the VM
 * Go Full Screen
@@ -142,18 +148,7 @@ curl https://raw.githubusercontent.com/ra559/cis106/main/_guides/replacewithflam
 cd
 git clone git@github.com:yourGithub-User-Name-Here/your-Repository-Name-Here
 ```
-* Open a file manager and go to the repository you cloned (the folder) and organize the files in the following format:
-```
-cis106/
-├── finalProject
-├── labs
-│   ├── lab0.md
-│   └── lab1.md
-└── weekly-reports
-    ├── weeklyreport0.md
-    └── weeklyreport1.md
-
-```
+* Open a file manager and go to the repository you cloned (the folder) and organize the files as I do in the video.
 * open VS Code and open your repository. Open a terminal in VS Code and run the following commands:
 ```
 git add .
