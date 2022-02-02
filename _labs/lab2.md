@@ -160,15 +160,16 @@ git commit -m "Files organized"
 git push
 ```
 * Open your github repository and your web browser and noticed how the files are now organized as they are in your computer.
-* 
+
+## Time to submit this lab.
+* Copy the screenshots you took from your windows computer to your vm by draging and dropping the files in your respository inside your ubuntu vm.
+* Place those files in a folder called: `lab2`
+* Inside the lab2 folder create a new file named: `lab2.md`
+* Open your repository in VS code and complete the document lab2.md with your screenshots
+* Save the file. 
+* Convert the file to PDF.
+* Commit and push the changes to github.
 
 
 ## What will you Submit:
-* Create a markdown document with the following:
-
-```
-# Question 2 Screenshot
-![](url to screenshot here)
-# Question 3 Screenshot
-![](url to screenshot here)
-```
+* The URL to the lab2.md file and a pdf file of lab2.
