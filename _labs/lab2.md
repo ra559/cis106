@@ -95,6 +95,7 @@ These are the tasks that you need to complete before taking the screenshots:
 sudo apt install build-essential linux-headers-$(uname -r) virtualbox-guest-additions-iso virtualbox-guest-x11 -y
 ```
 * Reboot the VM
+* Go Full Screen
 * Using the software center, Install VS Code
   * Install all the extensions of VS Code
   * Live Server
@@ -117,14 +118,49 @@ sudo apt purge apport aisleriot gnome-mahjongg gnome-sudoku gnome-mines  -y
   * tilix 
 * Using the terminal install the following applications: gcc make perl nemo git python3-pip gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree  htop net-tools vim neofetch caffeine samba smbclient cifs-utils. You can use the following command:
 ```
-sudo apt install gcc make perl nemo git python3-pip gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree  htop net-tools vim neofetch caffeine samba smbclient -y
+sudo apt install gcc make perl nemo git python3-pip \
+ gnome-tweaks curl ubuntu-restricted-extras ubuntu-restricted-addons \
+ snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap \
+ wget tree  htop net-tools vim neofetch caffeine samba smbclient -y
 ```
-* replace the default screenshot tool with flameshot. Use this command:
-* 
+* Replace the default screenshot tool with flameshot. Use this command:
+```
+curl https://raw.githubusercontent.com/ra559/cis106/main/_guides/replacewithflameshot.sh | bash
+```
+* Setup git and download your repository to your ubuntu machine.
+  * Open a terminal and run the following commands:
+    * Set your username:  `git config --global user.name 'your username here'`
+    * Set your email address: `git config --global user.email 'your email here'`
+    * Setup SSH authentication
+      * Generate an ssh key: `ssh-keygen -t ed25519 -C "your_email@example.com"` This creates a new SSH key, using the provided email as a label. When you're prompted to: `"Enter a file in which to save the key,"` press Enter. This accepts the default file location. At the prompt, to type a secure passphrase, press enter for no passphrase. If you want to use a passphrase, go ahead as it provides an extra layer of security. However, for this course you do  not need to add a passphase. 
+      * Use the following command to see your public ssh key: `cat ~/.ssh/id_ed25519.pub` copy the entire output of this command to the clipboard.
+      * In your github page, go to `settings` > `SSH and GPG Keys` Here add your ssh key that you copied to the clipboad in the step prior. Type `yes` (the whole word) and press enter and you are done
+      * Test you ssh connection by using this command: `ssh -T git@github.com`
+    * Clone your github repository. Use these commands:
+```
+cd
+git clone git@github.com:yourGithub-User-Name-Here/your-Repository-Name-Here
+```
+* Open a file manager and go to the repository you cloned (the folder) and organize the files in the following format:
+```
+cis106/
+├── finalProject
+├── labs
+│   ├── lab0.md
+│   └── lab1.md
+└── weekly-reports
+    ├── weeklyreport0.md
+    └── weeklyreport1.md
 
-      
+```
+* open VS Code and open your repository. Open a terminal in VS Code and run the following commands:
+```
+git add .
+git commit -m "Files organized"
+git push
+```
+* Open your github repository and your web browser and noticed how the files are now organized as they are in your computer.
 
-* 
 ## What will you Submit:
 * Create a markdown document with the following:
 
