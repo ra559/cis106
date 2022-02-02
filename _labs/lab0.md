@@ -3,7 +3,8 @@ layout: post
 title: Lab 0 - Learning Markdown
 ---
 
-> Find the video here: [Video](https://youtu.be/YOdW-fI4GhY)
+> Find the video here: [Video](https://youtu.be/YOdW-fI4GhY) <br>
+> Short version [here](https://youtu.be/NOVGnJ2gDJ0)
 
 ## Question 1
 1. Install VS Code and install the following extensions:
@@ -37,7 +38,7 @@ title: Lab 0 - Learning Markdown
 * Using markdown, replicate the document `whatisubuntu.pdf` that is located inside the `lab0` folder. Make sure to copy and paste the text. The goal of this lab is to practice markdown syntax not typing!
 
 ## Question 5 
-* Export the markdown file to PDF, Docx, and HTML
+* Export the markdown file to PDF, and HTML
 * upload all the files inside the `lab0` folder to your github repository.
 
 ## Submission
