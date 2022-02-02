@@ -169,3 +169,5 @@ git push
 
 ## What will you Submit:
 * The URL to the lab2.md file and a pdf file of lab2.
+* Dont' forget to take a snapshot of your virtual machine.
+  * Turn off your vm
