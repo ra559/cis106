@@ -164,7 +164,7 @@ git push
 * Open your repository in VS code and complete the document lab2.md with your screenshots
 * Save the file. 
 * Convert the file to PDF.
-* Commit and push the changes to github.
+* Commit and push the changes to github. Use this command: `git add .; git commit -m "Lab2 finished"; git push`
 
 
 ## What will you Submit:
