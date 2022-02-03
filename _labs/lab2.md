@@ -98,8 +98,7 @@ These are the tasks that you need to complete before taking the screenshots:
 ## Question 5 | Complete the following tasks
 * Install the guest additions for virtualbox. Use this command:
 ```
-sudo apt install build-essential linux-headers-$(uname -r) \ 
-virtualbox-guest-additions-iso virtualbox-guest-x11 -y
+sudo apt install build-essential linux-headers-$(uname -r) virtualbox-guest-additions-iso virtualbox-guest-x11 -y
 ```
 * Reboot the VM
 * Go Full Screen
@@ -125,10 +124,7 @@ sudo apt purge apport aisleriot gnome-mahjongg gnome-sudoku gnome-mines  -y
   * tilix 
 * Using the terminal install the following applications: gcc make perl nemo git python3-pip gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree  htop net-tools vim neofetch caffeine samba smbclient cifs-utils. You can use the following command:
 ```
-sudo apt install gcc make perl nemo git python3-pip \
- gnome-tweaks curl ubuntu-restricted-extras ubuntu-restricted-addons \
- snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap \
- wget tree  htop net-tools vim neofetch caffeine samba smbclient -y
+sudo apt install gcc make perl nemo git python3-pip gnome-tweaks curl ubuntu-restricted-extras ubuntu-restricted-addons snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree  htop net-tools vim neofetch caffeine samba smbclient -y
 ```
 * Replace the default screenshot tool with flameshot. Use this command:
 ```
