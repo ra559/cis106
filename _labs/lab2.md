@@ -132,6 +132,7 @@ sudo apt install gcc make perl nemo git python3-pip gnome-tweaks curl ubuntu-res
 curl https://raw.githubusercontent.com/ra559/cis106/main/_guides/replacewithflameshot.sh | bash
 ```
 * Setup git and download your repository to your ubuntu machine.
+  * Sign in to your github account.
   * Open a terminal and run the following commands:
     * Set your username:  `git config --global user.name 'your username here'`
     * Set your email address: `git config --global user.email 'your email here'`
