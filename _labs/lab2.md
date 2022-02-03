@@ -102,6 +102,7 @@ sudo apt install build-essential linux-headers-$(uname -r) virtualbox-guest-addi
 ```
 * Reboot the VM
 * Go Full Screen
+* Disable animations. Run this command on your terminal: `gsettings set org.gnome.desktop.interface enable-animations false`
 * Using the software center, Install VS Code
   * Install all the extensions of VS Code
   * Live Server
