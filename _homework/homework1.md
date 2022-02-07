@@ -20,6 +20,7 @@ title: Homework 1
    1. A summary of the presentation for week 1 - Introduction to Linux
    2. The answer to the questions in your final project research.
 
+
 Use the following template for your weekly report:
 ```
 # Week Report 1
@@ -30,3 +31,5 @@ Write your summary here
 Questions and answers go here
 
 ```
+
+> Remember: You need to submit the weekly report github URL and the weekly report pdf file

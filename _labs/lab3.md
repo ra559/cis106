@@ -11,7 +11,6 @@ Lab video [here](https://youtu.be/bCW14r6YCuY)
 > Watch video for the ls command [here](https://youtu.be/xKjTcr4m9l8)
 
 * You have to complete labs 0 1 and 2 before attempting lab 3.
-* If you are using the Cloud environment (Apporto), Make sure that you have complete the Setup per this [video](https://youtu.be/w_nyTC-tuv8) before doing this lab. 
 * Software installation cheat sheet available [here](https://bit.ly/3djIsfy)
 * Presentation available [here](https://youtu.be/_PoTDzMfi0o)
 * Navigating the filesystem cheat sheet available [here](https://rebrand.ly/3bdn1)
