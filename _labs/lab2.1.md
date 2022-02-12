@@ -32,5 +32,5 @@ title: Lab 2.1 - Performing Some Tasks In Ubuntu 20.04
 21. Listen to a podcast
 22. Play an audiobook
 23. Send an email
-24. edit an image
-25. 
+24. Edit an image
+
