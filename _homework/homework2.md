@@ -2,6 +2,7 @@
 layout: post
 title: Homework 2
 ---
+# Homework 2
 ## Complete the following tasks
 1. Complete [lab 2 Installing Ubuntu in Virtualbox](https://cis106.com/labs/lab2/)
 2. Complete Discussion 3: The Rise of Open Source
