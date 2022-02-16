@@ -1,75 +1,69 @@
 ---
 layout: post
-title: Lab 3 - Installing software and navigating the file system
+title: Lab 3 - Using Ubuntu and Moving Around the Filesystem
 ---
 
+# Lab 3 - Using Ubuntu and Moving Around the Filesystem
 
-
-## IMPORTANT - READ ME
-Lab video [here](https://youtu.be/bCW14r6YCuY)
-
-> Watch video for the ls command [here](https://youtu.be/xKjTcr4m9l8)
-
-* You have to complete labs 0 1 and 2 before attempting lab 3.
+* Lab video [here]()
+* You have to complete labs 0,1, and 2 before attempting lab 3.
 * Software installation cheat sheet available [here](https://bit.ly/3djIsfy)
 * Presentation available [here](https://youtu.be/_PoTDzMfi0o)
 * Navigating the filesystem cheat sheet available [here](https://rebrand.ly/3bdn1)
 * Presentation available [here](https://bit.ly/3alPqPm)
 * Amazing video explaining the linux file system [here](https://www.youtube.com/watch?v=HbgzrKJvDRw)
 
-## Environment setup pre-work
-Before you start working on this lab, do the following:
-* In Ubuntu, Open VS Code and open your CIS-106 folder where you have all your files for this class.
-* Inside the CIS106 repository (the folder in VS Code), create a file called `lab3.md` inside the labs folder. This is the file where you will put the answer to questions.
-* Add the following text to the lab3.md file:
 
+## Question 1 | Using Ubuntu for basic tasks
+Perform the following tasks. This question does not require a submission. The point of this question
+is to get familiar with the system. The more you use Ubuntu, the less intimidating it becomes. 
+
+1. **Take a screenshot**
+   1. Since flameshot is installed in the system already and has replaced the gnome default a screenshot tool. Simply press the print screen key in your keyboard.
+   2. There are other screenshot tools for linux. I advise you to research them for your own edification 
+2. **Create a desktop shortcut for any web site**
+   1. Open a text editor.
+   2. Add the following text:
 ```
-# Lab 3 | Installing software and navigating the file system | Answers
-Assignment description [here](https://raw.githubusercontent.com/ra559/cis106/main/labs/lab3.md)
-
-## Question 1
-1. Which command did you use to search for the themes and to install them?
-2. Which commands did you use to find and install the web browser?
-3.1 What is the name of the package?
-3.2 What dependencies are needed in order to install the package? (you can either take a screenshot of the terminal or copy and paste from the terminal)
-3.3 How much disk space will the package utilize after installation?
- 
-
-## Question 2
-
-## Question 3
-
-## Question 4
-
-## Question 5
+#!/usr/bin/evn xdg-open
+[Desktop Entry]
+Type=Application
+Terminal=false
+Exec=/usr/bin/firefox https://cis106.com
+Name=cis106
+Icon=/home/student/.cis106.png
 ```
+> This will create a launcher for the course website.
+   3. Save the file with the name: `cis106.desktop` and save it in your Desktop directory.  
+3. **Write a Document**
+   1. Open Libre office writer.
+   2. Go on firefox and copy and paste some text from wikipedia
+   3. Convert the file to pdf
+4. **Create a Presentation in LibreOffice Impress**
+5. **Install a new theme**
+   1. Download a GTK theme, icon theme, cursor theme, and wallpaper from this [site](https://www.gnome-look.org/browse/)
+   2. Create 2 hidden directories in your home directory: `.themes` and `.icons`
+   3. Decompress the files you downloaded earlier.
+   4. Move the theme to the `.themes` directory, the icon to the `.icons` directory and the cursor theme to the `.icons` directory
+   5. Open the application `tweaks` and change to your new theme and icon. 
 
-* Commit and push your changes to the repository using the following commands:
+<hr>
 
-```
-git pull
-git add .
-git commit -m "Task: started work on lab3"
-git push
-```
+## Question 2 | Installing applications
+Using the command line, look for a software to do each of the following tasks and then complete the table with the information you found.
+1. Play a tetris game
+2. Play a racing game
+3. Browse the internet
+4. Read your email
+5. Play music 
 
-![Pre work](../imgs/lab3-prework.gif)
-
-## Question 1 | Installing applications
-Using the command line, look for software packages that match the following search criteria: `theme`. Read the output of your search and find a GTK Theme (style theme, appearance) and an icon theme as well. Install the icon and gtk theme and then change your system's GTK and icon theme. 
-
-![Gnome Tweaks](../imgs/GnomeTweaks.gif)
-
-1. Which command did you use to search for the themes and to install them?
-
-Use the command line to search for an alternative web browser (you already have chromium and firefox so look for something else). Install the alternative web browser. 
-
-2. Which commands did you use to find and install the web browser?
-
-3. Use the command line to find a 3D or 2D racing game. Answer the following questions about the game:
-   1. **What is the name of the package?**
-   2. **What dependencies are needed in order to install the package? (you can either take a screenshot of the terminal or copy and paste from the terminal)**
-   3. **How much disk space will the package utilize after installation?**
+| Package Name | Version | Description|
+|--------------|---------|------------|
+|              |         |            |
+|              |         |            |
+|              |         |            |
+|              |         |            |
+|              |         |            |
 
 
 ## Question 2 | The pwd and cd command
