@@ -51,7 +51,7 @@ Icon=/home/student/.cis106.png
 4. Install Gnome Classic. GNOME Classic is a GNOME Shell feature and mode for users who prefer a more traditional desktop experience. Read more [here](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/what-is-gnome-classic#:~:text=GNOME%20Classic%20is%20a%20GNOME,The%20Applications%20and%20Places%20menus.) 
 * Open a terminal and run this command:
 ```
-sudo apt update; $ sudo apt install gnome-session-flashback -y
+sudo apt update; sudo apt install gnome-session-flashback -y
 ```
 * Log out and select the gnome classic session in the gear icon. Log in.
 <hr>
@@ -73,9 +73,9 @@ Using the command line, look for a software to do each of the following tasks an
 | Read your email     |              |         |             |
 | Play music          |              |         |             |
 ```
-Install the programs that you found using a single command. **Which command did you use?**
-Remove all the programs that you installed in a single command. **Which command did you use?**
-If you were to install the first and second program, but remove the other 3 in a single command, **Which command will you use?**
+1. Install the programs that you found using a single command. **Which command did you use?**
+2. Remove all the programs that you installed in a single command. **Which command did you use?**
+3. If you were to install the first and second program, but remove the other 3 in a single command, **Which command will you use?**
 
 > For this question, simple type the commands after the table. No screenshot is required. 
 
@@ -105,53 +105,51 @@ If you were to install the first and second program, but remove the other 3 in a
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 6-10.**
 
 
-## Question 3 | The ls command
-Download this compressed zip file: [lab3files.zip](/assets/lab3files.zip)
+<hr>
 
-> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
+## Question 3 | The ls command
+Download this compressed zip file: [lab3files.zip](/assets/lab3files.zip) Decompress the zip file in **your home** directory.
+
+1. Change your present working directory to `/usr/share/`. Using absolute path, list all the files inside the `lab3files` directory.
+2. Change your present working directory to `~/lab3files`. Long list all the files inside your current working directory with human readable file sizes.
+3. Long list all the files inside `lab3files` with human readable file fizes, and sorted by file size.
+4. Long list all the files inside `lab3files` with human readable file fizes,  sorted by file size, without the user nor the group name, and showing their inode number.
+5. list all the files inside `lab3files` sorted by file extension and in reverse order. 
+
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots may be **required****
+
+<hr>
 
 
 ## Question 4 | The tree command
-* For this question we are going to use Absolute path only.
-* Clear your terminal screen.
-1. List all the files inside the `Downloads` directory.
-2. List all the files inside the `Downloads` directory showing the permissions(protections), file owner, group owner, and human readable file size.
-3. List all the files inside the `Downloads` directory showing the date of last modified and sorted by modification time.
-4. List all the files inside the `Downloads` directory in HTML format
-5. List all the files inside the `Downloads` directory in HTML format and save it to a file.
+* The tree command is not installed by default in Ubuntu. Make sure that the program is installed in your system before you continue with this question.
 
-> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
-
-## Question 5 | Bringing it all together
-Utilities like `ls` are a bit old and many developers are starting to write replacements for these tools. One example, is the program `exa`. As per the project's website:
-
-> exa is an improved file lister with more features and better defaults. It uses colours to distinguish file types and metadata. It knows about symlinks, extended attributes, and Git. And it’s small, fast, and just one single binary.
-
-Unfortunately, exa is not available via the default repositories in Ubuntu 20.04. However, this package is available for Ubuntu 20.10 and further releases. This however, does not mean that we cannot install the program. As you saw during the presentation, we can also install software using `.deb files.` To download the `.deb file` for `exa` use this command:
-
-* `wget http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb`
-* To install the .deb file we can use apt: `sudo apt install ./exa_0.9.0-4_amd64.deb`
-* Once we have installed the package we do not need the `.deb file` so lets delete it with: `rm exa_0.9.0-4_amd64.deb`
-* Open a second terminal a use the command `exa --help` to see all the options of the exa command. Using these options as a reference, answer the following questions:
-
-1. Long list all the files in your Downloads directory.
-2. Long list all the files in your Downloads directory with a header and modified by timestamps.
-
-Another command that is also very useful is `tree`. This program allows you to list files in a tree like format which is very useful when you are working with multiple sub directories. 
-
-3. Install the tree program. Open another terminal and use the `tree --help` command to list all (or most) of the options of the tree command
-4. Use `tree` to list all the files in your home directory including the file owner and group.
-5. Use `tree` to list all the files in your home directory including their file size and in human readable format.
-
-> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1,2,4 and 5.**
+1. Using absolute path and having `/etc` as your present working directory. Display a tree of the directory `lab3files`.
+2. Change your present working directory to your Downloads directory. Display a tree of the directory `lab3files` with the full path prefix for each file, the file permissions, and the file size in human readable format.
+3. Display a tree of the directory `lab3files` sorted by last modified time and showing the file owner and group.
+4. Display a tree of the directory `lab3files` in XML format.
+5. Display a tree of the directory `lab3files` in JSON format.
+   
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots may be required**
 
 
-## What to submit?
-> **ADVICE!**
-> Take a snapshot of your system. This will come handy in the case that you break your system.
+<hr>
+
+## Question 5 | The exa command. A modern tool to replace ls
+Exa is a tool that aims at replacing ls. Exa is not aviable in Ubuntu 20.04 defult repositories. However, you can install it by running this command:
+```
+curl https://cis106.com/assets/installexa.sh 
+```
+
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots may be required**
+
+<hr>
+
 ## What will you Submit:
 * Place all the screenshots and answers to your questions in a the lab3.md file. You can format the questions however you like to make it more readable.
 * Push the changes to Github 
 * and submit the URL of Lab3.md
 * Convert your markdown file to pdf and submit it with the URL
+
+> Take a snapshot of your system with your virtual machine off when you are done and have submitted this lab.
 
