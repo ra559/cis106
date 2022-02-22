@@ -136,11 +136,15 @@ Download this compressed zip file: [lab3files.zip](/assets/lab3files.zip) Decomp
 <hr>
 
 ## Question 5 | The exa command. A modern tool to replace ls
-Exa is a tool that aims at replacing ls. Exa is not aviable in Ubuntu 20.04 defult repositories. However, you can install it by running this command:
+Exa is a tool that aims at replacing ls. Exa is not available in Ubuntu 20.04 default repositories. However, you can install it by running this command:
 ```
-curl https://cis106.com/assets/installexa.sh 
+curl https://cis106.com/assets/installexa.sh | bash
 ```
-
+1. Once you have installed exa, list all the options of the exa command.
+2. Long list all the files inside `lab3files`
+3. Display a tree of `lab3files`
+4. Long list `lab3files` showing the header that indicates what each column means.
+5. Long list `lab3files` without the file owner nor group including the header and the date the file was created.
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots may be required**
 
 <hr>
