@@ -29,4 +29,4 @@ title: Homework 3
             2. Library
             3. Repository
          6. Include the screenshot of how to update ubuntu with its explanation (page 6)
-5. In your repository create a folder for cheat sheets and place here the ls command cheat sheet,absolute vs relative path cheat sheet, installing software cheat sheet, and markdown cheat sheet. 
+5. In your repository create a folder for cheat sheets and place here the installing software cheat sheet, and markdown cheat sheet. 
