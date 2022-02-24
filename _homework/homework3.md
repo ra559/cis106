@@ -4,6 +4,7 @@ title: Homework 3
 ---
 # Homework 3
 ## Complete the following tasks
+> Watch this [video](https://youtu.be/I4eGHyw0PHA) before you start this week's homework.
 1. Complete [lab 3 Using Ubuntu](https://cis106.com/labs/lab3/)
 2. Complete Discussion 4: the history of the bash shell
 3. Week 3 Report must contain the following (video here):  
