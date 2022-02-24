@@ -37,6 +37,7 @@ Icon=/home/student/.cis106.png
    3. Convert the file to pdf
    4. Save the pdf file in the `lab3` directory inside your github repository.
 4. **Create a Presentation in LibreOffice Impress**
+   1. save the presentation in the `lab3` directory
 5. **Install a new theme**
    1. Download a GTK theme, icon theme, cursor theme, and wallpaper from this [site](https://www.gnome-look.org/browse/)
    2. Create 2 hidden directories in your home directory: `.themes` and `.icons`
