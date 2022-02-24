@@ -104,8 +104,8 @@ Try the following commands in the terminal
    2. free -h
    3. uname -a
    4. du / 
-Install these programs: `fortune cowsay toilet rig lolcat boxes`
-Run these commands on your terminal:
+* Install these programs: `fortune cowsay toilet rig lolcat boxes`
+* Run these commands on your terminal:
    1. `echo "I Like Linux!" | lolcat`
    2. `fortune | cowsay | lolcat`
    3. `figlet "Linux is cool"`
