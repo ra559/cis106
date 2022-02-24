@@ -43,7 +43,12 @@ Icon=/home/student/.cis106.png
    3. Decompress the files you downloaded earlier.
    4. Move the theme to the `.themes` directory, the icon to the `.icons` directory and the cursor theme to the `.icons` directory
    5. Open the application `tweaks` and change to your new theme and icon. 
+6. Play around with the location of the dock.
+7. Install gnome extensions:
+   1. Applications menu
+   2. caffeine
 
+> Open the file manager, take a screenshot of your ubuntu system showing your new theme.
 
 ## Question 2 | Using a different desktop environment
 
@@ -55,13 +60,14 @@ sudo apt update; sudo apt install gnome-session-flashback -y
 * Log out and select the gnome classic session in the gear icon. Log in.
 ![switchingde](/assets/switchinge-de.gif)
 
+> Take a screenshot of your ubuntu system.
 
 <hr>
 
 ## Question 3 | Installing applications
 Using the command line, look for a software to do each of the following tasks and then complete the table with the information you found.
 1. Play a tetris game
-2. Play a racing game
+2. Play a video file
 3. Browse the internet
 4. Read your email
 5. Play music 
@@ -70,7 +76,7 @@ Using the command line, look for a software to do each of the following tasks an
 | Program purpose     | Package Name | Version | Description |
 | ------------------- | ------------ | ------- | ----------- |
 | Play a tetris game  |              |         |             |
-| Play a racing game  |              |         |             |
+| Play a video file   |              |         |             |
 | Browse the internet |              |         |             |
 | Read your email     |              |         |             |
 | Play music          |              |         |             |
@@ -79,7 +85,7 @@ Using the command line, look for a software to do each of the following tasks an
 2. Remove all the programs that you installed in a single command. **Which command did you use?**
 3. If you were to install the first and second program, but remove the other 3 in a single command, **Which command will you use?**
 
-> For this question, simply type the commands after the table. No screenshot is required. 
+> For this question, simply complete the table. No screenshot required.
 
 <hr>
 
@@ -99,11 +105,11 @@ Try the following commands in the terminal
    4. du / 
 Install these programs: `fortune cowsay toilet rig lolcat boxes`
 Run these commands on your terminal:
-   1. echo "I Like Linux!" | lolcat
-   2. fortune | cowsay | lolcat
-   3. figlet "Linux is cool"
-   4. fortune | toilet -f term -F border --metal
-   5. rig | boxes -d boy
+   1. `echo "I Like Linux!" | lolcat`
+   2. `fortune | cowsay | lolcat`
+   3. `figlet "Linux is cool"`
+   4. `fortune | toilet -f term -F border --metal`
+   5. `rig | boxes -d boy`
 
 Use the man page to find out what each of these programs do.
 ```
@@ -118,3 +124,6 @@ Use the man page to find out what each of these programs do.
 | rig     |              |
 ```
 
+## What will you submit
+* Create a markdown file named lab3.md and answer all the questions there.
+* Submit the URL to the lab3.md file in github and a pdf version of lab3.md file.
