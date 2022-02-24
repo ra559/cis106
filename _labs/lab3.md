@@ -7,7 +7,8 @@ title: Lab 3 - Using Ubuntu
 * Lab video [here](https://youtu.be/ah4zi8SgKaY)
 * You have to complete labs 0,1, and 2 before attempting lab 3.
 * Software installation cheat sheet available [here](https://bit.ly/3djIsfy)
-* Presentation available [here](https://youtu.be/_PoTDzMfi0o)
+* Video of Presentation available [here](https://youtu.be/_PoTDzMfi0o)
+* Presentation avaialable [here](https://docs.google.com/presentation/d/e/2PACX-1vR_QKnpK62slS9NygUiRwKyCMaQGlTG401TGJS0l2F9P2UEKWAf7VxkkSgxR5K4rN9RzGjU8hBZb3yj/pub?start=false&loop=false&delayms=3000&slide=id.p)
 
 ## Question 1 | Using Ubuntu for basic tasks
 Perform the following tasks. The point of this question is to get you familiar with the system. The more you use Ubuntu, the less intimidating it becomes. 
