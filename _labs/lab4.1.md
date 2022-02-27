@@ -1,4 +1,50 @@
-# Lab 4 | Managing files and directories
+---
+layout: post
+title: Lab 4 - The Linux Filesystem 
+---
+
+# Lab 4 | The Linux Filesystem 
+
+
+## Question 1:  The linux filesystem
+
+Create a table that includes the following directories and their usage:
+1. bin
+2. dev
+3. etc
+4. home
+5. media
+6. opt
+7. proc
+8. srv
+9. usr
+10. var
+Your table must look like this:
+
+| Directory | Function                                                                                    |
+| --------- | ------------------------------------------------------------------------------------------- |
+| bin       | Nulla enim amet occaecat quis esse proident proident labore do magna laborum nostrud Lorem. |
+
+
+
+Create a table of the commands used for navigating the file system (cd, pwd, ls). Your table must include the following:
+* The command, 
+* what the command does, 
+* the syntax/formula of how to use the commands, 
+* an example.
+
+### Here is an example of how your table should look like
+
+| Command | What it does               | Syntax                                | Example                 |
+| ------- | -------------------------- | ------------------------------------- | ----------------------- |
+| echo    | Display text to the screen | `echo` + `option` + `text to display` | `echo -n "Hello World"` |
+
+
+Complete all the practice located in the [presentation](https://rapurl.live/wfp) (including the challenge).
+Take a screenshot of your terminal after every practice.
+
+<hr>
+
 
 ## Question 2 | The pwd and cd command
 * **pwd**: Print the full filename of the current working directory.

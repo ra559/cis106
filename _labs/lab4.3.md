@@ -1,8 +1,3 @@
----
-layout: post
-title: Lab 4
----
-
 # Lab 4 | Managing files and directories
 * _Presentation [here](https://docs.google.com/presentation/d/e/2PACX-1vRXQhdRviYicst8RhPxAcgQmj8-8YCuNSSy4NjmCv1ekxfQuI3KvDmdfuAztj1hbDo6dXPsuF8RezsZ/pub?start=false&loop=false&delayms=3000&slide=id.p)
 * _Video [here](https://youtu.be/1edV7BUOfY0)
