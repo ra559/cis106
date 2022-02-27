@@ -6,6 +6,7 @@ title: Lab 4 - The Linux Filesystem
 # Lab 4 | The Linux Filesystem 
 * Presentations:
   * [How to navigate the filesystem](https://rapurl.live/uz4)
+  * Video [here](https://youtu.be/pwgbefPA0lU)
 
 
 ## Question 1:  The linux filesystem
