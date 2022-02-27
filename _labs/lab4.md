@@ -4,6 +4,8 @@ title: Lab 4 - The Linux Filesystem
 ---
 
 # Lab 4 | The Linux Filesystem 
+* Presentations:
+  * [How to navigate the filesystem](https://rapurl.live/uz4)
 
 
 ## Question 1:  The linux filesystem
@@ -35,10 +37,11 @@ Create a table of the commands used for navigating the file system (cd, pwd, ls)
 
 ### Here is an example of how your table should look like
 
-| Command | What it does               | Syntax                                | Example                 |
-| ------- | -------------------------- | ------------------------------------- | ----------------------- |
-| echo    | Display text to the screen | `echo` + `option` + `text to display` | `echo -n "Hello World"` |
-
+| Command | What it does                           | Syntax                                     | Example                 |
+| ------- | -------------------------------------- | ------------------------------------------ | ----------------------- |
+| echo    | Display text to the screen             | `echo` + `option` + `text to display`      | `echo -n "Hello World"` |
+| apt     | Set of tools for managing deb packages | `sudo` + `apt` + `option` + `package name` | `sudo apt install vlc`  |
+| uname   | prints system information              | `uname` + `option`                         | `uname -a`              |
 
 Complete all the practice located in the [presentation](https://rapurl.live/wfp) (including the challenge).
 Take a screenshot of your terminal after every practice.
