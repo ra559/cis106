@@ -5,6 +5,9 @@ title: Homework 4
 # Homework 4
 ## Complete the following tasks
 1. Complete Discussion board 5: What is The Right To Repair Movement?
+2. Whatch the videos:
+   * [Navigating the file system part 1](https://youtu.be/RNopWAAoVbM)
+   * [Navigating the file system part 2](https://youtu.be/RxVX64H5D_k)
 3. Complete week report. *Week Report must contain the following:*
    1. **A summary of the presentation**[navigating the filesystem](https://docs.google.com/presentation/d/e/2PACX-1vSBCZX4zbvAKaBbEt7cBk68w04g-iZdJ0gCpH_7YE1IIr7EswY9bDbk0oT8z3iial96gTi8GuYArSFe/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.gbdd18af899_0_58)
       1. The summary must include the following:
@@ -19,7 +22,5 @@ title: Homework 4
             7. absolute path
    2. **What is the right to repair movement and why does it matter?**
 4. Complete [lab 4: the linux fs](https://cis106.com/labs/lab4/)
-5. Watch the video Final Project First Deliverable and complete the document as indicated in the video
-    1. For people doing the default project: Video here
-    2. For people doing a custom project: Video here
+
    
