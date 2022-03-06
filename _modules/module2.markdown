@@ -4,6 +4,9 @@ title: Module 2
 ---
 
 ## Lecture 4
+* [The Linux filesystem](https://bit.ly/3alPqPm)
+  * [Navigating the filesystem part 1](https://www.youtube.com/watch?v=RNopWAAoVbM)
+  * [Navigating the filesystem part 2](https://www.youtube.com/watch?v=RxVX64H5D_k)
 * [Managing files and directories](https://rapurl.live/jya)
   * Managing Files - Slide 3
   * Managing Directories - Slide 5 
