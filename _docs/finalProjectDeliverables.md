@@ -9,7 +9,7 @@ title: Deliverable 1 Description
   * [How To Install Nginx on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04)
   * [How to install lighttpd on Ubuntu 20.04](https://www.how2shout.com/linux/install-and-configure-lighttpd-server-on-ubuntu-20-04-lts/)
   * [How to Setup Samba Server in Ubuntu 20.04](https://bytexd.com/how-to-setup-samba-server-in-ubuntu/)
-  * []()
+  * [How To Set Up an NFS Mount on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-20-04)
   * []()
   * []()
   * []()
@@ -116,6 +116,41 @@ title: Deliverable 1 Description
   * How to setup virtual hosts
   * Important files and directories
   * Server log files
+  * Sources
+
 ## File Server
+* Most include:
+  * Different file server applications (Your project will use only one but you need to describe the alternatives)
+    * Samba
+    * Nfs
+  * Configuring the firewall if needed
+  * How to install the server application you chose
+  * Basic commands about managing the server application
+  * How to start, terminate, and restart a service in Ubuntu
+  * You must be able to access this file server in your regular vm (the one you use in the class) and your windows computer
+  * Important files and directories
+  * Server log files
+  * Sources
+
+## Media center 
+* Most include:
+  * Different applications that can be used (Your project will use only one but you need to describe the alternatives): 
+    * Plex
+    * Emby
+    * jellyfin
+    * Stremio
+    * Universal media server
+  * How to install the media server application
+  * How to update the media server application
+  * How to add users (if supported)
+  * How to add files 
+  * How to install the applications on the client devices
+  * Server log files
+  * Sources
 
 ## Kali Linux 
+## Portable Hacking Station with a Raspberry Pi
+
+## Recovering data with Kali in a Raspberry Pi
+
+## Video game with Raspberry Pi
