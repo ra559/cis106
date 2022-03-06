@@ -103,12 +103,14 @@ title: Deliverable 1 Description
     * Educational Applications (dictionaries and that kind of stuff)
     * How to get help with your Ubuntu machine
   * Sources
+  
 ## Web Server
 * Most include
   * Different web server applications (Your project will use only one but you need to describe the alternatives)
     * Apache
     * NGINX
     * lighttpd
+  * Set static ip address
   * Configuring the Ubuntu Firewall
   * How to install the server application you chose
   * Basic commands about managing the server application
@@ -123,6 +125,7 @@ title: Deliverable 1 Description
   * Different file server applications (Your project will use only one but you need to describe the alternatives)
     * Samba
     * Nfs
+  * Set static ip address
   * Configuring the firewall if needed
   * How to install the server application you chose
   * Basic commands about managing the server application
@@ -140,6 +143,7 @@ title: Deliverable 1 Description
     * jellyfin
     * Stremio
     * Universal media server
+  * Set static ip address
   * How to install the media server application
   * How to update the media server application
   * How to add users (if supported)
@@ -149,6 +153,8 @@ title: Deliverable 1 Description
   * Sources
 
 ## Kali Linux 
+* Must include:
+  *  
 ## Portable Hacking Station with a Raspberry Pi
 
 ## Recovering data with Kali in a Raspberry Pi
