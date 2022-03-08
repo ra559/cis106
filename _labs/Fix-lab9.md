@@ -1,7 +1,4 @@
----
-layout: post
-title: Lab 9
----
+
 
 # Lab 9 Shell scripting part 1
 

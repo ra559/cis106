@@ -1,7 +1,4 @@
----
-layout: post
-title: Lab 8
----
+
 
 # Lab 8: File Permissions
 
