@@ -9,7 +9,7 @@ title: Homework 4
    * [Navigating the file system part 1](https://youtu.be/RNopWAAoVbM)
    * [Navigating the file system part 2](https://youtu.be/RxVX64H5D_k)
 3. Complete week report. *Week Report must contain the following:*
-   1. **A summary of the presentation**[navigating the filesystem](https://docs.google.com/presentation/d/e/2PACX-1vSBCZX4zbvAKaBbEt7cBk68w04g-iZdJ0gCpH_7YE1IIr7EswY9bDbk0oT8z3iial96gTi8GuYArSFe/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.gbdd18af899_0_58)
+   1. **A summary of the presentation**[navigating the filesystem](https://docs.google.com/presentation/d/e/2PACX-1vSBCZX4zbvAKaBbEt7cBk68w04g-iZdJ0gCpH_7YE1IIr7EswY9bDbk0oT8z3iial96gTi8GuYArSFe/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.g35f391192_00)
       1. The summary must include the following:
          1. A table of the commands in the presentation including what the command does and some examples
          2. Definitions of the following terms
