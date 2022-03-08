@@ -1,7 +1,4 @@
----
-layout: page
-title: Create a website launcher
----
+
 # How to create a website launcher in Ubuntu 20.04
 
 ## Problem description

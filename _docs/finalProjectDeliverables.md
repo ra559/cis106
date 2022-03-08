@@ -3,7 +3,7 @@ layout: page
 title: Deliverable 1 Description
 ---
 
-* Video here: [Deliverable 1](https://youtu.be/ZEQfksRbqao)
+* Video here: [Deliverable 1](https://youtu.be/t6jyUb-3Urg)
 * Tutorials:
   * [How To Install the Apache Web Server on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04)
   * [How To Install Nginx on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04)

@@ -1,7 +1,4 @@
----
-layout: page
-title: Ubuntu Setup Cloud Machine
----
+
 # Ubuntu Setup Cloud Machine
 ---
  
