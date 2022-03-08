@@ -5,7 +5,7 @@ title: Lab 5 - Managing Files and Directories
 
 # Lab 5 - Managing Files and Directories
 
-* Presentation here
+* Presentation [here](https://rapurl.live/f6n)
 * Video here
 * Cheat sheet here
 
