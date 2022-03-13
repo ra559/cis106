@@ -22,6 +22,7 @@ Create a table that includes the following directories and their usage:
 8. srv
 9. usr
 10. var
+<br>
 Your table must look like this:
 
 | Directory | Function                                                                                    |
