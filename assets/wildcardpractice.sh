@@ -21,8 +21,8 @@ touch b{oo,ai,eat,}k.{pdf,exe,xml} {fail,file}.log .hidden{1..2}.{doc,py}
 cp sample.pdf Sample.pdf
 cp randomtext.txt 78food.txt
 wget https://cis106.com/assets/logo100x100.png
-mv logo100x100.png 2022-02-02-camera.jpg
-mv logo100x100.png 2021-04-10-screenshot.jpeg
-mv logo100x100.png 2020-08-27-capture.raw
+cp logo100x100.png 2022-02-02-camera.jpg
+cp logo100x100.png 2021-04-10-screenshot.jpeg
+cp logo100x100.png 2020-08-27-capture.raw
 tree $HOME > allfiles.lst
 tree -l $HOME > Allfiles.lst
