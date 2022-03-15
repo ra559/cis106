@@ -15,13 +15,14 @@ echo "hiddenfile" > .hiddenFile.txt
 cp $HOME/.bash_history ./
 cp sample1.doc sample99.docx
 cp sample1.xls sample123.csv
-touch book.pdf bait.csv beat.exe fail.txt file.txt .hidden.doc .hidden2.js
+cp sample1.xls Sample1234.csv
+touch b{oo,ai,eat,}k.{pdf,exe,xml} {fail,file}.log .hidden{1..2}.{doc,py}
 # Files for [] wildcard
 cp sample.pdf Sample.pdf
 cp randomtext.txt 78food.txt
 wget https://cis106.com/assets/logo100x100.png
-mv logo100x100.png 2022-02-02-16-50-camera-1788.jpg
+mv logo100x100.png 2022-02-02-camera.jpg
+mv logo100x100.png 2021-04-10-screenshot.jpeg
+mv logo100x100.png 2020-08-27-capture.raw
 tree $HOME > allfiles.lst
 tree -l $HOME > Allfiles.lst
-
-
