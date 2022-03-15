@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 mkdir $HOME/wildcardpractice/
 cd $HOME/wildcardpractice/
 curl -s http://metaphorpsum.com/sentences/8 > randomtext.txt
