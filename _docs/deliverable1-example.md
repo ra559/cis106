@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Deliverable 1 Description
+title: Deliverable 1 Example
 ---
 # Deliverable 1 Example
 
