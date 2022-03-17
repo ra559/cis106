@@ -78,8 +78,8 @@ Laboris nostrud eiusmod non irure deserunt mollit adipisicing laboris magna dese
 * Disadvantage 3
 
 ### Example of Open source Software
-| Software     | License | logo                                                                            |
-| ------------ | ------- | ------------------------------------------------------------------------------- |
+| Software     | License | logo                        |
+| ------------ | ------- | --------------------------- |
 | program name | GPL V2  | ![](/assets/small-logo.png) |
 | program name | GPL V2  | ![](/assets/small-logo.png) |
 | program name | GPL V2  | ![](/assets/small-logo.png) |
