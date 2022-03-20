@@ -78,12 +78,14 @@ Laboris nostrud eiusmod non irure deserunt mollit adipisicing laboris magna dese
 * Disadvantage 3
 
 ### Example of Open source Software
+
 | Software     | License | logo                        |
 | ------------ | ------- | --------------------------- |
 | program name | GPL V2  | ![](/assets/small-logo.png) |
 | program name | GPL V2  | ![](/assets/small-logo.png) |
 | program name | GPL V2  | ![](/assets/small-logo.png) |
 | program name | GPL V2  | ![](/assets/small-logo.png) |
+
 
 ### Closed source
 Mollit exercitation laboris esse mollit dolor exercitation enim proident proident officia dolor est ipsum. Velit Lorem sunt incididunt labore ullamco non mollit ad aliqua aute cupidatat. Ut incididunt proident culpa nostrud anim magna nostrud est aliquip aliqua proident reprehenderit. Quis cillum id consectetur enim laboris voluptate proident consectetur pariatur elit. Ad pariatur sunt commodo in ipsum adipisicing mollit.
@@ -99,6 +101,7 @@ Mollit exercitation laboris esse mollit dolor exercitation enim proident proiden
 * Disadvantage 3
 
 ### Example of Closed source Software
+
 | Software     | License | logo                        |
 | ------------ | ------- | --------------------------- |
 | program name | GPL V2  | ![](/assets/small-logo.png) |
