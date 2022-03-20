@@ -20,7 +20,16 @@ Video here: https://youtu.be/tMzcAoITzR4
 ## Question 1 | Using the * Wildcard
 
 1. List all the configuration files in the `etc` directory. (*Configuration files have the extension of .conf*)
-2. 
+2. Long list all the configuration files in the `etc` directory that start with letter `h` or letter `p` **sorted by file size**, **with human readable file size**, and showing the **date formatted** such that **only the month and year** is shown in the output. Here is an example of the output (Notice the date)
+```
+-rw-r--r-- 1 root root 7.5K Aug 2021 /etc/pnm2ppa.conf
+-rw-r--r-- 1 root root 5.0K Aug 2019 /etc/hdparm.conf
+-rw-r--r-- 1 root root  552 Dec 2019 /etc/pam.conf
+-rw-rw-r-- 1 root root  350 Mar 2022 /etc/popularity-contest.conf
+-rw-r--r-- 1 root root   92 Dec 2019 /etc/host.con
+```
+You see a full list of control characters for the date [here](https://cis106.com/)
+3. List all the `theme` files in the /usr/share/themes/ directory recursively. (*theme files have the .theme extension*)
 
 
 **Take a screenshot of your terminal showing all the commands that you used to complete this question.**
