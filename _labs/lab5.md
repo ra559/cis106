@@ -77,7 +77,6 @@ title: Lab 5 - Managing Files and Directories
 
 
 
-
 ## What will you Submit:
 * Place all the screenshots and answers to your questions in a the `lab5.md` file.
 * Convert your markdown file to pdf 

@@ -15,6 +15,7 @@ Video here: https://youtu.be/tMzcAoITzR4
 > Before working on this lab, run this command: curl https://cis106.com/assets/lab6.sh | bash
 > This will create a directory called website_lab6 in your home directory
 
+<hr>
 
 
 ## Question 1 | Using the * Wildcard
@@ -27,6 +28,8 @@ Video here: https://youtu.be/tMzcAoITzR4
 > You can see a full list of control characters for the date [here](https://cis106.com/)
 
 3. List all the `theme` files in the */usr/share/themes/* directory recursively. (*theme files have the .theme extension*)
+4. In your home directory, you should have a directory called `website_lab6`, if you don't have it, make sure to run the curl command in the READ ME part of this lab. List all the `log` files located in the `website_lab6` directory. 
+5. Create a directory called `log-files` inside the `website_lab6`. Move all the log files to the `log-files` directory.
 
 
 **Take a screenshot of your terminal showing all the commands that you used to complete this question.**
@@ -35,8 +38,10 @@ Video here: https://youtu.be/tMzcAoITzR4
 
 ## Question 2 | Using the ? wildcard
 
-
-
+1. List only the hidden files inside the `website_lab6` directory.
+2. List all the files with a 2 letter file extension in the `website_lab6` directory
+3. List all the files that start with letter `l`, have one character after letter `l`, and the letters `st`. The the rest of the file name is irrelevant.
+4. 
 <hr>
 
 ## Question 3 | Using the [] Wildcard
