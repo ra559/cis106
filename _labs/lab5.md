@@ -56,6 +56,7 @@ title: Lab 5 - Managing Files and Directories
 2. Download an image from this website: [pexels.com](https://www.pexels.com/search/HD%20wallpaper/) and rename it `newPicture.png`. Move this image to your `assets directory`. You must move and rename the file in a single command. 
 3. From the root of the file system, create a file in the `lab5ChallengeQuestion` directory called `site.html`
 4. open the file `site.html` in a text editor (do not use vs code) and add the following text. Save the file and close the text editor.
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -71,6 +72,7 @@ title: Lab 5 - Managing Files and Directories
 </body>
 </html>
 ```
+
 5. Open the `site.html` file in firefox and take a screenshot. The image you downloaded should be shown there. 
 
 > Take a screenshot of the commands you used to answer this question and of firefox showing the site.html file open.
