@@ -18,4 +18,4 @@ title: Homework 5
          8. man
       2. Brace expansion and how to use it
 2. Complete lab 5
-3. Start working on your discussion board 6
+3. Complete discussion board 6

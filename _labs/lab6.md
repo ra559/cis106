@@ -47,6 +47,10 @@ Video here: https://youtu.be/tMzcAoITzR4
 
 ## Question 3 | Using the [] Wildcard
 
+1. List all the files that start with an uppercase letter
+2. List all the files that start with an uppercase letter or a number
+3. List all the files that have a number in the file name
+4. List all the files that start with a lowercase later and have a number before the file extension.
 
 **Take a screenshot of your terminal showing all the commands that you used to complete this question.**
 
@@ -118,15 +122,26 @@ Research/
 **Take a screenshot of your terminal showing all the commands that you used to complete this question.**
 
 
+**Problem 5:**
+Brace expansion comes handy in other scenarios too. Here are some examples:
+
+1. Create a directory in your home directory called `lab6-q5`. From the root of the filesystem create 3 files in the lab6-q5 directory called: `program.py`, `people.csv`, `data.xls`.
+2. Change your current working directory to `/usr/share`. Create a directory in the `lab6-q5` directory called `movies`. Create 3 files in the `~/lab6-q5/movies` directory called `movies.lst`, `marvel.txt` and `disney.doc`.
+3. Remove the files: `program.py`, `people.csv`, `disney.doc`, and `marvel.txt`.
+
+
+**Take a screenshot of your terminal showing all the commands that you used to complete this question.**
+
 <hr>
 
 # Challenge Question
 
-> You do not have to do this question, but this is the type of question you will see in your final. There is no credit for this question. You will be evaluated from question 1-4
 
 Run this curl command:
 
-This will create a directory in your home directory called: `challenge-Lab6` This directory has a bunch of files. Organize these file so that each file type has its own directory. Each file type must be moved to its respective directory. In the end your challenge-Lab6 directory should look like this:
+This will create a directory in your home directory called: `challenge-Lab6` This directory has a bunch of files. Organize these file so that each file type has its own directory. Each file type must be moved to its respective directory. In the end your `challenge-Lab6` directory should look like this:
+
+
 ```
 challenge-lab6/
 ├── audio
@@ -147,6 +162,7 @@ challenge-lab6/
     └── png
         └── all-png-files-here
 ```
+
 <br>*Tips*<br>
 * Try to create your directory structure in a single command.
 * Try working with multiple terminal windows open.

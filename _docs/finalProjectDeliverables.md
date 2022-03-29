@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Deliverable 1 Description
+title: Final Project Deliverables
 ---
 
 * Video here: [Deliverable 1](https://youtu.be/t6jyUb-3Urg)
@@ -49,7 +49,7 @@ title: Deliverable 1 Description
 
 # Deliverable 2
 * You need to submit a markdown file, pdf file, and github URL
-* This is the first part of the project only. 
+* This is the second part of the project only. 
 * Your markdown file must use proper formatting. 
   * headings
   * pictures
@@ -61,26 +61,30 @@ title: Deliverable 1 Description
 ## Default Project and Custom Project Requirements
 * Must include:
   * What is Virtualization? 
-    * Virtualbox
-  * Creating a virtual machine
+  * Virtualbox
+    * Creating a virtual machine
   * Installing Ubuntu (server or desktop) in a virtual machine
   * Updating Ubuntu
     * For the default project, you need to include how to update the system via the command line and the software center.
+    * For any custom project using Ubuntu Server or Debian, only include how to update the system via the command line.
   * Installing software
     * For the default project, you need to include how to install software via the command line and the software center. 
+    * For any custom project, you should only include how to install software via the command line.
   * Basic linux commands
-    * Navigating the filesystem
-    * Managing files and directories
-* For people using a raspberry pi. Substitute the virtualization part with this:
+    * Include explanations of basic commands for Navigating the filesystem
+    * Include explanations of basic commands for Managing files and directories
+#### For people using a raspberry pi.
+  * You do  not need to talk about virtualization or virtualbox. 
   * What is the Raspberry Pi
     * Specifications of the raspberry pi
     * Different operating system that can be installed on the raspberry pi 
   * Installing the distribution you are using (ubuntu/kali/raspberry pi OS)
   * Installing software
     * For the default project, you need to include how to install software via the command line and the software center. 
+    * For any custom project, you should only include how to install software via the command line.
   * Basic linux commands
-    * Navigating the filesystem
-    * Managing files and directories
+    * Include explanations of basic commands for Navigating the filesystem
+    * Include explanations of basic commands for Managing files and directories
 
 ####  Due Date 04/14/2022 @ 11:59 PM
 
