@@ -31,11 +31,11 @@ Video here:
 ```
 -rw-r--r-- 1 7.5K 08/19/21 /etc/pnm2ppa.conf
 ```
-> You can see a full list of control characters for the date [here](https://cis106.com/)
+> You can see a full list of control characters for the date [here](https://cis106.com/guides/format-control-char-date-command/)
 
-3. List all the `theme` files in the */usr/share/themes/* directory recursively. (*theme files have the .theme extension*)
-4. In your home directory, you should have a directory called `lab6`, if you don't have it, make sure to run the curl command in the READ ME part of this lab. List all the `log` files located in the `lab6` directory. 
-5. Create a directory called `log-files` inside the `lab6`. Move all the log files to the `log-files` directory.
+1. List all the `theme` files in the */usr/share/themes/* directory recursively. (*theme files have the .theme extension*)
+2. In your home directory, you should have a directory called `lab6`, if you don't have it, make sure to run the curl command in the READ ME part of this lab. List all the `log` files located in the `lab6` directory. 
+3. Create a directory called `log-files` inside the `lab6`. Move all the log files to the `log-files` directory.
 
 
 **Take a screenshot of your terminal showing all the commands that you used to complete this question.**
