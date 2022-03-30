@@ -49,6 +49,9 @@ Video here:
 3. List all the files that start with letter `l`, have one character after letter `l`, and the letters `st`. The the rest of the file name is irrelevant.
 4. List all the files that have an `_` and two characters before the file extension. 
 
+**Take a screenshot of your terminal showing all the commands that you used to complete this question.**
+
+
 <hr>
 
 ## Question 3 | Using the [] Wildcard
