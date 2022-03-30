@@ -10,7 +10,9 @@ title: Lab 6 - File Globing/**wildcards**
 ## A Brief description of the wildcards.
 
 
-![wildcards](/assets/wildcards.png)
+![wildcards](/assets/wildcardcheatsheet.png)
+> Cheat Sheet [here](https://rapurl.live/zot)
+
 
 Video here: https://youtu.be/tMzcAoITzR4
 
@@ -142,7 +144,9 @@ Brace expansion comes handy in other scenarios too. Here are some examples:
 # Challenge Question
 
 
-> Run this curl command: <br> `curl https://cis106.com/assets/lab6cq.sh | bash` <br>
+> Run this curl command: <br> **`curl https://cis106.com/assets/lab6cq.sh | bash`**
+
+
 
 This will create a directory in your home directory called: `challenge-Lab6` This directory has a bunch of files. Organize these file so that each file type has its own directory. Each file type must be moved to its respective directory. In the end your `challenge-Lab6` directory should look like this:
 
