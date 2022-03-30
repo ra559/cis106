@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lab 6 - File Globing/**wildcards**
+title: Lab 6 - File Globing/wildcards
 ---
 
 # Lab 6 | File Globing/wildcards
