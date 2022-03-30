@@ -10,7 +10,7 @@ do
 	cp $hidden $HOME/lab6 2> /dev/null
 done
 
-touch l{aio}st.txt 
+touch l{a,i,o}st.txt 
 touch file_{00..05}.sh
 touch Document.doc Expenses.xls 25Games.lst 88_Application-log.log apache01-error.log trip22-info.doc apache22.log apache03.err http404.log
 
