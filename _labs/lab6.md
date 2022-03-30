@@ -14,13 +14,12 @@ title: Lab 6 - File Globing/**wildcards**
 > Cheat Sheet [here](https://rapurl.live/zot)
 
 
-Video here: https://youtu.be/tMzcAoITzR4
+Video here: 
 
 > **Note:** Wildcards are all about pattern matching. They can be confusing but once you get a hold of them, you will never forget them. The table above gives you a summary of each wildcard. The goal of this lab is to give you enough practice for you to master wildcards in their basics form. Wildcards are very powerful because they can be combined to match pretty much any pattern that you can think of. 
 
 ## IMPORTANT!!! READ ME!!!!!
-> Before working on this lab, run this command: `curl https://cis106.com/assets/lab6.sh | bash`
-> This will create a directory called `lab6` in your home directory
+> Before working on this lab, run this command: <br>**`curl https://cis106.com/assets/lab6.sh | bash`**<br> This will create a directory called `lab6` in your home directory
 
 <hr>
 
@@ -57,7 +56,7 @@ Video here: https://youtu.be/tMzcAoITzR4
 1. List all the files that start with an uppercase letter
 2. List all the files that start with an uppercase letter or a number
 3. List all the files that have a number in the file name
-4. List all the files that start with a lowercase later and have a number before the file extension.
+4. List all the files that start with a lowercase letter and have a number before the file extension.
 
 **Take a screenshot of your terminal showing all the commands that you used to complete this question.**
 
@@ -183,6 +182,6 @@ challenge-lab6/
 ## What will you Submit:
 * Place all the screenshots and answers to your questions in a the `lab6.md` file.
 * Convert your markdown file to pdf 
-* Push the changes to Github: `git pull; git add .; git commit -m "lab5 complete; git push"`
+* Push the changes to Github: <br>`git pull; git add .; git commit -m "lab5 complete; git push"`
 * Submit the URL of `lab6.md` and the pdf file
 * Take a snapshot of your system and delete the previous snapshot.
