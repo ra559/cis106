@@ -48,6 +48,7 @@ title: Final Project Deliverables
 <hr>
 
 # Deliverable 2
+> Video [here](https://youtu.be/GIExMR63k1A)<br>
 * You need to submit a markdown file, pdf file, and github URL
 * This is the second part of the project only. 
 * Your markdown file must use proper formatting. 
