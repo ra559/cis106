@@ -91,7 +91,10 @@ title: Final Project Deliverables
 
 <hr>
 
-# Deliverable 3
+# Deliverable 3 | Final Deliverable
+
+> Due: Last day of semester
+
 ## Default Project
 * Most include
   * Connecting Ubuntu to the internet
@@ -159,9 +162,39 @@ title: Final Project Deliverables
 
 ## Kali Linux 
 * Must include:
-  *  
+  * Detail on the attack that will be demonstrated
+    * How does the attack work
+    * What is required to replicate the attack
+    * All the commands involved explained with definition, syntax/formula, and example
+
 ## Portable Hacking Station with a Raspberry Pi
+* Must include:
+  * Detail on the attack that will be demonstrated
+    * How does the attack work
+    * What is required to replicate the attack
+    * All the commands involved explained with definition, syntax/formula, and example
 
 ## Recovering data with Kali in a Raspberry Pi
-
+* Must include:
+  * Detail on the attack that will be demonstrated
+    * How does the attack work
+    * What is required to replicate the attack
+    * All the commands involved explained with definition, syntax/formula, and example
 ## Video game with Raspberry Pi
+* Different IDEs for writing python code in linux
+* Basic setup on how to write code on the chosen IDE
+* A Cheat cheat of basic python syntax.
+  * Including:
+    * variable declaration
+    * if/else statements
+    * functions
+    * classes
+    * switch statements
+    * Python string methods
+    * Arrays
+    * Dictionaries
+    * Hashes
+* What is pip? And how to use it
+* The code for the game explained with sufficient comments
+* The code must be available to download from github
+* Instructions on how to run the game in Linux
