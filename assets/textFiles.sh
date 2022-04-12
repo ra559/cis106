@@ -5,17 +5,42 @@
 # Description: Download text files for practicing handling text files
 # -------------
 
+#color formatting
+RESTORE=$(echo -en '\033[0m')
+RED=$(echo -en '\033[00;31m')
+GREEN=$(echo -en '\033[00;32m')
+YELLOW=$(echo -en '\033[00;33m')
+BLUE=$(echo -en '\033[00;34m')
+MAGENTA=$(echo -en '\033[00;35m')
+PURPLE=$(echo -en '\033[00;35m')
+CYAN=$(echo -en '\033[00;36m')
+LIGHTGRAY=$(echo -en '\033[00;37m')
+LRED=$(echo -en '\033[01;31m')
+LGREEN=$(echo -en '\033[01;32m')
+LYELLOW=$(echo -en '\033[01;33m')
+LBLUE=$(echo -en '\033[01;34m')
+LMAGENTA=$(echo -en '\033[01;35m')
+LPURPLE=$(echo -en '\033[01;35m')
+LCYAN=$(echo -en '\033[01;36m')
+WHITE=$(echo -en '\033[01;37m')
+ITALLICS=$(echo -en '\e[3m')
+TAB="\t"
+BLINK='\033[5m'
+
+# Needed Directories
 booksdir="$HOME/Documents/Books"
 csvdir="$HOME/Documents/Csv"
-# Files URLs
-## Books
+jsondir="$HOME/Documents/Json"
+
+
+# Books URLS
 prideAndPrejudice="https://www.gutenberg.org/files/1342/1342-0.txt"
 dracula="https://www.gutenberg.org/files/345/345-0.txt"
 warAndPeace="https://www.gutenberg.org/files/2600/2600-0.txt"
 greatExpectations="https://www.gutenberg.org/files/1400/1400-0.txt"
 bible="https://cis106.com/assets/bible.txt"
 
-## CSV Files
+# CSV ULRS
 kingsbooks="https://cis106.com/assets/kingsBooks.csv"
 contacts="https://cis106.com/assets/contacts.csv"
 countries="https://cdn.wsform.com/wp-content/uploads/2018/09/country.csv"
@@ -23,9 +48,15 @@ cars="https://perso.telecom-paristech.fr/eagan/class/igr204/data/cars.csv"
 cereal="https://perso.telecom-paristech.fr/eagan/class/igr204/data/cereal.csv"
 movies="https://perso.telecom-paristech.fr/eagan/class/igr204/data/film.csv"
 
-# Check if booksdir exist
-[[ -d $booksdir ]] || mkdir -p $booksdir
-[[ -d $csvdir ]] || mkdir -p $csvdir
+
+help(){
+		echo -e $GREEN"Description:"$RESTORE"\n\tUsed for Downloading sample files"
+		echo -e $GREEN"Usage:"$RESTORE"\n\ttextfiles + option"
+		echo -e $RED $ITALLICS $TAB"Where options can be:"$RESTORE
+		echo -e $TAB$YELLOW"-b"" or -B or --books $TAB $RESTORE for books to download"
+		echo -e $TAB$YELLOW"-c"" or -C or --csv $TAB $RESTORE for sample csv files"
+		echo -e $TAB$YELLOW"-j"" or -J or --json $TAB $RESTORE for sample json files"
+}
 
 
 menu_books(){
@@ -38,11 +69,12 @@ menu_books(){
 	echo "5- The Bible - King James Version"
 	echo "6- All of the books"
 	read bookAns
+	[[ -d $booksdir ]] || mkdir -p $booksdir
 	case $bookAns in
 		1)
 			bookName="$booksdir/pride-and-prejudice.txt"
 			curl -s $prideAndPrejudice -o $bookName
-			echo"$bookName Downloaded sucessfully"
+			echo "$bookName Downloaded sucessfully"
 			;;
 		2)
 			bookName="$booksdir/dracula.txt"
@@ -73,8 +105,8 @@ menu_books(){
 			mv $booksdir/345-0.txt $booksdir/dracula.txt
 			mv $booksdir/2600-0.txt $booksdir/war-and-peace.txt
 			mv $booksdir/1400-0.txt $booksdir/great-expectastions.txt
-			echo "All files Downloaded"
-			ls -X1 $booksdir
+			echo -e $PURPLE$TAB"\033[5mAll BOOKS Downloaded Successfully" $RESTORE
+			ls -lgGh --time-style=+%D $booksdir | awk '{print $1 " ▬ " $4 " ▬ " $5}'
 			;;
 		*)
 		exit
@@ -83,12 +115,6 @@ menu_books(){
 		
 }
 
-help(){
-	echo -e "Description:\n\tUsed for Downloading sample files"
-		echo -e "Usage:\n\ttextfiles + option\n \t\twhere options can be:"
-		echo -e "\t\t\t -b or -B or --books for books to download"
-		echo -e "\t\t\t -c or -C or --csv for sample csv files"
-	}
 menu_csv(){
 	echo "All files will be stores in $csvdir"
 	echo "Enter a number to Download the text file:"
@@ -100,6 +126,7 @@ menu_csv(){
 	echo "6- A list of 1600 movies with properties"
 	echo "7- All CSV files"
 	read csvAns
+	[[ -d $csvdir ]] || mkdir -p $csvdir
 	case $csvAns in
 		1)
 			curl -s $kingsBooks -o $(basename $kingsBooks)
@@ -129,14 +156,64 @@ menu_csv(){
 			for url in $(echo $kingsBooks $contacts $countries $cars $cereal $movies) 
 			do
 				curl -s $url -o "$csvdir/$(basename $url)"
-			done
-			echo "All files Downloaded"
-			ls -X1 $csvdir
+			done 
+			echo -e $PURPLE$TAB"\033[5mAll files Downloaded Sucessfully"$RESTORE
+			ls -lgGh --time-style=+%D $csvdir | awk '{print $1 " ▬ " $4 " ▬ " $5}'
 			;;		
 		*)
 			exit
 			;;
 	esac
+}
+
+menu_json(){
+	echo "All files will be stores in $jsondir"
+	echo "Enter a number to Download the json file:"
+	echo "1- Margarita"
+	echo "2- Recreational activity"
+	echo "3- Joke"
+	echo "4- holidays"
+	echo "5- Random dog image"
+	echo "6- Download all"
+	read jsonAns
+	[[ -d $jsondir ]] || mkdir -p $jsondir
+	case $jsonAns in
+		1)
+			#Source https://www.thecocktaildb.com/api.php
+			curl -s https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita -H "Accept: applicaton/json" -o $jsondir/margarita.json
+			echo "$jsondir/margarita.json Downloaded suscessfully"
+			;;
+		2)
+			#source https://www.boredapi.com/
+			curl -s http://www.boredapi.com/api/activity?type=recreational -o $jsondir/recreational.json
+			echo "$jsondir/recreational.json Downloaded suscessfully"
+			;;
+		3)
+			#source https://v2.jokeapi.dev/
+			curl -s https://v2.jokeapi.dev/joke/Any?safe-mode -o $jsondir/joke.json
+			echo "$jsondir/joke.json Downloaded suscessfully"
+			;;
+		4)
+			#source https://date.nager.at/
+			curl -s https://date.nager.at/api/v2/publicholidays/2020/US -o $jsondir/holidays.json
+			echo "$jsondir/holidays.json Downloaded suscessfully"
+			;;
+		5)
+			#source https://random.dog/
+			curl -s https://random.dog/woof.json -o $jsondir/random-dog.json
+			echo "$jsondir/random.json Downloaded suscessfully"
+			;;
+		6)
+			curl -s https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita -H "Accept: applicaton/json" -o $jsondir/margarita.json
+			curl -s http://www.boredapi.com/api/activity?type=recreational -o $jsondir/recreational.json
+			curl -s https://v2.jokeapi.dev/joke/Any?safe-mode -o $jsondir/joke.json
+			curl -s https://date.nager.at/api/v2/publicholidays/2020/US -o $jsondir/holidays.json
+			curl -s https://random.dog/woof.json -o $jsondir/random-dog.json
+			echo -e $PURPLE$TAB"\033[5mFiles Downloaded Sucessfully"$RESTORE
+			ls -lgGh --time-style=+%D $jsondir/ | awk '{print $1 " ▬ " $4 " ▬ " $5}'
+			;;
+	esac
+
 }
 
 case "$1" in
@@ -146,10 +223,13 @@ case "$1" in
 	-c | -C | --csv)
 		menu_csv
 		;;
+	-j | -J | --json)
+		menu_json
+		;;
 	-h | -H | --help)
 		help
-			;;
+		;;
 	*)
-		echo "No valid option given. Use textfiles -h for help"
+		echo -e $PURPLE "No valid option given. Use textfiles -h for help" $RESTORE
 		;;
 esac	
