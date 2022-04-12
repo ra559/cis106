@@ -16,12 +16,11 @@ title: Module 2
   * Shell Expansion - Slide 34
 
 ## Lecture 5
-* [Handling Text Files](https://rapurl.live/nsd)
+* [Handling Text Files](https://rapurl.live/he6)
   * Output redirection
   * Formatting output
   * [Bash Aliases](https://youtu.be/iB3_wwlfMEQ)
 
-* [Review](https://youtu.be/lOsNLdm7OWY)
 
 ## Lecture 6
 * Command Line Text Editors
