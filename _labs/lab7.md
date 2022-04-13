@@ -3,7 +3,7 @@ layout: post
 title: Lab  7 - Handling Text Files 
 ---
 
-# Lab 5 | Handling Text Files 
+# Lab 7 | Handling Text Files 
 
 
  ## Pre Work: 
