@@ -1,14 +1,11 @@
 ---
 layout: post
-title: Lab 6 - File Globing/wildcards
+title: Lab 6 - Wildcards
 ---
 
 # Lab 6 | File Globing/wildcards
 
-
-
 ## A Brief description of the wildcards.
-
 
 ![wildcards](/assets/wildcardcheatsheet.png)
 > Cheat Sheet [here](https://rapurl.live/zot)
