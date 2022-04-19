@@ -1,7 +1,4 @@
----
-layout: post
-title: Lab  7 - Handling Text Files 
----
+
 
 # Lab 7 | Handling Text Files 
 
@@ -78,7 +75,10 @@ The `/etc/passwd` file stores user’s account information. Each account data oc
    * Model name
    * CPU Frequency
    * Virtualiation technology supported
-3. Run the following command and append the output to the markdown file you created earlier: `echo "## RAM Information"`
+3. Run the following command and append the output to the markdown file you created earlier: 
+   
+   `echo "## RAM Information"`
+   
 4. The command `lshw -c memory` displays information about the RAM installed in your system. Extract and append to the file the following information:
     * Memory size:
 5. Display the content of the file you created earlier showing all the data that has been appended so far.
