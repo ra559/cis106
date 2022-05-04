@@ -5,7 +5,14 @@ title: Setup SSH Guide
 
 # Setup SSH Guide
 ## Installation
-* Make sure that your server and your client computer are in the same network. The easiest way to do this is to make sure that the network addapter in the viertual machine is set to bridge instead of nat. However, your network may prevent you from doing this. Some IDS and smart routers may prevent you from getting an ip. In this case, you need to use port forwarding in your vm. here is a guide on how to do it: https://nsrc.org/workshops/2014/sanog23-virtualization/raw-attachment/wiki/Agenda/ex-virtualbox-portforward-ssh.htm#:~:text=To%20enable%20port%20forwarding%2C%20open%20the%20settings%20for%20your%20Virtual%20Machine.&text=Verify%20that%20NAT%20is%20selected,you%20can%20add%20new%20forwardings.
+* Make sure that your server and your client computer are in the same network. The easiest way to do this is to make sure that the network addapter in the viertual machine is set to bridge instead of nat. To do this go, open the virtual machine settings and in the network section change the adapter to Bridge.
+
+![network adapter](/assets/networkadapter.png)
+
+* However, your network may prevent you from doing this. Some IDS and smart routers may prevent you from getting an IP. In this case, you need to use [port forwarding](https://learn.g2.com/port-forwarding) in your virtual machine. Here is a [guide](shorturl.at/ckHR8) on how to do it. 
+### Portforwarding Example
+![portforwarding](/assets/portforwardingvirtualbox.png)
+
  
 * Make sure that the ssh server program is installed in the server virtual machine
 ```
@@ -24,11 +31,14 @@ sudo systemctl enable ssh; sudo systemctl start ssh
 * On the client type: 
 ```
 ssh username@server-ip-address
-````
-> if you used port forwarding your command will be:
+```
+
+* If you are using port forwarding, your command will be:
+
 ```
 ssh -p 2222 username@127.0.0.1
 ```
+
 * Read and answer the questions and you will connect sucessfully. 
 
 ## Setup private and public key authentication with or without password:
@@ -43,7 +53,12 @@ sudo ufw status
 ```
 ssh-keygen
 ```
-Now you can type this command to copy your ssh key to the server
+* Now you can type this command to copy your ssh key to the server
+```
+ssh-copy-id -i .ssh/id_rsa.pub webmaster@server-ip-address
+```
+
+* if you are using port forwarding, use this command instead:
 ```
 ssh-copy-id -i .ssh/id_rsa.pub -p 2222 webmaster@127.0.0.1
 ```
