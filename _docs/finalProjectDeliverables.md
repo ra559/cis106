@@ -6,14 +6,12 @@ title: Final Project Deliverables
 * Video here: [Deliverable 1](https://youtu.be/t6jyUb-3Urg)
 * Tutorials:
   * [How To Install the Apache Web Server on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04)
+    * Video [here](https://youtu.be/fwJCyS4dY0E)
   * [How To Install Nginx on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04)
   * [How to install lighttpd on Ubuntu 20.04](https://www.how2shout.com/linux/install-and-configure-lighttpd-server-on-ubuntu-20-04-lts/)
   * [How to Setup Samba Server in Ubuntu 20.04](https://bytexd.com/how-to-setup-samba-server-in-ubuntu/)
   * [How To Set Up an NFS Mount on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-20-04)
-  * []()
-  * []()
-  * []()
-  * []()
+
 
 
 # Deliverable 1
