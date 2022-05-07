@@ -92,7 +92,7 @@ title: Final Project Deliverables
 <hr>
 
 # Deliverable 3 | Final Deliverable
-
+* **Video [Here](https://youtu.be/rGf6OpsmM0I)**
 > Due: Last day of semester
 
 ## Default Project
