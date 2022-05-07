@@ -4,7 +4,7 @@ title: Study Guide Final Spring 22
 ---
 
 # Study Guide For Final Spring 2022
-
+> **Video [here](https://youtu.be/hdM-x9iX6uw)!**
 ## List of Commands
 * date
 * uname
@@ -30,6 +30,8 @@ title: Study Guide Final Spring 22
 * tail
 * cut
 * tr
+* paste
+* wc
 * grep
 * output redirection
 * Saving the output of a command
@@ -59,6 +61,7 @@ title: Study Guide Final Spring 22
 19. How to use the cut, head, and tail commands with the pipe to filter the ouput of a command
 20. How to use wildcards to match specific file names: *,?,[],{}
 21. How to manage data with tar and compression tools
+22. Understand what is the purpose of the /etc/passwd file
 
 ## What should your submission have:
 
