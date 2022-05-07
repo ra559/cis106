@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Setup SSH Guide
+title: Study Guide Final Spring 22
 ---
 
 # Study Guide For Final Spring 2022
