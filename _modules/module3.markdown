@@ -1,19 +1,15 @@
 ---
 layout: page
-title: Module 3
+title: Module 3 Administration
 ---
+# {{page.title}}
 
 ## Lecture 7
-* Managing users
-* Managing groups
-  * [Presentation](https://rapurl.live/8l6)
+1. [Managing processes]()
+2. [Basic Networking protocols]()
 
 ## Lecture 8
-* Scheduling tasks
-  * [Presentation](https://rapurl.live/arf)
+1. [Shell scripting]()
 
 ## Lecture 9
-* Monitoring a network
-* Working with files over a network
-* Secured shell communication
-
+1.[Scheduling Tasks]()

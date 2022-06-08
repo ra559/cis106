@@ -2,21 +2,31 @@
 layout: page
 title: Weekly Lecture Schedule
 ---
-Week # | Start Date | End Date | Topic
--------| ---------- | -------- | -----
-00     | 01/19      | 01/25    | Lecture 00 - Introduction To CIS 106 
-01     | 01/26      | 02/01    | Lecture 01 - Introduction to the Linux Operating System
-02     | 02/02      | 02/08    | Lecture 02 - Virtualization and The Raspberry Pi
-03     | 02/09      | 02/15    | Lecture 03 - Installing Linux and the GUI
-04     | 02/16      | 03/22    | Lecture 04 - Shell and The Filesystem
-05     | 02/23      | 03/01    | Lecture 05 - Managing Files and Directories
-06     | 03/02      | 03/08    | Lecture 06 - Managing Text
-07     | 03/09      | 03/15    | Lecture 07 - Command Line Text Editors
-08     | 03/16      | 03/22    | Lecture 08 - Managing Software via The CLI (**Spring Break Week Learn at home**)
-09     | 03/23      | 03/29    | Lecture 09 - Managing Data and File Permissions
-10     | 03/30      | 04/05    | Lecture 10 - Managing Users and Groups
-11     | 04/06      | 04/02    | Lecture 11 - Managing Processes
-12     | 04/13      | 04/19    | Lecture 12 - Scheduling Tasks
-13     | 04/20      | 04/26    | Lecture 13 - Shell Scripting Part 1
-14     | 04/27      | 05/03    | Lecture 14 - Shell Scripting Part 2
-15     | 05/04      | 05/10    | Lecture 15 - **Final Exam**
+
+# {{page.title}}
+
+| Lecture Number | Start Day Week | End Day Week |
+| -------------- | -------------- | ------------ |
+| Lecture 01     | Sept 7th       | Sept 13th    |
+| Lecture 02     | Sept 14th      | Sept 20th    |
+| Lecture 03     | Sept 21st      | Sept 27th    |
+| Lecture 04     | Sept 28th      | Oct 4th      |
+| Lecture 05     | Oct 5th        | Oct 11th     |
+| Lecture 06     | Oct 12th       | Oct 18th     |
+| Lecture 07     | Oct 19th       | Oct 25th     |
+| Lecture 08     | Oct 26th       | Nov 1st      |
+| Lecture 09     | Nov 2nd        | Nov 8th      |
+| Lecture 10     | Nov 9th        | Nov 15th     |
+| Lecture 11     | Nov 16th       | Nov 22nd     |
+| **Lecture 12** | **Nov 23rd**   | **Nov 29th** |
+| Lecture 13     | Nov 30th       | Dec 6th      |
+
+## Special Dates
+
+| Event                                            | Date      |
+| ------------------------------------------------ | --------- |
+| **Last Day to drop without Academic Penalty**    | Sept 20   |
+| **Last Day to Withdraw with Permission**         | Oct 24    |
+| **Last Day to Withdraw with Faculty Permission** | Nov 25    |
+| **Thanksgiving Recess (No Classes)**             | Nov 23-27 |
+| **Final Examinations**                           | Dec 18-22 |

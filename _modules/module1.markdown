@@ -1,28 +1,24 @@
 ---
 layout: page
-title: Module 1
+title: Module 1 What is Linux?
 ---
-## Lecture 0: Introduction to the course. 
-  1. [Lecture 0 Introduction to the course](https://rapurl.live/g4h)
-  2. [How am I going to succeed in this class?](http://bit.ly/3pqo3bw)
-  3. [What is Git and Github?](https://www.youtube.com/watch?v=wpISo9TNjfU)
-     * We will not be using Git/Github for code but for our markdown files.
-  4. [Markdown Presentation](http://bit.ly/2KJyqbV)
-  
 
-## Lecture 1: Introduction to Linux
-   * [Introduction to Linux](https://rapurl.live/dbx)
+# {{page.title}}
+## Lecture 1: Introduction to the course. 
+* Presentations
+1. [Introduction to the course](https://rapurl.live/g4h)
+2. [What is Git and Github?](https://www.youtube.com/watch?v=wpISo9TNjfU)
+3. [Markdown Presentation](http://bit.ly/2KJyqbV)
 
+## Lecture 2: Introduction to Linux
+* Presentations
+1. [Introduction to Linux](https://rapurl.live/dbx)
+2. [The basics of Virtualization](http://bit.ly/2KIAlNA)
+3. [Using VirtualBox](http://bit.ly/3hk03nI)
+4. [Installing Ubuntu 22.04 in virtualbox](http://bit.ly/2WR4i0o)
 
-
-## Lecture 2: Installing Ubuntu, Virtualization, and the Raspberry PI
-* [The basics of Virtualization](http://bit.ly/2KIAlNA)
-* [Using VirtualBox](http://bit.ly/3hk03nI)
-* [Installing Ubuntu 20.04 in virtualbox](http://bit.ly/2WR4i0o)
-* [What is a Raspberry pi?](http://bit.ly/3nXAP0P)
-
-## Lecture 3
-* [Exploring Desktop Environments](https://bit.ly/3u1QcsC)
-* [What is a Shell?](https://bit.ly/3jS8fNa)
-* [Managing Software](https://youtu.be/_PoTDzMfi0o)
-
+## Lecture 3: The desktop environment 
+* Presentations
+1. [Exploring Desktop Environments](https://bit.ly/3u1QcsC)
+2. [What is a Shell?](https://bit.ly/3jS8fNa)
+3. [Managing Software](https://youtu.be/_PoTDzMfi0o)

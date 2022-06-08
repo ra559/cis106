@@ -4,9 +4,11 @@ description: >-
         Here you will find all the information about CIS 106 Linux fundamentals.
 baseurl: "" 
 url: "" 
+#For local development
+theme: just-the-docs
 
-#theme: just-the-docs
-remote_theme: pmarsceill/just-the-docs
+#For github deployment
+#remote_theme: pmarsceill/just-the-docs
 color_scheme: nil
 search_enabled: true
 

@@ -49,6 +49,9 @@ Here you will find all the information for the course.
 ## Advice
 If you find that the content of the course is too much or that you have too many gaps in your knowledge, I suggest that you take this course after CIS 180 and CIS 116. 
 
+## Advice 2
+If you do not have a decent computer (one that can be used for virtualization) you will have a very poor experience in this course. For this reason, I have alocated a computer in the lab (H311) that you can use. You will need to contact me ahead of time so I can setup a user for you. 
+
 # Resources
 
   * Snapshots:
