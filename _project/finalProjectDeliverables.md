@@ -1,7 +1,3 @@
----
-layout: page
-title: Final Project Deliverables
----
 
 * Video here: [Deliverable 1](https://youtu.be/t6jyUb-3Urg)
 * Tutorials:

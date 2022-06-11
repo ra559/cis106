@@ -5,30 +5,15 @@ description: >-
 baseurl: "" 
 url: "" 
 #For local development
-theme: just-the-docs
+#theme: just-the-docs
 
 #For github deployment
-#remote_theme: pmarsceill/just-the-docs
+remote_theme: pmarsceill/just-the-docs
 color_scheme: nil
 search_enabled: true
 
 collections:
-  docs:
-    permalink: "/:collection/:path/"
-    output: true
   modules:
-    permalink: "/:collection/:path/"
-    output: true
-
-  guides:
-    permalink: "/:collection/:path/"
-    output: true
-
-  discussions:
-    permalink: "/:collection/:path/"
-    output: true
-    
-  labs:
     permalink: "/:collection/:path/"
     output: true
 
@@ -36,23 +21,35 @@ collections:
     permalink: "/:collection:/:path"
     output: true
 
+  labs:
+    permalink: "/:collection/:path/"
+    output: true
+
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
+
+  guides:
+    permalink: "/:collection/:path/"
+    output: true
+
   project:
     permalink: "/:collection/:path/"
     output: true
 
+    
 just_the_docs:
   collections:
-    docs:
-      name: Documentation
     modules:
-      name: Modules    
-    guides:
-      name: Guides
-    discussions:
-      name: Discussions
-    labs:
-      name: Labs
+      name: Modules
     homework:
       name: Homework
+    labs:
+      name: Labs
+
+    docs:
+      name: Documentation    
+    guides:
+      name: Guides
     project:
       name: Project    
