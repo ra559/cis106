@@ -6,16 +6,16 @@ title: Lab 1 - Learning Markdown
 
 ## Question 1
 1. Install VS Code and install the following extensions:
-* Live Server
-* Markdown All in one
-* Markdown Preview Enhanced
-* Markdown PDF
-* Markdown TOC
-* PDF Preview
-* Code Spell Checker
-1. Create a github account using your pccc email address
-2. Create a repository called `cis106`
-3. Do not close the github page, you will need it later.
+   * Live Server
+   * Markdown All in one
+   * Markdown Preview Enhanced
+   * Markdown PDF
+   * Markdown TOC
+   * PDF Preview
+   * Code Spell Checker
+2. Create a github account using your PCCC email address
+3. Create a repository called `cis106`
+4. Do not close the github page, you will need it later.
   
 ## Question 2
 1. In your Documents folder, create a folder called `lab1` all lowercase
