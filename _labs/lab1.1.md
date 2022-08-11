@@ -1,7 +1,3 @@
----
-layout: post
-title: Lab 1.1 - Exploring Linux Distributions
----
 ## Requirements:
 * Bold your answers *(2 points)*
 * Take proper screenshots. Sloppy work = lower grade
