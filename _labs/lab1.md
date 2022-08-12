@@ -3,6 +3,7 @@ layout: post
 title: Lab 1 - Learning Markdown
 ---
 > *Video For lab [here](https://youtube.com)*
+
 # {{page.title}}
 
 ## Question 1
