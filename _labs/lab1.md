@@ -21,7 +21,7 @@ title: Lab 1 - Learning Markdown
   
 ## Question 2
 1. In your Documents folder, create a folder called `lab1` all lowercase
-2. Download the following compressed file: https://github.com/ra559/cis106/blob/main/lab0files.zip 
+2. Download the following compressed [file](https://cis106.com/assets/whatisubuntu.zip) 
  
 ![labzerodownload](/assets/labzerodownload.gif)<br>
 
