@@ -2,7 +2,7 @@
 layout: post
 title: Lab 1 - Learning Markdown
 ---
-> *Video For lab [here](https://youtube.com)*
+> *Video For lab [here](https://youtu.be/YvnhXfdw7Gs)*
 
 # {{page.title}}
 
@@ -26,7 +26,7 @@ title: Lab 1 - Learning Markdown
 ![labzerodownload](/assets/labzerodownload.gif)<br>
 
 3. Decompress the zip file inside your `lab1` folder
-4. Open VS Code and open the lab0 folder
+4. Open VS Code and open the lab1 folder
 
 ## Question 3
 * Read the presentation ['What is Markdown'](http://bit.ly/2KJyqbV)
