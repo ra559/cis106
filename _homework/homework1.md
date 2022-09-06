@@ -7,5 +7,4 @@ title: Homework 1
 2. Install Slack in your phone and computer
 3. Complete Discussion Board 1 - Introduce Yourself
 4. Complete Lab 1 - Learning Markdown 
-5. Read the Document: "Final Project Description"
-6. Watch the video What is Git and Github located [here](https://www.youtube.com/watch?v=wpISo9TNjfU)
+5. Watch the video What is Git and Github located [here](https://www.youtube.com/watch?v=wpISo9TNjfU)
