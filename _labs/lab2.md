@@ -61,8 +61,8 @@ Make sure to select the right installer for your operating system:
 
 Make sure to install VirtualBox in your host computer. For Windows follow this [video](https://www.youtube.com/watch?v=2lGmCwpFYi8). For macOS follow this [video.](https://www.youtube.com/watch?v=fyx53lJyAoc) Once you have installed VirtualBox, create a virtual machine that meets these specifications:
 
-> * OS: Ubuntu 20.04 64Bits [ISO URL](https://ubuntu.com/download/desktop) 
-> * HDD: 50 GB
+> * OS: Ubuntu 22.04 64Bits [ISO URL](https://ubuntu.com/download/desktop) 
+> * HDD: 40 GB
 > * RAM: 2GB
 > * Video: 64 MB or Higher
 > * Audio Controller: Disabled (audio won't be needed)
@@ -93,6 +93,7 @@ These are the tasks that you need to complete before taking the screenshots:
 * Update and upgrade
 * Add canonical partners in the software settings
 * Set update daily reminder to never
+* Change Wayland for X.org
 * Take snapshot.
 
 > Take a screenshot of your virtual machine showing the snapshot
@@ -138,10 +139,7 @@ These are the tasks that you need to complete before taking the screenshots:
   * `sudo apt install gnome-tweaks ubuntu-restricted-extras ubuntu-restricted-addons -y`
   * `sudo apt install snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap  -y`
 
-9. Replace the default screenshot tool with flameshot. Use this command:
-  * 
- 
-
+9. Replace the default screenshot tool with flameshot.
 10. Setup git and download your repository to your Ubuntu machine.
   * Sign in to your github account.
   * Open a terminal and run the following commands:
