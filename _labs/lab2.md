@@ -2,7 +2,7 @@
 layout: post
 title: Lab 2 - Installing Ubuntu 22.04 in VirtualBox.
 ---
-# Lab 2 - Installing Ubuntu 20.04 in VirtualBox.
+# {{page.title}}
 * *Video [here](https://youtu.be/AJ-Qgw7OjcA)*
 
 
