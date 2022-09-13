@@ -19,8 +19,8 @@ Perform the following tasks. The point of this question is to get you familiar w
 1. Open a terminal and type the `date` command. Take a screenshot of the terminal and highlight the date command. Add some text to the screenshot. Save your screenshot in your `lab3` directory inside your github repository. If the `lab3` directory does not exist, create it.
 
 2. **Create a desktop shortcut for the cis106 website**
-   1. Open a text editor.
-   2. Add the following text:
+* Open a text editor.
+* Add the following text:
 ```
 #!/usr/bin/evn xdg-open
 [Desktop Entry]
@@ -30,8 +30,8 @@ Exec=/snap/bin/firefox https://cis106.com
 Name=cis106
 Icon=$HOME/.cis106.png
 ```
-   3. Save the file with the name: `cis106.desktop` and save it in your Desktop directory.
-   4. On the desktop, right click on the file `cis106.desktop` and enable launching (can also be called: `Allow executing as program`):
+* Save the file with the name: `cis106.desktop` and save it in your Desktop directory.
+* On the desktop, right click on the file `cis106.desktop` and enable launching (can also be called: `Allow executing as program`):
 
 ![allow launching](/assets/allowLanuching.gif)<br>  
 
@@ -42,7 +42,7 @@ Icon=$HOME/.cis106.png
    4. Save the pdf file in the `lab3` directory inside your github repository.
 4. **Create a Presentation in LibreOffice Impress**
    1. save the presentation in the `lab3` directory
-5. Play around with the settings of Ubuntu
+5. **Play around with the settings of Ubuntu**
    1. Click on the System Tray. Open "Settings"
    2. Change the background.
    3. Go to this [site](https://wallhaven.cc/) and download a new wallpaper and add it as a background. 
@@ -51,6 +51,7 @@ Icon=$HOME/.cis106.png
    6. Disable search for everything except software
    7. Change the screen blank to "Never" in the power settings
    8. Take a look at the rest of the settings
+6. **Install a Font**
 
 > This question requires no screenshot
 
