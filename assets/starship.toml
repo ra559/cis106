@@ -1,0 +1,33 @@
+#nice tutorial: https://www.codependentcodr.com/using-starship-for-terminal-prompt-goodness.html
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[directory]
+truncation_length = 100
+truncate_to_repo = false
+style = "yellow"
+format = "[🌳 $path]($style)[$read_only]($read_only_style) "
+
+[git_branch]
+symbol = ""
+style = "bold white"
+format = '[\($symbol$branch\)]($style) '
+
+[git_status]
+# I don't care about untracked files or that there's a stash present.
+untracked = ""
+format = '([\[$conflicted$deleted$renamed$modified$staged$behind\]]($style) )'
+modified = '*'
+
+[status]
+disabled = false
+format = '[\[$status - $common_meaning\]](green)'
+
