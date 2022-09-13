@@ -5,15 +5,16 @@ title: Lab 3 - Using Ubuntu
 
 # Lab 3 - Using Ubuntu 
 * Lab video [here](https://youtu.be/ah4zi8SgKaY)
-* You have to complete labs 0,1, and 2 before attempting lab 3.
+* You have to complete labs 1, and 2 before attempting lab 3.
 * Software installation cheat sheet available [here](https://bit.ly/3djIsfy)
-* Video of Presentation available [here](https://youtu.be/_PoTDzMfi0o)
-* Presentation available [here](https://shorturl.at/BDO39)
+  * Video of Presentation available [here](https://youtu.be/_PoTDzMfi0o)
+  * Presentation available [here](https://shorturl.at/BDO39)
+
 
 ## Question 1 | Using Ubuntu for basic tasks
 Perform the following tasks. The point of this question is to get you familiar with the system. The more you use Ubuntu, the less intimidating it becomes. 
 
-1. Open a terminal and type the `date` command. Take a screenshot of the terminal and highlight the date command. Add some text to the screenshot. Save your screenshot in your `lab3` directory inside your github repository.
+1. Open a terminal and type the `date` command. Take a screenshot of the terminal and highlight the date command. Add some text to the screenshot. Save your screenshot in your `lab3` directory inside your github repository. If the `lab3` directory does not exist, create it.
 
 2. **Create a desktop shortcut for the cis106 website**
    1. Open a text editor.
@@ -23,12 +24,12 @@ Perform the following tasks. The point of this question is to get you familiar w
 [Desktop Entry]
 Type=Application
 Terminal=false
-Exec=/usr/bin/firefox https://cis106.com
+Exec=/snap/bin/firefox https://cis106.com
 Name=cis106
-Icon=/home/student/.cis106.png
+Icon=$HOME/.cis106.png
 ```
    3. Save the file with the name: `cis106.desktop` and save it in your Desktop directory.
-   4. On the desktop, right click on the file `cis106.desktop` and enable launching:
+   4. On the desktop, right click on the file `cis106.desktop` and enable launching (can also be called: `Allow executing as program`):
 
 ![allow launching](/assets/allowLanuching.gif)<br>  
 
@@ -39,18 +40,17 @@ Icon=/home/student/.cis106.png
    4. Save the pdf file in the `lab3` directory inside your github repository.
 4. **Create a Presentation in LibreOffice Impress**
    1. save the presentation in the `lab3` directory
-5. **Install a new theme**
-   1. Download a GTK theme, icon theme, cursor theme, and wallpaper from this [site](https://www.gnome-look.org/browse/)
-   2. Create 2 hidden directories in your home directory: `.themes` and `.icons`
-   3. Decompress the files you downloaded earlier.
-   4. Move the theme to the `.themes` directory, the icon to the `.icons` directory and the cursor theme to the `.icons` directory
-   5. Open the application `tweaks` and change to your new theme and icon. 
-6. Play around with the location of the dock.
-7. Install gnome extensions:
-   1. Applications menu
-   2. caffeine
+5. Play around with the settings of Ubuntu
+   1. Click on the System Tray. Open "Settings"
+   2. Change the background.
+   3. Go to this [site](https://wallhaven.cc/) and download a new wallpaper and add it as a background. 
+   4. Play around with the appearance of Ubuntu.
+   5. Play around with the notifications
+   6. Disable search for everything except software
+   7. Change the screen blank to "Never" in the power settings
+   8. Take a look at the rest of the settings
 
-> Open the file manager, take a screenshot of your ubuntu system showing your new theme.
+> This question requires no screenshot
 
 ## Question 2 | Using a different desktop environment
 
@@ -64,6 +64,7 @@ sudo apt update; sudo apt install gnome-session-flashback -y
 
 > Take a screenshot of your ubuntu system.
 
+> **Note:** *You can go back to Gnome 42 if you want.*
 <hr>
 
 ## Question 3 | Installing applications
@@ -75,30 +76,30 @@ Using the command line, look for a software to do each of the following tasks an
 5. Play music 
 
 ```
-| Program purpose     | Package Name | Version | Description |
-| ------------------- | ------------ | ------- | ----------- |
-| Play a tetris game  |              |         |             |
-| Play a video file   |              |         |             |
-| Browse the internet |              |         |             |
-| Read your email     |              |         |             |
-| Play music          |              |         |             |
+| Program purpose     | Package Name | Version |
+| ------------------- | ------------ | ------- |
+| Play a tetris game  |              |         |
+| Play a video file   |              |         |
+| Browse the internet |              |         |
+| Read your email     |              |         |
+| Play music          |              |         |
 ```
+### CHALLENGE!
 1. Install the programs that you found using a single command. **Which command did you use?**
 2. Remove all the programs that you installed in a single command. **Which command did you use?**
 3. If you were to install the first and second program, but remove the other 3 in a single command, **Which command will you use?**
 
-> For this question, simply complete the table. No screenshot required.
+> For this question, simply complete the table and answer the questions. No screenshot required.
 
 <hr>
 
-## Question 4 | Trying out simple commands
+## Question 4 | Trying out simple commands (CHALLENGE QUESTION)
 
 Almost all Linux commands include manual pages. Manual pages (man page for short) is a documentation that explains the usage of a command. Man pages are not user friendly and are not meant to be guides but references on how a program works. The more you read man pages the more sense they make. It is normal to feel lost in the beginning. 
 
-To read the manual of a command simply type: `man command` for example, `man date` opens the manual of the date command.
+To read the manual of a command simply type: `man command` for example, `man date` opens the manual of the date command. 
 
-To move around the man page, use the arrow keys in the keyboard. You can also use the mouse wheel if you are working in a terminal emulator. 
-To get help on how to read the manual press letter `h` to  quit the manual page press `q`
+To move around the man page, use the arrow keys in the keyboard. You can also use the mouse wheel if you are working in a terminal emulator. To get help on how to read the manual press letter `h` to  quit the manual page press `q`
 
 Try the following commands in the terminal
    1. date
@@ -127,5 +128,5 @@ Use the man page to find out what each of these programs do.
 ```
 
 ## What will you submit
-* Create a markdown file named lab3.md and answer all the questions there.
+* Create a markdown file named `lab3.md` and answer all the questions there.
 * Submit the URL to the lab3.md file in github and a pdf version of lab3.md file.
