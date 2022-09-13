@@ -5,8 +5,6 @@ title: Lab 3 - Using Ubuntu
 # {{page.title}}
 * *Video [here](video here)*
 
-# Lab 3 - Using Ubuntu 
-* Lab video [here](https://youtu.be/ah4zi8SgKaY)
 * You have to complete labs 1, and 2 before attempting lab 3.
 * Software installation cheat sheet available [here](https://bit.ly/3djIsfy)
   * Video of Presentation available [here](https://youtu.be/_PoTDzMfi0o)
