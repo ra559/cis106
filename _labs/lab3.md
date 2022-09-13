@@ -2,6 +2,8 @@
 layout: post
 title: Lab 3 - Using Ubuntu 
 ---
+# {{page.title}}
+* *Video [here](video here)*
 
 # Lab 3 - Using Ubuntu 
 * Lab video [here](https://youtu.be/ah4zi8SgKaY)
