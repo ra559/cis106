@@ -1,7 +1,4 @@
----
-layout: page
-title: Final Project Description
----
+
 
 There are 2 projects you can work on:
 1. Using Ubuntu 22.04 as a desktop operating system

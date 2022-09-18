@@ -1,7 +1,4 @@
----
-layout: page
-title: Deliverable 1 Example
----
+
 # Deliverable 1 Example
 
 ## Introduction/project description

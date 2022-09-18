@@ -1,7 +1,4 @@
----
-layout: page
-title: "Final Project Example 2"
----
+
 
 # Build a LAMP Stack
 ![LAMP STACK](/assets/LAMP.jpg)
