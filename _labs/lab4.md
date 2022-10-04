@@ -3,56 +3,12 @@ layout: post
 title: Lab 4 - The Linux Filesystem 
 ---
 
-# {{page.title}}
-
 * Presentations:
   * [How to navigate the filesystem](https://rapurl.live/uz0)
   * Video [here](https://youtu.be/pwgbefPA0lU)
 
 
-## Question 1:  The linux filesystem
-
-Create a table that includes the following directories and their usage:
-1. bin
-2. dev
-3. etc
-4. home
-5. media
-6. opt
-7. proc
-8. srv
-9. usr
-10. var
-<br>
-
-Your table must look like this:
-
-| Directory | Function                                                                                    |
-| --------- | ------------------------------------------------------------------------------------------- |
-| bin       | Nulla enim amet occaecat quis esse proident proident labore do magna laborum nostrud Lorem. |
-
-
-Create a table of the commands used for navigating the file system (cd, pwd, ls). Your table must include the following:
-* The command, 
-* what the command does, 
-* the syntax/formula of how to use the commands, 
-* an example of the command in  use.
-> You can get all of that information from the [presentation.](https://rapurl.live/9b5)
-
-### Here is an example of how your table should look like with commands you already used
-
-| Command | What it does                           | Syntax                                     | Example                 |
-| ------- | -------------------------------------- | ------------------------------------------ | ----------------------- |
-| echo    | Display text to the screen             | `echo` + `option` + `text to display`      | `echo -n "Hello World"` |
-| apt     | Set of tools for managing deb packages | `sudo` + `apt` + `option` + `package name` | `sudo apt install vlc`  |
-| uname   | prints system information              | `uname` + `option`                         | `uname -a`              |
-
-> Before you continue with this lab, I recommend you complete all the practices located in the [presentation](https://rapurl.live/wfp). If you are confident of your understanding of the commands then you can continue. 
-
-<hr>
-
-
-## Question 2 | Moving around the file system
+## Question 1 | Moving around the file system
 * **[pwd](https://rapurl.live/6gj)**: Print the absolute path of the current working directory.
 * **[cd](https://rapurl.live/n6h)**: Change the shell current working directory.
 * **[ls](https://rapurl.live/9v5)**: list files inside a given directory
@@ -78,7 +34,7 @@ Create a table of the commands used for navigating the file system (cd, pwd, ls)
 
 <hr>
 
-## Question 3 | The ls command
+## Question 2 | The ls command
 Download this compressed zip file: [lab4files.zip](/assets/lab4files.zip) Decompress the zip file in **your home** directory.
 
 1. Change your present working directory to `/usr/share/`. Using absolute path, list all the files inside the `lab4files` directory.
@@ -92,7 +48,7 @@ Download this compressed zip file: [lab4files.zip](/assets/lab4files.zip) Decomp
 <hr>
 
 
-## Question 4 | The tree and exa command
+## Question 3 | The tree and exa command
 > *The tree and exa commands are not installed by default in Ubuntu. Make sure that the program is installed in your system before you continue with this question.*
 > *If you are using an earlier version of Ubuntu, Exa is not available in the default repositories. However, you can install it by running this command:*
 > ```
@@ -110,7 +66,7 @@ Download this compressed zip file: [lab4files.zip](/assets/lab4files.zip) Decomp
 
 <hr>
 
-## Question 5 | Challenge Question
+## Question 4 | Challenge Question
 
 Use this image as a visual aid during this question
 <br>![visual aid linux FS](/assets/Linux-Filesystem-Incomplete-visual-aid.png)<br>
