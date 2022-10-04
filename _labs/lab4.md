@@ -39,7 +39,7 @@ Create a table of the commands used for navigating the file system (cd, pwd, ls)
 * an example of the command in  use.
 > You can get all of that information from the [presentation.](https://rapurl.live/9b5)
 
-### Here is an example of how your table should look like with commands you already used in the past
+### Here is an example of how your table should look like with commands you already used
 
 | Command | What it does                           | Syntax                                     | Example                 |
 | ------- | -------------------------------------- | ------------------------------------------ | ----------------------- |
@@ -53,9 +53,9 @@ Create a table of the commands used for navigating the file system (cd, pwd, ls)
 
 
 ## Question 2 | Moving around the file system
-* **[pwd](https://rapurl.live/6gj)**: Print the full filename of the current working directory.
+* **[pwd](https://rapurl.live/6gj)**: Print the absolute path of the current working directory.
 * **[cd](https://rapurl.live/n6h)**: Change the shell current working directory.
-* **[ls](https://rapurl.live/9v5)**: list files inside a give directory
+* **[ls](https://rapurl.live/9v5)**: list files inside a given directory
 
 ### Using pwd and cd with absolute path (remember to use the bash autocompletion feature)
 
