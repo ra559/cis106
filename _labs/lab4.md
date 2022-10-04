@@ -2,10 +2,11 @@
 layout: post
 title: Lab 4 - The Linux Filesystem 
 ---
+# {{page.title}}
 
 * Presentations:
   * [How to navigate the filesystem](https://rapurl.live/uz0)
-  * Video [here](https://youtu.be/pwgbefPA0lU)
+  * Video [here](https://youtu.be/u6kcT2QNFVw)
 
 
 ## Question 1 | Moving around the file system
@@ -80,6 +81,8 @@ Use this image as a visual aid during this question
 8. Change your present/current working directory to `disk/by-id`  and from there long list all the files in your home directory including hidden files.
 9. List all the files sorted by modification time inside the `share/themes` directory.
 10. List all the files sorted by file extension inside the `/usr/share` directory.
+
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-10. Multiple screenshots may be required**
 
 
 ## What will you Submit:

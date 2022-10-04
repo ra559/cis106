@@ -5,6 +5,8 @@ title: Homework 4
 
 # {{page.title}}
 
+> Video For this assignment [here](https://youtu.be/BRIC5EVxmFg)
+
 ## Complete the following tasks
 ### 1. Complete Discussion 3: The Rise of Open Source 
 If you are short in time, leave this part for last
@@ -12,6 +14,8 @@ If you are short in time, leave this part for last
 *Week Report must contain the following:*<br>
 
 > If you need a refresher on the filesystem and the commands to navigate the filesystem, watch these videos. Otherwise, skip this part:
+>  * [Navigating the filesystem Part 1](https://www.youtube.com/watch?v=RNopWAAoVbM&list=PL5lh7Nw87hud1kA8FTE2UG3y9yvmON2s8&index=11)
+>  * [Navigating the filesystem Part 2](https://www.youtube.com/watch?v=RxVX64H5D_k&list=PL5lh7Nw87hud1kA8FTE2UG3y9yvmON2s8&index=12)
 
 1. Do all the practice exercises in the [presentation](https://bit.ly/3alPqPm). After completing each practice, take a screenshot of the terminal and put it in your weekly report. One screenshot per practice is enough to prove you did them.
 2. Create a table that includes the following directories and their usage. All the information can be found in the [presentation](https://bit.ly/3alPqPm):
@@ -57,6 +61,7 @@ If you are short in time, leave this part for last
    * relative path
    * absolute path
    * A bulleted list of all the commands are used for navigating the filesystem.
+
 ### 4. Complete [lab 4: the linux fs](https://cis106.com/labs/lab4/). 
 Please do these after you complete the Week report! Trust me, it is better this way.
 
