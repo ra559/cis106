@@ -10,7 +10,9 @@ title: Homework 4
 If you are short in time, leave this part for last
 ### 2. Complete week report. 
 *Week Report must contain the following:*<br>
+
 > If you need a refresher on the filesystem and the commands to navigate the filesystem, watch these videos. Otherwise, skip this part:
+
 1. Do all the practice exercises in the [presentation](https://bit.ly/3alPqPm). After completing each practice, take a screenshot of the terminal and put it in your weekly report. One screenshot per practice is enough to prove you did them.
 2. Create a table that includes the following directories and their usage. All the information can be found in the [presentation](https://bit.ly/3alPqPm):
    1. bin
