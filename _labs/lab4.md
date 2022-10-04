@@ -31,7 +31,6 @@ title: Lab 4 - The Linux Filesystem
 
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 6-10.**
 
-
 <hr>
 
 ## Question 2 | The ls command
@@ -86,7 +85,8 @@ Use this image as a visual aid during this question
 ## What will you Submit:
 * Place all the screenshots and answers to your questions in a the `lab4.md` file.
 * Convert your markdown file to pdf 
-* Push the changes to Github 
+* Push the changes to Github
+  * `git pull; git add .; git commit -m 'lab3 completed'; git push`
 * Submit the URL of `Lab4.md` and the pdf file
 * Take a snapshot of your system and delete the previous snapshot.
 
