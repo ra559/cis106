@@ -3,7 +3,7 @@ layout: post
 title: Homework 5
 ---
 # Homework 5
-
+* Explanation [here](https://youtu.be/d5OX1FTa6ss)
 ## Complete the following tasks
 ### 1. Weekly Report:
 Must include the following:
