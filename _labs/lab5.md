@@ -6,7 +6,7 @@ title: Lab 5 - Managing Files and Directories
 # Lab 5 - Managing Files and Directories
 
 * Presentation [here](https://rapurl.live/f6n)
-* Video [here](https://youtu.be/H8T9azgzkDY)
+* Video [here](https://youtu.be/DehHVadtKww)
 
 
 ## Question 1: Creating Files and Directories
