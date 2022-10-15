@@ -21,4 +21,4 @@ title: Module 1 What is Linux?
 * Presentations
 1. [Exploring Desktop Environments](https://bit.ly/3u1QcsC)
 2. [What is a Shell?](https://bit.ly/3jS8fNa)
-3. [Managing Software](https://youtu.be/_PoTDzMfi0o)
+3. [Managing Software](https://rapurl.live/nft)

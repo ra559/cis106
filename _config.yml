@@ -37,6 +37,9 @@ collections:
     permalink: "/:collection/:path/"
     output: true
 
+  extra:
+    permalink: "/:collection/:path/"
+    output: true
     
 just_the_docs:
   collections:
@@ -53,3 +56,5 @@ just_the_docs:
       name: Guides
     project:
       name: Project    
+    extra:
+      name: Extra  
