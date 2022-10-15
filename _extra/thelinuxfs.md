@@ -6,17 +6,18 @@ title: The Linux FS
 # {{page.title}}
 
 > Note:
->  Install the following programs:
->  `nemo`
->  `ulauncher`
->  You can install Ulauncher with the following command: `sudo add-apt-repository ppa:agornostal/ulauncher && sudo apt update && sudo apt install ulauncher`
+>  Install the following programs: <br>
+>  `nemo`<br>
+>  `ulauncher`<br>
+>  You can install Ulauncher with the following command: `sudo add-apt-repository ppa:agornostal/ulauncher && sudo apt update && sudo apt install ulauncher`<br>
 
+> ***All The videos [here](https://www.youtube.com/playlist?list=PL5lh7Nw87hufz3zTPu8XYGi9frBwZBPZN)***<br>
 
 ## Question 1
 1. Use the cd command to reach the following directories:
 * X11
 * by-id
-* locale
+* local
 * python3.9
 * backgrounds
 * themes
