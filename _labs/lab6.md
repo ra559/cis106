@@ -23,17 +23,13 @@ Video [here](https://youtu.be/mel_pOjq2DY)
 
 ## Question 1 | Using the * Wildcard
 
-1. List all the configuration files in the `etc` directory. (*Configuration files have the extension of .conf*)
-2. Long list all the configuration files in the `etc` directory that start with letter `h` or letter `p` **sorted by file size**, **with human readable file size**, and showing the date formatted as: **month/day/year** as shown in the output. <br> Here is an example of the output (*Notice the date*):
+1. In your home directory, you should have a directory called `lab6`, if you don't have it, make sure to run the curl command in the `READ ME` part of this lab. List all the `log` files located in the `lab6` directory. Create a directory called `log-files` inside the `lab6`. Move all the log files to the `log-files` directory.
+2. List all the configuration files in the `etc` directory. (*Configuration files have the extension of .conf*)
+3. Long list all the configuration files in the `etc` directory that start with letter `h` or letter `p` **sorted by file size**. Modify the ls command with the proper options so that the output looks like this: (*Notice the date*)
 ```
 -rw-r--r-- 1 7.5K 08/19/21 /etc/pnm2ppa.conf
 ```
 > You can see a full list of control characters for the date [here](https://cis106.com/guides/format-control-char-date-command/)
-
-1. List all the `theme` files in the */usr/share/themes/* directory recursively. (*theme files have the .theme extension*)
-2. In your home directory, you should have a directory called `lab6`, if you don't have it, make sure to run the curl command in the READ ME part of this lab. List all the `log` files located in the `lab6` directory. 
-3. Create a directory called `log-files` inside the `lab6`. Move all the log files to the `log-files` directory.
-
 
 **Take a screenshot of your terminal showing all the commands that you used to complete this question.**
 
@@ -66,7 +62,7 @@ Video [here](https://youtu.be/mel_pOjq2DY)
 The curly braces are not a wildcard but they are equally useful. The curly braces allow you to generate arbitrary strings to use with commands. 
 
 **Problem 1:**<br>
-In the `lab6` directory, create the following directory structure. Display a tree of the directory once you have created. Your directory tree must look exactly like mine. Take a screenshot:
+In the `lab6` directory, create the following directory structure. Display a tree of the directory. **Take a screenshot**:
 ```
 wallpapers/
 └── cars
@@ -75,7 +71,7 @@ wallpapers/
     └── 4k
 ```
 **Problem 2:**<br>
-Clear your terminal. in the `lab6` directory, create the following directory structure. Display a tree of the directory once you have created. Your directory tree must look exactly like mine. Take a screenshot:
+Clear your terminal. in the `lab6` directory, create the following directory structure. Display a tree of the directory. **Take a screenshot**:
 ```
 assets/
 ├── imgs
@@ -87,7 +83,7 @@ assets/
 ```
 
 **Problem 3:**<br>
-Clear your terminal. in the `lab6` directory, create the following directory structure. Display a tree of the directory once you have created. Your directory tree must look exactly like mine. Take a screenshot:
+Clear your terminal. in the `lab6` directory, create the following directory structure. You need to create the pdf files as well. Remember mkdir creates directories while touch creates files. Display a tree of the directory. **Take a screenshot**:
 ```
 docs/
 └── books
@@ -103,7 +99,7 @@ docs/
             └── book.pdf (this is a file not a directory)
 ```
 **Problem 4:**<br>
-Clear your terminal. in the `lab6` directory, create the following directory structure. Display a tree of the directory once you have created. Your directory tree must look exactly like mine. Take a screenshot:
+Clear your terminal. in the `lab6` directory, create the following directory structure. Display a tree of the directory once you have created. Your directory tree must look exactly like mine. **Take a screenshot**:
 ```
 Research/
 ├── books
@@ -125,9 +121,6 @@ Research/
         └── official
 ```
 
-**Take a screenshot of your terminal showing all the commands that you used to complete this question.**
-
-
 **Problem 5:**
 Brace expansion comes handy in other scenarios too. Here are some examples:
 
@@ -147,7 +140,7 @@ Brace expansion comes handy in other scenarios too. Here are some examples:
 
 
 
-This will create a directory in your home directory called: `challenge-Lab6` This directory has a bunch of files. Organize these file so that each file type has its own directory. Each file type must be moved to its respective directory. In the end your `challenge-Lab6` directory should look like this:
+This will create a directory in your home directory called: `challenge-Lab6` This directory has a bunch of files. Organize these file so that each file type has its own directory. Each file type must be moved to its respective directory. When you are done, the `challenge-Lab6` directory should look like this:
 
 
 ```
@@ -176,12 +169,12 @@ challenge-lab6/
 * Try working with multiple terminal windows open.
 
 
-
+**Take a screenshot of your terminal showing all the commands that you used to complete this question.**
 
 
 ## What will you Submit:
 * Place all the screenshots and answers to your questions in a the `lab6.md` file.
 * Convert your markdown file to pdf 
-* Push the changes to Github: <br>`git pull; git add .; git commit -m "lab5 complete; git push"`
+* Push the changes to Github: <br>`git pull; git add .; git commit -m "lab5 complete; git push"`<br>
 * Submit the URL of `lab6.md` and the pdf file
 * Take a snapshot of your system and delete the previous snapshot.
