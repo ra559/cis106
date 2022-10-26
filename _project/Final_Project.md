@@ -13,16 +13,25 @@ In this project, we are going to create a web server and host a simple website. 
 This is the main tutorial we will follow:
 * [How To Install the Apache Web Server on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-22-04)
 
+Here are some sources you can use to investigate:
+* [What is a Web Server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)
+* [What is SSH](https://www.techtarget.com/searchsecurity/definition/Secure-Shell)
+* [What is Ubuntu Server](https://www.techopedia.com/definition/4207/ubuntu-server)
+* [Open Source Web Servers](https://geekflare.com/open-source-web-servers/)
+
 ## Deliverable 1: Project's Requirements
 For deliverable 1, we are going to accomplish the following tasks:
 1. Read the tutorial. Write down every concept you don't understand and research them.
-2. Investigate the following terms:
-* Virtualization
-* Virtual Machine
-* Web server
-* Apache
-* Firewall
-3. Install Ubuntu Server.
+2. Answer The following questions:
+* What is a web server? Hardware and software side
+* What are some different web server applications?
+* What is virtualization?
+* What is virtualbox?
+* What is a virtual machine?
+* What is Ubuntu Server?
+* What is a firewall?
+* What is SSH?
+
 
 To demonstrate the completion of deliverable 1, the student needs to create a markdown file where the students documents each task.
 
