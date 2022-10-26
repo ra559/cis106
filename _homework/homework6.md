@@ -4,7 +4,7 @@ title: Homework 6
 ---
 
 # Homework 6
-
+> *video (here)[https://youtu.be/5owUqgEzeUY]*
 ## Complete the following tasks
 1. Weekly Report (You have 10 days to complete this one):
    1. Must include the following:
