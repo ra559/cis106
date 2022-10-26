@@ -20,6 +20,7 @@ Here are some sources you can use to investigate:
 * [Open Source Web Servers](https://geekflare.com/open-source-web-servers/)
 
 ## Deliverable 1: Project's Requirements
+> **Video [here](https://youtu.be/F0DdCC5Lq3A)**
 For deliverable 1, we are going to accomplish the following tasks:
 1. Read the tutorial. Write down every concept you don't understand and research them.
 2. Answer The following questions:
