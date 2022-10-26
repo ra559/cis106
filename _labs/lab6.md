@@ -23,9 +23,11 @@ Video [here](https://youtu.be/mel_pOjq2DY)
 
 ## Question 1 | Using the * Wildcard
 
-1. In your home directory, you should have a directory called `lab6`, if you don't have it, make sure to run the curl command in the `READ ME` part of this lab. List all the `log` files located in the `lab6` directory. Create a directory called `log-files` inside the `lab6`. Move all the log files to the `log-files` directory.
-2. List all the configuration files in the `etc` directory. (*Configuration files have the extension of .conf*)
-3. Long list all the configuration files in the `etc` directory that start with letter `h` or letter `p` **sorted by file size**. Modify the ls command with the proper options so that the output looks like this: (*Notice the date*)
+> In your home directory, you should have a directory called `lab6`, if you don't have it, make sure to run the curl command in the `READ ME` part of this lab.<br> 
+1. List all the `log` files located in the `lab6` directory.
+2. Create a directory called `log-files` inside the `lab6` directory. Move all the log files to the `log-files` directory.
+3. List all the configuration files in the `etc` directory. (*Configuration files have the extension of .conf*)
+4. Long list all the configuration files in the `etc` directory that start with letter `h` or letter `p` **sorted by file size**. Modify the ls command with the proper options so that the output looks like this: (*Notice the date*)
 ```
 -rw-r--r-- 1 7.5K 08/19/21 /etc/pnm2ppa.conf
 ```
@@ -39,8 +41,8 @@ Video [here](https://youtu.be/mel_pOjq2DY)
 
 1. List only the hidden files inside the `lab6` directory.
 2. List all the files with a 2 letter file extension in the `lab6` directory
-3. List all the files that start with letter `l`, have one character after letter `l`, and the letters `st`. The the rest of the file name is irrelevant.
-4. List all the files that have an `_` and two characters before the file extension. 
+3. Inside the `lab6` directory, list all the files that start with letter `l`, have one character after letter `l`, and the letters `st`. The the rest of the file name is irrelevant.
+4. Inside the `lab6` directory, list all the files that have an `_` and two characters before the file extension. 
 
 **Take a screenshot of your terminal showing all the commands that you used to complete this question.**
 
@@ -98,30 +100,8 @@ docs/
         └── spring
             └── book.pdf (this is a file not a directory)
 ```
-**Problem 4:**<br>
-Clear your terminal. in the `lab6` directory, create the following directory structure. Display a tree of the directory once you have created. Your directory tree must look exactly like mine. **Take a screenshot**:
-```
-Research/
-├── books
-│   ├── math
-│   │   ├── epub
-│   │   └── pdf
-│   └── science
-│       ├── epub
-│       └── pdf
-└── magazines
-    ├── computers
-    │   ├── fanmade
-    │   └── official
-    ├── running
-    │   ├── fanmade
-    │   └── official
-    └── videogames
-        ├── fanmade
-        └── official
-```
 
-**Problem 5:**
+**Problem 4:**
 Brace expansion comes handy in other scenarios too. Here are some examples:
 
 1. Create a directory in your home directory called `lab6-q5`. From the root of the filesystem create 3 files in the lab6-q5 directory called: `program.py`, `people.csv`, `data.xls`.
