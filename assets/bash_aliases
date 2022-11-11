@@ -10,13 +10,14 @@ alias remove='sudo apt autoremove -y'
 alias clean='sudo apt autoremove -y; sudo apt autoclean; sudo apt purge;'
 alias totalpack='dpkg --get-selections | wc --lines'
 alias isinstalled='dpkg --get-selections | grep -i '
+
 alias publicip="curl ifconfig.me && echo ''"
 alias options="grep '^[[:space:]]*[[:punct:]]'"
 alias iponly="grep -Eo '[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}'"
 alias pdate="date '+%D %T' | toilet -f term -F border --gay"
 alias hddspeedcheck="sudo hdparm -t --direct"
-alias intalive="/home/adrian/projects/bashscripts/intAlive.sh"
 alias rpauto="sed 's/auto/\n/g'"
+alias shorturl="/home/adrian/gdrive/projects/bashscripts/urlshortner.py"
 #------------------------#
 #----- Ls Aliases -------#
 #------------------------#
@@ -56,9 +57,6 @@ alias rmvm="VBoxManage unregister --delete"
 alias controlvm="VBoxManage controlvm"
 # possible commands to control vm: reset, resume, pause, savestate, poweroff
 #--------------------------#
-#----------other-----------#
-#--------------------------#
-#--------------------------#
 #--- Random File Gen ------#
 #--------------------------#
 alias randomtrivia="curl http://numbersapi.com/random/trivia && echo ''"i
@@ -69,6 +67,5 @@ alias randomvid='mx=320; my=256; nframes=50; dd if=/dev/urandom bs="$((mx*my*3))
 alias wavesounds="play -n synth brownnoise synth pinknoise mix synth sine amod 0.3 10"
 alias randomaudio="sox -c1 -n randomaudio.wav synth 10 whitenoise band -n 100 20 band -n 50 20 gain +25  fade h 1 10 1"
 alias installStarshipShell="curl -sS https://starship.rs/install.sh | sh"
-alias launchzoompccc="xdg-open https://pccc.zoom.us/j/94174220833?pwd=cGRLREEvb0tJOGFuWmRvemZYbzA5UT09"
+alias options2='opts() { man "$1" | grep -E --color "^[[:space:]]*[[:punct:]]"; }; opts'
 
-alias textFiles="/home/$USER/.textFiles"
