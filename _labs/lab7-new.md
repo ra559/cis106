@@ -57,7 +57,7 @@ title: Lab 7 - Handling Files
 2. Display every line that contain the word love in the book *"Pride and Prejudice"*
 3. Display every line that contains exactly the word love or hate in the book *"Pride and Prejudice"* with line numbers
 4. Display every line that starts exactly  with the word **"love"** in the book *Dracula*
-5. Display every line that starts with letter `l`, followed by `1 vowel`, followed by any letter from `a-z`, and ending in a vowel. 
+5. Display every line that starts with an upper case letter or a number in the book *Dracula*.
 > Take a screenshot of **YOUR TERMINAL ONLY** showing all the commands that you used to complete this question
 <hr>
 
