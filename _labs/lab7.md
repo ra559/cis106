@@ -4,9 +4,9 @@
 
 
 ## Pre Work: 
- * Create a directory called `lab7-work` and change your current working directory to `lab7-work`. You will complete the entire lab from this directory. 
- * Before you start working on this lab, prepare your submission file
- * For the presentation go [here](https://rapurl.live/nsd)
+ * Create a directory called `lab7-work` and change your current working directory to `lab7`. You will complete the entire lab from this directory. 
+ * For the presentation go [here](https://rapurl.live/yzb)
+
 
 <hr>
 

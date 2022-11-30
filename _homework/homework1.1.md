@@ -1,4 +1,3 @@
-
 ## Complete the following tasks
 1. Complete Lab 1 - Linux distributions
 2. Complete discussion board 2 - the history of Linux

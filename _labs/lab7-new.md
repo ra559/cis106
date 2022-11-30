@@ -11,11 +11,14 @@ title: Lab 7 - Handling Files
 > have the necessary files to work on this lab.
 > 
 > 1 Install the script `textFiles.sh` using this command: 
-> `curl https://cis106.com/assets/installTextFiles.sh | bash` 
+> `curl https://cis106.com/assets/installTextFiles.sh | bash && source ~/.bashrc` 
 > 2. Read the help section of the textFiles script to learn how to use it.
 > 3. Download all the books, csv files and json files
 > 4. You should now have these directories in your machine:
 >  `~/Documents/Books`, `~/Documents/Csv`, `~/Documents/Json`
+
+ * For the presentation go [here](https://rapurl.live/yzb)
+ * Before you start working on this lab, complete all the practice slides in the presentation. You do not need to take screenshots.  
 
 ## READ ME
 *The `/etc/passwd` file stores user’s account information. Each account data occupies a single line in a file and when a new account is created a new entry with the new user’s information is added. The `/etc/passwd` records contain several fields, 7 in total. These fields are described in the image below. In this lab, we are going to use the passwd file in combination with the commands for handling text files. The goal is to demonstrate how to use these commands successfully for administering a system.* 
@@ -41,8 +44,8 @@ title: Lab 7 - Handling Files
 
 ## Question 3 Paste, wc
 1. Download these files using curl. Use the command: `curl -s URL-here -o name-of-file` where the name of the file is the one given in the URL. After Downloading the files, paste the files 
-   * **https://cis106.com/assets/shopping.md** 
-   * **https://cis106.com/assets/tasks.md** 
+   * **https://cis106.com/assets/shopping.txt** 
+   * **https://cis106.com/assets/tasks.txt** 
 2. How many lines does the book dracula book have?
 3. How many words does the book "Pride and Prejudice" have?
 4. Sort the file `/etc/passwd`
