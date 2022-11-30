@@ -4,7 +4,7 @@ title: Lab 7 - Handling Files
 ---
 
 # Lab 7 - Handling Files
-
+* Video [here](https://youtu.be/8xjoxIvG2xY)<br>
 > ### PRE-WORK
 > you must complete this part of the lab before you start
 > doing the questions. If you skip this part, you will not
