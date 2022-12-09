@@ -10,6 +10,9 @@ title: Final Exam Study Assignment
 > * The due date is: **12/14 at 4:10 PM**
 > * I will personally ask for this assignment and grade it on site
 > * This is 20 points of your final. **DO NOT MISS IT!** 
+> * Here is how the assignment is supposed to look like (incomplete BTW): [CLICK ME](https://github.com/linuxworkshop67/cis106f22/blob/main/final_exam_study/assigment.md)
+
+
 
 ## Question 1
 For every command in this list, include the following:
