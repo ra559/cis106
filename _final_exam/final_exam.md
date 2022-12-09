@@ -2,11 +2,12 @@
 layout: post
 title: Final Exam Study Assignment
 ---
+# {{page.title}}
 
-# READ ME PLEASE!
+## READ ME PLEASE!
 > * Complete this assignment before your final exam. 
 > * You must present this assignment before you start your exam.
-> * The due date is: **<span style="corlor:red;">12/14 at 4:10 PM**</span>
+> * The due date is: **12/14 at 4:10 PM**</span>
 > * I will personaly ask for this assignment and grade it on site
 > * This is 20 points of your final. **DO NOT MISS IT!** 
 
@@ -42,7 +43,7 @@ For every command in this list, include the following:
 * How to work with multiple terminals open?
 * How to work with manual pages?
 * How to parse (search) for specific words in the manual page
-* How to redirect output (> and |)
+* How to redirect output `(> and |)`
 * How to append the output of a command to a file
 * How to use wildcards
     - *For copying and moving multiple files at the same time*
