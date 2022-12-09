@@ -36,6 +36,9 @@ collections:
   project:
     permalink: "/:collection/:path/"
     output: true
+  final_exam:
+    permalink: "/:collection/:path/"
+    output: true
 
   extra:
     permalink: "/:collection/:path/"
@@ -58,3 +61,5 @@ just_the_docs:
       name: Project    
     extra:
       name: Extra  
+    final_exam:
+      name: Final_Exam
