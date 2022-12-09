@@ -11,6 +11,7 @@ title: Final Exam Study Assignment
 > * I will personally ask for this assignment and grade it on site
 > * This is 20 points of your final. **DO NOT MISS IT!** 
 > * Here is how the assignment is supposed to look like (incomplete BTW): [CLICK ME](https://github.com/linuxworkshop67/cis106f22/blob/main/final_exam_study/assigment.md)
+> Video [here](https://youtu.be/MAd9FlfTrxg)
 
 
 
