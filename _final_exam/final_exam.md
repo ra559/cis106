@@ -7,8 +7,8 @@ title: Final Exam Study Assignment
 ## READ ME PLEASE!
 > * Complete this assignment before your final exam. 
 > * You must present this assignment before you start your exam.
-> * The due date is: **12/14 at 4:10 PM**</span>
-> * I will personaly ask for this assignment and grade it on site
+> * The due date is: **12/14 at 4:10 PM**
+> * I will personally ask for this assignment and grade it on site
 > * This is 20 points of your final. **DO NOT MISS IT!** 
 
 ## Question 1
