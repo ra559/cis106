@@ -18,7 +18,9 @@ title: Lab 2 - Installing Ubuntu 22.04 in VirtualBox.
 * If you do not have a computer that meets the recommended criteria, **please reach out to me and stop doing this lab.**
 * Be aware that the presentations use an earlier version of Ubuntu but the changes are not that significant and you should be able to follow along.
 
-> **NOTE!** <br> Only start this lab after you have watched the videos or read the presentations.
+> **NOTE!** 
+> * Only start this lab after you have watched the videos or read the presentations. 
+> * If your computer does not meet the required hardware, you will not be able to complete the course as we will be running 2 virtual machines near the end of the semester.
 
 
 ## Question 1 | Enable virtualization
@@ -26,27 +28,35 @@ Before you can create virtual machines, you need to know if your computer can vi
 
 ### MacOS users
 1. For those using MacOS, if you have a recent Apple computer (M1 CPU), you will not be able to use Virtualbox, there is another hypervisor you can use but I have not been able to test it since I do not own an M1 Mac where I can test it. You can watch and follow this [tutorial](https://www.youtube.com/watch?v=hnwK-nkXolc). Again, I have not tested this option therefore you are on your own.
+   ![Warning](/assets/warning-icon_1_15.png)  
+  > ***from past semester experience, I cannot recommend MacOS with M1 CPUs. The experience is very poor and students have encountered too many problems at the level where they cannot complete the work on time. Proceed at your own risk***
 2. If you have an older Mac (Inter Version), you can user virtualbox as it is fully supported. Just make sure your Mac has enough resources to run virtual machines. For intel Macs, virtualization is already enabled and you can just follow this guide/video.
 
 
 ### Windows Users   
-2. For those using Windows, follow these steps:
+Follow these steps:
    1. Find out what hardware your computer has:
       1. CPU and number of cores
       2. Amount of RAM
       3. Amount of Free Storage
    2. If your computer does not meet the criteria below, stop this lab and get in contact with me. We may be able to find an alternative for you but this can only be done on a 1 on 1 basis.
    
-   **RECOMMENDED SPECIFICATIONS:**
-      - CPU: Quad core CPU or Dual Core with base frequency of 2.0GHz
-      - RAM: 6GB or More
+   **REQUIRED SPECIFICATIONS:**
+      - CPU: Quad core CPU
+      - RAM: 8GB or More
       - Free Storage: 60GB or more
+![Warning](/assets/warning-icon_1_15.png) 
+ > If you do not meed these requirements but your computer is close enough, you may be able to complete the course material. The downside is that your computer will be extremely slow.
    
-   3. If your computer meets or exceeds the above capabilities, then you need to check if virtualization is enabled. Follow [this guide](https://rapurl.live/vaj) to know if your computer has virtualization enabled and if it does not, use the same guide to learn how to enable it.
-   4. You can also use [Speccy](https://www.ccleaner.com/speccy) to find out if your computer has virtualization enabled.
-   5. If you are having troubles enabling virtualization, let me know immediately. **DO NOT WAIT FOR THE LAST MINUTE!** This part can take time!
+If your computer meets or exceeds the above capabilities, then you need to check if virtualization is enabled. Follow [this guide](https://rapurl.live/vaj) to know if your computer has virtualization enabled and if it does not, use the same guide to learn how to enable it. You can also use [Speccy](https://www.ccleaner.com/speccy) to find out if your computer has virtualization enabled.
+
+If you are having troubles enabling virtualization, let me know immediately. **DO NOT WAIT FOR THE LAST MINUTE!** This part can take time!
    
-> This question does not require a submission.
+Take a screenshot showing your computer specifications and a screenshot of the task manager showing virtualization has been enabled. MacOS user should only take a screenshot of the computer specs. Here is an example:
+
+| Computer specs                      | Virtualization                              |
+| ----------------------------------- | ------------------------------------------- |
+| ![specs](/assets/windowsspecs.jpeg) | ![virt](/assets/taskmanagervirtenabled.png) |
 
 <hr>
 
@@ -69,7 +79,7 @@ Make sure to install VirtualBox in your host computer. For Windows follow this [
 > * CPU: 2 Cores
 > * Add this to description:
   > * **Hostname:** cis106vm
-  > * **User:** student
+  > * **User:** student name (use your blackboard username)
   > * **Password:** pccc
 > * Shared Clipboard: Enabled - Bidirectional
 > * Drag n' Drop: Enabled - Bidirectional
@@ -77,14 +87,18 @@ Make sure to install VirtualBox in your host computer. For Windows follow this [
 ![Create VM](/assets/createVM.gif)
 
 
-> Take a screenshot of your virtual machine settings. You screenshot must show all the settings of your VM.
+> Take a screenshot of your virtual machine settings. You screenshot must show all the settings of your VM. Here is a proper example:
+
+| virtual machine settings |
+| --------------| 
+| ![](/assets/virtualmachinesettings.png) |
 
 <hr>
 
 ## Question 3 |  Install Ubuntu 22.04
-For installing Ubuntu 22.04 in your virtual machine. Make sure to go over the presentation ["Installing Ubuntu 20.04 in VirtualBox"](https://shorturl.at/hlor0) where I have laid out every step explained. I will do it in the video as well but it will benefit you more to read the presentation. 
+* Go over the presentation ["Installing Ubuntu 20.04 in VirtualBox"](https://shorturl.at/hlor0). There, I have laid out every step with proper explanations. The presentation is using an earlier version of Virtualbox and Ubuntu but the differences are not very significant. I will do it in the video as well but it will benefit you to read the presentation. 
 
-> Take a screenshot of the last screen before rebooting Ubuntu. 
+> Take a screenshot of the last screen before rebooting Ubuntu. If you missed it, take a screenshot of the welcome message or the desktop on first boot.
 
 <hr>
 
@@ -96,7 +110,9 @@ These are the tasks that you need to complete before taking the screenshots:
 * Change Wayland for X.org
 * Take snapshot.
 
-> Take a screenshot of your virtual machine showing the snapshot
+> Take a screenshot of your virtual machine showing the snapshot. Here is an example:
+
+![vm snapshot](/assets/snapshot.png)<br>
 
 <hr>
 
@@ -104,13 +120,11 @@ These are the tasks that you need to complete before taking the screenshots:
 1. Install the guest additions for virtualbox. Run these commands:
   * `sudo apt update; sudo apt upgrade -y`
   * `sudo apt install build-essential linux-headers-$(uname -r) -y`
-  * `sudo apt install virtualbox-guest-additions-iso virtualbox-guest-x11 -y`
 
-2. Reboot the VM
-3. Go Full Screen
-4. Disable animations. Run this command on your terminal: <br> `gsettings set org.gnome.desktop.interface enable-animations false` <br>
-5. Using the software center, Install VS Code
-  * Install all the extensions of VS Code
+1. Reboot the VM
+2. Go Full Screen
+3. Disable animations. Run this command on your terminal: <br> `gsettings set org.gnome.desktop.interface enable-animations false` <br>
+4. Using the software center, Install VS Code. Install all the extensions of VS Code
   * Live Server
   * Markdown All in one
   * Markdown Preview Enhanced
@@ -119,27 +133,27 @@ These are the tasks that you need to complete before taking the screenshots:
   * Markdown Converter
   * PDF Preview
   * Code Spell Checker
-6. Using the terminal, remove all unnecessary applications from Ubuntu 22.04. Use this command:
+5. Using the terminal, remove all unnecessary applications from Ubuntu 22.04. Use this command:
 <br> `sudo apt purge apport aisleriot gnome-mahjongg gnome-sudoku gnome-mines  -y`<br> 
 
-7. Using the software center install the following applications: 
+6. Using the software center install the following applications: 
   * flameshot 
   * vlc 
   * deluge 
   * geany 
   * tilix 
 
-  > In the terminal you can use these command: <br> `sudo apt install flameshot vlc deluge geany tilix -y`<br> 
+> In the terminal you can use these command: <br> `sudo apt install flameshot vlc deluge geany tilix -y`<br> 
 
-8. Using the terminal install the following applications: gcc make perl nemo git python3-pip gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree  htop net-tools vim neofetch caffeine samba smbclient cifs-utils. You can use the following commands:
+7. Using the terminal install the following applications: gcc make perl nemo git python3-pip gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree  htop net-tools vim neofetch caffeine samba smbclient cifs-utils. You can use the following commands:
 
   * `sudo apt install gcc make perl nemo git python3-pip -y`
   * `sudo apt install curl wget tree  htop net-tools vim -y`
-  * `sudo apt install neofetch caffeine samba smbclient -y`
-  * `sudo apt install gnome-tweaks ubuntu-restricted-extras ubuntu-restricted-addons -y`
+  * `sudo apt install neofetch caffeine samba smbclient gnome-tweaks -y`
+  * `sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y`
   * `sudo apt install snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap  -y`
 
-9. Replace the default screenshot tool with flameshot.
+8. Replace the default screenshot tool with flameshot.
 10. Setup git and download your repository to your Ubuntu machine.
   * Sign in to your github account.
   * Open a terminal and run the following commands:
@@ -171,5 +185,10 @@ These are the tasks that you need to complete before taking the screenshots:
 
 ## What will you Submit:
 * The URL to the lab2.md file and a pdf file of lab2.
-* Don't forget to take a snapshot of your virtual machine.
 * Turn off your Virtual Machine properly. Avoid closing the Virtual Machine Window as this can break the virtual machine.
+* Take a snapshot of your virtual machine.
+
+
+![Warning](/assets/warning-icon_1_15.png) 
+### Special Note
+This is a canonical lab for your learning. You will be making more virtual machines in the future. I suggest you create more virtual machines and then delete them. For example, find out what are the minimum requirements for installing windows 10 and then make a windows 10 virtual machine. Also, install other linux distributions as well. You do not need to keep these vms simply practice. Remember, when deleting virtual machines, make sure to select `delete all files` instead of just removing the vms. This will make sure that you recover your hard drive space. 

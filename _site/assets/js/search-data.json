@@ -205,7 +205,7 @@
   },"34": {
     "doc": "Lab 1 - Learning Markdown",
     "title": "Question 1",
-    "content": ". | Install VS Code and install the following extensions: . | Live Server | Markdown All in one | Markdown Preview Enhanced | Markdown PDF | Markdown TOC | PDF Preview | Code Spell Checker | . | Create a github account using your PCCC email address | Create a repository called cis106 | Do not close the github page, you will need it later. | . ",
+    "content": ". | Install VS Code and install the following extensions: . | Live Server | Markdown All in one | Markdown Preview Enhanced | Markdown PDF | Markdown TOC | PDF Preview | Code Spell Checker | . | Create a github account using your PCCC email address. Make sure to save this password. You will need it a lot! | Create a repository called cis106 | Do not close the github page, you will need it later. | . ",
     "url": "http://localhost:4000/labs/lab1/#question-1",
     "relUrl": "/labs/lab1/#question-1"
   },"35": {
@@ -217,700 +217,694 @@
   },"36": {
     "doc": "Lab 1 - Learning Markdown",
     "title": "Question 3",
-    "content": ". | Read the presentation ‘What is Markdown’ The goal of this lab is to learn and practice markdown. As we go over the presentation, we will be completing the next step. | . ",
+    "content": ". | Read the presentation ‘What is Markdown’ The goal of this lab is to learn and practice markdown. As we go over the presentation, we will be completing the next step. | Create a new file called what_is_ubuntu_submission.md inside your lab1 folder. | Using markdown, replicate the document whatisubuntu.pdf that is located inside the lab1 folder. Make sure to copy and paste the text. The goal of this lab is to practice markdown syntax not typing! | Export the markdown file to PDF, and HTML | . ",
     "url": "http://localhost:4000/labs/lab1/#question-3",
     "relUrl": "/labs/lab1/#question-3"
   },"37": {
     "doc": "Lab 1 - Learning Markdown",
-    "title": "Question 4",
-    "content": ". | Create a new file called what_is_ubuntu_submission.md inside your lab1 folder. | Using markdown, replicate the document whatisubuntu.pdf that is located inside the lab1 folder. Make sure to copy and paste the text. The goal of this lab is to practice markdown syntax not typing! | . ",
-    "url": "http://localhost:4000/labs/lab1/#question-4",
-    "relUrl": "/labs/lab1/#question-4"
+    "title": "Challenge Question",
+    "content": "Scenario: Your friend, John Doe, has asked you to make a 1 page resume for him. He has given you all his information in a text file and a picture for you to use. Since you have recently learned about markdown, you want to write his resume in markdown and then give him the PDF. | Using markdown, create a 1 page resume for John Doe. In the compressed file that you downloaded, you will find an image, resume.png, that has the result of how the document should look like after it has been converted to PDF. Once you have written the markdown file, convert the file to pdf and html. | . ",
+    "url": "http://localhost:4000/labs/lab1/#challenge-question",
+    "relUrl": "/labs/lab1/#challenge-question"
   },"38": {
     "doc": "Lab 1 - Learning Markdown",
-    "title": "Question 5",
-    "content": ". | Export the markdown file to PDF, and HTML | upload all the files inside the folder lab1 to your github repository. | . ",
-    "url": "http://localhost:4000/labs/lab1/#question-5",
-    "relUrl": "/labs/lab1/#question-5"
-  },"39": {
-    "doc": "Lab 1 - Learning Markdown",
     "title": "Submission",
-    "content": "In blackboard, submit the PDF file, the markdown file, and the url to your github repository. Late submissions will not be accepted . ",
+    "content": "In blackboard, submit the following: . | The markdown file of the resume and whatisubuntu.md | The PDF file of the resume and whatisubuntu.md | Upload all the files to your github repository and paste the URL of your github repository in the blackboard submission box (comment or text submission is fine). | . Late submissions will be penalized 30 points . ",
     "url": "http://localhost:4000/labs/lab1/#submission",
     "relUrl": "/labs/lab1/#submission"
-  },"40": {
+  },"39": {
     "doc": "Lab 1 - Learning Markdown",
     "title": "Lab 1 - Learning Markdown",
     "content": "Video For lab here . ",
     "url": "http://localhost:4000/labs/lab1/",
     "relUrl": "/labs/lab1/"
-  },"41": {
+  },"40": {
     "doc": "Lab 2 - Installing Ubuntu 22.04 in VirtualBox.",
     "title": "Lab 2 - Installing Ubuntu 22.04 in VirtualBox.",
     "content": ". | Video here | . ",
     "url": "http://localhost:4000/labs/lab2/",
     "relUrl": "/labs/lab2/"
-  },"42": {
+  },"41": {
     "doc": "Lab 2 - Installing Ubuntu 22.04 in VirtualBox.",
     "title": "Presentations:",
     "content": ". | The basics of Virtualization | Using VirtualBox | Installing Ubuntu 20.04 in VirtualBox | . ",
     "url": "http://localhost:4000/labs/lab2/#presentations",
     "relUrl": "/labs/lab2/#presentations"
-  },"43": {
+  },"42": {
     "doc": "Lab 2 - Installing Ubuntu 22.04 in VirtualBox.",
     "title": "Requirements",
-    "content": ". | Please go over the presentations before you do this lab. It will give you an idea of what we are trying to do here. | Please go slow and take your time to do this lab. It is long but it is the core of this course. | If you do not have a computer that meets the recommended criteria, please reach out to me and stop doing this lab. | Be aware that the presentations use an earlier version of Ubuntu but the changes are not that significant and you should be able to follow along. | . NOTE! Only start this lab after you have watched the videos or read the presentations. ",
+    "content": ". | Please go over the presentations before you do this lab. It will give you an idea of what we are trying to do here. | Please go slow and take your time to do this lab. It is long but it is the core of this course. | If you do not have a computer that meets the recommended criteria, please reach out to me and stop doing this lab. | Be aware that the presentations use an earlier version of Ubuntu but the changes are not that significant and you should be able to follow along. | . NOTE! . | Only start this lab after you have watched the videos or read the presentations. | If your computer does not meet the required hardware, you will not be able to complete the course as we will be running 2 virtual machines near the end of the semester. | . ",
     "url": "http://localhost:4000/labs/lab2/#requirements",
     "relUrl": "/labs/lab2/#requirements"
-  },"44": {
+  },"43": {
     "doc": "Lab 2 - Installing Ubuntu 22.04 in VirtualBox.",
     "title": "Question 1 | Enable virtualization",
-    "content": "Before you can create virtual machines, you need to know if your computer can virtualize. There are a couple of steps you need to follow to find out the answer to this question: . MacOS users . | For those using MacOS, if you have a recent Apple computer (M1 CPU), you will not be able to use Virtualbox, there is another hypervisor you can use but I have not been able to test it since I do not own an M1 Mac where I can test it. You can watch and follow this tutorial. Again, I have not tested this option therefore you are on your own. | If you have an older Mac (Inter Version), you can user virtualbox as it is fully supported. Just make sure your Mac has enough resources to run virtual machines. For intel Macs, virtualization is already enabled and you can just follow this guide/video. | . Windows Users . | For those using Windows, follow these steps: . | Find out what hardware your computer has: . | CPU and number of cores | Amount of RAM | Amount of Free Storage | . | If your computer does not meet the criteria below, stop this lab and get in contact with me. We may be able to find an alternative for you but this can only be done on a 1 on 1 basis. | . RECOMMENDED SPECIFICATIONS: . | CPU: Quad core CPU or Dual Core with base frequency of 2.0GHz | RAM: 6GB or More | Free Storage: 60GB or more | . | If your computer meets or exceeds the above capabilities, then you need to check if virtualization is enabled. Follow this guide to know if your computer has virtualization enabled and if it does not, use the same guide to learn how to enable it. | You can also use Speccy to find out if your computer has virtualization enabled. | If you are having troubles enabling virtualization, let me know immediately. DO NOT WAIT FOR THE LAST MINUTE! This part can take time! | . | . This question does not require a submission. ",
+    "content": "Before you can create virtual machines, you need to know if your computer can virtualize. There are a couple of steps you need to follow to find out the answer to this question: . MacOS users . | For those using MacOS, if you have a recent Apple computer (M1 CPU), you will not be able to use Virtualbox, there is another hypervisor you can use but I have not been able to test it since I do not own an M1 Mac where I can test it. You can watch and follow this tutorial. Again, I have not tested this option therefore you are on your own. from past semester experience, I cannot recommend MacOS with M1 CPUs. The experience is very poor and students have encountered too many problems at the level where they cannot complete the work on time. Proceed at your own risk . | If you have an older Mac (Inter Version), you can user virtualbox as it is fully supported. Just make sure your Mac has enough resources to run virtual machines. For intel Macs, virtualization is already enabled and you can just follow this guide/video. | . Windows Users . Follow these steps: . | Find out what hardware your computer has: . | CPU and number of cores | Amount of RAM | Amount of Free Storage | . | If your computer does not meet the criteria below, stop this lab and get in contact with me. We may be able to find an alternative for you but this can only be done on a 1 on 1 basis. | . REQUIRED SPECIFICATIONS: - CPU: Quad core CPU - RAM: 8GB or More - Free Storage: 60GB or more . If you do not meed these requirements but your computer is close enough, you may be able to complete the course material. The downside is that your computer will be extremely slow. If your computer meets or exceeds the above capabilities, then you need to check if virtualization is enabled. Follow this guide to know if your computer has virtualization enabled and if it does not, use the same guide to learn how to enable it. You can also use Speccy to find out if your computer has virtualization enabled. If you are having troubles enabling virtualization, let me know immediately. DO NOT WAIT FOR THE LAST MINUTE! This part can take time! . Take a screenshot showing your computer specifications and a screenshot of the task manager showing virtualization has been enabled. MacOS user should only take a screenshot of the computer specs. Here is an example: . | Computer specs | Virtualization | . | | | . ",
     "url": "http://localhost:4000/labs/lab2/#question-1--enable-virtualization",
     "relUrl": "/labs/lab2/#question-1--enable-virtualization"
-  },"45": {
+  },"44": {
     "doc": "Lab 2 - Installing Ubuntu 22.04 in VirtualBox.",
     "title": "Question 2 | Create a Virtual Machine",
-    "content": "Before you can create virtual machines, you need to install VirtualBox and VirtualBox Extension Pack. To download Vbox and the extension pack go to: . | Virtualbox Download Page | . Make sure to select the right installer for your operating system: . Make sure to install VirtualBox in your host computer. For Windows follow this video. For macOS follow this video. Once you have installed VirtualBox, create a virtual machine that meets these specifications: . | OS: Ubuntu 22.04 64Bits ISO URL | HDD: 40 GB | RAM: 2GB | Video: 64 MB or Higher | Audio Controller: Disabled (audio won’t be needed) | CPU: 2 Cores | Add this to description: | Hostname: cis106vm | User: student | Password: pccc | Shared Clipboard: Enabled - Bidirectional | Drag n’ Drop: Enabled - Bidirectional | . Take a screenshot of your virtual machine settings. You screenshot must show all the settings of your VM. ",
+    "content": "Before you can create virtual machines, you need to install VirtualBox and VirtualBox Extension Pack. To download Vbox and the extension pack go to: . | Virtualbox Download Page | . Make sure to select the right installer for your operating system: . Make sure to install VirtualBox in your host computer. For Windows follow this video. For macOS follow this video. Once you have installed VirtualBox, create a virtual machine that meets these specifications: . | OS: Ubuntu 22.04 64Bits ISO URL | HDD: 40 GB | RAM: 2GB | Video: 64 MB or Higher | Audio Controller: Disabled (audio won’t be needed) | CPU: 2 Cores | Add this to description: | Hostname: cis106vm | User: student name (use your blackboard username) | Password: pccc | Shared Clipboard: Enabled - Bidirectional | Drag n’ Drop: Enabled - Bidirectional | . Take a screenshot of your virtual machine settings. You screenshot must show all the settings of your VM. Here is a proper example: . | virtual machine settings | . | | . ",
     "url": "http://localhost:4000/labs/lab2/#question-2--create-a-virtual-machine",
     "relUrl": "/labs/lab2/#question-2--create-a-virtual-machine"
-  },"46": {
+  },"45": {
     "doc": "Lab 2 - Installing Ubuntu 22.04 in VirtualBox.",
     "title": "Question 3 |  Install Ubuntu 22.04",
-    "content": "For installing Ubuntu 22.04 in your virtual machine. Make sure to go over the presentation “Installing Ubuntu 20.04 in VirtualBox” where I have laid out every step explained. I will do it in the video as well but it will benefit you more to read the presentation. Take a screenshot of the last screen before rebooting Ubuntu. ",
+    "content": ". | Go over the presentation “Installing Ubuntu 20.04 in VirtualBox”. There, I have laid out every step with proper explanations. The presentation is using an earlier version of Virtualbox and Ubuntu but the differences are not very significant. I will do it in the video as well but it will benefit you to read the presentation. | . Take a screenshot of the last screen before rebooting Ubuntu. If you missed it, take a screenshot of the welcome message or the desktop on first boot. ",
     "url": "http://localhost:4000/labs/lab2/#question-3---install-ubuntu-2204",
     "relUrl": "/labs/lab2/#question-3---install-ubuntu-2204"
-  },"47": {
+  },"46": {
     "doc": "Lab 2 - Installing Ubuntu 22.04 in VirtualBox.",
     "title": "Question 4 | Post Installation Tasks",
-    "content": "These are the tasks that you need to complete before taking the screenshots: . | Update and upgrade | Add canonical partners in the software settings | Set update daily reminder to never | Change Wayland for X.org | Take snapshot. | . Take a screenshot of your virtual machine showing the snapshot . ",
+    "content": "These are the tasks that you need to complete before taking the screenshots: . | Update and upgrade | Add canonical partners in the software settings | Set update daily reminder to never | Change Wayland for X.org | Take snapshot. | . Take a screenshot of your virtual machine showing the snapshot. Here is an example: . ",
     "url": "http://localhost:4000/labs/lab2/#question-4--post-installation-tasks",
     "relUrl": "/labs/lab2/#question-4--post-installation-tasks"
-  },"48": {
+  },"47": {
     "doc": "Lab 2 - Installing Ubuntu 22.04 in VirtualBox.",
     "title": "Question 5 | Complete the following tasks",
-    "content": ". | Install the guest additions for virtualbox. Run these commands: . | sudo apt update; sudo apt upgrade -y | sudo apt install build-essential linux-headers-$(uname -r) -y | sudo apt install virtualbox-guest-additions-iso virtualbox-guest-x11 -y | . | Reboot the VM | Go Full Screen | Disable animations. Run this command on your terminal: gsettings set org.gnome.desktop.interface enable-animations false | Using the software center, Install VS Code . | Install all the extensions of VS Code | Live Server | Markdown All in one | Markdown Preview Enhanced | Markdown PDF | Markdown TOC | Markdown Converter | PDF Preview | Code Spell Checker | . | Using the terminal, remove all unnecessary applications from Ubuntu 22.04. Use this command: sudo apt purge apport aisleriot gnome-mahjongg gnome-sudoku gnome-mines -y . | Using the software center install the following applications: . | flameshot | vlc | deluge | geany | tilix | . | . In the terminal you can use these command: sudo apt install flameshot vlc deluge geany tilix -y . | Using the terminal install the following applications: gcc make perl nemo git python3-pip gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vim neofetch caffeine samba smbclient cifs-utils. You can use the following commands: | . | sudo apt install gcc make perl nemo git python3-pip -y | sudo apt install curl wget tree htop net-tools vim -y | sudo apt install neofetch caffeine samba smbclient -y | sudo apt install gnome-tweaks ubuntu-restricted-extras ubuntu-restricted-addons -y | sudo apt install snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap -y | . | Replace the default screenshot tool with flameshot. | Setup git and download your repository to your Ubuntu machine. | Sign in to your github account. | Open a terminal and run the following commands: | . | Set your username: git config --global user.name 'your username here' | Set your email address: git config --global user.email 'your email here' | Setup SSH authentication . | Generate an ssh key: ssh-keygen -t ed25519 -C \"your_email@example.com\" This creates a new SSH key, using the provided email as a label. When you’re prompted to: \"Enter a file in which to save the key,\" press Enter. This accepts the default file location. At the prompt, to type a secure passphrase, press enter for no passphrase. If you want to use a passphrase, go ahead as it provides an extra layer of security. However, for this course you do not need to add a passphase. | Use the following command to see your public ssh key: cat ~/.ssh/id_ed25519.pub copy the entire output of this command to the clipboard. | In your github page, go to settings &gt; SSH and GPG Keys Here add your ssh key that you copied to the clipboard in the step prior. Type yes (the whole word) and press enter and you are done | Test you ssh connection by using this command: ssh -T git@github.com | . | Clone your github repository. Use these commands: cd; git clone git@github.com:yourGithub-User-Name-Here/your-Repository-Name-Here | Open a file manager and go to the repository you cloned (the folder) and organize the files as I do in the video. | Open VS Code and open your repository folder. | Open a terminal in VS Code and run the following commands: git add .; git commit -m \"Files organized\"; git push * Open your github repository and your web browser and noticed how the files are now organized as they are in your computer. | . | . ",
+    "content": ". | Install the guest additions for virtualbox. Run these commands: . | sudo apt update; sudo apt upgrade -y | sudo apt install build-essential linux-headers-$(uname -r) -y | . | Reboot the VM | Go Full Screen | Disable animations. Run this command on your terminal: gsettings set org.gnome.desktop.interface enable-animations false | Using the software center, Install VS Code. Install all the extensions of VS Code . | Live Server | Markdown All in one | Markdown Preview Enhanced | Markdown PDF | Markdown TOC | Markdown Converter | PDF Preview | Code Spell Checker | . | Using the terminal, remove all unnecessary applications from Ubuntu 22.04. Use this command: sudo apt purge apport aisleriot gnome-mahjongg gnome-sudoku gnome-mines -y . | Using the software center install the following applications: . | flameshot | vlc | deluge | geany | tilix | . | . In the terminal you can use these command: sudo apt install flameshot vlc deluge geany tilix -y . | Using the terminal install the following applications: gcc make perl nemo git python3-pip gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vim neofetch caffeine samba smbclient cifs-utils. You can use the following commands: | . | sudo apt install gcc make perl nemo git python3-pip -y | sudo apt install curl wget tree htop net-tools vim -y | sudo apt install neofetch caffeine samba smbclient gnome-tweaks -y | sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y | sudo apt install snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap -y | . | Replace the default screenshot tool with flameshot. | Setup git and download your repository to your Ubuntu machine. | Sign in to your github account. | Open a terminal and run the following commands: | . | Set your username: git config --global user.name 'your username here' | Set your email address: git config --global user.email 'your email here' | Setup SSH authentication . | Generate an ssh key: ssh-keygen -t ed25519 -C \"your_email@example.com\" This creates a new SSH key, using the provided email as a label. When you’re prompted to: \"Enter a file in which to save the key,\" press Enter. This accepts the default file location. At the prompt, to type a secure passphrase, press enter for no passphrase. If you want to use a passphrase, go ahead as it provides an extra layer of security. However, for this course you do not need to add a passphase. | Use the following command to see your public ssh key: cat ~/.ssh/id_ed25519.pub copy the entire output of this command to the clipboard. | In your github page, go to settings &gt; SSH and GPG Keys Here add your ssh key that you copied to the clipboard in the step prior. Type yes (the whole word) and press enter and you are done | Test you ssh connection by using this command: ssh -T git@github.com | . | Clone your github repository. Use these commands: cd; git clone git@github.com:yourGithub-User-Name-Here/your-Repository-Name-Here | Open a file manager and go to the repository you cloned (the folder) and organize the files as I do in the video. | Open VS Code and open your repository folder. | Open a terminal in VS Code and run the following commands: git add .; git commit -m \"Files organized\"; git push * Open your github repository and your web browser and noticed how the files are now organized as they are in your computer. | . | . ",
     "url": "http://localhost:4000/labs/lab2/#question-5--complete-the-following-tasks",
     "relUrl": "/labs/lab2/#question-5--complete-the-following-tasks"
-  },"49": {
+  },"48": {
     "doc": "Lab 2 - Installing Ubuntu 22.04 in VirtualBox.",
     "title": "Time to submit this lab.",
     "content": ". | Inside your repository folder, create a new folder called lab2 | Copy the screenshots you took from your windows computer to your vm by dragging and dropping the files in the newly created lab2 folder | Place those files in a folder called: lab2 | Inside the lab2 folder create a new file named: lab2.md | Open your repository in VS code and complete the document lab2.md with your screenshots | Save the file. | Convert the file to PDF. | Commit and push the changes to github. Use this command: git add .; git commit -m \"Lab2 finished\"; git push | . ",
     "url": "http://localhost:4000/labs/lab2/#time-to-submit-this-lab",
     "relUrl": "/labs/lab2/#time-to-submit-this-lab"
-  },"50": {
+  },"49": {
     "doc": "Lab 2 - Installing Ubuntu 22.04 in VirtualBox.",
     "title": "What will you Submit:",
-    "content": ". | The URL to the lab2.md file and a pdf file of lab2. | Don’t forget to take a snapshot of your virtual machine. | Turn off your Virtual Machine properly. Avoid closing the Virtual Machine Window as this can break the virtual machine. | . ",
+    "content": ". | The URL to the lab2.md file and a pdf file of lab2. | Turn off your Virtual Machine properly. Avoid closing the Virtual Machine Window as this can break the virtual machine. | Take a snapshot of your virtual machine. | . Special Note . This is a canonical lab for your learning. You will be making more virtual machines in the future. I suggest you create more virtual machines and then delete them. For example, find out what are the minimum requirements for installing windows 10 and then make a windows 10 virtual machine. Also, install other linux distributions as well. You do not need to keep these vms simply practice. Remember, when deleting virtual machines, make sure to select delete all files instead of just removing the vms. This will make sure that you recover your hard drive space. ",
     "url": "http://localhost:4000/labs/lab2/#what-will-you-submit",
     "relUrl": "/labs/lab2/#what-will-you-submit"
-  },"51": {
+  },"50": {
     "doc": "Lab 3 - Using Ubuntu",
     "title": "Lab 3 - Using Ubuntu",
     "content": ". | Video HERE . | You have to complete labs 1, and 2 before attempting lab 3. | Software installation cheat sheet available here . | Video of Presentation available here | Presentation available here | . | . ",
     "url": "http://localhost:4000/labs/lab3/",
     "relUrl": "/labs/lab3/"
-  },"52": {
+  },"51": {
     "doc": "Lab 3 - Using Ubuntu",
     "title": "Question 1 | Using Ubuntu for basic tasks",
     "content": "Perform the following tasks. The point of this question is to get you familiar with the system. The more you use Ubuntu, the less intimidating it becomes. | Open a terminal and type the date command. Take a screenshot of the terminal and highlight the date command. Add some text to the screenshot. Save your screenshot in your lab3 directory inside your github repository. If the lab3 directory does not exist, create it. | Create a desktop shortcut for the cis106 website . | Open a text editor. | Add the following text: #!/usr/bin/evn xdg-open [Desktop Entry] Type=Application Terminal=false Exec=/snap/bin/firefox https://cis106.com Name=cis106 Icon=$HOME/.cis106.png . | Save the file with the name: cis106.desktop and save it in your Desktop directory. | On the desktop, right click on the file cis106.desktop and enable launching (can also be called: Allow executing as program): | . | . | Write a Document . | Open Libre office writer. | Go on firefox and copy and paste some text from wikipedia | Convert the file to pdf | Save the pdf file in the lab3 directory inside your github repository. | . | Create a Presentation in LibreOffice Impress . | save the presentation in the lab3 directory | . | Play around with the settings of Ubuntu . | Click on the System Tray. Open “Settings” | Change the background. | Go to this site and download a new wallpaper and add it as a background. | Play around with the appearance of Ubuntu. | Play around with the notifications | Disable search for everything except software | Change the screen blank to “Never” in the power settings | Take a look at the rest of the settings | . | Install a Font | . This question requires no screenshot . ",
     "url": "http://localhost:4000/labs/lab3/#question-1--using-ubuntu-for-basic-tasks",
     "relUrl": "/labs/lab3/#question-1--using-ubuntu-for-basic-tasks"
-  },"53": {
+  },"52": {
     "doc": "Lab 3 - Using Ubuntu",
     "title": "Question 2 | Using a different desktop environment",
     "content": ". | Install Gnome Classic. GNOME Classic is a GNOME Shell feature and mode for users who prefer a more traditional desktop experience. Read more here . | Open a terminal and run this command: sudo apt update; sudo apt install gnome-session-flashback -y . | Log out and select the gnome classic session in the gear icon. Log in. | . | . Take a screenshot of your ubuntu system. Note: You can go back to Gnome 42 if you want. ",
     "url": "http://localhost:4000/labs/lab3/#question-2--using-a-different-desktop-environment",
     "relUrl": "/labs/lab3/#question-2--using-a-different-desktop-environment"
-  },"54": {
+  },"53": {
     "doc": "Lab 3 - Using Ubuntu",
     "title": "Question 3 | Installing applications",
     "content": "Using the command line, look for a software to do each of the following tasks and then complete the table with the information you found. | Play a tetris game | Play a video file | Browse the internet | Read your email | Play music | . | Program purpose | Package Name | Version | ------------------- | ------------ | ------- | Play a tetris game | | Play a video file | | Browse the internet | | Read your email | | Play music | | . CHALLENGE! . | Install the programs that you found using a single command. Which command did you use? | Remove all the programs that you installed in a single command. Which command did you use? | If you were to install the first and second program, but remove the other 3 in a single command, Which command will you use? | . For this question, simply complete the table and answer the questions. No screenshot required. ",
     "url": "http://localhost:4000/labs/lab3/#question-3--installing-applications",
     "relUrl": "/labs/lab3/#question-3--installing-applications"
-  },"55": {
+  },"54": {
     "doc": "Lab 3 - Using Ubuntu",
     "title": "Question 4 | Trying out simple commands (CHALLENGE QUESTION)",
     "content": "Almost all Linux commands include manual pages. Manual pages (man page for short) is a documentation that explains the usage of a command. Man pages are not user friendly and are not meant to be guides but references on how a program works. The more you read man pages the more sense they make. It is normal to feel lost in the beginning. To read the manual of a command simply type: man command for example, man date opens the manual of the date command. To move around the man page, use the arrow keys in the keyboard. You can also use the mouse wheel if you are working in a terminal emulator. To get help on how to read the manual press letter h to quit the manual page press q . Try the following commands in the terminal . | date | free -h | uname -a | du / . | Install these programs: fortune cowsay toilet figlet rig lolcat boxes | Run these commands on your terminal: | . | echo \"I Like Linux!\" | lolcat | fortune | cowsay | lolcat | figlet \"Linux is cool\" | fortune | toilet -f term -F border --metal | rig | boxes -d boy | . Use the man page to find out what each of these programs do. | command | what it does |---------|--------------| echo | | fortune | | cowsay | | lolcat | | figlet | | toilet | | rig | . ",
     "url": "http://localhost:4000/labs/lab3/#question-4--trying-out-simple-commands-challenge-question",
     "relUrl": "/labs/lab3/#question-4--trying-out-simple-commands-challenge-question"
-  },"56": {
+  },"55": {
     "doc": "Lab 3 - Using Ubuntu",
     "title": "What will you submit",
     "content": ". | Create a markdown file named lab3.md and answer all the questions there. | Submit the URL to the lab3.md file in github and a pdf version of lab3.md file. | . ",
     "url": "http://localhost:4000/labs/lab3/#what-will-you-submit",
     "relUrl": "/labs/lab3/#what-will-you-submit"
-  },"57": {
+  },"56": {
     "doc": "Lab 4 - The Linux Filesystem",
     "title": "Lab 4 - The Linux Filesystem",
     "content": ". | Presentations: . | How to navigate the filesystem | Video here | . | . ",
     "url": "http://localhost:4000/labs/lab4/",
     "relUrl": "/labs/lab4/"
-  },"58": {
+  },"57": {
     "doc": "Lab 4 - The Linux Filesystem",
     "title": "Question 1 | Moving around the file system",
     "content": ". | pwd: Print the absolute path of the current working directory. | cd: Change the shell current working directory. | ls: list files inside a given directory | . Using pwd and cd with absolute path (remember to use the bash autocompletion feature) . | Start a terminal. What is your present working directory? | Change your present working directory to /usr/share/themes | What is your present working directory now? | Change your present working directory to the root of the filesystem | Change your present working directory to /snap/firefox/ Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. | . Using pwd and cd with a relative path (remember to use the bash autocompletion feature) . | Clear your terminal window. Change the working directory to YOUR home directory. | Change the working directory to the Downloads directory. | Go back 2 directories. | Where are you now? | Change the working directory to the Documents/ directory. | . Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 6-10. ",
     "url": "http://localhost:4000/labs/lab4/#question-1--moving-around-the-file-system",
     "relUrl": "/labs/lab4/#question-1--moving-around-the-file-system"
-  },"59": {
+  },"58": {
     "doc": "Lab 4 - The Linux Filesystem",
     "title": "Question 2 | The ls command",
     "content": "Download this compressed zip file: lab4files.zip Decompress the zip file in your home directory. | Change your present working directory to /usr/share/. Using absolute path, list all the files inside the lab4files directory. | Change your present working directory to ~/lab4files. Long list all the files inside your current working directory with human readable file sizes. | Long list all the files inside lab4files with human readable file size, and sorted by file size. | Long list all the files inside lab4files with human readable file size, sorted by file size, without the user nor the group name, and showing their inode number. | list all the files inside lab4files sorted by file extension and in reverse order. | . Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots may be **required** . ",
     "url": "http://localhost:4000/labs/lab4/#question-2--the-ls-command",
     "relUrl": "/labs/lab4/#question-2--the-ls-command"
-  },"60": {
+  },"59": {
     "doc": "Lab 4 - The Linux Filesystem",
     "title": "Question 3 | The tree and exa command",
     "content": "The tree and exa commands are not installed by default in Ubuntu. Make sure that the program is installed in your system before you continue with this question. If you are using an earlier version of Ubuntu, Exa is not available in the default repositories. However, you can install it by running this command: . curl https://cis106.com/assets/installexa.sh | bash . | Using absolute path and having /etc as your present working directory. Display a tree of the directory lab4files. | Change your present working directory to your Downloads directory. Display a tree of the directory lab4files with the full path prefix for each file, the file permissions, and the file size in human readable format. | Display a tree of the directory lab4files sorted by last modified time and showing the file owner and group. | Once you have installed exa, list all the options of the exa command. | Using exa, long list all the files inside lab4files | Long list lab4files showing the header that indicates what each column means. | Long list lab4files without the file owner nor group including the header and the date the file was created. Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots may be required . | . ",
     "url": "http://localhost:4000/labs/lab4/#question-3--the-tree-and-exa-command",
     "relUrl": "/labs/lab4/#question-3--the-tree-and-exa-command"
-  },"61": {
+  },"60": {
     "doc": "Lab 4 - The Linux Filesystem",
     "title": "Question 4 | Challenge Question",
     "content": "Use this image as a visual aid during this question . | Open a new terminal. What is your present/current working directory? | Change your present/current working directory to the default directory located inside /usr | Change your present/current working directory to the ipv4 directory located inside /proc | change your present/current working directory to the previous present/working directory. | List all the files inside share/backgrounds without changing your present working directory. | List all the files inside your cis106 directory located in YOUR home directory. | List all the files inside your Downloads directory. Your present working directory has to be /home before your can list all the files. | Change your present/current working directory to disk/by-id and from there long list all the files in your home directory including hidden files. | List all the files sorted by modification time inside the share/themes directory. | List all the files sorted by file extension inside the /usr/share directory. | . Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-10. Multiple screenshots may be required . ",
     "url": "http://localhost:4000/labs/lab4/#question-4--challenge-question",
     "relUrl": "/labs/lab4/#question-4--challenge-question"
-  },"62": {
+  },"61": {
     "doc": "Lab 4 - The Linux Filesystem",
     "title": "What will you Submit:",
     "content": ". | Place all the screenshots and answers to your questions in a the lab4.md file. | Convert your markdown file to pdf | Push the changes to Github . | git pull; git add .; git commit -m 'lab3 completed'; git push | . | Submit the URL of Lab4.md and the pdf file | Take a snapshot of your system and delete the previous snapshot. | . ",
     "url": "http://localhost:4000/labs/lab4/#what-will-you-submit",
     "relUrl": "/labs/lab4/#what-will-you-submit"
-  },"63": {
+  },"62": {
     "doc": "Lab 5 - Managing Files and Directories",
     "title": "Lab 5 - Managing Files and Directories",
     "content": ". | Presentation here | Video here | . ",
     "url": "http://localhost:4000/labs/lab5/",
     "relUrl": "/labs/lab5/"
-  },"64": {
+  },"63": {
     "doc": "Lab 5 - Managing Files and Directories",
     "title": "Question 1: Creating Files and Directories",
     "content": ". | Create a Directory in YOUR home directory labeled: lab5. | Change your current working directory to ~/lab5. | Create 3 directories: pets,docs,songs. Inside each directory, create 2 subdirectories called: new and old. | Inside the new and old directories, create 3 files: file1, file2, and file3. | Use the tree command to list the lab5 directory. | . Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots is allowed . ",
     "url": "http://localhost:4000/labs/lab5/#question-1-creating-files-and-directories",
     "relUrl": "/labs/lab5/#question-1-creating-files-and-directories"
-  },"65": {
+  },"64": {
     "doc": "Lab 5 - Managing Files and Directories",
     "title": "Question 2: Removing Files and Directories",
     "content": ". | Change your current working directory to: /srv/ | Remove the file1, file2, file3 files inside the labs/pets/new/ directory without changing your current working directory. | Remove the pets directory without changing your current working directory. | Remove the docs and songs directories without changing your current working directory. | Remove the lab5 directory without changing your current working directory. | . Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots is allowed . ",
     "url": "http://localhost:4000/labs/lab5/#question-2-removing-files-and-directories",
     "relUrl": "/labs/lab5/#question-2-removing-files-and-directories"
-  },"66": {
+  },"65": {
     "doc": "Lab 5 - Managing Files and Directories",
     "title": "Question 3: Moving Files and Directories",
     "content": ". | Make sure that you are working on your home directory. | Run the following command: wget https://cis106.com/assets/lab5.zip &amp;&amp; unzip lab5.zip &amp;&amp; rm lab5.zip | In your home directory, create the following directories: lab5-imgs, lab5-audio, lab5-video, lab5-docs | Move all the files inside the lab5 directory to their respective new directories in your home directory. | Inside the lab5 directory, you will find a directory called Wallpaperslab5. Move this directory to your Pictures directory and rename it to NewWallpapers. | Rename the lab5 directory to Lab-5. | . Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots is allowed . ",
     "url": "http://localhost:4000/labs/lab5/#question-3-moving-files-and-directories",
     "relUrl": "/labs/lab5/#question-3-moving-files-and-directories"
-  },"67": {
+  },"66": {
     "doc": "Lab 5 - Managing Files and Directories",
     "title": "Question 4: Copying Files and Directories",
     "content": ". | Go to pexels.com. Download at least 3 wallpapers. | Copy the wallpapers to your Pictures/NewWallpapers directory. | Create a new directory in your Downloads directory (use whatever naming convention you want). Download 3 wallpapers and move them to your new directory. | Copy your new directory to the Pictures directory. | Remove the new directory in your Downloads directory. | . Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots is allowed . ",
     "url": "http://localhost:4000/labs/lab5/#question-4-copying-files-and-directories",
     "relUrl": "/labs/lab5/#question-4-copying-files-and-directories"
-  },"68": {
+  },"67": {
     "doc": "Lab 5 - Managing Files and Directories",
     "title": "Challenge Question:",
     "content": ". | In your home directory, create a directory called: lab5ChallengeQuestion and inside this new directory create one directory called assets you must achieve this in a single command. | Download an image from this website: pexels.com and rename it newPicture.png. Move this image to your assets directory. You must move and rename the file in a single command. | From the root of the file system, create a file in the lab5ChallengeQuestion directory called site.html | open the file site.html in a text editor (do not use vs code) and add the following text. Save the file and close the text editor. | . &lt;!DOCTYPE html&gt; &lt;html lang=\"en\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;Challenge Question Lab 5&lt;/h1&gt; &lt;img src=\"./assets/newPicture.png\" alt=\"\"&gt; &lt;/body&gt; &lt;/html&gt; . | Open the site.html file in firefox and take a screenshot. The image you downloaded should be shown there. | . Take a screenshot of the commands you used to answer this question and of firefox showing the site.html file open. ",
     "url": "http://localhost:4000/labs/lab5/#challenge-question",
     "relUrl": "/labs/lab5/#challenge-question"
-  },"69": {
+  },"68": {
     "doc": "Lab 5 - Managing Files and Directories",
     "title": "What will you Submit:",
     "content": ". | Place all the screenshots and answers to your questions in a the lab5.md file. | Convert your markdown file to pdf | Push the changes to Github: git pull; git add .; git commit -m \"lab5 complete; git push\" | Submit the URL of Lab5.md and the pdf file | Take a snapshot of your system and delete the previous snapshot. | . ",
     "url": "http://localhost:4000/labs/lab5/#what-will-you-submit",
     "relUrl": "/labs/lab5/#what-will-you-submit"
-  },"70": {
+  },"69": {
     "doc": "Lab 6 - Wildcards",
     "title": "Lab 6 | File Globing/wildcards",
     "content": " ",
     "url": "http://localhost:4000/labs/lab6/#lab-6--file-globingwildcards",
     "relUrl": "/labs/lab6/#lab-6--file-globingwildcards"
-  },"71": {
+  },"70": {
     "doc": "Lab 6 - Wildcards",
     "title": "A Brief description of the wildcards.",
     "content": ". Cheat Sheet here . Video here . Note: Wildcards are all about pattern matching. They can be confusing but once you get a hold of them, you will never forget them. The table above gives you a summary of each wildcard. The goal of this lab is to give you enough practice for you to master wildcards in their basics form. Wildcards are very powerful because they can be combined to match pretty much any pattern that you can think of. ",
     "url": "http://localhost:4000/labs/lab6/#a-brief-description-of-the-wildcards",
     "relUrl": "/labs/lab6/#a-brief-description-of-the-wildcards"
-  },"72": {
+  },"71": {
     "doc": "Lab 6 - Wildcards",
     "title": "IMPORTANT!!! READ ME!!!!!",
     "content": "Before working on this lab, run this command: curl https://cis106.com/assets/lab6.sh | bash This will create a directory called lab6 in your home directory . ",
     "url": "http://localhost:4000/labs/lab6/#important-read-me",
     "relUrl": "/labs/lab6/#important-read-me"
-  },"73": {
+  },"72": {
     "doc": "Lab 6 - Wildcards",
     "title": "Question 1 | Using the * Wildcard",
     "content": "In your home directory, you should have a directory called lab6, if you don’t have it, make sure to run the curl command in the READ ME part of this lab. | List all the log files located in the lab6 directory. | Create a directory called log-files inside the lab6 directory. Move all the log files to the log-files directory. | List all the configuration files in the etc directory. (Configuration files have the extension of .conf) | Long list all the configuration files in the etc directory that start with letter h or letter p sorted by file size. Modify the ls command with the proper options so that the output looks like this: (Notice the date) -rw-r--r-- 1 7.5K 08/19/21 /etc/pnm2ppa.conf . You can see a full list of control characters for the date here . | . Take a screenshot of your terminal showing all the commands that you used to complete this question. ",
     "url": "http://localhost:4000/labs/lab6/#question-1--using-the--wildcard",
     "relUrl": "/labs/lab6/#question-1--using-the--wildcard"
-  },"74": {
+  },"73": {
     "doc": "Lab 6 - Wildcards",
     "title": "Question 2 | Using the ? wildcard",
     "content": ". | List only the hidden files inside the lab6 directory. | List all the files with a 2 letter file extension in the lab6 directory | Inside the lab6 directory, list all the files that start with letter l, have one character after letter l, and the letters st. The the rest of the file name is irrelevant. | Inside the lab6 directory, list all the files that have an _ and two characters before the file extension. | . Take a screenshot of your terminal showing all the commands that you used to complete this question. ",
     "url": "http://localhost:4000/labs/lab6/#question-2--using-the--wildcard",
     "relUrl": "/labs/lab6/#question-2--using-the--wildcard"
-  },"75": {
+  },"74": {
     "doc": "Lab 6 - Wildcards",
     "title": "Question 3 | Using the [] Wildcard",
     "content": ". | List all the files that start with an uppercase letter | List all the files that start with an uppercase letter or a number | List all the files that have a number in the file name | List all the files that start with a lowercase letter and have a number before the file extension. | . Take a screenshot of your terminal showing all the commands that you used to complete this question. ",
     "url": "http://localhost:4000/labs/lab6/#question-3--using-the--wildcard",
     "relUrl": "/labs/lab6/#question-3--using-the--wildcard"
-  },"76": {
+  },"75": {
     "doc": "Lab 6 - Wildcards",
     "title": "Question 4 | Using brace expansion.",
     "content": "The curly braces are not a wildcard but they are equally useful. The curly braces allow you to generate arbitrary strings to use with commands. Problem 1: In the lab6 directory, create the following directory structure. Display a tree of the directory. Take a screenshot: . wallpapers/ └── cars ├── 1080p ├── 2k └── 4k . Problem 2: Clear your terminal. in the lab6 directory, create the following directory structure. Display a tree of the directory. Take a screenshot: . assets/ ├── imgs │   ├── large │   └── small └── video ├── large └── small . Problem 3: Clear your terminal. in the lab6 directory, create the following directory structure. You need to create the pdf files as well. Remember mkdir creates directories while touch creates files. Display a tree of the directory. Take a screenshot: . docs/ └── books ├── history │   ├── fall │   │   └── book.pdf (this is a file not a directory) │   └── spring │   └── book.pdf (this is a file not a directory) └── math ├── fall │   └── book.pdf (this is a file not a directory) └── spring └── book.pdf (this is a file not a directory) . Problem 4: Brace expansion comes handy in other scenarios too. Here are some examples: . | Create a directory in your home directory called lab6-q5. From the root of the filesystem create 3 files in the lab6-q5 directory called: program.py, people.csv, data.xls. | Change your current working directory to /usr/share. Create a directory in the lab6-q5 directory called movies. Create 3 files in the ~/lab6-q5/movies directory called movies.lst, marvel.txt and disney.doc. | Remove the files: program.py, people.csv, disney.doc, and marvel.txt. | . Take a screenshot of your terminal showing all the commands that you used to complete this question. ",
     "url": "http://localhost:4000/labs/lab6/#question-4--using-brace-expansion",
     "relUrl": "/labs/lab6/#question-4--using-brace-expansion"
-  },"77": {
+  },"76": {
     "doc": "Lab 6 - Wildcards",
     "title": "Challenge Question",
     "content": "Run this curl command: curl https://cis106.com/assets/lab6cq.sh | bash . This will create a directory in your home directory called: challenge-Lab6 This directory has a bunch of files. Organize these file so that each file type has its own directory. Each file type must be moved to its respective directory. When you are done, the challenge-Lab6 directory should look like this: . challenge-lab6/ ├── audio │   ├── aac │   │   └── all-aac-files-here │   └── mp3 │   └── all-mp3-files-here ├── docs │   ├── docx │   │   └── all-docs-files-here │   ├── pdf │   │   └── all-pdf-files-here │   └── xls │   └── all-xls-files-here └── images ├── jpg │   └── all-jpg-files-here └── png └── all-png-files-here . Tips . | Try to create your directory structure in a single command. | Try working with multiple terminal windows open. | . Take a screenshot of your terminal showing all the commands that you used to complete this question. ",
     "url": "http://localhost:4000/labs/lab6/#challenge-question",
     "relUrl": "/labs/lab6/#challenge-question"
-  },"78": {
+  },"77": {
     "doc": "Lab 6 - Wildcards",
     "title": "What will you Submit:",
     "content": ". | Place all the screenshots and answers to your questions in a the lab6.md file. | Convert your markdown file to pdf | Push the changes to Github: git pull; git add .; git commit -m \"lab5 complete; git push\" | Submit the URL of lab6.md and the pdf file | Take a snapshot of your system and delete the previous snapshot. | . ",
     "url": "http://localhost:4000/labs/lab6/#what-will-you-submit",
     "relUrl": "/labs/lab6/#what-will-you-submit"
-  },"79": {
+  },"78": {
     "doc": "Lab 6 - Wildcards",
     "title": "Lab 6 - Wildcards",
     "content": " ",
     "url": "http://localhost:4000/labs/lab6/",
     "relUrl": "/labs/lab6/"
-  },"80": {
+  },"79": {
     "doc": "Lab 7 - Handling Files",
     "title": "Lab 7 - Handling Files",
     "content": ". | Video here PRE-WORK . you must complete this part of the lab before you start doing the questions. If you skip this part, you will not have the necessary files to work on this lab. 1 Install the script textFiles.sh using this command: curl https://cis106.com/assets/installTextFiles.sh | bash &amp;&amp; source ~/.bashrc . | Read the help section of the textFiles script to learn how to use it. | Download all the books, csv files and json files | You should now have these directories in your machine: ~/Documents/Books, ~/Documents/Csv, ~/Documents/Json | . | For the presentation go here | Before you start working on this lab, complete all the practice slides in the presentation. You do not need to take screenshots. | . ",
     "url": "http://localhost:4000/labs/lab7-new/",
     "relUrl": "/labs/lab7-new/"
-  },"81": {
+  },"80": {
     "doc": "Lab 7 - Handling Files",
     "title": "READ ME",
     "content": "The /etc/passwd file stores user’s account information. Each account data occupies a single line in a file and when a new account is created a new entry with the new user’s information is added. The /etc/passwd records contain several fields, 7 in total. These fields are described in the image below. In this lab, we are going to use the passwd file in combination with the commands for handling text files. The goal is to demonstrate how to use these commands successfully for administering a system. ",
     "url": "http://localhost:4000/labs/lab7-new/#read-me",
     "relUrl": "/labs/lab7-new/#read-me"
-  },"82": {
+  },"81": {
     "doc": "Lab 7 - Handling Files",
     "title": "Question 1: cat, tac, head, tail",
     "content": ". | Display the content of the /etc/passwd file. | Display the content of the /etc/passwd file in reverse order. | Display the content of the /etc/passwd file with line numbers and the $ to indicate the end of every line. | Display the first 5 lines of a the /etc/passwd file. | Display the last 5 lines of the /etc/passwd file. Take a screenshot of YOUR TERMINAL ONLY showing all the commands that you used to complete this question . | . ",
     "url": "http://localhost:4000/labs/lab7-new/#question-1-cat-tac-head-tail",
     "relUrl": "/labs/lab7-new/#question-1-cat-tac-head-tail"
-  },"83": {
+  },"82": {
     "doc": "Lab 7 - Handling Files",
     "title": "Question 2: cut",
     "content": ". | Display the first field of the /etc/passwd file. | Display the first and last field of the /etc/passwd file | Display the first and last field of the /etc/passwd file with the = as the output delimiter. | Display all the fields of the /etc/passwd file except the 3rd field. Take a screenshot of YOUR TERMINAL ONLY showing all the commands that you used to complete this question . | . ",
     "url": "http://localhost:4000/labs/lab7-new/#question-2-cut",
     "relUrl": "/labs/lab7-new/#question-2-cut"
-  },"84": {
+  },"83": {
     "doc": "Lab 7 - Handling Files",
     "title": "Question 3 Paste, wc",
     "content": ". | Download these files using curl. Use the command: curl -s URL-here -o name-of-file where the name of the file is the one given in the URL. After Downloading the files, paste the files . | https://cis106.com/assets/shopping.txt | https://cis106.com/assets/tasks.txt | . | How many lines does the book dracula book have? | How many words does the book “Pride and Prejudice” have? | Sort the file /etc/passwd Take a screenshot of YOUR TERMINAL ONLY showing all the commands that you used to complete this question . | . ",
     "url": "http://localhost:4000/labs/lab7-new/#question-3-paste-wc",
     "relUrl": "/labs/lab7-new/#question-3-paste-wc"
-  },"85": {
+  },"84": {
     "doc": "Lab 7 - Handling Files",
     "title": "Question 4 tr, grep",
     "content": ". | Replace the ; for a , in the cereal.csv file | Display every line that contain the word love in the book “Pride and Prejudice” | Display every line that contains exactly the word love or hate in the book “Pride and Prejudice” with line numbers | Display every line that starts exactly with the word “love” in the book Dracula | Display every line that starts with an upper case letter or a number in the book Dracula. Take a screenshot of YOUR TERMINAL ONLY showing all the commands that you used to complete this question . | . ",
     "url": "http://localhost:4000/labs/lab7-new/#question-4-tr-grep",
     "relUrl": "/labs/lab7-new/#question-4-tr-grep"
-  },"86": {
+  },"85": {
     "doc": "Lab 7 - Handling Files",
     "title": "Question 5 awk and sed",
     "content": ". | Print the first and last field of the cars.csv file | Print the first and last field of the cars.csv file with the string \" made in \" as a delimiter | Print the cars.csv file in such a way that the output looks like this for every line: The Chevy S-10 has 4 cylinders and is made in US . | Print the cars.csv file excluding the first 2 records (lines). | Print all the car names in upper case. | Replace all the instances of the word Dracula for the word Alucard in the book dracula. | Insert a blank line after each line in the /etc/passwd file | Replace all the repeated blank lines for a single blank line in the book “Pride and Prejudice” Take a screenshot of YOUR TERMINAL ONLY showing all the commands that you used to complete this question . | . ",
     "url": "http://localhost:4000/labs/lab7-new/#question-5-awk-and-sed",
     "relUrl": "/labs/lab7-new/#question-5-awk-and-sed"
-  },"87": {
+  },"86": {
     "doc": "Lab 7 - Handling Files",
     "title": "Question 6 I/O Redirection",
     "content": ". | How many users can login with the /bin/bash shell? | How many users have the /sbin/nologin shell assigned? | How many ford vehicles are there in the cars.csv file | How many 4 letter words are there in the bible? Take a screenshot of YOUR TERMINAL ONLY showing all the commands that you used to complete this question . | . ",
     "url": "http://localhost:4000/labs/lab7-new/#question-6-io-redirection",
     "relUrl": "/labs/lab7-new/#question-6-io-redirection"
-  },"88": {
+  },"87": {
     "doc": "Lab 7 - Handling Files",
     "title": "Challenge Question",
     "content": ". | Display only the names of the cereals in the cereal.csv file. (Tip: use cut, awk and the pipe) | Sort the output of the previous command and save it to a file called cereal-sorted.csv. (Beware that the first 2 lines need to be removed) | Display the names of the cereals and the amount of calories they have per serving. | Repeat the previous command but replace the ; with a , | . Take a screenshot of YOUR TERMINAL ONLY showing all the commands that you used to complete this question . ",
     "url": "http://localhost:4000/labs/lab7-new/#challenge-question",
     "relUrl": "/labs/lab7-new/#challenge-question"
-  },"89": {
+  },"88": {
     "doc": "Markdown Cheat Sheet",
     "title": "Markdown Cheat Sheet",
     "content": "File here: https://devhints.io/markdown . ",
     "url": "http://localhost:4000/docs/MarkdownCheatSheet/",
     "relUrl": "/docs/MarkdownCheatSheet/"
-  },"90": {
+  },"89": {
     "doc": "Weekly Lecture Schedule",
     "title": "Weekly Lecture Schedule",
     "content": "| Lecture Number | Start Day Week | End Day Week | . | Lecture 01 | Sept 7th | Sept 13th | . | Lecture 02 | Sept 14th | Sept 20th | . | Lecture 03 | Sept 21st | Sept 27th | . | Lecture 04 | Sept 28th | Oct 4th | . | Lecture 05 | Oct 5th | Oct 11th | . | Lecture 06 | Oct 12th | Oct 18th | . | Lecture 07 | Oct 19th | Oct 25th | . | Lecture 08 | Oct 26th | Nov 1st | . | Lecture 09 | Nov 2nd | Nov 8th | . | Lecture 10 | Nov 9th | Nov 15th | . | Lecture 11 | Nov 16th | Nov 22nd | . | Lecture 12 | Nov 23rd | Nov 29th | . | Lecture 13 | Nov 30th | Dec 6th | . ",
     "url": "http://localhost:4000/docs/WeekLectureSchedule/",
     "relUrl": "/docs/WeekLectureSchedule/"
-  },"91": {
+  },"90": {
     "doc": "Weekly Lecture Schedule",
     "title": "Special Dates",
     "content": "| Event | Date | . | Last Day to drop without Academic Penalty | Sept 20 | . | Last Day to Withdraw with Permission | Oct 24 | . | Last Day to Withdraw with Faculty Permission | Nov 25 | . | Thanksgiving Recess (No Classes) | Nov 23-27 | . | Final Examinations | Dec 18-22 | . ",
     "url": "http://localhost:4000/docs/WeekLectureSchedule/#special-dates",
     "relUrl": "/docs/WeekLectureSchedule/#special-dates"
-  },"92": {
+  },"91": {
     "doc": "Weekly Homework Description",
     "title": "Weekly Homework",
     "content": "This is a list of task that you will be required to complete every week. | Complete the designated lab (40 Minutes) . | Each lab has a video walkthrough from beginning to end available in the course Youtube Channel. | Each lab is a hands on activity consisting of 5 questions. | I advise you to complete the labs in one sitting to avoid losing any data. | Labs are the corner stone of this course and as a result are required to be completed in the designated order. You cannot do the next week’s lab if you do not complete the previous week lab as they build on each other.I | . | Complete the assigned discussion board (30 Minutes) . | Every week you will have either a video, podcast episode, or article to read. | After you complete the assigned material, you are required to answer 1 question. | To receive full grade, you must create a post with your answer and reply to someone else’s post as well. | . | Complete Weekly Report (30 minutes) . | A document written in markdown containing the following . | A summary of the lecture’s presentation | Screenshots when needed | Example of the commands/technoligies covered during the lecture | The first weekly report has a video. The video exist to show you what I am expecting from you and a clear example of how to do the work. This prevents you from losing points. | Only Markdown format and a pdf converted from the markdown file is accepted. No Word Documents! | . | . | Complete Final Project assignment (30 Minutes) . | You are required to work on your final project on a week by week basis. This prevents procr🌟astination. | You will submit your project in a Markdown file as well. | You will have specific questions to complete that will lead you to a complete project by the end of the semester. | . | . The total study time is 2.16 hours. However, this is on average. Chances are that you may have to spend more time working on each task depending on how good you are with computers. Do not leave this for the last minute. I will not grant you any extra time without a good reason and procrastination is not a good one. If leave the assignment for the last hour of the week and your computer breaks, that is your problem, I will not grant you any extra time. I will not be taking late assignments. If you have not submitted your work, you get a zero. ",
     "url": "http://localhost:4000/docs/weekly-homework-description/#weekly-homework",
     "relUrl": "/docs/weekly-homework-description/#weekly-homework"
-  },"93": {
+  },"92": {
     "doc": "Weekly Homework Description",
     "title": "Weekly Homework Description",
     "content": " ",
     "url": "http://localhost:4000/docs/weekly-homework-description/",
     "relUrl": "/docs/weekly-homework-description/"
-  },"94": {
+  },"93": {
     "doc": "Setup SSH Guide",
     "title": "Setup SSH Guide",
     "content": " ",
     "url": "http://localhost:4000/guides/SetupSSHUbuntuServer/",
     "relUrl": "/guides/SetupSSHUbuntuServer/"
-  },"95": {
+  },"94": {
     "doc": "Setup SSH Guide",
     "title": "Installation",
     "content": ". | Make sure that your server and your client computer are in the same network. The easiest way to do this is to make sure that the network addapter in the viertual machine is set to bridge instead of nat. To do this go, open the virtual machine settings and in the network section change the adapter to Bridge. | . | However, your network may prevent you from doing this. Some IDS and smart routers may prevent you from getting an IP. In this case, you need to use port forwarding in your virtual machine. Here is a guide on how to do it. Portforwarding Example . | Make sure that the ssh server program is installed in the server virtual machine sudo apt install openssh-server -y . | Make sure that the ssh client program is installed in the client machine. This is the computer that you will be using to manage your server. sudo apt install openssh-server -y . | Enable and start ssh in the server: sudo systemctl enable ssh; sudo systemctl start ssh . | Test the connection by loging in to the server from the client. First, use the ip or hostname command to find out the ip address of the server. | On the server type, hostname -I this will give you the ip address of your server. | On the client type: ssh username@server-ip-address . | If you are using port forwarding, your command will be: | . ssh -p 2222 username@127.0.0.1 . | Read and answer the questions and you will connect sucessfully. | . ",
     "url": "http://localhost:4000/guides/SetupSSHUbuntuServer/#installation",
     "relUrl": "/guides/SetupSSHUbuntuServer/#installation"
-  },"96": {
+  },"95": {
     "doc": "Setup SSH Guide",
     "title": "Setup private and public key authentication with or without password:",
     "content": ". | On the server, configure the firewall to accept ssh connections. sudo ufw allow ssh sudo ufw enable sudo ufw status . | Now we need to generate an ssh key in our client computer. If you are using your ubuntu machine from the course, then you already have one. If you are not, then you must create the ssh keys: | In your client machine type: ssh-keygen . | Now you can type this command to copy your ssh key to the server ssh-copy-id -i .ssh/id_rsa.pub webmaster@server-ip-address . | if you are using port forwarding, use this command instead: ssh-copy-id -i .ssh/id_rsa.pub -p 2222 webmaster@127.0.0.1 . | . if you use port forwarding your command will be: . ssh-copy-id -p 2222 username@127.0.0.1 . | Now you can connect to your server without having to remember the password. | . ",
     "url": "http://localhost:4000/guides/SetupSSHUbuntuServer/#setup-private-and-public-key-authentication-with-or-without-password",
     "relUrl": "/guides/SetupSSHUbuntuServer/#setup-private-and-public-key-authentication-with-or-without-password"
-  },"97": {
+  },"96": {
     "doc": "How to Setup Git and Github in Ubuntu 20.04",
     "title": "How to Setup Git and Github in Ubuntu 20.04",
     "content": " ",
     "url": "http://localhost:4000/guides/Ubuntu%20Github%20Setup/",
     "relUrl": "/guides/Ubuntu%20Github%20Setup/"
-  },"98": {
+  },"97": {
     "doc": "How to Setup Git and Github in Ubuntu 20.04",
     "title": "Assumptions:",
     "content": "I assume the following: . | You have a computer running Ubuntu and VS Code is installed in it. | You have a basic understanding of the Linux Command Line and your Terminal Emulator | You have a Github Account | . ",
     "url": "http://localhost:4000/guides/Ubuntu%20Github%20Setup/#assumptions",
     "relUrl": "/guides/Ubuntu%20Github%20Setup/#assumptions"
-  },"99": {
+  },"98": {
     "doc": "How to Setup Git and Github in Ubuntu 20.04",
     "title": "Install and setup git",
     "content": "Install command: sudo apt install git -y . ",
     "url": "http://localhost:4000/guides/Ubuntu%20Github%20Setup/#install-and-setup-git",
     "relUrl": "/guides/Ubuntu%20Github%20Setup/#install-and-setup-git"
-  },"100": {
+  },"99": {
     "doc": "How to Setup Git and Github in Ubuntu 20.04",
     "title": "Setup Git",
     "content": ". | Set your username: git config --global user.name 'your username here' | Set your email address: git config --global user.email 'your email here' | . ",
     "url": "http://localhost:4000/guides/Ubuntu%20Github%20Setup/#setup-git",
     "relUrl": "/guides/Ubuntu%20Github%20Setup/#setup-git"
-  },"101": {
+  },"100": {
     "doc": "How to Setup Git and Github in Ubuntu 20.04",
     "title": "Setup SSH authentication",
     "content": ". | Generate an ssh key: ssh-keygen -t ed25519 -C \"your_email@example.com\" This creates a new SSH key, using the provided email as a label. When you’re prompted to: \"Enter a file in which to save the key,\" press Enter. This accepts the default file location. At the prompt, to type a secure passphrase, press enter for no passphrase. If you want to use a passphrase, go ahead as it provides an extra layer of security. However, for this course you do not need to add a passphase. | Use the following command to see your public ssh key: cat ~/.ssh/id_ed25519.pub copy the entire output of this command to the clipboard. See examle here: . | In your github page, go to settings &gt; SSH and GPG Keys Here add your ssh key that you copied to the clipboad in the step prior. Type yes (the whole word) and press enter and you are done . | Test you ssh connection by using this command: ssh -T git@github.com You will see the following outcome: . | . If you do not see an error message or a different message than the one shown prior, then your SSH connection is correct. Now you can push and clone using SSH. ",
     "url": "http://localhost:4000/guides/Ubuntu%20Github%20Setup/#setup-ssh-authentication",
     "relUrl": "/guides/Ubuntu%20Github%20Setup/#setup-ssh-authentication"
-  },"102": {
+  },"101": {
     "doc": "Ubuntu 20.04 Virtual Machine Setup",
     "title": "During Installation Settings",
     "content": "Once you have created the virtual machine, turn it on and start the installation process. During the installation, make sure that you follow these specifications: . | Keyboard layout: English US | Installation type: Normal with third party software, Erase disk | Timezone: NY | User Details . | Name: Student | Hostname: cis106vm | Username: Student | Password: pccc | Require login (Important) | . | . ",
     "url": "http://localhost:4000/guides/Ubuntu-vm-setup/#during-installation-settings",
     "relUrl": "/guides/Ubuntu-vm-setup/#during-installation-settings"
-  },"103": {
+  },"102": {
     "doc": "Ubuntu 20.04 Virtual Machine Setup",
     "title": "Post Installation Settings",
     "content": "Once the operating system has been installed, make sure to take a snapshot of your machine. This is a good idea because if something goes wrong, you can revert back to the virtual machine state. Think of snapshots as a way of traveling back in time! . | Update and upgrade | Remove unnecessary software | Essential software install | Disable animations | Change Default File Manager: Nemo | Change Default screenshot tool with flameshot | Enable Dark Theme | . You can do all of the above with a single command. | sudo apt install curl -y; curl https://raw.githubusercontent.com/ra559/cis106/main/guides/oneliner.sh | bash | . Install restricted extras, which is a package that contains other essential software that is normally not included by default because of copyright issues, being closed source or any other controversial reason. For instance, Microsoft core fonts are part of the restricted extras. | sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y | . ",
     "url": "http://localhost:4000/guides/Ubuntu-vm-setup/#post-installation-settings",
     "relUrl": "/guides/Ubuntu-vm-setup/#post-installation-settings"
-  },"104": {
+  },"103": {
     "doc": "Ubuntu 20.04 Virtual Machine Setup",
     "title": "Install Guest Additions",
     "content": "This step is for VirtualBox only. Skip if using any other hypervisor. For instance, in VMware Workstation Player, these are installed via the command line without the need of a virtual disk. Guest Additions are a collection of software that gives the virtual machine more functionality and better performance. For instance, you having the Guest Additions installed allows you to use the full resolution of your monitor and to share the clipboard between your host and the guest OS. ",
     "url": "http://localhost:4000/guides/Ubuntu-vm-setup/#install-guest-additions",
     "relUrl": "/guides/Ubuntu-vm-setup/#install-guest-additions"
-  },"105": {
+  },"104": {
     "doc": "Ubuntu 20.04 Virtual Machine Setup",
     "title": "Change Desktop Environment",
     "content": "The default desktop environment in Ubuntu 20.04 is Gnome 3. However, Gnome 3 is a heavy desktop environment not recommended for a low end machine with the specifications such as the one our virtual machine has. This is the reason why we will be using Gnome Classic which is a fork of the old Gnome 2 Desktop environment. Gnome Classic consumes considerably less system resources while remaining easy to use and functional enough. | Replace GDM with Lightdm: sudo apt install lightdm -y | Set default Desktop Environment to Gnome Flashback | . VS Code setup . VS Code is the text editor that we will use through out the semester to write our notes, labs, homeworks, and final project documentation. To make VS Code more functional, we will install a series of extensions. | Install VS Code Extensions: . | Live Server | Markdown All in one | Markdown Preview Enhanced | Markdown PDF | Markdown TOC | PDF Preview | Markdown Converter | Code Spell Checker | . | . ",
     "url": "http://localhost:4000/guides/Ubuntu-vm-setup/#change-desktop-environment",
     "relUrl": "/guides/Ubuntu-vm-setup/#change-desktop-environment"
-  },"106": {
+  },"105": {
     "doc": "Ubuntu 20.04 Virtual Machine Setup",
     "title": "Ubuntu 20.04 Virtual Machine Setup",
     "content": " ",
     "url": "http://localhost:4000/guides/Ubuntu-vm-setup/",
     "relUrl": "/guides/Ubuntu-vm-setup/"
-  },"107": {
+  },"106": {
     "doc": "FORMAT control characters",
     "title": "FORMAT control characters supported by the GNU/date command",
     "content": "| %FORMAT String | Description | . | %% | a literal % | . | %a | locale’s abbreviated weekday name (e.g., Sun) | . | %A | locale’s full weekday name (e.g., Sunday) | . | %b | locale’s abbreviated month name (e.g., Jan) | . | %B | locale’s full month name (e.g., January) | . | %c | locale’s date and time (e.g., Thu Mar 3 23:05:25 2005) | . | %C | century; like %Y, except omit last two digits (e.g., 21) | . | %d | day of month (e.g, 01) | . | %D | date; same as %m/%d/%y | . | %e | day of month, space padded; same as %_d | . | %F | full date; same as %Y-%m-%d | . | %g | last two digits of year of ISO week number (see %G) | . | %G | year of ISO week number (see %V); normally useful only with %V | . | %h | same as %b | . | %H | hour (00..23) | . | %I | hour (01..12) | . | %j | day of year (001..366) | . | %k | hour ( 0..23) | . | %l | hour ( 1..12) | . | %m | month (01..12) | . | %M | minute (00..59) | . | %n | a newline | . | %N | nanoseconds (000000000..999999999) | . | %p | locale’s equivalent of either AM or PM; blank if not known | . | %P | like %p, but lower case | . | %r | locale’s 12-hour clock time (e.g., 11:11:04 PM) | . | %R | 24-hour hour and minute; same as %H:%M | . | %s | seconds since 1970-01-01 00:00:00 UTC | . | %S | second (00..60) | . | %t | a tab | . | %T | time; same as %H:%M:%S | . | %u | day of week (1..7); 1 is Monday | . | %U | week number of year, with Sunday as first day of week (00..53) | . | %V | ISO week number, with Monday as first day of week (01..53) | . | %w | day of week (0..6); 0 is Sunday | . | %W | week number of year, with Monday as first day of week (00..53) | . | %x | locale’s date representation (e.g., 12/31/99) | . | %X | locale’s time representation (e.g., 23:13:48) | . | %y | last two digits of year (00..99) | . | %Y | year | . | %z | +hhmm numeric timezone (e.g., -0400) | . | %:z | +hh:mm numeric timezone (e.g., -04:00) | . | %::z | +hh:mm:ss numeric time zone (e.g., -04:00:00) | . | %:::z | numeric time zone with : to necessary precision (e.g., -04, +05:30) | . | %Z | alphabetic time zone abbreviation (e.g., EDT) | . ",
     "url": "http://localhost:4000/guides/format-control-char-date-command/#format-control-characters-supported-by-the-gnudate-command",
     "relUrl": "/guides/format-control-char-date-command/#format-control-characters-supported-by-the-gnudate-command"
-  },"108": {
+  },"107": {
     "doc": "FORMAT control characters",
     "title": "FORMAT control characters",
     "content": " ",
     "url": "http://localhost:4000/guides/format-control-char-date-command/",
     "relUrl": "/guides/format-control-char-date-command/"
-  },"109": {
+  },"108": {
     "doc": "Install Ubuntu Server 20.04 In VirtualBox",
     "title": "Install Ubuntu Server 20.04 In VirtualBox",
     "content": " ",
     "url": "http://localhost:4000/guides/install-ubuntu-server-20.04/",
     "relUrl": "/guides/install-ubuntu-server-20.04/"
-  },"110": {
+  },"109": {
     "doc": "Install Ubuntu Server 20.04 In VirtualBox",
     "title": "Step: 1",
     "content": ". | Download Ubuntu Server 20.04 iso file. | Create a virtual machine that meets Ubuntu Server 20.04 Minimun requirements.. | The recommended system requirements are: . | CPU: 1 gigahertz or better | RAM: 1 gigabyte or more | Disk: a minimum of 2.5 gigabytes (we will use 20) | Clipboard Redirection - Bidirectional | Network Card - Bridge Adapter | . | . | Turn on Virtual Machine | Start the installer. | . ",
     "url": "http://localhost:4000/guides/install-ubuntu-server-20.04/#step-1",
     "relUrl": "/guides/install-ubuntu-server-20.04/#step-1"
-  },"111": {
+  },"110": {
     "doc": "Raspberry Pi Ubuntu 20.10 Setup Gnome Classic Edition",
     "title": "Raspberry Pi Ubuntu 20.10 Setup (Gnome Classic Edition)",
     "content": ". ",
     "url": "http://localhost:4000/guides/pi-ubuntu-gnome-classic/#raspberry-pi-ubuntu-2010-setup-gnome-classic-edition",
     "relUrl": "/guides/pi-ubuntu-gnome-classic/#raspberry-pi-ubuntu-2010-setup-gnome-classic-edition"
-  },"112": {
+  },"111": {
     "doc": "Raspberry Pi Ubuntu 20.10 Setup Gnome Classic Edition",
     "title": "Table of Content",
     "content": ". | Raspberry Pi Ubuntu 20.10 Setup (Gnome Classic Edition) . | Table of Content | What is Gnome Classic? | Install Gnome classic | Add necessary software | VS Code | Remove unnecessary software | Enable Dark Theme | Adding some adjustments | Extra | . | . ",
     "url": "http://localhost:4000/guides/pi-ubuntu-gnome-classic/#table-of-content",
     "relUrl": "/guides/pi-ubuntu-gnome-classic/#table-of-content"
-  },"113": {
+  },"112": {
     "doc": "Raspberry Pi Ubuntu 20.10 Setup Gnome Classic Edition",
     "title": "What is Gnome Classic?",
     "content": "GNOME Classic is a feature for users who prefer a more traditional desktop experience. While GNOME Classic is based on GNOME 3 technologies, it provides a number of changes to the user interface, such as the Applications and Places menus on the top bar, and a window list at the bottom of the screen. source . ",
     "url": "http://localhost:4000/guides/pi-ubuntu-gnome-classic/#what-is-gnome-classic",
     "relUrl": "/guides/pi-ubuntu-gnome-classic/#what-is-gnome-classic"
-  },"114": {
+  },"113": {
     "doc": "Raspberry Pi Ubuntu 20.10 Setup Gnome Classic Edition",
     "title": "Install Gnome classic",
     "content": "Update the system and install gnome classic: sudo apt update; sudo apt upgrade -y; sudo apt install gnome-session-flashback -y . ",
     "url": "http://localhost:4000/guides/pi-ubuntu-gnome-classic/#install-gnome-classic",
     "relUrl": "/guides/pi-ubuntu-gnome-classic/#install-gnome-classic"
-  },"115": {
+  },"114": {
     "doc": "Raspberry Pi Ubuntu 20.10 Setup Gnome Classic Edition",
     "title": "Add necessary software",
     "content": "sudo apt install gcc make perl nemo ubuntu-restricted-extras ubuntu-restricted-addons git python3-pip flameshot pandoc vlc gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vlc peek vim deluge geany tilix neofetch midori caffeine -y . ",
     "url": "http://localhost:4000/guides/pi-ubuntu-gnome-classic/#add-necessary-software",
     "relUrl": "/guides/pi-ubuntu-gnome-classic/#add-necessary-software"
-  },"116": {
+  },"115": {
     "doc": "Raspberry Pi Ubuntu 20.10 Setup Gnome Classic Edition",
     "title": "VS Code",
     "content": ". | Download deb package from: https://code.visualstudio.com/sha/download?build=stable&amp;os=linux-deb-arm64 | Run this command (assuming that you downloaded the file to your Downloads directory): sudo apt install $HOME/Downloads/code*.deb | Install VS Code Extensions: . | Live Server | Markdown All in one | Markdown Preview Enhanced | Markdown PDF | Markdown TOC | Markdown Converter | PDF Preview | Code Spell Checker | . | . ",
     "url": "http://localhost:4000/guides/pi-ubuntu-gnome-classic/#vs-code",
     "relUrl": "/guides/pi-ubuntu-gnome-classic/#vs-code"
-  },"117": {
+  },"116": {
     "doc": "Raspberry Pi Ubuntu 20.10 Setup Gnome Classic Edition",
     "title": "Remove unnecessary software",
     "content": "Remove error reporting, IRQ Balance, and other not needed software: sudo apt purge apport irqbalance aisleriot gnome-mahjongg gnome-sudoku gnome-mines thunderbird transmission-common -y . ",
     "url": "http://localhost:4000/guides/pi-ubuntu-gnome-classic/#remove-unnecessary-software",
     "relUrl": "/guides/pi-ubuntu-gnome-classic/#remove-unnecessary-software"
-  },"118": {
+  },"117": {
     "doc": "Raspberry Pi Ubuntu 20.10 Setup Gnome Classic Edition",
     "title": "Enable Dark Theme",
     "content": ". ",
     "url": "http://localhost:4000/guides/pi-ubuntu-gnome-classic/#enable-dark-theme",
     "relUrl": "/guides/pi-ubuntu-gnome-classic/#enable-dark-theme"
-  },"119": {
+  },"118": {
     "doc": "Raspberry Pi Ubuntu 20.10 Setup Gnome Classic Edition",
     "title": "Adding some adjustments",
     "content": ". | Replace nautilus with nemo: xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search . | Replace Screenshot tool with flameshot: . | Disable animations | Disable Suspend when laptop lid is closed . | Disable desktop icons: gsettings set org.gnome.gnome-flashback.desktop show-icons false . | Set caffeine and flameshot to start with system startup. | . ",
     "url": "http://localhost:4000/guides/pi-ubuntu-gnome-classic/#adding-some-adjustments",
     "relUrl": "/guides/pi-ubuntu-gnome-classic/#adding-some-adjustments"
-  },"120": {
+  },"119": {
     "doc": "Raspberry Pi Ubuntu 20.10 Setup Gnome Classic Edition",
     "title": "Extra",
     "content": ":warning: Before Overclocking the system keep this in mind :warning: . | Make sure that you are using either a case with a fan or a case with passive cooling if you are using a Raspberry Pi 4 | If you are using a Raspberry Pi 400, you do not have to worry about cooling since it comes with a good heat sink. | To overclock the system follow these steps: . | Open the file: /boot/firmware/config.txt in a text editor like nano or vim. | Add the following lines to the end of the file for the raspberry pi 400: force_turbo=1 over_voltage=8 arm_freq=2200 | If you are using a Raspberry Pi 4, add this lines instead: over_voltage=6 arm_freq=2000 | Reboot your Pi with: sudo reboot or telinit 6 | . | . ",
     "url": "http://localhost:4000/guides/pi-ubuntu-gnome-classic/#extra",
     "relUrl": "/guides/pi-ubuntu-gnome-classic/#extra"
-  },"121": {
+  },"120": {
     "doc": "Raspberry Pi Ubuntu 20.10 Setup Gnome Classic Edition",
     "title": "Raspberry Pi Ubuntu 20.10 Setup Gnome Classic Edition",
     "content": " ",
     "url": "http://localhost:4000/guides/pi-ubuntu-gnome-classic/",
     "relUrl": "/guides/pi-ubuntu-gnome-classic/"
-  },"122": {
+  },"121": {
     "doc": "Raspberry Pi Ubuntu 20.10 Setup Gnome 3 Edition",
     "title": "Raspberry Pi Ubuntu 20.10 Setup (Gnome 3 Edition)",
     "content": ". ",
     "url": "http://localhost:4000/guides/pi-ubuntu-gnome3/#raspberry-pi-ubuntu-2010-setup-gnome-3-edition",
     "relUrl": "/guides/pi-ubuntu-gnome3/#raspberry-pi-ubuntu-2010-setup-gnome-3-edition"
-  },"123": {
+  },"122": {
     "doc": "Raspberry Pi Ubuntu 20.10 Setup Gnome 3 Edition",
     "title": "Table of content",
     "content": ". | Raspberry Pi Ubuntu 20.10 Setup (Gnome 3 Edition) | Table of content . | 1. Update the system: | 2. Install the necessary software: | 3. Remove non-essential software: | 4. Enable Gnome Extensions: | 5. Disable Animations | 6. Turn off desktop icons | 7. Remove the frequently used program from gnome shell | 8. Tweak Dash to Panel | 9. VS Code Extensions: | 10. Replace Screenshot tool: | 11. Extra (non-essential) customization | Extra | . | . Description: This is a guide to make Ubuntu 20.10 more efficient so that it consumes less resources.The version of the Raspberry Pi used to complete this guide was: Raspberry Pi 400, 4 (2GB, 4GB, and 8GB). No Overclock! This guide is for those taking CIS-106 Linux Fundamentals and wish to use a Raspberry Pi over a Virtual Machine as their learning environment. There is a version of this guide using Gnome classic for those who want to use Gnome Classic over Gnome 3. 1. Update the system: . Before installing any software, make sure the system is update with: . sudo apt update; sudo apt upgrade -y; . 2. Install the necessary software: . These are the applications that are not installed by default but that are needed for our day to day work on the pi. These applications are not essential, THIS IS AN OPINION! Ubuntu is ready to use out of the box! . sudo apt install gcc make perl nemo ubuntu-restricted-extras ubuntu-restricted-addons git python3-pip flameshot pandoc vlc gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree htop net-tools vlc peek vim deluge geany tilix neofetch midori -y . VS Code: . Download deb package from: https://code.visualstudio.com/sha/download?build=stable&amp;os=linux-deb-arm64 . | Run this command (assuming that you downloaded the file to your Downloads directory) sudo apt install $HOME/Downloads/code*.deb | . 3. Remove non-essential software: . The command below will remove some applications that I have no need for. This step is optional since you may find some use for these apps. However, you want to make sure that you remove irqbalance since it does not help the Raspberry Pi CPU. sudo apt purge apport irqbalance aisleriot gnome-mahjongg gnome-sudoku gnome-mines thunderbird transmission-common -y . Explanation: . | apport: package that does error reporting. | irqbalance: It is useless in the Raspberry Pi. | aisleriot gnome-mahjongg gnome-sudoku gnome-mines: office games. I dont play them so I dont need them. | thunderbird: Mozilla email client that I do not use so I don’t need. | transmission-common: I do not use trasmission. I use deluge so I remove it. | . 4. Enable Gnome Extensions: . The default Gnome 3 DE is too heavy for the Raspberry Pi. Thankfully there are extensions that we can use to remove/improve the performance of Gnome 3 on the Pi. | Go to: https://extensions.gnome.org/ click on Click here to install Gnome Extensions. Install the following extensions: . | Dash to panel: will move the favorite bar to the bottom and turn it into a panel. | caffeine: will allow us to prevent the screen from locking. | Blur my shell: (Not essential!) It blurs the wallpaper when you open the activities menu. | cpufeq by konkor: will allow us to set a minimum frequency to all cores in the Pi . | Increase the minimum frequency to 1Ghz | Disable splash screen | . | . | . 5. Disable Animations . Animations make the system slower. Less effects = faster system. | Tweaks -&gt; General -&gt; Animations -&gt; Off | Tweaks -&gt; Suspend laptop lid -&gt; Off (We are not using a laptop) | . 6. Turn off desktop icons . I do not use desktop icons but if you do, keep this option on. | Extensions -&gt; Desktop icons -&gt; Off | . 7. Remove the frequently used program from gnome shell . By default, Gnome 3 keeps the frequently used apps in the menu. This is not very useful to me but if it is useful to you, keep it! . gsettings set org.gnome.desktop.privacy remember-app-usage false . 8. Tweak Dash to Panel . There are a couple of things that we need to do to make our experience better. Open the extensions manager app and then open the settings of Dash to Panel . | Under Position . | Replace Applications Button with Ubuntu logo. this is not important, I just prefer the Ubuntu logo over the dots! | . | Under Styles . | Reduce the panel size to 32 or any number that works better for you. | Reduce Icon Margin to 4 or any number that works better for you. | Set Icon padding to 2 or any number that works better for you. | Enable Panel background opacity if you want to change the opacity of the panel. I like full transparent. | . | Under Behavior . | Disable: Show favorite applications on secondary panels | Disable: Show window previews on hover | Enable: Ungroup applications . | Set Maximum width to 50 | . | . | Under Fine-tune: . | Disable: Animate switching applications and animate launching new windows | Remove all favorite apps and add Tilix, VS Code, and Firefox, and nemo | . | . 9. VS Code Extensions: . | Live Server | Markdown All in one | Markdown Preview Enhanced | Markdown PDF | Markdown TOC | Markdown Converter | PDF Preview | Code Spell Checker | . 10. Replace Screenshot tool: . 11. Extra (non-essential) customization . These steps are optional. Enable Dark Theme . | Settings -&gt; Appearance -&gt; Dark | . Install cursor themes: . | Materia Light Cursor theme | Layan | . Install Powerline: Just run this script if you want to prompt to look like this: . | https://raw.githubusercontent.com/ra559/cis106/main/powerlineinstaller.sh | . ",
     "url": "http://localhost:4000/guides/pi-ubuntu-gnome3/#table-of-content",
     "relUrl": "/guides/pi-ubuntu-gnome3/#table-of-content"
-  },"124": {
+  },"123": {
     "doc": "Raspberry Pi Ubuntu 20.10 Setup Gnome 3 Edition",
     "title": "Extra",
     "content": ":warning: Before Overclocking the system keep this in mind :warning: . | Make sure that you are using either a case with a fan or a case with passive cooling if you are using a Raspberry Pi 4 | If you are using a Raspberry Pi 400, you do not have to worry about cooling since it comes with a good heat sink. | To overclock the system follow these steps: . | Open the file: /boot/firmware/config.txt in a text editor like nano or vim. | Add the following lines to the end of the file for the raspberry pi 400: force_turbo=1 over_voltage=8 arm_freq=2200 | If you are using a Raspberry Pi 4, add this lines instead: over_voltage=6 arm_freq=2000 | Reboot your Pi with: sudo reboot or telinit 6 | . | . ",
     "url": "http://localhost:4000/guides/pi-ubuntu-gnome3/#extra",
     "relUrl": "/guides/pi-ubuntu-gnome3/#extra"
-  },"125": {
+  },"124": {
     "doc": "Raspberry Pi Ubuntu 20.10 Setup Gnome 3 Edition",
     "title": "Raspberry Pi Ubuntu 20.10 Setup Gnome 3 Edition",
     "content": " ",
     "url": "http://localhost:4000/guides/pi-ubuntu-gnome3/",
     "relUrl": "/guides/pi-ubuntu-gnome3/"
-  },"126": {
+  },"125": {
     "doc": "Study Guide Final Spring 22",
     "title": "Study Guide For Final Spring 2022",
     "content": "Video here! . ",
     "url": "http://localhost:4000/guides/studyguide2022/#study-guide-for-final-spring-2022",
     "relUrl": "/guides/studyguide2022/#study-guide-for-final-spring-2022"
-  },"127": {
+  },"126": {
     "doc": "Study Guide Final Spring 22",
     "title": "List of Commands",
     "content": ". | date | uname | du | free | echo | apt | pwd | cd | ls | tree | man | mkdir | touch | rm | cp | mv | stat | Wildcards (*,?,[]) | Brace expansion | cat | head | tail | cut | tr | paste | wc | grep | output redirection | Saving the output of a command | vim or nano (basic stuff: open a file, close a file, edit a file) | tar | gz, bzip2, or xz | chmod ",
     "url": "http://localhost:4000/guides/studyguide2022/#list-of-commands",
     "relUrl": "/guides/studyguide2022/#list-of-commands"
-  },"128": {
+  },"127": {
     "doc": "Study Guide Final Spring 22",
     "title": "Tasks (you do not have to include this in your submission)",
     "content": ". | How to format markdown | How to work with multiple terminal windows | How to use flameshot to highlight screenshots | How to download and run scripts using curl | How to create multiple files and directories using brace expansion | How to move and remove files and directories using absolute and relative path | How to save the output of a command to a file | How to append the output of a command to a file | How to use basic commands (mkdir, mv, cp, ls) to organize files in directories and subdirectories | How to use vim to add text to a file | How to use grep to search for strings inside a file | How to rename files and directories | How to know the size of file | How to use the cat command | Difference between an absolute path and relative path | How to get the inode number of a file | How to know when was a file last modified | How to display the absolute path of a file | How to use the cut, head, and tail commands with the pipe to filter the ouput of a command | How to use wildcards to match specific file names: *,?,[],{} | How to manage data with tar and compression tools | Understand what is the purpose of the /etc/passwd file | . | . ",
     "url": "http://localhost:4000/guides/studyguide2022/#tasks-you-do-not-have-to-include-this-in-your-submission",
     "relUrl": "/guides/studyguide2022/#tasks-you-do-not-have-to-include-this-in-your-submission"
-  },"129": {
+  },"128": {
     "doc": "Study Guide Final Spring 22",
     "title": "What should your submission have:",
     "content": "Create a study sheet that contains the following: For every command, include: . | What the command does | What is the syntax of the command | 3 examples with description. | . If you are using markdown, you can use these format: . # Command name ## Description Enter description here ## Syntax `cmd + options` ## Example * Description of example: * `command here` * Description of example: * `command here` * Description of example: * `command here` . Here is an example: . ",
     "url": "http://localhost:4000/guides/studyguide2022/#what-should-your-submission-have",
     "relUrl": "/guides/studyguide2022/#what-should-your-submission-have"
-  },"130": {
+  },"129": {
     "doc": "Study Guide Final Spring 22",
     "title": "The MKDIR command",
     "content": " ",
     "url": "http://localhost:4000/guides/studyguide2022/#the-mkdir-command",
     "relUrl": "/guides/studyguide2022/#the-mkdir-command"
-  },"131": {
+  },"130": {
     "doc": "Study Guide Final Spring 22",
     "title": "Description",
     "content": "It is used for creating directories . ",
     "url": "http://localhost:4000/guides/studyguide2022/#description",
     "relUrl": "/guides/studyguide2022/#description"
-  },"132": {
+  },"131": {
     "doc": "Study Guide Final Spring 22",
     "title": "Syntax",
     "content": "mkdir + option + directories to make . ",
     "url": "http://localhost:4000/guides/studyguide2022/#syntax",
     "relUrl": "/guides/studyguide2022/#syntax"
-  },"133": {
+  },"132": {
     "doc": "Study Guide Final Spring 22",
     "title": "Examples",
     "content": ". | Make a directory | mkdir newDirectory | Make 2 directories | mkdir newDirectory NewDirectory2 | Make a parent and child directory | mkdir -p Pets/Dogs/ | . ",
     "url": "http://localhost:4000/guides/studyguide2022/#examples",
     "relUrl": "/guides/studyguide2022/#examples"
-  },"134": {
+  },"133": {
     "doc": "Study Guide Final Spring 22",
     "title": "Study Guide Final Spring 22",
     "content": " ",
     "url": "http://localhost:4000/guides/studyguide2022/",
     "relUrl": "/guides/studyguide2022/"
-  },"135": {
+  },"134": {
     "doc": "Final Project Description",
     "title": "Final Project Description",
     "content": " ",
     "url": "http://localhost:4000/project/Final_Project/",
     "relUrl": "/project/Final_Project/"
-  },"136": {
+  },"135": {
     "doc": "Final Project Description",
     "title": "Description",
     "content": "In this project, we are going to create a web server and host a simple website. We will follow a long a series of tutorials and we will document the process. At the end of the semester, the student will submit a document contain all of their work. This project consists of 4 deliverables that are designed to keep the student in track during the semester. The goal of the deliverable is to eliminate procrastination and simplify the way the student earns the grade. The final project constitutes 15% of the students final grade. This means that each deliverable is worth 5%. ",
     "url": "http://localhost:4000/project/Final_Project/#description",
     "relUrl": "/project/Final_Project/#description"
-  },"137": {
+  },"136": {
     "doc": "Final Project Description",
     "title": "Requirements",
     "content": ". | A virtual machine/PC where you can install Ubuntu Server. A Virtual machine will be preferred since everything in the tutorials will be done in a virtual machine. | . This is the main tutorial we will follow: . | How To Install the Apache Web Server on Ubuntu 22.04 | . Here are some sources you can use to investigate: . | What is a Web Server | What is SSH | What is Ubuntu Server | Open Source Web Servers | . ",
     "url": "http://localhost:4000/project/Final_Project/#requirements",
     "relUrl": "/project/Final_Project/#requirements"
-  },"138": {
+  },"137": {
     "doc": "Final Project Description",
     "title": "Deliverable 1: Project’s Requirements",
     "content": "Video here For deliverable 1, we are going to accomplish the following tasks: . | Read the tutorial. Write down every concept you don’t understand and research them. | Answer The following questions: . | What is a web server? Hardware and software side | What are some different web server applications? | What is virtualization? | What is virtualbox? | What is a virtual machine? | What is Ubuntu Server? | What is a firewall? | What is SSH? | . | . To demonstrate the completion of deliverable 1, the student needs to submit a markdown and pdf file where all the questions are answered. Here you can find an example of how the document should look like. Deliverable 1 example . ",
     "url": "http://localhost:4000/project/Final_Project/#deliverable-1-projects-requirements",
     "relUrl": "/project/Final_Project/#deliverable-1-projects-requirements"
-  },"139": {
+  },"138": {
     "doc": "Final Project Description",
     "title": "Deliverable 2: Working with Ubuntu Server and Apache",
     "content": "Video here For deliverable 2, students will follow a playlist of youtube videos where we complete the following tasks: . | Create a virtual machine for the server | Install Ubuntu Server | Install Apache2 | Setup the firewall | Setup SSH to manage the server from the client virtual machine | Setup virtual hosts | . Here you can find an example of how the document should look like. Deliverable 2 example . As you can see, the student will submit a markdown file and pdf file along side the URL to deliverable 2. This file must contain screenshots and a brief description of each step completed. ",
     "url": "http://localhost:4000/project/Final_Project/#deliverable-2-working-with-ubuntu-server-and-apache",
     "relUrl": "/project/Final_Project/#deliverable-2-working-with-ubuntu-server-and-apache"
-  },"140": {
+  },"139": {
     "doc": "Final Project Description",
     "title": "Deliverable 3: Hosting the site",
     "content": "Video here For deliverable 3, students will write a simple html page. The student will do the following: . | Create a simple markdown file about anything. The following are good examples: | The student will then convert the markdown file to HTML and will add bootstrap to the HTML. | The student will then upload the html page to the server. | . Here you can find an example of how the document should look like. Deliverable 3 example . As you can see, the student will submit a markdown file and pdf along side the url to deliverable 3. This file must contain a screenshot of the web browser open in the client virtual machine showing the website open. This is the only thing required for this deliverable. Adding a description is optional. ",
     "url": "http://localhost:4000/project/Final_Project/#deliverable-3-hosting-the-site",
     "relUrl": "/project/Final_Project/#deliverable-3-hosting-the-site"
-  },"141": {
+  },"140": {
     "doc": "Final Project Description",
     "title": "Deliverable 4: Final Deliverable",
     "content": "Video here For deliverable 4, the student will compile all deliverables into a single document and add a table of contents. The file will be converted to pdf and the student will submit the markdown, pdf file, and the link to the final deliverable url in the students github account. Here you can find an example of how the document should look like. Deliverable 4 example . As you can see, the student will submit a markdown file and pdf along side the URL to deliverable 4. The file looks like a complete project with everything that has been done so far. ",
     "url": "http://localhost:4000/project/Final_Project/#deliverable-4-final-deliverable",
     "relUrl": "/project/Final_Project/#deliverable-4-final-deliverable"
-  },"142": {
+  },"141": {
     "doc": "Learning Git",
     "title": "Learning Git",
     "content": ". | Presentation here | Cheat Sheet here | . ",
     "url": "http://localhost:4000/extra/learning-git/",
     "relUrl": "/extra/learning-git/"
-  },"143": {
+  },"142": {
     "doc": "Learning Git",
     "title": "Setup Git",
     "content": ". | Set your username: git config --global user.name 'your username here' | Set your email address: git config --global user.email 'your email here' | . ",
     "url": "http://localhost:4000/extra/learning-git/#setup-git",
     "relUrl": "/extra/learning-git/#setup-git"
-  },"144": {
+  },"143": {
     "doc": "Learning Git",
     "title": "Setup SSH authentication",
     "content": ". | Generate an ssh key: ssh-keygen -t ed25519 -C \"your_email@example.com\" This creates a new SSH key, using the provided email as a label. When you’re prompted to: \"Enter a file in which to save the key,\" press Enter. This accepts the default file location. At the prompt, to type a secure passphrase, press enter for no passphrase. If you want to use a passphrase, go ahead as it provides an extra layer of security. However, for this course you do not need to add a passphase. | Use the following command to see your public ssh key: cat ~/.ssh/id_ed25519.pub copy the entire output of this command to the clipboard. See examle here: . | In your github page, go to settings &gt; SSH and GPG Keys Here add your ssh key that you copied to the clipboad in the step prior. Type yes (the whole word) and press enter and you are done . | Test you ssh connection by using this command: ssh -T git@github.com You will see the following outcome: . | . If you do not see an error message or a different message than the one shown prior, then your SSH connection is correct. Now you can push and clone using SSH. ",
     "url": "http://localhost:4000/extra/learning-git/#setup-ssh-authentication",
     "relUrl": "/extra/learning-git/#setup-ssh-authentication"
-  },"145": {
+  },"144": {
     "doc": "The Linux FS",
     "title": "The Linux FS",
     "content": "Note: Install the following programs: nemo ulauncher You can install Ulauncher with the following command: sudo add-apt-repository ppa:agornostal/ulauncher &amp;&amp; sudo apt update &amp;&amp; sudo apt install ulauncher . All The videos here . ",
     "url": "http://localhost:4000/extra/thelinuxfs/",
     "relUrl": "/extra/thelinuxfs/"
-  },"146": {
+  },"145": {
     "doc": "The Linux FS",
     "title": "Question 1",
     "content": ". | Use the cd command to reach the following directories: . | X11 | by-id | local | python3.9 | backgrounds | themes | . | Use ~, $HOME, $OLDPWD, .., and, - with cd . | Go to ~/Downloads | Go back 2 directories. Where are you now? | Go to /usr/share/themes/ | Go back to the previous working directory ($OLDPWD) | . | . ",
     "url": "http://localhost:4000/extra/thelinuxfs/#question-1",
     "relUrl": "/extra/thelinuxfs/#question-1"
-  },"147": {
+  },"146": {
     "doc": "The Linux FS",
     "title": "Question 2",
     "content": "Use the ls command to complete these task: . | List all the files inside your home directory | List all the files inside your home directory including hidden files | List all the files inside your home directory including hidden files but excluding .. and . | Long list all the files in your home directory including hidden files but excluding .. and . | Long list all the files in your home directory including hidden files but excluding .. and . and classified | List all the files in the /usr/share/themes directory | Change your current working directory to /proc/sys/net/ and from there list all the files in your home directory classified, in a single column, and sorted by size. | Change your current working directory to ~/Downloads and from there list all the files in the /etc/ directory sorted by file extension | . ",
     "url": "http://localhost:4000/extra/thelinuxfs/#question-2",
     "relUrl": "/extra/thelinuxfs/#question-2"
-  },"148": {
+  },"147": {
     "doc": "Final Exam Study Assignment",
     "title": "Final Exam Study Assignment",
     "content": " ",
     "url": "http://localhost:4000/final_exam/final_exam/",
     "relUrl": "/final_exam/final_exam/"
-  },"149": {
+  },"148": {
     "doc": "Final Exam Study Assignment",
     "title": "READ ME PLEASE!",
     "content": ". | Complete this assignment before your final exam. | You must present this assignment before you start your exam. | The due date is: 12/14 at 4:10 PM | I will personally ask for this assignment and grade it on site | This is 20 points of your final. DO NOT MISS IT! | Here is how the assignment is supposed to look like (incomplete BTW): CLICK ME Video here | . ",
     "url": "http://localhost:4000/final_exam/final_exam/#read-me-please",
     "relUrl": "/final_exam/final_exam/#read-me-please"
-  },"150": {
+  },"149": {
     "doc": "Final Exam Study Assignment",
     "title": "Question 1",
     "content": "For every command in this list, include the following: . | Description | formula/syntax | 3 examples that you understand well | . | awk | cat | cp | cut | grep | head | ls | man | mkdir | mv | tac | tail | touch | tr | tree | vim/nano | . ",
     "url": "http://localhost:4000/final_exam/final_exam/#question-1",
     "relUrl": "/final_exam/final_exam/#question-1"
-  },"151": {
+  },"150": {
     "doc": "Final Exam Study Assignment",
     "title": "Question 2",
     "content": "Answer each question: . | How to work with multiple terminals open? | How to work with manual pages? | How to parse (search) for specific words in the manual page | How to redirect output (&gt; and |) | How to append the output of a command to a file | How to use wildcards . | For copying and moving multiple files at the same time | . | How to use brace expansion . | For creating entire directory structures in a single command | . | . ",
     "url": "http://localhost:4000/final_exam/final_exam/#question-2",
     "relUrl": "/final_exam/final_exam/#question-2"
-  },"152": {
+  },"151": {
     "doc": "Final Exam Study Assignment",
     "title": "Question 4",
     "content": ". | Convert this file to pdf. If you cant, dont worry Im ok with the markdown on your github account but it must be on your github account. | Commit everything to github. | . ",
