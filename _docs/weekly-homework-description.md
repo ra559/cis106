@@ -1,14 +1,11 @@
----
-layout: page
-title: Weekly Homework Description
----
+
 ## Weekly Homework  #
 This is a list of task that you will be required to complete every week. 
 - Complete the designated lab **(40 Minutes)**
     - Each lab has a video walkthrough from beginning to end available in the course Youtube Channel. 
-    - Each lab is a hands on activity consisting of 5 questions. 
+    - Each lab is a hands on activity consisting of 5 questions or less that also include a challenge question. 
     - I advise you to complete the labs in one sitting to avoid losing any data.
-    - Labs are the corner stone of this course and as a result are required to be completed in the designated order. You cannot do the next week's lab if you do not complete the previous week lab as they build on each other.I
+    - Labs are the corner stone of this course and as a result you are required to complete them in the designated order. You cannot do the next week's lab if you do not complete the previous week lab as they build on each other.
 - Complete the assigned discussion board **(30 Minutes)**
     - Every week you will have either a video, podcast episode, or article to read.
     - After you complete the assigned material, you are required to answer 1 question.

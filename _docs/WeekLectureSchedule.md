@@ -1,7 +1,4 @@
----
-layout: page
-title: Weekly Lecture Schedule
----
+
 
 # {{page.title}}
 

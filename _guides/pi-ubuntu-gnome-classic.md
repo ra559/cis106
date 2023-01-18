@@ -1,7 +1,4 @@
----
-layout: page
-title: Raspberry Pi Ubuntu 20.10 Setup Gnome Classic Edition
----
+
 # Raspberry Pi Ubuntu 20.10 Setup **(Gnome Classic Edition)**
 ![Desktop](../imgs/desktopuc.png)
 

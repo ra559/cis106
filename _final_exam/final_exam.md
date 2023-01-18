@@ -1,7 +1,4 @@
----
-layout: post
-title: Final Exam Study Assignment
----
+
 # {{page.title}}
 
 ## READ ME PLEASE!

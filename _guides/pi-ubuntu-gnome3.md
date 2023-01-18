@@ -1,7 +1,4 @@
----
-layout: page
-title: Raspberry Pi Ubuntu 20.10 Setup Gnome 3 Edition
----
+
 # Raspberry Pi Ubuntu 20.10 Setup **(Gnome 3 Edition)**
 ![Desktop](../imgs/desktop.png)
 
