@@ -1,7 +1,4 @@
----
-layout: post
-title: Homework 6
----
+
 
 # Homework 6
 > *video (here)[https://youtu.be/5owUqgEzeUY]*

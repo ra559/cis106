@@ -1,7 +1,4 @@
----
-layout: post
-title: Homework 3
----
+
 # Homework 3
 ## Complete the following tasks
 > Watch this [video](https://youtu.be/5msZ5yxFdI4) before you start this week's homework.

@@ -1,7 +1,4 @@
----
-layout: post
-title: Lab 2 - Installing Ubuntu 22.04 in VirtualBox.
----
+
 # {{page.title}}
 * *Video [here](https://youtu.be/1TgYoW17a4U)*
 
@@ -89,8 +86,8 @@ Make sure to install VirtualBox in your host computer. For Windows follow this [
 
 > Take a screenshot of your virtual machine settings. You screenshot must show all the settings of your VM. Here is a proper example:
 
-| virtual machine settings |
-| --------------| 
+| virtual machine settings                |
+| --------------------------------------- |
 | ![](/assets/virtualmachinesettings.png) |
 
 <hr>

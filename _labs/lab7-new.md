@@ -1,7 +1,3 @@
----
-layout: post
-title: Lab 7 - Handling Files
----
 
 # Lab 7 - Handling Files
 * Video [here](https://youtu.be/8xjoxIvG2xY)<br>

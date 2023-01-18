@@ -1,7 +1,4 @@
----
-layout: post
-title: Homework 2
----
+
 # Homework 2
 ## Complete the following tasks
 > Video Explanation [here](https://youtu.be/nLcaAO4YcgY)

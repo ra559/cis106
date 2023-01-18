@@ -1,7 +1,4 @@
----
-layout: post
-title: Lab 3 - Using Ubuntu 
----
+
 # {{page.title}}
 * [Video HERE](https://youtu.be/pSteVUICkCg)
 

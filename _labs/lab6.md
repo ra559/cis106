@@ -1,7 +1,4 @@
----
-layout: post
-title: Lab 6 - Wildcards
----
+
 
 # Lab 6 | File Globing/wildcards
 
