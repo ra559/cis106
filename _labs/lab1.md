@@ -2,7 +2,8 @@
 layout: post
 title: Lab 1 - Learning Markdown
 ---
-> *Video For lab [here](https://youtu.be/YvnhXfdw7Gs)*
+> *Long Video For lab [here](https://youtu.be/-Js_nso0IZo)*
+> *Short video for lab [here](https://youtu.be/YtS8sv-21Lc)*
 
 # {{page.title}}
 
