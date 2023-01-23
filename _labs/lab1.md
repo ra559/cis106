@@ -43,6 +43,7 @@ title: Lab 1 - Learning Markdown
 * Using markdown, create a 1 page resume for John Doe. In the compressed file that you downloaded, you will find an image, resume.png, that has the result of how the document should look like after it has been converted to PDF. Once you have written the markdown file, convert the file to pdf and html. 
 
 ## Submission
+* Video Explanation [here](https://youtu.be/3PsFuUMoFPs)
 In blackboard, submit the following:
 * The markdown file of the resume and whatisubuntu.md
 * The PDF file of the resume and whatisubuntu.md
