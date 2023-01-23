@@ -46,7 +46,7 @@ Follow these steps:
       - CPU: Quad core CPU
       - RAM: 8GB or More
       - Free Storage: 60GB or more
-![Warning](/assets/warning-icon_1_15.png) 
+![Warning](/assets/warning-icon.png) 
  > If you do not meed these requirements but your computer is close enough, you may be able to complete the course material. The downside is that your computer will be extremely slow.
    
 If your computer meets or exceeds the above capabilities, then you need to check if virtualization is enabled. Follow [this guide](https://rapurl.live/vaj) to know if your computer has virtualization enabled and if it does not, use the same guide to learn how to enable it. You can also use [Speccy](https://www.ccleaner.com/speccy) to find out if your computer has virtualization enabled.
@@ -110,6 +110,12 @@ These are the tasks that you need to complete before taking the screenshots:
 * Set update daily reminder to never
 * Change Wayland for X.org
 * Take snapshot.
+* Install the guest additions for virtualbox.
+  * Run this command: `sudo apt install build-essential linux-headers-$(uname -r) -y`
+  * Use this [video](https://youtu.be/IuqJxbYuU-Y) to install guest additions.
+* Reboot the VM
+* Go Full Screen
+* Disable animations. Run this command on your terminal: <br> `gsettings set org.gnome.desktop.interface enable-animations false` <br>
 
 > Take a screenshot of your virtual machine showing the snapshot. Here is an example:
 
@@ -118,13 +124,8 @@ These are the tasks that you need to complete before taking the screenshots:
 <hr>
 
 ## Question 5 | Complete the following tasks
-1. Install the guest additions for virtualbox. Run these commands:
-  * `sudo apt update; sudo apt upgrade -y`
-  * `sudo apt install build-essential linux-headers-$(uname -r) -y`
 
-1. Reboot the VM
-2. Go Full Screen
-3. Disable animations. Run this command on your terminal: <br> `gsettings set org.gnome.desktop.interface enable-animations false` <br>
+
 4. Using the software center, Install VS Code. Install all the extensions of VS Code
   * Live Server
   * Markdown All in one
@@ -134,10 +135,10 @@ These are the tasks that you need to complete before taking the screenshots:
   * Markdown Converter
   * PDF Preview
   * Code Spell Checker
-5. Using the terminal, remove all unnecessary applications from Ubuntu 22.04. Use this command:
+1. Using the terminal, remove all unnecessary applications from Ubuntu 22.04. Use this command:
 <br> `sudo apt purge apport aisleriot gnome-mahjongg gnome-sudoku gnome-mines  -y`<br> 
 
-6. Using the software center install the following applications: 
+1. Using the software center install the following applications: 
   * flameshot 
   * vlc 
   * deluge 
@@ -190,6 +191,6 @@ These are the tasks that you need to complete before taking the screenshots:
 * Take a snapshot of your virtual machine.
 
 
-![Warning](/assets/warning-icon_1_15.png) 
+![Warning](/assets/warning-icon.png) 
 ### Special Note
 This is a canonical lab for your learning. You will be making more virtual machines in the future. I suggest you create more virtual machines and then delete them. For example, find out what are the minimum requirements for installing windows 10 and then make a windows 10 virtual machine. Also, install other linux distributions as well. You do not need to keep these vms simply practice. Remember, when deleting virtual machines, make sure to select `delete all files` instead of just removing the vms. This will make sure that you recover your hard drive space. 
