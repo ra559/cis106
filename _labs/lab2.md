@@ -126,7 +126,7 @@ These are the tasks that you need to complete before taking the screenshots:
 ## Question 5 | Complete the following tasks
 
 
-4. Using the software center, Install VS Code. Install all the extensions of VS Code
+1. Download and install [VS Code](https://code.visualstudio.com/) Install all the extensions of VS Code
   * Live Server
   * Markdown All in one
   * Markdown Preview Enhanced
@@ -135,10 +135,15 @@ These are the tasks that you need to complete before taking the screenshots:
   * Markdown Converter
   * PDF Preview
   * Code Spell Checker
-1. Using the terminal, remove all unnecessary applications from Ubuntu 22.04. Use this command:
-<br> `sudo apt purge apport aisleriot gnome-mahjongg gnome-sudoku gnome-mines  -y`<br> 
 
-1. Using the software center install the following applications: 
+
+2. Using the terminal, remove all unnecessary applications from Ubuntu 22.04. Use this command:
+
+```
+sudo apt purge apport aisleriot gnome-mahjongg gnome-sudoku gnome-mines  -y
+```
+
+3. Using the software center install the following applications: 
   * flameshot 
   * vlc 
   * deluge 
@@ -147,30 +152,31 @@ These are the tasks that you need to complete before taking the screenshots:
 
 > In the terminal you can use these command: <br> `sudo apt install flameshot vlc deluge geany tilix -y`<br> 
 
-7. Using the terminal install the following applications: gcc make perl nemo git python3-pip gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree  htop net-tools vim neofetch caffeine samba smbclient cifs-utils. You can use the following commands:
+4. Using the terminal install the following applications: gcc make perl nemo git python3-pip gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree  htop net-tools vim neofetch caffeine samba smbclient cifs-utils. You can use the following commands:
 
   * `sudo apt install gcc make perl nemo git python3-pip -y`
   * `sudo apt install curl wget tree  htop net-tools vim -y`
   * `sudo apt install neofetch caffeine samba smbclient gnome-tweaks -y`
-  * `sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y`
   * `sudo apt install snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap  -y`
+  * `sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y`
 
-8. Replace the default screenshot tool with flameshot.
-10. Setup git and download your repository to your Ubuntu machine.
-  * Sign in to your github account.
-  * Open a terminal and run the following commands:
-    * Set your username: <br> `git config --global user.name 'your username here'` <br>
-    * Set your email address: <br> `git config --global user.email 'your email here'` <br>
-    * Setup SSH authentication
-      * Generate an ssh key: <br> `ssh-keygen -t ed25519 -C "your_email@example.com"` <br> This creates a new SSH key, using the provided email as a label. When you're prompted to:<br> `"Enter a file in which to save the key,"` <br>press Enter. This accepts the default file location. At the prompt, to type a secure passphrase, press enter for no passphrase. If you want to use a passphrase, go ahead as it provides an extra layer of security. However, for this course you do  not need to add a passphase. 
-      * Use the following command to see your public ssh key: <br> `cat ~/.ssh/id_ed25519.pub` <br> copy the entire output of this command to the clipboard.
-      * In your github page, go to `settings` > `SSH and GPG Keys` Here add your ssh key that you copied to the clipboard in the step prior. Type `yes` (the whole word) and press enter and you are done
-      * Test you ssh connection by using this command: <br>`ssh -T git@github.com`<br>
-    * Clone your github repository. Use these commands: <br>`cd; git clone git@github.com:yourGithub-User-Name-Here/your-Repository-Name-Here`<br>
-    * Open a file manager and go to the repository you cloned (the folder) and organize the files as I do in the video.
-    * Open VS Code and open your repository folder. 
-    * Open a terminal in VS Code and run the following commands: <br>`git add .; git commit -m "Files organized"; git push`<br>
-* Open your github repository and your web browser and noticed how the files are now organized as they are in your computer.
+5. Replace the default screenshot tool with flameshot.
+
+### Setup Git and download your repository to your Ubuntu machine.
+1. Sign in to your Github account.
+2. Open a terminal and run the following commands:
+3. Set your username: <br> `git config --global user.name 'your username here'` <br>
+4. Set your email address: <br> `git config --global user.email 'your email here'` <br>
+5. Setup SSH authentication
+6. Generate an ssh key: <br> `ssh-keygen -t ed25519 -C "your_email@example.com"` <br> This creates a new SSH key, using the provided email as a label. When you're prompted to:<br> `"Enter a file in which to save the key,"` <br>press Enter. This accepts the default file location. At the prompt, to type a secure passphrase, press enter for no passphrase. If you want to use a passphrase, go ahead as it provides an extra layer of security. However, for this course you do  not need to add a passphase. 
+7. Use the following command to see your public ssh key: <br> `cat ~/.ssh/id_ed25519.pub` <br> copy the entire output of this command to the clipboard.
+8. In your github page, go to `settings` > `SSH and GPG Keys` Here add your ssh key that you copied to the clipboard in the step prior. Type `yes` (the whole word) and press enter and you are done
+9. Test you ssh connection by using this command: <br>`ssh -T git@github.com`<br>
+10. Clone your github repository. Use these commands: <br>`cd; git clone git@github.com:yourGithub-User-Name-Here/your-Repository-Name-Here`<br>
+11. Open a file manager and go to the repository you cloned (the folder) and organize the files as I do in the video.
+12. Open VS Code and open your repository folder. 
+13. Open a terminal in VS Code and run the following commands: <br>`git add .; git commit -m "Files organized"; git push`<br>
+14. Open your github repository and your web browser and noticed how the files are now organized as they are in your computer.
 
 <hr>
 
@@ -193,4 +199,4 @@ These are the tasks that you need to complete before taking the screenshots:
 
 ![Warning](/assets/warning-icon.png) 
 ### Special Note
-This is a canonical lab for your learning. You will be making more virtual machines in the future. I suggest you create more virtual machines and then delete them. For example, find out what are the minimum requirements for installing windows 10 and then make a windows 10 virtual machine. Also, install other linux distributions as well. You do not need to keep these vms simply practice. Remember, when deleting virtual machines, make sure to select `delete all files` instead of just removing the vms. This will make sure that you recover your hard drive space. 
+This is a canonical lab for your learning. You will be making more virtual machines in the future. I suggest you create more virtual machines and then delete them. For example, find out what are the minimum requirements for installing windows 10 and then make a windows 10 virtual machine. Also, install other linux distributions as well. You do not need to keep these vms just use this lab to practice. Remember, when deleting virtual machines, make sure to select `delete all files` instead of just removing the vms. This will make sure that you recover your hard drive space. 
