@@ -1,3 +1,7 @@
+---
+layout: post
+title: Lab 2 - Installing Ubuntu 22.04 In VirtualBox
+---
 
 # {{page.title}}
 * *Video [here](https://youtu.be/1TgYoW17a4U)*
