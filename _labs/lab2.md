@@ -4,8 +4,15 @@ title: Lab 2 - Installing Ubuntu 22.04 In VirtualBox
 ---
 
 # {{page.title}}
-* *Video [here](https://youtu.be/1TgYoW17a4U)*
 
+## Videos
+* [Part 1 Virtualization](https://youtu.be/whXYdsRrTG8)
+* [Part 2 Virtualbox](https://youtu.be/M-81JJp_xDg)
+* [Part 3 Ubuntu 22.04](https://youtu.be/aaR2SJl6iV0)
+* [Part 4 Post Installation](https://youtu.be/lzL8TYt4iNo)
+* [Part 5 VS Code](https://youtu.be/B3HtHqsZfqo)
+* [Part 6 Git & Github](https://youtu.be/ju1GgANJfnU)
+* [Part 7 Time to submit](https://youtu.be/dwXEI7HKtjc)
 
 ## Presentations:
 * [The basics of Virtualization](https://rapurl.live/est)
