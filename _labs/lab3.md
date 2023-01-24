@@ -35,14 +35,24 @@ Icon=$HOME/.cis106.png
 
 ![allow launching](/assets/allowLanuching.gif)<br>  
 
-3. **Write a Document**
+* Now lets add the launcher to our favorites application in the Dock:
+  * Run the following command:
+```
+cp Desktop/cis106.desktop .local/share/applications/
+```
+  * Now run this command:
+```
+dconf write /org/gnome/shell/favorite-apps "['firefox_firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'code.desktop', 'cis106.desktop']"
+```
+
+1. **Write a Document**
    1. Open Libre office writer.
    2. Go on firefox and copy and paste some text from wikipedia
    3. Convert the file to pdf
    4. Save the pdf file in the `lab3` directory inside your github repository.
-4. **Create a Presentation in LibreOffice Impress**
+2. **Create a Presentation in LibreOffice Impress**
    1. save the presentation in the `lab3` directory
-5. **Play around with the settings of Ubuntu**
+3. **Play around with the settings of Ubuntu**
    1. Click on the System Tray. Open "Settings"
    2. Change the background.
    3. Go to this [site](https://wallhaven.cc/) and download a new wallpaper and add it as a background. 
@@ -51,7 +61,7 @@ Icon=$HOME/.cis106.png
    6. Disable search for everything except software
    7. Change the screen blank to "Never" in the power settings
    8. Take a look at the rest of the settings
-6. **Install a Font**
+4. **Install a Font**
    1. Go to this [website](https://www.nerdfonts.com/font-downloads)
    2. Download the following fonts: 
       1. FiraCode Nerd Font
@@ -64,7 +74,7 @@ Icon=$HOME/.cis106.png
       8. Monofur Nerd Font
       9. Monoki Nerd Font
       10. SpaceMono Nerd Font
-7. [Tilix](https://gnunn1.github.io/tilix-web/) is an advance terminal emulator that supports split screen and other advanced features. Open Tilix, and do the following:
+5. [Tilix](https://gnunn1.github.io/tilix-web/) is an advance terminal emulator that supports split screen and other advanced features. Open Tilix, and do the following:
    1. Open the app settings, in the Appearance tab, change the theme variant to dark
    2. Add a background image. Like this [one](https://wallpapersmug.com/download/1920x1080/6d3c26/dark-minimal-mountains.png) 
    3. In the Default profile, 
@@ -91,6 +101,24 @@ sudo apt update; sudo apt install gnome-session-flashback -y
 
 > **Note:** *You can go back to Gnome 42 if you want.*
 <hr>
+
+## Question 2.1 (Alternative)| Customizing Ubuntu 22.04 Appearance and behavior
+> This question is not mandatory is done for the sake of practicing some more. Feel free to ignore this.
+
+1. Turn your virtual machine off and take a snapshot. 
+2. In the logging screen select Gnome 42 instead of Gnome Classic Metacity
+3. Using the software center, install the application Gnome Extension Manager.
+4. Open Extension Manager and install the following extensions:
+   1.  Blur My Shell
+   2.  Burn My Windows
+   3.  CoverFlow Alt-Tab
+   4.  Dash to Panel
+   5.  Vitals
+5. Enable desktop animations using this command: <br> `gsettings set org.gnome.desktop.interface enable-animations true` <br>
+
+> Warning: All of these extensions will make your virtual machine slow. I suggest going back to the default Gnome Session without extensions or disabling the ones that add all the fancy effects. If you are ok with your current setup, leave it as is.
+
+> This question does not require a screenshot
 
 ## Question 3 | Installing applications
 Using the command line, look for a software to do each of the following tasks and then complete the table with the information you found. Make sure that the application you found is an actual software and not a library. If needed Google the application name to be sure before you install the program. Install and launch the application. 
