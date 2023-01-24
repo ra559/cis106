@@ -1,3 +1,4 @@
 ignoreDir
 .idea
 .jekyll-cache
+.vscode

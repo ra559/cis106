@@ -1,3 +1,7 @@
+---
+layout: post
+title: Lab 3 - Using Ubuntu
+---
 
 # {{page.title}}
 * [Video HERE](https://youtu.be/pSteVUICkCg)
@@ -16,6 +20,7 @@ Perform the following tasks. The point of this question is to get you familiar w
 2. **Create a desktop shortcut for the cis106 website**
 * Open a text editor.
 * Add the following text:
+
 ```
 #!/usr/bin/evn xdg-open
 [Desktop Entry]
@@ -47,12 +52,34 @@ Icon=$HOME/.cis106.png
    7. Change the screen blank to "Never" in the power settings
    8. Take a look at the rest of the settings
 6. **Install a Font**
+   1. Go to this [website](https://www.nerdfonts.com/font-downloads)
+   2. Download the following fonts: 
+      1. FiraCode Nerd Font
+      2. FiraMono Nerd Font
+      3. Inconsolata Nerd Font
+      4. InconsolataGo Nerd Font
+      5. Iosevka Nerd Font
+      6. JetBrainsMono Nerd Font
+      7. Lekton Nerd Font
+      8. Monofur Nerd Font
+      9. Monoki Nerd Font
+      10. SpaceMono Nerd Font
+7. [Tilix](https://gnunn1.github.io/tilix-web/) is an advance terminal emulator that supports split screen and other advanced features. Open Tilix, and do the following:
+   1. Open the app settings, in the Appearance tab, change the theme variant to dark
+   2. Add a background image. Like this [one](https://wallpapersmug.com/download/1920x1080/6d3c26/dark-minimal-mountains.png) 
+   3. In the Default profile, 
+      1. Change the font to any of the font you downloaded earlier. I suggest Fira Mono
+      2. Change the Cursor to: Underline
+      3. Change the Cursor blink mode: ON
+      4. Set the color Scheme to Linux
+      5. Adjust the transparency until the background is slightly visible
 
 > This question requires no screenshot
 
 ## Question 2 | Using a different desktop environment
 
-4. Install Gnome Classic. GNOME Classic is a GNOME Shell feature and mode for users who prefer a more traditional desktop experience. Read more [here](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/what-is-gnome-classic#:~:text=GNOME%20Classic%20is%20a%20GNOME,The%20Applications%20and%20Places%20menus.) 
+1. Install Gnome Classic. GNOME Classic is a GNOME Shell feature and mode for users who prefer a more traditional desktop experience. Read more [here](https://rapurl.live/vgo) 
+
 * Open a terminal and run this command:
 ```
 sudo apt update; sudo apt install gnome-session-flashback -y
@@ -66,7 +93,8 @@ sudo apt update; sudo apt install gnome-session-flashback -y
 <hr>
 
 ## Question 3 | Installing applications
-Using the command line, look for a software to do each of the following tasks and then complete the table with the information you found.
+Using the command line, look for a software to do each of the following tasks and then complete the table with the information you found. Make sure that the application you found is an actual software and not a library. If needed Google the application name to be sure before you install the program. Install and launch the application. 
+
 1. Play a tetris game
 2. Play a video file
 3. Browse the internet
@@ -82,12 +110,7 @@ Using the command line, look for a software to do each of the following tasks an
 | Read your email     |              |         |
 | Play music          |              |         |
 ```
-### CHALLENGE!
-1. Install the programs that you found using a single command. **Which command did you use?**
-2. Remove all the programs that you installed in a single command. **Which command did you use?**
-3. If you were to install the first and second program, but remove the other 3 in a single command, **Which command will you use?**
-
-> For this question, simply complete the table and answer the questions. No screenshot required.
+> Take a screenshot of each application open.
 
 <hr>
 
@@ -95,7 +118,7 @@ Using the command line, look for a software to do each of the following tasks an
 
 Almost all Linux commands include manual pages. Manual pages (man page for short) is a documentation that explains the usage of a command. Man pages are not user friendly and are not meant to be guides but references on how a program works. The more you read man pages the more sense they make. It is normal to feel lost in the beginning. 
 
-To read the manual of a command simply type: `man command` for example, `man date` opens the manual of the date command. 
+To read the manual of a command simply type: `man command name` for example, `man date` opens the manual of the date command. 
 
 To move around the man page, use the arrow keys in the keyboard. You can also use the mouse wheel if you are working in a terminal emulator. To get help on how to read the manual press letter `h` to  quit the manual page press `q`
 
@@ -104,7 +127,11 @@ Try the following commands in the terminal
    2. free -h
    3. uname -a
    4. du / 
+
+* Use the internet and the manual page to understand **What each command does?**
+  
 * Install these programs: `fortune cowsay toilet figlet rig lolcat boxes`
+
 * Run these commands on your terminal:
    1. `echo "I Like Linux!" | lolcat`
    2. `fortune | cowsay | lolcat`
@@ -112,10 +139,11 @@ Try the following commands in the terminal
    4. `fortune | toilet -f term -F border --metal`
    5. `rig | boxes -d boy`
 
-Use the man page to find out what each of these programs do.
+Use the man page to find out what each of these programs do then fill in the table.
+
 ```
 | command | what it does |
-|---------|--------------|
+| ------- | ------------ |
 | echo    |              |
 | fortune |              |
 | cowsay  |              |
@@ -127,4 +155,4 @@ Use the man page to find out what each of these programs do.
 
 ## What will you submit
 * Create a markdown file named `lab3.md` and answer all the questions there.
-* Submit the URL to the lab3.md file in github and a pdf version of lab3.md file.
+* Submit the URL to the lab3.md file in github and a pdf version of `lab3.md` file.
