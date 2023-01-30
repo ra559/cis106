@@ -72,6 +72,7 @@ Take a screenshot showing your computer specifications and a screenshot of the t
 Before you can create virtual machines, you need to install VirtualBox and VirtualBox Extension Pack. To download Vbox and the extension pack go to:
 
 * [Virtualbox Download Page](https://www.virtualbox.org/wiki/Downloads)
+* [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 
 Make sure to select the right installer for your operating system:
 
