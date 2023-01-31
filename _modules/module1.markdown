@@ -13,7 +13,7 @@ title: Module 1 What is Linux?
 ## Lecture 2: Introduction to Linux
 * Presentations
 1. [Introduction to Linux](https://rapurl.live/dbx)
-2. [The basics of Virtualization](http://bit.ly/2KIAlNA)
+2. [The basics of Virtualization](https://rapurl.live/bt7)
 3. [Using VirtualBox](http://bit.ly/3hk03nI)
 4. [Installing Ubuntu 22.04 in virtualbox](http://bit.ly/2WR4i0o)
 
