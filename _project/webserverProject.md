@@ -1,6 +1,6 @@
 ---
 layout: "page"
-title: Web Server Project
+title: Web Server Project Deliverable 2
 ---
 
 # {{page.title}}
@@ -158,8 +158,8 @@ Virtual host allows us to serve more than one website in a single web server. By
 3. Now let's change the file permission so that the owner can read, write, and execute the files while granting only read and execute permissions to groups and others: <br>`sudo chmod -R 755 /var/www/myresume`
 4. Now lets create a simple html document to be served from our new virtual host. Create a document with the nano text editor called `index.html` in the `/var/www/myresume/` directory: <br>`sudo nano /var/www/myresume/index.html`.
 5. Once the new document opens, type the following text:
-```
 
+```
 <html>
     <head>
         <title>My Resume Website</title>
@@ -169,16 +169,22 @@ Virtual host allows us to serve more than one website in a single web server. By
     </body>
 </html>
 ```
+
 6. Save and close the file when you are finished. You can do this by pressing `CTRL + X`, then `Y` and `ENTER`.
+
 
 > **NOTE:**
 > If you don't want to use Nano, you can also do this in a single command
 > ```
 > sudo echo "<html><head><title>My Resume Website</title></head><body><h1>This is a sample document!</h1></body></html>" > /var/www/myresume.index.html
 > ```
+
+
 ![setup virtual host 1](/assets/setup-virtual-host-1.gif)<br>
+
 7. Now we need to create a virtual host file so that this new content can be served. The default configuration is located in `/etc/apache2/sites-available/000-default.conf` However, we do not need to touch this file, we can instead create a new one as it is best practice. To create a new config file, we are going to use nano again: <br>`sudo nano /etc/apache2/sites-available/myresume.conf`
 8. Add the following text to the domain config file:
+
 ```
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
@@ -189,6 +195,7 @@ Virtual host allows us to serve more than one website in a single web server. By
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
+
 9. Save and close the file when you are finished. You can do this by pressing `CTRL + X`, then `Y` and `ENTER`.
 10. Now enable the site with the following command: <br>`sudo a2ensite myresume.conf`
 11. Now lets disable the default domain:<br>`sudo a2dissite 000-default.conf`
@@ -197,9 +204,11 @@ Virtual host allows us to serve more than one website in a single web server. By
 14. Save and close the file when you are finished. You can do this by pressing `CTRL + X`, then `Y` and `ENTER`.
 15. Now you can test the configuration for errors:<br>`sudo apache2ctl configtest`
 16. The output of the command should look like this:
+
 ```
 Syntax OK
 ```
+
 17. If there are no errors, restart Apache to apply the changes:<br>`sudo systemctl restart apache2`<br>
 ![Setup Virtual Host 2](/assets/setup-virtual-host-2.gif)<br>
 18. Now, if you open a web browser in your host computer and go the URL: `http://myresume` your `index.html` document should load.
