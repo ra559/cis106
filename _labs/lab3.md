@@ -102,7 +102,7 @@ sudo apt update; sudo apt install gnome-session-flashback -y
 > **Note:** *You can go back to Gnome 42 if you want.*
 <hr>
 
-## Question 2.1 (Alternative)| Customizing Ubuntu 22.04 Appearance and behavior
+## Question 2.1 (Alternative - Not required!)| Customizing Ubuntu 22.04 Appearance and behavior
 > This question is not mandatory is done for the sake of practicing some more. Feel free to ignore this.
 
 1. Turn your virtual machine off and take a snapshot. 
