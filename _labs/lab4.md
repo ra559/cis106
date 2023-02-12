@@ -82,6 +82,23 @@ Use this image as a visual aid during this question
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-10. Multiple screenshots may be required**
 
 
+## Question 5 | Challenge Question
+
+1. Go to the root of the filesystem. From there reach the Downloads directory.
+   1. **Rules:**
+      1. You are only allowed to move 1 directory at the time. Which means you cannot use shortcuts or absolute path
+      2. Once you have reached the Downloads directory, show the absolute path of your current/present working directory.
+      3. Take a screenshot of your terminal showing all the commands you use to solve this sub question.
+2. Change your present working directory to /usr/share/themes/Adwaita. From there reach your Documents directory. 
+   1. **Rules:**
+      1. You are allowed to move more than 2 directories at a time.
+      2. You can use shortcuts or use absolute paths.
+      3. Once you haver reached the Documents directory, show your present working directory.
+      4. Take a screenshot of your terminal showing all the commands you use to solve this sub question.
+3. 
+
+
+
 ## What will you Submit:
 * Place all the screenshots and answers to your questions in a the `lab4.md` file.
 * Convert your markdown file to pdf 
