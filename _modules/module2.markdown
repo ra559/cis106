@@ -5,7 +5,7 @@ title: Module 2 Using Ubuntu
 # {{page.title}}
 
 ## Lecture 4: Managing Files and directories
-1. [The Linux filesystem](https://bit.ly/3alPqPm)
+1. [The Linux filesystem](https://rapurl.live/s39)
 2. [Managing files and directories](https://rapurl.live/jya)
 
 ## Lecture 5: Handling Text Files
