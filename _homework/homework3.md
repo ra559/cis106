@@ -9,6 +9,7 @@ title: Homework 3
 
 
 1. Create a folder in your `cis106` folder called `weekReports`. Inside this folder, create a file called `wr3.md` or `weekReport3.md`
+![week report 3](/assets/wr3.1.gif)<br>
 2. In the `wr3.md` file include the following:
    1. Read of presentations:
       1. [Introduction to Linux](https://rapurl.live/dbx)
@@ -48,8 +49,10 @@ title: Homework 3
                 1. Package
                 2. Library
                 3. Repository
+![week report 3.2](/assets/wr3.2.gif)<br>
 3. Create a folder inside the cis106 folder called `cheatSheets`. Here we will place all the cheat sheets I will share with you. Download the following cheat sheets and place them inside the `cheatSheets` folder.
    1. [Installing Software Cheat Sheet](https://www.google.com/url?q=https://bit.ly/3djIsfy&sa=D&source=editors&ust=1676923159775290&usg=AOvVaw2_GLy0QeKD5Cby5Vk6xyV_)
+![Week Report 3.3](/assets/wr3.3.gif)<br>
 4. Complete [lab 3 Using Ubuntu](https://cis106.com/labs/lab3/).
 
 ## What will you Submit:
