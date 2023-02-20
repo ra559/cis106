@@ -1,42 +1,31 @@
+---
+layout: post
+title: Homework 4
+---
 
 # {{page.title}}
 
-> Video For this assignment [here](https://youtu.be/BRIC5EVxmFg)
+* [The Linux File System Presentation](https://rapurl.live/s39)
+* [Ls Command Cheat Sheet](https://rapurl.live/kdy)
+* [Absolute Path and Relative Path Cheat sheet](https://rebrand.ly/3bdn1)
 
 ## Complete the following tasks
-### 1. Complete Discussion 3: The Rise of Open Source 
-If you are short in time, leave this part for last
-### 2. Complete week report. 
-*Week Report must contain the following:*<br>
 
-> If you need a refresher on the filesystem and the commands to navigate the filesystem, watch these videos. Otherwise, skip this part:
->  * [Navigating the filesystem Part 1](https://www.youtube.com/watch?v=RNopWAAoVbM&list=PL5lh7Nw87hud1kA8FTE2UG3y9yvmON2s8&index=11)
->  * [Navigating the filesystem Part 2](https://www.youtube.com/watch?v=RxVX64H5D_k&list=PL5lh7Nw87hud1kA8FTE2UG3y9yvmON2s8&index=12)
+### 1. Complete Week Report 4. Your report must contain the following:
 
-1. Do all the practice exercises in the [presentation](https://bit.ly/3alPqPm). After completing each practice, take a screenshot of the terminal and put it in your weekly report. One screenshot per practice is enough to prove you did them.
-2. Create a table that includes the following directories and their usage. All the information can be found in the [presentation](https://bit.ly/3alPqPm):
-   1. bin
-   2. dev
-   3. etc
-   4. home
-   5.  media
-   6.  opt
-   7.  proc
-   8.  srv
-   9.  usr
-   10. var
-#### Example of how the table MUST look like:
-
-| Directory | Data Stored in Directory                    |
-| --------- | ------------------------------------------- |
-| bin       | Nulla enim amet occaecat quis esse proident |
-
-3. **Create a table of the commands used for navigating the file system. You have to use code formatting in your markdown just like the example. Your table must include the following:**
+1. Create a file inside the `weekReports` directory that is located inside the cis106 directory. Name this file, `wr4.md` or `weekReport4.md`
+2. You will complete the week report inside the `wr4.md` file. Your report must contain 3 sections:
+#### Practice from the presentation The Linux File system:
+Complete all the Practice in the presentation **"The Linux File System"**. Take a screenshot of your terminal showing all the commands, or most of the commands, you used to complete each practice. Place all your screenshots in your week report 4 file. Make sure to label each practice. See this video for an example or click on this link to see an example of the week report 4. 
+#### The Linux File system directories and their purpose:
+Take screenshots of the directories in the linux file system and their purpose. These can be found in the presentation: The Linux File system.
+#### All the commands for navigating the filesystem 
+Create a table of all the commands we use for navigating the file system (ls, cd, and pwd). You have to use code formatting in your markdown just like the example. Your table must include the following:
    * The command, 
    * what the command does, 
    * the syntax/formula of how to use the commands, 
    * an example of the command in  use.
-> You can get all of that information from the [presentation.](https://rapurl.live/9b5)
+> You can get all of that information from the presentation The Linux File system.
 
 #### Example of how the table MUST look like:
 
@@ -46,9 +35,17 @@ If you are short in time, leave this part for last
 | apt     | Set of tools for managing deb packages | `sudo` + `apt` + `option` + `package name` | `sudo apt install vlc`  |
 | uname   | prints system information              | `uname` + `option`                         | `uname -a`              |
 
-4. **From The presentation, include the following:**
-* The summary must include the following:
-* Definitions of the following terms
+### Here is how the above example looks like in markdown for reference:
+
+```
+| Command | What it does                           | Syntax                                     | Example                 |
+| ------- | -------------------------------------- | ------------------------------------------ | ----------------------- |
+| echo    | Display text to the screen             | `echo` + `option` + `text to display`      | `echo -n "Hello World"` |
+| apt     | Set of tools for managing deb packages | `sudo` + `apt` + `option` + `package name` | `sudo apt install vlc`  |
+| uname   | prints system information              | `uname` + `option`                         | `uname -a`              |
+```
+### Basic terminology
+Include definitions of the following terms
    * File system
    * Current directory
    * parent directory
@@ -56,7 +53,6 @@ If you are short in time, leave this part for last
    * pathname
    * relative path
    * absolute path
-   * A bulleted list of all the commands are used for navigating the filesystem.
 
 ### 4. Complete [lab 4: the linux fs](https://cis106.com/labs/lab4/). 
 Please do these after you complete the Week report! Trust me, it is better this way.

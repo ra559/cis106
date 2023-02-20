@@ -1,0 +1,224 @@
+<h1 id="web-server-project-deliverable-2">Web Server Project Deliverable 2</h1>
+
+<h2 id="part-1-virtual-machine">Part 1 Virtual Machine</h2>
+
+<p>Create a virtual machine that meets the following specifications:</p>
+
+<ul>
+  <li>CPU: 1 Core</li>
+  <li>RAM: 1 GB</li>
+  <li>HDD: 10 GB</li>
+</ul>
+
+<p>These are the recommended system requirements for Ubuntu Server 22.04.
+<img src="/assets/ubuntu-server-vm-settings.png" alt="Ubuntu Server VM Settings" /><br /></p>
+
+<h2 id="part-2-install-ubuntu-server">Part 2 Install Ubuntu Server</h2>
+<h3 id="step-1">Step 1</h3>
+<p><img src="/assets/step1-grub.png" alt="Step 1" /><br /></p>
+<h3 id="step-2">Step 2</h3>
+<p><img src="/assets/step-2-language-select.png" alt="Step 2" /><br /></p>
+<h3 id="step-3">Step 3</h3>
+<p><img src="/assets/step-3-update-installer.png" alt="Step 3" /><br />
+<em>Select</em> <strong>Update to the new installer</strong>. This will update the Ubuntu installer and proceed with the installation.</p>
+<h3 id="step-4">Step 4</h3>
+<p><img src="/assets/step-4-keyboard-select.png" alt="Step 4" />
+This step will automatically select the language layout of your keyboard. If for whatever reason it is different than what your physical keyboard has, then manually adjust it.</p>
+<h3 id="step-5">Step 5</h3>
+<p><img src="/assets/Step-5-install-type.png" alt="Step 5" /><br />
+Choose the default Ubuntu Server installation. We will need some of the repositories in the default installation.</p>
+<h3 id="step-6">Step 6</h3>
+<p><img src="/assets/step-6-ip-address.png" alt="Step 6" /><br />
+Since we are installing Ubuntu in a virtual machine that at the moment is configured to have a NAT network interface card, as long as your host PC has internet connection, you should automatically get an IP address. If you don’t, something is wrong with your VM, Host Machine, or Internet Connection.</p>
+<blockquote>
+  <p>Note: If you are doing this project in the school’s network, be aware that the school’s routers are configured to block Bridged Ethernet adapters.</p>
+  <h3 id="step-7">Step 7</h3>
+  <p><img src="/assets/step-7-proxy.png" alt="Step 7" /><br />
+Leave this part empty as we are not using a proxy.</p>
+  <h3 id="step-8">Step 8</h3>
+  <p><img src="/assets/step-8-mirror.png" alt="step 8" /><br />
+We will use the default mirror so there is no need to change this</p>
+</blockquote>
+
+<h3 id="step-9">Step 9</h3>
+<p><img src="/assets/step-9-disk.png" alt="Step 9" /><br />
+This step is to format our disk. Here we will select the entire disk. To move around here use either the arrow keys or the tab key.</p>
+
+<h3 id="step-10">Step 10</h3>
+<p><img src="/assets/step-10-confirm-disk.png" alt="Step 10" /><br />
+<img src="/assets/step-10-1-confirm-disk.png" alt="Step 10.1" /><br />
+This step is just to let you know the changes that will be made to the server’s virtual hard drive.</p>
+<h3 id="step-11">Step 11</h3>
+<p><img src="/assets/step-11-server-info.png" alt="Step 11" /><br />
+Here you will enter the information about your computer. Write this information down because you will needed it later.</p>
+<h3 id="step-12">Step 12</h3>
+<p><img src="/assets/step-12-ssh.png" alt="Step 12" /><br />
+It is a good idea to install ssh now as we will use it later on. Do not import SSH keys. We will do that manually later.</p>
+<h3 id="step-13">Step 13</h3>
+<p><img src="/assets/step-13-services.png" alt="Step 13" /><br />
+Do not select these services. We won’t be using them.</p>
+<h3 id="step-14">Step 14</h3>
+<p><img src="/assets/step-14-installation.png" alt="Step 14" /><br />
+This is the installation process. Once it is done it will start updating the system. Once the update is done, it will ask you to reboot.</p>
+<h3 id="step-15">Step 15</h3>
+<p><img src="/assets/step-15-reboot-now.png" alt="Step 15" /><br /></p>
+<h3 id="step-16">Step 16</h3>
+<p><img src="/assets/step-16-press-enter.png" alt="Step 16" /><br />
+Here Just press enter. Virtualbox will unmount the installation disk for you</p>
+
+<h2 id="part-3-install-apache">Part 3 Install Apache</h2>
+<p>First, login to the server. You will need to type your username and password. Here is an example:
+<img src="/assets/loging-in-ubuntu-server.gif" alt="log in" /><br />
+Notice that the password is hidden while typing just like when you are typing it in the terminal emulator. Be aware that during the upgrade, Ubuntu will ask you to restart some services.</p>
+
+<p>Apache is available in Ubuntu’s default repositories. However, before we can start installing new packages, let’s update the system:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update; sudo apt upgrade -y
+</code></pre></div></div>
+<p><img src="/assets/update-ubuntu-server.gif" alt="Update Ubuntu" /><br /></p>
+
+<p>To install Apache use:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install apache2 -y
+</code></pre></div></div>
+<p><img src="/assets/install-apache.gif" alt="install apache" /><br />
+Be aware that here you will also need to restart some services here.</p>
+
+<h2 id="part-4-setup-ssh">Part 4 Setup SSH</h2>
+<h4 id="before-setup">Before Setup</h4>
+<p>Before we can setup SSH, we need to enable the firewall. Use this command:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ufw enable
+</code></pre></div></div>
+<p>Now lets configure ufw to allow Apache and SSH traffic:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ufw allow 'Apache'
+sudo ufw allow 'OpenSSH'
+</code></pre></div></div>
+<p>Now check the status of the firewall:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ufw status
+</code></pre></div></div>
+<p><img src="/assets/firewallcheck.gif" alt="firewall" /><br /></p>
+
+<p>Now lets check the status of Apache and SSH to make sure they are running:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl status apache2 --no-pager
+systemctl status ssh --no-pager
+</code></pre></div></div>
+<p>Both commands should return <code class="language-plaintext highlighter-rouge">active (running)</code> if they do not, restart the services with the command:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl restart apache2 ssh
+</code></pre></div></div>
+<p><img src="/assets/service-status-check.gif" alt="service status check" /><br /></p>
+
+<h3 id="change-the-network-adapter">Change the Network Adapter</h3>
+<p><strong>Follow these steps:</strong></p>
+<ol>
+  <li>Turn off the server virtual machine using this command: <br /><code class="language-plaintext highlighter-rouge">sudo shutdown now</code></li>
+  <li>Change the server network adapter configuration from NAT to Bridge. 
+<img src="/assets/networkadapter.png" alt="Network Adapter" /><br />
+    <blockquote>
+      <p>However, there is a chance that using a bridge adapter won’t work for you. Some IDS (Instruction Detection Systems) and smart routers may prevent you from getting an Ip Address if your Network Adapter is bridge. In this case, you need to use <a href="https://learn.g2.com/port-forwarding">port forwarding</a> in your virtual machine. Here is an example:</p>
+    </blockquote>
+  </li>
+</ol>
+
+<p><img src="/assets/portforwardingvirtualbox.png" alt="portforwarding" /><br /></p>
+
+<h3 id="connect-with-ssh">Connect with SSH</h3>
+<p><img src="https://docs.google.com/drawings/d/e/2PACX-1vTQha8cbvbsKtr6D7fqbP3CZ64F9sFTVqWpxEwvpJfg5VymCf5a6rutXUkzd3R3CTFSS9JXBt4BmOU-/pub?w=502&amp;h=200" alt="ssh connection" /><br /></p>
+
+<p><strong>Follow these steps:</strong></p>
+<ol>
+  <li>Make sure SSH is installed in both the client and the server: <br /> <code class="language-plaintext highlighter-rouge">sudo apt install openssh -y</code></li>
+  <li>In the server, the SSH service must be already running, if it is not running, use this command to enable it and start it: <br /><code class="language-plaintext highlighter-rouge">sudo systemctl enable ssh; sudo systemctl start ssh</code></li>
+  <li>You will need to get the IP address of the server. Use this command to get the IP address: <code class="language-plaintext highlighter-rouge">hostname -I</code>. Additionally, you can setup a static IP address in your server. Here is a guide on how to do it. If you are doing this project in your laptop, I advise to stay away from setting up static IP addresses.</li>
+  <li>On the client computer use this command:<br /><img src="https://rapurl.live/7ge" alt="ssh syntax" /><br />
+<img src="/assets/ssh-with-titles.gif" alt="ssh connection" /></li>
+  <li>If you are using port forwarding, your command would be:<br /><code class="language-plaintext highlighter-rouge">ssh -p 2222 username@127.0.0.1</code></li>
+</ol>
+
+<h3 id="setup-private-and-public-key-authentication-with-or-without-password-optional">Setup private and public key authentication with or without password (optional)</h3>
+<ol>
+  <li>On the server, configure the firewall to accept ssh connections.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ufw allow ssh
+sudo ufw enable
+sudo ufw status
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Now we need to generate an ssh key in our client computer:
+In your client machine type:<br /><code class="language-plaintext highlighter-rouge">ssh-keygen</code>
+Now you can type this command to copy your ssh key to the server:<br /><code class="language-plaintext highlighter-rouge">ssh-copy-id -i .ssh/id_rsa.pub webmaster@server-ip-address</code></p>
+  </li>
+  <li>if you use port forwarding your command will be:<br /><code class="language-plaintext highlighter-rouge">ssh-copy-id -p 2222 username@127.0.0.1</code></li>
+  <li>Now you can connect to your server without having to remember the password.</li>
+</ol>
+
+<h2 id="part-5-setup-virtual-hosts">Part 5 Setup virtual hosts</h2>
+<p>Virtual host allows us to serve more than one website in a single web server. By default, Apache has one server block enabled. This server block is served from the directory: <code class="language-plaintext highlighter-rouge">/var/www/html</code>. For a single website, all the files are placed within this directory. When we setup virtual hosts, each site has its own directory. The recommendation is to leave the default <code class="language-plaintext highlighter-rouge">html</code> directory and for each site a new directory inside <code class="language-plaintext highlighter-rouge">/var/www</code>. In this project, we will have one virtual site called <code class="language-plaintext highlighter-rouge">myresume</code>. You are welcome to use a different name just remember to adjust every command where the word <code class="language-plaintext highlighter-rouge">myresume</code> is reference for your preferred website domain name.</p>
+
+<p><strong>Follow These Steps</strong></p>
+<ol>
+  <li>Create the directory for <code class="language-plaintext highlighter-rouge">myresume</code> as follows: <br /><code class="language-plaintext highlighter-rouge">sudo mkdir /var/www/myresume</code></li>
+  <li>Modify the ownership of <code class="language-plaintext highlighter-rouge">myresume</code> so that it is now owned by your user instead of root <br /><code class="language-plaintext highlighter-rouge">sudo chown -R $USER:$USER /var/www/myresume</code></li>
+  <li>Now let’s change the file permission so that the owner can read, write, and execute the files while granting only read and execute permissions to groups and others: <br /><code class="language-plaintext highlighter-rouge">sudo chmod -R 755 /var/www/myresume</code></li>
+  <li>Now lets create a simple html document to be served from our new virtual host. Create a document with the nano text editor called <code class="language-plaintext highlighter-rouge">index.html</code> in the <code class="language-plaintext highlighter-rouge">/var/www/myresume/</code> directory: <br /><code class="language-plaintext highlighter-rouge">sudo nano /var/www/myresume/index.html</code>.</li>
+  <li>Once the new document opens, type the following text:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Resume Website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;This is a sample document!&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div>
+
+<ol>
+  <li>Save and close the file when you are finished. You can do this by pressing <code class="language-plaintext highlighter-rouge">CTRL + X</code>, then <code class="language-plaintext highlighter-rouge">Y</code> and <code class="language-plaintext highlighter-rouge">ENTER</code>.</li>
+</ol>
+
+<blockquote>
+  <p><strong>NOTE:</strong>
+If you don’t want to use Nano, you can also do this in a single command</p>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo echo "&lt;html&gt;&lt;head&gt;&lt;title&gt;My Resume Website&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;This is a sample document!&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;" &gt; /var/www/myresume.index.html
+</code></pre></div>  </div>
+</blockquote>
+
+<p><img src="/assets/setup-virtual-host-1.gif" alt="setup virtual host 1" /><br /></p>
+
+<ol>
+  <li>Now we need to create a virtual host file so that this new content can be served. The default configuration is located in <code class="language-plaintext highlighter-rouge">/etc/apache2/sites-available/000-default.conf</code> However, we do not need to touch this file, we can instead create a new one as it is best practice. To create a new config file, we are going to use nano again: <br /><code class="language-plaintext highlighter-rouge">sudo nano /etc/apache2/sites-available/myresume.conf</code></li>
+  <li>Add the following text to the domain config file:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;VirtualHost *:80&gt;
+    ServerAdmin webmaster@localhost
+    ServerName myresume
+    ServerAlias www.myresume
+    DocumentRoot /var/www/myresume
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+&lt;/VirtualHost&gt;
+</code></pre></div></div>
+
+<ol>
+  <li>Save and close the file when you are finished. You can do this by pressing <code class="language-plaintext highlighter-rouge">CTRL + X</code>, then <code class="language-plaintext highlighter-rouge">Y</code> and <code class="language-plaintext highlighter-rouge">ENTER</code>.</li>
+  <li>Now enable the site with the following command: <br /><code class="language-plaintext highlighter-rouge">sudo a2ensite myresume.conf</code></li>
+  <li>Now lets disable the default domain:<br /><code class="language-plaintext highlighter-rouge">sudo a2dissite 000-default.conf</code></li>
+  <li>Before we can refresh the configuration, we need to add a configuration line to the <code class="language-plaintext highlighter-rouge">apache2.conf</code> file. Open the file in nano:<br /><code class="language-plaintext highlighter-rouge">sudo nano /etc/apache2/apache2.conf</code></li>
+  <li>Add the following line at the end of the file:<br /><code class="language-plaintext highlighter-rouge">ServerName 127.0.0.1</code></li>
+  <li>Save and close the file when you are finished. You can do this by pressing <code class="language-plaintext highlighter-rouge">CTRL + X</code>, then <code class="language-plaintext highlighter-rouge">Y</code> and <code class="language-plaintext highlighter-rouge">ENTER</code>.</li>
+  <li>Now you can test the configuration for errors:<br /><code class="language-plaintext highlighter-rouge">sudo apache2ctl configtest</code></li>
+  <li>The output of the command should look like this:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Syntax OK
+</code></pre></div></div>
+
+<ol>
+  <li>If there are no errors, restart Apache to apply the changes:<br /><code class="language-plaintext highlighter-rouge">sudo systemctl restart apache2</code><br />
+<img src="/assets/setup-virtual-host-2.gif" alt="Setup Virtual Host 2" /><br /></li>
+  <li>Now, if you open a web browser in your host computer and go the URL: <code class="language-plaintext highlighter-rouge">http://myresume</code> your <code class="language-plaintext highlighter-rouge">index.html</code> document should load.
+<img src="/assets/sample-site-preview.png" alt="sample site preview" /><br /></li>
+</ol>
+
