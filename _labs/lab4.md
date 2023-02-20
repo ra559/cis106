@@ -26,6 +26,7 @@ title: Lab 4 - The Linux FS
 3. What is your present working directory now?
 4. Change your present working directory to the root of the filesystem
 5. Change your present working directory to `/snap/firefox/`
+![lab 4.1](/assets/lab4-1.gif)<br>
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
 
 ### Using pwd and cd with a relative path (remember to use the bash autocompletion feature)
@@ -34,14 +35,14 @@ title: Lab 4 - The Linux FS
 8. Go back 2 directories.
 9. Where are you now? 
 10. Change the working directory to the `Documents/` directory.
-
+![lab 4.1.1](/assets/lab4-1-1.gif)<br>
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 6-10.**
 
 <hr>
 
 ## Question 2 | The ls command
 Download this compressed zip file: [lab4files.zip](/assets/lab4files.zip) Decompress the zip file in **your home** directory.
-
+![lab 4 2.1](/assets/lab4-2-1.gif)<br>
 1. Change your present working directory to `/usr/share/`. Using absolute path, list all the files inside the `lab4files` directory.
 2. Change your present working directory to `~/lab4files`. Long list all the files inside your current working directory with human readable file sizes.
 3. Long list all the files inside `lab4files` with human readable file size, and sorted by file size.
@@ -54,12 +55,8 @@ Download this compressed zip file: [lab4files.zip](/assets/lab4files.zip) Decomp
 
 
 ## Question 3 | The tree and exa command (Optional Question. No submission required)
-> *The tree and exa commands are not installed by default in Ubuntu. Make sure that the program is installed in your system before you continue with this question.*
-> *If you are using an earlier version of Ubuntu, Exa is not available in the default repositories. However, you can install it by running this command:*
-> ```
-> curl https://cis106.com/assets/installexa.sh | bash
-> ```
 
+![lab 4 3.1](/assets/lab4-3.gif)<br>
 1. Using absolute path and having `/etc` as your present working directory. Display a tree of the directory `lab4files`.
 2. Change your present working directory to your `Downloads` directory. Display a tree of the directory `lab4files` with the full path prefix for each file, the file permissions, and the file size in human readable format.
 3. Display a tree of the directory `lab4files` sorted by last modified time and showing the file owner and group. 
@@ -91,14 +88,14 @@ Use this image as a visual aid during this question
 
 ## Question 5 | Challenge Question 2
 
-1. Go to the root of the filesystem. From there reach the Downloads directory.
+1. Go to the root of the filesystem. From there reach the `Downloads` directory.
    1. **Rules:**
       1. You are only allowed to move 1 directory at the time. Which means you cannot use shortcuts or absolute path
       2. Once you have reached the Downloads directory, show the absolute path of your current/present working directory.
       3. Take a screenshot of your terminal showing all the commands you use to solve this sub question.
 >**Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer question**
 
-2. Change your present working directory to /usr/share/themes/Adwaita. From there reach your Documents directory. 
+2. Change your present working directory to `/usr/share/themes/Adwaita`. From there reach your Documents directory. 
    1. **Rules:**
       1. You are allowed to move more than 2 directories at a time.
       2. You can use shortcuts or use absolute paths.
