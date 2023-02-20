@@ -7,7 +7,7 @@ title: Lab 4 - The Linux FS
 
 * Presentations:
   * [How to navigate the filesystem](https://rapurl.live/uz0)
-  * Video [here](https://www.youtube.com/@linuxworkshop6337)
+  * Video [here](https://youtu.be/GhNYOWEc5qc)
 
 > **Note:**
 > Questions 1 AND 2 are worth 50 points. Question 3 has no grade. Question 4 and 5 are worth 50 points. So each question here is worth 25 points. In the video, I only complete question 1, 2 and 3. You have to do question 4 and 5 on your own. Your final exam will include questions similar to 4 and 5. I will answer questions 4 and 5 during class after the due date for this lab full has expired. 
