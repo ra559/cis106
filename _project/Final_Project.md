@@ -20,10 +20,11 @@ Here are some sources you can use to investigate:
 * [Open Source Web Servers](https://rapurl.live/pkm)
 
 ## Deliverable 1: Project's Requirements
-> **Old Video with more details is available [here](https://youtu.be/F0DdCC5Lq3A)**
-> **Newer and shorter video is available [here](https://youtu.be/F0DdCC5Lq3A)**
+> **Old Video with more details is available [here](https://youtu.be/F0DdCC5Lq3A)** <br>
+> **Newer and shorter video is available [here](https://youtu.be/CYasEYqKq-s)**<br>
+> **[Image resize tool](https://www.simpleimageresizer.com/upload)<br>
 > **Example of how the deliverable should look like [here](https://rapurl.live/5d8)**
-For deliverable 1, we are going to accomplish the following tasks:
+For **deliverable 1**, we are going to accomplish the following tasks:
 1. Read the tutorial. Write down every concept you don't understand and research them.
 2. Answer The following questions:
 * What is a web server? Hardware and software side
