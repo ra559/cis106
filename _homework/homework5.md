@@ -1,6 +1,9 @@
-
-# Homework 5
-* Explanation [here](https://youtu.be/d5OX1FTa6ss)
+---
+layout: post
+title: Homework 5
+---
+# {{page.title}}
+* Explanation [here](https://youtu.be/d5OX1FTa6ss)
 ## Complete the following tasks
 ### 1. Weekly Report:
 Must include the following:
@@ -22,4 +25,4 @@ Must include the following:
       
 ### 2. Complete lab 5
 ### 3. Start working on your final project deliverable 1 
-### 4. Complete Discussion Board 3: The Rise of Open Source 
+
