@@ -41,7 +41,7 @@ title: Homework 3
             5. Provide 3 examples of Linux commands  
       5. [Managing Software](https://rapurl.live/nft)
          1. Your report must include the following:
-            1. Which command is uhttps://youtu.be/s8bbTrYZmN0sed for updating ubuntu
+            1. Which command is used for updating ubuntu
             2. Which command is used for installing software. Provide an example.
             3. Which command is used for removing software. Provide an example.
             4. Which command is used for searching for software. Provide an example.
