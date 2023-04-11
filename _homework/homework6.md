@@ -1,6 +1,8 @@
-
-
-# Homework 6
+---
+layout: post
+title: Homework 6
+---
+# {{page.title}}
 > *video (here)[https://youtu.be/5owUqgEzeUY]*
 ## Complete the following tasks
 1. Weekly Report (You have 10 days to complete this one):
@@ -11,5 +13,5 @@
             2. Practice 6
             3. Practice 7
       2. Brace expansion and how to use it. At least 3 examples
-2. Complete lab 6 (You have 10 days to complete this)
-3. Complete Deliverable 1 (You have 2 weeks to do this one)
+2. Complete lab 6 
+3. Complete Deliverable 1 
