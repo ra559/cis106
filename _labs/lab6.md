@@ -1,6 +1,9 @@
+---
+layout: post
+title: Lab  - Wildcards
+---
 
-
-# Lab 6 | File Globing/wildcards
+# {{page.title}}
 
 ## A Brief description of the wildcards.
 
