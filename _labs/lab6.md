@@ -3,7 +3,7 @@ layout: post
 title: Lab  - Wildcards
 ---
 
-# {{page.title}}
+#{{page.title}}
 
 ## A Brief description of the wildcards.
 
