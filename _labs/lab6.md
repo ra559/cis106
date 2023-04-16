@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lab  - Wildcards
+title: Lab 6 - Wildcards
 ---
 
 # {{page.title}}
