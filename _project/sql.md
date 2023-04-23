@@ -4,7 +4,7 @@ title: Install MySQL Ubuntu 22.04
 ---
 
 ## README
-> This tutorial was made upon requests. The purpose of this tutorial is to show students that are transitining to linux how to install, manage, and run basic queiries using Linux.  I made this tutorial because the school only teaches mysql on windows and since some of my students want to use Linux as their main operating system it will help them get started by covering the part that is normally skipped in the database course in the colege. This tutorial is not a comprehensive guide and full disclousure, I am not good with mysql. My knowledge goes as far as installation, connection and simple queiries However, if you have a question, I will do my best to help you get the answers you need.  If you find any erros in this tutorial please let me know so we can keep it up to date!
+> This tutorial was made upon requests. The purpose of this tutorial is to show students that are transitioning to linux how to install, manage, and run basic queries using Linux.  I made this tutorial because the school only teaches mysql on windows and since some of my students want to use Linux as their main operating system it will help them get started by covering the part that is normally skipped in the database course in the college. This tutorial is not a comprehensive guide and full disclosure, I am not good with mysql. My knowledge goes as far as installation, connection and simple queries However, if you have a question, I will do my best to help you get the answers you need.  If you find any errors in this tutorial please let me know so we can keep it up to date!
 
 ## Sources:
 > * [How To Install MySQL on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-22-04)
