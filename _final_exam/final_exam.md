@@ -1,12 +1,14 @@
-
+---
+layout: post
+title: Final Assignment
+---
 # {{page.title}}
 
 ## READ ME PLEASE!
 > * Complete this assignment before your final exam. 
 > * You must present this assignment before you start your exam.
-> * The due date is: **12/14 at 4:10 PM**
-> * I will personally ask for this assignment and grade it on site
-> * This is 20 points of your final. **DO NOT MISS IT!** 
+> * The due date is: **05/09 at 5:00 PM**
+> * This is 25 points of your final. **DO NOT MISS IT!** 
 > * Here is how the assignment is supposed to look like (incomplete BTW): [CLICK ME](https://github.com/linuxworkshop67/cis106f22/blob/main/final_exam_study/assigment.md)
 > Video [here](https://youtu.be/MAd9FlfTrxg)
 
@@ -34,7 +36,6 @@ For every command in this list, include the following:
 * touch
 * tr
 * tree
-* vim/nano
 
 <hr>
 
