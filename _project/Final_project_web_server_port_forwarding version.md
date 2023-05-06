@@ -198,6 +198,6 @@ Syntax OK
 
 17. If there are no errors, restart Apache to apply the changes:<br>`sudo systemctl restart apache2`<br>
 ![Setup Virtual Host 2](/assets/setup-virtual-host-2.gif)<br>
-18. Now, if you open a web browser in your host computer and go the URL: `http://myresume` your `index.html` document should load.
+18. Now, if you open a web browser in your host computer and go the URL: `http://localhost:8080/` your `index.html` document should load.
 ![sample site preview](/assets/sample-site-preview.png)<br>
 
