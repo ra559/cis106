@@ -30,47 +30,33 @@ Here you will find all the information for the course.
 * Access to a computer where Linux can be installed. The following are options:
   * A virtual machine (Preferred)
   * A laptop/Desktop computer that you can wipe.
-  * A Raspberry Pi 4 or other capable single board computer
 * Access to Blackboard
 * A Github account
 * A Text editor. We will be using [VS Code](https://code.visualstudio.com/) but you can use whatever you want
 * 2 Hours of study time
-* Capable to adjust to fast paced course
+* Capable of adjusting to fast paced course
 * **For virtualization**
   * A decent PC that meets or exceeds these requirements:
     * Quad-Core Processor or modern Dual-Core Processor 2.5 Ghz
     * 8 Gb of RAM
-    * Windows 10/11 or MacOS 
+    * Windows 10/11
     * 100 Gb of free space
 * **Knowledge of the following**
   * Basic components of a personal computer
-    * Basic usage of a persona computer
+    * Basic usage of a personal computer
     * Internet browsing
     * Reading emails
     * Chat Applications
     * Office Productivity Suites (MS Office, Google Docs, etc)
     * Install/Remove Software
     * Difference between web browser, the internet, and a search engine
-> Not knowing this things does not mean you will fail the course. It means that you will have to spend extra time studying for the course.
+> Not knowing this things does not mean you will fail the course. It means that you will have to spend extra time studying.
  
 ## Advice
-If you find that the content of the course is too much or that you have too many gaps in your knowledge, I suggest that you take this course after CIS 180 and CIS 116. 
-
-## Advice 2
-If you do not have a decent computer (one that can be used for virtualization) you will have a very poor experience in this course. For this reason, I have alocated a computer in the lab (H311) that you can use. You will need to contact me ahead of time so I can setup a user for you. 
+* If you find that the content of the course is too much or that you have too many gaps in your knowledge, I suggest that you take this course after CIS 180 and CIS 116. 
+* If you do not have a decent computer (one that can be used for virtualization) you will have a very poor experience in this course. For this reason, I have alocated a computer in the lab (H311) that you can use. You will need to contact me ahead of time so I can setup a user for you. 
 
 # Resources
-
-  * Snapshots:
-    1. After installation and update
-    2. After installation of basic software:
-  * Virtual Machine Specs:
-    * Hard drive: 50GB
-    * RAM: 2GB
-    * CPU: 2 cores
-    * Video Graphics: 128MB
-    * Audio controller: N/A
-    * Network Card: 1 NAT Card
 * **Books** 
   * [The Linux Command Line By William Shotts](https://bit.ly/34Og1Bp)
   * [Raspberry Pi Beginner's Guide 4th Edition](http://bit.ly/34QaA4O) 
@@ -81,3 +67,4 @@ If you do not have a decent computer (one that can be used for virtualization) y
   * [Github Markdown Syntax Cheat sheet](https://bit.ly/3p3WLIp)
   * [Github Markdown syntax official documentation](http://bit.ly/3pvKZpE) 
   * [Git Cheat sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
+  * [Linux cheat sheets](https://github.com/ra559/linux_cheat_sheets/tree/main)
