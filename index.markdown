@@ -17,8 +17,8 @@ Here you will find all the information for the course.
 * Managing Resources in the Linux networking environment.
 * Understanding of virtualization with Virtualbox
 * Understanding of Markdown and proper documentation techniques
-## Technologies Learned/Used 
 
+## Technologies Learned/Used 
 * [**Ubuntu:**](https://ubuntu.com/)  is the modern, open source operating system on Linux for the enterprise server, desktop, cloud, and IoT.
 * [**VirtualBox:**](https://www.virtualbox.org/)  is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use. 
 * [**Markdown:**](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language for creating formatted text using a plain-text editor.
@@ -26,7 +26,6 @@ Here you will find all the information for the course.
 * [**VS Code:**](https://code.visualstudio.com/) is a code editor redefined and optimized for building and debugging modern web and cloud applications.
 
 ## Requirements
-
 * Access to a computer where Linux can be installed. The following are options:
   * A virtual machine (Preferred)
   * A laptop/Desktop computer that you can wipe.
@@ -56,7 +55,7 @@ Here you will find all the information for the course.
 * If you find that the content of the course is too much or that you have too many gaps in your knowledge, I suggest that you take this course after CIS 180 and CIS 116. 
 * If you do not have a decent computer (one that can be used for virtualization) you will have a very poor experience in this course. For this reason, I have alocated a computer in the lab (H311) that you can use. You will need to contact me ahead of time so I can setup a user for you. 
 
-# Resources
+## Resources
 * **Books** 
   * [The Linux Command Line By William Shotts](https://bit.ly/34Og1Bp)
   * [Raspberry Pi Beginner's Guide 4th Edition](http://bit.ly/34QaA4O) 
