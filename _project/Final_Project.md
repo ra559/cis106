@@ -65,23 +65,26 @@ To demonstrate the completion of deliverable 1, the student needs to submit a ma
 
 Follow this guide to install Ubuntu Server and Apache. After completing the installation, answer the following questions. You must **type your answer and take screenshots** of the commands and their output.
 
-1. What is the IP address of your Ubuntu Server Virtual Machine?
-2. How do you enable the Ubuntu Firewall?
-3. How do you check if the Ubuntu Firewall is running?
-4. How do you disable the Ubuntu Firewall?
-5. How do you add Apache to the Firewall?
-6. What is the command you used to install Apache?
-7. What is the command you use to check if Apache is running?
-8. What is the command you use to stop Apache?
-9. What is the command you use to restart Apache?
-10. What is the command used to test Apache configuration?
-11. What is the command used to check the installed version of Apache?
+1. What are the server hardware specifications (virtual machine settings)? **Take a screenshot - don't type it!**
+2. What is Ubuntu server log in screen? **Take screenshot - do not type it!**
+3. What is the IP address of your Ubuntu Server Virtual Machine?
+4. How do you enable the Ubuntu Firewall?
+5. How do you check if the Ubuntu Firewall is running?
+6. How do you disable the Ubuntu Firewall?
+7. How do you add Apache to the Firewall?
+8. What is the command you used to install Apache?
+9. What is the command you use to check if Apache is running?
+10. What is the command you use to stop Apache?
+11. What is the command you use to restart Apache?
+12. What is the command used to test Apache configuration?
+13. What is the command used to check the installed version of Apache?
 <br>
 > Reviewing logs is an essential part of system administration; read the tutorial **"How To Troubleshoot Common Apache Errors"**. After you have finished reading the tutorial, answer the following questions:
 <br>
 
 1. What are the most common commands to troubleshoot Apache errors? Provide a brief description of each command.
 2. Which are Apache Log Files, and what are they used for? Provide examples and screenshots.
+
 
 To demonstrate the completion of deliverable 2, the student must submit a markdown and pdf file where all the questions are answered. Here you can find an example of how the document should look like.
 
