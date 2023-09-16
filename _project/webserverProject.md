@@ -162,7 +162,7 @@ Virtual host allows us to serve more than one website in a single web server. By
 ```
 <html>
     <head>
-        <title>My Resume Website</title>
+        <title>My First Website</title>
     </head>
     <body>
         <h1>This is a sample document!</h1>
@@ -172,12 +172,15 @@ Virtual host allows us to serve more than one website in a single web server. By
 
 6. Save and close the file when you are finished. You can do this by pressing `CTRL + X`, then `Y` and `ENTER`.
 
+<hr>
 
 > **NOTE:**
 > If you don't want to use Nano, you can also do this in a single command
-> ```
-> sudo echo "<html><head><title>My Resume Website</title></head><body><h1>This is a sample document!</h1></body></html>" > /var/www/mywebsite.index.html
-> ```
+```
+sudo curl https://cis106.com/assets/basic.html -o /var/www/mywebsite/index.html
+```
+<hr>
+
 
 
 ![setup virtual host 1](/assets/setup-virtual-host-1.gif)<br>
