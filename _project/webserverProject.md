@@ -150,13 +150,13 @@ Now you can type this command to copy your ssh key to the server:<br>`ssh-copy-i
 4. Now you can connect to your server without having to remember the password.
 
 ## Part 5 Setup virtual hosts
-Virtual host allows us to serve more than one website in a single web server. By default, Apache has one server block enabled. This server block is served from the directory: `/var/www/html`. For a single website, all the files are placed within this directory. When we setup virtual hosts, each site has its own directory. The recommendation is to leave the default `html` directory and for each site a new directory inside `/var/www`. In this project, we will have one virtual site called `myresume`. You are welcome to use a different name just remember to adjust every command where the word `myresume` is reference for your preferred website domain name.  
+Virtual host allows us to serve more than one website in a single web server. By default, Apache has one server block enabled. This server block is served from the directory: `/var/www/html`. For a single website, all the files are placed within this directory. When we setup virtual hosts, each site has its own directory. The recommendation is to leave the default `html` directory and for each site a new directory inside `/var/www`. In this project, we will have one virtual site called `mywebsite`. You are welcome to use a different name just remember to adjust every command where the word `mywebsite` is reference for your preferred website domain name.  
 
 **Follow These Steps**
-1. Create the directory for `myresume` as follows: <br>`sudo mkdir /var/www/myresume`
-2. Modify the ownership of `myresume` so that it is now owned by your user instead of root <br>`sudo chown -R $USER:$USER /var/www/myresume`
-3. Now let's change the file permission so that the owner can read, write, and execute the files while granting only read and execute permissions to groups and others: <br>`sudo chmod -R 755 /var/www/myresume`
-4. Now lets create a simple html document to be served from our new virtual host. Create a document with the nano text editor called `index.html` in the `/var/www/myresume/` directory: <br>`sudo nano /var/www/myresume/index.html`.
+1. Create the directory for `mywebsite` as follows: <br>`sudo mkdir /var/www/mywebsite`
+2. Modify the ownership of `mywebsite` so that it is now owned by your user instead of root <br>`sudo chown -R $USER:$USER /var/www/mywebsite`
+3. Now let's change the file permission so that the owner can read, write, and execute the files while granting only read and execute permissions to groups and others: <br>`sudo chmod -R 755 /var/www/mywebsite`
+4. Now lets create a simple html document to be served from our new virtual host. Create a document with the nano text editor called `index.html` in the `/var/www/mywebsite/` directory: <br>`sudo nano /var/www/mywebsite/index.html`.
 5. Once the new document opens, type the following text:
 
 ```
@@ -176,28 +176,28 @@ Virtual host allows us to serve more than one website in a single web server. By
 > **NOTE:**
 > If you don't want to use Nano, you can also do this in a single command
 > ```
-> sudo echo "<html><head><title>My Resume Website</title></head><body><h1>This is a sample document!</h1></body></html>" > /var/www/myresume.index.html
+> sudo echo "<html><head><title>My Resume Website</title></head><body><h1>This is a sample document!</h1></body></html>" > /var/www/mywebsite.index.html
 > ```
 
 
 ![setup virtual host 1](/assets/setup-virtual-host-1.gif)<br>
 
-7. Now we need to create a virtual host file so that this new content can be served. The default configuration is located in `/etc/apache2/sites-available/000-default.conf` However, we do not need to touch this file, we can instead create a new one as it is best practice. To create a new config file, we are going to use nano again: <br>`sudo nano /etc/apache2/sites-available/myresume.conf`
+7. Now we need to create a virtual host file so that this new content can be served. The default configuration is located in `/etc/apache2/sites-available/000-default.conf` However, we do not need to touch this file, we can instead create a new one as it is best practice. To create a new config file, we are going to use nano again: <br>`sudo nano /etc/apache2/sites-available/mywebsite.conf`
 8. Add the following text to the domain config file:
 
 ```
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
-    ServerName myresume
-    ServerAlias www.myresume
-    DocumentRoot /var/www/myresume
+    ServerName mywebsite
+    ServerAlias www.mywebsite
+    DocumentRoot /var/www/mywebsite
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
 
 9. Save and close the file when you are finished. You can do this by pressing `CTRL + X`, then `Y` and `ENTER`.
-10. Now enable the site with the following command: <br>`sudo a2ensite myresume.conf`
+10. Now enable the site with the following command: <br>`sudo a2ensite mywebsite.conf`
 11. Now lets disable the default domain:<br>`sudo a2dissite 000-default.conf`
 12. Before we can refresh the configuration, we need to add a configuration line to the `apache2.conf` file. Open the file in nano:<br>`sudo nano /etc/apache2/apache2.conf`
 13. Add the following line at the end of the file:<br>`ServerName 127.0.0.1`
@@ -211,7 +211,7 @@ Syntax OK
 
 17. If there are no errors, restart Apache to apply the changes:<br>`sudo systemctl restart apache2`<br>
 ![Setup Virtual Host 2](/assets/setup-virtual-host-2.gif)<br>
-18. Now, if you open a web browser in your host computer and go the URL: `http://myresume` your `index.html` document should load.
+18. Now, if you open a web browser in your host computer and go the URL: `http://mywebsite` your `index.html` document should load.
 19. If `httpL//`
 ![sample site preview](/assets/sample-site-preview.png)<br>
 
