@@ -214,7 +214,6 @@ Syntax OK
 
 17. If there are no errors, restart Apache to apply the changes:<br>`sudo systemctl restart apache2`<br>
 ![Setup Virtual Host 2](/assets/setup-virtual-host-2.gif)<br>
-18. Now, if you open a web browser in your host computer and go the URL: `http://mywebsite` your `index.html` document should load.
-19. If `httpL//`
+1.  Now, if you open a web browser in your host computer and go the URL: `http://ip.address.of.your.server/` your `index.html` document should load.
 ![sample site preview](/assets/sample-site-preview.png)<br>
 
