@@ -138,7 +138,7 @@ Using the command line, look for a software to do each of the following tasks an
 | Read your email     |              |         |
 | Play music          |              |         |
 ```
-> Take a screenshot of each application open.
+> for this question, only the completed table is required. No screenshots here.
 
 <hr>
 
