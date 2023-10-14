@@ -12,6 +12,11 @@ title: The Linux FS
 >  You can install Ulauncher with the following command: `sudo add-apt-repository ppa:agornostal/ulauncher && sudo apt update && sudo apt install ulauncher`<br>
 
 > ***All The videos [here](https://www.youtube.com/playlist?list=PL5lh7Nw87hufz3zTPu8XYGi9frBwZBPZN)***<br>
+## Other Review Videos:
+* [REVIEW 4: The LS command and Practice](https://www.youtube.com/watch?v=FhXQHSIeyMI)
+* [Linux Tutorials | The ls command | GeeksforGeeks](https://www.youtube.com/watch?v=C1btVko0CVE)
+* [How to Use The ls Command on the Linux Command Line](https://www.youtube.com/watch?v=43hcVCt_GMc)
+
 
 ## Question 1
 1. Use the cd command to reach the following directories:
