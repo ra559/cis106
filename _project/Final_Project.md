@@ -57,6 +57,8 @@ To demonstrate the completion of deliverable 1, the student needs to submit a ma
 
 ## Deliverable 2 Installing Ubuntu Server And Apache
 
+> *Video:[Deliverable 2 Latest Video 0-100!](https://youtu.be/6L0OXwMT-tg)
+
 ### Resources:
 * [Apache Commands You Should know](https://linuxize.com/post/apache-commands-you-should-know/)
 * [IP Command With Examples](https://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/)
@@ -89,6 +91,8 @@ Follow this guide to install Ubuntu Server and Apache. After completing the inst
 To demonstrate the completion of deliverable 2, the student must submit a markdown and pdf file where all the questions are answered. Here you can find an example of how the document should look like.
 
 ## Deliverable 3 Hosting a simple website
+
+> *Video*:[Deliverable 3 Latest Video 0-100!](https://youtu.be/3MRK9zbBcQY)
 
 For this deliverable, you have 2 options; Pick one! 
 

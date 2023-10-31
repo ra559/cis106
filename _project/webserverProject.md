@@ -5,6 +5,8 @@ title: Web Server Project Deliverable 2
 
 # {{page.title}}
 
+> *Video*:[Deliverable 2 Latest Video 0-100!](https://youtu.be/6L0OXwMT-tg)
+
 ## Part 1 Virtual Machine
 
 Create a virtual machine that meets the following specifications:
