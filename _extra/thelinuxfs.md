@@ -57,9 +57,6 @@ Special characters are function like commands that tell the shell to perform a s
   * **$OLDPWD** = stores the absolute path of the previous current working directory 
   
 
-
-
-
 <hr>
 
 ## Commands to navigate the linux filesystem
@@ -84,12 +81,22 @@ To navigate the linux filesystem, you only need to master 3 commands: `cd`, `pwd
 * **Formula**
   * `cd` + `destination absolute path or relative path`
 * **Examples**
-  * Go to your home directory:
-    * `cd`
+  * Go (change your current directory) to your home directory (there is more than 1 way of doing this):
+    * `cd` (without any arguments, cd will take you home)
+    * `cd ~` (using the ~ special character. as ~ will expand to the absolute path of the user's home directory)
+    * `cd $HOME` (using the $HOME environment variable)
+    * `cd /home/$USER/Downloads` (using $USER environment variable in the path)
   * Go to a specified directory with absolute path:
     * `cd /usr/share/themes`
-  * Go to a specified directory assuming your current working directory is `/home`
+  * Go to a specified directory with relative path assuming your current working directory is `/home`
     * `cd maria53/Downloads/`
+  * Go to the previous working directory. This is useful when you are working with 2 directories located far in the directory tree
+    * `cd -`
+
+<p align="center">
+  <img src="/assets/review_assets/cd.png" alt="parent vs child directory"/>
+</p>
+
 
 
 ### LS
