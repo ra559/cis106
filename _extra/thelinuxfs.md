@@ -103,26 +103,22 @@ To navigate the linux filesystem, you only need to master 3 commands: `cd`, `pwd
 </p>
 
 #### Practice CD command:
-Try to complete these tasks without looking at the solution.
-
-##### Solutions
-<button name="SolutionShow" onclick="show_func()">Show Solution</button>
-<div id='cd-practice' style="display:none" >
+Try to complete these tasks without looking at the solution. Use the image below as a reference:
 <p align="center">
-  <img src="/assets/review_assets/pwd.png" alt="parent vs child directory"/>
+  <img src="https://docs.google.com/drawings/d/e/2PACX-1vQAFHy4GbQxImY0iaylDWVYktGAnY6BJddDdTgABBJ9ykH2cwheY_XymAdYiIx4X85DL_JGCbWw7sxI/pub?w=1409&h=585" alt="parent vs child directory"/>
 </p>
 
-</div>
-<script>
-function show_fuc() {
-  var x = document.getElementById("cd-practice");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
+1. Using absolute path, go to the directory "`/user/share/themes/Adwaita`"
+2. Go back to your home directory. 
+3. Go back to the "`/user/share/themes/Adwaita`" using the - special character.
+4. Go to the root of the filesystem using the "`..`" special character.
+5. Go to your "`Downloads`" directory 1 directory at the time. Display/Print your present working directory once you have reached the "`Downloads`" directory.
+6. Go back to your home directory and then to the "`Pictures`" directory.
+
+##### Solution
+<button name="SolutionShow" onclick="var x = document.getElementById('cd-practice');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
+<p align="center" id='cd-practice'><img src="/assets/review_assets/cd_practice.png" alt="parent vs child directory"/></p>
+
 
 
 ### LS
