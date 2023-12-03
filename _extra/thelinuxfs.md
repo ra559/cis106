@@ -8,7 +8,7 @@ title: The Linux FS
 > ***All The videos [here](https://www.youtube.com/playlist?list=PL5lh7Nw87hufz3zTPu8XYGi9frBwZBPZN)***<br>
 ## Other Review Videos:
 * [REVIEW 4: The LS command and Practice](https://www.youtube.com/watch?v=FhXQHSIeyMI)
-* [Linux Tutorials | The ls command | GeeksforGeeks](https://www.youtube.com/watch?v=C1btVko0CVE)
+* [Linux Tutorials The ls command GeeksforGeeks](https://www.youtube.com/watch?v=C1btVko0CVE)
 * [How to Use The ls Command on the Linux Command Line](https://www.youtube.com/watch?v=43hcVCt_GMc)
   
 <p align="center">
@@ -17,6 +17,7 @@ title: The Linux FS
 
 ## Basic Concepts
 <hr>
+
 * **The root directory:** The first directory in the filesystem that contains the entire filesystem represented by "`/`".
 * **Current working directory:** Also known as the present working directory. It is the directory where you are currently working in. You are always working from a directory.
 * **Parent Directory:** a dirtectory containing one or more directories and files. 
@@ -32,6 +33,31 @@ title: The Linux FS
 * **Path name:** Also known as file path. This is the location of a given file in your computer. A path name can be absolute path or relative path.
 * **Absolute Path:** The location of a file starting at the root of the file system. For example, `/home/maria53/Downloads/list.txt` is the absolute path of the file `list.txt`. The advantage of absolute paths is that they can be used at any point of the file system regardless of your current directory. Any command that is given an absolute path will be able to find the file because it will start at the beginning of the filesystem. The disadvantage is that a command can be long to type if the file path is long.
 * **Relative Path:** The location of a file starting from a child directory of the current working directory or from the current directory itself. The advantage of using relative path is that typing commands is faster. The disadvantage of relative paths is that they cannot work from anywhere in the filesystem. In order for a relative path to work, a file must be reachable from the current directory onwards.  Another disadvantage of relative paths is that they require a better mental understanding of the linux filesystem in the sense that you must keep a mental image of the directory tree that you are working with. An example of a relative path would be `Downloads/list.txt` assuming that the current working directory is `/home/maria53`
+### Special characters:
+Special characters are function like commands that tell the shell to perform a specific action without having to type the complete command. These special characters make working on the command line more efficiently. Here is short list to keep in mind. 
+
+* **. (single period):** represents the current directory.
+* **.. (2 consecutive periods):** represents the parent directory.
+* **~ (tilde character):** expands the current users home directory. It is like a variable that the shell uses to store the absolute path of the user's home directory. This `~/Downloads` is the same as typing `/home/maria53/Downlods`
+* **/ (one forward slash):** as mentioned earlier, this is the root directory and the shortest path in the system. This is the beginning of the directory tree. There is nothing before it and everything after it. 
+* **- (hyphen-minus):** is used to move to the previous current working directory.
+* **# (hash or number sign):** This is used for single line comments in shell scripting. 
+* **! (single exclamation mark):** used for repeating a command from the history. For example `!5` will repeat the 5th command in the command history. To view the entire command history type `history`. 
+* **!! (2 consecutive exclamaton marks):** are used for repeating the previous command. For example, `!!` will repeat the previous command while, `sudo !!` will repeat the previous command but will add `sudo` at the beginning of the command. This is useful for times when we forget to type sudo when performing administrative tasks. 
+
+
+### Bash Environment Variables
+* **What is a variable?** 
+  * In programming, a variable is place to store data. A variable is like a box with a label. For example, if you a lot of pens in your desk and you place them in a box a label it pens, now the box store your pens. In programming a variable can be used to store temporary or permanent information that you will continuously reuse in your program. For example, `username='maria53'` the variable name now stores the value `maria`. When evener the programs need to access the maria's username, it can do it by referencing the variable `username`.
+* **What is an environment variable?**
+  * Environment variables store values of a user's environment and can be used in commands in the shell. These values can be unique to the user's environment which makes them ideal when writhing commands that you want to use regales of which user is using the computer. To see a list of your environment variables type `env`.  To use the value stored in an environment variable you must prepend the variable name with a `$`. Here are some useful environment variables:
+  * **$USER** = stores the current's user username
+  * **$HOME** = stores the absolute path of current's user home directory
+  * **$PWD** = stores the absolute path of the present working directory.
+  * **$OLDPWD** = stores the absolute path of the previous current working directory 
+  
+
+
 
 
 <hr>
@@ -53,15 +79,47 @@ To navigate the linux filesystem, you only need to master 3 commands: `cd`, `pwd
 </p>
 
 ### CD
+* **Usage**
+  * Changes the current working directory. In other words, it moves you from one directory to another. By default, it will always send you to your home directory.
+* **Formula**
+  * `cd` + `destination absolute path or relative path`
+* **Examples**
+  * Go to your home directory:
+    * `cd`
+  * Go to a specified directory with absolute path:
+    * `cd /usr/share/themes`
+  * Go to a specified directory assuming your current working directory is `/home`
+    * `cd maria53/Downloads/`
+
 
 ### LS
+* **Usage**
+  * 
+* **Formula**
+  * 
+* **Examples**
+  * 
 
 ### Tree
+* **Usage**
+  * 
+* **Formula**
+  * 
+* **Examples**
+  * 
 
 ### EXA
+* **Usage**
+  * 
+* **Formula**
+  * 
+* **Examples**
+  * 
 
 ### DIR
-
+* **Usage**
+* **Formula**
+* **Examples**
 
 ## Complementary commands to help you navigate the linux filesystem
 tree
