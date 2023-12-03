@@ -92,11 +92,37 @@ To navigate the linux filesystem, you only need to master 3 commands: `cd`, `pwd
     * `cd maria53/Downloads/`
   * Go to the previous working directory. This is useful when you are working with 2 directories located far in the directory tree
     * `cd -`
+  * Go to the previous directory in the directory tree. One directory above.
+    * `cd ../`
+  * Go to 2 directories above the directory tree
+    * `cd ../../`
+  
 
 <p align="center">
   <img src="/assets/review_assets/cd.png" alt="parent vs child directory"/>
 </p>
 
+#### Practice CD command:
+Try to complete these tasks without looking at the solution.
+
+##### Solutions
+<button name="SolutionShow" onclick="show_func()">Show Solution</button>
+<div id='cd-practice' style="display:none" >
+<p align="center">
+  <img src="/assets/review_assets/pwd.png" alt="parent vs child directory"/>
+</p>
+
+</div>
+<script>
+function show_fuc() {
+  var x = document.getElementById("cd-practice");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 
 
 ### LS
