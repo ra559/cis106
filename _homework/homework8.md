@@ -22,6 +22,6 @@ The week report must contain the following:
 4. Complete lab 8
 5. Watch the Videos 
    1. [Nano Text Editor Basics (pico) - How to Use Nano on Linux / Mac (Beginners Guide on Ubuntu 20.04)](https://www.youtube.com/watch?v=Jf0ZJZJ8jlI)
-   2. [How to Use Nano | Command Line Text Editor](https://www.youtube.com/watch?v=PDWHxh9HUF8)
+   2. [How to Use Nano  Command Line Text Editor](https://www.youtube.com/watch?v=PDWHxh9HUF8)
 6. Practice using the nano text editor.
 7. Download the vim cheat sheet to the cheatsheets directory inside your repository. 
