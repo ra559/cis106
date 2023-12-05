@@ -155,44 +155,60 @@ Try to complete these tasks without looking at the solution. Use the image below
     * `ls -lhgGr Documents/`
 
 #### Output of LS -L explained:
+
+<p align="center"><img src="/assets/review_assets/ls-l.png"/></p>
+
 ### Practice LS command:
-Try to complete these tasks without looking at the solution. Use the image below as a reference:
+Try to complete these tasks without looking at the solution. 
+1. Use this command to download some example files: <br>`curl https://raw.githubusercontent.com/ra559/cis106/main/exercisefiles/practice_ls.sh | bash`<br>
+2. The command above will create a directory in your home directory called `practicels` Here you will find 10 example files to practice ls. If the command above did not work, read the output carefully and try to fix it yourself. You can also download the zip file on your own. Read the basic script for the URL. 
+  
+<p align="center" style="display:block" ><img src="/assets/review_assets/ls_practice_0.png"/></p>
 
-<p align="center"><img src="/assets/review_assets/ls-l.png" alt="parent vs child directory"/></p>
+1. list all the files in the practice directory.
+2. long list all the files in the practice directory.
+3. long list all the files in the practice directory sorted by file size with human readable file sizes
+4. long list all the files in the practice directory sorted by file size with human readable file sizes and in reverse order.
+5. long list all the files in the practice directory without the group and owner, with human readable file sizes, sorted by file extension and with full time stamp. 
 
-<button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('cd-practice');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
-<p align="center" style="display:none" id='cd-practice'><img src="/assets/review_assets/cd_practice.png" alt="parent vs child directory"/></p>
 
 <button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('ls-practice');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
-<p align="center" style="display:none" id='ls-practice'><img src="/assets/review_assets/cd_practice.png" alt="parent vs child directory"/></p>
+<p align="center" style="display:none" id='ls-practice'><img src="/assets/review_assets/ls_practice.png"/></p>
+
  
 ### Tree
 * **Usage**
-  * 
+  * used to display a recursive directory listing (tree) of files.
 * **Formula**
-  * 
+  * `tree` + `option` + `directory`
 * **Examples**
-  * 
+  * Display a tree of the home directory
+    * `tree ~` or `tree $HOME` or `tree /home/$USER`
+  * Display a tree of a directory with file permissions
+    * `tree -p ~/practicels`
+  * Display a tree of a directory with the full path prefix, with the user and group owner, human readable file sizes, and the date of last modified.
+    * `tree -pughD ~/practicels/`
+
+<p align="center" style="display:block"><img src="/assets/review_assets/tree.png"/></p>
 
 ### EXA
 * **Usage**
-  * 
+  * Used the same way as ls. To list files and directories. Exa is a modern replacement for ls written in Rust. Exa is not installed by default. You will need to install it using your linux distribution package manager. 
 * **Formula**
-  * 
+  * `exa` + `option` + `directory`
 * **Examples**
-  * 
+  * list all files in a given directory in a single line
+    * `exa -1 ~/practicels`
+  * long list all the files  in a given directory
+    * `exa -l ~/practicels`
+  * long list all the files in a given directory with headers
+    * `exa -lh ~/practicels`
+  * list a directory in a tree like format
+    * `exa -T ~/practicels`
 
-### DIR
-* **Usage**
-* **Formula**
-* **Examples**
+<p align="center" style="display:block"><img src="/assets/review_assets/exa.png"/></p>
 
-## Complementary commands to help you navigate the linux filesystem
-tree
-exa
-dir
-
-
+<hr>
 
 ## Question 1
 1. Use the cd command to reach the following directories:
