@@ -56,6 +56,12 @@ Special characters are function like commands that tell the shell to perform a s
   * **$PWD** = stores the absolute path of the present working directory.
   * **$OLDPWD** = stores the absolute path of the previous current working directory 
   
+### Bash Tips:
+* **Tab Completion**: autocomplete a command/pathname by pressing the tab key
+* **Arrow keys**: allows you to move, edit, and repeat commands
+* **Ctrl + a**: go to the start of the command line
+* **Ctrl + e**: go to the end of the command line
+  * [Shortcut list](https://skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/  )
 
 <hr>
 
@@ -102,7 +108,7 @@ To navigate the linux filesystem, you only need to master 3 commands: `cd`, `pwd
   <img src="/assets/review_assets/cd.png" alt="parent vs child directory"/>
 </p>
 
-#### Practice CD command:
+### Practice CD command:
 Try to complete these tasks without looking at the solution. Use the image below as a reference:
 <p align="center">
   <img src="https://docs.google.com/drawings/d/e/2PACX-1vQAFHy4GbQxImY0iaylDWVYktGAnY6BJddDdTgABBJ9ykH2cwheY_XymAdYiIx4X85DL_JGCbWw7sxI/pub?w=1409&h=585" alt="parent vs child directory"/>
@@ -115,20 +121,51 @@ Try to complete these tasks without looking at the solution. Use the image below
 5. Go to your "`Downloads`" directory 1 directory at the time. Display/Print your present working directory once you have reached the "`Downloads`" directory.
 6. Go back to your home directory and then to the "`Pictures`" directory.
 
-##### Solution
 <button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('cd-practice');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
-<p align="center" id='cd-practice'><img src="/assets/review_assets/cd_practice.png" alt="parent vs child directory"/></p>
+<p align="center" style="display:none" id='cd-practice'><img src="/assets/review_assets/cd_practice.png" alt="parent vs child directory"/></p>
 
 
 
 ### LS
 * **Usage**
-  * 
+  * ls is used for listing files and directories. By default it will list the current directory when no directory is specified. Listing means to see what is inside a directory. 
 * **Formula**
-  * 
+  * `ls` + `option` + `directory to list`
 * **Examples**
-  * 
+  * See all the options of the ls command (extracted from the man page):
+    * `ls --help` 
+  * List the current directory:
+    * `ls`
+  * List all the files including hidden files in current directory:
+    * `ls -A`
+  * List all the files inside a given directory:
+    * `ls -A /usr/share/fonts/X11` (absolute path)
+    * `ls -A Documents/` (relative path assuming that the $PWD is $HOME)
+  * Long list a directory
+    * `ls -lA ~/Pictures`
+  * List a directory recursively
+    * `ls -R Documents/`
+  * Long list a directory only
+    * `ls -ld Documents/`
+  * List a directory sorted by last modified
+    * `ls -t Documents/`
+  * List a directory sorted by file size
+    * `ls -S Documents/`
+  * Long list a directory excluding group and owner information, with human readable file size and sorted in reverse order.
+    * `ls -lhgGr Documents/`
 
+#### Output of LS -L explained:
+### Practice LS command:
+Try to complete these tasks without looking at the solution. Use the image below as a reference:
+
+<p align="center"><img src="/assets/review_assets/ls-l.png" alt="parent vs child directory"/></p>
+
+<button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('cd-practice');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
+<p align="center" style="display:none" id='cd-practice'><img src="/assets/review_assets/cd_practice.png" alt="parent vs child directory"/></p>
+
+<button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('ls-practice');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
+<p align="center" style="display:none" id='ls-practice'><img src="/assets/review_assets/cd_practice.png" alt="parent vs child directory"/></p>
+ 
 ### Tree
 * **Usage**
   * 

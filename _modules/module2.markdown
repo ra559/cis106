@@ -11,8 +11,7 @@ title: Module 2 Using Ubuntu
 ## Lecture 5: Handling Text Files
 1. [Handling Text Files](https://rapurl.live/he6)
 2. [The Basics of Vim](https://rapurl.live/5mi)
-3. [Nano Editor Fundamentals](https://shorturl.at/jmrzE)
-4. [How to Use Nano on Linux / Mac](https://shorturl.at/svxD9)
+3. [How to Use Nano on Linux / Mac](https://shorturl.at/svxD9)
 
 ## Lecture 6: Permissions
 1. [File permissions](https://rapurl.live/ger)

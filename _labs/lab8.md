@@ -1,6 +1,8 @@
-
-
-# Lab 6 | Using VIM
+---
+layout: post
+title: Lab 8 - Using VIM
+---
+# {{page.title}}
 
 > Lab explanation video: https://youtu.be/V9etQNzVpvw
 
@@ -11,7 +13,7 @@
 > * Editing a file (working with vim multiple modes)
 > * Replacing text
 > * Vim search tools
-> Vim does a lot more than that, to a degree that a lot of Developers prefer to write code on VIM because its keyboard centric approach is a productivity enhancer. Once you learn VIM, you will hate every other text editor.~~~~
+> Vim does a lot more than that, to a degree that a lot of Developers prefer to write code on VIM because its keyboard centric approach is a productivity enhancer. Once you learn VIM, you will hate every other text editor.
 
 
 ## Question 
