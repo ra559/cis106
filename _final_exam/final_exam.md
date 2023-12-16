@@ -7,8 +7,8 @@ title: Final Assignment
 ## READ ME PLEASE!
 > * Complete this assignment before your final exam. 
 > * You must present this assignment before you start your exam.
-> * The due date is: **05/09 at 5:00 PM**
-> * This is 25 points of your final. **DO NOT MISS IT!** 
+> * The due date is: **Day of final exam at 5:40 PM**
+> * This is 20 points of your final. **DO NOT MISS IT!** 
 > * Here is how the assignment is supposed to look like (incomplete BTW): [CLICK ME](https://github.com/linuxworkshop67/cis106f22/blob/main/final_exam_study/assigment.md)
 > Video [here](https://youtu.be/MAd9FlfTrxg)
 
