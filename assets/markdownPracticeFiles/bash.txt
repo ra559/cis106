@@ -12,4 +12,3 @@ How to run a Bash Script
 Open a terminal window
 Navigate to the directory where you save your script
 Use the bash interpreter to run the script:
-bash script.sh
