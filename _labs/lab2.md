@@ -53,7 +53,9 @@ Follow these steps:
       - CPU: Quad core CPU
       - RAM: 8GB or More
       - Free Storage: 60GB or more
-![Warning](/assets/warning-icon.png) 
+  
+  <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+
  > If you do not meed these requirements but your computer is close enough, you may be able to complete the course material. The downside is that your computer will be extremely slow.
    
 If your computer meets or exceeds the above capabilities, then you need to check if virtualization is enabled. Follow [this guide](https://rapurl.live/vaj) to know if your computer has virtualization enabled and if it does not, use the same guide to learn how to enable it. You can also use [Speccy](https://www.ccleaner.com/speccy) to find out if your computer has virtualization enabled.
@@ -119,11 +121,12 @@ These are the tasks that you need to complete before taking the screenshots:
 * Change Wayland for X.org
 * Take snapshot.
 * Install the guest additions for virtualbox.
-  * Run this command: `sudo apt install build-essential linux-headers-$(uname -r) -y`
+  * Run this command: <br> `sudo apt install build-essential linux-headers-$(uname -r) -y` <br>
   * Use this [video](https://youtu.be/IuqJxbYuU-Y) to install guest additions.
 * Reboot the VM
 * Go Full Screen
 * Disable animations. Run this command on your terminal: <br> `gsettings set org.gnome.desktop.interface enable-animations false` <br>
+* Turn your virtual machine off
 
 > Take a screenshot of your virtual machine showing the snapshot. Here is an example:
 
@@ -134,15 +137,13 @@ These are the tasks that you need to complete before taking the screenshots:
 ## Question 5 | Complete the following tasks
 
 
-1. Download and install [VS Code](https://code.visualstudio.com/) Install all the extensions of VS Code
-  * Live Server
-  * Markdown All in one
-  * Markdown Preview Enhanced
-  * Markdown PDF
-  * Markdown TOC
-  * Markdown Converter
-  * PDF Preview
-  * Code Spell Checker
+1. Download and install [VS Code](https://code.visualstudio.com/) and then Install all the extensions of VS Code
+  * [Live Server by Ritwick Dey](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer&ssr=false#review-details)
+  * [Markdown All in one by Yu Zhang](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one&ssr=false#review-details)
+  * [Markdown Preview Enhanced by Yiyi Wang](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+  * [Markdown PDF by yzane](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf&ssr=false#review-details)
+  * [PDF Preview by Analytic Signal Limited](https://marketplace.visualstudio.com/items?itemName=analytic-signal.preview-pdf)
+  * [Code Spell Checker by Street Side Software](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 
 
 2. Using the terminal, remove all unnecessary applications from Ubuntu 22.04. Use this command:
@@ -158,7 +159,7 @@ sudo apt purge apport aisleriot gnome-mahjongg gnome-sudoku gnome-mines  -y
   * geany 
   * tilix 
 
-> In the terminal you can use these command: <br> `sudo apt install flameshot vlc deluge geany tilix -y`<br> 
+> In the terminal you can use this command: <br> `sudo apt install flameshot vlc deluge geany tilix -y`<br> 
 
 4. Using the terminal install the following applications: gcc make perl nemo git python3-pip gnome-tweaks curl snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap wget tree  htop net-tools vim neofetch caffeine samba smbclient cifs-utils. You can use the following commands:
 
@@ -171,7 +172,7 @@ sudo apt purge apport aisleriot gnome-mahjongg gnome-sudoku gnome-mines  -y
 5. Replace the default screenshot tool with flameshot.
 
 ### Setup Git and download your repository to your Ubuntu machine.
-1. Sign in to your Github account.
+1. Sign in to your Github account. 
 2. Open a terminal and run the following commands:
 3. Set your username: <br> `git config --global user.name 'your username here'` <br>
 4. Set your email address: <br> `git config --global user.email 'your email here'` <br>
