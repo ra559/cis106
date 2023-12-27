@@ -28,7 +28,7 @@ title: Lab 2 - Installing Ubuntu 22.04 In VirtualBox
 
 > **NOTE!** 
 > * Only start this lab after you have watched the videos or read the presentations. 
-> * If your computer does not meet the required hardware, you will not be able to complete the course as we will be running 2 virtual machines near the end of the semester.
+> * If your computer does not meet the required hardware, you will have a hard time completing all the work and the final project therefore be ready for some slow downs!
 
 
 ## Question 1 | Enable virtualization
