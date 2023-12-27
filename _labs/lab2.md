@@ -35,10 +35,12 @@ title: Lab 2 - Installing Ubuntu 22.04 In VirtualBox
 Before you can create virtual machines, you need to know if your computer can virtualize. There are a couple of steps you need to follow to find out the answer to this question:
 
 ### MacOS users
-1. For those using MacOS, if you have a recent Apple computer (M1 CPU), you will not be able to use Virtualbox, there is another hypervisor you can use but I have not been able to test it since I do not own an M1 Mac where I can test it. You can watch and follow this [tutorial](https://www.youtube.com/watch?v=hnwK-nkXolc). Again, I have not tested this option therefore you are on your own.
-   ![Warning](/assets/warning-icon_1_15.png)  
+* For those using MacOS, if you have a recent Apple computer (M1 CPU), you will not be able to use Virtualbox, there is another hypervisor you can use but I have not been able to test it since I do not own an M1 Mac where I can test it. You can watch and follow this [tutorial](https://www.youtube.com/watch?v=hnwK-nkXolc). Again, I have not tested this option therefore you are on your own.
+
+  <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+
   > ***from past semester experience, I cannot recommend MacOS with M1 CPUs. The experience is very poor and students have encountered too many problems at the level where they cannot complete the work on time. Proceed at your own risk***
-2. If you have an older Mac (Inter Version), you can user virtualbox as it is fully supported. Just make sure your Mac has enough resources to run virtual machines. For intel Macs, virtualization is already enabled and you can just follow this guide/video.
+* If you have an older Mac (Inter Version), you can use virtualbox as it is fully supported. Just make sure your Mac has enough resources to run virtual machines. For intel Macs, virtualization is already enabled and you can just follow this guide/video.
 
 
 ### Windows Users   
@@ -56,7 +58,7 @@ Follow these steps:
   
   <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
 
- > If you do not meed these requirements but your computer is close enough, you may be able to complete the course material. The downside is that your computer will be extremely slow.
+ > If you do not meet these requirements but your computer is close enough, you may be able to complete the course material. The downside is that your computer will be extremely slow.
    
 If your computer meets or exceeds the above capabilities, then you need to check if virtualization is enabled. Follow [this guide](https://rapurl.live/vaj) to know if your computer has virtualization enabled and if it does not, use the same guide to learn how to enable it. You can also use [Speccy](https://www.ccleaner.com/speccy) to find out if your computer has virtualization enabled.
 
@@ -206,6 +208,18 @@ sudo apt purge apport aisleriot gnome-mahjongg gnome-sudoku gnome-mines  -y
 * Take a snapshot of your virtual machine.
 
 
-![Warning](/assets/warning-icon.png) 
-### Special Note
+  <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+
+### Special Note 1
 This is a canonical lab for your learning. You will be making more virtual machines in the future. I suggest you create more virtual machines and then delete them. For example, find out what are the minimum requirements for installing windows 10 and then make a windows 10 virtual machine. Also, install other linux distributions as well. You do not need to keep these vms just use this lab to practice. Remember, when deleting virtual machines, make sure to select `delete all files` instead of just removing the vms. This will make sure that you recover your hard drive space. 
+
+### Special Note 2
+You are going to be using the git commands a lot. Here is a quick reference:
+* `git clone repository/url/here`: is the command to clone a repository where cloning means downloading a repository to your computer
+* `git pull`: to pull/synchronize your repository from github to your local machine. Always run this command BEFORE you start working VS Code
+* `git add .`: to track all the changes made to your file. 
+* `git commit -m "label for your changes here"`: this command will label all the changes you added with the `add` command
+* `git push`: will send all your changes to your github repository
+
+> Always run the commands in this order: `pull` =>  `add` =>  `commit` => `push` 
+
