@@ -17,7 +17,7 @@ collections:
     permalink: "/:collection/:path/"
     output: true
 
-  homework:
+  week_report:
     permalink: "/:collection:/:path"
     output: true
 

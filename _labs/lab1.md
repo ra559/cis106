@@ -75,5 +75,6 @@ In blackboard, submit the following:
 2. I will check that you completed the challenge question that is 50 points.
 3. If I cannot find the files in Github, you will not be awarded a passing grade for this lab.
 
-![Warning](/assets/warning-icon_1_15.png) 
-#### Late submissions will be penalized 30 points
+<p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+
+#### Late submissions will be penalized 30 points. See blackboard for due date
