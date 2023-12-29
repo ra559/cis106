@@ -48,7 +48,7 @@ just_the_docs:
   collections:
     modules:
       name: Modules
-    homework:
+    week_report:
       name: Homework
     labs:
       name: Labs
