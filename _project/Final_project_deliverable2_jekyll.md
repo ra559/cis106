@@ -1,8 +1,3 @@
----
-layout: "page"
-title: Create a personal blog with Jekyll and Ubuntu 22.04
----
-
 # {{page.title}}
 
 ## Requirements

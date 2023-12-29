@@ -1,6 +1,6 @@
 ---
 layout: "page"
-title: Web Server Project Deliverable 2
+title: Final Project Deliverable 2
 ---
 
 # {{page.title}}

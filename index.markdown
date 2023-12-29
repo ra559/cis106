@@ -63,7 +63,7 @@ Here you will find all the information for the course.
   * [Free book. wont be used but it is good to have](http://www.it-docs.net/ddata/900.pdf)
   * [Raspberry Models Comparison](http://bit.ly/3qrkjHb)
 * **Github Markdown**
-  * [Github Markdown Syntax Cheat sheet](https://bit.ly/3p3WLIp)
+  * [Github Markdown Syntax Cheat sheet](https://rapurl.live/11g)
   * [Github Markdown syntax official documentation](http://bit.ly/3pvKZpE) 
   * [Git Cheat sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
   * [Linux cheat sheets](https://github.com/ra559/linux_cheat_sheets/tree/main)

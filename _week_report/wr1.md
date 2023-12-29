@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Homework 1
+title: Week Report 1
 ---
 # {{page.title}}
 
