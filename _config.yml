@@ -49,7 +49,7 @@ just_the_docs:
     modules:
       name: Modules
     week_report:
-      name: Homework
+      name: Week_Report
     labs:
       name: Labs
 
