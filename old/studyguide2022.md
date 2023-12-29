@@ -1,8 +1,3 @@
----
-layout: page
-title: Study Guide Final Spring 22
----
-
 # Study Guide For Final Spring 2022
 > **Video [here](https://youtu.be/hdM-x9iX6uw)!**
 ## List of Commands

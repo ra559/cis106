@@ -1,7 +1,4 @@
----
-layout: post
-title: Homework 7
----
+
 # {{page.title}}
 
 ## Complete the following tasks

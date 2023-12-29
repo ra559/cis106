@@ -1,7 +1,4 @@
----
-layout: post
-title: Lab 7 - Handling Files
----
+
 
 # {{page.title}}
 

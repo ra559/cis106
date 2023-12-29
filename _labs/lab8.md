@@ -1,7 +1,4 @@
----
-layout: post
-title: Lab 8 - Using VIM
----
+
 # {{page.title}}
 
 **Lab explanation video [here](https://youtu.be/V9etQNzVpvw)**

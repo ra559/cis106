@@ -1,25 +1,11 @@
 ---
 layout: post
-title: Final Assignment
+title: Final Exam Study Guide
 ---
 # {{page.title}}
 
-## READ ME PLEASE!
-> * Complete this assignment before your final exam. 
-> * You must present this assignment before you start your exam.
-> * The due date is: **Day of final exam at 5:40 PM**
-> * This is 20 points of your final. **DO NOT MISS IT!** 
-> * Here is how the assignment is supposed to look like (incomplete BTW): [CLICK ME](https://github.com/linuxworkshop67/cis106f22/blob/main/final_exam_study/assigment.md)
-> Video [here](https://youtu.be/MAd9FlfTrxg)
 
-
-
-## Question 1
-For every command in this list, include the following:
-* Description
-* formula/syntax
-* 3 examples that you understand well
-<hr>
+## Commands to study
 
 * awk
 * cat 
@@ -39,19 +25,19 @@ For every command in this list, include the following:
 
 <hr>
 
+## Concepts to study
 
-## Question 2
-### Answer each question:
+* The linux filesystem
+* Absolute path and relative path
+* When should you use absolute vs relative
+* Moving around the filesystem with absolute and relative (pwd,cd, and ls)
 * How to work with multiple terminals open?
 * How to work with manual pages?
 * How to parse (search) for specific words in the manual page
-* How to redirect output `(> and |)`
+* How to redirect output `(>, >>, and |) `
 * How to append the output of a command to a file
+* How and when to redirect the output of a command to another (pipes)
 * How to use wildcards
     - *For copying and moving multiple files at the same time*
 * How to use brace expansion
     - *For creating entire directory structures in a single command*
-
-## Question 4
-* Convert this file to pdf. If you cant, dont worry Im ok with the markdown on your github account but it must be on your github account.
-* Commit everything to github.

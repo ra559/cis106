@@ -160,7 +160,7 @@ Try to complete these tasks without looking at the solution. Use the image below
 
 ### Practice LS command:
 Try to complete these tasks without looking at the solution. 
-1. Use this command to download some example files: <br>`curl https://raw.githubusercontent.com/ra559/cis106/main/exercisefiles/practice_ls.sh | bash`<br>
+1. Use this command to download some example files: <br>`curl https://raw.githubusercontent.com/ra559/cis106/main/assets/scripts/practice_ls.sh | bash`<br>
 2. The command above will create a directory in your home directory called `practicels` Here you will find 10 example files to practice ls. If the command above did not work, read the output carefully and try to fix it yourself. You can also download the zip file on your own. Read the basic script for the URL. 
   
 <p align="center" style="display:block" ><img src="/assets/review_assets/ls_practice_0.png"/></p>

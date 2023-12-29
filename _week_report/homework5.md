@@ -1,7 +1,4 @@
----
-layout: post
-title: Homework 5
----
+
 # {{page.title}}
 * Explanation [here](https://youtu.be/v1UU47VHeBE)
 ## Complete the following tasks

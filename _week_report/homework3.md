@@ -1,7 +1,4 @@
----
-layout: post
-title: Homework 3
----
+
 
 # {{page.title}}
 

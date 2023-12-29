@@ -1,8 +1,3 @@
----
-layout: page
-title: Ubuntu 20.04 Virtual Machine Setup
----
-
 # During Installation Settings
 Once you have created the virtual machine, turn it on and start the installation process. During the installation, make sure that you follow these specifications:
 * Keyboard layout: English US

@@ -1,7 +1,3 @@
----
-layout: post
-title: Lab 4 - The Linux FS
----
 
 # {{page.title}}
 
