@@ -8,18 +8,7 @@ title: Week Report 1
 For this week, complete the following tasks.
 
 1. Install Slack in your phone and/or computer (I suggest both)
-2. Complete Discussion Board 1 - Introduce yourself.
-   1. Remember you must have at least 2 replies to obtain the full grade.
-   2. Keep it simple. No more than 5 sentences. Here is an example:
-   
-   ```
-   Hi! My name is John Smith. 
-   I am a Network Administration student and this is my first semester. 
-   My hobbies are reading, gaming, and going to the gym.
-   I don't have any experience with linux but I hope to learn a lot. 
-   I look forward to getting to know each of you and contributing to the vibrant discussions here. 
-   ```
-
+2. Complete Discussion Board 1 - Open Source.
 3. Watch [this video](https://www.youtube.com/watch?v=wpISo9TNjfU) so that you are familiar of what git and github are
 4. Watch [this video](https://www.youtube.com/watch?v=B-s71n0dHUk) so that you are familiar with VS Code's interface
 5. Complete [Lab 1 - Learning Markdown](https://cis106.com/labs/lab1/) 
