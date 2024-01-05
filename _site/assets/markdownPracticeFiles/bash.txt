@@ -1,0 +1,14 @@
+What is a Bash Script?
+Bash is a Unix command line interface responsible for interacting with a computer's operating system. Thus, a bash script is a useful way to group commands to create a program.
+
+How to Write a Bash Script
+Create a new text file called script.sh
+Specify the interpreter in the first line:
+#!/bin/bash
+Use the echo command to display text on the screen
+echo "hello world" echo "this is my first script"
+
+How to run a Bash Script
+Open a terminal window
+Navigate to the directory where you save your script
+Use the bash interpreter to run the script:

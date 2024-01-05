@@ -1,5 +1,7 @@
 
-# Lab 7 - Handling Files
+
+# {{page.title}}
+
 * Video [here](https://youtu.be/8xjoxIvG2xY)<br>
 > ### PRE-WORK
 > you must complete this part of the lab before you start
@@ -38,7 +40,7 @@
 > Take a screenshot of **YOUR TERMINAL ONLY** showing all the commands that you used to complete this question
 <hr>
 
-## Question 3 Paste, wc
+## Question 3: Paste, wc
 1. Download these files using curl. Use the command: `curl -s URL-here -o name-of-file` where the name of the file is the one given in the URL. After Downloading the files, paste the files 
    * **https://cis106.com/assets/shopping.txt** 
    * **https://cis106.com/assets/tasks.txt** 
@@ -48,7 +50,7 @@
 > Take a screenshot of **YOUR TERMINAL ONLY** showing all the commands that you used to complete this question
 <hr>
 
-## Question 4 tr, grep
+## Question 4: tr, grep
 1. Replace the `;` for a `,` in the `cereal.csv` file
 2. Display every line that contain the word love in the book *"Pride and Prejudice"*
 3. Display every line that contains exactly the word love or hate in the book *"Pride and Prejudice"* with line numbers
@@ -58,7 +60,7 @@
 <hr>
 
 
-## Question 5 awk and sed
+## Question 5: awk and sed
 1. Print the first and last field of the `cars.csv` file
 2. Print the first and last field of the `cars.csv` file with the string `" made in "` as a delimiter
 3. Print the `cars.csv` file in such a way that the output looks like this for every line:
@@ -71,7 +73,7 @@
 > Take a screenshot of **YOUR TERMINAL ONLY** showing all the commands that you used to complete this question
 <hr>
 
-## Question 6 I/O Redirection
+## Question 6: I/O Redirection
 1. How many users can login with the `/bin/bash` shell? 
 2. How many users have the `/sbin/nologin` shell assigned? 
 3. How many ford vehicles are there in the `cars.csv` file

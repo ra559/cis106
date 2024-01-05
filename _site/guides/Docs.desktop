@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application 
-Terminal=false
-Exec=/snap/bin/chromium 'https://docs.google.com/document/u/0/'
-Name=Docs
-Comment=Launcher for Google Docs
-Icon=/usr/share/icons/.customIcons/googledocs.png
