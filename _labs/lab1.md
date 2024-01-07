@@ -8,13 +8,14 @@ title: Lab 1 - Learning Markdown
 ## Question 1: VS CODE
 
 1. Install [VS Code](https://code.visualstudio.com/) 
-2. The VS Code interface is not complicated.
+2. If you find the VS Code interface complicated or too unfamiliar, watch this [video](https://www.youtube.com/watch?v=B-s71n0dHUk) before you continue with the lab. 
 
 
 ## Question 2: Github Account
 
-1. Create a [github](https://github.com/) account using your PCCC email address. Make sure to save this password. *You will need it a lot!* If you already have a github account, you are allowed to use it.
+1. Create a [github](https://github.com/) account using your PCCC email address. Make sure to save this password. *You will need it a lot!* If you already have a github account, you are allowed to use it. 
 2. Create a public repository called `cis106`  **LOWERCASE PLEASE!**
+   1. Here is a [video](https://youtu.be/uraJCa5V-Ao) on how to create a github account and repository. 
 3. Do not close the github page, you will need it later.
   
 ## Question 3: Learning Markdown

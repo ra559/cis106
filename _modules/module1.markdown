@@ -7,6 +7,7 @@ title: Module 1 What is Linux?
 ## Lecture 1: Introduction to the course. 
 * Presentations
 1. [Introduction to the course](https://rapurl.live/0xh)
+   1. Video [here](https://youtu.be/xAoKuDV09b8)
 2. [What is Git and Github?](https://www.youtube.com/watch?v=wpISo9TNjfU)
 3. [Markdown Presentation](https://rapurl.live/zjs)
 
