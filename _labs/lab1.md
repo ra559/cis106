@@ -5,6 +5,8 @@ title: Lab 1 - Learning Markdown
 
 # {{page.title}}
 
+> Video [here](https://youtu.be/PtJMXxi1je8) 
+
 ## Question 1: VS CODE
 
 1. Install [VS Code](https://code.visualstudio.com/) 
