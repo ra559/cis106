@@ -223,4 +223,4 @@ sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y
 ```
 5. Open a terminal and run the following command: `neofetch`
 6. Take a screenshot of the entire terminal window. Save the screenshot in the lab2 directory inside the cis106 directory. Name the screenshot `neofetch.png`
-7. clear the terminal with the command: `clear` and run the following command: <br>`curl https://cis106.com/assests/lab2_system_info.sh | bash`
+7. clear the terminal with the command: `clear` and run the following command: <br>`curl https://cis106.com/assests/scripts/lab2_system_info.sh | bash`
