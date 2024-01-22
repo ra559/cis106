@@ -216,7 +216,37 @@ sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y
 ![script](script.png)
 
 ```
+
 5. Open a terminal and run the following command: `neofetch`
 6. Take a screenshot of the entire terminal window. Save the screenshot in the lab2 directory inside the cis106 directory. Name the screenshot `neofetch.png`
 7. clear the terminal with the command: `clear` and run the following command: <br>`curl -s https://cis106.com/assets/scripts/lab2_system_info.sh | bash`
 8. Take a screenshot of the entire terminal window. Save the screenshot in the lab2 directory inside the cis106 directory. Name the screenshot `script.png`
+9. Save and convert the file lab2.md file to pdf
+10. open the vs code terminal and enter the following commands to commit and push your changes to github:
+```
+git pull
+git add .
+git commit -m 'lab2 finished'
+git push
+```
+11. In blackboard submit the following:
+    1.  The URL to the lab2.md file in github
+    2.  The lab2.pdf file file
+
+
+  <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+
+### Special Note 1
+This is a canonical lab for your learning. You will be making more virtual machines in the future. I suggest you create more virtual machines and then delete them. For example, find out what are the minimum requirements for installing windows 10 and then make a windows 10 virtual machine. Also, install other linux distributions as well. You do not need to keep these vms just use this lab to practice. Remember, when deleting virtual machines, make sure to select `delete all files` instead of just removing the vms. This will make sure that you recover your hard drive space. 
+
+### Special Note 2
+You are going to be using the git commands a lot. Here is a quick reference:
+* `git clone repository/url/here`: is the command to clone a repository where cloning means downloading a repository to your computer
+* `git pull`: to pull/synchronize your repository from github to your local machine. Always run this command BEFORE you start working VS Code
+* `git add .`: to track all the changes made to your file. 
+* `git commit -m "label for your changes here"`: this command will label all the changes you added with the `add` command
+* `git push`: will send all your changes to your github repository
+
+> Always run the commands in this order: `pull` =>  `add` =>  `commit` => `push` 
+> Never use the github website to make changes to your repository unless you know what you are doing and can remember to pull the changes before working on your local repository!
+
