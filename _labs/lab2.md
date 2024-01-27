@@ -1,7 +1,3 @@
----
-layout: post
-title: Lab 2 - Installing Ubuntu
----
 
 # {{page.title}}
 

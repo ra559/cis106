@@ -1,3 +1,35 @@
+---
+layout: post
+title: Lab 2 - Installing Ubuntu
+---
+
+# {{page.title}}
+
+## Table of Contents
+- [{{page.title}}](#pagetitle)
+  - [Table of Contents](#table-of-contents)
+  - [Presentations:](#presentations)
+  - [Requirements](#requirements)
+  - [Step 1:  Enable Virtualization](#step-1--enable-virtualization)
+    - [MacOS users](#macos-users)
+    - [Windows Users](#windows-users)
+      - [REQUIRED SPECIFICATIONS:](#required-specifications)
+  - [Step 2:  Create a Virtual Machine](#step-2--create-a-virtual-machine)
+  - [Step 3: Install Ubuntu](#step-3-install-ubuntu)
+  - [Step 4: Optimizing Ubuntu for the class](#step-4-optimizing-ubuntu-for-the-class)
+    - [Update and upgrade](#update-and-upgrade)
+    - [Add canonical partners in the software settings](#add-canonical-partners-in-the-software-settings)
+    - [Change Wayland for X.org](#change-wayland-for-xorg)
+    - [Install the guest additions for virtualbox](#install-the-guest-additions-for-virtualbox)
+    - [Disable animations](#disable-animations)
+    - [Install and remove software](#install-and-remove-software)
+    - [Install Ubuntu restricted extras:](#install-ubuntu-restricted-extras)
+    - [Replace the current screenshot tool with flameshot](#replace-the-current-screenshot-tool-with-flameshot)
+  - [Step 5: Setup Git](#step-5-setup-git)
+  - [Time to submit this lab](#time-to-submit-this-lab)
+    - [Special Note 1](#special-note-1)
+    - [Special Note 2](#special-note-2)
+
 ## Presentations:
 * [The basics of Virtualization](https://rapurl.live/est)
 * [Using VirtualBox](https://rapurl.live/t0h)
@@ -13,16 +45,17 @@
 > * Only start this lab after you have watched the videos or read the presentations. 
 > * If your computer does not meet the required hardware, you will have a hard time completing all the work and the final project therefore be ready for some slow downs!
 
-## Step 1 | Enable Virtualization
+## Step 1:  Enable Virtualization
 Before you can create virtual machines, you need to know if your computer can virtualize. There are a couple of steps you need to follow to find out the answer to this question:
 
 ### MacOS users
-* For those using MacOS, if you have a recent Apple computer (M1 CPU), you will not be able to use Virtualbox, there is another hypervisor you can use but I have not been able to test it since I do not own an M1 Mac where I can test it. You can watch and follow this [tutorial](https://www.youtube.com/watch?v=hnwK-nkXolc). Again, I have not tested this option therefore you are on your own.
+* For those using MacOS, if you have a recent Apple computer (M1/M2 CPU), you will not be able to use Virtualbox, there is another hypervisor you can use but I have not been able to test it since I do not own a Mac. Other students have used it in the past and they say that, aside from some workarounds, it works fine. You can watch and follow this [tutorial](https://www.youtube.com/watch?v=hnwK-nkXolc). Again, I have not tested this option therefore you are on your own.
 
   <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
 
-  > ***from past semester experience, I cannot recommend MacOS with M1 CPUs. The experience is very poor and students have encountered too many problems at the level where they cannot complete the work on time. Proceed at your own risk***
-* If you have an older Mac (Inter Version), you can use virtualbox as it is fully supported. Just make sure your Mac has enough resources to run virtual machines. For intel Macs, virtualization is already enabled and you can just follow this guide/video.
+  > ***From past semester experience, I cannot recommend MacOS with M1/M2 Macs for users who lack sufficient understanding of how to use their computer. The experience is very poor and students have encountered too many problems at the level where they cannot complete the work on time. Proceed at your own risk***
+
+* If you have an older Mac (Intel Version), you can use virtualbox as it is fully supported. Just make sure your Mac has enough resources to run virtual machines. For intel Macs, virtualization is already enabled so move along to step 2
 
 
 ### Windows Users   
@@ -32,21 +65,22 @@ Follow these steps:
       2. Amount of RAM
       3. Amount of Free Storage
    2. If your computer does not meet the criteria below, stop this lab and get in contact with me. We may be able to find an alternative for you but this can only be done on a 1 on 1 basis.
-   
-   **REQUIRED SPECIFICATIONS:**
-      - CPU: Quad core CPU
-      - RAM: 8GB or More
-      - Free Storage: 60GB or more
+
+#### REQUIRED SPECIFICATIONS:
+* CPU: Quad core CPU
+* RAM: 8GB or More
+* Free Storage: 60GB or more
   
-  <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+
+<p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
 
  > If you do not meet these requirements but your computer is close enough, you may be able to complete the course material. The downside is that your computer will be extremely slow.
    
 If your computer meets or exceeds the above capabilities, then you need to check if virtualization is enabled. Follow [this guide](https://rapurl.live/vaj) to know if your computer has virtualization enabled and if it does not, use the same guide to learn how to enable it. You can also use [Speccy](https://www.ccleaner.com/speccy) to find out if your computer has virtualization enabled.
 
-If you are having troubles enabling virtualization, let me know immediately. **DO NOT WAIT FOR THE LAST MINUTE!** This part can take time!
+> If you are having troubles enabling virtualization, let me know immediately. **DO NOT WAIT FOR THE LAST MINUTE!** This part can take time!
 
-## Step 2 | Create a Virtual Machine
+## Step 2:  Create a Virtual Machine
 
 Before you can create virtual machines, you need to install VirtualBox and VirtualBox Extension Pack. To download Vbox and the extension pack go to:
 
@@ -74,11 +108,15 @@ Make sure to install VirtualBox in your host computer. For Windows follow this [
 
 ![Create VM](/assets/createVM.gif)
 
-## Step 3 | Install Ubuntu
+| virtual machine settings                |
+| --------------------------------------- |
+| ![](/assets/virtualmachinesettings.png) |
+
+## Step 3: Install Ubuntu
 
 Go over the presentation ["Installing Ubuntu 20.04 in VirtualBox"](https://shorturl.at/hlor0). There, I have laid out every step with proper explanations. The presentation is using an earlier version of Virtualbox and Ubuntu but the differences are not very significant. I will do it in the video as well but it will benefit you to read the presentation. 
 
-## Step 4 | Optimizing Ubuntu for the class
+## Step 4: Optimizing Ubuntu for the class
 
 ### Update and upgrade
 
@@ -97,10 +135,10 @@ Go over the presentation ["Installing Ubuntu 20.04 in VirtualBox"](https://short
 <p align="center" style="display:block"><img src="/assets/lab2/software_updates.gif"/></p>
 
 ### Change Wayland for X.org
-1. Do it graphically
+1. Do it graphically. See the video or gif below.
 2. Open the file `/etc/gdm3/custom.conf` and uncomment the line `#WaylandEnable=false` this will make it permanent. 
    1. To open the file use the command: `sudo gedit /etc/gdm3/custom.conf`
-   2. To uncomment the line, remove the `#` from the beginning of the line
+   2. To uncomment the line by removing the `#` from the beginning of the line
    3. Save the file
    4. Exit the text editor
 
@@ -129,7 +167,7 @@ sudo ./VBoxLinux
 
 ### Disable animations
 1. Open a terminal and run this command: <br>`gsettings set org.gnome.desktop.interface enable-animations false`
-2. This will disable all the fancy desktop effects making the vm feel more snappy. 
+2. This will disable all the fancy desktop effects making the vm feel snappier. 
 
 <p align="center" style="display:block"><img src="/assets/lab2/animations_off.gif"/></p>
 
@@ -178,9 +216,9 @@ sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y
 <p align="center" style="display:block"><img src="/assets/lab2/flameshot.gif"/></p>
 
 
-## Step 5 | Setup Git
+## Step 5: Setup Git
 1. Sign in to your Github account. 
-2. Open a terminal and run the following commands:
+2. Open a terminal window and run the following commands:
 3. Set your username: <br> `git config --global user.name 'your username here'` <br>
 4. Set your email address: <br> `git config --global user.email 'your email here'` <br>
 5. Setup SSH authentication
@@ -219,10 +257,10 @@ sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y
 
 5. Open a terminal and run the following command: `neofetch`
 6. Take a screenshot of the entire terminal window. Save the screenshot in the lab2 directory inside the cis106 directory. Name the screenshot `neofetch.png`
-7. clear the terminal with the command: `clear` and run the following command: <br>`curl -s https://cis106.com/assets/scripts/lab2_system_info.sh | bash`
+7. Clear the terminal with the command: `clear` and run the following command: <br>`curl -s https://cis106.com/assets/scripts/lab2_system_info.sh | bash`
 8. Take a screenshot of the entire terminal window. Save the screenshot in the lab2 directory inside the cis106 directory. Name the screenshot `script.png`
-9. Save and convert the file lab2.md file to pdf
-10. open the vs code terminal and enter the following commands to commit and push your changes to github:
+9. Save and convert the file `lab2.md` file to pdf
+10. Open the vs code terminal and enter the following commands to commit and push your changes to github:
 ```
 git pull
 git add .
@@ -230,8 +268,8 @@ git commit -m 'lab2 finished'
 git push
 ```
 11. In blackboard submit the following:
-    1.  The URL to the lab2.md file in github
-    2.  The lab2.pdf file file
+    1.  The URL to the `lab2.md` file in github
+    2.  The `lab2.pdf` file
 
 
   <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
