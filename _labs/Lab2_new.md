@@ -250,7 +250,7 @@ sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y
 
 ## Virtual Machine settings
 
-![neofetch](nefetch.png)
+![neofetch](neofetch.png)
 ![script](script.png)
 
 ```
