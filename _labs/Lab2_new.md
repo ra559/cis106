@@ -26,6 +26,7 @@ title: Lab 2 - Installing Ubuntu
     - [Install Ubuntu restricted extras:](#install-ubuntu-restricted-extras)
     - [Replace the current screenshot tool with flameshot](#replace-the-current-screenshot-tool-with-flameshot)
   - [Step 5: Setup Git](#step-5-setup-git)
+  - [Step 6:](#step-6)
   - [Time to submit this lab](#time-to-submit-this-lab)
     - [Special Note 1](#special-note-1)
     - [Special Note 2](#special-note-2)
@@ -232,7 +233,18 @@ sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y
 <p align="center" style="display:block"><img src="/assets/lab2/ssh_key.gif"/></p>
 <p align="center" style="display:block"><img src="/assets/lab2/github_clone_repo.gif"/></p>
 
-
+## Step 6: 
+1. Download the .deb package
+2. Open the file
+3. Select the Software Center to install the package.
+4. Install the following extensions:
+* [Markdown All in One by Yu Zhang](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+* [Markdown by starkwang](https://marketplace.visualstudio.com/items?itemName=starkwang.markdown)
+* [Markdown PDF by yzane](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)
+* [Markdown Preview Enhanced by Yiyi Wang](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+* [PDF Preview by Analytic Signal Limited](https://marketplace.visualstudio.com/items?itemName=analytic-signal.preview-pdf)
+* [Code Spell Checker by Street Side Software](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+  
 ## Time to submit this lab
 1. First, lets organize the repository
    1. Open the file manager

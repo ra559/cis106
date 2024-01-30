@@ -72,9 +72,11 @@ Create a virtual machine for Ubuntu Server
 1. Start the VM by pressing the **Play** button
 2. If you see a message screen that reads "**Display Output is not active**" ignore it. The VM is just starting
 3. Follow the steps to install Ubuntu server as laid out in the guides: [How to install Ubuntu Server 20.04](https://cis106.com/guides/install-ubuntu-server-20.04/)
-   1.**Notes**:
-      1. We will install the Server Edition of Ubuntu. The server does not have a graphical installer but it is easy anyways.
-      2. Later we will install a graphical desktop environment
+   
+>   **Notes**:
+>      1. We will install the Server Edition of Ubuntu. The server does not have a graphical installer but it is easy anyways.
+>      2. Later we will install a graphical desktop environment
+
 4. Once the OS has been installed, reboot the VM. If the VM seems to be hanging, manually reboot it. Before the disk boots the installer again, turn off the VM.
 5. Remove the Ubuntu Server ISO file from the virtual DVD Drive.
 6. Turn on the Virtual Machine and sign in. Use your username and password you set during the installation process
@@ -89,7 +91,7 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install build-essential linux-headers-$(uname -r) -y
 sudo apt install gcc make perl nemo -y
-sudo apt install git python3-pip curl - y
+sudo apt install git python3-pip curl -y
 sudo apt install wget tree htop net-tools -y 
 sudo apt install vim neofetch samba smbclient -y
 ```
