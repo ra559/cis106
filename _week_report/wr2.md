@@ -56,3 +56,14 @@ title: Week Report 2
 5. Convert the wr2.md file to pdf
 6. Push all the changes to github
 7. In blackboard, submit the URL to the `wr2.md` file and the pdf file `wr2.pdf`
+
+## Special Note 1
+> Please take a snapshot of your virtual machine after you complete the report. The virtual machine is must be off before you take the snapshot. This process is show in the video
+
+### Special Note 2
+You are going to be using the git commands a lot. Here is a quick reference:
+* `git clone repository/url/here`: is the command to clone a repository where cloning means downloading a repository to your computer
+* `git pull`: to pull/synchronize your repository from github to your local machine. Always run this command BEFORE you start working VS Code
+* `git add .`: to track all the changes made to your file. 
+* `git commit -m "label for your changes here"`: this command will label all the changes you added with the `add` command
+* `git push`: will send all your changes to your github repository
