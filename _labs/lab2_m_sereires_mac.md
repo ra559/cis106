@@ -4,7 +4,11 @@ title: Lab 2 - Installing Ubuntu M Series Macs
 ---
 # {{page.title}}
 
+## Video Here
+[Lab 2 Installing Ubuntu M Series Macs (M1/M2 CPUS)](https://youtu.be/AyXzHb86Uw4)
+
 - [{{page.title}}](#pagetitle)
+  - [Video Here](#video-here)
   - [Note](#note)
   - [Step 1: Download Hypervisor](#step-1-download-hypervisor)
   - [Step 2: Create the virtual machine](#step-2-create-the-virtual-machine)

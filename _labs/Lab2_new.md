@@ -5,8 +5,12 @@ title: Lab 2 - Installing Ubuntu
 
 # {{page.title}}
 
+## Video here
+[Lab 2 Installing Ubuntu 22.04 Windows Version](https://youtu.be/N9c4DkNTUek)
+
 ## Table of Contents
 - [{{page.title}}](#pagetitle)
+  - [Video here](#video-here)
   - [Table of Contents](#table-of-contents)
   - [Presentations:](#presentations)
   - [Requirements](#requirements)
