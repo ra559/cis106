@@ -6,6 +6,9 @@ title: Week Report 2
 
 # {{page.title}}
 
+## Video Here
+[Week Report 2 Spring 24](https://youtu.be/f2EX7mVWzT4)
+
 ## Complete the following tasks
 1. Complete [lab 2 - Installing Ubuntu 22.04](https://cis106.com/labs/lab2/).
 2. If you have not done so, complete week report 1, lab 1 and Discussion Board 1
