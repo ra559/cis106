@@ -30,7 +30,7 @@ title: Lab 2 - Installing Ubuntu
     - [Install Ubuntu restricted extras:](#install-ubuntu-restricted-extras)
     - [Replace the current screenshot tool with flameshot](#replace-the-current-screenshot-tool-with-flameshot)
   - [Step 5: Setup Git](#step-5-setup-git)
-  - [Step 6:](#step-6)
+  - [Step 6: Installing VS Code](#step-6-installing-vs-code)
   - [Time to submit this lab](#time-to-submit-this-lab)
     - [Special Note 1](#special-note-1)
     - [Special Note 2](#special-note-2)
@@ -91,6 +91,9 @@ Before you can create virtual machines, you need to install VirtualBox and Virtu
 
 * [Virtualbox Download Page](https://www.virtualbox.org/wiki/Downloads)
 * [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+
+<p align="center" style="display:block"><img src="/assets/lab2/visualStudio2015.png"/></p>
+
 
 Make sure to select the right installer for your operating system:
 
@@ -237,7 +240,7 @@ sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y
 <p align="center" style="display:block"><img src="/assets/lab2/ssh_key.gif"/></p>
 <p align="center" style="display:block"><img src="/assets/lab2/github_clone_repo.gif"/></p>
 
-## Step 6: 
+## Step 6: Installing VS Code
 1. Download the .deb package
 2. Open the file
 3. Select the Software Center to install the package.

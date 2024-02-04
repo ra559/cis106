@@ -4,6 +4,7 @@ title: Lab 2 - Installing Ubuntu M Series Macs
 ---
 # {{page.title}}
 
+
 ## Video Here
 [Lab 2 Installing Ubuntu M Series Macs (M1/M2 CPUS)](https://youtu.be/AyXzHb86Uw4)
 
