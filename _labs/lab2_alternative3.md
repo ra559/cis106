@@ -5,6 +5,9 @@ title: Lab 2 - Installing Ubuntu For Underpowered PC/Macs
 
 # {{page.title}}
 
+## Video here
+![Lab 2 - Installing Ubuntu For Underpowered PC/Macs](https://youtu.be/H9Tr9qfkHGg)
+
 ## Who is this lab for?
 This lab is for students with a computer that does not meet the minimum requirements for the main Lab 2 Installing Ubuntu. If your computer has the following specifications or close to that, you will be able to create an Ubuntu virtual machine. Fair Warning, the virtual machine will be slow but you will be able to do the work including the final project. 
 
@@ -184,7 +187,7 @@ sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y
 3. Set your username: <br> `git config --global user.name 'your username here'` <br>
 4. Set your email address: <br> `git config --global user.email 'your email here'` <br>
 5. Setup SSH authentication
-6. Generate an ssh key: <br> `ssh-keygen -t ed25519 -C "your_email@example.com"` <br> This creates a new SSH key, using the provided email as a label. When you're prompted to:<br> `"Enter a file in which to save the key,"` <br>press Enter. This accepts the default file location. At the prompt, to type a secure passphrase, press enter for no passphrase. If you want to use a passphrase, go ahead as it provides an extra layer of security. However, for this course you do  not need to add a passphase. 
+6. Generate an ssh key: <br> `ssh-keygen -t ed25519 -C "your_email@example.com"` <br> This creates a new SSH key, using the provided email as a label. When you're prompted to:<br> `"Enter a file in which to save the key,"` <br>press Enter. This accepts the default file location. At the prompt, to type a secure passphrase, press enter for no passphrase. If you want to use a passphrase, go ahead as it provides an extra layer of security. However, for this course you do  not need to add a passphrase. 
 7. Use the following command to see your public ssh key: <br> `cat ~/.ssh/id_ed25519.pub` <br> copy the entire output of this command to the clipboard.
 8. In your github page, go to `settings` > `SSH and GPG Keys` Here add your ssh key that you copied to the clipboard in the step prior. Type `yes` (the whole word) and press enter and you are done
 9. Test you ssh connection by using this command: <br>`ssh -T git@github.com`<br>
