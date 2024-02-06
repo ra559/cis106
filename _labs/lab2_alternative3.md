@@ -6,7 +6,7 @@ title: Lab 2 - Installing Ubuntu For Underpowered PC/Macs
 # {{page.title}}
 
 ## Video here
-![Lab 2 - Installing Ubuntu For Underpowered PC/Macs](https://youtu.be/H9Tr9qfkHGg)
+[Lab 2 - Installing Ubuntu For Underpowered PC/Macs](https://youtu.be/H9Tr9qfkHGg)
 
 ## Who is this lab for?
 This lab is for students with a computer that does not meet the minimum requirements for the main Lab 2 Installing Ubuntu. If your computer has the following specifications or close to that, you will be able to create an Ubuntu virtual machine. Fair Warning, the virtual machine will be slow but you will be able to do the work including the final project. 
