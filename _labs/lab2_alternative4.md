@@ -108,7 +108,7 @@ sudo apt update && sudo apt upgrade -y
 ```
 3. The run this command:
 ```
-sudo apt install ubuntu-session gnome-session-flashback lightdm -y
+sudo apt install ubuntu-desktop gnome-session-flashback lightdm -y
 ```
 4. Reboot the vm. Use this command:
 ```
