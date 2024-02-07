@@ -6,7 +6,7 @@ title: Lab 2 - Installing Ubuntu Using Ubuntu Server
 # {{page.title}}
 
 ## Video here
-[Not available yet! working on it](https://cis106.com)
+[Lab 2 - Installing Ubuntu Using Ubuntu Server](https://youtu.be/-XeG63RQ_nQ)
 
 ## Who is this lab for?
 
