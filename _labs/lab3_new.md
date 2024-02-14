@@ -11,6 +11,8 @@ title: Lab 3 - Desktop Environment, Terminal Emulator, and Bash
 3. Open VS Code and open the cis106 folder inside VS Code
 4. Create a file called `lab3.md` inside the `lab3` folder/directory
 5. Add the following markdown:
+
+
 ```
 ---
 Student: your name
@@ -36,6 +38,8 @@ Assignment: Lab 3
 ## Script Source code:
 [lab3](lab3-script.sh)
 ```
+
+
 6. Close VS Code and start the lab.
 
 ## Desktop Environment: Question 1
