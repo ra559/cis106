@@ -4,7 +4,7 @@ title: Week Report 3
 ---
 # {{page.title}}
 
-> Note: This cannot be completed if you have not completed lab 2.
+**Note**: This cannot be completed if you have not completed lab 2.
 
 1. Study/Read/Review:
    * Review the following presentation:

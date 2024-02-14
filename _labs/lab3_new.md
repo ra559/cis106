@@ -12,6 +12,7 @@ title: Lab 3 - Desktop Environment, Terminal Emulator, and Bash
 4. Create a file called `lab3.md` inside the `lab3` folder/directory
 5. Add the following markdown:
 
+<hr>
 
 ```
 ---
@@ -39,6 +40,7 @@ Assignment: Lab 3
 [lab3](lab3-script.sh)
 ```
 
+<hr>
 
 6. Close VS Code and start the lab.
 
@@ -47,14 +49,19 @@ Assignment: Lab 3
 > Note: Students who did lab 2 alternatives 3 and 4 (underpowered PCs or Ubuntu Server installation) should skip step 1.1. Simply move along to step 1.2. Also, students who prefer Gnome 42 because their virtual machine already performs well, should also skip this question to save time. Keep in mind that I will be using Gnome Classic for the remaining of the course so my environment will look different to yours
 
 1. Open a terminal window and type the following command. This is going to take some time. Once the installation is done, restart the virtual machine
+
+<hr>
+
 ```
 sudo apt update && sudo apt install gnome-session-flashback lightdm -y
 ```
 
-2. Click the Ubuntu icon located to the right of your user name  and select Gnome Flashback (Metacity) and log in
+<hr>
+
+1. Click the Ubuntu icon located to the right of your user name  and select Gnome Flashback (Metacity) and log in
 > Notice that your desktop environment looks very different. This is Gnome Session Flashback. We will be using this version of Gnome as it is lighter and will benefit the performance of the VM. However, if you want, you can switch back to Gnome 4 if you have a good PC/Mac.
 
-3. Open the settings application and re-create the flameshot keyboard shortcut if it stopped working. See the section “[Replace the current screenshot tool with flameshot](https://cis106.com/labs/Lab2_new/#replace-the-current-screenshot-tool-with-flameshot)” from lab 2.
+1. Open the settings application and re-create the flameshot keyboard shortcut if it stopped working. See the section “[Replace the current screenshot tool with flameshot](https://cis106.com/labs/Lab2_new/#replace-the-current-screenshot-tool-with-flameshot)” from lab 2.
 
 
 #### Take a screenshot of the gnome 2 desktop environment with a file manager and a terminal open. Save your screenshot as q1.png. If you skipped this question feel free to skip this screenshot as well.
@@ -72,16 +79,17 @@ sudo apt update && sudo apt install gnome-session-flashback lightdm -y
 
 ## Working on the shell and terminal emulator: Question 2
 1. Let's set Tilix as the default terminal emulator. Open tilix and type the following command:
+
 ```
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/tilix 1
 ```
 
-2. Open the keyboard preference and add replace the shortcut for the gnome-terminal with tilix. The shortcut is `CTRL` + `ALT` + `T`
-3. Open Tilix and then click on the hamburger menu and then on preference. Ignore the error message
-4. Click on appearance. Enable “Use a wide handle for splitters”
-5. Split the terminal in 2 horizontally. Open the man page of the `echo` command in one of the terminals.
-6. Resize the terminal window so that you have enough space to work on both.
-7. Using the man page of echo figure out how to do the following:
+1. Open the keyboard preference and add replace the shortcut for the gnome-terminal with tilix. The shortcut is `CTRL` + `ALT` + `T`
+2. Open Tilix and then click on the hamburger menu and then on preference. Ignore the error message
+3. Click on appearance. Enable “Use a wide handle for splitters”
+4. Split the terminal in 2 horizontally. Open the man page of the `echo` command in one of the terminals.
+5. Resize the terminal window so that you have enough space to work on both.
+6. Using the man page of echo figure out how to do the following:
     * Display a line of text without the new line
     * Display a line of text that includes a horizontal tab
     * Display 2 lines of text in a single echo command
@@ -97,6 +105,8 @@ sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emula
 4. Save the file in the `lab3` folder inside `cis106/labs/`
 5. Add the following lines:
 
+<hr>
+
 ```
 echo “This is a shell script,”
 echo -n “This script will print the current date”
@@ -107,8 +117,12 @@ echo “This is the current user:”
 echo $USER
 ```
 
+<hr>
+
 6. Save the script.
 7. Add the following comments at the top
+
+<hr>
 
 ```
 #Author: your name
@@ -116,6 +130,8 @@ echo $USER
 #Description: This is a basic script that
 #uses environment variables and the date command
 ```
+
+<hr>
 
 8. Save the script and close the text editor
 9. Open a terminal and type the following commands to execute the script:
@@ -130,6 +146,8 @@ echo $USER
 4. In Blackboard, submit the pdf file `lab3.pdf`
 
 **Note**: I will read your script from github. If the script is not there, you will not receive credit. 
+
+
 <hr>
 
 ### Special Note 2
