@@ -10,8 +10,8 @@ title: Week Report 3
    * Review the following presentation:
      * The bash shell
      * Managing Software
-2. Download the managing software cheat sheet (1 is fine if you do not want/need both) and place it in the cheatSheet directory/folder
-3.Complete class notes:
+2. Download the managing software cheat sheet (1 is fine if you do not want/need both) and place it in the cheatSheet directory/folder.
+3. Complete class notes:
    * Create a markdown file that includes the following:
      * Definition, usage, and examples of the following commands:
         * echo
