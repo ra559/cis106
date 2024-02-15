@@ -4,6 +4,9 @@ title: Week Report 3
 ---
 # {{page.title}}
 
+## Video here
+[Week Report 3 ](https://youtu.be/MWC6I1F8zGs)
+
 **Note**: This cannot be completed if you have not completed lab 2.
 
 1. Study/Read/Review:
@@ -45,8 +48,8 @@ title: Week Report 3
 1. Convert `wr3.md` to pdf
 2. Push everything to github:
 3. In blackboard submit:
-   1. URL to `wr2.md` in github
-   2. The pdf file `wr2.pdf`	
+   1. URL to `wr3.md` in github
+   2. The pdf file `wr3.pdf`	
 
 <hr>
 
