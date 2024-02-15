@@ -5,6 +5,9 @@ title: Lab 3 - Desktop Environment, Terminal Emulator, and Bash
 
 # {{page.title}}
 
+## Video here
+[VIDEO](https://youtu.be/8Pfpno_g2sw)
+
 ## Pre Work:
 1. Open the file manager and navigate to the `labs` folder/directory inside the cis106 repository `(~/cis106/labs/)`
 2. Create a folder/directory called `lab3`

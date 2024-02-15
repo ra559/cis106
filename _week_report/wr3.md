@@ -12,15 +12,14 @@ title: Week Report 3
      * Managing Software
 2. Download the managing software cheat sheet (1 is fine if you do not want/need both) and place it in the cheatSheet directory/folder.
 3. Complete lab 3
+   1. Video [here](https://youtu.be/8Pfpno_g2sw)
 4. Complete class notes:
    * Create a markdown file that includes the following:
      * Definition, usage, and examples of the following commands:
         * echo
         * date
-        * df
         * free
         * uname
-        * clear
         * history
         * man
         * apt
