@@ -142,7 +142,7 @@ echo $USER
 ## Question 4: Challenge Question
 Write a shell script that displays the following output:
 
-![cqo](/assets/lab3/challenngeQoutput.png)
+![cqo](/assets/lab3/challenngeQoutput1.png)
 
 ### Tips:
 * You will need to read the man page of the `echo`, `uname`, and `date` commands
