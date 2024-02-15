@@ -11,7 +11,8 @@ title: Week Report 3
      * The bash shell
      * Managing Software
 2. Download the managing software cheat sheet (1 is fine if you do not want/need both) and place it in the cheatSheet directory/folder.
-3. Complete class notes:
+3. Complete lab 3
+4. Complete class notes:
    * Create a markdown file that includes the following:
      * Definition, usage, and examples of the following commands:
         * echo
@@ -26,7 +27,6 @@ title: Week Report 3
         * snap
         * flatpak
           * Video Here:
-4. Complete lab 3
 5. Complete week report 3 
    1. Create a new directory/folder in side weekReports called wr3
    2. Inside wr3, create a markdown file called wr3.md
