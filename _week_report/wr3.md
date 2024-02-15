@@ -25,7 +25,8 @@ title: Week Report 3
         * apt
         * snap
         * flatpak
-          * Video Here:
+          * Video [Here](https://youtu.be/MJpz6RX65Ko)
+          * Where to find the PDF file? [Here](https://github.com/robertalberto0713/cis106/tree/main/notes/notes1)
 5. Complete week report 3 
    1. Create a new directory/folder in side weekReports called wr3
    2. Inside wr3, create a markdown file called wr3.md
@@ -35,10 +36,10 @@ title: Week Report 3
       3. A bulleted list of the following URLs:
          1. Link to lab3.md
          2. Link to notes3.md
-      4. Complete each practice in the presentation ‘The bash shell’ and take a screenshot of the terminal.
+      4. Complete each practice in the presentation **‘The bash shell’** and take a screenshot of the terminal.
       5. Add a heading 3 before every screenshot to identify each practice. 
          1. **Skip Practice 1 from the bash shell.**
-      6. Complete each practice in the presentation “Managing software” and take a screenshot of the terminal.
+      6. Complete each practice in the presentation **“Managing software”** and take a screenshot of the terminal.
          1. **Practice 4 and 5 of the managing software presentation are optional.** 
 ## What will you submit:
 1. Convert `wr3.md` to pdf
