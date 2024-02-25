@@ -1,17 +1,25 @@
+---
+layout: post
+title: Lab 4 - The Linux FS
+---
+# Work in progress ignore this lab!
 
 # {{page.title}}
 
 * Presentations:
-  * [How to navigate the filesystem](https://rapurl.live/uz0)
+  * [How to navigate the filesystem](https://rapurl.live/2n3)
   * Video [here](https://youtu.be/GhNYOWEc5qc)
 
 > **Note:**
-> Questions 1 AND 2 are worth 50 points. Question 3 has no grade. Question 4 and 5 are worth 50 points. So each question here is worth 25 points. In the video, I only complete question 1, 2 and 3. You have to do question 4 and 5 on your own. Your final exam will include questions similar to 4 and 5. I will answer questions 4 and 5 during class after the due date for this lab full has expired. 
+> Questions 1 AND 2 are worth 50 points. Question 3 has no grade. Question 4 and 5 are worth 50 points. So each question here is worth 25 points. In the video, I only complete question 1, 2 and 3. You have to do question 4 and 5 on your own. Your final exam will include questions similar to 4 and 5. I will answer questions 4 and 5 during class after the due date for this lab has expired. 
 
 ## Question 1 | Moving around the file system
-* **[pwd](https://rapurl.live/6gj)**: Print the absolute path of the current working directory.
-* **[cd](https://rapurl.live/n6h)**: Change the shell current working directory.
-* **[ls](https://rapurl.live/9v5)**: list files inside a given directory
+
+| Command                            | Description                                               |
+| ---------------------------------- | --------------------------------------------------------- |
+| **[pwd](https://rapurl.live/6gj)** | Print the absolute path of the current working directory. |
+| **[cd](https://rapurl.live/n6h)**  | Change the shell current working directory.               |
+| **[ls](https://rapurl.live/9v5)**  | list files inside a given directory                       |
 
 > Before you start this lab, complete all the practice in the presentation. This will allow you to understand these commands better. This is part of your Week report so make sure to take screenshots. 
 
@@ -20,8 +28,8 @@
 1. Start a terminal. What is your present working directory?
 2. Change your present working directory to `/usr/share/themes`
 3. What is your present working directory now?
-4. Change your present working directory to the root of the filesystem
-5. Change your present working directory to `/snap/firefox/`
+4. Change your present working directory to **the root of the filesystem (/)**
+5. Change your present working directory to `/snap/firefox` if for whatever reason you don't have this directory then use: `/home/your-user-name-here/Downloads/`
 ![lab 4.1](/assets/lab4-1.gif)<br>
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5.**
 
@@ -40,33 +48,66 @@
 Download this compressed zip file: [lab4files.zip](/assets/lab4files.zip) Decompress the zip file in **your home** directory.
 ![lab 4 2.1](/assets/lab4-2-1.gif)<br>
 1. Change your present working directory to `/usr/share/`. Using absolute path, list all the files inside the `lab4files` directory.
-2. Change your present working directory to `~/lab4files`. Long list all the files inside your current working directory with human readable file sizes.
-3. Long list all the files inside `lab4files` with human readable file size, and sorted by file size.
-4. Long list all the files inside `lab4files` with human readable file size, sorted by file size, without the user nor the group name, and showing their inode number.
-5. list all the files inside `lab4files` sorted by file extension and in reverse order. 
+2. Change your present working directory to `~/lab4files`. Long list all the files inside your current working directory with **human readable** file sizes.
+3. Long list all the files inside `lab4files` with **human readable** file size, and **sorted by file size**.
+4. Long list all the files inside `lab4files` with **human readable** file size, **sorted by file size**, **without the user nor the group name**, and **showing their inode number**.
+5. list all the files inside `lab4files` **sorted by file extension** and in **reverse order**. 
 
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots may be **required****
 
 <hr>
 
-
-## Question 3 | The tree and exa command (Optional Question. No submission required)
-
-![lab 4 3.1](/assets/lab4-3.gif)<br>
-1. Using absolute path and having `/etc` as your present working directory. Display a tree of the directory `lab4files`.
-2. Change your present working directory to your `Downloads` directory. Display a tree of the directory `lab4files` with the full path prefix for each file, the file permissions, and the file size in human readable format.
-3. Display a tree of the directory `lab4files` sorted by last modified time and showing the file owner and group. 
-4. Once you have installed exa, list all the options of the exa command.
-5. Using exa, long list all the files inside `lab4files`
-6. Long list `lab4files` showing the header that indicates what each column means.
-7. Long list `lab4files` without the file owner nor group including the header and the date the file was created.
-
-<hr>
-
-## Question 4 | Challenge Question 1
+## Question 3 | Shell scripting
 
 Use this image as a visual aid during this question
 <br>![visual aid linux FS](/assets/Linux-Filesystem-Incomplete-visual-aid.png)<br>
+
+## Description:
+John wants to create a script that will show the current user then will list all the files in the Downloads and Documents folder for the current user having all the entries separated by a comma instead of a tab or space. The script should:
+
+1. Display a message showing what the script does using environment variables to show the users home directory absolute path and the user name.
+2. Comments explaining what each command is doing
+
+## Solution
+### Make Gedit feel and look more like an IDE than a text editor
+1. First customize the editor to make shell scripting easier to write. Install the package: `gedit-pluggins` using this command <br>`sudo apt update && sudo apt install gedit-plugin`<br> 
+2. Open gedit (text editor) and go to preferences > Plugins
+3. Enable the following plugins:
+   1.**Embedded terminal**: Will give us a quick terminal at the bottom of the gedit window.
+   2. **Word completion**: Will enable autocomplete of common words in the script
+   3. **Text Size**: will us to increase or decrease the size of the text using CTRL + and CTRL -
+   4. **Bracket Completion**: will auto close brackets and parenthesis (will be used later in the course)
+   5. **Code comment**: Will allows us to quickly comment out sections of code for easy troubleshooting
+   6. **Quick highlight**: Will automatically highlight all instances of the highlighted word
+4. In the view tab of the preferences window enable the following:
+   1. Display line numbers
+   2. Display right margin at column 80
+   3. Display overview map
+5. In the editor tab:
+   1. Set the tab width to 4 spaces
+   2. Autosave the file every 5 minutes
+6. In the Font and color:
+   1. Download the font [Firacode Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/FiraMono.zip)
+   2. Install the font
+      1. Extract the archive in a the directory `.fonts` located in YOUR home directory. If the directory is not there, press CTRL + H to enable hidden files. If the directory is not there still, create it. 
+      2. Open a terminal and type the command: `fc-cache -f -v` to refresh the font cache.
+      3. Go back to gedit Font & Colors tab inside preferences. 
+      4. Change the font to **FiraMono Nerd Font Mono Regular** (if you cant find the font, close gedit and open it again)
+      5. Optional (change the font size to a size you are more comfortable with)
+      6. Optional (change the color scheme to something you prefer or matches our preference). I like the dracula theme which you can download from [here](https://draculatheme.com/gedit)
+7. In the view options of the hamburger menu, enable:
+   1. Side Panel
+   2. Bottom Panel
+### Writing the code
+1. Open Gedit.
+2. Type the shell declaration/Shebang (`#!/bin/bash`) and save the file in the lab4 directory (inside your cis106 directory/repository). Call the file `lab4-script1.sh`
+3. Write an echo command to display the following text: "This script will show you all the files inside the Downloads and Documents directory of the user: user environment variable here, whose home directory is: home environment variable here" 
+4. Use the cd command to navigate to the Downloads directory. You will use absolute path and environment variables in the path to make sure the script works in everywhere
+5. list all the files in the given directory including hidden files. If there is nothing in the downloads folder, place some files there. Make sure to have at least 1 hidden file (files whose name start with a .). Do the same for the Documents folder.
+6. 
+
+> **Take a screenshot of the terminal and the text editor showing the source code. The terminal should show the 
+
 
 1. Open a new terminal. What is your present/current working directory?
 2. Change your present/current working directory to the `default` directory located inside `/usr`
@@ -74,9 +115,9 @@ Use this image as a visual aid during this question
 4. change your present/current working directory to the previous present/working directory.
 5. List all the files inside `share/backgrounds` without changing your present working directory.
 6. List all the files inside your `cis106` directory located in YOUR home directory.
-7. List all the files inside your `Downloads` directory. Your present working directory has to be `/home` before your can list all the files.
-8. Change your present/current working directory to `disk/by-id`  and from there long list all the files in your home directory including hidden files.
-9. List all the files sorted by modification time inside the `share/themes` directory.
+7.  List all the files inside your `Downloads` directory. Your present working directory has to be `/home` before your can list all the files.
+8.  Change your present/current working directory to `disk/by-id`  and from there long list all the files in your home directory including hidden files.
+9.  List all the files sorted by modification time inside the `share/themes` directory.
 10. List all the files sorted by file extension inside the `/usr/share` directory.
 
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-10. Multiple screenshots may be required**
@@ -111,3 +152,17 @@ Use this image as a visual aid during this question
 
 
 
+
+
+## Extra practice (not mandatory but recommended)
+
+### The tree and exa command (Optional Question. No submission required)
+
+![lab 4 3.1](/assets/lab4-3.gif)<br>
+1. Using absolute path and having `/etc` as your present working directory. Display a tree of the directory `lab4files`.
+2. Change your present working directory to your `Downloads` directory. Display a tree of the directory `lab4files` with the full path prefix for each file, the file permissions, and the file size in human readable format.
+3. Display a tree of the directory `lab4files` sorted by last modified time and showing the file owner and group. 
+4. Once you have installed exa, list all the options of the exa command.
+5. Using exa, long list all the files inside `lab4files`
+6. Long list `lab4files` showing the header that indicates what each column means.
+7. Long list `lab4files` without the file owner nor group including the header and the date the file was created.
