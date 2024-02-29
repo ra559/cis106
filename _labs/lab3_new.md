@@ -138,7 +138,7 @@ echo $USER
 
 8. Save the script and close the text editor
 9. Open a terminal and type the following commands to execute the script:
-10 bash ~/cis106/labs/lab3/lab3-script.sh
+bash ~/cis106/labs/lab3/lab3-script.sh
 
 #### Take a screenshot of the terminal showing the output of the script. Double-check your spelling and follow every step correctly if you get any error messages.
 
