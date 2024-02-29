@@ -1,48 +1,93 @@
 #!/bin/bash
-## Building the manor
+base="$HOME/Documents/fs_game/baronManor"
+mainRooms=("garage" "greatHall" "guestRoom" "masterRoom" "minorHall" "staffHall" "basement")
+greatHallRooms=("diningRoom" "gameRoom" "gym" "kitchen" "library" "livingRoom" "office")
+gymRooms=("lockers" "bathroom")
+libraryRooms=("cabinnet" "basement")
+kitchenRooms=("pantry" "storage")
+gameRoomSections=("old" "new" "tabletops")
+bedroomSections=("bathroom" "closet" "small_vault")
+minorHallRooms=("meditationRoom" "sauna" "smokingRoom" "storage" "studyHall" "workshop")
+secretRoom=("large_vault" "small_vault" ".hidden_box")
+staffHallRooms=("cooksRoom" "enertaimentRoom" "houseKeeperRoom" "petRoom" "staffRoom" "utilityRoom")
+builder() {
+    # build the main rooms
+    for dir in "${mainRooms[@]}"; do
+        mkdir -p "$base/$dir"
+    done
+    echo "Main Rooms Built"
+    tree $base/ 
+    # building great hall
+    for dir in "${greatHallRooms[@]}"; do
+        case "$dir" in 
+            "gameRoom")
+                for dir in "${gameRoomSections[@]}"; do
+                    mkdir -p "$base/greatHall/gameRoom/$dir"
+                done    
+                ;;
+                 "gym")
+                for dir in "${gymRooms[@]}";do
+                    mkdir -p "$base/greatHall/gym/$dir" 
+                done
+                ;;
+              "kitchen")
+                for dir in "${kitchenRooms[@]}"; do
+                    mkdir -p "$base/greatHall/kitchen/$dir"
+                done
+                ;;
+              "library")
+                for dir in "${libraryRooms[@]}"; do
+                    mkdir -p "$base/greatHall/library/$dir"
+                done
+                ;;       
+                      *)
+                mkdir -p "$base/greatHall/$dir"
+                ;;
+        esac
+     done 
+     for room in "${mainRooms[@]}"; do
+        case "$room" in
+            "masterRoom")
+                for dir in "${bedroomSections[@]}"; do
+                    mkdir -p "$base/masterRoom/$dir"
+                done
+                ;;
+            "guestRoom")
+                for dir in "${bedroomSections[@]}"; do
+                    mkdir  -p "$base/guestRoom/$dir"
+                done
+                ;;
+             *)
+             continue
+             ;;
+         esac
+     done
+     echo "Great hall rooms built"
+     tree $base/greatHall   
+     # building minor hall
+     for dir in "${minorHallRooms[@]}"; do
+        mkdir -p "$base/minorHall/$dir"
+     done
+     echo "Minor hall rooms built"
+     tree $base/minorHall
+     # building staff Rooms
+     for dir in "${staffHallRooms[@]}"; do
+        mkdir -p "$base/staffHall/$dir"
+     done
+     echo "Staff hall rooms built"
+     tree $base/staffHall
+     # Building Secret Room 
+     for dir in "${secretRoom[@]}"; do
+       mkdir -p "$base/.secretRoom/$dir"
+     done
+     echo "Another room was built"
+     tree $base/.secretRoom
+}
 main(){
-## Game main function
-
-
-}
-
-builder (){
-mkdir -p $HOME/Documents/fs_game/baronManor/{garage,greatHall,guestRoom,masterRoom,minorHall,staffHall,basement}
-mkdir -p $HOME/Documents/fs_game/baronManor/garage/{cars,other}
-mkdir -p $HOME/Documents/fs_game/baronManor/greatHall/{diningRoom,gameRoom,gym/lockers,kitchen/pantry,library/{cabinnet,basement},livingRoom/drawer,office/{drawer,cabinnet}}
-mkdir -p $HOME/Documents/fs_game/baronManor/greatHall/gameRoom/{arcade/{old,new,tabletops},karaoke}
-mkdir -p $HOME/Documents/fs_game/baronManor/{guest,master}Room/{bathroom,closet,small_vault}
-mkdir -p $HOME/Documents/fs_game/baronManor/minorHall/{meditationRoom,sauna,smokingRoom,storage,studyHall,workshop}
-mkdir -p $HOME/Documents/fs_game/baronManor/.secretRoom/{large_vault,small_vault,.hidden_box}
-mkdir -p $HOME/Documents/fs_game/baronManor/staffHall/{cooksRoom,enertaimentRoom,houseKeeperRoom,petRoom,staffRoom,utilityRoom}
-}
-
-## Keys
-echo "Key to the garage" > $HOME/Documents/fs_game/baronManor/garageKey.txt
-echo "Key to the secret rom" > $HOME/Documents/fs_game/baronManor/garage/cars/.secretRoom.txt
-echo "Key to the guestRoom" > $HOME/Documents/fs_game/baronManor/guestRoom.txt
-
-## Locked room
-chmod 000 $HOME/Documents/fs_game/baronManor/garage
-chmod 000 $HOME/Documents/fs_game/baronManor/guestRoom
-chmod 000 $HOME/Documents/fs_game/baronManor/masterRoom
-
-## Clues
-echo "The master is a man of secrets..." >> $HOME/Documents/fs_game/baronManor/staffHall/staffRoom/clue1.txt
-echo "This is how he built his fortune" >> $HOME/Documents/fs_game/baronManor/staffHall/staffRoom/clue1.txt
-echo "He blackmails and force people into deals" >> $HOME/Documents/fs_game/baronManor/staffHall/staffRoom/clue1.txt
-echo "It will be easier to sell your sould to devil himself!" >> $HOME/Documents/fs_game/baronManor/staffHall/staffRoom/clue1.txt
-echo "I hear the staff talking the other day" >> $HOME/Documents/fs_game/baronManor/staffHall/staffRoom/clue1.txt
-echo "They said the master keeps the key to secret room in the house" >> $HOME/Documents/fs_game/baronManor/staffHall/staffRoom/clue1.txt
-echo "They said something about a Ferrari..." >> $HOME/Documents/fs_game/baronManor/staffHall/staffRoom/clue1.txt
-
-## activate key
-echo "chmod u=rwx,g=xr,o=x $HOME/Documents/fs_game/baronManor/garage" > $HOME/Documents/fs_game/baronManor/garageKey.txt
-
-echo "chmod u=rwx,g=xr,o=x $HOME/Documents/fs_game/baronManor/guestRoom" > $HOME/Documents/fs_game/baronManor/guestRoom.txt
-
-echo "chmod u=rwx,g=xr,o=x $HOME/Documents/fs_game/baronManor/masterRoom" > $HOME/Documents/fs_game/baronManor/masterRoom.txt
-
-echo "chmod u=rwx,g=xr,o=x $HOME/Documents/fs_game/baronManor/.secretRoom" > $HOME/Documents/fs_game/baronManor/garage/cars/.secretRoom.txt
-
+    echo "Building the manor"
+    builder 
+    #tree $base 
+    
+}   
+main
 
