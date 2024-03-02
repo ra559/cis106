@@ -72,26 +72,81 @@ If you are using Gnome, gedit is installed by default. This is the default text 
       3. Here are [other themes](/assets/geditThemes/themes.tar.xz) you can download too!
       4. You will need to place these themes in: `$HOME/.local/share/gedit/styles/`
       5. Themes are xml files so you need to extract the xz file in that directory.
-
-gif here
-
 4. In the view options of the hamburger menu, enable:
    1. Side Panel
    2. Bottom Panel
+
+<p align="center">
+  <img src="/assets/themes.gif"/>
+</p>
 
 
 ## Testing Gedit
 Here is the source code:
 
-```
+### Bash
+
+```bash
 #!/bin/bash
-
+main (){
+    echo "Hello world"
+}
+main
 ```
 
-Here is a python program to test
+### HTML
+```html
+<!DOCTYPE html>
+<html>
+    <style>
+        button {
+          background-color: #04AA6D;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          font-size: 25px;
+    }
+    </style>
+    <body>
+        <button onclick="say();" id="btn" type="button">Say hello!</button>
+        <h1 id="msg"></h1>
+    </body>
+    <script>
+       function say(){
+            document.getElementById("msg").innerHTML = "Hello world!";
+       }
+    </script>
+</html>
+```
 
-Here is a c++ program
 
-Here is a basic HTML site to test
+### Python
 
-1. Install plugins
+```python
+#!/usr/bin/python3 
+def hello():
+  print("hello World")
+hello()
+```
+
+
+### C++
+
+```c++
+#include <iostream>
+using std::cout;
+int main() {
+    cout << "Hello World!\n";
+    return 0;
+}
+// g++ hello.cpp && ./a.out to compile and run
+```
+
+### Rust
+
+```rust
+fn main() {
+    println!("Hello World!");
+}
+// rustc hello.rs && ./hello to compile and run
+```
