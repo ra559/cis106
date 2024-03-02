@@ -4,6 +4,9 @@ title: Customize Gedit
 ---
 # {{page.title}}
 
+## Video:
+* [Here](https://youtu.be/SgeB_8EgAMk)
+
 ## Synopsis
 Make Gedit feel and look more like an IDE than a text editor
 
@@ -148,5 +151,7 @@ int main() {
 fn main() {
     println!("Hello World!");
 }
+// Must have rust installed: 
+// curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 // rustc hello.rs && ./hello to compile and run
 ```
