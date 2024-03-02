@@ -62,77 +62,46 @@ Download this compressed zip file: [lab4files.zip](/assets/lab4files.zip) Decomp
 Use this image as a visual aid during this question
 <br>![visual aid linux FS](/assets/Linux-Filesystem-Incomplete-visual-aid.png)<br>
 
-## Description:
-John wants to create a script that will show the current user then will list all the files in the Downloads and Documents folder for the current user having all the entries separated by a comma instead of a tab or space. The script should:
+### Description:
+John wants to create a script to practice cd, ls, pwd, and variables. The script will output the following:
 
-1. Display a message showing what the script does using environment variables to show the users home directory absolute path and the user name.
-2. Comments explaining what each command is doing
+image here
 
-## Solution
-### Make Gedit feel and look more like an IDE than a text editor
-1. First customize the editor to make shell scripting easier to write. Install the package: `gedit-pluggins` using this command <br>`sudo apt update && sudo apt install gedit-plugin`<br> 
-2. Open gedit (text editor) and go to preferences > Plugins
-3. Enable the following plugins:
-   1.**Embedded terminal**: Will give us a quick terminal at the bottom of the gedit window.
-   2. **Word completion**: Will enable autocomplete of common words in the script
-   3. **Text Size**: will us to increase or decrease the size of the text using CTRL + and CTRL -
-   4. **Bracket Completion**: will auto close brackets and parenthesis (will be used later in the course)
-   5. **Code comment**: Will allows us to quickly comment out sections of code for easy troubleshooting
-   6. **Quick highlight**: Will automatically highlight all instances of the highlighted word
-4. In the view tab of the preferences window enable the following:
-   1. Display line numbers
-   2. Display right margin at column 80
-   3. Display overview map
-5. In the editor tab:
-   1. Set the tab width to 4 spaces
-   2. Autosave the file every 5 minutes
-6. In the Font and color:
-   1. Download the font [Firacode Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/FiraMono.zip)
-   2. Install the font
-      1. Extract the archive in a the directory `.fonts` located in YOUR home directory. If the directory is not there, press CTRL + H to enable hidden files. If the directory is not there still, create it. 
-      2. Open a terminal and type the command: `fc-cache -f -v` to refresh the font cache.
-      3. Go back to gedit Font & Colors tab inside preferences. 
-      4. Change the font to **FiraMono Nerd Font Mono Regular** (if you cant find the font, close gedit and open it again)
-      5. Optional (change the font size to a size you are more comfortable with)
-      6. Optional (change the color scheme to something you prefer or matches our preference). I like the dracula theme which you can download from [here](https://draculatheme.com/gedit)
-7. In the view options of the hamburger menu, enable:
-   1. Side Panel
-   2. Bottom Panel
+
+### Solution
+* The complete source code can be found [here](/assets/lab4/lab4_script.sh)
+
+
 ### Writing the code
 1. Open Gedit.
-2. Type the shell declaration/Shebang (`#!/bin/bash`) and save the file in the lab4 directory (inside your cis106 directory/repository). Call the file `lab4-script1.sh`
-3. Write an echo command to display the following text: "This script will show you all the files inside the Downloads and Documents directory of the user: user environment variable here, whose home directory is: home environment variable here" 
-4. Use the cd command to navigate to the Downloads directory. You will use absolute path and environment variables in the path to make sure the script works in everywhere
-5. list all the files in the given directory including hidden files. If there is nothing in the downloads folder, place some files there. Make sure to have at least 1 hidden file (files whose name start with a .). Do the same for the Documents folder.
-6. 
+2. Type the shell declaration/Shebang (`#!/bin/bash`) and save the file in the `lab4` directory (inside your cis106 directory/repository). Name the file `lab4-script1.sh`
+3. 
+ 
 
-> **Take a screenshot of the terminal and the text editor showing the source code. The terminal should show the 
+> **Take a screenshot of the terminal and the text editor showing the source code.**
 
 
-1. Open a new terminal. What is your present/current working directory?
-2. Change your present/current working directory to the `default` directory located inside `/usr`
-3. Change your present/current working directory to the `ipv4` directory located inside `/proc`
-4. change your present/current working directory to the previous present/working directory.
-5. List all the files inside `share/backgrounds` without changing your present working directory.
-6. List all the files inside your `cis106` directory located in YOUR home directory.
-7.  List all the files inside your `Downloads` directory. Your present working directory has to be `/home` before your can list all the files.
-8.  Change your present/current working directory to `disk/by-id`  and from there long list all the files in your home directory including hidden files.
-9.  List all the files sorted by modification time inside the `share/themes` directory.
-10. List all the files sorted by file extension inside the `/usr/share` directory.
-
-> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-10. Multiple screenshots may be required**
 
 
-## Question 5 | Challenge Question 2
 
-1. Go to the root of the filesystem. From there reach the `Downloads` directory.
+## Question 5 | Challenge write a script
+Write a script that will produce the following output:
+
+
+
+
+### Tips:
+* You will need environment variables and user defined variables
+
+
+1.  Go to the root of the filesystem. From there reach the `Downloads` directory.
    1. **Rules:**
       1. You are only allowed to move 1 directory at the time. Which means you cannot use shortcuts or absolute path
       2. Once you have reached the Downloads directory, show the absolute path of your current/present working directory.
       3. Take a screenshot of your terminal showing all the commands you use to solve this sub question.
 >**Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer question**
 
-2. Change your present working directory to `/usr/share/themes/Adwaita`. From there reach your Documents directory. 
+1. Change your present working directory to `/usr/share/themes/Adwaita`. From there reach your Documents directory. 
    1. **Rules:**
       1. You are allowed to move more than 2 directories at a time.
       2. You can use shortcuts or use absolute paths.
