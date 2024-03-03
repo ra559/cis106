@@ -51,7 +51,7 @@ Download this compressed zip file: [lab4files.zip](/assets/lab4files.zip) Decomp
 2. Change your present working directory to `~/lab4files`. Long list all the files inside your current working directory with **human readable** file sizes.
 3. Long list all the files inside `lab4files` with **human readable** file size, and **sorted by file size**.
 4. Long list all the files inside `lab4files` with **human readable** file size, **sorted by file size**, **without the user nor the group name**, and **showing their inode number**.
-5. list all the files inside `lab4files` **sorted by file extension** and in **reverse order**. 
+5. List all the files inside `lab4files` **sorted by file extension** and in **reverse order**. 
 
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots may be **required****
 
