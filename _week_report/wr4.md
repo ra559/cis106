@@ -7,7 +7,7 @@ title: Week Report 4
 * [The Linux File System Presentation](https://rapurl.live/s39)
 * [Ls Command Cheat Sheet](https://rapurl.live/kdy)
 * [Absolute Path and Relative Path Cheat sheet](https://rebrand.ly/3bdn1)
-* [Video here](https://youtu.be/CfuT4OQ4nbY)
+* [Video here](https://youtu.be/t2vXzYX2ZL8)
 
 ## Complete the following tasks
 

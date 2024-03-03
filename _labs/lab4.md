@@ -2,13 +2,12 @@
 layout: post
 title: Lab 4 - The Linux FS
 ---
-# Work in progress ignore this lab!
 
 # {{page.title}}
 
 * Presentations:
   * [How to navigate the filesystem](https://rapurl.live/2n3)
-  * Video [here](https://youtu.be/GhNYOWEc5qc)
+  * Video [here](https://youtu.be/t2vXzYX2ZL8)
 
 > **Note:**
 > Your final exam will include questions similar to 4 and 5. I will answer questions 4 and 5 during class after the due date for this lab has expired. 
