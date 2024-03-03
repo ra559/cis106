@@ -225,7 +225,7 @@
   },"32": {
     "doc": "Week Report 4",
     "title": "Complete the following tasks",
-    "content": "1. Complete Week Report 4. Your report must contain the following: . | Create a file inside the weekReports directory that is located inside the cis106 directory. Name this file, wr4.md | You will complete the week report inside the wr4.md file. Your report must contain: . | Screenshots from each practice from the presentation The Linux File system: . | Take a screenshot of your terminal showing all the commands, or most of the commands, you used to complete each practice. | Place all your screenshots in your week report 4 file. | Make sure to label each practice using heading 2 or heading 3 markdown formatting. | . | . | . 2. Complete Notes 2 . All the information can be found here: . | Presentation | Article | . | Create a file in the clasNotes directory named notes2.md | The file must be properly formatted using bold, code formatting and headings | The file must contain the following: . | Each of the commands used for navigating the file system . | for each command include: Description, usage/formula, and examples (3 or more if available) | . | . | Definitions of the following terms: . | File system | pathname | Absolute path | Relative path | The difference between your home directory and the home directory | parent directory | child directory or subdirectory | Bash special characters | environment variables | user defined variables | Why do we need use $ for referencing the value of a variable (using a variable) in a shell script | . | . 3. Complete lab 4 The linux File System . | Please do this after you complete the Week report and class notes! Trust me, it is better this way. | Instructions here | . 4. Complete discussion boards . | Complete at least 1 of the discussion boards (2 entries!) | . Special Note: Git Commands Reminder . | git clone repository/url/here: is the command to clone a repository where cloning means downloading a repository to your computer | git pull: to pull/synchronize your repository from github to your local machine. Always run this command BEFORE you start working VS Code | git add .: to track all the changes made to your file. | git commit -m \"label for your changes here\": this command will label all the changes you added with the add command | git push: will send all your changes to your github repository | . Always run the commands in this order: pull =&gt; add =&gt; commit =&gt; push Never use the github website to make changes to your repository unless you know what you are doing and can remember to pull the changes before working on your local repository! . ",
+    "content": "1. Complete Week Report 4. Your report must contain the following: . | Create a file inside the weekReports directory that is located inside the cis106 directory. Name this file, wr4.md | You will complete the week report inside the wr4.md file. Your report must contain: . | Screenshots from each practice from the presentation The Linux File system: . | Take a screenshot of your terminal showing all the commands, or most of the commands, you used to complete each practice. | Place all your screenshots in your week report 4 file. | Make sure to label each practice using heading 2 or heading 3 markdown formatting. | . | . | . 2. Complete Notes 2 . All the information can be found here: . | Presentation | Article | . | Create a file in the clasNotes directory named notes2.md | The file must be properly formatted using bold, code formatting and headings | The file must contain the following: . | Each of the commands used for navigating the file system . | for each command include: Description, usage/formula, and examples (3 or more if available) | . | . | Definitions of the following terms: . | File system | pathname | Absolute path | Relative path | The difference between your home directory and the home directory | parent directory | child directory or subdirectory | Bash special characters | environment variables | user defined variables | Why do we need use $ with variables in bash shell scripting? | . | . 3. Complete lab 4 The linux File System . | Please do this after you complete the Week report and class notes! Trust me, it is better this way. | Instructions here | . 4. Complete discussion boards . | Complete at least 1 of the discussion boards (2 entries!) | . Special Note: Git Commands Reminder . | git clone repository/url/here: is the command to clone a repository where cloning means downloading a repository to your computer | git pull: to pull/synchronize your repository from github to your local machine. Always run this command BEFORE you start working VS Code | git add .: to track all the changes made to your file. | git commit -m \"label for your changes here\": this command will label all the changes you added with the add command | git push: will send all your changes to your github repository | . Always run the commands in this order: pull =&gt; add =&gt; commit =&gt; push Never use the github website to make changes to your repository unless you know what you are doing and can remember to pull the changes before working on your local repository! . ",
     "url": "/week_report:/wr4#complete-the-following-tasks",
     
     "relUrl": "/week_report:/wr4#complete-the-following-tasks"
@@ -701,7 +701,7 @@
   },"100": {
     "doc": "Lab 4 - The Linux FS",
     "title": "Lab 4 - The Linux FS",
-    "content": ". | Presentations: . | How to navigate the filesystem | Video here | . | . Note: Questions 1 AND 2 are worth 50 points. Question 3 has no grade. Question 4 and 5 are worth 50 points. So each question here is worth 25 points. In the video, I only complete question 1, 2 and 3. You have to do question 4 and 5 on your own. Your final exam will include questions similar to 4 and 5. I will answer questions 4 and 5 during class after the due date for this lab has expired. ",
+    "content": ". | Presentations: . | How to navigate the filesystem | Video here | . | . Note: Your final exam will include questions similar to 4 and 5. I will answer questions 4 and 5 during class after the due date for this lab has expired. ",
     "url": "/labs/lab4/",
     
     "relUrl": "/labs/lab4/"
@@ -715,24 +715,24 @@
   },"102": {
     "doc": "Lab 4 - The Linux FS",
     "title": "Question 2 | The ls command",
-    "content": "Download this compressed zip file: lab4files.zip Decompress the zip file in your home directory. | Change your present working directory to /usr/share/. Using absolute path, list all the files inside the lab4files directory. | Change your present working directory to ~/lab4files. Long list all the files inside your current working directory with human readable file sizes. | Long list all the files inside lab4files with human readable file size, and sorted by file size. | Long list all the files inside lab4files with human readable file size, sorted by file size, without the user nor the group name, and showing their inode number. | list all the files inside lab4files sorted by file extension and in reverse order. | . Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots may be **required** . ",
+    "content": "Download this compressed zip file: lab4files.zip Decompress the zip file in your home directory. | Change your present working directory to /usr/share/. Using absolute path, list all the files inside the lab4files directory. | Change your present working directory to ~/lab4files. Long list all the files inside your current working directory with human readable file sizes. | Long list all the files inside lab4files with human readable file size, and sorted by file size. | Long list all the files inside lab4files with human readable file size, sorted by file size, without the user nor the group name, and showing their inode number. | List all the files inside lab4files sorted by file extension and in reverse order. | . Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots may be **required** . ",
     "url": "/labs/lab4/#question-2--the-ls-command",
     
     "relUrl": "/labs/lab4/#question-2--the-ls-command"
   },"103": {
     "doc": "Lab 4 - The Linux FS",
     "title": "Question 3 | Shell scripting",
-    "content": "Use this image as a visual aid during this question . Description: . John wants to create a script to practice cd, ls, pwd, and variables. The script will output the following: . image here . Solution . | The complete source code can be found here | . Writing the code . | Open Gedit. | Type the shell declaration/Shebang (#!/bin/bash) and save the file in the lab4 directory (inside your cis106 directory/repository). Name the file lab4-script1.sh | | . Take a screenshot of the terminal and the text editor showing the source code. ",
+    "content": "Use this image as a visual aid during this question . If you want your Gedit (Text Editor) to look like mine. Take a moment to follow this guide. Description: . John wants to create a script to practice cd, ls, pwd, and variables. The script will output the following: . Solution . | The complete source code can be found here . | Use the screenshot and write a script that can produce the same output. | Modify the script to use variables where needed. | . | . Take a screenshot of the terminal and the text editor showing the source code. ",
     "url": "/labs/lab4/#question-3--shell-scripting",
     
     "relUrl": "/labs/lab4/#question-3--shell-scripting"
   },"104": {
     "doc": "Lab 4 - The Linux FS",
-    "title": "Question 5 | Challenge write a script",
-    "content": "Write a script that will produce the following output: . Tips: . | You will need environment variables and user defined variables | . | Go to the root of the filesystem. From there reach the Downloads directory. | Rules: . | You are only allowed to move 1 directory at the time. Which means you cannot use shortcuts or absolute path | Once you have reached the Downloads directory, show the absolute path of your current/present working directory. | Take a screenshot of your terminal showing all the commands you use to solve this sub question. Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer question . | . | Change your present working directory to /usr/share/themes/Adwaita. From there reach your Documents directory. | Rules: . | You are allowed to move more than 2 directories at a time. | You can use shortcuts or use absolute paths. | Once you haver reached the Documents directory, show your present working directory. | Take a screenshot of your terminal showing all the commands you use to solve this sub question. Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer question . | . | . | . ",
-    "url": "/labs/lab4/#question-5--challenge-write-a-script",
+    "title": "Question 4 | Challenge write a script",
+    "content": "Write a script that will produce the following output: . Tips: . | You will need environment variables and user defined variables. | Use the env command to display a list of all environment variables | The ls command is using a time-style. Use the man page and this guide to figure out the right option. Time style is not the only option in used here. | . Take a screenshot of the terminal after executing the script . ",
+    "url": "/labs/lab4/#question-4--challenge-write-a-script",
     
-    "relUrl": "/labs/lab4/#question-5--challenge-write-a-script"
+    "relUrl": "/labs/lab4/#question-4--challenge-write-a-script"
   },"105": {
     "doc": "Lab 4 - The Linux FS",
     "title": "What will you Submit:",
@@ -742,383 +742,404 @@
     "relUrl": "/labs/lab4/#what-will-you-submit"
   },"106": {
     "doc": "Lab 4 - The Linux FS",
+    "title": "How I will grade you:",
+    "content": ". | Every question is worth: 25 pts | I will go to your github repository and read/download your script. If it produces the required output and matches the screenshot, you will get full credit for the challenge question. | . ",
+    "url": "/labs/lab4/#how-i-will-grade-you",
+    
+    "relUrl": "/labs/lab4/#how-i-will-grade-you"
+  },"107": {
+    "doc": "Lab 4 - The Linux FS",
     "title": "Extra practice (not mandatory but recommended)",
-    "content": "The tree and exa command (Optional Question. No submission required) . | Using absolute path and having /etc as your present working directory. Display a tree of the directory lab4files. | Change your present working directory to your Downloads directory. Display a tree of the directory lab4files with the full path prefix for each file, the file permissions, and the file size in human readable format. | Display a tree of the directory lab4files sorted by last modified time and showing the file owner and group. | Once you have installed exa, list all the options of the exa command. | Using exa, long list all the files inside lab4files | Long list lab4files showing the header that indicates what each column means. | Long list lab4files without the file owner nor group including the header and the date the file was created. | . ",
+    "content": "The tree and exa command (Optional Question. No submission required) . | Using absolute path and having /etc as your present working directory. Display a tree of the directory lab4files. | Change your present working directory to your Downloads directory. Display a tree of the directory lab4files with the full path prefix for each file, the file permissions, and the file size in human readable format. | Display a tree of the directory lab4files sorted by last modified time and showing the file owner and group. | Install exa then list all the options of the exa command. | Using exa, long list all the files inside lab4files | Long list lab4files showing the header that indicates what each column means. | Long list lab4files without the file owner nor group including the header and the date the file was created. | . Solution: . | cd /etc | tree ~/lab4files/ | cd ~/Downloads | tree -fph ~/lab4files/ | tree -tgu ~/lab4files | sudo apt install exa -y | exa --help | exa -l ~/lab4files/ | exa -lh ~/lab4files/ | exa -lhU --no-permissions --no-user ~/lab4files/ | . ",
     "url": "/labs/lab4/#extra-practice-not-mandatory-but-recommended",
     
     "relUrl": "/labs/lab4/#extra-practice-not-mandatory-but-recommended"
-  },"107": {
+  },"108": {
     "doc": "Markdown Cheat Sheet",
     "title": "Markdown Cheat Sheet",
     "content": "File here: https://devhints.io/markdown . ",
     "url": "/docs/MarkdownCheatSheet/",
     
     "relUrl": "/docs/MarkdownCheatSheet/"
-  },"108": {
+  },"109": {
     "doc": "Setup SSH Guide",
     "title": "Setup SSH Guide",
     "content": " ",
     "url": "/guides/SetupSSHUbuntuServer/",
     
     "relUrl": "/guides/SetupSSHUbuntuServer/"
-  },"109": {
+  },"110": {
     "doc": "Setup SSH Guide",
     "title": "Installation",
     "content": ". | Make sure that your server and your client computer are in the same network. The easiest way to do this is to make sure that the network addapter in the viertual machine is set to bridge instead of nat. To do this go, open the virtual machine settings and in the network section change the adapter to Bridge. | . | However, your network may prevent you from doing this. Some IDS and smart routers may prevent you from getting an IP. In this case, you need to use port forwarding in your virtual machine. Here is a guide on how to do it. Portforwarding Example . | Make sure that the ssh server program is installed in the server virtual machine sudo apt install openssh-server -y . | Make sure that the ssh client program is installed in the client machine. This is the computer that you will be using to manage your server. sudo apt install openssh-server -y . | Enable and start ssh in the server: sudo systemctl enable ssh; sudo systemctl start ssh . | Test the connection by loging in to the server from the client. First, use the ip or hostname command to find out the ip address of the server. | On the server type, hostname -I this will give you the ip address of your server. | On the client type: ssh username@server-ip-address . | If you are using port forwarding, your command will be: | . ssh -p 2222 username@127.0.0.1 . | Read and answer the questions and you will connect sucessfully. | . ",
     "url": "/guides/SetupSSHUbuntuServer/#installation",
     
     "relUrl": "/guides/SetupSSHUbuntuServer/#installation"
-  },"110": {
+  },"111": {
     "doc": "Setup SSH Guide",
     "title": "Setup private and public key authentication with or without password:",
     "content": ". | On the server, configure the firewall to accept ssh connections. sudo ufw allow ssh sudo ufw enable sudo ufw status . | Now we need to generate an ssh key in our client computer. If you are using your ubuntu machine from the course, then you already have one. If you are not, then you must create the ssh keys: | In your client machine type: ssh-keygen . | Now you can type this command to copy your ssh key to the server ssh-copy-id -i .ssh/id_rsa.pub webmaster@server-ip-address . | if you are using port forwarding, use this command instead: ssh-copy-id -i .ssh/id_rsa.pub -p 2222 webmaster@127.0.0.1 . | . if you use port forwarding your command will be: . ssh-copy-id -p 2222 username@127.0.0.1 . | Now you can connect to your server without having to remember the password. | . ",
     "url": "/guides/SetupSSHUbuntuServer/#setup-private-and-public-key-authentication-with-or-without-password",
     
     "relUrl": "/guides/SetupSSHUbuntuServer/#setup-private-and-public-key-authentication-with-or-without-password"
-  },"111": {
+  },"112": {
     "doc": "How to Setup Git and Github in Ubuntu 20.04",
     "title": "How to Setup Git and Github in Ubuntu 20.04",
     "content": " ",
     "url": "/guides/Ubuntu%20Github%20Setup/",
     
     "relUrl": "/guides/Ubuntu%20Github%20Setup/"
-  },"112": {
+  },"113": {
     "doc": "How to Setup Git and Github in Ubuntu 20.04",
     "title": "Assumptions:",
     "content": "I assume the following: . | You have a computer running Ubuntu and VS Code is installed in it. | You have a basic understanding of the Linux Command Line and your Terminal Emulator | You have a Github Account | . ",
     "url": "/guides/Ubuntu%20Github%20Setup/#assumptions",
     
     "relUrl": "/guides/Ubuntu%20Github%20Setup/#assumptions"
-  },"113": {
+  },"114": {
     "doc": "How to Setup Git and Github in Ubuntu 20.04",
     "title": "Install and setup git",
     "content": "Install command: sudo apt install git -y . ",
     "url": "/guides/Ubuntu%20Github%20Setup/#install-and-setup-git",
     
     "relUrl": "/guides/Ubuntu%20Github%20Setup/#install-and-setup-git"
-  },"114": {
+  },"115": {
     "doc": "How to Setup Git and Github in Ubuntu 20.04",
     "title": "Setup Git",
     "content": ". | Set your username: git config --global user.name 'your username here' | Set your email address: git config --global user.email 'your email here' | . ",
     "url": "/guides/Ubuntu%20Github%20Setup/#setup-git",
     
     "relUrl": "/guides/Ubuntu%20Github%20Setup/#setup-git"
-  },"115": {
+  },"116": {
     "doc": "How to Setup Git and Github in Ubuntu 20.04",
     "title": "Setup SSH authentication",
     "content": ". | Generate an ssh key: ssh-keygen -t ed25519 -C \"your_email@example.com\" This creates a new SSH key, using the provided email as a label. When you’re prompted to: \"Enter a file in which to save the key,\" press Enter. This accepts the default file location. At the prompt, to type a secure passphrase, press enter for no passphrase. If you want to use a passphrase, go ahead as it provides an extra layer of security. However, for this course you do not need to add a passphase. | Use the following command to see your public ssh key: cat ~/.ssh/id_ed25519.pub copy the entire output of this command to the clipboard. See examle here: . | In your github page, go to settings &gt; SSH and GPG Keys Here add your ssh key that you copied to the clipboad in the step prior. Type yes (the whole word) and press enter and you are done . | Test you ssh connection by using this command: ssh -T git@github.com You will see the following outcome: . | . If you do not see an error message or a different message than the one shown prior, then your SSH connection is correct. Now you can push and clone using SSH. ",
     "url": "/guides/Ubuntu%20Github%20Setup/#setup-ssh-authentication",
     
     "relUrl": "/guides/Ubuntu%20Github%20Setup/#setup-ssh-authentication"
-  },"116": {
+  },"117": {
     "doc": "Customize Gedit",
     "title": "Customize Gedit",
     "content": " ",
     "url": "/guides/custimizeGedit/",
     
     "relUrl": "/guides/custimizeGedit/"
-  },"117": {
+  },"118": {
+    "doc": "Customize Gedit",
+    "title": "Video:",
+    "content": ". | Here | . ",
+    "url": "/guides/custimizeGedit/#video",
+    
+    "relUrl": "/guides/custimizeGedit/#video"
+  },"119": {
     "doc": "Customize Gedit",
     "title": "Synopsis",
     "content": "Make Gedit feel and look more like an IDE than a text editor . ",
     "url": "/guides/custimizeGedit/#synopsis",
     
     "relUrl": "/guides/custimizeGedit/#synopsis"
-  },"118": {
+  },"120": {
     "doc": "Customize Gedit",
     "title": "What is Gedit",
     "content": "Gedit is a text editor designed for the GNOME desktop environment. It was GNOME’s default text editor and part of the GNOME Core Applications until GNOME version 42 in March 2022, which changed the default text editor to GNOME Text Editor. ",
     "url": "/guides/custimizeGedit/#what-is-gedit",
     
     "relUrl": "/guides/custimizeGedit/#what-is-gedit"
-  },"119": {
+  },"121": {
     "doc": "Customize Gedit",
     "title": "How to install Gedit",
     "content": "If you are using Gnome, gedit is installed by default. This is the default text editor for Gnome. To install gedit: sudo apt install gedit gedit-plugins -y If you are using gnome, install the plugins package otherwise the plugins won’t be available. Gnome Text Editor and gedit are essentially the same app. ",
     "url": "/guides/custimizeGedit/#how-to-install-gedit",
     
     "relUrl": "/guides/custimizeGedit/#how-to-install-gedit"
-  },"120": {
+  },"122": {
     "doc": "Customize Gedit",
     "title": "Installing and using plugins",
     "content": ". | Open gedit (text editor) and go to preferences &gt; Plugins | Enable the following plugins: . | Bracket Autocompletion: will auto close brackets, parenthesis, and quotes | Code Comment: will allow us to do multi line commenting. (CTRL + M and CTRL + Shift + M) | Embedded terminal: Will give us a quick terminal at the bottom of the gedit window. | File Browser Panel: Will give us a file manager to the left of the window. | Multi Edit: will give us multi line editing. | Open Links: will allow us to open URLs | Quick highlight: Will automatically highlight all instances of the highlighted word | Quick open: with CTRL + Alt + o ,opens a menu to open recently edited files | Session Saver: saves the session so when you close gedit and open it again, it opens on the last session | Text Size: will us to increase or decrease the size of the text using CTRL + and CTRL - | Word completion: Will enable autocomplete of common words in the script | . | . ",
     "url": "/guides/custimizeGedit/#installing-and-using-plugins",
     
     "relUrl": "/guides/custimizeGedit/#installing-and-using-plugins"
-  },"121": {
+  },"123": {
     "doc": "Customize Gedit",
     "title": "Enabling functionality",
     "content": ". | In the view tab of the preferences window enable the following: . | Display line numbers | Display right margin at column 80 | Display overview map | In the editor tab: . | Set the tab width to 4 spaces | Autosave the file every 5 minutes | . | . | . | In the Font and color: . | Download the font Firacode Nerd Font Mono | Install the font . | Extract the archive in a the directory .fonts located in YOUR home directory. If the directory is not there, press CTRL + H to enable hidden files. If the directory is not there still, create it. | Open a terminal and type the command: fc-cache -f -v to refresh the font cache. | Go back to gedit Font &amp; Colors tab inside preferences. | Change the font to FiraMono Nerd Font Mono Regular (if you cant find the font, close gedit and open it again) | . | . | . | Changing the theme . | Optional (change the font size to a size you are more comfortable with) | Optional (change the color scheme to something you prefer or matches our preference). I like the dracula theme which you can download from here | Here are other themes you can download too! | You will need to place these themes in: $HOME/.local/share/gedit/styles/ | Themes are xml files so you need to extract the xz file in that directory. | . | In the view options of the hamburger menu, enable: . | Side Panel | Bottom Panel | . | . ",
     "url": "/guides/custimizeGedit/#enabling-functionality",
     
     "relUrl": "/guides/custimizeGedit/#enabling-functionality"
-  },"122": {
+  },"124": {
     "doc": "Customize Gedit",
     "title": "Testing Gedit",
-    "content": "Here is the source code: . Bash . #!/bin/bash main (){ echo \"Hello world\" } main . HTML . &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;style&gt; button { background-color: #04AA6D; border: none; color: white; padding: 15px 32px; font-size: 25px; } &lt;/style&gt; &lt;body&gt; &lt;button onclick=\"say();\" id=\"btn\" type=\"button\"&gt;Say hello!&lt;/button&gt; &lt;h1 id=\"msg\"&gt;&lt;/h1&gt; &lt;/body&gt; &lt;script&gt; function say(){ document.getElementById(\"msg\").innerHTML = \"Hello world!\"; } &lt;/script&gt; &lt;/html&gt; . Python . #!/usr/bin/python3 def hello(): print(\"hello World\") hello() . C++ . #include &lt;iostream&gt; using std::cout; int main() { cout &lt;&lt; \"Hello World!\\n\"; return 0; } // g++ hello.cpp &amp;&amp; ./a.out to compile and run . Rust . fn main() { println!(\"Hello World!\"); } // rustc hello.rs &amp;&amp; ./hello to compile and run . ",
+    "content": "Here is the source code: . Bash . #!/bin/bash main (){ echo \"Hello world\" } main . HTML . &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;style&gt; button { background-color: #04AA6D; border: none; color: white; padding: 15px 32px; font-size: 25px; } &lt;/style&gt; &lt;body&gt; &lt;button onclick=\"say();\" id=\"btn\" type=\"button\"&gt;Say hello!&lt;/button&gt; &lt;h1 id=\"msg\"&gt;&lt;/h1&gt; &lt;/body&gt; &lt;script&gt; function say(){ document.getElementById(\"msg\").innerHTML = \"Hello world!\"; } &lt;/script&gt; &lt;/html&gt; . Python . #!/usr/bin/python3 def hello(): print(\"hello World\") hello() . C++ . #include &lt;iostream&gt; using std::cout; int main() { cout &lt;&lt; \"Hello World!\\n\"; return 0; } // g++ hello.cpp &amp;&amp; ./a.out to compile and run . Rust . fn main() { println!(\"Hello World!\"); } // Must have rust installed: // curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh // rustc hello.rs &amp;&amp; ./hello to compile and run . ",
     "url": "/guides/custimizeGedit/#testing-gedit",
     
     "relUrl": "/guides/custimizeGedit/#testing-gedit"
-  },"123": {
+  },"125": {
     "doc": "FORMAT control characters",
     "title": "FORMAT control characters supported by the GNU/date command",
     "content": "| %FORMAT String | Description | . | %% | a literal % | . | %a | locale’s abbreviated weekday name (e.g., Sun) | . | %A | locale’s full weekday name (e.g., Sunday) | . | %b | locale’s abbreviated month name (e.g., Jan) | . | %B | locale’s full month name (e.g., January) | . | %c | locale’s date and time (e.g., Thu Mar 3 23:05:25 2005) | . | %C | century; like %Y, except omit last two digits (e.g., 21) | . | %d | day of month (e.g, 01) | . | %D | date; same as %m/%d/%y | . | %e | day of month, space padded; same as %_d | . | %F | full date; same as %Y-%m-%d | . | %g | last two digits of year of ISO week number (see %G) | . | %G | year of ISO week number (see %V); normally useful only with %V | . | %h | same as %b | . | %H | hour (00..23) | . | %I | hour (01..12) | . | %j | day of year (001..366) | . | %k | hour ( 0..23) | . | %l | hour ( 1..12) | . | %m | month (01..12) | . | %M | minute (00..59) | . | %n | a newline | . | %N | nanoseconds (000000000..999999999) | . | %p | locale’s equivalent of either AM or PM; blank if not known | . | %P | like %p, but lower case | . | %r | locale’s 12-hour clock time (e.g., 11:11:04 PM) | . | %R | 24-hour hour and minute; same as %H:%M | . | %s | seconds since 1970-01-01 00:00:00 UTC | . | %S | second (00..60) | . | %t | a tab | . | %T | time; same as %H:%M:%S | . | %u | day of week (1..7); 1 is Monday | . | %U | week number of year, with Sunday as first day of week (00..53) | . | %V | ISO week number, with Monday as first day of week (01..53) | . | %w | day of week (0..6); 0 is Sunday | . | %W | week number of year, with Monday as first day of week (00..53) | . | %x | locale’s date representation (e.g., 12/31/99) | . | %X | locale’s time representation (e.g., 23:13:48) | . | %y | last two digits of year (00..99) | . | %Y | year | . | %z | +hhmm numeric timezone (e.g., -0400) | . | %:z | +hh:mm numeric timezone (e.g., -04:00) | . | %::z | +hh:mm:ss numeric time zone (e.g., -04:00:00) | . | %:::z | numeric time zone with : to necessary precision (e.g., -04, +05:30) | . | %Z | alphabetic time zone abbreviation (e.g., EDT) | . ",
     "url": "/guides/format-control-char-date-command/#format-control-characters-supported-by-the-gnudate-command",
     
     "relUrl": "/guides/format-control-char-date-command/#format-control-characters-supported-by-the-gnudate-command"
-  },"124": {
+  },"126": {
+    "doc": "FORMAT control characters",
+    "title": "Example:",
+    "content": ". | ls -l --time-style=+%Z / | . ",
+    "url": "/guides/format-control-char-date-command/#example",
+    
+    "relUrl": "/guides/format-control-char-date-command/#example"
+  },"127": {
     "doc": "FORMAT control characters",
     "title": "FORMAT control characters",
     "content": " ",
     "url": "/guides/format-control-char-date-command/",
     
     "relUrl": "/guides/format-control-char-date-command/"
-  },"125": {
+  },"128": {
     "doc": "Install Ubuntu Server 20.04 In VirtualBox",
     "title": "Install Ubuntu Server 20.04 In VirtualBox",
     "content": " ",
     "url": "/guides/install-ubuntu-server-20.04/",
     
     "relUrl": "/guides/install-ubuntu-server-20.04/"
-  },"126": {
+  },"129": {
     "doc": "Install Ubuntu Server 20.04 In VirtualBox",
     "title": "Step: 1",
     "content": ". | Download Ubuntu Server 20.04 iso file. | Create a virtual machine that meets Ubuntu Server 20.04 Minimun requirements.. | The recommended system requirements are: . | CPU: 1 gigahertz or better | RAM: 1 gigabyte or more | Disk: a minimum of 2.5 gigabytes (we will use 20) | Clipboard Redirection - Bidirectional | Network Card - Bridge Adapter | . | . | Turn on Virtual Machine | Start the installer. | . ",
     "url": "/guides/install-ubuntu-server-20.04/#step-1",
     
     "relUrl": "/guides/install-ubuntu-server-20.04/#step-1"
-  },"127": {
+  },"130": {
     "doc": "Final Project Description",
     "title": "Final Project Description",
     "content": " ",
     "url": "/project/Final_Project_description/",
     
     "relUrl": "/project/Final_Project_description/"
-  },"128": {
+  },"131": {
     "doc": "Final Project Description",
     "title": "Description",
     "content": "The goal of this project is to host a simple website (1-page site) in a web server. You will be installing Ubuntu Server in a virtual machine and managing the server from another computer. That computer can be your Host Machine (Windows) or the Ubuntu Desktop virtual machine that we use in the course. The project will give you basic/initial exposure to the following technologies: . | Virtualization (VirtualBox) | Ubuntu Server | Apache | SSH | HTML | Markdown | VS Code | . The project is divided into 3 deliverables. It is done this way, so you can work slowly through the semester as you gain more knowledge working with Ubuntu Desktop. This also allows you to earn a grade as the semester progresses because the final grade is divided equally among the 3 deliverables. The final project is 20% of your final grade, however, this can change, therefore do not skip any deliverable! . Each deliverable will be submitted as a Markdown document in your GitHub Repository. You will also be required to submit a PDF version of each deliverable, just in case something happens to your GitHub Repository. No late submission will be accepted. This project is due on Dec 21st. ",
     "url": "/project/Final_Project_description/#description",
     
     "relUrl": "/project/Final_Project_description/#description"
-  },"129": {
+  },"132": {
     "doc": "Final Project Description",
     "title": "Requirements",
     "content": ". | A virtual machine/PC where you can install Ubuntu Server. A Virtual machine will be preferred since everything in the tutorials will be done in a virtual machine. | . This is the main tutorial we will follow: . | How To Install the Apache Web Server on Ubuntu 22.04 | . Here are some sources you can use to investigate: . | What is a Web Server | What is SSH | What is Ubuntu Server | Open Source Web Servers | . ",
     "url": "/project/Final_Project_description/#requirements",
     
     "relUrl": "/project/Final_Project_description/#requirements"
-  },"130": {
+  },"133": {
     "doc": "Final Project Description",
     "title": "Deliverable 1: Project’s Requirements",
     "content": "Old Video with more details is available here Newer and shorter video is available here Image resize tool **Example of how the deliverable should look like here . For deliverable 1, we are going to accomplish the following tasks: . | Read the tutorial. Write down every concept you don’t understand and research them. | Answer The following questions: . | What is a web server? Hardware and software side | What are some different web server applications? | What is virtualization? | What is virtualbox? | What is a virtual machine? | What is Ubuntu Server? | What is a firewall? | What is SSH? | . | . To demonstrate the completion of deliverable 1, the student needs to submit a markdown and pdf file where all the questions are answered. Here you can find an example of how the document should look like. ",
     "url": "/project/Final_Project_description/#deliverable-1-projects-requirements",
     
     "relUrl": "/project/Final_Project_description/#deliverable-1-projects-requirements"
-  },"131": {
+  },"134": {
     "doc": "Final Project Description",
     "title": "Deliverable 2 Installing Ubuntu Server And Apache",
     "content": "*Video:Deliverable 2 Latest Video 0-100! . Resources: . | Apache Commands You Should know | IP Command With Examples | UFW Essentials | How To Troubleshoot Common Apache Errors | . Follow this guide to install Ubuntu Server and Apache. After completing the installation, answer the following questions. You must type your answer and take screenshots of the commands and their output. | What are the server hardware specifications (virtual machine settings)? Take a screenshot - don’t type it! | What is Ubuntu server log in screen? Take screenshot - do not type it! | What is the IP address of your Ubuntu Server Virtual Machine? | How do you enable the Ubuntu Firewall? | How do you check if the Ubuntu Firewall is running? | How do you disable the Ubuntu Firewall? | How do you add Apache to the Firewall? | What is the command you used to install Apache? | What is the command you use to check if Apache is running? | What is the command you use to stop Apache? | What is the command you use to restart Apache? | What is the command used to test Apache configuration? | What is the command used to check the installed version of Apache? Reviewing logs is an essential part of system administration; read the tutorial “How To Troubleshoot Common Apache Errors”. After you have finished reading the tutorial, answer the following questions: . | What are the most common commands to troubleshoot Apache errors? Provide a brief description of each command. | Which are Apache Log Files, and what are they used for? Provide examples and screenshots. | . To demonstrate the completion of deliverable 2, the student must submit a markdown and pdf file where all the questions are answered. Here you can find an example of how the document should look like. ",
     "url": "/project/Final_Project_description/#deliverable-2-installing-ubuntu-server-and-apache",
     
     "relUrl": "/project/Final_Project_description/#deliverable-2-installing-ubuntu-server-and-apache"
-  },"132": {
+  },"135": {
     "doc": "Final Project Description",
     "title": "Deliverable 3 Hosting a simple website",
     "content": "Video:Deliverable 3 Latest Video 0-100! . For this deliverable, you have 2 options; Pick one! . Option 1: Resume . | Create a simple resume of yourself. Here is an example of the kind of information to include: . | http://resume-template.joelglovier.com/ | . | You do not need to include a photo of yourself, instead use a stock photo . | You can find stock photos here: https://www.pexels.com/ | . | Once you have created your markdown file, convert the file to HTML. | Compress all the files into a single archive so that they are easier to move. | Send the files to the server. | Once you have transferred the archive to the server, decompress the archive and move the files to their respective folder so that they can be served by the web server. | Open your website in the browser of your host computer or Ubuntu desktop computer and take a screenshot of the browser. | To demonstrate the completion of this deliverable, submit the following: . | The URL to the GitHub repository in the final project folder where I can find all the files you used for creating the site including the markdown file, HTML file and the images. | The screenshot of your website running | . | . Option 2: A simple site . | Create a markdown file that contains instructions on how to set up a Web Server in Ubuntu Server. Include screenshots where you find them necessary. Make sure to explain each command that is necessary. Your Deliverable must contain the following: . | Introduction (Keep it simple) | Basic terminology that the reader must know | Step-by-step instructions | Step 1: Installing VirtualBox | Step 2: Installing Ubuntu Server | Step 3: Installing Apache | Step 4: Setting up the firewall | . | After creating the markdown file, convert the markdown file to PDF. | Rename the PDF to index.html | Compress all the files, including images, in an archive and transfer the file to your web server | Decompress the archive in your web server and move all the files to their proper destination. | Open your site in the host computer or Ubuntu desktop computer and take a screenshot. | To demonstrate the completion of this deliverable, submit the following: . | The URL to the GitHub repository in the final project folder where I can find all the files you used for creating the site including the markdown file, HTML file and the images. | The screenshot of your website running | . | . ",
     "url": "/project/Final_Project_description/#deliverable-3-hosting-a-simple-website",
     
     "relUrl": "/project/Final_Project_description/#deliverable-3-hosting-a-simple-website"
-  },"133": {
+  },"136": {
     "doc": "Final Project Deliverable 1",
     "title": "Final Project Deliverable 1",
     "content": "Old Video with more details is available here Newer and shorter video is available here Image resize tool **Example of how the deliverable should look like here . For deliverable 1, we are going to accomplish the following tasks: . | Read the tutorial. Write down every concept you don’t understand and research them. | Answer The following questions: . | What is a web server? Hardware and software side | What are some different web server applications? | What is virtualization? | What is virtualbox? | What is a virtual machine? | What is Ubuntu Server? | What is a firewall? | What is SSH? | . | . To demonstrate the completion of deliverable 1, the student needs to submit a markdown and pdf file where all the questions are answered. Here you can find an example of how the document should look like. ",
     "url": "/project/Final_project_deliverable1/",
     
     "relUrl": "/project/Final_project_deliverable1/"
-  },"134": {
+  },"137": {
     "doc": "Final Project Deliverable 2 Port Forwarding",
     "title": "Final Project Deliverable 2 Port Forwarding",
     "content": " ",
     "url": "/project/Final_project_deliverable2_port_forwarding/",
     
     "relUrl": "/project/Final_project_deliverable2_port_forwarding/"
-  },"135": {
+  },"138": {
     "doc": "Final Project Deliverable 2 Port Forwarding",
     "title": "Part 1 Virtual Machine",
     "content": "Create a virtual machine that meets the following specifications: . | CPU: 1 Core | RAM: 1 GB | HDD: 10 GB | . These are the recommended system requirements for Ubuntu Server 22.04. ",
     "url": "/project/Final_project_deliverable2_port_forwarding/#part-1-virtual-machine",
     
     "relUrl": "/project/Final_project_deliverable2_port_forwarding/#part-1-virtual-machine"
-  },"136": {
+  },"139": {
     "doc": "Final Project Deliverable 2 Port Forwarding",
     "title": "Part 2 Install Ubuntu Server",
     "content": "Step 1 . Step 2 . Step 3 . Select Update to the new installer. This will update the Ubuntu installer and proceed with the installation. Step 4 . This step will automatically select the language layout of your keyboard. If for whatever reason it is different than what your physical keyboard has, then manually adjust it. Step 5 . Choose the default Ubuntu Server installation. We will need some of the repositories in the default installation. Step 6 . Since we are installing Ubuntu in a virtual machine that at the moment is configured to have a NAT network interface card, as long as your host PC has internet connection, you should automatically get an IP address. If you don’t, something is wrong with your VM, Host Machine, or Internet Connection. Note: If you are doing this project in the school’s network, be aware that the school’s routers are configured to block Bridged Ethernet adapters. Step 7 . Leave this part empty as we are not using a proxy. Step 8 . We will use the default mirror so there is no need to change this . Step 9 . This step is to format our disk. Here we will select the entire disk. To move around here use either the arrow keys or the tab key. Step 10 . This step is just to let you know the changes that will be made to the server’s virtual hard drive. Step 11 . Here you will enter the information about your computer. Write this information down because you will needed it later. Step 12 . It is a good idea to install ssh now as we will use it later on. Do not import SSH keys. We will do that manually later. Step 13 . Do not select these services. We won’t be using them. Step 14 . This is the installation process. Once it is done it will start updating the system. Once the update is done, it will ask you to reboot. Step 15 . Step 16 . Here Just press enter. Virtualbox will unmount the installation disk for you . ",
     "url": "/project/Final_project_deliverable2_port_forwarding/#part-2-install-ubuntu-server",
     
     "relUrl": "/project/Final_project_deliverable2_port_forwarding/#part-2-install-ubuntu-server"
-  },"137": {
+  },"140": {
     "doc": "Final Project Deliverable 2 Port Forwarding",
     "title": "Part 3 Install Apache",
     "content": "First, login to the server. You will need to type your username and password. Here is an example: Notice that the password is hidden while typing just like when you are typing it in the terminal emulator. Be aware that during the upgrade, Ubuntu will ask you to restart some services. Apache is available in Ubuntu’s default repositories. However, before we can start installing new packages, let’s update the system: . sudo apt update; sudo apt upgrade -y . To install Apache use: . sudo apt install apache2 -y . Be aware that here you will also need to restart some services here. ",
     "url": "/project/Final_project_deliverable2_port_forwarding/#part-3-install-apache",
     
     "relUrl": "/project/Final_project_deliverable2_port_forwarding/#part-3-install-apache"
-  },"138": {
+  },"141": {
     "doc": "Final Project Deliverable 2 Port Forwarding",
     "title": "Part 4 Setup SSH",
     "content": "Before Setup . Before we can setup SSH, we need to enable the firewall. Use this command: . sudo ufw enable . Now lets configure ufw to allow Apache and SSH traffic: . sudo ufw allow 'Apache' sudo ufw allow 'OpenSSH' . Now check the status of the firewall: . sudo ufw status . Now lets check the status of Apache and SSH to make sure they are running: . systemctl status apache2 --no-pager systemctl status ssh --no-pager . Both commands should return active (running) if they do not, restart the services with the command: . sudo systemctl restart apache2 ssh . Setup Port forwarding . | Turn off the server virtual machine if it is on. | Go to the network virtual machine configuration for the server. There add port forwarding to the NAT configuration. You will need to forward port 22 to 2222 and port 80 t0 8080. Here is a screenshot: | Turn on the server. Make sure that the ssh server program is installed in the server virtual machine: sudo apt install openssh-server -y . | Enable and start ssh in the server: sudo systemctl enable ssh; sudo systemctl start ssh . | Test the connection by logging in to the server from the client. In this case, your client is your Host computer terminal application (in Windows, it is the CMD or powershell) | . ssh -p 2222 username_of_the_server@127.0.0.1 . | Read and answer the questions and you will connect sucessfully. | . ",
     "url": "/project/Final_project_deliverable2_port_forwarding/#part-4-setup-ssh",
     
     "relUrl": "/project/Final_project_deliverable2_port_forwarding/#part-4-setup-ssh"
-  },"139": {
+  },"142": {
     "doc": "Final Project Deliverable 2 Port Forwarding",
     "title": "Part 5 Setup virtual hosts",
     "content": "Virtual host allows us to serve more than one website in a single web server. By default, Apache has one server block enabled. This server block is served from the directory: /var/www/html. For a single website, all the files are placed within this directory. When we setup virtual hosts, each site has its own directory. The recommendation is to leave the default html directory and for each site a new directory inside /var/www. In this project, we will have one virtual site called myresume. You are welcome to use a different name just remember to adjust every command where the word myresume is reference for your preferred website domain name. Follow These Steps . | Create the directory for myresume as follows: sudo mkdir /var/www/myresume | Modify the ownership of myresume so that it is now owned by your user instead of root sudo chown -R $USER:$USER /var/www/myresume | Now let’s change the file permission so that the owner can read, write, and execute the files while granting only read and execute permissions to groups and others: sudo chmod -R 755 /var/www/myresume | Now lets create a simple html document to be served from our new virtual host. Create a document with the nano text editor called index.html in the /var/www/myresume/ directory: sudo nano /var/www/myresume/index.html. | Once the new document opens, type the following text: | . &lt;html&gt; &lt;head&gt; &lt;title&gt;My Resume Website&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;This is a sample document!&lt;/h1&gt; &lt;/body&gt; &lt;/html&gt; . | Save and close the file when you are finished. You can do this by pressing CTRL + X, then Y and ENTER. | . NOTE: If you don’t want to use Nano, you can also do this in a single command . sudo echo \"&lt;html&gt;&lt;head&gt;&lt;title&gt;My Resume Website&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;This is a sample document!&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;\" &gt; /var/www/myresume.index.html . | Now we need to create a virtual host file so that this new content can be served. The default configuration is located in /etc/apache2/sites-available/000-default.conf However, we do not need to touch this file, we can instead create a new one as it is best practice. To create a new config file, we are going to use nano again: sudo nano /etc/apache2/sites-available/myresume.conf | Add the following text to the domain config file: | . &lt;VirtualHost *:80&gt; ServerAdmin webmaster@localhost ServerName myresume ServerAlias www.myresume DocumentRoot /var/www/myresume ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined &lt;/VirtualHost&gt; . | Save and close the file when you are finished. You can do this by pressing CTRL + X, then Y and ENTER. | Now enable the site with the following command: sudo a2ensite myresume.conf | Now lets disable the default domain:sudo a2dissite 000-default.conf | Before we can refresh the configuration, we need to add a configuration line to the apache2.conf file. Open the file in nano:sudo nano /etc/apache2/apache2.conf | Add the following line at the end of the file:ServerName 127.0.0.1 | Save and close the file when you are finished. You can do this by pressing CTRL + X, then Y and ENTER. | Now you can test the configuration for errors:sudo apache2ctl configtest | The output of the command should look like this: | . Syntax OK . | If there are no errors, restart Apache to apply the changes:sudo systemctl restart apache2 | Now, if you open a web browser in your host computer and go the URL: http://localhost:8080/ your index.html document should load. | . ",
     "url": "/project/Final_project_deliverable2_port_forwarding/#part-5-setup-virtual-hosts",
     
     "relUrl": "/project/Final_project_deliverable2_port_forwarding/#part-5-setup-virtual-hosts"
-  },"140": {
+  },"143": {
     "doc": "Final Project Deliverable 2",
     "title": "Final Project Deliverable 2",
     "content": "Video:Deliverable 2 Latest Video 0-100! . ",
     "url": "/project/Final_project_deliverable2_web_server/",
     
     "relUrl": "/project/Final_project_deliverable2_web_server/"
-  },"141": {
+  },"144": {
     "doc": "Final Project Deliverable 2",
     "title": "Part 1 Virtual Machine",
     "content": "Create a virtual machine that meets the following specifications: . | CPU: 1 Core | RAM: 1 GB | HDD: 10 GB | . These are the recommended system requirements for Ubuntu Server 22.04. ",
     "url": "/project/Final_project_deliverable2_web_server/#part-1-virtual-machine",
     
     "relUrl": "/project/Final_project_deliverable2_web_server/#part-1-virtual-machine"
-  },"142": {
+  },"145": {
     "doc": "Final Project Deliverable 2",
     "title": "Part 2 Install Ubuntu Server",
     "content": "Step 1 . Step 2 . Step 3 . Select Update to the new installer. This will update the Ubuntu installer and proceed with the installation. Step 4 . This step will automatically select the language layout of your keyboard. If for whatever reason it is different than what your physical keyboard has, then manually adjust it. Step 5 . Choose the default Ubuntu Server installation. We will need some of the repositories in the default installation. Step 6 . Since we are installing Ubuntu in a virtual machine that at the moment is configured to have a NAT network interface card, as long as your host PC has internet connection, you should automatically get an IP address. If you don’t, something is wrong with your VM, Host Machine, or Internet Connection. Note: If you are doing this project in the school’s network, be aware that the school’s routers are configured to block Bridged Ethernet adapters. Step 7 . Leave this part empty as we are not using a proxy. Step 8 . We will use the default mirror so there is no need to change this . Step 9 . This step is to format our disk. Here we will select the entire disk. To move around here use either the arrow keys or the tab key. Step 10 . This step is just to let you know the changes that will be made to the server’s virtual hard drive. Step 11 . Here you will enter the information about your computer. Write this information down because you will needed it later. Step 12 . It is a good idea to install ssh now as we will use it later on. Do not import SSH keys. We will do that manually later. Step 13 . Do not select these services. We won’t be using them. Step 14 . This is the installation process. Once it is done it will start updating the system. Once the update is done, it will ask you to reboot. Step 15 . Step 16 . Here Just press enter. Virtualbox will unmount the installation disk for you . ",
     "url": "/project/Final_project_deliverable2_web_server/#part-2-install-ubuntu-server",
     
     "relUrl": "/project/Final_project_deliverable2_web_server/#part-2-install-ubuntu-server"
-  },"143": {
+  },"146": {
     "doc": "Final Project Deliverable 2",
     "title": "Part 3 Install Apache",
     "content": "First, login to the server. You will need to type your username and password. Here is an example: Notice that the password is hidden while typing just like when you are typing it in the terminal emulator. Be aware that during the upgrade, Ubuntu will ask you to restart some services. Apache is available in Ubuntu’s default repositories. However, before we can start installing new packages, let’s update the system: . sudo apt update; sudo apt upgrade -y . To install Apache use: . sudo apt install apache2 -y . Be aware that here you will also need to restart some services here. ",
     "url": "/project/Final_project_deliverable2_web_server/#part-3-install-apache",
     
     "relUrl": "/project/Final_project_deliverable2_web_server/#part-3-install-apache"
-  },"144": {
+  },"147": {
     "doc": "Final Project Deliverable 2",
     "title": "Part 4 Setup SSH",
     "content": "Before Setup . Before we can setup SSH, we need to enable the firewall. Use this command: . sudo ufw enable . Now lets configure ufw to allow Apache and SSH traffic: . sudo ufw allow 'Apache' sudo ufw allow 'OpenSSH' . Now check the status of the firewall: . sudo ufw status . Now lets check the status of Apache and SSH to make sure they are running: . systemctl status apache2 --no-pager systemctl status ssh --no-pager . Both commands should return active (running) if they do not, restart the services with the command: . sudo systemctl restart apache2 ssh . Change the Network Adapter . Follow these steps: . | Turn off the server virtual machine using this command: sudo shutdown now | Change the server network adapter configuration from NAT to Bridge. However, there is a chance that using a bridge adapter won’t work for you. Some IDS (Instruction Detection Systems) and smart routers may prevent you from getting an Ip Address if your Network Adapter is bridge. In this case, you need to use port forwarding in your virtual machine. Here is an example: . | . Connect with SSH . Follow these steps: . | Make sure SSH is installed in both the client and the server: sudo apt install openssh -y | In the server, the SSH service must be already running, if it is not running, use this command to enable it and start it: sudo systemctl enable ssh; sudo systemctl start ssh | You will need to get the IP address of the server. Use this command to get the IP address: hostname -I. Additionally, you can setup a static IP address in your server. Here is a guide on how to do it. If you are doing this project in your laptop, I advise to stay away from setting up static IP addresses. | On the client computer use this command: | If you are using port forwarding, your command would be:ssh -p 2222 username@127.0.0.1 | . Setup private and public key authentication with or without password (optional) . | On the server, configure the firewall to accept ssh connections. sudo ufw allow ssh sudo ufw enable sudo ufw status . | Now we need to generate an ssh key in our client computer: In your client machine type:ssh-keygen Now you can type this command to copy your ssh key to the server:ssh-copy-id -i .ssh/id_rsa.pub webmaster@server-ip-address . | if you use port forwarding your command will be:ssh-copy-id -p 2222 username@127.0.0.1 | Now you can connect to your server without having to remember the password. | . ",
     "url": "/project/Final_project_deliverable2_web_server/#part-4-setup-ssh",
     
     "relUrl": "/project/Final_project_deliverable2_web_server/#part-4-setup-ssh"
-  },"145": {
+  },"148": {
     "doc": "Final Project Deliverable 2",
     "title": "Part 5 Setup virtual hosts",
     "content": "Virtual host allows us to serve more than one website in a single web server. By default, Apache has one server block enabled. This server block is served from the directory: /var/www/html. For a single website, all the files are placed within this directory. When we setup virtual hosts, each site has its own directory. The recommendation is to leave the default html directory and for each site a new directory inside /var/www. In this project, we will have one virtual site called mywebsite. You are welcome to use a different name just remember to adjust every command where the word mywebsite is reference for your preferred website domain name. Follow These Steps . | Create the directory for mywebsite as follows: sudo mkdir /var/www/mywebsite | Modify the ownership of mywebsite so that it is now owned by your user instead of root sudo chown -R $USER:$USER /var/www/mywebsite | Now let’s change the file permission so that the owner can read, write, and execute the files while granting only read and execute permissions to groups and others: sudo chmod -R 755 /var/www/mywebsite | Now lets create a simple html document to be served from our new virtual host. Create a document with the nano text editor called index.html in the /var/www/mywebsite/ directory: sudo nano /var/www/mywebsite/index.html. | Once the new document opens, type the following text: | . &lt;html&gt; &lt;head&gt; &lt;title&gt;My First Website&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;This is a sample document!&lt;/h1&gt; &lt;/body&gt; &lt;/html&gt; . | Save and close the file when you are finished. You can do this by pressing CTRL + X, then Y and ENTER. | . NOTE: If you don’t want to use Nano, you can also do this in a single command . sudo curl https://cis106.com/assets/basic.html -o /var/www/mywebsite/index.html . | Now we need to create a virtual host file so that this new content can be served. The default configuration is located in /etc/apache2/sites-available/000-default.conf However, we do not need to touch this file, we can instead create a new one as it is best practice. To create a new config file, we are going to use nano again: sudo nano /etc/apache2/sites-available/mywebsite.conf | Add the following text to the domain config file: | . &lt;VirtualHost *:80&gt; ServerAdmin webmaster@localhost ServerName mywebsite ServerAlias www.mywebsite DocumentRoot /var/www/mywebsite ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined &lt;/VirtualHost&gt; . | Save and close the file when you are finished. You can do this by pressing CTRL + X, then Y and ENTER. | Now enable the site with the following command: sudo a2ensite mywebsite.conf | Now lets disable the default domain:sudo a2dissite 000-default.conf | Before we can refresh the configuration, we need to add a configuration line to the apache2.conf file. Open the file in nano:sudo nano /etc/apache2/apache2.conf | Add the following line at the end of the file:ServerName 127.0.0.1 | Save and close the file when you are finished. You can do this by pressing CTRL + X, then Y and ENTER. | Now you can test the configuration for errors:sudo apache2ctl configtest | The output of the command should look like this: | . Syntax OK . | If there are no errors, restart Apache to apply the changes:sudo systemctl restart apache2 | Now, if you open a web browser in your host computer and go the URL: http://ip.address.of.your.server/ your index.html document should load. | . ",
     "url": "/project/Final_project_deliverable2_web_server/#part-5-setup-virtual-hosts",
     
     "relUrl": "/project/Final_project_deliverable2_web_server/#part-5-setup-virtual-hosts"
-  },"146": {
+  },"149": {
     "doc": "Final Project Deliverable 3",
     "title": "Final Project Deliverable 3",
     "content": "Video:Deliverable 3 Latest Video 0-100! . For this deliverable, you have 2 options; Pick one! . Option 1: Resume . | Create a simple resume of yourself. Here is an example of the kind of information to include: . | http://resume-template.joelglovier.com/ | . | You do not need to include a photo of yourself, instead use a stock photo . | You can find stock photos here: https://www.pexels.com/ | . | Once you have created your markdown file, convert the file to HTML. | Compress all the files into a single archive so that they are easier to move. | Send the files to the server. | Once you have transferred the archive to the server, decompress the archive and move the files to their respective folder so that they can be served by the web server. | Open your website in the browser of your host computer or Ubuntu desktop computer and take a screenshot of the browser. | To demonstrate the completion of this deliverable, submit the following: . | The URL to the GitHub repository in the final project folder where I can find all the files you used for creating the site including the markdown file, HTML file and the images. | The screenshot of your website running | . | . Option 2: A simple site . | Create a markdown file that contains instructions on how to set up a Web Server in Ubuntu Server. Include screenshots where you find them necessary. Make sure to explain each command that is necessary. Your Deliverable must contain the following: . | Introduction (Keep it simple) | Basic terminology that the reader must know | Step-by-step instructions | Step 1: Installing VirtualBox | Step 2: Installing Ubuntu Server | Step 3: Installing Apache | Step 4: Setting up the firewall | . | After creating the markdown file, convert the markdown file to PDF. | Rename the PDF to index.html | Compress all the files, including images, in an archive and transfer the file to your web server | Decompress the archive in your web server and move all the files to their proper destination. | Open your site in the host computer or Ubuntu desktop computer and take a screenshot. | To demonstrate the completion of this deliverable, submit the following: . | The URL to the GitHub repository in the final project folder where I can find all the files you used for creating the site including the markdown file, HTML file and the images. | The screenshot of your website running | . | . ",
     "url": "/project/Final_project_deliverable3/",
     
     "relUrl": "/project/Final_project_deliverable3/"
-  },"147": {
+  },"150": {
     "doc": "Markdown Extra Practice",
     "title": "Markdown Extra Practice",
     "content": "If you wish to practice more markdown, try to recreate the following documents in markdown: . ",
     "url": "/extra/lab1_md_extra_practice/",
     
     "relUrl": "/extra/lab1_md_extra_practice/"
-  },"148": {
+  },"151": {
     "doc": "Markdown Extra Practice",
     "title": "Document 1",
     "content": "Create a markdown document from this page, that contains the following: . | Several sections of paragraphs | ordered and unordered lists | A couple of images . | The Linux mascot | Linux distributions logos | Desktop environment screenshots | . | At least 1 table. | . Try to make the document look as professional as possible . ",
     "url": "/extra/lab1_md_extra_practice/#document-1",
     
     "relUrl": "/extra/lab1_md_extra_practice/#document-1"
-  },"149": {
+  },"152": {
     "doc": "Markdown Extra Practice",
     "title": "Document 2",
     "content": "To practice note taking and code formatting, use this introduction to python website and create a 1 page document that shows how to get started with python. You just simply include the following: Learn the Basics . | Hello, World! | Variables and Types | Lists | Basic Operators | String Formatting | Basic String Operations | Conditions | Loops | . ",
     "url": "/extra/lab1_md_extra_practice/#document-2",
     
     "relUrl": "/extra/lab1_md_extra_practice/#document-2"
-  },"150": {
+  },"153": {
     "doc": "Markdown Extra Practice",
     "title": "Document 3",
     "content": "To practice tables, use the following images and create a pdf file that contains all of these tables: . Table 1 . You can download the images from here . ",
     "url": "/extra/lab1_md_extra_practice/#document-3",
     
     "relUrl": "/extra/lab1_md_extra_practice/#document-3"
-  },"151": {
+  },"154": {
     "doc": "Learning Git",
     "title": "Learning Git",
     "content": ". | Presentation here | Cheat Sheet here | . ",
     "url": "/extra/learning-git/",
     
     "relUrl": "/extra/learning-git/"
-  },"152": {
+  },"155": {
     "doc": "Learning Git",
     "title": "Setup Git",
     "content": ". | Set your username: git config --global user.name 'your username here' | Set your email address: git config --global user.email 'your email here' | . ",
     "url": "/extra/learning-git/#setup-git",
     
     "relUrl": "/extra/learning-git/#setup-git"
-  },"153": {
+  },"156": {
     "doc": "Learning Git",
     "title": "Setup SSH authentication",
     "content": ". | Generate an ssh key: ssh-keygen -t ed25519 -C \"your_email@example.com\" This creates a new SSH key, using the provided email as a label. When you’re prompted to: \"Enter a file in which to save the key,\" press Enter. This accepts the default file location. At the prompt, to type a secure passphrase, press enter for no passphrase. If you want to use a passphrase, go ahead as it provides an extra layer of security. However, for this course you do not need to add a passphase. | Use the following command to see your public ssh key: cat ~/.ssh/id_ed25519.pub copy the entire output of this command to the clipboard. See examle here: . | In your github page, go to settings &gt; SSH and GPG Keys Here add your ssh key that you copied to the clipboad in the step prior. Type yes (the whole word) and press enter and you are done . | Test you ssh connection by using this command: ssh -T git@github.com You will see the following outcome: . | . If you do not see an error message or a different message than the one shown prior, then your SSH connection is correct. Now you can push and clone using SSH. ",
     "url": "/extra/learning-git/#setup-ssh-authentication",
     
     "relUrl": "/extra/learning-git/#setup-ssh-authentication"
-  },"154": {
+  },"157": {
     "doc": "The Linux FS",
     "title": "The Linux FS",
     "content": "All The videos here . ",
     "url": "/extra/thelinuxfs/",
     
     "relUrl": "/extra/thelinuxfs/"
-  },"155": {
+  },"158": {
     "doc": "The Linux FS",
     "title": "Other Review Videos:",
     "content": ". | REVIEW 4: The LS command and Practice | Linux Tutorials The ls command GeeksforGeeks | How to Use The ls Command on the Linux Command Line | . ",
     "url": "/extra/thelinuxfs/#other-review-videos",
     
     "relUrl": "/extra/thelinuxfs/#other-review-videos"
-  },"156": {
+  },"159": {
     "doc": "The Linux FS",
     "title": "Basic Concepts",
     "content": ". | The root directory: The first directory in the filesystem that contains the entire filesystem represented by “/”. | Current working directory: Also known as the present working directory. It is the directory where you are currently working in. You are always working from a directory. | Parent Directory: a dirtectory containing one or more directories and files. | Child directory: a better name for this is a subdirectory or subfolder. This is a directory inside another directory. See image for visual reference. | . | YOUR HOME DIRECTORY: This is your user’s personal directory where all your files are located. Every user has it’s own home directory just like in a apartment complex they all residents have their own apartment while sharing the common areas. You have total ownership of your home directory but outside of the home directory only the root user can make changes. An example absolute path, assuming that user name is maria53, would be /home/maria53 | The home Directory: This is the parent directory of all the home directories. This is where all the users’ home directory are. The absolute path of this directory is /home. Noticed that it starts at the root. | The root user: This is the administrator account of your system. To perform administrative tasks or to manage directories and files outside of your home directory, you must obtain root privileges using the sudo command at the beginning of the command. | Path name: Also known as file path. This is the location of a given file in your computer. A path name can be absolute path or relative path. | Absolute Path: The location of a file starting at the root of the file system. For example, /home/maria53/Downloads/list.txt is the absolute path of the file list.txt. The advantage of absolute paths is that they can be used at any point of the file system regardless of your current directory. Any command that is given an absolute path will be able to find the file because it will start at the beginning of the filesystem. The disadvantage is that a command can be long to type if the file path is long. | Relative Path: The location of a file starting from a child directory of the current working directory or from the current directory itself. The advantage of using relative path is that typing commands is faster. The disadvantage of relative paths is that they cannot work from anywhere in the filesystem. In order for a relative path to work, a file must be reachable from the current directory onwards. Another disadvantage of relative paths is that they require a better mental understanding of the linux filesystem in the sense that you must keep a mental image of the directory tree that you are working with. An example of a relative path would be Downloads/list.txt assuming that the current working directory is /home/maria53 Special characters: . Special characters are function like commands that tell the shell to perform a specific action without having to type the complete command. These special characters make working on the command line more efficiently. Here is short list to keep in mind. | . (single period): represents the current directory. | .. (2 consecutive periods): represents the parent directory. | ~ (tilde character): expands the current users home directory. It is like a variable that the shell uses to store the absolute path of the user’s home directory. This ~/Downloads is the same as typing /home/maria53/Downlods | / (one forward slash): as mentioned earlier, this is the root directory and the shortest path in the system. This is the beginning of the directory tree. There is nothing before it and everything after it. | - (hyphen-minus): is used to move to the previous current working directory. | # (hash or number sign): This is used for single line comments in shell scripting. | ! (single exclamation mark): used for repeating a command from the history. For example !5 will repeat the 5th command in the command history. To view the entire command history type history. | !! (2 consecutive exclamaton marks): are used for repeating the previous command. For example, !! will repeat the previous command while, sudo !! will repeat the previous command but will add sudo at the beginning of the command. This is useful for times when we forget to type sudo when performing administrative tasks. | . Bash Environment Variables . | What is a variable? . | In programming, a variable is place to store data. A variable is like a box with a label. For example, if you a lot of pens in your desk and you place them in a box a label it pens, now the box store your pens. In programming a variable can be used to store temporary or permanent information that you will continuously reuse in your program. For example, username='maria53' the variable name now stores the value maria. When evener the programs need to access the maria’s username, it can do it by referencing the variable username. | . | What is an environment variable? . | Environment variables store values of a user’s environment and can be used in commands in the shell. These values can be unique to the user’s environment which makes them ideal when writhing commands that you want to use regales of which user is using the computer. To see a list of your environment variables type env. To use the value stored in an environment variable you must prepend the variable name with a $. Here are some useful environment variables: | $USER = stores the current’s user username | $HOME = stores the absolute path of current’s user home directory | $PWD = stores the absolute path of the present working directory. | $OLDPWD = stores the absolute path of the previous current working directory | . | . Bash Tips: . | Tab Completion: autocomplete a command/pathname by pressing the tab key | Arrow keys: allows you to move, edit, and repeat commands | Ctrl + a: go to the start of the command line | Ctrl + e: go to the end of the command line . | Shortcut list | . | . ",
     "url": "/extra/thelinuxfs/#basic-concepts",
     
     "relUrl": "/extra/thelinuxfs/#basic-concepts"
-  },"157": {
+  },"160": {
     "doc": "The Linux FS",
     "title": "Commands to navigate the linux filesystem",
     "content": "To navigate the linux filesystem, you only need to master 3 commands: cd, pwd and ls. While there are other useful commands, those can be considered complimentary and you should learn them after you have mastered those 3. PWD . | Usage . | Displays the absolute path of the current working directory. | . | Formula . | pwd | . | Examples . | Print the absolute path of current working directory . | pwd | . | . | . CD . | Usage . | Changes the current working directory. In other words, it moves you from one directory to another. By default, it will always send you to your home directory. | . | Formula . | cd + destination absolute path or relative path | . | Examples . | Go (change your current directory) to your home directory (there is more than 1 way of doing this): . | cd (without any arguments, cd will take you home) | cd ~ (using the ~ special character. as ~ will expand to the absolute path of the user’s home directory) | cd $HOME (using the $HOME environment variable) | cd /home/$USER/Downloads (using $USER environment variable in the path) | . | Go to a specified directory with absolute path: . | cd /usr/share/themes | . | Go to a specified directory with relative path assuming your current working directory is /home . | cd maria53/Downloads/ | . | Go to the previous working directory. This is useful when you are working with 2 directories located far in the directory tree . | cd - | . | Go to the previous directory in the directory tree. One directory above. | cd ../ | . | Go to 2 directories above the directory tree . | cd ../../ | . | . | . Practice CD command: . Try to complete these tasks without looking at the solution. Use the image below as a reference: . | Using absolute path, go to the directory “/user/share/themes/Adwaita” | Go back to your home directory. | Go back to the “/user/share/themes/Adwaita” using the - special character. | Go to the root of the filesystem using the “..” special character. | Go to your “Downloads” directory 1 directory at the time. Display/Print your present working directory once you have reached the “Downloads” directory. | Go back to your home directory and then to the “Pictures” directory. | . Show Solution . LS . | Usage . | ls is used for listing files and directories. By default it will list the current directory when no directory is specified. Listing means to see what is inside a directory. | . | Formula . | ls + option + directory to list | . | Examples . | See all the options of the ls command (extracted from the man page): . | ls --help | . | List the current directory: . | ls | . | List all the files including hidden files in current directory: . | ls -A | . | List all the files inside a given directory: . | ls -A /usr/share/fonts/X11 (absolute path) | ls -A Documents/ (relative path assuming that the $PWD is $HOME) | . | Long list a directory . | ls -lA ~/Pictures | . | List a directory recursively . | ls -R Documents/ | . | Long list a directory only . | ls -ld Documents/ | . | List a directory sorted by last modified . | ls -t Documents/ | . | List a directory sorted by file size . | ls -S Documents/ | . | Long list a directory excluding group and owner information, with human readable file size and sorted in reverse order. | ls -lhgGr Documents/ | . | . | . Output of LS -L explained: . Practice LS command: . Try to complete these tasks without looking at the solution. | Use this command to download some example files: curl https://raw.githubusercontent.com/ra559/cis106/main/assets/scripts/practice_ls.sh | bash | The command above will create a directory in your home directory called practicels Here you will find 10 example files to practice ls. If the command above did not work, read the output carefully and try to fix it yourself. You can also download the zip file on your own. Read the basic script for the URL. | . | list all the files in the practice directory. | long list all the files in the practice directory. | long list all the files in the practice directory sorted by file size with human readable file sizes | long list all the files in the practice directory sorted by file size with human readable file sizes and in reverse order. | long list all the files in the practice directory without the group and owner, with human readable file sizes, sorted by file extension and with full time stamp. | . Show Solution . Tree . | Usage . | used to display a recursive directory listing (tree) of files. | . | Formula . | tree + option + directory | . | Examples . | Display a tree of the home directory . | tree ~ or tree $HOME or tree /home/$USER | . | Display a tree of a directory with file permissions . | tree -p ~/practicels | . | Display a tree of a directory with the full path prefix, with the user and group owner, human readable file sizes, and the date of last modified. | tree -pughD ~/practicels/ | . | . | . EXA . | Usage . | Used the same way as ls. To list files and directories. Exa is a modern replacement for ls written in Rust. Exa is not installed by default. You will need to install it using your linux distribution package manager. | . | Formula . | exa + option + directory | . | Examples . | list all files in a given directory in a single line . | exa -1 ~/practicels | . | long list all the files in a given directory . | exa -l ~/practicels | . | long list all the files in a given directory with headers . | exa -lh ~/practicels | . | list a directory in a tree like format . | exa -T ~/practicels | . | . | . ",
     "url": "/extra/thelinuxfs/#commands-to-navigate-the-linux-filesystem",
     
     "relUrl": "/extra/thelinuxfs/#commands-to-navigate-the-linux-filesystem"
-  },"158": {
+  },"161": {
     "doc": "Final Exam Study Guide",
     "title": "Final Exam Study Guide",
     "content": " ",
     "url": "/final_exam/final_exam/",
     
     "relUrl": "/final_exam/final_exam/"
-  },"159": {
+  },"162": {
     "doc": "Final Exam Study Guide",
     "title": "Commands to study",
     "content": ". | awk | cat | cp | cut | grep | head | ls | man | mkdir | mv | tac | tail | touch | tr | tree | . ",
     "url": "/final_exam/final_exam/#commands-to-study",
     
     "relUrl": "/final_exam/final_exam/#commands-to-study"
-  },"160": {
+  },"163": {
     "doc": "Final Exam Study Guide",
     "title": "Concepts to study",
     "content": ". | The linux filesystem | Absolute path and relative path | When should you use absolute vs relative | Moving around the filesystem with absolute and relative (pwd,cd, and ls) | How to work with multiple terminals open? | How to work with manual pages? | How to parse (search) for specific words in the manual page | How to redirect output (&gt;, &gt;&gt;, and |) | How to append the output of a command to a file | How and when to redirect the output of a command to another (pipes) | How to use wildcards . | For copying and moving multiple files at the same time | . | How to use brace expansion . | For creating entire directory structures in a single command | . | . ",

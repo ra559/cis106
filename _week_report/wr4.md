@@ -42,7 +42,7 @@ title: Week Report 4
    8. Bash special characters
    9.  environment variables
    10. user defined variables
-   11. Why do we need use $ for referencing the value of a variable (using a variable) in a shell script
+   11. Why do we need use $ with variables in bash shell scripting?
 
 ### 3. Complete lab 4 The linux File System
 * Please do this after you complete the Week report and class notes! Trust me, it is better this way.

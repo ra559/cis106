@@ -11,7 +11,7 @@ title: Lab 4 - The Linux FS
   * Video [here](https://youtu.be/GhNYOWEc5qc)
 
 > **Note:**
-> Questions 1 AND 2 are worth 50 points. Question 3 has no grade. Question 4 and 5 are worth 50 points. So each question here is worth 25 points. In the video, I only complete question 1, 2 and 3. You have to do question 4 and 5 on your own. Your final exam will include questions similar to 4 and 5. I will answer questions 4 and 5 during class after the due date for this lab has expired. 
+> Your final exam will include questions similar to 4 and 5. I will answer questions 4 and 5 during class after the due date for this lab has expired. 
 
 ## Question 1 | Moving around the file system
 
@@ -62,53 +62,35 @@ Download this compressed zip file: [lab4files.zip](/assets/lab4files.zip) Decomp
 Use this image as a visual aid during this question
 <br>![visual aid linux FS](/assets/Linux-Filesystem-Incomplete-visual-aid.png)<br>
 
+> If you want your Gedit (Text Editor) to look like mine. Take a moment to follow this [guide.](https://cis106.com/guides/custimizeGedit/)
+
 ### Description:
 John wants to create a script to practice cd, ls, pwd, and variables. The script will output the following:
 
-image here
+![script_output](/assets/lab4/script_output.png)
 
 
 ### Solution
 * The complete source code can be found [here](/assets/lab4/lab4_script.sh)
-
-
-### Writing the code
-1. Open Gedit.
-2. Type the shell declaration/Shebang (`#!/bin/bash`) and save the file in the `lab4` directory (inside your cis106 directory/repository). Name the file `lab4-script1.sh`
-3. 
- 
+1. Use the screenshot and write a script that can produce the same output. 
+2. Modify the script to use variables where needed.
 
 > **Take a screenshot of the terminal and the text editor showing the source code.**
 
 
 
-
-
-## Question 5 | Challenge write a script
+## Question 4 | Challenge write a script
 Write a script that will produce the following output:
 
-
+![challenge question](/assets/lab4/challenge_question_4.png)
 
 
 ### Tips:
-* You will need environment variables and user defined variables
+* You will need environment variables and user defined variables. 
+* Use the `env` command to display a list of all environment variables
+* The ls command is using a time-style. Use the man page and [this guide](https://cis106.com/guides/format-control-char-date-command/) to figure out the right option. Time style is not the only option in used here.
 
-
-1.  Go to the root of the filesystem. From there reach the `Downloads` directory.
-   1. **Rules:**
-      1. You are only allowed to move 1 directory at the time. Which means you cannot use shortcuts or absolute path
-      2. Once you have reached the Downloads directory, show the absolute path of your current/present working directory.
-      3. Take a screenshot of your terminal showing all the commands you use to solve this sub question.
->**Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer question**
-
-1. Change your present working directory to `/usr/share/themes/Adwaita`. From there reach your Documents directory. 
-   1. **Rules:**
-      1. You are allowed to move more than 2 directories at a time.
-      2. You can use shortcuts or use absolute paths.
-      3. Once you haver reached the Documents directory, show your present working directory.
-      4. Take a screenshot of your terminal showing all the commands you use to solve this sub question.
->**Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer question**  
-
+> **Take a screenshot of the terminal after executing the script**
 
 
 ## What will you Submit:
@@ -119,19 +101,33 @@ Write a script that will produce the following output:
 * Submit the URL of `Lab4.md` and the pdf file
 * Delete all the snapshopts and take a new one. Name it "Lab 4 complete" 
 
-
-
+## How I will grade you:
+* Every question is worth: 25 pts
+* I will go to your github repository and read/download your script. If it produces the required output and matches the screenshot, you will get full credit for the challenge question.
 
 
 ## Extra practice (not mandatory but recommended)
 
 ### The tree and exa command (Optional Question. No submission required)
 
-![lab 4 3.1](/assets/lab4-3.gif)<br>
 1. Using absolute path and having `/etc` as your present working directory. Display a tree of the directory `lab4files`.
 2. Change your present working directory to your `Downloads` directory. Display a tree of the directory `lab4files` with the full path prefix for each file, the file permissions, and the file size in human readable format.
 3. Display a tree of the directory `lab4files` sorted by last modified time and showing the file owner and group. 
-4. Once you have installed exa, list all the options of the exa command.
+4. Install exa then list all the options of the exa command.
 5. Using exa, long list all the files inside `lab4files`
 6. Long list `lab4files` showing the header that indicates what each column means.
 7. Long list `lab4files` without the file owner nor group including the header and the date the file was created.
+
+### Solution:
+1. `cd /etc`  
+2. `tree ~/lab4files/`
+3. `cd ~/Downloads`
+4. `tree -fph ~/lab4files/`
+5. `tree -tgu ~/lab4files`
+6. `sudo apt install exa -y`
+7. `exa --help`
+8. `exa -l ~/lab4files/`
+9. `exa -lh ~/lab4files/`
+10. `exa -lhU --no-permissions --no-user  ~/lab4files/`
+
+![Solution exa and tree](/assets/lab4/exaAndTree.gif)

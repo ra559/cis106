@@ -52,3 +52,6 @@ title: FORMAT control characters
 | `%::z `        | +hh:mm:ss numeric time zone (e.g., -04:00:00)                       |
 | `%:::z`        | numeric time zone with : to necessary precision (e.g., -04, +05:30) |
 | `%Z   `        | alphabetic time zone abbreviation (e.g., EDT)                       |
+
+## Example:
+* `ls -l --time-style=+%Z /`
