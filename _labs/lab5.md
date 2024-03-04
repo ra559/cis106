@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lab 4 - Managing Files 
+title: Lab 5 - Managing Files 
 ---
 
 # {{page.title}}
