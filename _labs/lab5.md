@@ -1,4 +1,7 @@
-
+---
+layout: post
+title: Lab 4 - Managing Files 
+---
 
 # {{page.title}}
 

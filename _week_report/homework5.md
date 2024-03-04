@@ -1,25 +1,32 @@
+---
+layout: post
+title: Week Report 5
+---
 
 # {{page.title}}
-* Explanation [here](https://youtu.be/v1UU47VHeBE)
+
 ## Complete the following tasks
-### 1. Weekly Report:
-Must include the following:
-* Answers to the following questions:
-  * What are Command Options?
-  * What are Command Arguments?
-  * Which command is used for creating directories? Provide at least 3 examples.
-  * What does the touch command do? Provide at least 3 examples.
-  * How do you remove a file? Provide an example.
-  * How do you remove a directory and can you remove non-empty directories in Linux? Provide an example
-  * Explain the mv and cp command. Provide at least 2 examples of each
-  
-* Complete all the Practices in the Presentation:
-  * [Practice 1](https://rapurl.live/k8k)
-  * [Practice 2](https://rapurl.live/dtv)
-  * [Practice 3](https://rapurl.live/8ev)
-  * [Practice 4](https://rapurl.live/bkr)
-  * ***Take a screenshot of your terminal after completing every practice to prove you did it. Place your screenshot in your week report.***
-      
-### 2. Complete lab 5
-### 3. Start working on your final project deliverable 1 
+### 1. Notes 3
+Notes 3 must include (just as with notes 1 and 2 and with the same format)
+1. The following commands:
+   1. mkdir
+   2. touch
+   3. rm
+   4. rmdir
+   5. mv
+   6. cp
+   7. file
+   8. pdfinfo
+   9. mediainfo
+   10. exiv2
+   11. exiftool
+
+### 2. Week report 5
+* Complete all the practice in the managing files and directories presentation. Take a screenshot of your terminal showing most if not all of the commands used in each practice. Make sure to label each screenshot using heading 2 or 3 (just like week report 4)
+
+### 3. Complete lab 5
+* Presentation [here](https://rapurl.live/f6n)
+* Video [here](https://youtu.be/DehHVadtKww)
+
+### 4. Work on your final project deliverable 1 or deliverable 2 if you finished deliverable 1
 
