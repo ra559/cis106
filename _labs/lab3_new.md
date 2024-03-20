@@ -171,7 +171,7 @@ Write a shell script that displays the following output:
 
 <hr>
 
-### Special Note 2
+### Special Note
 You are going to be using the git commands a lot. Here is a quick reference:
 * `git clone repository/url/here`: is the command to clone a repository where cloning means downloading a repository to your computer
 * `git pull`: to pull/synchronize your repository from github to your local machine. Always run this command BEFORE you start working VS Code

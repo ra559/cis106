@@ -1,34 +1,21 @@
 ---
 layout: post
-title: Week Report 5
+title: Week Report 6
 ---
 
 # {{page.title}}
-
+> *video (here)[https://youtu.be/5owUqgEzeUY]*
 ## Complete the following tasks
-### 1. Notes 3
-Notes 3 must include (just as with notes 1 and 2 and with the same format)
-1. The following commands:
-   1. mkdir
-   2. touch
-   3. rm
-   4. rmdir
-   5. mv
-   6. cp
-   7. file
-   8. pdfinfo
-   9. mediainfo
-   10. exiv2
-   11. exiftool
+1. Complete Lab 6
+2. Complete Notes 4
+3. Work on your final project
 
-### 2. Week report 5
-* Complete all the practice in the managing files and directories presentation. Take a screenshot of your terminal showing most if not all of the commands used in each practice. Make sure to label each screenshot using heading 2 or 3 (just like week report 4)
+## What will you submit for your week report:
+1. Create a markdown file that contains a link to your notes 4 and lab 6 files.
+2. Convert the file to pdf
+3. Push everything to github
+4. In blackboard submit the pdf file for week report 6 and the github url of the `wr6.md` file
 
-### 3. Complete lab 5
-* Presentation [here](https://rapurl.live/f6n)
-* Video [here](https://youtu.be/DehHVadtKww)
-
-### 4. Work on your final project deliverable 1 or deliverable 2 if you finished deliverable 1
 
 ### Special Note
 You are going to be using the git commands a lot. Here is a quick reference:
