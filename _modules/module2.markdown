@@ -11,6 +11,8 @@ title: Module 2 Using Ubuntu
    1. Alternative [link](https://docs.google.com/presentation/d/e/2PACX-1vRXQhdRviYicst8RhPxAcgQmj8-8YCuNSSy4NjmCv1ekxfQuI3KvDmdfuAztj1hbDo6dXPsuF8RezsZ/pub?start=false&loop=false&delayms=3000)
 3. [Wildcards](https://rapurl.live/h69)
    1. Alternative [link](https://docs.google.com/presentation/d/e/2PACX-1vTyTqtTUtZG5HwWy2N-XBprh6KM0ONG-i3M9qVkQ9ZGBSRZhAWLMJN9py4j_nWUcbgUj3nhh2bauz1I/pub?start=false&loop=false&delayms=3000)
+4. [Shell Scripting - Getting user input](https://rapurl.live/ic2)
+   1. Alternative [link](https://docs.google.com/presentation/d/e/2PACX-1vQuXFxgHJnHr6w-JbrAgeCvN3cyM7-zDIkYKQ_RcEI1wX-8VRJDb5lLOACZWqHk7ze-3af6nR3yxZ06/pub?start=false&loop=false&delayms=3000)
 
 ## Lecture 5: Handling Text Files
 1. [Handling Text Files](https://rapurl.live/he6)
