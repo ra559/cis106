@@ -4,11 +4,15 @@ title: Week Report 6
 ---
 
 # {{page.title}}
-> *video (here)[https://youtu.be/5owUqgEzeUY]*
+> *video [here](https://youtu.be/5owUqgEzeUY)*
 ## Complete the following tasks
 1. Complete Lab 6
 2. Complete Notes 4
 3. Work on your final project
+
+## Notes 4
+* Explain how to use each of the wildcards (`*`, `?`, and `[]`)
+* Explain how to use brace expansion (`{}`)
 
 ## What will you submit for your week report:
 1. Create a markdown file that contains a link to your notes 4 and lab 6 files.
