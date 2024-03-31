@@ -144,9 +144,12 @@ challenge-lab6/
         └── all-png-files-here
 ```
 
+> Note: The directory tree you see here is just an example, you may or may not have the same files. 
+
 <br>*Tips*<br>
 * Try to create your directory structure in a single command.
 * Try working with multiple terminal windows open.
+* List all the files in the directory sorted by file extensions to understand which directories you need to create. 
 
 
 **Take a screenshot of your terminal showing all the commands that you used to complete this question.**
