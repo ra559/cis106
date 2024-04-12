@@ -8,8 +8,8 @@ title: Week Report 7
 1. Complete Notes 5 
 2. Complete Week Report (The practice from the presentation mentioned here)
 3. Complete Lab 7 part 1
-   1. Video [here](https://cis106.com/labs/lab7/)
-   2. Description [here](https://cis106.com/week_report:/wr7)
+   1. Video [here](https://youtu.be/rpu30qMEZhQ)
+   2. Description [here](https://cis106.com/labs/lab7/)
 
 
 ## Notes 4
