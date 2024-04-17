@@ -11,6 +11,8 @@ title: Week Report 7
    2. [Practice 2](https://docs.google.com/presentation/d/e/2PACX-1vTcX5KnC5CobScFyIcO36lbsFBFGyxjfuWxySriFiGt_9K_PbieWK28QT1n_w2ZrXoA70N1Rhyz4Pj3/pub?start=false&loop=false&delayms=3000&slide=id.g19782794e26_3_7)
    3. [Practice 3](https://docs.google.com/presentation/d/e/2PACX-1vTcX5KnC5CobScFyIcO36lbsFBFGyxjfuWxySriFiGt_9K_PbieWK28QT1n_w2ZrXoA70N1Rhyz4Pj3/pub?start=false&loop=false&delayms=3000&slide=id.g19782794e26_3_34)
    4. [Practice 4](https://docs.google.com/presentation/d/e/2PACX-1vTcX5KnC5CobScFyIcO36lbsFBFGyxjfuWxySriFiGt_9K_PbieWK28QT1n_w2ZrXoA70N1Rhyz4Pj3/pub?start=false&loop=false&delayms=3000&slide=id.g19782794e26_2_0)
+   5. Take a screenshot of your terminal showing each of the practice
+   6. Label each screenshot accordingly using proper markdown heading 2 syntax
 3. Complete Lab 7 part 1
    1. Video [here](https://youtu.be/rpu30qMEZhQ)
    2. Description [here](https://cis106.com/labs/lab7/)
