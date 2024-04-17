@@ -27,6 +27,9 @@ title: Final Exam Study Guide
 
 ## Concepts to study
 
+* How to create a github repository
+* How to clone a github repository
+* How to use the git commands
 * The linux filesystem
 * Absolute path and relative path
 * When should you use absolute vs relative

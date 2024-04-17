@@ -6,7 +6,11 @@ title: Week Report 7
 # {{page.title}}
 ## Complete the following tasks In this order please!!!!
 1. Complete Notes 5 
-2. Complete Week Report (The practice from the presentation mentioned here)
+2. Complete Week Report (The practice from the presentation)
+   1. [Practice 1](https://docs.google.com/presentation/d/e/2PACX-1vTcX5KnC5CobScFyIcO36lbsFBFGyxjfuWxySriFiGt_9K_PbieWK28QT1n_w2ZrXoA70N1Rhyz4Pj3/pub?start=false&loop=false&delayms=3000&slide=id.g18b2a51e37b_0_0)
+   2. [Practice 2](https://docs.google.com/presentation/d/e/2PACX-1vTcX5KnC5CobScFyIcO36lbsFBFGyxjfuWxySriFiGt_9K_PbieWK28QT1n_w2ZrXoA70N1Rhyz4Pj3/pub?start=false&loop=false&delayms=3000&slide=id.g19782794e26_3_7)
+   3. [Practice 3](https://docs.google.com/presentation/d/e/2PACX-1vTcX5KnC5CobScFyIcO36lbsFBFGyxjfuWxySriFiGt_9K_PbieWK28QT1n_w2ZrXoA70N1Rhyz4Pj3/pub?start=false&loop=false&delayms=3000&slide=id.g19782794e26_3_34)
+   4. [Practice 4](https://docs.google.com/presentation/d/e/2PACX-1vTcX5KnC5CobScFyIcO36lbsFBFGyxjfuWxySriFiGt_9K_PbieWK28QT1n_w2ZrXoA70N1Rhyz4Pj3/pub?start=false&loop=false&delayms=3000&slide=id.g19782794e26_2_0)
 3. Complete Lab 7 part 1
    1. Video [here](https://youtu.be/rpu30qMEZhQ)
    2. Description [here](https://cis106.com/labs/lab7/)
