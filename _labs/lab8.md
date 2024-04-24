@@ -87,14 +87,13 @@ title: Lab 8 - Handling files Part 2
       2. Cylinders
       3. Horsepower
    2. Create the header for every column/field. Use an echo command to generate and save this string to a file called `Honda3.csv`: `model,cylinders,hp`
-   3. Use awk to print the 1st, 3rd, and 5th fields of the `honda_fixed.csv` file. 
-   4. Notice that we lose the comma in the output so you will need to modify the awk command to also print commas after every value. 
-   5. Now let's use sed to clean up the CSV:
+   3. Use awk to print the 1st, 3rd, and 5th fields of the `honda2.csv` file excluding the first line, and with commas after every field.  
+   4. Now let's use sed to clean up the CSV:
       1. Pipe the output of the previous awk command to sed to replace every “` , `” with “`,`”
       2. Pipe the previous command to another sed command to replace “`Honda `“with “`Honda_`”
       3. Append the output to `Honda3.csv`
 4. In a separate terminal, install the command bat
-5. Now use batcat to display the csv file
+5. Now use `batcat` to display the csv file
    1. **Note**: *`batcat` is an improved version of cat that gives us syntax highlighting.*
 
 > **Take a screenshot showing the commands that you used to answer the question and another screenshot showing the output of batcat**
@@ -108,7 +107,7 @@ title: Lab 8 - Handling files Part 2
 > * Aliases are cool because they allow us to save time. We can write an entire command and save it as an alias and when we type the alias name in the shell the entire command is run. We can even alias scripts or just text! <br>
 > * Aliases are set with the alias command. But unless you save them in the .bash_aliases or .bashrc file they do not persist in your system. In this question, we will create some aliases. <br>
 
-1. Open the .bash_aliases file (located in your home directory) in your text editor. If you do not have the file, create it and save it in your home directory. 
+1. Open the `.bash_aliases` file (located in your home directory) in your text editor. If you do not have the file, create it and save it in your home directory. 
 2. Create the following aliases:
    1. `alias gotocis="cd $HOME/cis106"`
    2. `alias update="sudo apt update"`
