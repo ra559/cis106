@@ -7,6 +7,8 @@ title: Lab 8 - Handling files Part 2
 
 ## Input and output redirection
 
+## Video 
+* [here](https://youtu.be/LuqYlMvJ-ic)
 
 ### Note:
 * I/O redirection involves the manipulation of input and output. To achieve this, we use the following:
