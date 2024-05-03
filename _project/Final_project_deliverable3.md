@@ -34,8 +34,8 @@ For this deliverable, you have 2 options; Pick one!
     * Step 2: Installing Ubuntu Server
     * Step 3: Installing Apache
     * Step 4: Setting up the firewall
-* After creating the markdown file, convert the markdown file to PDF. 
-* Rename the PDF to index.html
+* After creating the markdown file, convert the markdown file to html. 
+* Rename the html file to index.html
 * Compress all the files, including images, in an archive and transfer the file to your web server
 * Decompress the archive in your web server and move all the files to their proper destination. 
 * Open your site in the host computer or Ubuntu desktop computer and take a screenshot. 
