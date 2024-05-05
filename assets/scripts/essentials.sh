@@ -9,7 +9,7 @@ echo -e "Installing Essential packages:\n \
 \t toilet figlet lolcat boxes"
 
 # Define the package string
-packages="bzip2 tar build-essential linux-headers flameshot vlc geany tilix gcc make perl nemo git python3-pip nemo git python3-pip net-tools vim screenfetch caffeine samba smbclient gnome-tweaks snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap toilet figlet lolcat boxes er145"
+packages="bzip2 tar build-essential linux-headers-$(uname -r) flameshot vlc geany tilix gcc make perl nemo git python3-pip nemo git python3-pip net-tools vim screenfetch caffeine samba smbclient gnome-tweaks snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap toilet figlet lolcat boxes"
 
 # Split the string into an array using whitespace as delimiter
 IFS=' ' read -r -a package_array <<< "$packages"
