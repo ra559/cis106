@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "If the script hangs after the line: written to stdout, then enter your password and press enter!"
 # Function to display spinner
 spinner() {
     local pid=$1
@@ -42,8 +43,8 @@ spinner $$ & spinner_pid=$!
 if sudo apt update &> /dev/null; then
     sudo apt install librewolf -y > /dev/null 2> error_librewolfinstaller.log
     sudo apt autoremove -y
-sudo apt autoclean
-sudo apt purge
+    sudo apt autoclean
+    sudo apt purge
     echo -e "\nLibrewolf installation completed! ✅"
 else
     echo -e "\nUpdate failed. Check your internet connection ❌"
