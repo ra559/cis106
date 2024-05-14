@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo apt update
 # Function to display spinner
 spinner() {
     local pid=$1

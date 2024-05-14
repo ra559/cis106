@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "If the script hangs after the line: written to stdout, then enter your password and press enter!"
+sudo apt update
 # Function to display spinner
 spinner() {
     local pid=$1

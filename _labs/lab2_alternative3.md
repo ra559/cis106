@@ -1,8 +1,3 @@
----
-layout: post
-title: Lab 2 - Installing Ubuntu For Underpowered PC/Macs
----
-
 # {{page.title}}
 
 ## Video here

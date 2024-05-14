@@ -6,7 +6,7 @@
 
 echo -e "If you are having any issues, likely the script is outdated.\n\
 Follow the guide here: https://code.visualstudio.com/docs/setup/linux\nPerforming update 🔩 ...."
-
+sudo apt update
 # Function to display spinner progress
 spinner() {
     local pid=$1

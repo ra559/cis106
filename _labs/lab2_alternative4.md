@@ -1,8 +1,3 @@
----
-layout: post
-title: Lab 2 - Installing Ubuntu Using Ubuntu Server
----
-
 # {{page.title}}
 
 ## Video here

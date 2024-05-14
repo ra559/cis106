@@ -5,6 +5,14 @@ title: Lab 2 - Installing Ubuntu For Windows Users And Intel Macs
 
 # {{page.title}}
 
+This is the default lab 2. There is other versions of this lab:
+
+* [Lab 2 - Installing Ubuntu For M Series Macs](https://cis106.com/labs/lab2_m_sereires_mac/)
+
+This version of Lab 2 is for Windows users (Windows 11 or 10) or Macbooks with capable Intel CPU. 
+The alternative Lab 2 is for M series Macbooks because Virtualbox does not run on M Series Mac.
+
+
 ## Video here
 [Lab 2 Installing Ubuntu 22.04 Windows Version](https://youtu.be/N9c4DkNTUek)
 
@@ -85,10 +93,10 @@ Make sure to select the right installer for your operating system:
 
 Make sure to install VirtualBox in your host computer. For Windows follow this [video](https://www.youtube.com/watch?v=2lGmCwpFYi8). For macOS follow this [video.](https://www.youtube.com/watch?v=fyx53lJyAoc) Once you have installed VirtualBox, create a virtual machine that meets these specifications:
 
-> * OS: Ubuntu 22.04 64Bits [ISO URL](https://ubuntu.com/download/desktop) 
+> * OS: Ubuntu 24.04 64Bits [ISO URL](https://ubuntu.com/download/desktop) 
 > * HDD: 50 GB
 > * RAM: 4GB
-> * Video: 64 MB or Higher
+> * Video: 128 MB
 > * Audio Controller: Disabled (audio won't be needed)
 > * CPU: 2 Cores
 > * Add this to description:
