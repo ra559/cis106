@@ -10,7 +10,6 @@ alias remove='sudo apt autoremove -y'
 alias clean='sudo apt autoremove -y; sudo apt autoclean; sudo apt purge;'
 alias totalpack='dpkg --get-selections | wc --lines'
 alias isinstalled='dpkg --get-selections | grep -i '
-
 alias publicip="curl ifconfig.me && echo ''"
 alias options="grep '^[[:space:]]*[[:punct:]]'"
 alias iponly="grep -Eo '[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}'"
@@ -18,10 +17,18 @@ alias pdate="date '+%D %T' | toilet -f term -F border --gay"
 alias hddspeedcheck="sudo hdparm -t --direct"
 alias rpauto="sed 's/auto/\n/g'"
 alias shorturl="/home/adrian/gdrive/projects/bashscripts/urlshortner.py"
-#------------------------#
-#----- Ls Aliases -------#
-#------------------------#
-alias ls='ls --color=auto'
+#-----------------------------------#
+#----- Ls Aliases & defaults -------#
+#-----------------------------------#
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
 alias ll='ls -alF'
 alias la='ls -a'
 alias lA='ls -A'
