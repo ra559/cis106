@@ -15,7 +15,7 @@ title: Install Jekyll
 sudo apt-get install ruby-full build-essential zlib1g-dev
 ```
 
-## Gem Installion directory 
+## Gem Installation directory 
 
 ```bash
 echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
