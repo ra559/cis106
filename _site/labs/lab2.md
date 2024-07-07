@@ -1,6 +1,60 @@
 
 # {{page.title}}
 
+
+### Replace the current screenshot tool with flameshot
+1. Open the system settings
+2. Find the Keyboard settings
+3. Scroll down to keyboard shortcuts and click on "View and customize shortcuts"
+4. Scroll down to custom shortcuts
+5. Click the + icon to add a shortcut
+   1. Name: flameshot
+   2. command: flameshot gui
+   3. key: print key in your keyboard
+
+<p align="center" style="display:block"><img src="/assets/lab2/flameshot.gif"/></p>
+
+
+
+
+### Install and remove software
+1. Remove the following applications as they will not be needed. You can run these command on the terminal:
+
+```bash
+sudo apt purge apport aisleriot gnome-mahjongg gnome-sudoku gnome-mines  -y
+sudo apt clean
+sudo apt autoclean
+```
+
+
+### Disable animations
+1. Open a terminal and run this command: <br>`gsettings set org.gnome.desktop.interface enable-animations false`
+2. This will disable all the fancy desktop effects making the vm feel snappier. 
+
+<p align="center" style="display:block"><img src="/assets/lab2/animations_off.gif"/></p>
+
+### Add canonical partners in the software settings
+1. Open the application "Software & Updates"
+2. In the Ubuntu Software tab, make sure all the options, except for "Source Code", are enabled.
+4. In the "software & updates" app, click on the Updates tab and set the update daily reminder to never.
+5. Since this is a lab virtual machine, we are going to choose when to update and upgrade so the reminder is useless to us.
+
+<p align="center" style="display:block"><img src="/assets/lab2/software_updates.gif"/></p>
+
+### Change Wayland for X.org
+1. Do it graphically. See the video or gif below.
+2. Open the file `/etc/gdm3/custom.conf` and uncomment the line `#WaylandEnable=false` this will make it permanent. 
+   1. To open the file use the command: `sudo gedit /etc/gdm3/custom.conf`
+   2. To uncomment the line by removing the `#` from the beginning of the line
+   3. Save the file
+   4. Exit the text editor
+
+
+<p align="center" style="display:block"><img src="/assets/lab2/change_xorg.gif"/></p>
+
+<p align="center" style="display:block"><img src="/assets/lab2/gedit_wayland_off.gif"/></p>
+
+
 ## Videos
 * [Part 1 Virtualization](https://youtu.be/whXYdsRrTG8)
 * [Part 2 Virtualbox](https://youtu.be/M-81JJp_xDg)

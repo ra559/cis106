@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo apt update
 curl -s https://cis106.com/assets/scripts/ansi_escape_codes.sh -o $HOME/.ansi_codes.sh
 source $HOME/.ansi_codes.sh
 
@@ -7,7 +8,7 @@ dependencies(){
     echo -e "$Magenta\t1. Toilet\n\t2. Figlet\n\t3. Lolcat\n\t4. Boxes$Reset"
     echo "Installing dependencies"
     sudo apt update &> /dev/null
-    sudo apt install toilet figlet boxes -y &> /dev/null
+    sudo apt install toilet figlet boxes lolcat -y &> /dev/null
     clear
 }
 
