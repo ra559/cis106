@@ -32,6 +32,7 @@ The alternative Lab 2 is for M series Macbooks because Virtualbox does not run o
     - [Install the guest additions for virtualbox - Option 2](#install-the-guest-additions-for-virtualbox---option-2)
   - [Step 5: Setup Git](#step-5-setup-git)
   - [Step 6: Install VS Code Extensions](#step-6-install-vs-code-extensions)
+  - [Step 7: Setting up Gnome Screenshot Tool](#step-7-setting-up-gnome-screenshot-tool)
   - [Time to submit this lab](#time-to-submit-this-lab)
     - [Special Note 1](#special-note-1)
     - [Special Note 2](#special-note-2)
@@ -214,6 +215,26 @@ sudo ./VBoxLinux
   
 <hr>
 
+## Step 7: Setting up Gnome Screenshot Tool
+Note: The default screenshot application does not work for us. However, `gnome-screenshot` gives us what we need. In the past, we used to use `flameshot`, however, it is still not supported under Wayland therefore we will move away from Flameshot for the time being. To setup Gnome-Screenshot, follow these steps:
+
+1. Install gnome screenshot: use the following command <br>`sudo apt install gnome-screenshot -y`
+2. Open the keyboard settings in Ubuntu. 
+   1. Settings -> Keyboard -> View Customize shortcuts -> Custom Shortcuts -> Click the + icon to add a new shortcut
+   2. In the dialog box add the following:
+      1. **Name:** `gnome-screenshot`
+      2. **Command:** `gnome-screenshot -i`
+   3. Click the set screenshot button and press the print screen key in your keyboard or any other keyboard combination of your choosing.
+   4. Click the replace button.
+   5. Press the print screen key to test. Did it work? Chances are it did not.
+      1. *For some weird reason this does not work the first time we do it, therefore, repeat the process and make sure to spell the command correctly. See the gif for reference!*
+
+
+<p align="center" style="display:block"><img src="/assets/lab2/gnome-screenshot.gif"/></p>
+
+
+<hr>
+
 ## Time to submit this lab
 1. First, lets organize the repository
    1. Open the file manager
@@ -231,12 +252,12 @@ sudo ./VBoxLinux
 
 ## Virtual Machine settings
 
-![screenfetch](screenfetch.png)
+![cpufetch](cpufetch.png)
 ![script](script.png)
 ```
 
-5. Open a terminal and run the following command: `neofetch`
-6. Take a screenshot of the entire terminal window. Save the screenshot in the lab2 directory inside the cis106 directory. Name the screenshot `neofetch.png`
+5. Open a terminal and run the following command: `cpufetch | pv -qL 200` or simply `cpufetch`
+6. Take a screenshot of the entire terminal window. Save the screenshot in the lab2 directory inside the cis106 directory. Name the screenshot `cpufetch.png`
 7. Clear the terminal with the command: `clear` and run the following command: <br>`curl -s https://cis106.com/assets/scripts/lab2_system_info.sh | bash`
 8. Take a screenshot of the entire terminal window. Save the screenshot in the lab2 directory inside the cis106 directory. Name the screenshot `script.png`
 9. Save and convert the file `lab2.md` file to pdf
