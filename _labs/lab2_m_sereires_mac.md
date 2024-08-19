@@ -14,14 +14,11 @@ title: Lab 2 - Installing Ubuntu M Series Macs
   - [Step 1: Download Hypervisor](#step-1-download-hypervisor)
   - [Step 2: Create the virtual machine](#step-2-create-the-virtual-machine)
   - [Step 3: Install Ubuntu Server](#step-3-install-ubuntu-server)
-  - [Step 4: Install necessary packages](#step-4-install-necessary-packages)
-    - [Update the system and install the following essential packages:](#update-the-system-and-install-the-following-essential-packages)
-    - [Install a desktop environment and reboot](#install-a-desktop-environment-and-reboot)
-  - [Step 5: Configuring the desktop](#step-5-configuring-the-desktop)
-    - [Change Wayland for X.org](#change-wayland-for-xorg)
-    - [Replace the current screenshot tool with flameshot](#replace-the-current-screenshot-tool-with-flameshot)
+  - [Step 4: Update the system and install a desktop environment](#step-4-update-the-system-and-install-a-desktop-environment)
+  - [Step 5: Install essential software](#step-5-install-essential-software)
+  - [Step 6: Setting up Gnome Screenshot Tool](#step-6-setting-up-gnome-screenshot-tool)
   - [Step 7: Install VS Code](#step-7-install-vs-code)
-  - [Step 6 Setup Git and Github](#step-6-setup-git-and-github)
+  - [Step 8: Setup Git and Github](#step-8-setup-git-and-github)
   - [Time to submit this lab](#time-to-submit-this-lab)
   - [Known issues:](#known-issues)
   - [Special Note](#special-note)
@@ -76,7 +73,7 @@ Create a virtual machine for Ubuntu Server
 
 1. Start the VM by pressing the **Play** button
 2. If you see a message screen that reads "**Display Output is not active**" ignore it. The VM is just starting
-3. Follow the steps to install Ubuntu server as laid out in the guides: [How to install Ubuntu Server 20.04](https://cis106.com/guides/install-ubuntu-server-20.04/)
+3. Follow the steps to install Ubuntu server as laid out in the guides: [How to install Ubuntu Server 24.04](https://cis106.com/guides/install-ubuntu-server-20.04/)
    
 >   **Notes**:
 >      1. We will install the Server Edition of Ubuntu. The server does not have a graphical installer but it is easy anyways.
@@ -86,33 +83,18 @@ Create a virtual machine for Ubuntu Server
 5. Remove the Ubuntu Server ISO file from the virtual DVD Drive.
 6. Turn on the Virtual Machine and sign in. Use your username and password you set during the installation process
 
-## Step 4: Install necessary packages 
-### Update the system and install the following essential packages:
+## Step 4: Update the system and install a desktop environment
 
 Run these commands one at the time:
 
-```
+```bash
 sudo apt update
 sudo apt upgrade -y
-sudo apt install build-essential linux-headers-$(uname -r) -y
-sudo apt install gcc make perl nemo -y
-sudo apt install git python3-pip curl -y
-sudo apt install wget tree htop net-tools -y 
-sudo apt install vim neofetch samba smbclient -y
-```
-
-### Install a desktop environment and reboot 
-
-> **Note**: We will be using Gnome but you are welcome to use any other desktop environment.
-
-```
 sudo apt install ubuntu-desktop -y
 sudo reboot now
 ```
+> **Note**: We will be using Gnome but you are welcome to use any other desktop environment. This will install Ubuntu's spin of the Gnome Desktop environment. A lot of packages will be installed, so this step will take time
 
-> **Note**: This will install Ubuntu's spin of the Gnome Desktop environment. A lot of packages will be installed, so this step will take time
-
-## Step 5: Configuring the desktop
 Now that you have a desktop environment, let's configure the rest of the system:
 
 1. Do not enable Ubuntu Pro
@@ -120,39 +102,53 @@ Now that you have a desktop environment, let's configure the rest of the system:
 3. Some users have reported issues with full screen so if you are having issues, just don't use full screen.
 4. Open a terminal window. Type this command to disable animations: <br>`gsettings set org.gnome.desktop.interface enable-animations false`
 5. Remove the error reporting software and other applications we won't need: <br>`sudo apt purge apport aisleriot gnome-mahjongg gnome-sudoku `
-6. Log out and switch from Wayland to Xorg
-7. Install the following applications: 
+
+## Step 5: Install essential software
+
+1. Install the curl command which will then use to download a couple of script files. <br>`sudo apt install curl -y`
+2. Use curl to download and run the following script: `essentials.sh`
+
+```bash
+curl https://cis106.com/assets/scripts/essentials.sh -o essentials.sh
+chmod +x essentials.sh
+./essentials.sh
+rm essentials.sh
 ```
-sudo apt install flameshot vlc deluge geany tilix nemo gnome-tweaks snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap -y 
+3. Install VS Code:
+
+```bash
+curl https://cis106.com/assets/scripts/vscode.sh -o vscode.sh
+chmod +x vscode.sh
+./vscode.sh
+rm vscode.sh
 ```
-8. Install Ubuntu Restricted extras: <br>`sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y`
-9. Replace the current screenshot application with Flameshot
+4. Install Ubuntu Restricted Extras
 
-### Change Wayland for X.org
-1. Do it graphically. See the video or gif below.
-2. Open the file `/etc/gdm3/custom.conf` and uncomment the line `#WaylandEnable=false` this will make it permanent. 
-   1. To open the file use the command: `sudo gedit /etc/gdm3/custom.conf`
-   2. To uncomment the line by removing the `#` from the beginning of the line
-   3. Save the file
-   4. Exit the text editor
+```bash
+sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y
+```
+
+> When you see the screen below, use the tab key to select OK, the space key instead of enter, the arrow keys to select yes and the space bar again to agree to the terms and conditions:
+
+<p align="center" style="display:block"><img src="/assets/lab2/terms.gif"/></p>
 
 
-<p align="center" style="display:block"><img src="/assets/lab2/change_xorg.gif"/></p>
+## Step 6: Setting up Gnome Screenshot Tool
+Note: The default screenshot application does not work for us. However, `gnome-screenshot` gives us what we need. In the past, we used to use `flameshot`, however, it is still not supported under Wayland therefore we will move away from Flameshot for the time being. To setup Gnome-Screenshot, follow these steps:
 
-<p align="center" style="display:block"><img src="/assets/lab2/gedit_wayland_off.gif"/></p>
+1. Install gnome screenshot: use the following command <br>`sudo apt install gnome-screenshot -y`
+2. Open the keyboard settings in Ubuntu. 
+   1. Settings -> Keyboard -> View Customize shortcuts -> Custom Shortcuts -> Click the + icon to add a new shortcut
+   2. In the dialog box add the following:
+      1. **Name:** `gnome-screenshot`
+      2. **Command:** `gnome-screenshot -i`
+   3. Click the set screenshot button and press the print screen key in your keyboard or any other keyboard combination of your choosing.
+   4. Click the replace button.
+   5. Press the print screen key to test. Did it work? Chances are it did not.
+      1. *For some weird reason this does not work the first time we do it, therefore, repeat the process and make sure to spell the command correctly. See the gif for reference!*
 
-### Replace the current screenshot tool with flameshot
-1. Open the system settings
-2. Find the Keyboard settings
-3. Scroll down to keyboard shortcuts and click on "View and customize shortcuts"
-4. Scroll down to custom shortcuts
-5. Click the + icon to add a shortcut
-   1. Name: flameshot
-   2. command: flameshot gui
-   3. key: print key in your keyboard
 
-<p align="center" style="display:block"><img src="/assets/lab2/flameshot.gif"/></p>
-
+<p align="center" style="display:block"><img src="/assets/lab2/gnome-screenshot.gif"/></p>
 
 
 ## Step 7: Install VS Code
@@ -166,7 +162,7 @@ sudo apt install flameshot vlc deluge geany tilix nemo gnome-tweaks snapd flatpa
 * [PDF Preview by Analytic Signal Limited](https://marketplace.visualstudio.com/items?itemName=analytic-signal.preview-pdf)
 * [Code Spell Checker by Street Side Software](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 
-## Step 6 Setup Git and Github 
+## Step 8: Setup Git and Github 
 1. Sign in to your Github account. 
 2. Open a terminal window and run the following commands:
 3. Set your username: <br> `git config --global user.name 'your username here'` <br>
@@ -200,28 +196,32 @@ sudo apt install flameshot vlc deluge geany tilix nemo gnome-tweaks snapd flatpa
 
 ## Virtual Machine settings
 
-![neofetch](neofetch.png)
+![cpufetch](cpufetch.png)
 ![script](script.png)
 ```
 
-5. Open a terminal and run the following command: `neofetch`
-6. Take a screenshot of the entire terminal window. Save the screenshot in the lab2 directory inside the cis106 directory. Name the screenshot `neofetch.png`
+5. Open a terminal and run the following command: `cpufetch | pv -qL 200` or simply `cpufetch`
+6. Take a screenshot of the entire terminal window. Save the screenshot in the lab2 directory inside the cis106 directory. Name the screenshot `cpufetch.png`
 7. Clear the terminal with the command: `clear` and run the following command: <br>`curl -s https://cis106.com/assets/scripts/lab2_system_info.sh | bash`
 8. Take a screenshot of the entire terminal window. Save the screenshot in the lab2 directory inside the cis106 directory. Name the screenshot `script.png`
-9. Save and convert the file `lab2.md` file to pdf. If you encounter issues, see the Known Issues part of the guide.
-10. Open the VS Code terminal and enter the following commands to commit and push your changes to github. If you are having issues, see the known issues part of this guide:
-```
+9. Save and convert the file `lab2.md` file to pdf
+10. Open the vs code terminal and enter the following commands to commit and push your changes to github:
+
+```bash
 git pull
 git add .
 git commit -m 'lab2 finished'
 git push
 ```
-10. In blackboard submit the following:
+
+11. In blackboard submit the following:
     1.  The URL to the `lab2.md` file in github
     2.  The `lab2.pdf` file
 
 
 <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+
+<hr>
 
 
 

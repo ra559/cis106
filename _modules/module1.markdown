@@ -20,7 +20,7 @@ title: Module 1 What is Linux?
 1. [Introduction to Linux](https://rapurl.live/dbx)
 2. [The basics of Virtualization](https://rapurl.live/bt7)
 3. [Using VirtualBox](http://bit.ly/3hk03nI)
-4. [Installing Ubuntu 22.04 in virtualbox](http://bit.ly/2WR4i0o)
+4. [Installing Ubuntu 24.04 in virtualbox](https://rapurl.live/vjw)
 
 ## Lecture 3: The desktop environment 
 * Presentations

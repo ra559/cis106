@@ -5,12 +5,14 @@ title: Lab 2 - Installing Ubuntu For Windows Users And Intel Macs
 
 # {{page.title}}
 
-This is the default lab 2. There is other versions of this lab:
+This is the default lab 2. There are other versions of this lab:
 
 * [Lab 2 - Installing Ubuntu For M Series Macs](https://cis106.com/labs/lab2_m_sereires_mac/)
 
 This version of Lab 2 is for Windows users (Windows 11 or 10) or Macbooks with capable Intel CPU. 
 The alternative Lab 2 is for M series Macbooks because Virtualbox does not run on M Series Mac.
+
+> Because your computer is not my computer, there can be issues that I have no way of accounting for. Other versions of this lab can me made upon request. I can also meet with you or work over zoom if you are having any issues. All I ask is that you are mindful of my time and yours. <br>**Do not wait till the last minute!!**
 
 
 ## Video here
@@ -117,7 +119,7 @@ Make sure to install VirtualBox in your host computer. For Windows follow this [
 
 ## Step 3: Install Ubuntu
 
-Go over the presentation ["Installing Ubuntu 20.04 in VirtualBox"](https://shorturl.at/hlor0). There, I have laid out every step with proper explanations. The presentation is using an earlier version of Virtualbox and Ubuntu but the differences are not very significant. I will do it in the video as well but it will benefit you to read the presentation. 
+Go over the presentation ["Installing Ubuntu 24.04 in VirtualBox 7"](https://rapurl.live/vjw). There, I have laid out every step with proper explanations. The presentation is using an earlier version of Virtualbox and Ubuntu but the differences are not very significant. I will do it in the video as well but it will benefit you to read the presentation. 
 
 <hr>
 
