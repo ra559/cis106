@@ -1,7 +1,3 @@
----
-layout: post
-title: Week Report 6
----
 
 # {{page.title}}
 > *video [here](https://youtu.be/5owUqgEzeUY)*

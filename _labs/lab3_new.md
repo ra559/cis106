@@ -1,7 +1,4 @@
----
-layout: post
-title: Lab 3 - Desktop Environment, Terminal Emulator, and Bash
----
+
 
 # {{page.title}}
 

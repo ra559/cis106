@@ -1,7 +1,4 @@
----
-layout: post
-title: Week Report 7
----
+
 
 # {{page.title}}
 ## Complete the following tasks In this order please!!!!

@@ -1,7 +1,3 @@
----
-layout: post
-title: Lab 8 - Handling files Part 2
----
 
 # {{page.title}}
 

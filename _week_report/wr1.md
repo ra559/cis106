@@ -14,6 +14,7 @@ For this week, complete the following tasks.
 3. Watch [this video](https://www.youtube.com/watch?v=wpISo9TNjfU) so that you are familiar of what git and github are
 4. Watch [this video](https://www.youtube.com/watch?v=B-s71n0dHUk) so that you are familiar with VS Code's interface
 5. Complete [Lab 1 - Learning Markdown](https://cis106.com/labs/lab1/) 
+6. Complete Notes 1. The instructions are in Blackboard. Do this last please because there is no video for notes 1.
 
 
 ## What will you submit:

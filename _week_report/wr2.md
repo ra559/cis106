@@ -1,8 +1,3 @@
----
-layout: post
-title: Week Report 2
----
-
 
 # {{page.title}}
 
