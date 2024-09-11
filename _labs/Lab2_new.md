@@ -16,7 +16,7 @@ The alternative Lab 2 is for M series Macbooks because Virtualbox does not run o
 
 
 ## Video here
-[Lab 2 Installing Ubuntu 22.04 Windows Version](https://youtu.be/N9c4DkNTUek)
+[Lab 2 Installing Ubuntu 22.04 Windows Version](https://youtu.be/SkHsyYJm1Ns)
 
 ## Table of Contents
 - [{{page.title}}](#pagetitle)
