@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Lab 2 - Installing Ubuntu M Series Macs
+title: Lab 2 - Installing Ubuntu 24.04 in M1, M2 and M3 Macbooks
 ---
 # {{page.title}}
 
 
 ## Video Here
-[Lab 2 Installing Ubuntu M Series Macs (M1/M2 CPUS)](https://youtu.be/AyXzHb86Uw4)
+[Lab 2 Installing Ubuntu M Series Macs (M1/M2 CPUS)](https://youtu.be/3M_ao6c7uIc)
 
 - [{{page.title}}](#pagetitle)
   - [Video Here](#video-here)
@@ -17,7 +17,7 @@ title: Lab 2 - Installing Ubuntu M Series Macs
   - [Step 4: Update the system and install a desktop environment](#step-4-update-the-system-and-install-a-desktop-environment)
   - [Step 5: Install essential software](#step-5-install-essential-software)
   - [Step 6: Setting up Gnome Screenshot Tool](#step-6-setting-up-gnome-screenshot-tool)
-  - [Step 7: Install VS Code](#step-7-install-vs-code)
+  - [Step 7: Setup VS Code](#step-7-setup-vs-code)
   - [Step 8: Setup Git and Github](#step-8-setup-git-and-github)
   - [Time to submit this lab](#time-to-submit-this-lab)
   - [Known issues:](#known-issues)
@@ -151,10 +151,8 @@ Note: The default screenshot application does not work for us. However, `gnome-s
 <p align="center" style="display:block"><img src="/assets/lab2/gnome-screenshot.gif"/></p>
 
 
-## Step 7: Install VS Code
-1. Download the ARM64 package for Ubuntu
-2. Install the package
-3. Install the following extensions:
+## Step 7: Setup VS Code
+Install the following extensions:
 * [Markdown All in One by Yu Zhang](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 * [Markdown by starkwang](https://marketplace.visualstudio.com/items?itemName=starkwang.markdown)
 * [Markdown PDF by yzane](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)
