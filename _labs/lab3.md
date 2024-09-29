@@ -1,183 +1,213 @@
-
+---
+layout: post
+title: Lab 3 - The Bash Shell
+---
 
 # {{page.title}}
-* [Video HERE](https://youtu.be/lo-UvVs4C8I)
 
-* You have to complete labs 1, and 2 before attempting lab 3.
-* Software installation cheat sheet available [here](https://bit.ly/3djIsfy)
-  * Video of Presentation available [here](https://youtu.be/_PoTDzMfi0o)
-  * Presentation available [here](https://shorturl.at/BDO39)
+## Video here
+[VIDEO](https://youtu.be/WD1QNH05Nn4)
 
-
-## Question 1 | Using Ubuntu for basic tasks
-Perform the following tasks. The point of this question is to get you familiar with the system. The more you use Ubuntu, the less intimidating it becomes. 
-
-1. Open a terminal and type the `date` command. Take a screenshot of the terminal and highlight the date command. Add some text to the screenshot. Save your screenshot in your `lab3` directory inside your github repository. If the `lab3` directory does not exist, create it.
-
-2. **Create a desktop shortcut for the cis106 website**
-* Open a text editor.
-* Add the following text:
-
-```
-#!/usr/bin/evn xdg-open
-[Desktop Entry]
-Type=Application
-Terminal=false
-Exec=/snap/bin/firefox https://cis106.com
-Name=cis106
-Icon=$HOME/.cis106.png
-```
-* Save the file with the name: `cis106.desktop` and save it in your Desktop directory.
-* On the desktop, right click on the file `cis106.desktop` and enable launching (can also be called: `Allow executing as program`):
-
-![allow launching](/assets/allowLanuching.gif)<br>  
-
-* Now lets add the launcher to our favorites application in the Dock:
-  * Run the following command:
-```
-cp Desktop/cis106.desktop .local/share/applications/
-```
-  * Now run this command:
-```
-dconf write /org/gnome/shell/favorite-apps "['firefox_firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'code.desktop', 'cis106.desktop']"
-```
-
-1. **Write a Document**
-   1. Open Libre office writer.
-   2. Go on firefox and copy and paste some text from wikipedia
-   3. Convert the file to pdf
-   4. Save the pdf file in the `lab3` directory inside your github repository.
-2. **Create a Presentation in LibreOffice Impress**
-   1. save the presentation in the `lab3` directory
-3. **Play around with the settings of Ubuntu**
-   1. Click on the System Tray. Open "Settings"
-   2. Change the background.
-   3. Go to this [site](https://wallhaven.cc/) and download a new wallpaper and add it as a background. 
-   4. Play around with the appearance of Ubuntu.
-   5. Play around with the notifications
-   6. Disable search for everything except software
-   7. Change the screen blank to "Never" in the power settings
-   8. Take a look at the rest of the settings
-4. **Install a Font**
-   1. Go to this [website](https://www.nerdfonts.com/font-downloads)
-   2. Download the following fonts: 
-      1. FiraCode Nerd Font
-      2. FiraMono Nerd Font
-      3. Inconsolata Nerd Font
-      4. InconsolataGo Nerd Font
-      5. Iosevka Nerd Font
-      6. JetBrainsMono Nerd Font
-      7. Lekton Nerd Font
-      8. Monofur Nerd Font
-      9. Monoki Nerd Font
-      10. SpaceMono Nerd Font
-5. [Tilix](https://gnunn1.github.io/tilix-web/) is an advance terminal emulator that supports split screen and other advanced features. Open Tilix, and do the following:
-   1. Open the app settings, in the Appearance tab, change the theme variant to dark
-   2. Add a background image. Like this [one](https://wallpapersmug.com/download/1920x1080/6d3c26/dark-minimal-mountains.png) 
-   3. In the Default profile, 
-      1. Change the font to any of the font you downloaded earlier. I suggest Fira Mono
-      2. Change the Cursor to: Underline
-      3. Change the Cursor blink mode: ON
-      4. Set the color Scheme to Linux
-      5. Adjust the transparency until the background is slightly visible
-
-> This question requires no screenshot
-
-## Question 2 | Using a different desktop environment
-
-1. Install Gnome Classic. GNOME Classic is a GNOME Shell feature and mode for users who prefer a more traditional desktop experience. Read more [here](https://rapurl.live/vgo) 
-
-* Open a terminal and run this command:
-```
-sudo apt update; sudo apt install gnome-session-flashback -y
-```
-* Log out and select the gnome classic session in the gear icon. Log in.
-![switchingde](/assets/switchinge-de.gif)
-
-> Take a screenshot of your ubuntu system.
-
-> **Note:** *You can go back to Gnome 42 if you want.*
-<hr>
-
-## Question 2.1 (Alternative - Not required!)| Customizing Ubuntu 22.04 Appearance and behavior
-> This question is not mandatory is done for the sake of practicing some more. Feel free to ignore this.
-
-1. Turn your virtual machine off and take a snapshot. 
-2. In the logging screen select Gnome 42 instead of Gnome Classic Metacity
-3. Using the software center, install the application Gnome Extension Manager.
-4. Open Extension Manager and install the following extensions:
-   1.  Blur My Shell
-   2.  Burn My Windows
-   3.  CoverFlow Alt-Tab
-   4.  Dash to Panel
-   5.  Vitals
-5. Enable desktop animations using this command: <br> `gsettings set org.gnome.desktop.interface enable-animations true` <br>
-
-> Warning: All of these extensions will make your virtual machine slow. I suggest going back to the default Gnome Session without extensions or disabling the ones that add all the fancy effects. If you are ok with your current setup, leave it as is.
-
-> This question does not require a screenshot
-
-## Question 3 | Installing applications
-Using the command line, look for a software to do each of the following tasks and then complete the table with the information you found. Make sure that the application you found is an actual software and not a library. If needed Google the application name to be sure before you install the program. Install and launch the application. 
-
-1. Play a tetris game
-2. Play a video file
-3. Browse the internet
-4. Read your email
-5. Play music 
-
-```
-| Program purpose     | Package Name | Version |
-| ------------------- | ------------ | ------- |
-| Play a tetris game  |              |         |
-| Play a video file   |              |         |
-| Browse the internet |              |         |
-| Read your email     |              |         |
-| Play music          |              |         |
-```
-> for this question, only the completed table is required. No screenshots here.
+## Pre Work:
+1. Open the file manager and navigate to the `labs` folder/directory inside the cis106 repository `(~/cis106/labs/)`
+2. Create a folder/directory called `lab3`
+3. Open VS Code and open the `cis106` directory/folder inside VS Code
+4. Create a file called `lab3.md` inside the `lab3` folder/directory
+5. Add the following markdown, save the file, close vs code, and start your lab
 
 <hr>
 
-## Question 4 | Trying out simple commands (CHALLENGE QUESTION)
-
-Almost all Linux commands include manual pages. Manual pages (man page for short) is a documentation that explains the usage of a command. Man pages are not user friendly and are not meant to be guides but references on how a program works. The more you read man pages the more sense they make. It is normal to feel lost in the beginning. 
-
-To read the manual of a command simply type: `man command name` for example, `man date` opens the manual of the date command. 
-
-To move around the man page, use the arrow keys in the keyboard. You can also use the mouse wheel if you are working in a terminal emulator. To get help on how to read the manual press letter `h` to  quit the manual page press `q`
-
-Try the following commands in the terminal
-   1. date
-   2. free -h
-   3. uname -a
-   4. du / 
-
-* Use the internet and the manual page to understand **What each command does?**
-  
-* Install these programs: `fortune cowsay toilet figlet rig lolcat boxes`
-
-* Run these commands on your terminal:
-   1. `echo "I Like Linux!" | lolcat`
-   2. `fortune | cowsay | lolcat`
-   3. `figlet "Linux is cool"`
-   4. `fortune | toilet -f term -F border --metal`
-   5. `rig | boxes -d boy`
-
-Use the man page to find out what each of these programs do then fill in the table.
-
 ```
-| command | what it does |
-| ------- | ------------ |
-| echo    |              |
-| fortune |              |
-| cowsay  |              |
-| lolcat  |              |
-| figlet  |              |
-| toilet  |              |
-| rig     |              |
+---
+Student: your name
+semester: Spring 24
+Assignment: Lab 3
+---
+
+# Lab 3 Submission
+
+## Question 2
+![q2](q2.1.png)
+
+## Question 3
+![q3](q3.png)
+
+## Challenge Question
+![q4](q4.png)
+
+## Script Source code:
+[lab3](lab3-script.sh)
 ```
 
-## What will you submit
-* Create a markdown file named `lab3.md` and answer all the questions there.
-* Submit the URL to the lab3.md file in github and a pdf version of `lab3.md` file.
+<hr>
+
+<p align="center" style="display:block"><img src="/assets/lab3/prework.gif" width="500" /></p>
+
+
+
+## Question 1: Using Ubuntu's Desktop Environment (GNOME)
+### Appearance  
+1. Download a wallpaper that you like. You can use this website for downloading wallpapers: [wallheaven.cc](https://wallhaven.cc/) 
+2. Create a directory/folder in the `Pictures` directory called `wallpapers`
+3. Save the file in this newly created directory. Make sure to change the name to something more descriptive of the image. 
+4. Right-click on the desktop and change the wallpaper to the one you downloaded recently.
+5. Add the following applications to the favorites bar:
+   1. VS Code
+   2. Tilix
+6. Customize the favorites bar to your liking
+   1. Change its position
+   2. Remove any application you do not use regularly
+   3. Do you like the panel mode or the dock mode?
+   4. How about the icon size?
+<p align="center" style="display:block"><img src="/assets/lab3/apperance1.gif" width="500" /></p>
+<p align="center" style="display:block"><img src="/assets/lab3/apperance2.gif" width="500" /></p>
+
+### Custom Font
+
+1. Download one of the following fonts from this [website](https://www.nerdfonts.com/font-downloads):
+   1. Hack
+   2. FiraCode
+   3. Meslo
+   4. Source Code Pro
+   5. Terminus
+   6. Monoid
+   7. Noto
+   8. Iosevka<br>
+**Note**: you can use this [website](https://www.programmingfonts.org/#fira) to preview the font. Choose one you like and download it.
+
+<p align="center" style="display:block"><img src="/assets/lab3/font1.gif" width="500" /></p>
+
+2. Install the font
+   1. Create a hidden folder/directory in your home directory called `.fonts` (In Linux, hidden folders start with a period therefore to create a hidden folder all you need to do is start its name with a period)
+   2. Enable hidden folder view in the file manager by pressing CTRL + H. You should notice that a lot of more hidden folders appear. 
+   3. Decompress the `font.zip` file you downloaded earlier and move all the `.ttf` files to the `.fonts` directory.
+   4. Open a terminal and type the command `fc-cache -fv`. This command will scan your system for new fonts.
+3. Close the terminal. Open the file manager and press CTRL + H again so we can hide the hidden folders/directories again. *You don't want to mistakenly delete those later!*
+3. Open the terminal and type the following command: <br>`echo "hello world"`
+
+<p align="center" style="display:block"><img src="/assets/lab3/font2.gif" width="500" /></p>
+
+
+
+#### This question does no require screenshot
+
+<hr>
+
+## Question 2: Working with BASH in the terminal emulator 
+
+> **Note:** I use tilix but you are welcome to use any other terminal emulator.
+
+1. Open **Tilix** and then click on the hamburger menu (≡) and then on preference. Ignore the error message
+2. Click on appearance. Enable “**Use a wide handle for splitters**”
+3. Split the terminal in 2 horizontally. Open the man page of the `echo` command in one of the terminals.
+4. Resize the terminal window so that you have enough space to work on both.
+5. Using the man page of echo figure out how to do the following:
+    * Display a line of text without the new line
+    * Display a line of text that includes a horizontal tab
+    * Display 2 lines of text in a single echo command
+    * Display 2 lines of text in a single echo command, with the second line starting with a tab
+    * Display 2 lines of text in a single echo command that starts with a tab
+
+<p align="center" style="display:block"><img src="/assets/lab3/q1.1.gif" width="500" /></p>
+<p align="center" style="display:block"><img src="/assets/lab3/q1.2.gif" width="500" /></p>
+
+
+#### Take a screenshot of the terminal showing all the commands that you used and the man page open. Save your screenshot as q2.1.png
+
+## Question 3: Write a basic shell script 
+1. Open the text editor app (Gnome Text)
+2. Click on the gear icon (⚙) then 
+   1. Enable "**Show line numbers**"
+   2. Enable "**Show right margin**"
+   3. disable "**Check spelling**"
+   4. In Spaces Per Tab, set it to "**4**"
+3. Click on the hamburger menu (≡) and then properties
+   1. Pick a a theme that you like
+   2. Enable custom font and pick the font you downloaded earlier. Adjust the font size to your liking.
+   3. Enable highlight current line
+4. Type the following line: `#!/bin/bash` (double-check your spelling)
+5. Save the file as: `lab3-script1.sh` in the `lab3` folder/directory inside `cis106/labs/`
+
+<p align="center" style="display:block"><img src="/assets/lab3/q3.1.gif" width="500" /></p>
+
+6. Add the following lines, then save the script.
+
+```bash
+echo "This is a shell script,"
+echo -n "This script will print the current date"
+date
+echo "This is the machine's name:"
+uname -n
+echo "This is the current user:"
+echo $USER
+echo "This is the current date"
+date +"%A, %B %d %R %Z"
+```
+
+7. Add the following comments at the top after the shell declaration/shebang `#!/bin/bash`
+
+```bash
+# Author: your name
+# Date: current date in format mm/dd/yy
+# Description: This is a basic script that
+# uses environment variables and the date command
+```
+
+8. Save the script and close the text editor
+9. Open a terminal and type the following commands to execute the script:
+`bash ~/cis106/labs/lab3/lab3-script.sh`
+
+<p align="center" style="display:block"><img src="/assets/lab3/q3.2.gif" width="500" /></p>
+
+
+
+#### Take a screenshot of the terminal showing the output of the script. Double-check your spelling and follow every step correctly if you get any error messages.
+
+## Question 4: Challenge Question
+Write a shell script that displays the following output:
+
+![cqo](/assets/lab3/challenngeQoutput1.png)
+
+### Tips:
+* You will need to read the man page of the `echo`, `uname`, and `date`, `df`, `free` and `figlet` commands. 
+* You can use the `cheat` command
+* Save the script in the same directory/folder as you saved the question 3 script `~/cis106/labs/lab3/`
+* Name the script `challenge_lab3.sh`
+* The command to run the script is `bash ~/cis106/labs/lab3/challenge_lab3.sh` if this does not work, it is because you saved the script in the wrong folder. *Retrace your steps to troubleshoot.* 
+* You must complete this question alone. I cannot provide assistance here. Everything you need to complete this challenge has been covered in this lab and in the [presentations](https://bit.ly/3jS8fNa). While I cannot provide you with assistance answering the question, I can provide extra explanations or clarifications.
+
+> **NOTE**: This script must use the `echo`, `uname`, and `date`, `df`, `free` and `figlet` command. Any other solution that does not involve these commands will not be accepted and you will receive 0 for this question. No exceptions!
+
+
+## What will you submit:
+1. Place and properly label (using headings) all the screenshots you took. See the markdown I gave you at the beginning of this document
+2. Convert the file to pdf
+3. Push everything to github
+4. In Blackboard, submit the pdf file `lab3.pdf`
+
+**Note**: I will read your script from github. If the script is not there, you will not receive credit. 
+
+## How I will grade you:
+* I will navigate to your GitHub repository and read your script. 
+* I will download your script and run it on my machine. 
+* If your script runs and I get the same output as the screenshot, you will get full credit for the challenge question. Otherwise, partial credit will be awarded.
+* Every question in this lab is worth 25 points.
+
+
+<hr>
+
+
+<p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+
+<hr>
+
+## Special Note 
+You are going to be using the git commands a lot. Here is a quick reference:
+* `git clone repository/url/here`: is the command to clone a repository where cloning means downloading a repository to your computer
+* `git pull`: to pull/synchronize your repository from github to your local machine. Always run this command BEFORE you start working VS Code
+* `git add .`: to track all the changes made to your file. 
+* `git commit -m "label for your changes here"`: this command will label all the changes you added with the `add` command
+* `git push`: will send all your changes to your github repository
+
+> Always run the commands in this order: <br>`pull` =>  `add` =>  `commit` => `push` 
+> **Never use the github website to make changes to your repository unless you know what you are doing and can remember to pull the changes before working on your local repository!**

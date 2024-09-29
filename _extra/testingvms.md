@@ -8,7 +8,7 @@ title: VM Test Activity
 * All the activities in this lab should be executed reliably with minimal slow downs with a virtual machine that meets the following criteria:
 
 * CPU: 2 Cores
-* RAM: 2 GB
+* RAM: 4 GB
 * HDD: 50 GB
 
 ## Applications installed:

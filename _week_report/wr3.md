@@ -1,46 +1,75 @@
+---
+layout: post
+title: Week Report 3
+---
 
 # {{page.title}}
 
 ## Video here
-[Week Report 3 ](https://youtu.be/MWC6I1F8zGs)
+[Week Report 3 ](https://youtu.be/I_G4xnDy6q0)
 
-**Note**: This cannot be completed if you have not completed lab 2.
+> **Note**: This cannot be completed if you have not completed lab 2.
 
-1. Study/Read/Review:
-   * Review the following presentation:
-     * The bash shell
-     * Managing Software
-2. Download the managing software cheat sheet (1 is fine if you do not want/need both) and place it in the cheatSheet directory/folder.
-3. Complete lab 3
+### 1. Study/Read/Review:
+* Review the following presentation:
+  * [What is a Shell?](https://bit.ly/3jS8fNa)
+  * [Managing Software](https://rapurl.live/nft)
+
+### 2. Add new cheat sheet
+* Download the [managing software cheat sheet](https://rapurl.live/dsp) (one is fine but I suggest the second one) and place it in the cheatSheet directory/folder.
+
+### 3. Complete the lecture's practice 
+* In the presentation: [What is a shell?](https://rapurl.live/tyi), you will find 7 practice exercises.
+* Complete each practice and take a screenshot of the terminal when you finish with each practice.
+* Place the screenshots in the week report 3 directory located in the following path: `cis106/weekReports/wr3/`
+* If you do not have a directory/folder for `wr3`, make it!
+* Complete practice 1 and 3 in the presentation **[Managing Software](https://rapurl.live/nft)** and take a screenshot of the terminal.
+
+### 4. Complete class notes:
+* Create a markdown file that includes the following:
+  * Definition, usage, and examples of the following commands:
+     * echo
+     * date
+     * free
+     * uname
+     * history
+     * man
+     * apt
+     * snap
+     * flatpak
+> This [video](https://youtu.be/MJpz6RX65Ko) contains an example from last semester.
+
+### 5. Complete week report 3 
+   1. Inside the `wr3` directory/folder, create a markdown file called `wr3.md`
+   2. The `wr3.md` file must include the following:
+      1. **Heading 1**: Week Report 3
+      2. **Heading 2**: Completed work for week 3
+      3. **A bulleted list of the following URLs**:
+         1. Link to `lab3.md` (you have not created this file yet therefore you need to create this file and put some place holder text in it)
+         2. Link to `notes3.md`
+      4. **Heading 2**: Practice
+         1. **Heading 3**:Practice 1
+            1. Screenshot of practice 1
+         2. **Heading 3**:Practice 2
+            1.  Screenshot of practice 2
+         3. **Heading 3**:Practice 3
+            1.  Screenshot of practice 3
+         4. **Heading 3**:Practice 4
+            1.  Screenshot of practice 4
+         5. **Heading 3**:Practice 5
+            1.  Screenshot of practice 5
+         6. **Heading 3**:Practice 6
+            1.  Screenshot of practice 6
+         7. **Heading 3**:Practice 7
+            1.  Screenshot of practice 7
+         8. **Heading 3**:Practice 1 - Managing Software
+            1. Screenshot of practice 1ms
+         9.  **Heading 3**:Practice 3 - Managing Software
+             1.  Screenshot of practice 3ms
+
+### 6. Complete lab 3
    1. Video [here](https://youtu.be/8Pfpno_g2sw)
-4. Complete class notes:
-   * Create a markdown file that includes the following:
-     * Definition, usage, and examples of the following commands:
-        * echo
-        * date
-        * free
-        * uname
-        * history
-        * man
-        * apt
-        * snap
-        * flatpak
-          * Video [Here](https://youtu.be/MJpz6RX65Ko)
-          * Where to find the PDF file? [Here](https://github.com/robertalberto0713/cis106/tree/main/notes/notes1)
-5. Complete week report 3 
-   1. Create a new directory/folder in side weekReports called wr3
-   2. Inside wr3, create a markdown file called wr3.md
-   3. The wr3.md file must include the following:
-      1. Heading 1: Week Report 3
-      2. Heading 2: Completed work for week 3
-      3. A bulleted list of the following URLs:
-         1. Link to lab3.md
-         2. Link to notes3.md
-      4. Complete each practice in the presentation **‘The bash shell’** and take a screenshot of the terminal.
-      5. Add a heading 3 before every screenshot to identify each practice. 
-         1. **Skip Practice 1 from the bash shell.**
-      6. Complete each practice in the presentation **“Managing software”** and take a screenshot of the terminal.
-         1. **Practice 4 and 5 of the managing software presentation are optional.** 
+
 ## What will you submit:
 1. Convert `wr3.md` to pdf
 2. Push everything to github:
