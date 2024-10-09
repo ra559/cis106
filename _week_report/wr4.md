@@ -1,3 +1,7 @@
+---
+layout: post
+title: Week Report 4
+---
 
 # {{page.title}}
 
@@ -46,7 +50,7 @@
 * Instructions [here](https://cis106.com/labs/lab4/)
 
 ### 4. Complete discussion boards 
-* Complete at least 1 of the discussion boards (2 entries!) 
+* Work on your next discussion board
   
 ### Special Note: Git Commands Reminder
 * `git clone repository/url/here`: is the command to clone a repository where cloning means downloading a repository to your computer
