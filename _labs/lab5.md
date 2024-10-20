@@ -1,39 +1,111 @@
-
+---
+layout: post
+title: Lab 5 - Managing Files and directories
+---
 
 # {{page.title}}
 
 * Presentation [here](https://rapurl.live/f6n)
 * Video [here](https://youtu.be/DehHVadtKww)
 
+# NOTE: WORK IN PROGRESS!!!
 
-## Question 1: Creating Files and Directories
-1. Create a Directory in **YOUR home directory** labeled: `lab5`. 
-2. Change your current working directory to `~/lab5`. 
-3. Create 3 directories: `pets`,`docs`,`songs`. Inside each directory, create 2 subdirectories called: `new` and `old`.
-4. Inside the `new` and `old` directories, create 3 files: `file1`, `file2`, and `file3`.
-5. Use the `tree` command to list the `lab5` directory.
+## Question 1.1: Creating Files and Directories - Part 1
+* Create the following directory structure. Here are the rules:
+  * ***YOU ARE NOT ALLOWED TO USE CD!***
+  * You can create more than 1 directory at the same time
+  * You can only use **relative path** for all the directory and file names
+  * All the commands must be run from your home directory (**$HOME**)
 
-> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots is allowed**
+```bash
+lab5/
+└── q1.1
+    └── games
+        ├── action
+        │   └── action_games.txt
+        ├── fps
+        │   └── fps_list.txt
+        └── rpg
+            └── mods.py
+
+5 directories, 3 files
+```
+
+* To complete this question, follow these instructions:
+
+1. Create a Directory in **YOUR home directory ($HOME)** labeled: `lab5`. 
+2. Inside `lab5` create the directory `q1.1` and the subdirectory `games`. Inside `games`, create the subdirectory `action`. You must use the `-p` option of the    `mkdir` command. Then, inside `games`, create the remaining 2 subdirectories. `-p` is not necessary here anymore because the parents directory already exist. 
+3. Inside each respective directory, create the text files: `action_games.txt`,`fps_list.txt`, and `mods.py`
+4. Use the `tree` command to list the `lab5` directory. Alternatively, you can use `ls -R` for a recursive list of the `lab5` directory.
+
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer this question. Multiple screenshots are allowed**
+
+### Question 1.2: Creating Files and Directories - Part 2
+
+To the previous directory structure, add the missing directories and files. Here are the rules:
+  * ***YOU ARE NOT ALLOWED TO USE CD aside from step 1***
+  * You can create more than 1 directory at the same time
+  * You can only use **absolute path** for all the directory and file names
+  * All the commands must be run from your home directory (**/etc**)
+
+```bash
+/home/adrian/lab5/
+├── q1
+│   └── games
+│       ├── action
+│       │   └── action_games.txt
+│       ├── fps
+│       │   └── fps_list.txt
+│       └── rpg
+│           └── mods.py
+└── q1.2
+    ├── hmw
+    │   └── linux.txt
+    └── notes
+        └── math.pdf
+
+8 directories, 5 files
+```
+* To complete this question, follow these instructions:
+
+1. Change your current working directory to `/etc`. The remaining of this questions will be completed from this directory.
+2. Create the directories and subdirectories: `q1.2`,  `hmw` and `notes`. Remember to use `-p` when necessary.
+3. Create the files `linux.txt` and `math.pdf` in their respective directories. 
+4. Use the `tree` command to list the `lab5` directory. Alternatively, you can use `ls -R` for a recursive list of the `lab5` directory.
+
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer this question. Multiple screenshots are allowed**
+
+<button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('q1');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
+<p align="center" style="display:none" id='q1'><img src="/assets/lab5/q1-solution.png"/></p>
+
 
 ## Question 2: Removing Files and Directories
 1. Change your current working directory to: `/srv/`
-2. Remove the `file1`, `file2`, `file3` files inside the `labs/pets/new/` directory without changing your current working directory.
-3. Remove the `pets` directory without changing your current working directory.
-4. Remove the `docs` and `songs` directories without changing your current working directory.
-5. Remove the `lab5` directory without changing your current working directory.
+2. Remove the files: `math.pdf` and `linux.txt` located in the `q1.2` directory.
+3. Change your current working directory to `$HOME`
+4. Remove the directories `q1.1` and `q1.2`. Use relative path. Remember the `-r` option of the `rm` command
 
-> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots is allowed**
+<button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('q2');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
+<p align="center" style="display:none" id='q2'><img src="/assets/lab5/q2-solution.png"/></p>
+
+
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots are allowed**
 
 
 ## Question 3: Moving Files and Directories
-1. Make sure that you are working on your home directory. 
-2. Run the following command: `wget https://cis106.com/assets/lab5.zip && unzip lab5.zip && rm lab5.zip`
-3. In your home directory, create the following directories: `lab5-imgs`, `lab5-audio`, `lab5-video`, `lab5-docs`
-4. Move all the files inside the `lab5` directory to their respective new directories in your home directory. 
-5. Inside the  `lab5` directory, you will find a directory called `Wallpaperslab5`. Move this directory to your `Pictures` directory and rename it to `NewWallpapers`.
-6. Rename the `lab5` directory to `Lab-5`.
+1. Change the current working directory to `$HOME` and remove the `lab5` directory.
+2. Run the following command: <br> `wget https://cis106.com/assets/lab5/lab5.zip && unzip lab5.zip && rm lab5.zip`. <br> You will notice that you have a new `lab5` directory in `$HOME`. Split your terminal in 2 or open a new terminal window. List the `lab5` directory **sorted by file extensions and in a single column**. This will make it easy to work.
+3. In `$HOME`, create the following directories: `lab5-imgs`, `lab5-audio`, `lab5-video`, `lab5-docs`
+4. Move all the files inside the `lab5` directory to their respective new directories in `$HOME`.  
+5. Inside the  `lab5` directory, you will find a directory called `wallpapersLab5`. Move this directory to your `Pictures` directory and rename it to `NewWallpapers`. You must achieve this in a single command.
+6. List the directories: `lab5-imgs`, `lab5-audio`, `lab5-video`, `lab5-docs` and `NewWallpapers` in a single command using absolute path for each directory path. 
+7. Remove `lab5`, `lab5-imgs`, `lab5-audio`, `lab5-video`, `lab5-docs` and `NewWallpapers`  
+8. List `$HOME`. Use this command to list directories only: `ls -d1 ~/*/`
 
-> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots is allowed**
+<button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('q3');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
+<p align="center" style="display:none" id='q2'><img src="/assets/lab5/q3-solution.png"/></p>
+
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots are allowed**
 
 
 ## Question 4: Copying Files and Directories
@@ -43,7 +115,7 @@
 4. Copy your new directory to the `Pictures` directory.
 5. Remove the new directory in your `Downloads` directory.
 
-> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots is allowed**
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots are allowed**
 
 
 ## Challenge Question:
