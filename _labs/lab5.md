@@ -89,70 +89,79 @@ To the previous directory structure, add the missing directories and files. Here
 <p align="center" style="display:none" id='q2'><img src="/assets/lab5/q2-solution.png"/></p>
 
 
-> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots are allowed**
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-4. Multiple screenshots are allowed**
 
 
 ## Question 3: Moving Files and Directories
 1. Change the current working directory to `$HOME` and remove the `lab5` directory.
 2. Run the following command: <br> `wget https://cis106.com/assets/lab5/lab5.zip && unzip lab5.zip && rm lab5.zip`. <br> You will notice that you have a new `lab5` directory in `$HOME`. Split your terminal in 2 or open a new terminal window. List the `lab5` directory **sorted by file extensions and in a single column**. This will make it easy to work.
-3. In `$HOME`, create the following directories: `lab5-imgs`, `lab5-audio`, `lab5-video`, `lab5-docs`
+3. In `$HOME`, create the following directories: `lab5-img`, `lab5-audio`, `lab5-video`, `lab5-doc`
 4. Move all the files inside the `lab5` directory to their respective new directories in `$HOME`.  
-5. Inside the  `lab5` directory, you will find a directory called `wallpapersLab5`. Move this directory to your `Pictures` directory and rename it to `NewWallpapers`. You must achieve this in a single command.
-6. List the directories: `lab5-imgs`, `lab5-audio`, `lab5-video`, `lab5-docs` and `NewWallpapers` in a single command using absolute path for each directory path. 
-7. Remove `lab5`, `lab5-imgs`, `lab5-audio`, `lab5-video`, `lab5-docs` and `NewWallpapers`  
+5. Inside the  `lab5` directory, you will find a directory called `wallpapersLab5`. Move this directory to your `Pictures` directory and rename it to `NewWallpapers`. **You must achieve this in a single command.**
+6. List the directories: `lab5-img`, `lab5-audio`, `lab5-video`, `lab5-doc` and `NewWallpapers` in a single command using absolute path for each directory path. 
+7. Remove `lab5`, `lab5-img`, `lab5-audio`, `lab5-video`, `lab5-doc` and `NewWallpapers`  
 8. List `$HOME`. Use this command to list directories only: `ls -d1 ~/*/`
 
 <button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('q3');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
-<p align="center" style="display:none" id='q2'><img src="/assets/lab5/q3-solution.png"/></p>
+<p align="center" style="display:none" id='q3'><img src="/assets/lab5/q3-solution.png"/></p>
 
-> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots are allowed**
+> **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-8. Multiple screenshots are allowed**
 
 
 ## Question 4: Copying Files and Directories
-1. Go to [pexels.com](https://www.pexels.com/search/HD%20wallpaper/). Download at least 3 wallpapers.
-2. Copy the wallpapers to your `Pictures/NewWallpapers` directory. 
-3. Create a new directory in your `Downloads` directory (use whatever naming convention you want). Download 3 wallpapers and move them to your new directory.
-4. Copy your new directory to the `Pictures` directory.
-5. Remove the new directory in your `Downloads` directory.
+* Rules for this question:
+  *  You are not allowed to use CD
+  *  You have to use absolute path
+
+1. Go to [Pexels.com](https://www.pexels.com/search/HD%20wallpaper/). Filter the results by Horizontal images. Download at least 3 wallpapers.
+2. Split your terminal in 2. In one side, list the wallpapers you downloaded. 
+3. In your `~/Pictures` directory, create a new directory called `lab5wallpapers`
+4. Copy the newly downloaded wallpapers to the directory `lab5wallpapers` 
+5. Copy the `lab5wallpapers` directory to the `Downloads` directory 
 
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots are allowed**
 
 
 ## Challenge Question:
 
-1. In your home directory, create a directory called: `lab5ChallengeQuestion` and inside this new directory create one directory called `assets` you must achieve this in a single command.
-2. Download an image from this website: [pexels.com](https://www.pexels.com/search/HD%20wallpaper/) and rename it `newPicture.png`. Move this image to your `assets directory`. You must move and rename the file in a single command. 
-3. From the root of the file system, create a file in the `lab5ChallengeQuestion` directory called `site.html`
-4. open the file `site.html` in a text editor (do not use vs code) and add the following text. Save the file and close the text editor.
+**Problem Description:**<br> Joe is working on a web development assignment. The goal is to create a slide show that can show different images when the user clicks the next and previous button. He has sent you the code that makes the website. Your job is to test it to make sure it works. To download the site use this command:
 
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Challenge Question Lab 5</h1>
-    <img src="./assets/newPicture.png" alt="">
-</body>
-</html>
+```bash
+cd $HOME && wget https://cis106.com/assets/lab5/website-lab5.zip && unzip website-lab5.zip && rm website-lab5.zip
 ```
 
-5. Open the `site.html` file in firefox and take a screenshot. The image you downloaded should be shown there. 
+This will create the following directory: `~/website-lab5`. That contains `index.html`. **There is no need to edit this file**. 
 
-> Take a screenshot of the commands you used to answer this question and of firefox showing the site.html file open.
+If you open the site, you will notice that the site is just a black screen. That is because the directory `website-lab5` is missing 3 image files that you need to test it. Here are the steps to complete this challenge:
 
+
+1. Use the given command in the problem description to download the directory and file. (`website-lab5/index.html`)
+2. Download 3 images from [Pexels.com](https://www.pexels.com/search/HD%20wallpaper/). Make sure the images are horizontal and the file format is jpg
+3. Rename and move the images using the following naming convention. You have to rename and move using 1 command. This part should take 3 commands because there are only 3 files.
+   1. old_name1.jpg -> img1.jpg
+   2. old_name2.jpg -> img2.jpg
+   3. old_name3.jpg -> img3.jpg
+4. List the `website-lab5` directory. It should look like this:
+   
+   <p align="center"><img src="/assets/lab5/challenge-q.png"/></p>
+
+5. Open the `index.html` file in firefox and take a screenshot. Test the slideshow by clicking the next and previous buttons. The images you downloaded should be shown there. 
+
+
+> Take a screenshot of the commands you used to answer this question and of firefox showing the index.html file open.
 
 
 ## What will you Submit:
-* Place all the screenshots and answers to your questions in a the `lab5.md` file.
+* Place all the screenshots and answers to your questions in a the `lab5.md` file. Label each question submission correctly using headings.
 * Convert your markdown file to pdf 
 * Push the changes to Github: `git pull; git add .; git commit -m "lab5 complete; git push"`
 * Submit the URL of `Lab5.md` and the pdf file
-* Take a snapshot of your system and delete the previous snapshot.
+* If you are using virtualbox, this will be a good time to take a snapshot. 
+
+## How will you be graded:
+* You will lose points if you do not include the full screenshot of firefox. I need to see the complete firefox window showing the URL. 
+* You will lose points if you use more than 3 mv commands to get the job done.
+* The value of each question is: 20pts
 
 ### Special Note
 You are going to be using the git commands a lot. Here is a quick reference:
