@@ -8,8 +8,6 @@ title: Lab 5 - Managing Files and directories
 * Presentation [here](https://rapurl.live/f6n)
 * Video [here](https://youtu.be/DehHVadtKww)
 
-# NOTE: WORK IN PROGRESS!!!
-
 ## Question 1.1: Creating Files and Directories - Part 1
 * Create the following directory structure. Here are the rules:
   * ***YOU ARE NOT ALLOWED TO USE CD!***
