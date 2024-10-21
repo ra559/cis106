@@ -6,7 +6,7 @@ title: Lab 5 - Managing Files and directories
 # {{page.title}}
 
 * Presentation [here](https://rapurl.live/f6n)
-* Video [here](https://youtu.be/DehHVadtKww)
+* Video [here](https://youtu.be/u0O72FLxeVc)
 
 ## Question 1.1: Creating Files and Directories - Part 1
 * Create the following directory structure. Here are the rules:
@@ -92,7 +92,7 @@ To the previous directory structure, add the missing directories and files. Here
 
 ## Question 3: Moving Files and Directories
 1. Change the current working directory to `$HOME` and remove the `lab5` directory.
-2. Run the following command: <br> `wget https://cis106.com/assets/lab5/lab5.zip && unzip lab5.zip && rm lab5.zip`. <br> You will notice that you have a new `lab5` directory in `$HOME`. Split your terminal in 2 or open a new terminal window. List the `lab5` directory **sorted by file extensions and in a single column**. This will make it easy to work.
+2. Run the following command: <br> `wget https://cis106.com/assets/lab5/lab5.zip && unzip lab5.zip && rm lab5.zip` <br> You will notice that you have a new `lab5` directory in `$HOME`. Split your terminal in 2 or open a new terminal window. List the `lab5` directory **sorted by file extensions and in a single column**. This will make it easy to work.
 3. In `$HOME`, create the following directories: `lab5-img`, `lab5-audio`, `lab5-video`, `lab5-doc`
 4. Move all the files inside the `lab5` directory to their respective new directories in `$HOME`.  
 5. Inside the  `lab5` directory, you will find a directory called `wallpapersLab5`. Move this directory to your `Pictures` directory and rename it to `NewWallpapers`. **You must achieve this in a single command.**

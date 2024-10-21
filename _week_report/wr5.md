@@ -6,6 +6,8 @@ title: Week Report 5
 # {{page.title}}
 
 * Presentation [here](https://rapurl.live/f6n)
+* Video [here](https://youtu.be/u0O72FLxeVc)
+
 
 ## Complete the following tasks
 ### 1. Notes 5
@@ -36,7 +38,7 @@ Please use this article [here](https://cis106.com/extra/thelinuxfs/) as and exam
 
 ### 3. Complete lab 5
 * Presentation [here](https://rapurl.live/f6n)
-* Video [here](https://youtu.be/DehHVadtKww)
+* Video [here](https://youtu.be/u0O72FLxeVc)
 
 ### 4. Start working on your final project deliverable 1 or deliverable 2 if you finished deliverable 1
 * Starting this week, you should dedicate at least 20 minutes per week to your final project. The project is lengthy and I do not recommend waiting for the last minute because something always go wrong. 
