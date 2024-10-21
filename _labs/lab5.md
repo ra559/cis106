@@ -117,6 +117,10 @@ To the previous directory structure, add the missing directories and files. Here
 4. Copy the newly downloaded wallpapers to the directory `lab5wallpapers` 
 5. Copy the `lab5wallpapers` directory to the `Downloads` directory 
 
+<button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('q4');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
+<p align="center" style="display:none" id='q4'><img src="/assets/lab5/q4-solution.png"/></p>
+
+
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots are allowed**
 
 

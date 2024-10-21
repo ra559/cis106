@@ -20,6 +20,8 @@ title: Module 2 Using Ubuntu
 2. [The Basics of Vim](https://rapurl.live/5mi)
    1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vQOSwboIunBhoeFJ0UZrBdGYHC9I0MHEEzp_m68LWX2-G9fb-wHvCTL-MeZt10yTy1K-gsVrP2DHEHy/pub?start=false&loop=false&delayms=3000)
 3. [How to Use Nano on Linux / Mac](https://shorturl.at/svxD9)
+4. [Shell Scripting - Control Statements](https://rapurl.live/hh0)
+   1. [Alternative](https://docs.google.com/presentation/d/e/2PACX-1vRpmfX4fJA2rjOvXPx_D5bfnagHAsvD_bHfHwEJ18sAxIxMY4KPWK-KcE7WUYiXI1BK8ongkw_UDiqw/pub?start=false&loop=false&delayms=3000)
 
 ## Lecture 6: Permissions
 1. [File permissions](https://rapurl.live/ger)
