@@ -3,10 +3,50 @@ layout: page
 title: Mkdir, touch, and rm
 ---
 
-
 # {{page.title}}
 
-## Commands reference table
+<!-- vscode-markdown-toc -->
+* 1. [Commands reference table](#Commandsreferencetable)
+* 2. [MKDIR](#MKDIR)
+	* 2.1. [Description](#Description)
+	* 2.2. [Formula/usage](#Formulausage)
+	* 2.3. [Examples](#Examples)
+	* 2.4. [Practice](#Practice)
+		* 2.4.1. [Description](#Description-1)
+		* 2.4.2. [Solution](#Solution)
+* 3. [TOUCH](#TOUCH)
+	* 3.1. [Description](#Description-1)
+	* 3.2. [Formula/usage](#Formulausage-1)
+	* 3.3. [Examples](#Examples-1)
+	* 3.4. [Practice](#Practice-1)
+		* 3.4.1. [Description](#Description-1)
+		* 3.4.2. [Solution](#Solution-1)
+* 4. [RM](#RM)
+	* 4.1. [Description](#Description-1)
+	* 4.2. [Formula/usage](#Formulausage-1)
+	* 4.3. [Examples](#Examples-1)
+	* 4.4. [Practice](#Practice-1)
+* 5. [MV](#MV)
+	* 5.1. [Description](#Description-1)
+	* 5.2. [Formula/usage](#Formulausage-1)
+		* 5.2.1. [Moving](#Moving)
+		* 5.2.2. [Renaming](#Renaming)
+	* 5.3. [Examples](#Examples-1)
+	* 5.4. [Practice](#Practice-1)
+* 6. [CP](#CP)
+	* 6.1. [Description](#Description-1)
+	* 6.2. [Formula/usage](#Formulausage-1)
+	* 6.3. [Examples](#Examples-1)
+	* 6.4. [Practice](#Practice-1)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
+
+##  1. <a name='Commandsreferencetable'></a>Commands reference table
 
 These are the most basic commands to manage files and directories.
 
@@ -20,20 +60,20 @@ These are the most basic commands to manage files and directories.
 | cp      | copies files & directories | `cp` + option + `sources path` + `destination`     | `cp -r ~/Downloads/oldGames/ ~/Games/`                      |
 
 
-## MKDIR
+##  2. <a name='MKDIR'></a>MKDIR
 
-### Description
+###  2.1. <a name='Description'></a>Description
 
 * Used for create directories. Mkdir can make  1 or multiple directories by separating each directory name with a space. 
 
-### Formula/usage
+###  2.2. <a name='Formulausage'></a>Formula/usage
 `mkdir` + `option` + `directory names`
 
 ***Where directory name can be:***
   * Just the name of the directory if you want to create them in the current working directory
   * `Absolute` or `relative` path if you want to create the directory in a different location
 
-### Examples
+###  2.3. <a name='Examples'></a>Examples
 
 * **Using relative path**: Create a directory in your current working directory called `games`
   * `mkdir games`
@@ -55,9 +95,9 @@ These are the most basic commands to manage files and directories.
 </p>
 
 
-### Practice
+###  2.4. <a name='Practice'></a>Practice
 
-#### Description
+####  2.4.1. <a name='Description-1'></a>Description
 You have just been assigned the task of organizing a new project called "ProjectPhoenix" on your company's server. For this project, you need to set up a directory structure that will hold various types of documents. The structure should look like this:
 
 ```bash
@@ -73,19 +113,19 @@ ProjectDelta/
     └── integration_tests/
 ```
 
-#### Solution
+####  2.4.2. <a name='Solution'></a>Solution
 
 <button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('mkdir-practice');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
 <p align="center" style="display:none" id='mkdir-practice'><img src="/assets/extras/mkdir_practice.png" alt="parent vs child directory"/></p>
 
 
-## TOUCH
+##  3. <a name='TOUCH'></a>TOUCH
 
-### Description
+###  3.1. <a name='Description-1'></a>Description
 
 `touch` is used to create an empty file or to update the timestamp of an existing file. If the specified file does not exist, touch will create it. If the file exists, touch will update its access and modification times to the current time.
 
-### Formula/usage
+###  3.2. <a name='Formulausage-1'></a>Formula/usage
 
 * `touch` + `option` + `file(s) name`
 
@@ -94,7 +134,7 @@ ProjectDelta/
   * `Absolute` or `relative` path if you want to create the directory in a different location
 
 
-### Examples
+###  3.3. <a name='Examples-1'></a>Examples
 
 * Create multiple files in the current working working directory
   * `touch notes.txt program.py page.html`
@@ -108,9 +148,9 @@ ProjectDelta/
   <img src="/assets/extras/touch.png" alt="touch"/>
 </p>
 
-### Practice
+###  3.4. <a name='Practice-1'></a>Practice
 
-#### Description
+####  3.4.1. <a name='Description-1'></a>Description
 In th previous practice, you created a directory structure. Add the following files to each directory:
 
 ```bash
@@ -136,7 +176,7 @@ ProjectDelta/
 10 directories, 8 files
 ```
 
-#### Solution
+####  3.4.2. <a name='Solution-1'></a>Solution
 
 
 <button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('touch-practice');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
@@ -144,11 +184,11 @@ ProjectDelta/
 
 
 
-## RM
-### Description
+##  4. <a name='RM'></a>RM
+###  4.1. <a name='Description-1'></a>Description
 The `rm` command is used to remove files and directories. It is a powerful command that can **permanently delete files**, so it should be used with caution. By default, rm removes files, but with certain options, it can also delete directories and their contents. In Linux, only empty directories can be removed. When you try to remove non-empty directories the following error is shown: "`rm: cannot remove 'directory_name/': Is a directory`". Even when using the `rmdir` command, trying to remove a non empty directory results in the following error: "`rmdir: failed to remove 'directory_name/': Directory not empty`". To remove directories use the `-r` option. See examples.
 
-### Formula/usage
+###  4.2. <a name='Formulausage-1'></a>Formula/usage
 
 *  `rm` + `option` + `directories or files to remove`
 
@@ -165,7 +205,7 @@ The `rm` command is used to remove files and directories. It is a powerful comma
 * `-v`: Verbose mode, showing the files as they are removed.
 
 
-### Examples
+###  4.3. <a name='Examples-1'></a>Examples
 
 * Remove files using absolute path
   * `rm ~/games/action/run.sh ~/games/adventure/uncharted/todo.md`
@@ -180,7 +220,7 @@ The `rm` command is used to remove files and directories. It is a powerful comma
   <img src="/assets/extras/rm.png" alt="rm"/>
 </p>
 
-### Practice
+###  4.4. <a name='Practice-1'></a>Practice
 
 You have a folder named "`OutdatedProjects`" in your home directory. This folder contains old project files that you no longer need, including subdirectories with their own files. You want to clean up your home directory by completely removing the "`OutdatedProjects`" folder and all of its contents.
 
@@ -210,8 +250,8 @@ curl https://cis106.com/assets/extra/rm_practice.sh | bash
 <p align="center" style="display:none" id='rm-practice'><img src="/assets/extras/rm_practice.png" alt="parent vs child directory"/></p>
 
 
-## MV
-### Description
+##  5. <a name='MV'></a>MV
+###  5.1. <a name='Description-1'></a>Description
 
 The `mv` command is used for moving and renaming files and directories. Keep the following points in mind about the mv command:
 * mv cannot rename more than 1 file at the time
@@ -222,13 +262,13 @@ The `mv` command is used for moving and renaming files and directories. Keep the
   * `-u`: Move only when the source file is newer than the destination file or when the destination file is missing.
   * `-v`: Verbose mode, showing the files as they are moved or renamed.
 
-### Formula/usage
-#### Moving
+###  5.2. <a name='Formulausage-1'></a>Formula/usage
+####  5.2.1. <a name='Moving'></a>Moving
 * `mv` + `option` + `files/directories to move` + `destination directory`
-#### Renaming
+####  5.2.2. <a name='Renaming'></a>Renaming
 * `mv` + `option` + `old name` + `new name`
 
-### Examples
+###  5.3. <a name='Examples-1'></a>Examples
 * Move multiple files using a combination of absolute path and relative path
   * `mv -v ~/games/ schoolProject/ Documents/school/hmw.txt ~/Downloads/new_folder/`
     * In this example:
@@ -247,7 +287,7 @@ The `mv` command is used for moving and renaming files and directories. Keep the
   <img src="/assets/extras/mv.png" alt="mv"/>
 </p>
 
-### Practice
+###  5.4. <a name='Practice-1'></a>Practice
 
 You are working on a web development project named "`AlphaProject`". You have been give all the files for this project. Your task is to organize the folder. You have to use the mv command for renaming and moving. You are not allowed to create new directories. To get all the necessary files, run this command, which will run a script to generate the directory "`AlphaProject`" including all the necessary files.
 
@@ -263,14 +303,39 @@ curl https://cis106.com/assets/extras/mv_practice.sh | bash
 <button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('mv-practice');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
 <p align="center" style="display:none" id='mv-practice'><img src="/assets/extras/mv_practice_solution.png"/></p>
 
-## CP
-### Description
+##  6. <a name='CP'></a>CP
+###  6.1. <a name='Description-1'></a>Description
 
-### Formula/usage
+The `cp` command is used to copy files and directories. Cp requires `-r` option to copy directories. You can copy and rename a directory or file in a single command too. However, this only works when trying to copy a single file or directory. This is like making a backup sort-of-speak. 
 
-### Examples
+**Common Options:**
 
-### Practice
+* `-r` or -R: Recursively copy directories and their contents.
+* `-i`: Prompt before overwriting an existing file.
+* `-u`: Copy only when the source file is newer than the destination file or when the destination file is missing.
+* `-v`: Verbose mode, showing the files as they are copied.
+* `-a`: Copy files and directories, preserving attributes like timestamps and permissions.
+
+###  6.2. <a name='Formulausage-1'></a>Formula/usage
+
+* `cp` + `option` + `source files/directories` + `destination directory`
+
+###  6.3. <a name='Examples-1'></a>Examples
+
+* Copy several files using a combination of absolute and relative path.
+  * `cp -r ~/projectOrion/ ~/Downloads/games.txt Videos/example.mp4 Pictures/bg.png ~/bookProject/`
+    * Note: Here we have to use `-r` because there is a directory in the sources to copy (`~/projectOrion`)
+* Copy a directory with verbose output
+  * `cp -rv ~/projectOrion/ ~/Documents/`
+
+<p align="center">
+  <img src="/assets/extras/cp.png" alt="cp"/>
+</p>
 
 
+###  6.4. <a name='Practice-1'></a>Practice
 
+Copy the directory of the previous practice. Copy the directory to the Documents directory. The name of the copy is: `AlphaProjectBackup`
+
+<button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('cp-practice');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
+<p align="center" style="display:none" id='cp-practice'><img src="/assets/extras/cp_practice.png"/></p>
