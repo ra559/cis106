@@ -204,18 +204,64 @@ Before you can run the rm command, you will need to create the directories. Run 
 ```bash
 curl https://cis106.com/assets/extra/rm_practice.sh | bash
 ```
-[script](../assets/extras/)
+
+
+<button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('rm-practice');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
+<p align="center" style="display:none" id='rm-practice'><img src="/assets/extras/rm_practice.png" alt="parent vs child directory"/></p>
+
 
 ## MV
 ### Description
 
+The `mv` command is used for moving and renaming files and directories. Keep the following points in mind about the mv command:
+* mv cannot rename more than 1 file at the time
+* mv can move and rename a file at the same time
+* mv will set the last argument as the destination or file new name
+* **Common options of the mv command:**
+  * `-i`: Prompt before overwriting an existing file.
+  * `-u`: Move only when the source file is newer than the destination file or when the destination file is missing.
+  * `-v`: Verbose mode, showing the files as they are moved or renamed.
+
 ### Formula/usage
+#### Moving
+* `mv` + `option` + `files/directories to move` + `destination directory`
+#### Renaming
+* `mv` + `option` + `old name` + `new name`
 
 ### Examples
+* Move multiple files using a combination of absolute path and relative path
+  * `mv -v ~/games/ schoolProject/ Documents/school/hmw.txt ~/Downloads/new_folder/`
+    * In this example:
+      * `~/games`, `schoolProject/`, and, `Documents/school/hmw.txt` are moved to `~/Downloads/new_folder/`
+      * `-v` enables verbose output.
+* Rename a directory
+  * `mv -v ~/Downloads/new_folder ~/Downloads/projectAvalon/`
+* Rename a file
+  * `mv -v ~/Downloads/projectAvalon/hmw.txt ~/Downloads/projectAvalon/submission.txt`
+* Move and rename a file in a single command
+  * `mv -v ~/Downloads/projectAvalon/submission.txt ~/Documents/cis107_document.txt`
+* Move and rename a directory in a single command
+  * `mv -v ~/Downloads/projectAvalon/ ~/Documents/Avalon`
+
+<p align="center">
+  <img src="/assets/extras/mv.png" alt="mv"/>
+</p>
 
 ### Practice
 
+You are working on a web development project named "`AlphaProject`". You have been give all the files for this project. Your task is to organize the folder. You have to use the mv command for renaming and moving. You are not allowed to create new directories. To get all the necessary files, run this command, which will run a script to generate the directory "`AlphaProject`" including all the necessary files.
 
+```bash
+curl https://cis106.com/assets/extras/mv_practice.sh | bash
+```
+
+<p align="center">
+  <img src="/assets/extras/mv_practice.png" alt="mv"/>
+</p>
+
+
+<button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('mv-practice');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
+<p align="center" style="display:none" id='mv-practice'><img src="/assets/extras/mv_practice_solution.png"/></p>
 
 ## CP
 ### Description
