@@ -121,7 +121,7 @@ Brace expansion comes handy in other scenarios too. Here are some examples:
 ## Challenge Question
 
 
-> Run this curl command: <br> **`curl https://cis106.com/assets/lab6cq.sh | bash`**
+> Run this curl command: <br> **`curl https://cis106.com/assets/lab6/lab6cq.sh | bash`**
 
 
 
