@@ -1,20 +1,32 @@
+---
+layout: post
+title: Week Report 6
+---
 
 # {{page.title}}
-> *video [here](https://youtu.be/5owUqgEzeUY)*
-## Complete the following tasks
-1. Complete Lab 6
-2. Complete Notes 4
-3. Work on your final project
 
-## Notes 4
+> *video [here](https://youtu.be/8GUIwzedyoQ)*
+ 
+## Complete the following tasks
+1. Complete notes 6
+2. Complete Week Report 6
+3. Complete Lab 6
+4. Work on your final project
+
+## Notes 6
 * Explain how to use each of the wildcards (`*`, `?`, and `[]`)
 * Explain how to use brace expansion (`{}`)
+* Include at least 3 examples of each
+* There is an article in the website that can help you [here](https://cis106.com/extra/wildcards/).
+* I suggest that you copy the [table](https://cis106.com/extra/wildcards/#why-and-when-should-i-use-a-wildcard) that explains each wildcard and has an example. It will be useful in your final exam.
 
 ## What will you submit for your week report:
-1. Create a markdown file that contains a link to your notes 4 and lab 6 files.
-2. Convert the file to pdf
-3. Push everything to github
-4. In blackboard submit the pdf file for week report 6 and the github url of the `wr6.md` file
+1. Complete every practice in the [wildcards presentation](https://rapurl.live/h69)
+2. Take a screenshot of your terminal showing most if not all of the commands used in each practice.
+3. Make sure to label each screenshot using heading 2 or 3 (just like week report 5)
+4. Convert the file to pdf
+5. Push everything to Github
+6. In Blackboard, submit the pdf file for week report 6 and the Github url of the `wr6.md` file
 
 
 ### Special Note
