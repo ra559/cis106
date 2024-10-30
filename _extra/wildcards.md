@@ -43,7 +43,7 @@ Notice that because the `*` wildcard matches 0 characters and also any number of
 To practice the wildcards, run this command:
 
 ```bash
-curl https://cis106.com/assets/extras/wildcards.sh
+curl https://cis106.com/assets/extras/wildcards.sh | bash
 ```
 
 This will create a directory in your home directory called `wildcard_extra_practice`. This directory contains a bunch of files and directories (created at random). All the examples here will use the files in this directory.
