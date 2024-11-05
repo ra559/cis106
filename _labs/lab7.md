@@ -1,9 +1,14 @@
+---
+layout: post
+title: Lab 7 Handling text files 
+---
 
 # {{page.title}}
 
 ## Video
 * [here](https://youtu.be/rpu30qMEZhQ)
-
+* This video is from last semester
+  
 ## Notes: 
 * Make sure to download the text files. See [Slide numbers: 3 and 4](https://rapurl.live/he6) from the presentation.
 * There is no challenge question for this lab. All we are going to do is practice so try to understand the commands before you run them. Part 2 will use this command differently so you need to understand the basic function of the command well
