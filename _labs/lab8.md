@@ -1,3 +1,7 @@
+---
+layout: post
+title: Lab 8 Handling text files part 2
+---
 
 # {{page.title}}
 

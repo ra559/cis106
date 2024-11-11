@@ -1,8 +1,11 @@
-
+---
+layout: post
+title: Week Report 8
+---
 
 # {{page.title}}
 ## Complete the following tasks In this order please!!!!
-1. Complete Notes 6
+1. Complete Notes 8
 2. Complete Week Report (The practice from the presentation)
    1. [Practice 5](https://docs.google.com/presentation/d/e/2PACX-1vTcX5KnC5CobScFyIcO36lbsFBFGyxjfuWxySriFiGt_9K_PbieWK28QT1n_w2ZrXoA70N1Rhyz4Pj3/pub?start=false&loop=false&delayms=3000&slide=id.g1954a3aa060_0_14)
    2. [Practice 6](https://docs.google.com/presentation/d/e/2PACX-1vTcX5KnC5CobScFyIcO36lbsFBFGyxjfuWxySriFiGt_9K_PbieWK28QT1n_w2ZrXoA70N1Rhyz4Pj3/pub?start=false&loop=false&delayms=3000&slide=id.g1954a3aa060_0_35)
@@ -18,8 +21,7 @@
   * `awk`
   * `sed`
   * `less`
-  * `alias`
-* Explain with examples how to use:
+* Explain, with examples, how to use:
   * `>`
   * `>>`
   * `|`
