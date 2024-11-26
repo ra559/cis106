@@ -24,9 +24,9 @@ title: Module 2 Using Ubuntu
    1. [Alternative](https://docs.google.com/presentation/d/e/2PACX-1vRpmfX4fJA2rjOvXPx_D5bfnagHAsvD_bHfHwEJ18sAxIxMY4KPWK-KcE7WUYiXI1BK8ongkw_UDiqw/pub?start=false&loop=false&delayms=3000)
 
 ## Lecture 6: Permissions
-1. [File permissions](https://rapurl.live/ger)
-   1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vR0En9Alm8W0ylXZOWpAZgGavp_pvE81qtmsuCb34Jz7L4JYUszQu3MwkiaxSmT4Kw9v63g6zzEPRPr/pub?start=false&loop=false&delayms=3000)
+1. [File permissions](https://rapurl.live/utl)
+   1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vTLvihjhePRAw2b5njGhPNnGSdK47u7To-zl4-W6D808aftWJS_XeBorJz3msH2lOwARO_mP3kir7Wt/pub?start=false&loop=false&delayms=3000)
 2. [Managing data](https://shorturl.at/qxHKQ)
    1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vSNDKSBCDak77Kyvee9ONij9ezZ82mCZsXVNMLLQbpD7tQj5KG7fygET45LwKqwx6YsDGlww5S9jarW/pub?start=false&loop=false&delayms=3000)
-3. [Managing users]((https://rapurl.live/8l6))
+3. [Managing users](https://rapurl.live/6ip)
    1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vST0GQT-3q2bBhwDArAGzcneSy3KoGC0E31N4bv4YqwJa40Ahvg15aK5XM0MQuujGEuPTF6_QV43Kb3/pub?start=false&loop=false&delayms=3000)
