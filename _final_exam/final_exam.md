@@ -94,3 +94,16 @@ Write a shell script that will take 3 positional parameters. The first parameter
 * Use positional parameters with echo, mkdir, touch and tree.
 * Remember to use quotes around your variables. For example `tree "$1"`
 * Use positional parameters and brace expansion to create the files
+
+### Script 4: Extra!
+Create a script that generates this output. Here are the special characters:
+```bash
+┌ 
+┐
+└ 
+┘
+│
+─
+```
+
+![script4](https://docs.google.com/drawings/d/e/2PACX-1vS8Qz8boEDg88Q01XgGJzDwcuWvkIVkDql6RTYXd9bxLfK04S8Jc1eEs-Sb6A9uEpHyJjgNMtAHKeiv/pub?w=1154&h=356)
