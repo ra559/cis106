@@ -27,15 +27,30 @@ title: Final Exam Study Guide
 
 ## Concepts to study
 
+### Working with Git, GitHub, and Markdown
 * How to create a github repository
 * How to clone a github repository
 * How to use the git commands
 * How to write a markdown file that contains images and proper headings
 * How to convert a markdown file to pdf
+
+### How to Practice?
+* Create a repository in github. Give it any name you want.
+* Clone the repository in your virtual machine
+* Open the repository/folder/directory in vs code
+* Create a markdown file inside containing random text. Make sure you have headings, images, pagrapaths, bullet points etc...
+* Convert the file to html and pdf
+* Push everything to github
+* Do you see the files there?
+* Add a couple more html files by repeating the process.
+* *Did you get lost? if so, you know what you need to study!*
+
+
+### Linux Specific Concents
 * The linux filesystem
 * Absolute path and relative path
 * When should you use absolute vs relative
-* Moving around the filesystem with absolute and relative (pwd,cd, and ls)
+* Moving around the filesystem with absolute and relative (pwd,cd, ls, and tree)
 * How to work with multiple terminals open?
 * How to work with manual pages?
 * How to parse (search) for specific words in the manual page
@@ -48,6 +63,13 @@ title: Final Exam Study Guide
 * How to use brace expansion
     - *For creating entire directory structures in a single command*
 
+### How to practice? 
+* Go through the presentations and try to do the practice without looking at the solutions. 
+* Go over all the challenge questions. Do them again using only your notes as reference. That will allow you to know if you need to enhance them or if they are good enough for the final
+* *Did you get lost?* Where? Why? Get to the answer without using google or chatgpt. Annotate and add those annotations to your notes
+* Need more help? Take a look at the extra section of the website and the youtube channel
+
+
 ## Regarding shell scripting:
 * How to create and execute a basic script
   * The Bash Shell Lecture - [Page 28](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.g303e062ccc4_0_48)
@@ -58,7 +80,7 @@ title: Final Exam Study Guide
 * How to use command substitution to store the output of a command in a variable
   * Shell Scripting - Getting user input Lecture - [Page 7](https://docs.google.com/presentation/d/e/2PACX-1vQuXFxgHJnHr6w-JbrAgeCvN3cyM7-zDIkYKQ_RcEI1wX-8VRJDb5lLOACZWqHk7ze-3af6nR3yxZ06/pub?start=false&loop=false&delayms=3000&slide=id.g1f3ca28ad3c_0_59)
 
-## How to practice shell script for your final exam.
+## How to practice shell scripting for your final exam.
 
 Challenge yourself to write these scripts. Try to do them on your own simply using your notes and the presentation. Everytime you find yourself lost, take notes of the problem and the solution so that you can have it for reference. 
 
