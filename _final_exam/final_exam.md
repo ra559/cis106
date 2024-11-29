@@ -6,6 +6,8 @@ title: Final Exam Study Guide
 
 
 ## Commands to study
+* Make sure you understand them well. Then include 3 - 5 examples that you understand and can use without any challenge.
+* Don't memorize. 
 
 * awk
 * cat 
