@@ -30,6 +30,8 @@ title: Final Exam Study Guide
 * How to create a github repository
 * How to clone a github repository
 * How to use the git commands
+* How to write a markdown file that contains images and proper headings
+* How to convert a markdown file to pdf
 * The linux filesystem
 * Absolute path and relative path
 * When should you use absolute vs relative
@@ -40,6 +42,7 @@ title: Final Exam Study Guide
 * How to redirect output `(>, >>, and |) `
 * How to append the output of a command to a file
 * How and when to redirect the output of a command to another (pipes)
+* How to use echo and output redirection to create a new file that contains some text
 * How to use wildcards
     - *For copying and moving multiple files at the same time*
 * How to use brace expansion
