@@ -49,6 +49,7 @@ title: Final Exam Study Guide
 
 
 ### Linux Specific Concents
+* How to compress (zip) a directory/folder
 * The linux filesystem
 * Absolute path and relative path
 * When should you use absolute vs relative
