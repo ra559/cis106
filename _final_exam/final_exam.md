@@ -4,6 +4,30 @@ title: Final Exam Study Guide
 ---
 # {{page.title}}
 
+## Recommendations
+1. **Arrive to the classroom 30 minutes before the exam starts (5:00 PM)**
+   1. This will allow you to test your virtual machine, perform any maintenance, test your internet connection, do a test pull and push, and troubleshoot any hardware problem.
+2. **Make sure your github repository is organized**
+   1. Since you are allowed to use your notes during your exam, it is to your benefit to have all your notes organized.
+   2. I recommend creating a single document with all of notes and converting it to pdf. This will make it easier to find information.
+   3. BE AWARE that you can only use your notes - NOT YOUR LABS - for the exam. So if I catch you looking at your labs, presentations, book, or the internet during the exam, this will constitute cheating and your exam will be terminated
+3. **Update Windows and Ubuntu the day before the final exam**
+   1. Do not update virtualbox
+   2. Create a snapshot of your virtual machine before updating. If anyting goes wrong, you will be able to recover.
+4. If you plan on using one of my computers:
+   1. Arrive 15 to 20 minutes early
+   2. You will need to clone your repository
+   3. You will need to make sure everything works for you
+
+<br>
+
+> *WARNING*
+> Your lack of preparation does not constitute an emergency for me.
+> There are no make up exams. You are either here for the exam or your are not!
+> There is another class after our class. Which means that the exam starts at 5:40 and ends at 6:55 on the dot! You must save the last 10 minutes of the exam to prepare your submission. 
+
+
+<br>
 
 ## Commands to study
 * Make sure you understand them well. Then include 3 - 5 examples that you understand and can use without any challenge.
