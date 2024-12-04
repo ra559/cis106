@@ -14,7 +14,7 @@ title: Final Exam Study Guide
 3. **Update Windows and Ubuntu the day before the final exam**
    1. Do not update virtualbox
    2. Create a snapshot of your virtual machine before updating. If anyting goes wrong, you will be able to recover.
-4. If you plan on using one of my computers:
+4. **If you plan on using one of my computers:**
    1. Arrive 15 to 20 minutes early
    2. You will need to clone your repository
    3. You will need to make sure everything works for you
