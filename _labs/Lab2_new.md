@@ -153,13 +153,17 @@ chmod +x vscode.sh
 rm vscode.sh
 ```
 
-4. Install Librewolf:
+4. Install Librewolf and Brave Browser (optional):
 
 ```bash
 curl https://cis106.com/assets/scripts/librewolf.sh -o libre.sh
+curl https://cis106.com/assets/scripts/brave.sh -o brave.sh
 chmod +x libre.sh
+chmod +x brave.sh
 ./libre.sh
+./brave.sh
 rm libre.sh
+rm brave.sh
 ```
 
 5. Install Ubuntu Restricted Extras
