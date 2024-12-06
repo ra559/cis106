@@ -14,23 +14,33 @@ spinner() {
     done
     printf "   \b\b\b\b"
 }
+essential_packages=(
+    curl bzip2 tar build-essential linux-headers
+    flameshot vlc geany tilix gcc make perl
+    nemo git python3-pip net-tools vim screenfetch
+    caffeine samba smbclient gnome-tweaks snapd flatpak
+    gnome-software-plugin-flatpak gnome-software-plugin-snap
+    toilet figlet lolcat boxes cpufetch cowsay linuxlogo fortune pv cmatrix
+    gnome-shell-extension-manager chrome-gnome-shell gnome-screenshot chromium-browser
+)
 
-echo -e "Installing Essential packages:\n \
-\t bzip2 tar build-essential linux-headers \n \
-\t flameshot vlc geany tilix gcc make perl \n \
-\t nemo git python3-pip  nemo git python3-pip \n \
-\t net-tools vim screenfetch caffeine samba \n \
-\t smbclient gnome-tweaks snapd flatpak \n \
-\t gnome-software-plugin-flatpak gnome-software-plugin-snap \ 
-\t toilet figlet lolcat boxes cpufetch cowsay linuxlogo fortune pv cmatrix"
+# Display the packages in a 3-column format
+echo -e "Installing Essential packages:\n"
+column_count=3 
+total_packages=${#essential_packages[@]}
 
-# Define the package string
-packages="bzip2 tar build-essential linux-headers-$(uname -r) flameshot vlc geany tilix gcc make perl nemo git python3-pip nemo git python3-pip net-tools vim screenfetch caffeine samba smbclient gnome-tweaks snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap toilet figlet lolcat boxes cpufetch cowsay linuxlogo fortune pv cmatrix"
+for ((i=0; i<total_packages; i+=column_count)); do
+    printf "%-25s %-25s %-25s\n" \
+        "${essential_packages[i]}" \
+        "${essential_packages[i+1]:-}" \
+        "${essential_packages[i+2]:-}"
+done
+
+packages="curl bzip2 tar build-essential linux-headers-$(uname -r) flameshot vlc geany tilix gcc make perl nemo git python3-pip nemo git python3-pip net-tools vim screenfetch caffeine samba smbclient gnome-tweaks snapd flatpak gnome-software-plugin-flatpak gnome-software-plugin-snap toilet figlet lolcat boxes cpufetch cowsay linuxlogo fortune pv cmatrix gnome-shell-extension-manager chrome-gnome-shell gnome-screenshot chromium-browser"
 
 # Split the string into an array using whitespace as delimiter
 IFS=' ' read -r -a package_array <<< "$packages"
 
-# Function to display progress bar
 progressbar() {
     local duration=$1
     local progress=0
@@ -45,7 +55,6 @@ progressbar() {
     echo -ne "\rProgress: [$progress_bar]"
 }
 
-# Loop through each package in the array
 for package in "${package_array[@]}"; do
     echo "Installing $package...🔩"
     spinner $$ & spinner_pid=$!
