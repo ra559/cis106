@@ -15,6 +15,8 @@ For this week, complete the following tasks.
 4. Watch [this video](https://www.youtube.com/watch?v=B-s71n0dHUk) so that you are familiar with VS Code's interface
 5. Complete [Lab 1 - Learning Markdown](https://cis106.com/labs/lab1/) 
 6. Complete Notes 1. The instructions are in Blackboard. Do this last please because there is no video for notes 1.
+7. Read the syllabus or home page of course [website](https://cis106.com). Write down any questions you have for me.
+8. Read the final project description [document](https://cis106.com/project/Final_Project_description/). Write down any questions you have for me.
 
 
 ## What will you submit:
@@ -39,9 +41,15 @@ take a screenshot of slack and place it here
 
 ## Github Screenshot
 take a screenshot of your github account and place it here
+
+## Acknowledgements
+* By submitting this assignment I [Your full name here] acknowledge that I have read the syllabus an final project description
+* I also acknowledge that I have written down any questions that I have for the professor and will ask them class or via slack 1:1
 ```
-1. Once you have placed the screenshots in your markdown file, save the file and convert the file to pdf
-2. Upload all the files inside the weekReports folder to github.
+
+1. Once you have placed the screenshots in your markdown file, and typed the acknowledgment, save the file and convert the file to pdf.  
+   1. READ the syllabus or home page of the site PLEASE! 
+2. Upload all the files inside the `weekReports` folder to GitHub.
 
 ### Step 2 Submit
 * In blackboard, in week report 1, submit the following:
@@ -49,8 +57,10 @@ take a screenshot of your github account and place it here
   * The PDF file of your week report 1
 
 ## How will you be graded:
-1. Github Repository URL: 50pts
-2. PDF File with the screenshots: 50pts
+1. Github Repository URL containing all the files: 25pts
+2. PDF File with the screenshots: 25pts
+3. Proper markdown syntax: 25pts
+4. Acknowledgement message: 25pts
 
 
 <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
