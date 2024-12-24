@@ -55,6 +55,8 @@ take a screenshot of your github account and place it here
 
 <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
 
+<hr>
+
 ## Special Note:
 * The final exam is in person. 
 * The exam is performance based and will require access to a Linux Virtual Machine. 

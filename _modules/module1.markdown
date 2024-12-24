@@ -7,10 +7,9 @@ title: Module 1 What is Linux?
 ## Lecture 1: Introduction to the course. 
 * Presentations
 1. [Introduction to the course](https://rapurl.live/0xh)
-   1. Video [here](https://youtu.be/xAoKuDV09b8)
-   2. How to join our Slack Workspace video [here](https://youtu.be/So9CN82ZwaY)
-   3. How to create a github account repository video [here](https://youtu.be/uraJCa5V-Ao)
-   4. Week Report One video [here](https://youtu.be/kBsY-uoEuBU)
+   1. How to join our Slack Workspace video [here](https://youtu.be/So9CN82ZwaY)
+   2. How to create a github account repository video [here](https://youtu.be/uraJCa5V-Ao)
+   3. Week Report One video [here](https://youtu.be/kBsY-uoEuBU)
 2. [What is Git and Github?](https://www.youtube.com/watch?v=wpISo9TNjfU)
 3. [Markdown Presentation](https://rapurl.live/zjs)
    1. Lab 1 video [here](https://youtu.be/PtJMXxi1je8)

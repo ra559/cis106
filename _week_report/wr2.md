@@ -59,8 +59,14 @@ Lecture 2 Introduction to Linux Notes (this is the tittle of the document - Head
 7. Push all the changes to github
 8. In blackboard, submit the URL to the `wr2.md` file and the pdf file `wr2.pdf`
 
+<hr>
+
+<p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+
 ## Special Note 1
 > Please take a snapshot of your virtual machine after you complete the report. The virtual machine is must be off before you take the snapshot. This process is show in the video
+> You should have at least 2 snapshots of your vm. Keep in mind that snapshots take space.
+> For Mac Users using UTM, snapshots are not supported therefore ignore this. Just keep your repository updated on github in case of a catastrophic failure.
 
 ### Special Note 2
 You are going to be using the git commands a lot. Here is a quick reference:
@@ -71,9 +77,7 @@ You are going to be using the git commands a lot. Here is a quick reference:
 * `git push`: will send all your changes to your github repository
 
 
-<p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
-
-## Special Note:
+## Special Note 3:
 * The final exam is in person. 
 * The exam is performance based and will require access to a Linux Virtual Machine. 
 * If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you.
