@@ -52,3 +52,10 @@ take a screenshot of your github account and place it here
 1. Github Repository URL: 50pts
 2. PDF File with the screenshots: 50pts
 
+
+<p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+
+## Special Note:
+* The final exam is in person. 
+* The exam is performance based and will require access to a Linux Virtual Machine. 
+* If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you.

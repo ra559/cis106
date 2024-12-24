@@ -80,6 +80,13 @@ In blackboard, submit the following:
 
 <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
 
-#### Late submissions will be penalized 30 points. See blackboard for due date
+#### Late submissions will be penalized 20 points. See blackboard for due date
 
 > If you need more practice in markdown, see the [Extra Section of the page](https://cis106.com/extra/lab1_md_extra_practice/). There you will find an extra practice for this lab. We can review your work on a 1:1 meeting at the time of your choosing as long as I have availability via Zoom. 
+
+
+## Special Note Regarding the final exam:
+* The final exam is in person. 
+* The exam is performance based and will require access to a Linux Virtual Machine. 
+* If you do not have a laptop/computer you can bring to school, *a Linux Computer will be made available to you.*
+* You will be required to use markdown during your final exam.

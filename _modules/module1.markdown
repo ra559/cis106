@@ -26,4 +26,12 @@ title: Module 1 What is Linux?
 * Presentations
 1. [Exploring Desktop Environments](https://bit.ly/3u1QcsC)
 2. [What is a Shell?](https://bit.ly/3jS8fNa)
+   1. Recommended reading: 
+      1. Part 1 - Learning the shell - The Linux Command Line Fifth Edition By William Shots
+         1. Pages 1 - 6 (25 - 30 of the pdf)
+      2. Part 4 - Writing Shell Scripts
+         1. Pages 365 (389 of the pdf)
 3. [Managing Software](https://rapurl.live/nft)
+   1. Recommended reading:
+      1. Part 3 - Common Tasks and Essential Tools - The Linux Command Line Fifth Edition By William Shots
+         1. Package management - Pages 171 - 181 (196 - 205 of the PDF)

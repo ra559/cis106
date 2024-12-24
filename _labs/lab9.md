@@ -39,3 +39,10 @@ Do all the practices in the [vim presentation](https://rapurl.live/w4n)
 The URL of `lab6.md`. The `lab6.md` file must contain the following:
 * The 3 screenshots 
 * The URL of each of the files: `linux.md`, `linux+other.md`, `GNU+linux.md`. 
+
+<p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+
+## Special Note:
+* The final exam is in person. 
+* The exam is performance based and will require access to a Linux Virtual Machine. 
+* If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you.

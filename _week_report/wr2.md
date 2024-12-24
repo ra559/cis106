@@ -69,3 +69,11 @@ You are going to be using the git commands a lot. Here is a quick reference:
 * `git add .`: to track all the changes made to your file. 
 * `git commit -m "label for your changes here"`: this command will label all the changes you added with the `add` command
 * `git push`: will send all your changes to your github repository
+
+
+<p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+
+## Special Note:
+* The final exam is in person. 
+* The exam is performance based and will require access to a Linux Virtual Machine. 
+* If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you.

@@ -7,6 +7,16 @@ title: Welcome to the course
 # Welcome to CIS-106-Linux Fundamentals
 Here you will find all the information for the course.
 
+<p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+
+## Special Note Regarding the final exam:
+* The final exam is <b style="color:red">IN PERSON!</b>
+* It is done this way to guarantee fairness and integrity
+* The exam is performance based and will require access to a Linux Virtual Machine. 
+* If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you.
+* All the topics that will be covered in the exam are already available [here](http://cis106.com/final_exam/final_exam/#final-exam-study-guide)
+
+
 ## COURSE LEARNING OUTCOMES 
 * Demonstrate fluency in Linux terminology.
 * Install Linux and identify features of various distributions.
@@ -28,15 +38,17 @@ Here you will find all the information for the course.
 ## Requirements
 * Access to a computer where Linux can be installed. The following are options:
   * A virtual machine (Preferred)
-  * A laptop/Desktop computer that you can wipe.
+  * A spare laptop/Desktop computer that you can formatted. For example:
+    * A mini PC
+    * An old PC
 * Access to Blackboard
 * A Github account
-* A Text editor. We will be using [VS Code](https://code.visualstudio.com/) but you can use whatever you want
-* 2 Hours of study time
+* A Text editor. We will be using [VS Code](https://code.visualstudio.com/). You can use other text editors  but if you run into problems, I cannot provide help.
+* 2 Hours of study time - <b style="color:red;">MANDATORY</b>
 * Capable of adjusting to fast paced course
 * **For virtualization**
   * A decent PC that meets or exceeds these requirements:
-    * Quad-Core Processor or modern Dual-Core Processor 2.5 Ghz
+    * Quad-Core Processor
     * 8 Gb of RAM
     * Windows 10/11
     * 100 Gb of free space
@@ -50,10 +62,14 @@ Here you will find all the information for the course.
     * Install/Remove Software
     * Difference between web browser, the internet, and a search engine
 > Not knowing this things does not mean you will fail the course. It means that you will have to spend extra time studying.
+
+## MacOS Users Read this:
+* If you have a rencent MacOS Computer ( Apple M series of CPUs), you can use it for the class. The setup is different but I can guide you. 
+* If you are using a MacOS Computer with an Intel CPU, make sure that it meets the same requirement as for windows.
  
 ## Advice
-* If you find that the content of the course is too much or that you have too many gaps in your knowledge, I suggest that you take this course after CIS 180 and CIS 116. 
-* If you do not have a decent computer (one that can be used for virtualization) you will have a very poor experience in this course. For this reason, I have alocated a computer in the lab (H311) that you can use. You will need to contact me ahead of time so I can setup a user for you. 
+* If you find that the content of the course is too much or that you have too many gaps in your knowledge, I suggest that you take CIS-107 then CIS 180 or CIS 116. 
+* If you do not have a decent computer (one that can be used for virtualization) you will have a very poor experience in this course. Contact me to discuss your options.
 
 ## Resources
 * **Books** 

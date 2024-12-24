@@ -4,6 +4,14 @@ title: Final Exam Study Guide
 ---
 # {{page.title}}
 
+<p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+
+## Special Note:
+* The final exam is in person. 
+* The exam is performance based and will require access to a Linux Virtual Machine. 
+* If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you.
+
+
 ## Recommendations
 1. **Arrive to the classroom 30 minutes before the exam starts (5:00 PM)**
    1. This will allow you to test your virtual machine, perform any maintenance, test your internet connection, do a test pull and push, and troubleshoot any hardware problem.

@@ -7,12 +7,25 @@ title: Module 2 Using Ubuntu
 ## Lecture 4: Managing Files and directories
 1. [The Linux filesystem](https://rapurl.live/s39)
    1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vRzi-pHAUV4x_mqsbAiiAwTtIGZcXMauEIOUfiBySC4sPr0gszaQmebawSQaj0r2gCIv4r2Dam-fgT4/pub?start=false&loop=false&delayms=3000)
+   1. Recommended reading:
+      1. Part 1 - Learning the Shell - The Linux Command Line Fifth Edition By William Shotts
+         1. Navigation - Pages 7 - 12 (31 - 36 of the PDF)
+         2. Exploring the system - Pages 13 - 24 (37 - 48)
 2. [Managing files and directories](https://rapurl.live/jya)
    1. Alternative [link](https://docs.google.com/presentation/d/e/2PACX-1vRXQhdRviYicst8RhPxAcgQmj8-8YCuNSSy4NjmCv1ekxfQuI3KvDmdfuAztj1hbDo6dXPsuF8RezsZ/pub?start=false&loop=false&delayms=3000)
+      1. Recommended reading:
+         1. Part 1 - Learning the shell - The Linux Command Line Fifth Edition By William Shotts
+            1. Pages 25 - 41 (49 - 65 of the PDF) 
 3. [Wildcards](https://rapurl.live/h69)
    1. Alternative [link](https://docs.google.com/presentation/d/e/2PACX-1vTyTqtTUtZG5HwWy2N-XBprh6KM0ONG-i3M9qVkQ9ZGBSRZhAWLMJN9py4j_nWUcbgUj3nhh2bauz1I/pub?start=false&loop=false&delayms=3000)
+      1. Recommended reading:
+         1. Part 1 - Learning the shell - The Linux Command Line Fifth Edition By William Shotts
+            1. Pages 25 - 41 (49 - 65 of the PDF)
 4. [Shell Scripting - Getting user input](https://rapurl.live/ic2)
    1. Alternative [link](https://docs.google.com/presentation/d/e/2PACX-1vQuXFxgHJnHr6w-JbrAgeCvN3cyM7-zDIkYKQ_RcEI1wX-8VRJDb5lLOACZWqHk7ze-3af6nR3yxZ06/pub?start=false&loop=false&delayms=3000)
+      1. Recommended reading
+         1. Part 4 - Writing Shell Scripts - The Linux Command Line Fifth Edition By William Shotts
+            1. Reading Keyboard input - Pages 410 - 421 (434 - 445 of the PDF) 
 
 ## Lecture 5: Handling Text Files
 1. [Handling Text Files](https://rapurl.live/he6)
@@ -22,11 +35,23 @@ title: Module 2 Using Ubuntu
 3. [How to Use Nano on Linux / Mac](https://shorturl.at/svxD9)
 4. [Shell Scripting - Control Statements](https://rapurl.live/hh0)
    1. [Alternative](https://docs.google.com/presentation/d/e/2PACX-1vRpmfX4fJA2rjOvXPx_D5bfnagHAsvD_bHfHwEJ18sAxIxMY4KPWK-KcE7WUYiXI1BK8ongkw_UDiqw/pub?start=false&loop=false&delayms=3000)
+      1. Recommended reading:
+         1. Part 3 - Common Tasks Essential tools - The Linux Command Line By William Shotts
+            1. Text Processing - Pages 273 - 314 (297 - 338 of the pdf)
 
 ## Lecture 6: Permissions
 1. [File permissions](https://rapurl.live/utl)
    1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vTLvihjhePRAw2b5njGhPNnGSdK47u7To-zl4-W6D808aftWJS_XeBorJz3msH2lOwARO_mP3kir7Wt/pub?start=false&loop=false&delayms=3000)
+      1. Recommended reading:
+         1. Part 1 - Learning the shell - The Linux Command Line by William Shotts
+            1. Permissions - Pages 90 - 110 (114 - 133 of the pdf)
 2. [Managing data](https://shorturl.at/qxHKQ)
    1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vSNDKSBCDak77Kyvee9ONij9ezZ82mCZsXVNMLLQbpD7tQj5KG7fygET45LwKqwx6YsDGlww5S9jarW/pub?start=false&loop=false&delayms=3000)
+      1. Recommended reading:
+         1. Part 3 - Common Tasks and Essential Tools - The Linux Command Line by William Shotts
+            1. Archiving and backup - Pages 234 250(258 - 274 of the pdf)
 3. [Managing users](https://rapurl.live/6ip)
    1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vST0GQT-3q2bBhwDArAGzcneSy3KoGC0E31N4bv4YqwJa40Ahvg15aK5XM0MQuujGEuPTF6_QV43Kb3/pub?start=false&loop=false&delayms=3000)
+      1. Recommended reading:
+         1. Part 1 - Learning the shell - The Linux Command Line by William Shotts
+            1. Permissions - Pages 90 - 110 (114 - 133 of the pdf)

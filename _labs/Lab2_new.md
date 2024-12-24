@@ -38,6 +38,7 @@ The alternative Lab 2 is for M series Macbooks because Virtualbox does not run o
   - [Time to submit this lab](#time-to-submit-this-lab)
     - [Special Note 1](#special-note-1)
     - [Special Note 2](#special-note-2)
+  - [Special Note Regarding the final exam:](#special-note-regarding-the-final-exam)
 
 ## Presentations:
 * [The basics of Virtualization](https://rapurl.live/est)
@@ -299,3 +300,9 @@ You are going to be using the git commands a lot. Here is a quick reference:
 > Always run the commands in this order: `pull` =>  `add` =>  `commit` => `push` 
 > Never use the github website to make changes to your repository unless you know what you are doing and can remember to pull the changes before working on your local repository!
 
+<p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+
+## Special Note Regarding the final exam:
+* The final exam is in person. 
+* The exam is performance based and will require access to a Linux Virtual Machine. 
+* If you do not have a laptop/computer you can bring to school, *a Linux Computer will be made available to you.*
