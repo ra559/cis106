@@ -178,7 +178,7 @@ For this deliverable, you have 2 options; Pick one!
 * Decompress the archive in your web server and move all the files to their proper destination. 
 * Open your site in the host computer or Ubuntu desktop computer and take a screenshot. 
 
-###  5.4. <a name='Whatwillyousubmitforoption1:-1'></a>What will you submit for option 1:
+###  5.4. <a name='Whatwillyousubmitforoption1:-1'></a>What will you submit for option 2:
 
 * To demonstrate the completion of this deliverable, submit the following:
     * The URL to the GitHub repository in the final project folder where I can find all the files you used for creating the site including the markdown file, HTML file and the images. 
