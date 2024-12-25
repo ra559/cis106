@@ -8,6 +8,9 @@ title: Final Project Deliverable 1
 > **[Image resize tool](https://www.simpleimageresizer.com/upload)<br>
 > **Example of how the deliverable should look like [here](https://rapurl.live/5d8)**
 
+> <b style="color: red">Note:</b> This is the hands on tutorial. Read the [project description](https://cis106.com/project/Final_Project_description/) to know what to submit. 
+
+
 For **deliverable 1**, we are going to accomplish the following tasks:
 1. Read the tutorial. Write down every concept you don't understand and research them.
 2. Answer The following questions:
@@ -20,5 +23,4 @@ For **deliverable 1**, we are going to accomplish the following tasks:
 * What is a firewall?
 * What is SSH?
 
-To demonstrate the completion of deliverable 1, the student needs to submit a markdown and pdf file where all the questions are answered. Here you can find an example of how the document should look like.
-<hr>
+> <b style="color: red">Note:</b> This is the hands on tutorial. Read the [project description](https://cis106.com/project/Final_Project_description/) to know what to submit. 

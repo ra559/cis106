@@ -7,6 +7,9 @@ title: Final Project Deliverable 2
 
 > *Video*:[Deliverable 2 Latest Video 0-100!](https://youtu.be/6L0OXwMT-tg)
 
+> <b style="color: red">Note:</b> This is the hands on tutorial. Read the [project description](https://cis106.com/project/Final_Project_description/) to know what to submit. 
+
+
 ## Part 1 Virtual Machine
 
 Create a virtual machine that meets the following specifications:
@@ -219,3 +222,4 @@ Syntax OK
 1.  Now, if you open a web browser in your host computer and go the URL: `http://ip.address.of.your.server/` your `index.html` document should load.
 ![sample site preview](/assets/sample-site-preview.png)<br>
 
+> <b style="color: red">Note:</b> This is the hands on tutorial. Read the [project description](https://cis106.com/project/Final_Project_description/) to know what to submit. 

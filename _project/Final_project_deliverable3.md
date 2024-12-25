@@ -8,9 +8,12 @@ title: Final Project Deliverable 3
 
 > *Video*:[Deliverable 3 Latest Video 0-100!](https://youtu.be/3MRK9zbBcQY)
 
+> <b style="color: red">Note:</b> This is the hands on tutorial. Read the [project description](https://cis106.com/project/Final_Project_description/) to know what to submit. 
+
+
 For this deliverable, you have 2 options; Pick one! 
 
-### Option 1: Resume 
+### Option 1: Resume
 * Create a simple resume of yourself. Here is an example of the kind of information to include:
   * http://resume-template.joelglovier.com/ 
 * You do not need to include a photo of yourself, instead use a stock photo
@@ -42,3 +45,5 @@ For this deliverable, you have 2 options; Pick one!
 * To demonstrate the completion of this deliverable, submit the following:
     * The URL to the GitHub repository in the final project folder where I can find all the files you used for creating the site including the markdown file, HTML file and the images. 
     * The screenshot of your website running
+
+> <b style="color: red">Note:</b> This is the hands on tutorial. Read the [project description](https://cis106.com/project/Final_Project_description/) to know what to submit. 
