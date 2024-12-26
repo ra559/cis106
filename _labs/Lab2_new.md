@@ -31,6 +31,7 @@ The alternative Lab 2 is for M series Macbooks because Virtualbox does not run o
   - [Step 4: Optimizing Ubuntu for the class](#step-4-optimizing-ubuntu-for-the-class)
     - [Update and upgrade](#update-and-upgrade)
     - [Install Essential packages:](#install-essential-packages)
+    - [Install the guest additions for virtualbox - Option1 (easy)](#install-the-guest-additions-for-virtualbox---option1-easy)
     - [Install the guest additions for virtualbox - Option 2](#install-the-guest-additions-for-virtualbox---option-2)
   - [Step 5: Setup Git](#step-5-setup-git)
   - [Step 6: Install VS Code Extensions](#step-6-install-vs-code-extensions)
@@ -176,8 +177,23 @@ sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y
 
 <p align="center" style="display:block"><img src="/assets/lab2/terms.gif"/></p>
 
+### Install the guest additions for virtualbox - Option1 (easy)
+1. Insert the guess additions cd
+   1. In the virtual machine menu at the top click on "Devices" then "Insert Guest Additions CD image"
+   2. This will insert the installation disk and it will be accessible in Ubuntu's Favorites bar
+2. Open the CD from the Favorites bar which will open it in the file manager.
+3. Click on the "Run Software" button located in the red banner. Click on "Run" in the message that will appear.
+Type your password and press enter. This will open a terminal to start the installation of the guest additions.
+Once the installation is complete, press enter in the terminal and reboot the virtual machine. 
+  
+![run software](/assets/lab2/run_software_guest_add.png)
+
+> Now you can use full screen in your virtual machine. If you see any screen flickering or glitches. Enable or disable 3D acceleration in the virtual machine settings. You may need to enable Expert Settings in the virtual machine settings.
 
 ### Install the guest additions for virtualbox - Option 2
+
+> Follow these instructions if for whateever reason the guest additions were not installed or the prompt to install it did not pop up when you clicked on "Run Software".
+
 1. Insert the guess additions cd
 2. Open the cd in the file manager from the Favorites bar
 3. Right click on an empty area of the directory and click on open terminal
@@ -185,7 +201,7 @@ sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y
   
 ```bash
 sudo apt install build-essential linux-headers-$(uname -r) -y
-sudo ./VBoxLinux
+sudo ./VBoxLinuxAdditions.run
 ```
 5. Reboot the vm. You can use the command `sudo reboot now`
 6. Now your virtual machine can use the full screen and share the clipboard with your host machine
