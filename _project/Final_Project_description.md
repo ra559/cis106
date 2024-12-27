@@ -17,8 +17,8 @@ title: Final Project Description
 	* 5.1. [Option 1: Resume](#Option1:Resume)
 	* 5.2. [What will you submit for option 1:](#Whatwillyousubmitforoption1:)
 	* 5.3. [Option 2: A simple site](#Option2:Asimplesite)
-	* 5.4. [What will you submit for option 1:](#Whatwillyousubmitforoption1:-1)
-	* 5.5. [How am I going to grade deliverable 2?](#HowamIgoingtogradedeliverable2-1)
+	* 5.4. [What will you submit for option 2:](#Whatwillyousubmitforoption2:)
+	* 5.5. [How am I going to grade deliverable 3?](#HowamIgoingtogradedeliverable3?)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -178,7 +178,7 @@ For this deliverable, you have 2 options; Pick one!
 * Decompress the archive in your web server and move all the files to their proper destination. 
 * Open your site in the host computer or Ubuntu desktop computer and take a screenshot. 
 
-###  5.4. <a name='Whatwillyousubmitforoption1:-1'></a>What will you submit for option 2:
+###  5.4. <a name='Whatwillyousubmitforoption2:'></a>What will you submit for option 2:
 
 * To demonstrate the completion of this deliverable, submit the following:
     * The URL to the GitHub repository in the final project folder where I can find all the files you used for creating the site including the markdown file, HTML file and the images. 
@@ -186,7 +186,7 @@ For this deliverable, you have 2 options; Pick one!
 * <b style="color: red">I need to see the entire browser window with the ip address of your server in the URL bar showing your website running!</b>
 
 
-###  5.5. <a name='HowamIgoingtogradedeliverable2-1'></a>How am I going to grade deliverable 2?
+###  5.5. <a name='HowamIgoingtogradedeliverable3?'></a>How am I going to grade deliverable 3?
 * Your github repository deliverable 3 directory/folder must contain:
   * All the files used for making the markdown and html file
   * A screenshot of our html file running on your web server. See example [here](https://github.com/linuxworkshop67/cis106/blob/main/finalProject/deliverable%203/option%201%20example/deliverable3.PNG) 
