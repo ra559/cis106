@@ -1,7 +1,4 @@
----
-layout: post
-title: Lab 3 - The Bash Shell
----
+
 
 # {{page.title}}
 

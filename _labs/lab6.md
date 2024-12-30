@@ -1,7 +1,4 @@
----
-layout: post
-title: Lab 6 - Wildcards
----
+
 
 # {{page.title}}
 
