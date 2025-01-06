@@ -5,7 +5,6 @@ layout: page
 
 # {{page.title}}
 
-# ANSI Escape Characters (Merged Table)
 
 | **Escape Sequence**  | **Effect**                                             |
 |----------------------|--------------------------------------------------------|
