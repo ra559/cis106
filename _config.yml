@@ -43,6 +43,9 @@ collections:
   extra:
     permalink: "/:collection/:path/"
     output: true
+  
+  bash:
+    permalink: "/:collection/:path/"
     
 just_the_docs:
   collections:
@@ -63,3 +66,5 @@ just_the_docs:
       name: Extra  
     final_exam:
       name: Final_Exam
+    bash:
+      name: bash
