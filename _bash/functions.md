@@ -1,7 +1,7 @@
-----
+---
 title: Bash Functions
 layout: page
-----
+---
 
 <!-- vscode-markdown-toc -->
 * 1. [Bash Basic function](#BashBasicfunction)
