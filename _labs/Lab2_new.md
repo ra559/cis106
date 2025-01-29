@@ -8,11 +8,12 @@ title: Lab 2 - Installing Ubuntu For Windows Users And Intel Macs
 This is the default lab 2. There are other versions of this lab:
 
 * [Lab 2 - Installing Ubuntu For M Series Macs](https://cis106.com/labs/lab2_m_sereires_mac/)
+* [Lab 2 - Installing Ubuntu Using VMWare Workstation Player](https://youtu.be/2SWmam4cmfY)
 
 This version of Lab 2 is for Windows users (Windows 11 or 10) or Macbooks with capable Intel CPU. 
-The alternative Lab 2 is for M series Macbooks because Virtualbox does not run on M Series Mac.
+The alternative Lab 2 is for M series Macbooks because Virtualbox does not run well on M Series Mac.
 
-> Because your computer is not my computer, there can be issues that I have no way of accounting for. Other versions of this lab can me made upon request. I can also meet with you or work over zoom if you are having any issues. All I ask is that you are mindful of my time and yours. <br>**Do not wait till the last minute!!**
+> **Because your computer is not my computer**, there can be issues that I have no way of accounting for. Other versions of this lab can be made upon request. I can also meet with you or work over zoom if you are having any issues. All I ask is that you are mindful of my time and yours. <br>**Do not wait till the last minute!!**
 
 
 ## Video here
@@ -67,8 +68,8 @@ Before you can create virtual machines, you need to know if your computer can ru
 2. If your computer does not meet the criteria below, stop this lab and get in contact with me. We may be able to find an alternative for you but this can only be done on a 1 on 1 basis.
 
 #### REQUIRED SPECIFICATIONS:
-* **CPU**: Quad core CPU
-* **RAM**: 8GB or More
+* **CPU**: Quad core CPU or higher
+* **RAM**: 8GB or More 
 * **Free Storage**: 60GB or more
   
 
@@ -84,7 +85,7 @@ If your computer meets or exceeds the above capabilities, then you need to check
 
 ## Step 2:  Create a Virtual Machine
 
-Before you can create virtual machines, you need to install VirtualBox and VirtualBox Extension Pack. To download Vbox and the extension pack go to:
+Before you can create virtual machines, you need to install VirtualBox and VirtualBox Extension Pack. To download VirtualBox and the extension pack go to:
 
 * [Virtualbox Download Page](https://www.virtualbox.org/wiki/Downloads)
 * [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
@@ -94,7 +95,9 @@ Before you can create virtual machines, you need to install VirtualBox and Virtu
 
 Make sure to select the right installer for your operating system:
 
-![VirtualBox Download page](/assets/vboxdownloadpage.png)
+![VirtualBox Download page](https://docs.google.com/drawings/d/e/2PACX-1vS5wTe4JJFBb9k1GlvqqSVis76HpK22lTM2v7gulACLGFT1c6j2XRRBMFw7v8BTbxJa3AFQ4v154Y4G/pub?w=1392&h=375)
+
+![VirtualBox Download Page 2](https://docs.google.com/drawings/d/e/2PACX-1vSR1M1tg23sAnTGVsmO2hnGDmSsRgQvZ98tJwfE1fSIVOTMnbWY7d6swjwMayxlanp6HZ0OW28kX1Ru/pub?w=1393&h=378)
 
 Make sure to install VirtualBox in your host computer. For Windows follow this [video](https://www.youtube.com/watch?v=2lGmCwpFYi8). For macOS follow this [video.](https://www.youtube.com/watch?v=fyx53lJyAoc) Once you have installed VirtualBox, create a virtual machine that meets these specifications:
 
@@ -130,14 +133,14 @@ Go over the presentation ["Installing Ubuntu 24.04 in VirtualBox 7"](https://rap
 ### Update and upgrade
 
 1. Open the terminal application and type the following command: <br> `sudo apt update && sudo apt upgrade -y` 
-2. The terminal will prompt you to type your password. Nothing will be shown to the screen as you type. 
+2. The terminal will prompt you to type your password. Nothing will be shown to the screen as you type. That is expected!
 3. This may take some time depending on your internet connection and the number of available updates.
 
 <p align="center" style="display:block"><img src="/assets/lab2/update_ubuntu.gif"/></p>
 
 ### Install Essential packages:
 
-1. Install the curl command which will then use to download a couple of script files. <br>`sudo apt install curl -y`
+1. Install the curl command which will then be used to download a couple of script files. <br>`sudo apt install curl -y`
 2. Use curl to download and run the following script: `essentials.sh`
 
 ```bash
@@ -173,6 +176,7 @@ rm brave.sh
 ```bash
 sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons -y
 ```
+
 > When you see the screen below, use the tab key to select OK, the space key instead of enter, the arrow keys to select yes and the space bar again to agree to the terms and conditions:
 
 <p align="center" style="display:block"><img src="/assets/lab2/terms.gif"/></p>
@@ -203,12 +207,20 @@ Once the installation is complete, press enter in the terminal and reboot the vi
 sudo apt install build-essential linux-headers-$(uname -r) -y
 sudo ./VBoxLinuxAdditions.run
 ```
+
 5. Reboot the vm. You can use the command `sudo reboot now`
 6. Now your virtual machine can use the full screen and share the clipboard with your host machine
 
 <p align="center" style="display:block"><img src="/assets/lab2/install_guess_additions.gif"/></p>
 
 <hr>
+
+> NOTE:
+> If you are getting screen fliclering/glitches, you may need to enable 3D Acceleration. 
+> You will need to open the virtula machine settings, enable export mode and then toggle 3D acceleration ON
+
+![3D Acceleration](https://docs.google.com/drawings/d/e/2PACX-1vQOSeJbIWdyV5OsKQr0PR2eLM7NCTbZaCL2hW-3HuNrJ-eq-lMarboJqpeFr5tf4QwPgI0flkEoBAZo/pub?w=1393&h=831)
+
 
 ## Step 5: Setup Git
 1. Sign in to your Github account. 
@@ -321,4 +333,5 @@ You are going to be using the git commands a lot. Here is a quick reference:
 ## Special Note Regarding the final exam:
 * The final exam is in person. 
 * The exam is performance based and will require access to a Linux Virtual Machine. 
-* If you do not have a laptop/computer you can bring to school, *a Linux Computer will be made available to you.*
+* If you do not have a laptop/computer you can bring to school, *a Linux Computer will be made available to you but you need to request it early because the amount of PCs is limited*
+
