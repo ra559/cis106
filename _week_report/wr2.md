@@ -6,12 +6,14 @@ title: Week Report 2
 
 ## Video Here
 [Week Report 2 Spring 24](https://youtu.be/jqLjiQKnRgc)
+* <b style="color:red">BE AWARE</b> that the video may not 100% align to this assignment. The video is expected to be a general guide.
+* Changes between semesters are expected! 
 
 ## Complete the following tasks
 1. Complete [lab 2 - Installing Ubuntu 24.04](https://cis106.com/labs/Lab2_new/).
-2. If you have not done so, complete week report 1, lab 1 and Discussion Board 1. *You cannot complete Lab 2 if you have not catched up!* 
+2. If you have not done so, complete week report 1, lab 1 and Discussion Board 1. 
 3. Complete Discussion Board 2 - The history of Linux. **Note**: *you can do this later as the due date is the end of the semester.*
-4. Complete Notes 2. This and everything else from this point on must be completed inside Ubuntu Desktop 24.04 (your virtual machine). Windows/MacOS will no longer be used. Therefore you MUST complete lab 2 before attempting the report and the notes.
+4. Complete Notes 2. *This and everything else from this point on must be completed inside Ubuntu Desktop 24.04 (your virtual machine)*. <b style="color:red">Windows/MacOS will no longer be used. </b>Therefore you MUST complete lab 2 before attempting the report and the notes.
 5. Complete this week's Week Report. 
 
 
@@ -30,24 +32,19 @@ Lecture 2 Introduction to Linux Notes (this is the tittle of the document - Head
 
 1. What is an Operating System?
 2. What is a kernel?
-3. Which other parts aside from the kernel identfy an OS?
-4. What is linux?
-5. What is a linux distribution?
+3. Which other parts aside from the kernel identify an OS?
+4. What is linux and linux distribution?
 6. List at least 4 linux characteristics:
 7. What is Ubuntu?
 8. What is Debian?
 9. List and define the different types of licensing agreements
 10. What is Free Software? Define the 4 freedoms.
 11. What is virtualization?
-12. List 3 benefits of virtualization
-13. What is a hypervisor? Include definitions of the 2 types
-14. What is the difference between Guest OS and Host OS?
-15. What is virtualbox?
 ```
 
 ## What will you submit for your week report:
 > Note: 
-> Since you already completed lab2, the remaining of the work in this course will be completed inside the Ubuntu virtual machine. Windows/MacOS will not be used for the remaining of the course!!! PLEASE DO NOT EDIT OR UPLOAD FILES TO GITHUB VIA THE WEBSITE. You must use VS Code Terminal to commit and push to your repository. If you decide to ignore this. You are on your own. If you don't understand, please ask! 
+> Since you already completed lab2, the remaining of the work in this course will be completed inside the Ubuntu virtual machine. Windows/MacOS will not be used for the remaining of the course!!! <b style="color: red">PLEASE DO NOT EDIT OR UPLOAD FILES TO GITHUB VIA THE WEBSITE. </b>You must use VS Code Terminal to commit and push to your repository. If you decide to ignore this. You are on your own. If you don't understand, please ask! 
 > This report can only be completed after lab 2!
 
 1. Create a folder inside the `weekReports` folder called `wr2`. You probably did this already during lab 2.

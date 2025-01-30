@@ -8,7 +8,6 @@ title: Lab 2 - Installing Ubuntu For Windows Users And Intel Macs
 This is the default lab 2. There are other versions of this lab:
 
 * [Lab 2 - Installing Ubuntu For M Series Macs](https://cis106.com/labs/lab2_m_sereires_mac/)
-* [Lab 2 - Installing Ubuntu Using VMWare Workstation Player](https://youtu.be/2SWmam4cmfY)
 
 This version of Lab 2 is for Windows users (Windows 11 or 10) or Macbooks with capable Intel CPU. 
 The alternative Lab 2 is for M series Macbooks because Virtualbox does not run well on M Series Mac.
@@ -17,7 +16,11 @@ The alternative Lab 2 is for M series Macbooks because Virtualbox does not run w
 
 
 ## Video here
-[Lab 2 Installing Ubuntu 22.04 Windows Version](https://youtu.be/SkHsyYJm1Ns)
+[Lab 2 Installing Ubuntu 24.04 Windows Version](https://youtu.be/Q4aMerJX0XE)
+
+> Note: If you are having too many issues with virtualbox, an alternative is to use VMware Workstation Player 17
+> Here is a video on how to complete this lab using VMWare workstation player: <br>
+> [Lab 2 - Installing Ubuntu Using VMWare Workstation Player](https://youtu.be/2SWmam4cmfY)
 
 ## Table of Contents
 - [{{page.title}}](#pagetitle)

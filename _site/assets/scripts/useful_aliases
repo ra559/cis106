@@ -8,13 +8,19 @@ alias vdir='vdir --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-alias ll='ls -alF'
-alias la='ls -a'
+alias l='ls -CF'
+alias l1='ls -1XF'
 alias lA='ls -A'
+alias la='ls -a'
+alias lh='ls -lhgG --time-style=+%D-%R'
+alias ll='ls -alF'
 alias lr='ls -R'
-alias lsoptions="man ls | grep '^[[:space:]]*[[:punct:]]'"
-alias lshelp="ls --help | grep '^[[:space:]]*[[:punct:]]'"
-alias lsnodir="ls -FSsh  | grep -v '/'"
-alias lsdirsize="du -h --max-depth=1"
-alias lsnoperm="ls -GAgthtl --color=always | sed -re 's/^[^^ ]* //'"
+alias ls='ls --color=auto'
+alias lsdirsize='du -h --max-depth=1'
+alias lshelp='ls --help | grep '\''^[[:space:]]*[[:punct:]]'\'''
+alias lsnodir='ls -FSsh  | grep -v '\''/'\'''
+alias lsnoperm='ls -GAgthtl --color=always | sed -re '\''s/^[^^ ]* //'\'''
+alias lsoptions='man ls | grep '\''^[[:space:]]*[[:punct:]]'\'''
+alias lsvms='VBoxManage list vms'
+alias lsx='exa -T -l --sort=ext --no-permissions --no-user --no-time'
 alias options2='opts() { man "$1" | grep -E --color "^[[:space:]]*[[:punct:]]"; }; opts'

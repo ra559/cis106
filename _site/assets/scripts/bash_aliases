@@ -76,3 +76,5 @@ alias randomaudio="sox -c1 -n randomaudio.wav synth 10 whitenoise band -n 100 20
 alias installStarshipShell="curl -sS https://starship.rs/install.sh | sh"
 alias options2='opts() { man "$1" | grep -E --color "^[[:space:]]*[[:punct:]]"; }; opts'
 
+alias c="xclip -sel clip"
+alias v="xclip -selection clipboard -o"
