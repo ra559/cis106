@@ -49,22 +49,22 @@ title: Getting Comfortable with Ubuntu 24.04
 
 ### Part 2 - Working with tabs and files
 
-* 1. Open the file manager if it is not open
-* 2. Use Firefox or any other web browser of your choice to download the following this zip file: [https://cis106.com/assets/extras/gcu/site.zip](/assets/extras/gcu/site.zip)
-* 3. Decompress/unzip the file in your Downloads directory.
-* 4. Inside the Downloads directory you should now have a new directory called `site`
-* 5. Inside the site directory you should have 3 files:
+* 1- Open the file manager if it is not open
+* 2- Use Firefox or any other web browser of your choice to download the following this zip file: [https://cis106.com/assets/extras/gcu/site.zip](/assets/extras/gcu/site.zip)
+* 3- Decompress/unzip the file in your Downloads directory.
+* 4- Inside the Downloads directory you should now have a new directory called `site`
+* 5- Inside the site directory you should have 3 files:
   * `site.html`
   * `SCRIPT.js`
   * `STYLES.css`
-* 6. Use the website, [Pexex.com](pexels.com) to download 3 Landscape format images. 
-* 7. Move the images to the `site` directory
-* 8. Rename the images to: `image1.jpg`, `image2.jpg`, and `image3.jpg`
-* 9. Open the file `site.html`. Notice that the website looks broken. 
-* 10. Rename the files SCRIPT.js and STYLES.css to:
+* 6- Use the website, [Pexex.com](https//pexels.com) to download 3 Landscape format images. 
+* 7- Move the images to the `site` directory
+* 8- Rename the images to: `image1.jpg`, `image2.jpg`, and `image3.jpg`
+* 9- Open the file `site.html`. Notice that the website looks broken. 
+* 10- Rename the files SCRIPT.js and STYLES.css to:
   * `STYLES.css` => `styles.css`
   * `SCRIPT.js` => `script.js`
-* 11. Refresh the website site.html and you will notice that now it looks as expected. This is because Linux is case sensitive. So STYLES.css is not the same as styles.css 
+* 11- Refresh the website site.html and you will notice that now it looks as expected. This is because Linux is case sensitive. So STYLES.css is not the same as styles.css 
 
 
 
