@@ -1,3 +1,8 @@
+---
+layout: post
+title: Lab 2 - Installing Ubuntu For Underpower PCs and Intel Macs using Ubuntu Server
+---
+
 # {{page.title}}
 
 ## Video here
