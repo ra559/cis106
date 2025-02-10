@@ -1198,501 +1198,487 @@
   },"171": {
     "doc": "Getting Comfortable with Ubuntu 24.04",
     "title": "Getting Comfortable with Ubuntu 24.04",
-    "content": "the goal of this lab/article/page is to give you exposure to using Ubuntu 24.04 (Gnome Desktop Environment) We Will be performing basic computer task . ",
+    "content": ". | Getting Comfortable with Ubuntu 24.04 . | Question 1: Working With Files . | Part 2 - Working with files | . | Question 2: Exploring System Settings | Question 3: Installing Applications Graphically | Question 4: Editing a document | Question 5: Installing Gnome Extensions | What will you submit for extra credit | . | . the goal of this lab/article/page is to give you exposure to using Ubuntu 24.04 (Gnome Desktop Environment) We Will be performing basic computer task . ",
     "url": "/extra/getting_confortable_with_ubuntu/",
     
     "relUrl": "/extra/getting_confortable_with_ubuntu/"
   },"172": {
     "doc": "Getting Comfortable with Ubuntu 24.04",
     "title": "Question 1: Working With Files",
-    "content": ". | 1- Open the file manager (files) and explore its interface. Use the image below for help. | . The information in this image was extracted from OpenSuse Documentation. | 2- Practice the following shortcuts: | . | Key Combination | Description | . | Alt + ⬅ &amp; Alt + ➡ | Go backward/go forward | . | Alt + ↑ | Open the parent directory | . | ←, →, ↑, ↓ | Select an item | . | Alt + ↓ or Enter | Open an item | . | Alt + Enter | Open an item’s Properties dialog | . | Shift + Alt ↓ | Open an item and close the current directory | . | Ctrl + L | Toggles the path bar from buttons to path | . | Alt + Home | Opens the home directory | . | any number or letter | Starts a search within the current directory | . | Ctrl + T | Start a search within the current directories and their subdirectories | . | Del | Moves the selected file or directory to the trash, from which it can be restored with Undo | . The information in this image was extracted from OpenSuse Documentation. | 3- In your home directory, create a new directory called Games. | 4- Inside the Games directory, create 3 more directories called: fps,action,rpg | 5- Delete the Games directory | 6- Open the Trash and restore the Games directory | 7- Delete the Games directory again | 8- Empty the Trash | . Show Solution . Part 2 - Working with tabs and files . | . | Open the file manager if it is not open | . | . | Use Firefox or any other web browser of your choice to download the following this zip file: https://cis106.com/assets/extras/gcu/site.zip | . | . | Decompress/unzip the file in your Downloads directory. | . | . | Inside the Downloads directory you should now have a new directory called site | . | . | Inside the site directory you should have 3 files: . | site.html | SCRIPT.js | STYLES.css | . | . | . | Use the website, Pexex.com to download 3 Landscape format images. | . | . | Move the images to the site directory | . | . | Rename the images to: image1.jpg, image2.jpg, and image3.jpg | . | . | Open the file site.html. Notice that the website looks broken. | . | . | Rename the files SCRIPT.js and STYLES.css to: . | STYLES.css =&gt; styles.css | SCRIPT.js =&gt; script.js | . | . | . | Refresh the website site.html and you will notice that now it looks as expected. This is because Linux is case sensitive. So STYLES.css is not the same as styles.css | . | . ",
+    "content": ". | 1- Open the file manager (files) and explore its interface. Use the image below for help. | . The information in this image was extracted from OpenSuse Documentation. | 2- Practice the following shortcuts: | . | Key Combination | Description | . | Alt + ⬅ &amp; Alt + ➡ | Go backward/go forward | . | Alt + ↑ | Open the parent directory | . | ←, →, ↑, ↓ | Select an item | . | Alt + ↓ or Enter | Open an item | . | Alt + Enter | Open an item’s Properties dialog | . | Shift + Alt ↓ | Open an item and close the current directory | . | Ctrl + L | Toggles the path bar from buttons to path | . | Alt + Home | Opens the home directory | . | any number or letter | Starts a search within the current directory | . | Ctrl + T | Start a search within the current directories and their subdirectories | . | Del | Moves the selected file or directory to the trash, from which it can be restored with Undo | . The information in this image was extracted from OpenSuse Documentation. | 3- In your home directory, create a new directory called Games. | 4- Inside the Games directory, create 3 more directories called: fps,action,rpg | 5- Delete the Games directory | 6- Open the Trash and restore the Games directory | 7- Delete the Games directory again | 8- Empty the Trash | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of your file manager with your trash empty. That will be the proof of submission for question 1 . Part 2 - Working with files . | 1- Open the file manager if it is not open | 2- Use Firefox or any other web browser of your choice to download the following this zip file: https://cis106.com/assets/extras/gcu/site.zip | 3- Decompress/unzip the file in your Downloads directory. | 4- Inside the Downloads directory you should now have a new directory called site | 5- Inside the site directory you should have 3 files: . | site.html | SCRIPT.js | STYLE.css | . | . Show Solution . | 6- Use the website, Pexel.com to download 3 Landscape format images. | 7- Move the images to the site directory | 8- Rename the images to: image1.jpg, image2.jpg, and image3.jpg | 9- Open the file site.html. Notice that the website looks broken. | 10- Rename the files SCRIPT.js and STYLES.css to: . | STYLE.css =&gt; style.css | SCRIPT.js =&gt; script.js | . | 11- Refresh the website site.html and you will notice that now it looks as expected. This is because Linux is case sensitive. So STYLES.css is not the same as styles.css | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of your file manager with your the site directory open. Take another screenshof of Firefox showing the site. Those 2 will be the proof of submission for question 1 part 2 . ",
     "url": "/extra/getting_confortable_with_ubuntu/#question-1-working-with-files",
     
     "relUrl": "/extra/getting_confortable_with_ubuntu/#question-1-working-with-files"
   },"173": {
     "doc": "Getting Comfortable with Ubuntu 24.04",
     "title": "Question 2: Exploring System Settings",
-    "content": " ",
+    "content": "There are two ways of accessing the settings app: . | Via the system menu: | . The information in this image was extracted from Ubuntu's Documentation. | Searching for Settings using the applications launcher: | . | Use the settings app to perform the following tasks: . | 1- Appearance: . | Choose light or dark mode | Choose an accent color you like | Change the wallpaper . | You can download a wallpaper from the internet if you want or use a predefined one. | . | . | . | . Show Solution . | 2- Ubuntu Desktop: . | Play around with the setting of the Desktop Icons and Dock | . | . Show Solution . | Keyboard: . | Add a custom shortcut for the following applications: . | Firefox . | name: Web Browser | command: firefox | shortcut: Super Key (Windows key) + W (or any other key combination you want) | . | Tilix . | name: terminal | command: tilix | shortcut: Super key (windows key) + Enter (or any other key combination you want) | . | Files . | name: File manager | command: nautilus | shortcut: Super key (windows key) + F (or any other key combination you want) | . | VS Code . | name: VS Code | command: code | shortcut: Super + C (or any other key combination you want) | . | Geany . | name: Text Editor | command: geany | shortcut: Super + t (or any other key combination you want) | . | . | To add custom shortcut, follow these steps: . | 1- Click on Keyboard and then scroll down to “View and Customize Shortcuts” | 2- In the dialog that pops up, scroll down to “Custom Shortcut” | 3- Click on “Add Shortcut…” | . | . | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of your desktop showing that you changed the wallpaper or the position of the doc. Take another screenshot showing your custom shortcuts. That will be the proof of submission for question 2 . ",
     "url": "/extra/getting_confortable_with_ubuntu/#question-2-exploring-system-settings",
     
     "relUrl": "/extra/getting_confortable_with_ubuntu/#question-2-exploring-system-settings"
   },"174": {
     "doc": "Getting Comfortable with Ubuntu 24.04",
-    "title": "Question 3: Installing A Font",
-    "content": " ",
-    "url": "/extra/getting_confortable_with_ubuntu/#question-3-installing-a-font",
+    "title": "Question 3: Installing Applications Graphically",
+    "content": "To install applications graphically, we use the Software Center also known as the App Center. Let’s install a couple of applications: . | Open the App Center | Search for LibreOffice and install it - This is a productivity suite just like Microsoft Software | Search for a Tetris game. Install one of the options. | Wait until the apps finish installing | Open the LibreOffice Writer and close it | Open the tetris game and close it | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of the tetris game you installed. That will be the proof of submission for question 3 . ",
+    "url": "/extra/getting_confortable_with_ubuntu/#question-3-installing-applications-graphically",
     
-    "relUrl": "/extra/getting_confortable_with_ubuntu/#question-3-installing-a-font"
+    "relUrl": "/extra/getting_confortable_with_ubuntu/#question-3-installing-applications-graphically"
   },"175": {
     "doc": "Getting Comfortable with Ubuntu 24.04",
-    "title": "Question 4: Using The Terminal",
-    "content": " ",
-    "url": "/extra/getting_confortable_with_ubuntu/#question-4-using-the-terminal",
+    "title": "Question 4: Editing a document",
+    "content": "In this question we will be editing word documents and pdf files. | Download this word document | Open the word document in LibreOffice. | Edit the document and export it to pdf | Open the PDF file in libre Office Draw | Edit the PDf and export it again | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of the edited pdf document showing your edits. That will be the proof of submission for question 4 . ",
+    "url": "/extra/getting_confortable_with_ubuntu/#question-4-editing-a-document",
     
-    "relUrl": "/extra/getting_confortable_with_ubuntu/#question-4-using-the-terminal"
+    "relUrl": "/extra/getting_confortable_with_ubuntu/#question-4-editing-a-document"
   },"176": {
     "doc": "Getting Comfortable with Ubuntu 24.04",
-    "title": "Question 5: Installing Applications Graphically",
-    "content": " ",
-    "url": "/extra/getting_confortable_with_ubuntu/#question-5-installing-applications-graphically",
+    "title": "Question 5: Installing Gnome Extensions",
+    "content": "Gnome extensions allow you to add extra functionality to your desktop environment. As part of the initial setup for the class, you installed the gnome extension app that allows you to download extensions. | Open the app “Extensions Manager” | Search for the extension “Caffeine” and install it. This extension is used for preventing your computer to go to sleep. To use the extension, click on the system menu. You will see a new icon ( a cup of coffee). | Search for the extension “Apps Menu” by “Fmuelliner” and install it. This will give you a windows like menu at the top left corner. | You can disable or uninstall any Extension you want. Keep in mind that system updates make break some extensions. I recommend keeping the number of extensions to a minimum. | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of your desktop showing the extensions. That will be the proof of submission for question 5 . ",
+    "url": "/extra/getting_confortable_with_ubuntu/#question-5-installing-gnome-extensions",
     
-    "relUrl": "/extra/getting_confortable_with_ubuntu/#question-5-installing-applications-graphically"
+    "relUrl": "/extra/getting_confortable_with_ubuntu/#question-5-installing-gnome-extensions"
   },"177": {
     "doc": "Getting Comfortable with Ubuntu 24.04",
-    "title": "Question 6: Installing Gnome Extensions",
-    "content": " ",
-    "url": "/extra/getting_confortable_with_ubuntu/#question-6-installing-gnome-extensions",
+    "title": "What will you submit for extra credit",
+    "content": ". | In your cis106 directory/local repository, create a new directory called “ExtraCredit” (One word no spaces in file names pleases!) | Inside “ExtraCredit”, create another directory called “extra1” | Open your cis106 directory/local repository in VS Code | Inside “extra1” create a markdown file called “extra1.md” | Add all the screenshots to “extra1.md” using proper markdown syntax and labeling each screenshot using heading 2 formatting. Save the markdown file. | Your markdown document should start with the following heading1: # Extra Credit 1: Getting used to the Gnome Desktop Environment | Convert your file to PDF | Run the github commands, in VS Code Terminal, to push all your changes to github: . | gid add . | git commit -m \"Completed Extra 1\" | git push | . | In blackboard submit the following: . | The URL of extra1.md | The PDF file extra1.pdf | . | . ",
+    "url": "/extra/getting_confortable_with_ubuntu/#what-will-you-submit-for-extra-credit",
     
-    "relUrl": "/extra/getting_confortable_with_ubuntu/#question-6-installing-gnome-extensions"
+    "relUrl": "/extra/getting_confortable_with_ubuntu/#what-will-you-submit-for-extra-credit"
   },"178": {
-    "doc": "Getting Comfortable with Ubuntu 24.04",
-    "title": "Question 7: Working With Multiple Workspaces",
-    "content": " ",
-    "url": "/extra/getting_confortable_with_ubuntu/#question-7-working-with-multiple-workspaces",
-    
-    "relUrl": "/extra/getting_confortable_with_ubuntu/#question-7-working-with-multiple-workspaces"
-  },"179": {
-    "doc": "Getting Comfortable with Ubuntu 24.04",
-    "title": "Question 8:",
-    "content": " ",
-    "url": "/extra/getting_confortable_with_ubuntu/#question-8",
-    
-    "relUrl": "/extra/getting_confortable_with_ubuntu/#question-8"
-  },"180": {
     "doc": "Markdown Extra Practice",
     "title": "Markdown Extra Practice",
     "content": "If you wish to practice more markdown, try to recreate the following documents in markdown: . ",
     "url": "/extra/lab1_md_extra_practice/",
     
     "relUrl": "/extra/lab1_md_extra_practice/"
-  },"181": {
+  },"179": {
     "doc": "Markdown Extra Practice",
     "title": "Document 1",
     "content": "Create a markdown document from this page, that contains the following: . | Several sections of paragraphs | ordered and unordered lists | A couple of images . | The Linux mascot | Linux distributions logos | Desktop environment screenshots | . | At least 1 table. | . Try to make the document look as professional as possible . ",
     "url": "/extra/lab1_md_extra_practice/#document-1",
     
     "relUrl": "/extra/lab1_md_extra_practice/#document-1"
-  },"182": {
+  },"180": {
     "doc": "Markdown Extra Practice",
     "title": "Document 2",
     "content": "To practice note taking and code formatting, use this introduction to python website and create a 1 page document that shows how to get started with python. You just simply include the following: Learn the Basics . | Hello, World! | Variables and Types | Lists | Basic Operators | String Formatting | Basic String Operations | Conditions | Loops | . ",
     "url": "/extra/lab1_md_extra_practice/#document-2",
     
     "relUrl": "/extra/lab1_md_extra_practice/#document-2"
-  },"183": {
+  },"181": {
     "doc": "Markdown Extra Practice",
     "title": "Document 3",
     "content": "To practice tables, use the following images and create a pdf file that contains all of these tables: . Table 1 . You can download the images from here . ",
     "url": "/extra/lab1_md_extra_practice/#document-3",
     
     "relUrl": "/extra/lab1_md_extra_practice/#document-3"
-  },"184": {
+  },"182": {
     "doc": "Learning Git",
     "title": "Learning Git",
     "content": ". | Presentation here | Cheat Sheet here | . ",
     "url": "/extra/learning-git/",
     
     "relUrl": "/extra/learning-git/"
-  },"185": {
+  },"183": {
     "doc": "Learning Git",
     "title": "Setup Git",
     "content": ". | Set your username: git config --global user.name 'your username here' | Set your email address: git config --global user.email 'your email here' | . ",
     "url": "/extra/learning-git/#setup-git",
     
     "relUrl": "/extra/learning-git/#setup-git"
-  },"186": {
+  },"184": {
     "doc": "Learning Git",
     "title": "Setup SSH authentication",
     "content": ". | Generate an ssh key: ssh-keygen -t ed25519 -C \"your_email@example.com\" This creates a new SSH key, using the provided email as a label. When you’re prompted to: \"Enter a file in which to save the key,\" press Enter. This accepts the default file location. At the prompt, to type a secure passphrase, press enter for no passphrase. If you want to use a passphrase, go ahead as it provides an extra layer of security. However, for this course you do not need to add a passphase. | Use the following command to see your public ssh key: cat ~/.ssh/id_ed25519.pub copy the entire output of this command to the clipboard. See examle here: . | In your github page, go to settings &gt; SSH and GPG Keys Here add your ssh key that you copied to the clipboad in the step prior. Type yes (the whole word) and press enter and you are done . | Test you ssh connection by using this command: ssh -T git@github.com You will see the following outcome: . | . If you do not see an error message or a different message than the one shown prior, then your SSH connection is correct. Now you can push and clone using SSH. ",
     "url": "/extra/learning-git/#setup-ssh-authentication",
     
     "relUrl": "/extra/learning-git/#setup-ssh-authentication"
-  },"187": {
+  },"185": {
     "doc": "Mkdir, touch, and rm",
     "title": "Mkdir, touch, and rm",
     "content": ". | . | Commands reference table | . | . | MKDIR . | 2.1. Description | 2.2. Formula/usage | 2.3. Examples | 2.4. Practice | . | 2.4.1. Description | 2.4.2. Solution | . | . | . | TOUCH . | 3.1. Description | 3.2. Formula/usage | 3.3. Examples | 3.4. Practice | . | 3.4.1. Description | 3.4.2. Solution | . | . | . | RM . | 4.1. Description | 4.2. Formula/usage | 4.3. Examples | 4.4. Practice | . | . | . | MV . | 5.1. Description | 5.2. Formula/usage | . | 5.2.1. Moving | 5.2.2. Renaming * 5.3. Examples * 5.4. Practice | . | . | . | CP . | 6.1. Description | 6.2. Formula/usage | 6.3. Examples | 6.4. Practice | . | . | . ",
     "url": "/extra/mkdir_touch_rm/",
     
     "relUrl": "/extra/mkdir_touch_rm/"
-  },"188": {
+  },"186": {
     "doc": "Mkdir, touch, and rm",
     "title": "1. Commands reference table",
     "content": "These are the most basic commands to manage files and directories. | Command | Definition | Formula | Example | . | mkdir | makes directories | mkdir + option + new directory(ies) name | mkdir ~/Downloads/games | . | touch | makes files | touch + option + new file(s) name | touch ~/Downloads/games/list.txt | . | rm | removes files | rm + option + files to delete | rm ~/Downloads/games/list.txt | . | mv | moves files &amp; directories | mv + option + source path + destination path | mv ~/Downloads/games ~/Documents/ | . | mv | rename files &amp; directories | mv + option + old name + new name | mv ~/Documents/games/old.txt ~/Documents/games/mylist.txt | . | cp | copies files &amp; directories | cp + option + sources path + destination | cp -r ~/Downloads/oldGames/ ~/Games/ | . ",
     "url": "/extra/mkdir_touch_rm/#1-commands-reference-table",
     
     "relUrl": "/extra/mkdir_touch_rm/#1-commands-reference-table"
-  },"189": {
+  },"187": {
     "doc": "Mkdir, touch, and rm",
     "title": "2. MKDIR",
     "content": "2.1. Description . | Used for create directories. Mkdir can make 1 or multiple directories by separating each directory name with a space. | . 2.2. Formula/usage . mkdir + option + directory names . Where directory name can be: . | Just the name of the directory if you want to create them in the current working directory | Absolute or relative path if you want to create the directory in a different location | . 2.3. Examples . | Using relative path: Create a directory in your current working directory called games . | mkdir games | . | Using relative path: Create 3 directories inside the games directories called: action, adventure,fps . | mkdir games/action games/adventure games/fps | . | Using absolute path: Create a directory in the action directory called wonderboy . | mkdir ~/games/action/wonderboy | . | Using absolute path: Create 2 directories, one in fps and another in adventure. Call them cod and uncharted . | mkdir ~/games/fps/cod ~/games/adventure/uncharted | . | Create a parent and subdirectory at the same time . | mkdir -p ~/Documents/school/english/homework | . | Create a directory and display a message confirming the directory creation (verbose output) . | mkdir -pv ~/Downloads/games | mkdir -pv ~/Downloads/games/action games/fps/doom practice | . | . 2.4. Practice . 2.4.1. Description . You have just been assigned the task of organizing a new project called “ProjectPhoenix” on your company’s server. For this project, you need to set up a directory structure that will hold various types of documents. The structure should look like this: . ProjectDelta/ ├── planning/ │  ├── meetings/ │ └── drafts/ ├── development/ │ ├── code/ │ └── documentation/ └── testing/ ├── unit_tests/ └── integration_tests/ . 2.4.2. Solution . Show Solution . ",
     "url": "/extra/mkdir_touch_rm/#2-mkdir",
     
     "relUrl": "/extra/mkdir_touch_rm/#2-mkdir"
-  },"190": {
+  },"188": {
     "doc": "Mkdir, touch, and rm",
     "title": "3. TOUCH",
     "content": "3.1. Description . touch is used to create an empty file or to update the timestamp of an existing file. If the specified file does not exist, touch will create it. If the file exists, touch will update its access and modification times to the current time. 3.2. Formula/usage . | touch + option + file(s) name | . Where file name can be: . | Just the name of the files if you want to create them in the current working directory | Absolute or relative path if you want to create the directory in a different location | . 3.3. Examples . | Create multiple files in the current working working directory . | touch notes.txt program.py page.html | . | Create multiple files in different directories using absolute path . | touch ~/games/action/wonderboy/run.txt ~/games/adventure/uncharted/todo.md | . | Create multiple files in different directories using relative path . | touch games/action/run.sh games/fps/readme.md | . | . 3.4. Practice . 3.4.1. Description . In th previous practice, you created a directory structure. Add the following files to each directory: . ProjectDelta/ ├── development │   ├── code │   │   ├── app.js │   │   ├── index.html │   │   └── styles.css │   └── documentation │   └── readme.md ├── planning │   ├── drafts │   │   └── notes.md │   └── meetings │   └── schedule.docx └── testing ├── integration_tests │   └── instructions.md └── unit_tests └── test.js 10 directories, 8 files . 3.4.2. Solution . Show Solution . ",
     "url": "/extra/mkdir_touch_rm/#3-touch",
     
     "relUrl": "/extra/mkdir_touch_rm/#3-touch"
-  },"191": {
+  },"189": {
     "doc": "Mkdir, touch, and rm",
     "title": "4. RM",
     "content": "4.1. Description . The rm command is used to remove files and directories. It is a powerful command that can permanently delete files, so it should be used with caution. By default, rm removes files, but with certain options, it can also delete directories and their contents. In Linux, only empty directories can be removed. When you try to remove non-empty directories the following error is shown: “rm: cannot remove 'directory_name/': Is a directory”. Even when using the rmdir command, trying to remove a non empty directory results in the following error: “rmdir: failed to remove 'directory_name/': Directory not empty”. To remove directories use the -r option. See examples. 4.2. Formula/usage . | rm + option + directories or files to remove | . Where file/directory name can be: . | Just the name of the files/directories if they are located in the current working directory | Absolute or relative path if they are located in a different location | . Common Options: . | -f: Force removal without prompting for confirmation. | -r or -R: Recursively remove directories and their contents. | -i: Prompt before each removal. | -v: Verbose mode, showing the files as they are removed. | . 4.3. Examples . | Remove files using absolute path . | rm ~/games/action/run.sh ~/games/adventure/uncharted/todo.md | . | Remove files using relative path . | rm games/fps/readme.md games/notes.txt games/page.html | . | Remove files and directories but prompt for confirmation before removing and display removal message when done . | rm -vir games/program.py ~/ProjectDelta | . | Remove a non empty directory forcing the removal . | rm -rf games/ | . | . 4.4. Practice . You have a folder named “OutdatedProjects” in your home directory. This folder contains old project files that you no longer need, including subdirectories with their own files. You want to clean up your home directory by completely removing the “OutdatedProjects” folder and all of its contents. The directory structure looks like this: . /home/user/OutdatedProjects/ ├── projectA/ │ └── old_data.txt ├── projectB/ │ └── old_report.txt ├── projectC/ │ └── notes.txt └── archived_files.txt . Use the rm command to delete the entire “OutdatedProjects” directory, including all of its subdirectories and files, using an absolute path. Before you can run the rm command, you will need to create the directories. Run this command that will run a script to generate the directories and files for you. curl https://cis106.com/assets/extra/rm_practice.sh | bash . Show Solution . ",
     "url": "/extra/mkdir_touch_rm/#4-rm",
     
     "relUrl": "/extra/mkdir_touch_rm/#4-rm"
-  },"192": {
+  },"190": {
     "doc": "Mkdir, touch, and rm",
     "title": "5. MV",
     "content": "5.1. Description . The mv command is used for moving and renaming files and directories. Keep the following points in mind about the mv command: . | mv cannot rename more than 1 file at the time | mv can move and rename a file at the same time | mv will set the last argument as the destination or file new name | Common options of the mv command: . | -i: Prompt before overwriting an existing file. | -u: Move only when the source file is newer than the destination file or when the destination file is missing. | -v: Verbose mode, showing the files as they are moved or renamed. | . | . 5.2. Formula/usage . 5.2.1. Moving . | mv + option + files/directories to move + destination directory 5.2.2. Renaming . | mv + option + old name + new name | . 5.3. Examples . | Move multiple files using a combination of absolute path and relative path . | mv -v ~/games/ schoolProject/ Documents/school/hmw.txt ~/Downloads/new_folder/ . | In this example: . | ~/games, schoolProject/, and, Documents/school/hmw.txt are moved to ~/Downloads/new_folder/ | -v enables verbose output. | . | . | . | Rename a directory . | mv -v ~/Downloads/new_folder ~/Downloads/projectAvalon/ | . | Rename a file . | mv -v ~/Downloads/projectAvalon/hmw.txt ~/Downloads/projectAvalon/submission.txt | . | Move and rename a file in a single command . | mv -v ~/Downloads/projectAvalon/submission.txt ~/Documents/cis107_document.txt | . | Move and rename a directory in a single command . | mv -v ~/Downloads/projectAvalon/ ~/Documents/Avalon | . | . 5.4. Practice . You are working on a web development project named “AlphaProject”. You have been give all the files for this project. Your task is to organize the folder. You have to use the mv command for renaming and moving. You are not allowed to create new directories. To get all the necessary files, run this command, which will run a script to generate the directory “AlphaProject” including all the necessary files. curl https://cis106.com/assets/extras/mv_practice.sh | bash . Show Solution . ",
     "url": "/extra/mkdir_touch_rm/#5-mv",
     
     "relUrl": "/extra/mkdir_touch_rm/#5-mv"
-  },"193": {
+  },"191": {
     "doc": "Mkdir, touch, and rm",
     "title": "6. CP",
     "content": "6.1. Description . The cp command is used to copy files and directories. Cp requires -r option to copy directories. You can copy and rename a directory or file in a single command too. However, this only works when trying to copy a single file or directory. This is like making a backup sort-of-speak. Common Options: . | -r or -R: Recursively copy directories and their contents. | -i: Prompt before overwriting an existing file. | -u: Copy only when the source file is newer than the destination file or when the destination file is missing. | -v: Verbose mode, showing the files as they are copied. | -a: Copy files and directories, preserving attributes like timestamps and permissions. | . 6.2. Formula/usage . | cp + option + source files/directories + destination directory | . 6.3. Examples . | Copy several files using a combination of absolute and relative path. | cp -r ~/projectOrion/ ~/Downloads/games.txt Videos/example.mp4 Pictures/bg.png ~/bookProject/ . | Note: Here we have to use -r because there is a directory in the sources to copy (~/projectOrion) | . | . | Copy a directory with verbose output . | cp -rv ~/projectOrion/ ~/Documents/ | . | . 6.4. Practice . Copy the directory of the previous practice. Copy the directory to the Documents directory. The name of the copy is: AlphaProjectBackup . Show Solution . ",
     "url": "/extra/mkdir_touch_rm/#6-cp",
     
     "relUrl": "/extra/mkdir_touch_rm/#6-cp"
-  },"194": {
+  },"192": {
     "doc": "Practice Virtualization",
     "title": "Practice Virtualization",
     "content": "This is for Students using VirtualBox in Windows or MacOS with an Intel CPU . ",
     "url": "/extra/practice_virtualization/",
     
     "relUrl": "/extra/practice_virtualization/"
-  },"195": {
+  },"193": {
     "doc": "Practice Virtualization",
     "title": "Option 1",
     "content": "Simply create virtual machines of Windows or Ubuntu using Lab 2 as a guide. Keep in mind the following: . | The minimun hardware requirements and recommended requires of the OS. | For example here is for Windows | . | To optain an iso file for Windows, use the Windows 10 Media creation tool or Windows 11 media creation tool. | . For Ubuntu, try out the many Ubuntu Flavors in a virtual machine. You can use the live session or do the full installation . Just remember to delete the virtual machine completely when you are done practicing . ",
     "url": "/extra/practice_virtualization/#option-1",
     
     "relUrl": "/extra/practice_virtualization/#option-1"
-  },"196": {
+  },"194": {
     "doc": "Practice Virtualization",
     "title": "Option 2",
     "content": ". | You can download pre-made VDI images from osboxes.org | . ",
     "url": "/extra/practice_virtualization/#option-2",
     
     "relUrl": "/extra/practice_virtualization/#option-2"
-  },"197": {
+  },"195": {
     "doc": "VM Test Activity",
     "title": "VM Test Activity",
     "content": " ",
     "url": "/extra/testingvms/",
     
     "relUrl": "/extra/testingvms/"
-  },"198": {
+  },"196": {
     "doc": "VM Test Activity",
     "title": "Goal",
     "content": ". | All the activities in this lab should be executed reliably with minimal slow downs with a virtual machine that meets the following criteria: . | CPU: 2 Cores | RAM: 4 GB | HDD: 50 GB | . ",
     "url": "/extra/testingvms/#goal",
     
     "relUrl": "/extra/testingvms/#goal"
-  },"199": {
+  },"197": {
     "doc": "VM Test Activity",
     "title": "Applications installed:",
     "content": ". | Code Editor: VS Code | Text Editor: Geany | Web Browser: Firefox, Librewolf, Chromium | . ",
     "url": "/extra/testingvms/#applications-installed",
     
     "relUrl": "/extra/testingvms/#applications-installed"
-  },"200": {
+  },"198": {
     "doc": "VM Test Activity",
     "title": "Test 1: Creating Markdown Documents",
     "content": ". | Download or clone this github repository: https://github.com/ra559/markdown-test | Open the directory in vs code | Create a markdown file called: husky.md | Use the text in the husky.txt file to create the husky.md file. | The document should contain as much markdown format as possible. | Convert the document to pdf | Convert the document to html | Preview the pdf file in vs code | Preview the html file using live server | . were you able to complete this test without major slowdowns? . ",
     "url": "/extra/testingvms/#test-1-creating-markdown-documents",
     
     "relUrl": "/extra/testingvms/#test-1-creating-markdown-documents"
-  },"201": {
+  },"199": {
     "doc": "VM Test Activity",
     "title": "Test 2: Basic Website",
     "content": ". | Open the markdown-test directory from the previous test in vs code | Add some css and bootstrap to the html | Add some javascript | Preview the website with live preview | . Were you able to complete this test without major slowdowns? . ",
     "url": "/extra/testingvms/#test-2-basic-website",
     
     "relUrl": "/extra/testingvms/#test-2-basic-website"
-  },"202": {
+  },"200": {
     "doc": "VM Test Activity",
     "title": "Test 3: Basic Jekyll Site",
     "content": ". | Use this guide to install Jekyll | Use this guide to create your jekyll site. | Add some entries to your site | Constantly server your site with --trace enabled. | . Were you able to complete this test without major slowdowns? . ",
     "url": "/extra/testingvms/#test-3-basic-jekyll-site",
     
     "relUrl": "/extra/testingvms/#test-3-basic-jekyll-site"
-  },"203": {
+  },"201": {
     "doc": "VM Test Activity",
     "title": "Test 3: Terminal + Vs Code + Web Browser",
     "content": ". | Use this Linux FS guide to practice some commands. | Create a markdown file and take screenshots. | Add the screenshots to the markdown file and convert the file to pdf | . Were you able to complete this test without major slowdowns? . ",
     "url": "/extra/testingvms/#test-3-terminal--vs-code--web-browser",
     
     "relUrl": "/extra/testingvms/#test-3-terminal--vs-code--web-browser"
-  },"204": {
+  },"202": {
     "doc": "The Linux FS",
     "title": "The Linux FS",
     "content": "All The videos here . ",
     "url": "/extra/thelinuxfs/",
     
     "relUrl": "/extra/thelinuxfs/"
-  },"205": {
+  },"203": {
     "doc": "The Linux FS",
     "title": "Other Review Videos:",
     "content": ". | REVIEW 4: The LS command and Practice | Linux Tutorials The ls command GeeksforGeeks | How to Use The ls Command on the Linux Command Line | . ",
     "url": "/extra/thelinuxfs/#other-review-videos",
     
     "relUrl": "/extra/thelinuxfs/#other-review-videos"
-  },"206": {
+  },"204": {
     "doc": "The Linux FS",
     "title": "Basic Concepts",
     "content": ". | The root directory: The first directory in the filesystem that contains the entire filesystem represented by “/”. | Current working directory: Also known as the present working directory. It is the directory where you are currently working in. You are always working from a directory. | Parent Directory: a dirtectory containing one or more directories and files. | Child directory: a better name for this is a subdirectory or subfolder. This is a directory inside another directory. See image for visual reference. | . | YOUR HOME DIRECTORY: This is your user’s personal directory where all your files are located. Every user has it’s own home directory just like in a apartment complex they all residents have their own apartment while sharing the common areas. You have total ownership of your home directory but outside of the home directory only the root user can make changes. An example absolute path, assuming that user name is maria53, would be /home/maria53 | The home Directory: This is the parent directory of all the home directories. This is where all the users’ home directory are. The absolute path of this directory is /home. Noticed that it starts at the root. | The root user: This is the administrator account of your system. To perform administrative tasks or to manage directories and files outside of your home directory, you must obtain root privileges using the sudo command at the beginning of the command. | Path name: Also known as file path. This is the location of a given file in your computer. A path name can be absolute path or relative path. | Absolute Path: The location of a file starting at the root of the file system. For example, /home/maria53/Downloads/list.txt is the absolute path of the file list.txt. The advantage of absolute paths is that they can be used at any point of the file system regardless of your current directory. Any command that is given an absolute path will be able to find the file because it will start at the beginning of the filesystem. The disadvantage is that a command can be long to type if the file path is long. | Relative Path: The location of a file starting from a child directory of the current working directory or from the current directory itself. The advantage of using relative path is that typing commands is faster. The disadvantage of relative paths is that they cannot work from anywhere in the filesystem. In order for a relative path to work, a file must be reachable from the current directory onwards. Another disadvantage of relative paths is that they require a better mental understanding of the linux filesystem in the sense that you must keep a mental image of the directory tree that you are working with. An example of a relative path would be Downloads/list.txt assuming that the current working directory is /home/maria53 Special characters: . Special characters are function like commands that tell the shell to perform a specific action without having to type the complete command. These special characters make working on the command line more efficiently. Here is short list to keep in mind. | . (single period): represents the current directory. | .. (2 consecutive periods): represents the parent directory. | ~ (tilde character): expands the current users home directory. It is like a variable that the shell uses to store the absolute path of the user’s home directory. This ~/Downloads is the same as typing /home/maria53/Downlods | / (one forward slash): as mentioned earlier, this is the root directory and the shortest path in the system. This is the beginning of the directory tree. There is nothing before it and everything after it. | - (hyphen-minus): is used to move to the previous current working directory. | # (hash or number sign): This is used for single line comments in shell scripting. | ! (single exclamation mark): used for repeating a command from the history. For example !5 will repeat the 5th command in the command history. To view the entire command history type history. | !! (2 consecutive exclamaton marks): are used for repeating the previous command. For example, !! will repeat the previous command while, sudo !! will repeat the previous command but will add sudo at the beginning of the command. This is useful for times when we forget to type sudo when performing administrative tasks. | . Bash Environment Variables . | What is a variable? . | In programming, a variable is place to store data. A variable is like a box with a label. For example, if you a lot of pens in your desk and you place them in a box a label it pens, now the box store your pens. In programming a variable can be used to store temporary or permanent information that you will continuously reuse in your program. For example, username='maria53' the variable name now stores the value maria. When evener the programs need to access the maria’s username, it can do it by referencing the variable username. | . | What is an environment variable? . | Environment variables store values of a user’s environment and can be used in commands in the shell. These values can be unique to the user’s environment which makes them ideal when writhing commands that you want to use regales of which user is using the computer. To see a list of your environment variables type env. To use the value stored in an environment variable you must prepend the variable name with a $. Here are some useful environment variables: | $USER = stores the current’s user username | $HOME = stores the absolute path of current’s user home directory | $PWD = stores the absolute path of the present working directory. | $OLDPWD = stores the absolute path of the previous current working directory | . | . Bash Tips: . | Tab Completion: autocomplete a command/pathname by pressing the tab key | Arrow keys: allows you to move, edit, and repeat commands | Ctrl + a: go to the start of the command line | Ctrl + e: go to the end of the command line . | Shortcut list | . | . ",
     "url": "/extra/thelinuxfs/#basic-concepts",
     
     "relUrl": "/extra/thelinuxfs/#basic-concepts"
-  },"207": {
+  },"205": {
     "doc": "The Linux FS",
     "title": "Commands to navigate the linux filesystem",
     "content": "To navigate the linux filesystem, you only need to master 3 commands: cd, pwd and ls. While there are other useful commands, those can be considered complimentary and you should learn them after you have mastered those 3. PWD . | Usage . | Displays the absolute path of the current working directory. | . | Formula . | pwd | . | Examples . | Print the absolute path of current working directory . | pwd | . | . | . CD . | Usage . | Changes the current working directory. In other words, it moves you from one directory to another. By default, it will always send you to your home directory. | . | Formula . | cd + destination absolute path or relative path | . | Examples . | Go (change your current directory) to your home directory (there is more than 1 way of doing this): . | cd (without any arguments, cd will take you home) | cd ~ (using the ~ special character. as ~ will expand to the absolute path of the user’s home directory) | cd $HOME (using the $HOME environment variable) | cd /home/$USER/Downloads (using $USER environment variable in the path) | . | Go to a specified directory with absolute path: . | cd /usr/share/themes | . | Go to a specified directory with relative path assuming your current working directory is /home . | cd maria53/Downloads/ | . | Go to the previous working directory. This is useful when you are working with 2 directories located far in the directory tree . | cd - | . | Go to the previous directory in the directory tree. One directory above. | cd ../ | . | Go to 2 directories above the directory tree . | cd ../../ | . | . | . Practice CD command: . Try to complete these tasks without looking at the solution. Use the image below as a reference: . | Using absolute path, go to the directory “/user/share/themes/Adwaita” | Go back to your home directory. | Go back to the “/user/share/themes/Adwaita” using the - special character. | Go to the root of the filesystem using the “..” special character. | Go to your “Downloads” directory 1 directory at the time. Display/Print your present working directory once you have reached the “Downloads” directory. | Go back to your home directory and then to the “Pictures” directory. | . Show Solution . LS . | Usage . | ls is used for listing files and directories. By default it will list the current directory when no directory is specified. Listing means to see what is inside a directory. | . | Formula . | ls + option + directory to list | . | Examples . | See all the options of the ls command (extracted from the man page): . | ls --help | . | List the current directory: . | ls | . | List all the files including hidden files in current directory: . | ls -A | . | List all the files inside a given directory: . | ls -A /usr/share/fonts/X11 (absolute path) | ls -A Documents/ (relative path assuming that the $PWD is $HOME) | . | Long list a directory . | ls -lA ~/Pictures | . | List a directory recursively . | ls -R Documents/ | . | Long list a directory only . | ls -ld Documents/ | . | List a directory sorted by last modified . | ls -t Documents/ | . | List a directory sorted by file size . | ls -S Documents/ | . | Long list a directory excluding group and owner information, with human readable file size and sorted in reverse order. | ls -lhgGr Documents/ | . | . | . Output of LS -L explained: . Practice LS command: . Try to complete these tasks without looking at the solution. | Use this command to download some example files: curl https://raw.githubusercontent.com/ra559/cis106/main/assets/scripts/practice_ls.sh | bash | The command above will create a directory in your home directory called practicels Here you will find 10 example files to practice ls. If the command above did not work, read the output carefully and try to fix it yourself. You can also download the zip file on your own. Read the basic script for the URL. | . | list all the files in the practice directory. | long list all the files in the practice directory. | long list all the files in the practice directory sorted by file size with human readable file sizes | long list all the files in the practice directory sorted by file size with human readable file sizes and in reverse order. | long list all the files in the practice directory without the group and owner, with human readable file sizes, sorted by file extension and with full time stamp. | . Show Solution . Tree . | Usage . | used to display a recursive directory listing (tree) of files. | . | Formula . | tree + option + directory | . | Examples . | Display a tree of the home directory . | tree ~ or tree $HOME or tree /home/$USER | . | Display a tree of a directory with file permissions . | tree -p ~/practicels | . | Display a tree of a directory with the full path prefix, with the user and group owner, human readable file sizes, and the date of last modified. | tree -pughD ~/practicels/ | . | . | . EXA . | Usage . | Used the same way as ls. To list files and directories. Exa is a modern replacement for ls written in Rust. Exa is not installed by default. You will need to install it using your linux distribution package manager. | . | Formula . | exa + option + directory | . | Examples . | list all files in a given directory in a single line . | exa -1 ~/practicels | . | long list all the files in a given directory . | exa -l ~/practicels | . | long list all the files in a given directory with headers . | exa -lh ~/practicels | . | list a directory in a tree like format . | exa -T ~/practicels | . | . | . ",
     "url": "/extra/thelinuxfs/#commands-to-navigate-the-linux-filesystem",
     
     "relUrl": "/extra/thelinuxfs/#commands-to-navigate-the-linux-filesystem"
-  },"208": {
+  },"206": {
     "doc": "Wildcards",
     "title": "Wildcards",
     "content": "Note: Work in progress. ",
     "url": "/extra/wildcards/",
     
     "relUrl": "/extra/wildcards/"
-  },"209": {
+  },"207": {
     "doc": "Wildcards",
     "title": "Description",
     "content": "Wildcards or file globing is a shell feature that, using special characters, allows us to rapidly specify groups of filenames. Because we work with files all the time, it is useful to be able to work with multiple files at the same time. Why and when should I use a wildcard? . Using wildcards can save you a lot of time. Imagine you need to move all the text files in a folder. You could move them one by one—if you know each file’s name. But what if there are 300 files? Moving them one at a time would take forever! Wildcards help you by allowing you to match all files that meet a certain pattern or criteria, so you can move them all at once with a single command. Here are some examples: . | Copy all photos from a drive to a flash drive. | Delete certain types of files from a folder. | List all files that have a date in their name. | . There are only 3 wildcards. Here is how they work: . | Wildcard | definition | example | . | * | matches 0 to any number of characters | ls ~/Downloads/*.png | . | ? | matches 1 character | ls ~/Downloads/f?ll.sh | . | [] | matches 1 character from a set | ls ~/Downloads/f[0-9]ll.sh | . ",
     "url": "/extra/wildcards/#description",
     
     "relUrl": "/extra/wildcards/#description"
-  },"210": {
+  },"208": {
     "doc": "Wildcards",
     "title": "What does “matches x number of character” really mean?",
     "content": "This refers to the number of characters in the file name that can be matched everytime the wildcard is used in a command. For example, here is an illustration using the * wildcard: . Notice that because the * wildcard matches 0 characters and also any number of characters, this command: ls *SC*.png matches the files Script_remover.sh and BackupScript.sh. To practice the wildcards, run this command: . curl https://cis106.com/assets/extras/wildcards.sh | bash . This will create a directory in your home directory called wildcard_extra_practice. This directory contains a bunch of files and directories (created at random). All the examples here will use the files in this directory. ",
     "url": "/extra/wildcards/#what-does-matches-x-number-of-character-really-mean",
     
     "relUrl": "/extra/wildcards/#what-does-matches-x-number-of-character-really-mean"
-  },"211": {
+  },"209": {
     "doc": "Wildcards",
     "title": "The * (star/asterisk) wildcard",
     "content": "Examples: . | list all of the directories inside a given directory without listing their content . | ls -1d wildcard_extra_practice/*/ | . | move all the .sh (shell scripts) files . | mv wildcard_extra_practice/*.sh wildcard_extra_practice/scripts/ | . | list and then move all the image files in the wildcard_extra_practice directory. You will need to create a directory first. | mkdir wildcard_extra_practice/images/ | ls wildcard_extra_practice/img-*.* | mv -v wildcard_extra_practice/img-*.*images/ | . | . ",
     "url": "/extra/wildcards/#the--starasterisk-wildcard",
     
     "relUrl": "/extra/wildcards/#the--starasterisk-wildcard"
-  },"212": {
+  },"210": {
     "doc": "Wildcards",
     "title": "The ? (question mark) wildcard",
     "content": "Examples: . | List all the files that contain a 4 letter file extension. | ls -1X wildcard_extra_practice/*.???? | . | List all the files that contain a 4 letter file extension and start with letter i: . | ls -1X wildcard_extra_practice/i*.???? | . | List all th files Microsoft Office 365 files. | ls -1X wildcard_extra_practice/*.???x | . | . ",
     "url": "/extra/wildcards/#the--question-mark-wildcard",
     
     "relUrl": "/extra/wildcards/#the--question-mark-wildcard"
-  },"213": {
+  },"211": {
     "doc": "Wildcards",
     "title": "The [] (square brackets) wildcard",
     "content": "| POSIX class | Represents | Means | Example using ls | . | [:upper:] | [A-Z] | Uppercase letters | ls *[[:upper:]]* - List files with uppercase letters | . | [:lower:] | [a-z] | Lowercase letters | ls *[[:lower:]]* - List files with lowercase letters | . | [:digit:] | [0-9] | Digits | ls *[[:digit:]]* - List files containing digits | . | [:alpha:] | [A-Za-z] | Alphabetic characters | ls *[[:alpha:]]* - List files with alphabetic characters | . | [:alnum:] | [A-Za-z0-9] | Alphanumeric characters | ls *[[:alnum:]]* - List files with alphanumeric characters | . | [:space:] | [ \\t\\n\\r\\f\\v] | Whitespace characters | ls *[[:space:]]* - List files with spaces in names | . | [:punct:] | Punctuation | Punctuation characters | ls *[[:punct:]]* - List files with punctuation characters | . | [:blank:] | [ \\t] | Space and tab | ls *[[:blank:]]* - List files with spaces or tabs | . | [:xdigit:] | [0-9A-Fa-f] | Hexadecimal digits | ls *[[:xdigit:]]* - List files with hexadecimal characters | . | [:cntrl:] | Control characters | Control characters | ls *[[:cntrl:]]* - List files with control characters | . | [:print:] | Printable | Printable characters | ls *[[:print:]]* - List files with printable characters | . | [:graph:] | Graphical | Visible characters (not spaces) | ls *[[:graph:]]* - List files with graphical characters | . | [:word:] | [A-Za-z0-9_] | Word characters (alphanumeric + underscore) | ls *[[:word:]]* - List files containing word characters | . | [:ascii:] | ASCII characters | All ASCII characters (0-127) | ls *[[:ascii:]]* - List files containing ASCII characters | . Examples: . | List all the files that start with a capital letter . | ls wildcard_extra_practice/[A-Z]* | . | List all the files that contain a number in their name . | `ls wildcard_extra_practice/[0-9] | . | . Note: . | Wildcards also have their limitations. | For instance, “List all the files that do not contain a digit in the file name” You may assume that the approach would be ls *[!0-9]*. However, this does not work. This wildcard translates to: “all files and directories in the current directory whose names contain at least one character that is not a digit (0-9)” However, if you ever need this, here are two approaches: . | Use ls + grep: . | ls *[!0-9]* | grep -v '[0-9]' | . | Use find: . | find ./ -not -name '*[0-9]*' | . | Find is preferred for scripts because ls is not suited for shell scripts. ls is intended to be a human friendly tool and the output is difficult to parse properly. | . | . ",
     "url": "/extra/wildcards/#the--square-brackets-wildcard",
     
     "relUrl": "/extra/wildcards/#the--square-brackets-wildcard"
-  },"214": {
+  },"212": {
     "doc": "Final Exam Study Guide",
     "title": "Final Exam Study Guide",
     "content": ". ",
     "url": "/final_exam/final_exam/",
     
     "relUrl": "/final_exam/final_exam/"
-  },"215": {
+  },"213": {
     "doc": "Final Exam Study Guide",
     "title": "Special Note:",
     "content": ". | The final exam is in person. | The exam is performance based and will require access to a Linux Virtual Machine. | If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you. | . ",
     "url": "/final_exam/final_exam/#special-note",
     
     "relUrl": "/final_exam/final_exam/#special-note"
-  },"216": {
+  },"214": {
     "doc": "Final Exam Study Guide",
     "title": "Recommendations",
     "content": ". | Arrive to the classroom 30 minutes before the exam starts (5:00 PM) . | This will allow you to test your virtual machine, perform any maintenance, test your internet connection, do a test pull and push, and troubleshoot any hardware problem. | . | Make sure your github repository is organized . | Since you are allowed to use your notes during your exam, it is to your benefit to have all your notes organized. | I recommend creating a single document with all of notes and converting it to pdf. This will make it easier to find information. | BE AWARE that you can only use your notes - NOT YOUR LABS - for the exam. So if I catch you looking at your labs, presentations, book, or the internet during the exam, this will constitute cheating and your exam will be terminated | . | Update Windows and Ubuntu the day before the final exam . | Do not update virtualbox | Create a snapshot of your virtual machine before updating. If anyting goes wrong, you will be able to recover. | . | If you plan on using one of my computers: . | Arrive 15 to 20 minutes early | You will need to clone your repository | You will need to make sure everything works for you | . | . WARNING Your lack of preparation does not constitute an emergency for me. There are no make up exams. You are either here for the exam or your are not! There is another class after our class. Which means that the exam starts at 5:40 and ends at 6:55 on the dot! You must save the last 10 minutes of the exam to prepare your submission. ",
     "url": "/final_exam/final_exam/#recommendations",
     
     "relUrl": "/final_exam/final_exam/#recommendations"
-  },"217": {
+  },"215": {
     "doc": "Final Exam Study Guide",
     "title": "Commands to study",
     "content": ". | Make sure you understand them well. Then include 3 - 5 examples that you understand and can use without any challenge. | Don’t memorize. | awk | cat | cp | cut | grep | head | ls | man | mkdir | mv | tac | tail | touch | tr | tree | . ",
     "url": "/final_exam/final_exam/#commands-to-study",
     
     "relUrl": "/final_exam/final_exam/#commands-to-study"
-  },"218": {
+  },"216": {
     "doc": "Final Exam Study Guide",
     "title": "Concepts to study",
     "content": "Working with Git, GitHub, and Markdown . | How to create a github repository | How to clone a github repository | How to use the git commands | How to write a markdown file that contains images and proper headings | How to convert a markdown file to pdf | . How to Practice? . | Create a repository in github. Give it any name you want. | Clone the repository in your virtual machine | Open the repository/folder/directory in vs code | Create a markdown file inside containing random text. Make sure you have headings, images, pagrapaths, bullet points etc… | Convert the file to html and pdf | Push everything to github | Do you see the files there? | Add a couple more html files by repeating the process. | Did you get lost? if so, you know what you need to study! | . Linux Specific Concents . | How to compress (zip) a directory/folder | The linux filesystem | Absolute path and relative path | When should you use absolute vs relative | Moving around the filesystem with absolute and relative (pwd,cd, ls, and tree) | How to work with multiple terminals open? | How to work with manual pages? | How to parse (search) for specific words in the manual page | How to redirect output (&gt;, &gt;&gt;, and |) | How to append the output of a command to a file | How and when to redirect the output of a command to another (pipes) | How to use echo and output redirection to create a new file that contains some text | How to use wildcards . | For copying and moving multiple files at the same time | . | How to use brace expansion . | For creating entire directory structures in a single command | . | . How to practice? . | Go through the presentations and try to do the practice without looking at the solutions. | Go over all the challenge questions. Do them again using only your notes as reference. That will allow you to know if you need to enhance them or if they are good enough for the final | Did you get lost? Where? Why? Get to the answer without using google or chatgpt. Annotate and add those annotations to your notes | Need more help? Take a look at the extra section of the website and the youtube channel | . ",
     "url": "/final_exam/final_exam/#concepts-to-study",
     
     "relUrl": "/final_exam/final_exam/#concepts-to-study"
-  },"219": {
+  },"217": {
     "doc": "Final Exam Study Guide",
     "title": "Regarding shell scripting:",
     "content": ". | How to create and execute a basic script . | The Bash Shell Lecture - Page 28 | . | How to create user defined variables and environment variables . | The Linux Filesystem Lecture - Page 40 | . | How to use positional parameters . | Shell Scripting - Getting user input Lecture - page 3 - 6 | . | How to use command substitution to store the output of a command in a variable . | Shell Scripting - Getting user input Lecture - Page 7 | . | . ",
     "url": "/final_exam/final_exam/#regarding-shell-scripting",
     
     "relUrl": "/final_exam/final_exam/#regarding-shell-scripting"
-  },"220": {
+  },"218": {
     "doc": "Final Exam Study Guide",
     "title": "How to practice shell scripting for your final exam.",
     "content": "Challenge yourself to write these scripts. Try to do them on your own simply using your notes and the presentation. Everytime you find yourself lost, take notes of the problem and the solution so that you can have it for reference. Script 1: Using Echo and environment variables . Write a shell script that will display the following output: . The challenge here is to: . | Use echo to display messages that include tabs and new lines | Use echo and environment variables together | In this screenshot I use HOME, USER, PWD, and OLDPWD | There is also a cd command in there | . Script 2: Using user defined variables and user input . Write a shell script that will ask the user several questions, store the responses in variables and then use those variables in a single echo command. The output should look like this: . The challenge here is to: . | Collect user information and store in a variable | Use the variables in an echo command to generate a multi line message | You have to use a single echo command | . Script 3: Using positional parameters . Write a shell script that will take 3 positional parameters. The first parameter is the name of a new directory, the second and third are file names. Use the mkdir to create the directory, and then touch to create the 2 files in the new directory. DO NOT USE CD! Here is the output of the script: . The challenge here is to: . | Use positional parameters with echo, mkdir, touch and tree. | Remember to use quotes around your variables. For example tree \"$1\" | Use positional parameters and brace expansion to create the files | . Script 4: Extra! . Create a script that generates this output. Here are the special characters: . ┌ ┐ └ ┘ │ ─ . ",
     "url": "/final_exam/final_exam/#how-to-practice-shell-scripting-for-your-final-exam",
     
     "relUrl": "/final_exam/final_exam/#how-to-practice-shell-scripting-for-your-final-exam"
-  },"221": {
+  },"219": {
     "doc": "ANSI Escape Sequences",
     "title": "ANSI Escape Sequences",
     "content": "| Escape Sequence | Effect | . | \\033[0m | Reset / Normal | . | \\033[1m | Bold / Increased intensity | . | \\033[2m | Faint / Decreased intensity (may not display) | . | \\033[3m | Italicized (not supported in some terminals) | . | \\033[4m | Underlined | . | \\033[5m | Blink (often disabled or not supported) | . | \\033[7m | Inverted / Reverse video | . | \\033[8m | Hidden (conceal text) | . | \\033[9m | Strikethrough text (not widely supported) | . | \\033[10m | Primary font (not widely used) | . | \\033[11m-19m | Alternate fonts 1-9 (rarely supported) | . | \\033[21m | Bold off (reset bold) | . | \\033[22m | Normal color (no bold, no underlined) | . | \\033[23m | Not italicized (reset italic) | . | \\033[24m | Not underlined (remove underline) | . | \\033[25m | Blink off (remove blink) | . | \\033[27m | Reverse off (reset reverse video) | . | \\033[28m | Reveal (unhide text) | . | \\033[29m | Reset strikethrough (remove strikethrough effect) | . | \\033[30m | Set text color to black | . | \\033[31m | Set text color to red | . | \\033[32m | Set text color to green | . | \\033[33m | Set text color to yellow | . | \\033[34m | Set text color to blue | . | \\033[35m | Set text color to magenta | . | \\033[36m | Set text color to cyan | . | \\033[37m | Set text color to white | . | \\033[38m | Set custom text color (ANSI 256 colors or RGB values) | . | \\033[39m | Reset text color to default | . | \\033[40m | Set background color to black | . | \\033[41m | Set background color to red | . | \\033[42m | Set background color to green | . | \\033[43m | Set background color to yellow | . | \\033[44m | Set background color to blue | . | \\033[45m | Set background color to magenta | . | \\033[46m | Set background color to cyan | . | \\033[47m | Set background color to white | . | \\033[48m | Set custom background color (ANSI 256 colors or RGB) | . | \\033[49m | Reset background color to default | . | \\033[50m | Fraktur (not widely supported) | . | \\033[51m | Framed (rarely supported) | . | \\033[52m | Encircled (rarely supported) | . All unsafe sequences are bold. Unsafe means that the particular sequence is not universally supported across terminal emulators. ",
     "url": "/bash/ANSI_escape_sequences/",
     
     "relUrl": "/bash/ANSI_escape_sequences/"
-  },"222": {
+  },"220": {
     "doc": "ANSI Escape Sequences",
     "title": "What are ANSI Escape Sequences/Characters?",
     "content": "ANSI escape characters are sequences of characters used to control text formatting, color, and cursor movement in your terminal. They are used for text styling, color formatting, cursor control and screen movements. They are common in shell scripts. ",
     "url": "/bash/ANSI_escape_sequences/#what-are-ansi-escape-sequencescharacters",
     
     "relUrl": "/bash/ANSI_escape_sequences/#what-are-ansi-escape-sequencescharacters"
-  },"223": {
+  },"221": {
     "doc": "ANSI Escape Sequences",
     "title": "Structure of ANSI Escape Sequences",
     "content": "Take the following Escape Sequence: \\033[31m This is used to set the text color to RED. ANSI Escape codes follow the following formula/patter: . ESC[&lt;parameters&gt;&lt;command&gt; . | ESC (\\033 or \\x1B): Starts the sequence | [ ... ]: The Control Sequence Introducer (CSI) | &lt;parameters&gt;: (optional) Numeric values separated by semicolons (;) to define styles or actions | &lt;command&gt;: A letter that specifies the action. | . ANSI Commands: . Notice that each of text formatting ends in a lowercase m. That is because m is the command for applying the color formatting. There are formats you should be aware exist too. | H: move the cursor to a specified position. Ex. \\033[10;10H moves the cursor to row 10 column 10 | J: Clears part of the screen. Ex: \\033[2J Will clear the screen | K: Clears part of a line. Ex. \\033[3D\\033[K clears from Cursor to End of Line. | . Be aware that H,J,K, may not be supported by your terminal emulator, bash version, or operating system all together. M is more widely supported but still there are many codes that are not. How can I use these codes in my scripts? . The easiest way is to assign them to variables and then use them as you would any other value. For example, . #!/bin/bash RESET=\"\\033[0m\" BOLD=\"\\033[1m\" RED=\"\\033[31m\" echo -e $BOLD$RED\"This text is red\"$RESET . Keep in mind that you must use the reset sequence when you are done formatting otherwise it will keep the formatting for the rest of the script. The example above will set the text color to RED and the font style to bold. You can also download and import some of the sequences in the table above and use the colors as variables. Here is the source file: ansi_sequences.sh. And here is how you can add it to your scripts . Note: Your must have curl instaled . I recommend this example for times when you will the script once. #!/bin/bash curl https://cis106.com/assets/scripts/ansi_escape_codes.sh -o ansi_codes source ansi_codes # Place the rest of your script here echo -e $BackgroundYellow echo -e \"┌───────────────────────────────────────┐\" echo -e \"│ Random Text Goes in this banner │\" echo -e \"└───────────────────────────────────────┘\" echo $Reset # End of script rm ansi_codes # This will remove the ansi_codes file. If you plan on using these codes frequently, here is a better snippet that checks if the file ansi_codes is in your current directory or not. If it is, it skips the curl command. #!/bin/bash [ ! -e ansi_codes ] &amp;&amp; [ ! -s ansi_codes ] &amp;&amp; curl -s https://cis106.com/assets/scripts/ansi_escape_codes.sh -o ansi_codes source ansi_codes . Example: . #!/bin/bash [ ! -e ansi_codes ] &amp;&amp; [ ! -s ansi_codes ] &amp;&amp; curl -s https://cis106.com/assets/scripts/ansi_escape_codes.sh -o ansi_codes source ansi_codes # Place the rest of your script here echo -e $BackgroundYellow\"┌───────────────────────────────────────┐\"$Reset echo -e $BackgroundYellow\"│\"$Blue\" Random Text Goes in this banner\"$Reset$BackgroundYellow\" │\"$Reset echo -e $BackgroundYellow\"└───────────────────────────────────────┘\"$Reset # End of script . ",
     "url": "/bash/ANSI_escape_sequences/#structure-of-ansi-escape-sequences",
     
     "relUrl": "/bash/ANSI_escape_sequences/#structure-of-ansi-escape-sequences"
-  },"224": {
+  },"222": {
     "doc": "Bash Checks",
     "title": "Bash Checks",
     "content": " ",
     "url": "/bash/checks/",
     
     "relUrl": "/bash/checks/"
-  },"225": {
+  },"223": {
     "doc": "Bash Checks",
     "title": "Bash Checks in Markdown Table",
     "content": " ",
     "url": "/bash/checks/#bash-checks-in-markdown-table",
     
     "relUrl": "/bash/checks/#bash-checks-in-markdown-table"
-  },"226": {
+  },"224": {
     "doc": "Bash Checks",
     "title": "1. String Checks",
     "content": "| Check | Description | Returns True If | Example | . | [ -z \"$string\" ] | String is empty | The string has zero length | [ -z \"\" ] &amp;&amp; echo \"Empty\" | . | [ -n \"$string\" ] | String is not empty | The string has non-zero length | [ -n \"Hello\" ] &amp;&amp; echo \"Not Empty\" | . | [ \"$string1\" = \"$string2\" ] | Strings are equal | Both strings are identical | [ \"Hello\" = \"Hello\" ] &amp;&amp; echo \"Equal\" | . | [ \"$string1\" != \"$string2\" ] | Strings are not equal | Both strings are different | [ \"Hello\" != \"World\" ] &amp;&amp; echo \"Not Equal\" | . ",
     "url": "/bash/checks/#1-string-checks",
     
     "relUrl": "/bash/checks/#1-string-checks"
-  },"227": {
+  },"225": {
     "doc": "Bash Checks",
     "title": "2. Number Checks",
     "content": "| Check | Description | Returns True If | Example | . | [ \"$num1\" -eq \"$num2\" ] | Numbers are equal | $num1 is equal to $num2 | [ 5 -eq 5 ] &amp;&amp; echo \"Equal\" | . | [ \"$num1\" -ne \"$num2\" ] | Numbers are not equal | $num1 is not equal to $num2 | [ 5 -ne 10 ] &amp;&amp; echo \"Not Equal\" | . | [ \"$num1\" -gt \"$num2\" ] | Number is greater than | $num1 is greater than $num2 | [ 10 -gt 5 ] &amp;&amp; echo \"Greater\" | . | [ \"$num1\" -lt \"$num2\" ] | Number is less than | $num1 is less than $num2 | [ 5 -lt 10 ] &amp;&amp; echo \"Less\" | . | [ \"$num1\" -ge \"$num2\" ] | Number is greater or equal | $num1 is greater than or equal to $num2 | [ 10 -ge 10 ] &amp;&amp; echo \"Greater/Equal\" | . | [ \"$num1\" -le \"$num2\" ] | Number is less or equal | $num1 is less than or equal to $num2 | [ 5 -le 10 ] &amp;&amp; echo \"Less/Equal\" | . ",
     "url": "/bash/checks/#2-number-checks",
     
     "relUrl": "/bash/checks/#2-number-checks"
-  },"228": {
+  },"226": {
     "doc": "Bash Checks",
     "title": "3. File Checks",
     "content": "| Check | Description | Returns True If | Example | . | [ -e \"$file\" ] | File exists | The file exists | [ -e \"file.txt\" ] &amp;&amp; echo \"Exists\" | . | [ -d \"$file\" ] | File is a directory | The file is a directory | [ -d \"folder\" ] &amp;&amp; echo \"Directory\" | . | [ -r \"$file\" ] | File is readable | The file is readable | [ -r \"file.txt\" ] &amp;&amp; echo \"Readable\" | . | [ -w \"$file\" ] | File is writable | The file is writable | [ -w \"file.txt\" ] &amp;&amp; echo \"Writable\" | . | [ -x \"$file\" ] | File is executable | The file is executable | [ -x \"script.sh\" ] &amp;&amp; echo \"Executable\" | . | [ -s \"$file\" ] | File is not empty | The file is not empty | [ -s \"file.txt\" ] &amp;&amp; echo \"Not Empty\" | . | [ -L \"$file\" ] | File is a symbolic link | The file is a symbolic link | [ -L \"link\" ] &amp;&amp; echo \"Symbolic Link\" | . ",
     "url": "/bash/checks/#3-file-checks",
     
     "relUrl": "/bash/checks/#3-file-checks"
-  },"229": {
+  },"227": {
     "doc": "Bash Comments",
     "title": "Using Comments in Bash",
     "content": "In Bash scripting, comments are used to annotate code, making it easier to understand and maintain. Bash supports single-line comments natively and provides workarounds for multi-line comments. ",
     "url": "/bash/comments/#using-comments-in-bash",
     
     "relUrl": "/bash/comments/#using-comments-in-bash"
-  },"230": {
+  },"228": {
     "doc": "Bash Comments",
     "title": "Bash Comments",
     "content": " ",
     "url": "/bash/comments/",
     
     "relUrl": "/bash/comments/"
-  },"231": {
+  },"229": {
     "doc": "Bash Comments",
     "title": "Single line",
     "content": "# This is a comment echo \"hello world\" . ",
     "url": "/bash/comments/#single-line",
     
     "relUrl": "/bash/comments/#single-line"
-  },"232": {
+  },"230": {
     "doc": "Bash Comments",
     "title": "Single in line comment",
     "content": "echo \"hello world\" # prints hello world ls -lh \"$dir\"/* # long list all files inside $dir . ",
     "url": "/bash/comments/#single-in-line-comment",
     
     "relUrl": "/bash/comments/#single-in-line-comment"
-  },"233": {
+  },"231": {
     "doc": "Bash Comments",
     "title": "Multi line comment style 1",
     "content": "# This is a multiline comment # and here is line 2 # Line 3 echo \"hello world\" . ",
     "url": "/bash/comments/#multi-line-comment-style-1",
     
     "relUrl": "/bash/comments/#multi-line-comment-style-1"
-  },"234": {
+  },"232": {
     "doc": "Bash Comments",
     "title": "Multi line comment - Here document",
     "content": ": &lt;&lt; 'COMMENT' This is a multi-line comment. We can add as much text as we want between the comment tags and it will be ignored by the shell. COMMENT echo \"hello world\" . The key word does not need to be COMMENT. It can be any string. The static part is the :, &lt;&lt; and ' around the keyword. Here is another example: . : &lt;&lt; 'HERE' this is another multiline comment See?! another line and another line HERE echo \"hello world\" . ",
     "url": "/bash/comments/#multi-line-comment---here-document",
     
     "relUrl": "/bash/comments/#multi-line-comment---here-document"
-  },"235": {
+  },"233": {
     "doc": "Bash Functions",
     "title": "Bash Functions",
     "content": "A function is just a small reusable pease of code. It does something and return its result back to the program. It can also return nothing. ",
     "url": "/bash/functions/#bash-functions",
     
     "relUrl": "/bash/functions/#bash-functions"
-  },"236": {
+  },"234": {
     "doc": "Bash Functions",
     "title": "1. Bash Basic function",
     "content": "# Option 1 function function_name() { # body of function here } # Option 2 function_name(){ # body of function here } # to call function: function_name . | Keep in Mind . | Bash functions do not return values. They can return: . | An exit status using return | A value using a variable (global or local) | value via STDOUT - This requests command substitution | . | . | . ",
     "url": "/bash/functions/#1-bash-basic-function",
     
     "relUrl": "/bash/functions/#1-bash-basic-function"
-  },"237": {
+  },"235": {
     "doc": "Bash Functions",
     "title": "2. Return an exit status",
     "content": "# Checks if $1 exist. 0 = true, 1 = false potato(){ [ -f \"$1\" ] &amp;&amp; return 0 || return 1 } potato \"$1\" # We can then use the $? to create logic with the exit status code. [ $? -eq 0 ] &amp;&amp; echo \"$1 exist\" || echo \"$1 doesn't exist\" . ",
     "url": "/bash/functions/#2-return-an-exit-status",
     
     "relUrl": "/bash/functions/#2-return-an-exit-status"
-  },"238": {
+  },"236": {
     "doc": "Bash Functions",
     "title": "3. Returning values with variables",
     "content": "# Using a global variable: potato(){ greeting=\"Good Morning, $1\" } potato \"Mary\" echo \"$greeting\" # Using local variable potato(){ local name=\"$1\" local age=\"$2\" local email=\"$3\" echo -e \"Hello $name\\nAt $age you will need a bigger boat.\\n\\tSent from $email\" } potato \"Mary\" \"43\" \"admin@mail.com\" . ",
     "url": "/bash/functions/#3-returning-values-with-variables",
     
     "relUrl": "/bash/functions/#3-returning-values-with-variables"
-  },"239": {
+  },"237": {
     "doc": "Bash Functions",
     "title": "4. Returning value with command substitution",
     "content": "potato() { local greeting=\"Hello, $1!\" echo \"$greeting\" } result=$(potato \"Bobby\") echo \"$result\" . ",
     "url": "/bash/functions/#4-returning-value-with-command-substitution",
     
     "relUrl": "/bash/functions/#4-returning-value-with-command-substitution"
-  },"240": {
+  },"238": {
     "doc": "Bash Functions",
     "title": "5. Can I return a status code and value at the same time?",
     "content": "Yes. Here is an example: . is_even(){ local numb=$1 if (( numb % 2 == 0 )) then echo \"even\" return 0 else echo \"not even\" return 1 fi } result=$(is_even $1) status_code=$? echo \"the $1 number is $result\" . Side Note: The example script above has a couple of gotchas. If you pass a letter instead of a number it tells you that it is even. How so?? Well, bash does arithmetic evaluation using ((...)) inside these parentheses everything is an integer. This means that every non-integer character is considered a 0 by bash. Notice that I said integer and not number. That is because bash does not support floating point numbers. You need an external utility (like bc) to handle floating point numbers. The next gotcha is the lack of $ in the numb variable. As you already know, in order to access the value of a variable, you need to preface it with a $, however, because the ((...)) are already expecting an integer, the $ becomes optional. The script below is a complete version that handles non integer input. #!/bin/bash is_even() { local numb=$1 # Ensure the input is a number if ! [[ \"$numb\" =~ ^-?[0-9]+$ ]]; then echo \"Error: Input is not an integer\" return 2 # Use a special return code for invalid input fi # Proceed with even/odd check if (( numb % 2 == 0 )); then echo \"even\" return 0 else echo \"not even\" return 1 fi } # Call the function with the user's input result=$(is_even \"$1\") status_code=$? # Check the return code if [ $status_code -eq 2 ]; then echo \"Invalid input: $1 is not an integer.\" else echo \"The $1 number is $result.\" fi . 5.1. Whats up with the arguments? . Just like your script, functions take arguments (positional parameters). These work the same way. Say that you run the script ./playground.sh john carla with the following code: . #!/bin/bash echo \"parameter/argument 1: $1\" echo \"parameter/argument 2: $2\" potato(){ echo \"In the function 1: $1\" echo \"In the function 2: $2\" } potato \"peter\" \"jane\" echo \"Passing the same parameters to the function:\" potato \"$1\" \"$2\" . The output will be: . parameter/argument 1: john parameter/argument 2: carla In the function 1: peter In the function 2: jane Passing the same parameters to the function: In the function 1: john In the function 2: carla . Notice that lines 1 and 2 have the arguments we passed to script but lines 3 and 4 have the arguments we passed to the function. You can passed the same arguments you gave to the script to the function too as you can see in lines 7 and 8 . ",
     "url": "/bash/functions/#5-can-i-return-a-status-code-and-value-at-the-same-time",
     
     "relUrl": "/bash/functions/#5-can-i-return-a-status-code-and-value-at-the-same-time"
-  },"241": {
+  },"239": {
     "doc": "Bash Functions",
     "title": "6. Move advanced examples of functions",
     "content": "6.1. Returning the content of an array . #!/bin/bash all_ip_addresses() { local ips=(\"192.168.1.10\" \"192.168.1.12\" \"192.168.1.14\") echo \"${ips[@]}\" } array=($(all_ip_addresses)) for ip in ${array[@]} do ping -c 4 $ip done . 6.2. Returning an array with mapfile . #!/bin/bash potato() { local dir=\"$1\" local fname=\"$2\" find \"$dir\" -iname \"*$fname\" -type f -print0 } # Use process substitution to pass the function's output to mapfile mapfile -d '' search &lt; &lt;(potato \"$1\" \"$2\") # Access array elements echo \"First member: ${search[0]}\" echo \"Last member: ${search[-1]}\" echo \"Length: ${#search[@]}\" # Process each file for file in \"${search[@]}\"; do # Display file details in a formatted way ls -lhgG --time-style=+%D \"$file\" | grep -v \"total\" | column -t done . Side note: The print0 option of the find command command is used to handle files with special characters in the name (ex. spaces). print0 tells find to separate filenames with a null character (\\0) instead of a newline. 6.3. Using an associative array . #!/bin/bash # Function to get disk usage as an associative array get_disk_usage() { declare -A disk_info local df_output df_output=$(df -h / | tail -1) disk_info[total]=$(echo \"$df_output\" | awk '{print $2}') disk_info[used]=$(echo \"$df_output\" | awk '{print $3}') disk_info[available]=$(echo \"$df_output\" | awk '{print $4}') disk_info[usage_percent]=$(echo \"$df_output\" | awk '{print $5}') # Return the associative array echo \"$(declare -p disk_info)\" } # Call the function and capture the associative array eval \"$(get_disk_usage)\" # Access and display the values from the associative array echo \"Disk Usage Information for '/':\" echo -e \"Total Space:\\t${disk_info[total]}\" echo -e \"Used Space:\\t${disk_info[used]}\" echo -e \"Avail. Space:\\t${disk_info[available]}\" echo -e \"Usage %:\\t${disk_info[usage_percent]}\" . Side Note: declare -p disk_info outputs the array definition as a string that can be re-evaluated using eval. ",
     "url": "/bash/functions/#6-move-advanced-examples-of-functions",
     
     "relUrl": "/bash/functions/#6-move-advanced-examples-of-functions"
-  },"242": {
+  },"240": {
     "doc": "Bash Functions",
     "title": "Bash Functions",
     "content": ". | . | Bash Basic function | . | . | Return an exit status | . | . | Returning values with variables | . | . | Returning value with command substitution | . | . | Can I return a status code and value at the same time? . | 5.1. Whats up with the arguments? | . | . | . | Move advanced examples of functions . | 6.1. Returning the content of an array | 6.2. Returning an array with mapfile | 6.3. Using an associative array | . | . | . ",
