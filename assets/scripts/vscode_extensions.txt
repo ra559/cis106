@@ -1,0 +1,9 @@
+adsoncicilioti.yaru-vscode
+mechatroner.rainbow-csv
+pkief.material-icon-theme
+ritwickdey.liveserver
+shd101wyy.markdown-preview-enhanced
+streetsidesoftware.code-spell-checker
+tyriar.lorem-ipsum
+yzane.markdown-pdf
+yzhang.markdown-all-in-one
