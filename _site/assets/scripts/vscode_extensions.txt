@@ -1,0 +1,11 @@
+adsoncicilioti.yaru-vscode
+janisdd.vscode-edit-csv
+mechatroner.rainbow-csv
+oderwat.indent-rainbow
+pkief.material-icon-theme
+ritwickdey.liveserver
+shd101wyy.markdown-preview-enhanced
+streetsidesoftware.code-spell-checker
+tyriar.lorem-ipsum
+yzane.markdown-pdf
+yzhang.markdown-all-in-one
