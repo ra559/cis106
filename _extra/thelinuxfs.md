@@ -15,6 +15,25 @@ title: The Linux FS
   <img src="/assets/the_linux_fs.png" alt="the linux fs"/>
 </p>
 
+- [{{page.title}}](#pagetitle)
+  - [Other Review Videos:](#other-review-videos)
+  - [Basic Concepts](#basic-concepts)
+    - [Special characters:](#special-characters)
+    - [Bash Environment Variables](#bash-environment-variables)
+    - [Bash Tips:](#bash-tips)
+  - [Commands to navigate the linux filesystem](#commands-to-navigate-the-linux-filesystem)
+    - [PWD](#pwd)
+    - [CD](#cd)
+    - [Practice CD command:](#practice-cd-command)
+    - [LS](#ls)
+      - [Output of LS -L explained:](#output-of-ls--l-explained)
+    - [Practice LS command:](#practice-ls-command)
+    - [Tree](#tree)
+    - [EXA](#exa)
+  - [What will you submit for extra credit](#what-will-you-submit-for-extra-credit)
+
+
+
 ## Basic Concepts
 <hr>
 
@@ -124,7 +143,7 @@ Try to complete these tasks without looking at the solution. Use the image below
 <button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('cd-practice');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
 <p align="center" style="display:none" id='cd-practice'><img src="/assets/review_assets/cd_practice.png" alt="parent vs child directory"/></p>
 
-
+> If you are doing this activity for the extra credit. Take a screenshot of the terminal showing all the commands you used to complete the practice
 
 ### LS
 * **Usage**
@@ -175,7 +194,10 @@ Try to complete these tasks without looking at the solution.
 <button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('ls-practice');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
 <p align="center" style="display:none" id='ls-practice'><img src="/assets/review_assets/ls_practice.png"/></p>
 
- 
+
+> If you are doing this activity for the extra credit. Take a screenshot of the terminal showing all the commands you used to complete the practice
+
+
 ### Tree
 * **Usage**
   * used to display a recursive directory listing (tree) of files.
@@ -210,3 +232,19 @@ Try to complete these tasks without looking at the solution.
 
 <hr>
 
+
+## What will you submit for extra credit
+1. In your cis106 directory/local repository, create a new directory called "ExtraCredit" (One word no spaces in file names pleases!)
+2. Inside "ExtraCredit", create another directory called "extra3"
+3. Open your cis106 directory/local repository in VS Code
+4. Inside "extra3" create a markdown file called "extra3.md"
+5. Add all the screenshots to "extra2.md" using proper markdown syntax and labeling each screenshot using heading 2 formatting. Save the markdown file.
+6. Your markdown document should start with the following heading1: `# Extra Credit 3: The Linux FS`
+7. Convert your file to PDF
+8. Run the github commands, in VS Code Terminal, to push all your changes to github:
+   1. `gid add .`
+   2. `git commit -m "Completed Extra 1"`
+   3. `git push`
+9. In blackboard submit the following:
+   1.  The URL of `extra3.md` 
+   2.  The PDF file `extra3.pdf`
