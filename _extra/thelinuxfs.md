@@ -234,11 +234,11 @@ Try to complete these tasks without looking at the solution.
 
 
 ## What will you submit for extra credit
-1. In your cis106 directory/local repository, create a new directory called "ExtraCredit" (One word no spaces in file names pleases!)
-2. Inside "ExtraCredit", create another directory called "extra3"
+1. In your cis106 directory/local repository, create a new directory called `ExtraCredit` (One word no spaces in file names pleases!)
+2. Inside `ExtraCredit`, create another directory called `extra3`
 3. Open your cis106 directory/local repository in VS Code
-4. Inside "extra3" create a markdown file called "extra3.md"
-5. Add all the screenshots to "extra2.md" using proper markdown syntax and labeling each screenshot using heading 2 formatting. Save the markdown file.
+4. Inside `extra3` create a markdown file called `extra3.md`
+5. Add all the screenshots to `extra3.md` using proper markdown syntax and labeling each screenshot using heading 2 formatting. Save the markdown file.
 6. Your markdown document should start with the following heading1: `# Extra Credit 3: The Linux FS`
 7. Convert your file to PDF
 8. Run the github commands, in VS Code Terminal, to push all your changes to github:
