@@ -1590,7 +1590,7 @@
   },"227": {
     "doc": "The Linux FS",
     "title": "Other Review Videos:",
-    "content": ". | REVIEW 4: The LS command and Practice | Linux Tutorials The ls command GeeksforGeeks | How to Use The ls Command on the Linux Command Line | . ",
+    "content": ". | REVIEW 4: The LS command and Practice | Linux Tutorials The ls command GeeksforGeeks | How to Use The ls Command on the Linux Command Line | . | The Linux FS . | Other Review Videos: | Basic Concepts . | Special characters: | Bash Environment Variables | Bash Tips: | . | Commands to navigate the linux filesystem . | PWD | CD | Practice CD command: | LS . | Output of LS -L explained: | . | Practice LS command: | Tree | EXA | . | What will you submit for extra credit | . | . ",
     "url": "/extra/thelinuxfs/#other-review-videos",
     
     "relUrl": "/extra/thelinuxfs/#other-review-videos"
@@ -1604,249 +1604,312 @@
   },"229": {
     "doc": "The Linux FS",
     "title": "Commands to navigate the linux filesystem",
-    "content": "To navigate the linux filesystem, you only need to master 3 commands: cd, pwd and ls. While there are other useful commands, those can be considered complimentary and you should learn them after you have mastered those 3. PWD . | Usage . | Displays the absolute path of the current working directory. | . | Formula . | pwd | . | Examples . | Print the absolute path of current working directory . | pwd | . | . | . CD . | Usage . | Changes the current working directory. In other words, it moves you from one directory to another. By default, it will always send you to your home directory. | . | Formula . | cd + destination absolute path or relative path | . | Examples . | Go (change your current directory) to your home directory (there is more than 1 way of doing this): . | cd (without any arguments, cd will take you home) | cd ~ (using the ~ special character. as ~ will expand to the absolute path of the user’s home directory) | cd $HOME (using the $HOME environment variable) | cd /home/$USER/Downloads (using $USER environment variable in the path) | . | Go to a specified directory with absolute path: . | cd /usr/share/themes | . | Go to a specified directory with relative path assuming your current working directory is /home . | cd maria53/Downloads/ | . | Go to the previous working directory. This is useful when you are working with 2 directories located far in the directory tree . | cd - | . | Go to the previous directory in the directory tree. One directory above. | cd ../ | . | Go to 2 directories above the directory tree . | cd ../../ | . | . | . Practice CD command: . Try to complete these tasks without looking at the solution. Use the image below as a reference: . | Using absolute path, go to the directory “/user/share/themes/Adwaita” | Go back to your home directory. | Go back to the “/user/share/themes/Adwaita” using the - special character. | Go to the root of the filesystem using the “..” special character. | Go to your “Downloads” directory 1 directory at the time. Display/Print your present working directory once you have reached the “Downloads” directory. | Go back to your home directory and then to the “Pictures” directory. | . Show Solution . LS . | Usage . | ls is used for listing files and directories. By default it will list the current directory when no directory is specified. Listing means to see what is inside a directory. | . | Formula . | ls + option + directory to list | . | Examples . | See all the options of the ls command (extracted from the man page): . | ls --help | . | List the current directory: . | ls | . | List all the files including hidden files in current directory: . | ls -A | . | List all the files inside a given directory: . | ls -A /usr/share/fonts/X11 (absolute path) | ls -A Documents/ (relative path assuming that the $PWD is $HOME) | . | Long list a directory . | ls -lA ~/Pictures | . | List a directory recursively . | ls -R Documents/ | . | Long list a directory only . | ls -ld Documents/ | . | List a directory sorted by last modified . | ls -t Documents/ | . | List a directory sorted by file size . | ls -S Documents/ | . | Long list a directory excluding group and owner information, with human readable file size and sorted in reverse order. | ls -lhgGr Documents/ | . | . | . Output of LS -L explained: . Practice LS command: . Try to complete these tasks without looking at the solution. | Use this command to download some example files: curl https://raw.githubusercontent.com/ra559/cis106/main/assets/scripts/practice_ls.sh | bash | The command above will create a directory in your home directory called practicels Here you will find 10 example files to practice ls. If the command above did not work, read the output carefully and try to fix it yourself. You can also download the zip file on your own. Read the basic script for the URL. | . | list all the files in the practice directory. | long list all the files in the practice directory. | long list all the files in the practice directory sorted by file size with human readable file sizes | long list all the files in the practice directory sorted by file size with human readable file sizes and in reverse order. | long list all the files in the practice directory without the group and owner, with human readable file sizes, sorted by file extension and with full time stamp. | . Show Solution . Tree . | Usage . | used to display a recursive directory listing (tree) of files. | . | Formula . | tree + option + directory | . | Examples . | Display a tree of the home directory . | tree ~ or tree $HOME or tree /home/$USER | . | Display a tree of a directory with file permissions . | tree -p ~/practicels | . | Display a tree of a directory with the full path prefix, with the user and group owner, human readable file sizes, and the date of last modified. | tree -pughD ~/practicels/ | . | . | . EXA . | Usage . | Used the same way as ls. To list files and directories. Exa is a modern replacement for ls written in Rust. Exa is not installed by default. You will need to install it using your linux distribution package manager. | . | Formula . | exa + option + directory | . | Examples . | list all files in a given directory in a single line . | exa -1 ~/practicels | . | long list all the files in a given directory . | exa -l ~/practicels | . | long list all the files in a given directory with headers . | exa -lh ~/practicels | . | list a directory in a tree like format . | exa -T ~/practicels | . | . | . ",
+    "content": "To navigate the linux filesystem, you only need to master 3 commands: cd, pwd and ls. While there are other useful commands, those can be considered complimentary and you should learn them after you have mastered those 3. PWD . | Usage . | Displays the absolute path of the current working directory. | . | Formula . | pwd | . | Examples . | Print the absolute path of current working directory . | pwd | . | . | . CD . | Usage . | Changes the current working directory. In other words, it moves you from one directory to another. By default, it will always send you to your home directory. | . | Formula . | cd + destination absolute path or relative path | . | Examples . | Go (change your current directory) to your home directory (there is more than 1 way of doing this): . | cd (without any arguments, cd will take you home) | cd ~ (using the ~ special character. as ~ will expand to the absolute path of the user’s home directory) | cd $HOME (using the $HOME environment variable) | cd /home/$USER/Downloads (using $USER environment variable in the path) | . | Go to a specified directory with absolute path: . | cd /usr/share/themes | . | Go to a specified directory with relative path assuming your current working directory is /home . | cd maria53/Downloads/ | . | Go to the previous working directory. This is useful when you are working with 2 directories located far in the directory tree . | cd - | . | Go to the previous directory in the directory tree. One directory above. | cd ../ | . | Go to 2 directories above the directory tree . | cd ../../ | . | . | . Practice CD command: . Try to complete these tasks without looking at the solution. Use the image below as a reference: . | Using absolute path, go to the directory “/user/share/themes/Adwaita” | Go back to your home directory. | Go back to the “/user/share/themes/Adwaita” using the - special character. | Go to the root of the filesystem using the “..” special character. | Go to your “Downloads” directory 1 directory at the time. Display/Print your present working directory once you have reached the “Downloads” directory. | Go back to your home directory and then to the “Pictures” directory. | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of the terminal showing all the commands you used to complete the practice . LS . | Usage . | ls is used for listing files and directories. By default it will list the current directory when no directory is specified. Listing means to see what is inside a directory. | . | Formula . | ls + option + directory to list | . | Examples . | See all the options of the ls command (extracted from the man page): . | ls --help | . | List the current directory: . | ls | . | List all the files including hidden files in current directory: . | ls -A | . | List all the files inside a given directory: . | ls -A /usr/share/fonts/X11 (absolute path) | ls -A Documents/ (relative path assuming that the $PWD is $HOME) | . | Long list a directory . | ls -lA ~/Pictures | . | List a directory recursively . | ls -R Documents/ | . | Long list a directory only . | ls -ld Documents/ | . | List a directory sorted by last modified . | ls -t Documents/ | . | List a directory sorted by file size . | ls -S Documents/ | . | Long list a directory excluding group and owner information, with human readable file size and sorted in reverse order. | ls -lhgGr Documents/ | . | . | . Output of LS -L explained: . Practice LS command: . Try to complete these tasks without looking at the solution. | Use this command to download some example files: curl https://raw.githubusercontent.com/ra559/cis106/main/assets/scripts/practice_ls.sh | bash | The command above will create a directory in your home directory called practicels Here you will find 10 example files to practice ls. If the command above did not work, read the output carefully and try to fix it yourself. You can also download the zip file on your own. Read the basic script for the URL. | . | list all the files in the practice directory. | long list all the files in the practice directory. | long list all the files in the practice directory sorted by file size with human readable file sizes | long list all the files in the practice directory sorted by file size with human readable file sizes and in reverse order. | long list all the files in the practice directory without the group and owner, with human readable file sizes, sorted by file extension and with full time stamp. | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of the terminal showing all the commands you used to complete the practice . Tree . | Usage . | used to display a recursive directory listing (tree) of files. | . | Formula . | tree + option + directory | . | Examples . | Display a tree of the home directory . | tree ~ or tree $HOME or tree /home/$USER | . | Display a tree of a directory with file permissions . | tree -p ~/practicels | . | Display a tree of a directory with the full path prefix, with the user and group owner, human readable file sizes, and the date of last modified. | tree -pughD ~/practicels/ | . | . | . EXA . | Usage . | Used the same way as ls. To list files and directories. Exa is a modern replacement for ls written in Rust. Exa is not installed by default. You will need to install it using your linux distribution package manager. | . | Formula . | exa + option + directory | . | Examples . | list all files in a given directory in a single line . | exa -1 ~/practicels | . | long list all the files in a given directory . | exa -l ~/practicels | . | long list all the files in a given directory with headers . | exa -lh ~/practicels | . | list a directory in a tree like format . | exa -T ~/practicels | . | . | . ",
     "url": "/extra/thelinuxfs/#commands-to-navigate-the-linux-filesystem",
     
     "relUrl": "/extra/thelinuxfs/#commands-to-navigate-the-linux-filesystem"
   },"230": {
+    "doc": "The Linux FS",
+    "title": "What will you submit for extra credit",
+    "content": ". | In your cis106 directory/local repository, create a new directory called ExtraCredit (One word no spaces in file names pleases!) | Inside ExtraCredit, create another directory called extra3 | Open your cis106 directory/local repository in VS Code | Inside extra3 create a markdown file called extra3.md | Add all the screenshots to extra3.md using proper markdown syntax and labeling each screenshot using heading 2 formatting. Save the markdown file. | Your markdown document should start with the following heading1: # Extra Credit 3: The Linux FS | Convert your file to PDF | Run the github commands, in VS Code Terminal, to push all your changes to github: . | gid add . | git commit -m \"Completed Extra 1\" | git push | . | In blackboard submit the following: . | The URL of extra3.md | The PDF file extra3.pdf | . | . ",
+    "url": "/extra/thelinuxfs/#what-will-you-submit-for-extra-credit",
+    
+    "relUrl": "/extra/thelinuxfs/#what-will-you-submit-for-extra-credit"
+  },"231": {
     "doc": "Wildcards",
     "title": "Wildcards",
     "content": "Note: Work in progress. ",
     "url": "/extra/wildcards/",
     
     "relUrl": "/extra/wildcards/"
-  },"231": {
+  },"232": {
     "doc": "Wildcards",
     "title": "Description",
     "content": "Wildcards or file globing is a shell feature that, using special characters, allows us to rapidly specify groups of filenames. Because we work with files all the time, it is useful to be able to work with multiple files at the same time. Why and when should I use a wildcard? . Using wildcards can save you a lot of time. Imagine you need to move all the text files in a folder. You could move them one by one—if you know each file’s name. But what if there are 300 files? Moving them one at a time would take forever! Wildcards help you by allowing you to match all files that meet a certain pattern or criteria, so you can move them all at once with a single command. Here are some examples: . | Copy all photos from a drive to a flash drive. | Delete certain types of files from a folder. | List all files that have a date in their name. | . There are only 3 wildcards. Here is how they work: . | Wildcard | definition | example | . | * | matches 0 to any number of characters | ls ~/Downloads/*.png | . | ? | matches 1 character | ls ~/Downloads/f?ll.sh | . | [] | matches 1 character from a set | ls ~/Downloads/f[0-9]ll.sh | . ",
     "url": "/extra/wildcards/#description",
     
     "relUrl": "/extra/wildcards/#description"
-  },"232": {
+  },"233": {
     "doc": "Wildcards",
     "title": "What does “matches x number of character” really mean?",
     "content": "This refers to the number of characters in the file name that can be matched everytime the wildcard is used in a command. For example, here is an illustration using the * wildcard: . Notice that because the * wildcard matches 0 characters and also any number of characters, this command: ls *SC*.png matches the files Script_remover.sh and BackupScript.sh. To practice the wildcards, run this command: . curl https://cis106.com/assets/extras/wildcards.sh | bash . This will create a directory in your home directory called wildcard_extra_practice. This directory contains a bunch of files and directories (created at random). All the examples here will use the files in this directory. ",
     "url": "/extra/wildcards/#what-does-matches-x-number-of-character-really-mean",
     
     "relUrl": "/extra/wildcards/#what-does-matches-x-number-of-character-really-mean"
-  },"233": {
+  },"234": {
     "doc": "Wildcards",
     "title": "The * (star/asterisk) wildcard",
     "content": "Examples: . | list all of the directories inside a given directory without listing their content . | ls -1d wildcard_extra_practice/*/ | . | move all the .sh (shell scripts) files . | mv wildcard_extra_practice/*.sh wildcard_extra_practice/scripts/ | . | list and then move all the image files in the wildcard_extra_practice directory. You will need to create a directory first. | mkdir wildcard_extra_practice/images/ | ls wildcard_extra_practice/img-*.* | mv -v wildcard_extra_practice/img-*.*images/ | . | . ",
     "url": "/extra/wildcards/#the--starasterisk-wildcard",
     
     "relUrl": "/extra/wildcards/#the--starasterisk-wildcard"
-  },"234": {
+  },"235": {
     "doc": "Wildcards",
     "title": "The ? (question mark) wildcard",
     "content": "Examples: . | List all the files that contain a 4 letter file extension. | ls -1X wildcard_extra_practice/*.???? | . | List all the files that contain a 4 letter file extension and start with letter i: . | ls -1X wildcard_extra_practice/i*.???? | . | List all th files Microsoft Office 365 files. | ls -1X wildcard_extra_practice/*.???x | . | . ",
     "url": "/extra/wildcards/#the--question-mark-wildcard",
     
     "relUrl": "/extra/wildcards/#the--question-mark-wildcard"
-  },"235": {
+  },"236": {
     "doc": "Wildcards",
     "title": "The [] (square brackets) wildcard",
     "content": "| POSIX class | Represents | Means | Example using ls | . | [:upper:] | [A-Z] | Uppercase letters | ls *[[:upper:]]* - List files with uppercase letters | . | [:lower:] | [a-z] | Lowercase letters | ls *[[:lower:]]* - List files with lowercase letters | . | [:digit:] | [0-9] | Digits | ls *[[:digit:]]* - List files containing digits | . | [:alpha:] | [A-Za-z] | Alphabetic characters | ls *[[:alpha:]]* - List files with alphabetic characters | . | [:alnum:] | [A-Za-z0-9] | Alphanumeric characters | ls *[[:alnum:]]* - List files with alphanumeric characters | . | [:space:] | [ \\t\\n\\r\\f\\v] | Whitespace characters | ls *[[:space:]]* - List files with spaces in names | . | [:punct:] | Punctuation | Punctuation characters | ls *[[:punct:]]* - List files with punctuation characters | . | [:blank:] | [ \\t] | Space and tab | ls *[[:blank:]]* - List files with spaces or tabs | . | [:xdigit:] | [0-9A-Fa-f] | Hexadecimal digits | ls *[[:xdigit:]]* - List files with hexadecimal characters | . | [:cntrl:] | Control characters | Control characters | ls *[[:cntrl:]]* - List files with control characters | . | [:print:] | Printable | Printable characters | ls *[[:print:]]* - List files with printable characters | . | [:graph:] | Graphical | Visible characters (not spaces) | ls *[[:graph:]]* - List files with graphical characters | . | [:word:] | [A-Za-z0-9_] | Word characters (alphanumeric + underscore) | ls *[[:word:]]* - List files containing word characters | . | [:ascii:] | ASCII characters | All ASCII characters (0-127) | ls *[[:ascii:]]* - List files containing ASCII characters | . Examples: . | List all the files that start with a capital letter . | ls wildcard_extra_practice/[A-Z]* | . | List all the files that contain a number in their name . | `ls wildcard_extra_practice/[0-9] | . | . Note: . | Wildcards also have their limitations. | For instance, “List all the files that do not contain a digit in the file name” You may assume that the approach would be ls *[!0-9]*. However, this does not work. This wildcard translates to: “all files and directories in the current directory whose names contain at least one character that is not a digit (0-9)” However, if you ever need this, here are two approaches: . | Use ls + grep: . | ls *[!0-9]* | grep -v '[0-9]' | . | Use find: . | find ./ -not -name '*[0-9]*' | . | Find is preferred for scripts because ls is not suited for shell scripts. ls is intended to be a human friendly tool and the output is difficult to parse properly. | . | . ",
     "url": "/extra/wildcards/#the--square-brackets-wildcard",
     
     "relUrl": "/extra/wildcards/#the--square-brackets-wildcard"
-  },"236": {
+  },"237": {
     "doc": "Final Exam Study Guide",
     "title": "Final Exam Study Guide",
     "content": ". ",
     "url": "/final_exam/final_exam/",
     
     "relUrl": "/final_exam/final_exam/"
-  },"237": {
+  },"238": {
     "doc": "Final Exam Study Guide",
     "title": "Special Note:",
     "content": ". | The final exam is in person. | The exam is performance based and will require access to a Linux Virtual Machine. | If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you. | . ",
     "url": "/final_exam/final_exam/#special-note",
     
     "relUrl": "/final_exam/final_exam/#special-note"
-  },"238": {
+  },"239": {
     "doc": "Final Exam Study Guide",
     "title": "Recommendations",
     "content": ". | Arrive to the classroom 30 minutes before the exam starts (5:00 PM) . | This will allow you to test your virtual machine, perform any maintenance, test your internet connection, do a test pull and push, and troubleshoot any hardware problem. | . | Make sure your github repository is organized . | Since you are allowed to use your notes during your exam, it is to your benefit to have all your notes organized. | I recommend creating a single document with all of notes and converting it to pdf. This will make it easier to find information. | BE AWARE that you can only use your notes - NOT YOUR LABS - for the exam. So if I catch you looking at your labs, presentations, book, or the internet during the exam, this will constitute cheating and your exam will be terminated | . | Update Windows and Ubuntu the day before the final exam . | Do not update virtualbox | Create a snapshot of your virtual machine before updating. If anyting goes wrong, you will be able to recover. | . | If you plan on using one of my computers: . | Arrive 15 to 20 minutes early | You will need to clone your repository | You will need to make sure everything works for you | . | . WARNING Your lack of preparation does not constitute an emergency for me. There are no make up exams. You are either here for the exam or your are not! There is another class after our class. Which means that the exam starts at 5:40 and ends at 6:55 on the dot! You must save the last 10 minutes of the exam to prepare your submission. ",
     "url": "/final_exam/final_exam/#recommendations",
     
     "relUrl": "/final_exam/final_exam/#recommendations"
-  },"239": {
+  },"240": {
     "doc": "Final Exam Study Guide",
     "title": "Commands to study",
     "content": ". | Make sure you understand them well. Then include 3 - 5 examples that you understand and can use without any challenge. | Don’t memorize. | awk | cat | cp | cut | grep | head | ls | man | mkdir | mv | tac | tail | touch | tr | tree | . ",
     "url": "/final_exam/final_exam/#commands-to-study",
     
     "relUrl": "/final_exam/final_exam/#commands-to-study"
-  },"240": {
+  },"241": {
     "doc": "Final Exam Study Guide",
     "title": "Concepts to study",
     "content": "Working with Git, GitHub, and Markdown . | How to create a github repository | How to clone a github repository | How to use the git commands | How to write a markdown file that contains images and proper headings | How to convert a markdown file to pdf | . How to Practice? . | Create a repository in github. Give it any name you want. | Clone the repository in your virtual machine | Open the repository/folder/directory in vs code | Create a markdown file inside containing random text. Make sure you have headings, images, pagrapaths, bullet points etc… | Convert the file to html and pdf | Push everything to github | Do you see the files there? | Add a couple more html files by repeating the process. | Did you get lost? if so, you know what you need to study! | . Linux Specific Concents . | How to compress (zip) a directory/folder | The linux filesystem | Absolute path and relative path | When should you use absolute vs relative | Moving around the filesystem with absolute and relative (pwd,cd, ls, and tree) | How to work with multiple terminals open? | How to work with manual pages? | How to parse (search) for specific words in the manual page | How to redirect output (&gt;, &gt;&gt;, and |) | How to append the output of a command to a file | How and when to redirect the output of a command to another (pipes) | How to use echo and output redirection to create a new file that contains some text | How to use wildcards . | For copying and moving multiple files at the same time | . | How to use brace expansion . | For creating entire directory structures in a single command | . | . How to practice? . | Go through the presentations and try to do the practice without looking at the solutions. | Go over all the challenge questions. Do them again using only your notes as reference. That will allow you to know if you need to enhance them or if they are good enough for the final | Did you get lost? Where? Why? Get to the answer without using google or chatgpt. Annotate and add those annotations to your notes | Need more help? Take a look at the extra section of the website and the youtube channel | . ",
     "url": "/final_exam/final_exam/#concepts-to-study",
     
     "relUrl": "/final_exam/final_exam/#concepts-to-study"
-  },"241": {
+  },"242": {
     "doc": "Final Exam Study Guide",
     "title": "Regarding shell scripting:",
     "content": ". | How to create and execute a basic script . | The Bash Shell Lecture - Page 28 | . | How to create user defined variables and environment variables . | The Linux Filesystem Lecture - Page 40 | . | How to use positional parameters . | Shell Scripting - Getting user input Lecture - page 3 - 6 | . | How to use command substitution to store the output of a command in a variable . | Shell Scripting - Getting user input Lecture - Page 7 | . | . ",
     "url": "/final_exam/final_exam/#regarding-shell-scripting",
     
     "relUrl": "/final_exam/final_exam/#regarding-shell-scripting"
-  },"242": {
+  },"243": {
     "doc": "Final Exam Study Guide",
     "title": "How to practice shell scripting for your final exam.",
     "content": "Challenge yourself to write these scripts. Try to do them on your own simply using your notes and the presentation. Everytime you find yourself lost, take notes of the problem and the solution so that you can have it for reference. Script 1: Using Echo and environment variables . Write a shell script that will display the following output: . The challenge here is to: . | Use echo to display messages that include tabs and new lines | Use echo and environment variables together | In this screenshot I use HOME, USER, PWD, and OLDPWD | There is also a cd command in there | . Script 2: Using user defined variables and user input . Write a shell script that will ask the user several questions, store the responses in variables and then use those variables in a single echo command. The output should look like this: . The challenge here is to: . | Collect user information and store in a variable | Use the variables in an echo command to generate a multi line message | You have to use a single echo command | . Script 3: Using positional parameters . Write a shell script that will take 3 positional parameters. The first parameter is the name of a new directory, the second and third are file names. Use the mkdir to create the directory, and then touch to create the 2 files in the new directory. DO NOT USE CD! Here is the output of the script: . The challenge here is to: . | Use positional parameters with echo, mkdir, touch and tree. | Remember to use quotes around your variables. For example tree \"$1\" | Use positional parameters and brace expansion to create the files | . Script 4: Extra! . Create a script that generates this output. Here are the special characters: . ┌ ┐ └ ┘ │ ─ . ",
     "url": "/final_exam/final_exam/#how-to-practice-shell-scripting-for-your-final-exam",
     
     "relUrl": "/final_exam/final_exam/#how-to-practice-shell-scripting-for-your-final-exam"
-  },"243": {
+  },"244": {
     "doc": "ANSI Escape Sequences",
     "title": "ANSI Escape Sequences",
     "content": "| Escape Sequence | Effect | . | \\033[0m | Reset / Normal | . | \\033[1m | Bold / Increased intensity | . | \\033[2m | Faint / Decreased intensity (may not display) | . | \\033[3m | Italicized (not supported in some terminals) | . | \\033[4m | Underlined | . | \\033[5m | Blink (often disabled or not supported) | . | \\033[7m | Inverted / Reverse video | . | \\033[8m | Hidden (conceal text) | . | \\033[9m | Strikethrough text (not widely supported) | . | \\033[10m | Primary font (not widely used) | . | \\033[11m-19m | Alternate fonts 1-9 (rarely supported) | . | \\033[21m | Bold off (reset bold) | . | \\033[22m | Normal color (no bold, no underlined) | . | \\033[23m | Not italicized (reset italic) | . | \\033[24m | Not underlined (remove underline) | . | \\033[25m | Blink off (remove blink) | . | \\033[27m | Reverse off (reset reverse video) | . | \\033[28m | Reveal (unhide text) | . | \\033[29m | Reset strikethrough (remove strikethrough effect) | . | \\033[30m | Set text color to black | . | \\033[31m | Set text color to red | . | \\033[32m | Set text color to green | . | \\033[33m | Set text color to yellow | . | \\033[34m | Set text color to blue | . | \\033[35m | Set text color to magenta | . | \\033[36m | Set text color to cyan | . | \\033[37m | Set text color to white | . | \\033[38m | Set custom text color (ANSI 256 colors or RGB values) | . | \\033[39m | Reset text color to default | . | \\033[40m | Set background color to black | . | \\033[41m | Set background color to red | . | \\033[42m | Set background color to green | . | \\033[43m | Set background color to yellow | . | \\033[44m | Set background color to blue | . | \\033[45m | Set background color to magenta | . | \\033[46m | Set background color to cyan | . | \\033[47m | Set background color to white | . | \\033[48m | Set custom background color (ANSI 256 colors or RGB) | . | \\033[49m | Reset background color to default | . | \\033[50m | Fraktur (not widely supported) | . | \\033[51m | Framed (rarely supported) | . | \\033[52m | Encircled (rarely supported) | . All unsafe sequences are bold. Unsafe means that the particular sequence is not universally supported across terminal emulators. ",
     "url": "/bash/ANSI_escape_sequences/",
     
     "relUrl": "/bash/ANSI_escape_sequences/"
-  },"244": {
+  },"245": {
     "doc": "ANSI Escape Sequences",
     "title": "What are ANSI Escape Sequences/Characters?",
     "content": "ANSI escape characters are sequences of characters used to control text formatting, color, and cursor movement in your terminal. They are used for text styling, color formatting, cursor control and screen movements. They are common in shell scripts. ",
     "url": "/bash/ANSI_escape_sequences/#what-are-ansi-escape-sequencescharacters",
     
     "relUrl": "/bash/ANSI_escape_sequences/#what-are-ansi-escape-sequencescharacters"
-  },"245": {
+  },"246": {
     "doc": "ANSI Escape Sequences",
     "title": "Structure of ANSI Escape Sequences",
     "content": "Take the following Escape Sequence: \\033[31m This is used to set the text color to RED. ANSI Escape codes follow the following formula/patter: . ESC[&lt;parameters&gt;&lt;command&gt; . | ESC (\\033 or \\x1B): Starts the sequence | [ ... ]: The Control Sequence Introducer (CSI) | &lt;parameters&gt;: (optional) Numeric values separated by semicolons (;) to define styles or actions | &lt;command&gt;: A letter that specifies the action. | . ANSI Commands: . Notice that each of text formatting ends in a lowercase m. That is because m is the command for applying the color formatting. There are formats you should be aware exist too. | H: move the cursor to a specified position. Ex. \\033[10;10H moves the cursor to row 10 column 10 | J: Clears part of the screen. Ex: \\033[2J Will clear the screen | K: Clears part of a line. Ex. \\033[3D\\033[K clears from Cursor to End of Line. | . Be aware that H,J,K, may not be supported by your terminal emulator, bash version, or operating system all together. M is more widely supported but still there are many codes that are not. How can I use these codes in my scripts? . The easiest way is to assign them to variables and then use them as you would any other value. For example, . #!/bin/bash RESET=\"\\033[0m\" BOLD=\"\\033[1m\" RED=\"\\033[31m\" echo -e $BOLD$RED\"This text is red\"$RESET . Keep in mind that you must use the reset sequence when you are done formatting otherwise it will keep the formatting for the rest of the script. The example above will set the text color to RED and the font style to bold. You can also download and import some of the sequences in the table above and use the colors as variables. Here is the source file: ansi_sequences.sh. And here is how you can add it to your scripts . Note: Your must have curl instaled . I recommend this example for times when you will the script once. #!/bin/bash curl https://cis106.com/assets/scripts/ansi_escape_codes.sh -o ansi_codes source ansi_codes # Place the rest of your script here echo -e $BackgroundYellow echo -e \"┌───────────────────────────────────────┐\" echo -e \"│ Random Text Goes in this banner │\" echo -e \"└───────────────────────────────────────┘\" echo $Reset # End of script rm ansi_codes # This will remove the ansi_codes file. If you plan on using these codes frequently, here is a better snippet that checks if the file ansi_codes is in your current directory or not. If it is, it skips the curl command. #!/bin/bash [ ! -e ansi_codes ] &amp;&amp; [ ! -s ansi_codes ] &amp;&amp; curl -s https://cis106.com/assets/scripts/ansi_escape_codes.sh -o ansi_codes source ansi_codes . Example: . #!/bin/bash [ ! -e ansi_codes ] &amp;&amp; [ ! -s ansi_codes ] &amp;&amp; curl -s https://cis106.com/assets/scripts/ansi_escape_codes.sh -o ansi_codes source ansi_codes # Place the rest of your script here echo -e $BackgroundYellow\"┌───────────────────────────────────────┐\"$Reset echo -e $BackgroundYellow\"│\"$Blue\" Random Text Goes in this banner\"$Reset$BackgroundYellow\" │\"$Reset echo -e $BackgroundYellow\"└───────────────────────────────────────┘\"$Reset # End of script . ",
     "url": "/bash/ANSI_escape_sequences/#structure-of-ansi-escape-sequences",
     
     "relUrl": "/bash/ANSI_escape_sequences/#structure-of-ansi-escape-sequences"
-  },"246": {
+  },"247": {
+    "doc": "Arrays",
+    "title": "Arrays",
+    "content": ". | Arrays . | What is an array? | Declaring an array . | Method 1: Using Parenthesis | Method 2: Using declare command | . | Accessing elements of an array . | Examples | . | Modifying an array | Looping through an array . | Using for | Interesting example: | Using while | Using until | Interesting Example | . | Working with associative arrays . | Create an associative array: | Accessing values | . | Array operations | . | . ",
+    "url": "/bash/arrays/",
+    
+    "relUrl": "/bash/arrays/"
+  },"248": {
+    "doc": "Arrays",
+    "title": "What is an array?",
+    "content": "An array in Bash is a data structure that can store multiple values in a single variable. There are two types of arrays in bash: . | Indexed arrays: this type uses numeric indenes starting at 0 | Associative Arrays: this type uses keys (like a dictionary) | . ",
+    "url": "/bash/arrays/#what-is-an-array",
+    
+    "relUrl": "/bash/arrays/#what-is-an-array"
+  },"249": {
+    "doc": "Arrays",
+    "title": "Declaring an array",
+    "content": "Method 1: Using Parenthesis . The formula is simple: array name+=+(+elements separated by a space+). Example: . #!/bin/bash # Array declaration example users=(\"john\" \"Mary\" \"Peter\" \"Ivan\") . This method is used for creating indexed arrays. It cannot be used to create associative arrays. Method 2: Using declare command . The declare command is used to create and modify variables. It allows to control the scope of the variables as well. In the case of arrays, we can use to create indexed arrays or associative arrays. The syntax is: declare+options+array_name+=+value . Example: . #!/bin/bash # Indexed array declare -a users=(\"john\" \"peter\" \"joe\") # Accessing values echo ${users[0]}1 . #!/bin/bash declare -A user # Assign values user[\"name\"]=\"Alice\" user[\"age\"]=35 user[\"eyes\"]=\"brown\" user[\"city\"]=\"New York\" user[\"email\"]=\"alice_88@email.com\" user[\"username\"]=\"a_wa339\" # accessing values: echo -e ${user[\"name\"]} lives in ${user[\"city\"]}. She is ${user[\"age\"]} years old \\ her eyes color is ${user[\"eyes\"]}. Her email address is ${user[\"email\"]}. ",
+    "url": "/bash/arrays/#declaring-an-array",
+    
+    "relUrl": "/bash/arrays/#declaring-an-array"
+  },"250": {
+    "doc": "Arrays",
+    "title": "Accessing elements of an array",
+    "content": "The formula to access the an element of an array is as follows: . | $+{+name_of_array+[+index+]+} | . Examples . #!/bin/bash users=(\"john\" \"peter\" \"mario\") echo ${users[0]} # outputs john echo ${users[*]} # outputs all elements echo ${users[@]} # outputs all elements echo ${#users[@]} # Array length echo ${users[-1]} # Last element . ",
+    "url": "/bash/arrays/#accessing-elements-of-an-array",
+    
+    "relUrl": "/bash/arrays/#accessing-elements-of-an-array"
+  },"251": {
+    "doc": "Arrays",
+    "title": "Modifying an array",
+    "content": ". | To add an element to the end of an array: . | array_name+=(element) | Example: users+=(\"fred\") | . | To update a given element: . | array_name[index_here]=\"element\" | Example: users[0]=\"root\" | . | To remove an element: . | unset array_name[index_to_delete] | Example: unset users[-1] | . | To clear an entire array: . | unset array_name | Example: unset users | . | . #!/bin/bash users=(\"john\" \"peter\" \"mario\") echo -e \"Current size:\\t${#users[*]}\" echo -e \"Adding a new element: fred\" users+=(\"fred\") #adding element echo -e \"New size:\\t${#users[*]}\" echo -e \"All elements\\t${users[*]}\" echo -e \"Updating first element to root\" users[0]=\"root\" # updating first element echo \"All element: ${users[*]}\" echo \"Removing last element\" unset users[-1] # removing last element echo \"All elements: ${users[*]}\" echo \"Clearing array\" unset users echo \"All elements: ${users[*]}\" . ",
+    "url": "/bash/arrays/#modifying-an-array",
+    
+    "relUrl": "/bash/arrays/#modifying-an-array"
+  },"252": {
+    "doc": "Arrays",
+    "title": "Looping through an array",
+    "content": "Using for . Example: . #!/bin/bash users=(\"john\" \"peter\" \"mario\") for user in \"${users[*]}\" do echo \"Current user: $user\" done # Example using indexes: for i in \"${!users[@]}\" do echo \"User $i =&gt; ${users[$i]}\" done . Interesting example: . Create a script that will get an array of all the users in a system then display each user name . #!/bin/bash users=($(awk -F\":\" '{print $1}' /etc/passwd | tr '\\n' \" \")) for user in \"${users[@]}\" do echo \"User: $user\" done . Using while . Example: . #!/bin/bash users=(\"john\" \"peter\" \"mario\") index=0 while [[ $index -lt ${#users[@]} ]] do echo \"User $index =&gt; ${users[$index]}\" ((index++)) done . | This loop runs until the index is less than the length of the array | . Using until . #!/bin/bash users=(\"john\" \"peter\" \"mario\") index=0 until [[ $index -ge ${#users[@]} ]] do echo \"User $index =&gt; ${users[$index]}\" ((index++)) done . | The until loop continues until the condition becomes true. The opposite of a while loop. | . Interesting Example . | You can use until and arrays to validate user input when the input is predictable. | For example, you need the user to answer in one of the following forms: y Y Yes YES No NO n | . #!/bin/bash valid=(\"y\" \"Y\" \"YES\" \"Yes\" \"yes\" \"n\" \"N\" \"no\" \"No\" \"NO\") input=\"\" until [[ \"${valid[@]}\" =~ \"$input\" ]] do read -p \"Continue? (y/n) \" input done echo \"The answer is correct: $input\" . ",
+    "url": "/bash/arrays/#looping-through-an-array",
+    
+    "relUrl": "/bash/arrays/#looping-through-an-array"
+  },"253": {
+    "doc": "Arrays",
+    "title": "Working with associative arrays",
+    "content": "Create an associative array: . Associative arrays use key value pairs to store date. For instance, you can have an array of values that stores the user’s name and their corresponding ip address. Example: . #!/bin/bash declare -A users players=([bob]=\"192.168.1.16\" [mary]=\"192.168.1.17\" [joe]=\"192.168.1.18\") echo \"${players[bob]}\" . Accessing values . declare -A users users=([bob]=\"192.168.1.16\" [mary]=\"192.168.1.17\" [joe]=\"192.168.1.18\") echo \"${users[bob]}\" ## Looping through keys for key in \"${!users[@]}\" do echo \"$key's ip is: ${users[$key]}\" done . ",
+    "url": "/bash/arrays/#working-with-associative-arrays",
+    
+    "relUrl": "/bash/arrays/#working-with-associative-arrays"
+  },"254": {
+    "doc": "Arrays",
+    "title": "Array operations",
+    "content": "#!/bin/bash users=($(awk -F\":\" '{print $1}' /etc/passwd | tr '\\n' \" \")) # Slicing echo \"${users[@]:1:2}\" # Start at index 1, take 2 elements # Sorting sortedUsers=($(printf \"%s\\n\" \"${users[@]}\" | sort)) echo \"${sortedUsers[@]}\" # Searching for a given element search_string=$(echo $USER) for item in \"${sortedUsers[@]}\" do if [ \"$item\" == \"$search_string\" ] then echo \"array contains $search_string\" if done ## passing an array to a function print_users(){ local array=(\"$@\") for item in \"${array[@]}\" do echo \"$item\" done } print_users \"${sorted_users[@]}\" ## Reading an array from a file mapfile -t my_array &lt; file.txt echo \"${my_array[@]}\" . ",
+    "url": "/bash/arrays/#array-operations",
+    
+    "relUrl": "/bash/arrays/#array-operations"
+  },"255": {
     "doc": "Bash Checks",
     "title": "Bash Checks",
     "content": " ",
     "url": "/bash/checks/",
     
     "relUrl": "/bash/checks/"
-  },"247": {
+  },"256": {
     "doc": "Bash Checks",
     "title": "Bash Checks in Markdown Table",
     "content": " ",
     "url": "/bash/checks/#bash-checks-in-markdown-table",
     
     "relUrl": "/bash/checks/#bash-checks-in-markdown-table"
-  },"248": {
+  },"257": {
     "doc": "Bash Checks",
     "title": "1. String Checks",
     "content": "| Check | Description | Returns True If | Example | . | [ -z \"$string\" ] | String is empty | The string has zero length | [ -z \"\" ] &amp;&amp; echo \"Empty\" | . | [ -n \"$string\" ] | String is not empty | The string has non-zero length | [ -n \"Hello\" ] &amp;&amp; echo \"Not Empty\" | . | [ \"$string1\" = \"$string2\" ] | Strings are equal | Both strings are identical | [ \"Hello\" = \"Hello\" ] &amp;&amp; echo \"Equal\" | . | [ \"$string1\" != \"$string2\" ] | Strings are not equal | Both strings are different | [ \"Hello\" != \"World\" ] &amp;&amp; echo \"Not Equal\" | . ",
     "url": "/bash/checks/#1-string-checks",
     
     "relUrl": "/bash/checks/#1-string-checks"
-  },"249": {
+  },"258": {
     "doc": "Bash Checks",
     "title": "2. Number Checks",
     "content": "| Check | Description | Returns True If | Example | . | [ \"$num1\" -eq \"$num2\" ] | Numbers are equal | $num1 is equal to $num2 | [ 5 -eq 5 ] &amp;&amp; echo \"Equal\" | . | [ \"$num1\" -ne \"$num2\" ] | Numbers are not equal | $num1 is not equal to $num2 | [ 5 -ne 10 ] &amp;&amp; echo \"Not Equal\" | . | [ \"$num1\" -gt \"$num2\" ] | Number is greater than | $num1 is greater than $num2 | [ 10 -gt 5 ] &amp;&amp; echo \"Greater\" | . | [ \"$num1\" -lt \"$num2\" ] | Number is less than | $num1 is less than $num2 | [ 5 -lt 10 ] &amp;&amp; echo \"Less\" | . | [ \"$num1\" -ge \"$num2\" ] | Number is greater or equal | $num1 is greater than or equal to $num2 | [ 10 -ge 10 ] &amp;&amp; echo \"Greater/Equal\" | . | [ \"$num1\" -le \"$num2\" ] | Number is less or equal | $num1 is less than or equal to $num2 | [ 5 -le 10 ] &amp;&amp; echo \"Less/Equal\" | . ",
     "url": "/bash/checks/#2-number-checks",
     
     "relUrl": "/bash/checks/#2-number-checks"
-  },"250": {
+  },"259": {
     "doc": "Bash Checks",
     "title": "3. File Checks",
     "content": "| Check | Description | Returns True If | Example | . | [ -e \"$file\" ] | File exists | The file exists | [ -e \"file.txt\" ] &amp;&amp; echo \"Exists\" | . | [ -d \"$file\" ] | File is a directory | The file is a directory | [ -d \"folder\" ] &amp;&amp; echo \"Directory\" | . | [ -r \"$file\" ] | File is readable | The file is readable | [ -r \"file.txt\" ] &amp;&amp; echo \"Readable\" | . | [ -w \"$file\" ] | File is writable | The file is writable | [ -w \"file.txt\" ] &amp;&amp; echo \"Writable\" | . | [ -x \"$file\" ] | File is executable | The file is executable | [ -x \"script.sh\" ] &amp;&amp; echo \"Executable\" | . | [ -s \"$file\" ] | File is not empty | The file is not empty | [ -s \"file.txt\" ] &amp;&amp; echo \"Not Empty\" | . | [ -L \"$file\" ] | File is a symbolic link | The file is a symbolic link | [ -L \"link\" ] &amp;&amp; echo \"Symbolic Link\" | . ",
     "url": "/bash/checks/#3-file-checks",
     
     "relUrl": "/bash/checks/#3-file-checks"
-  },"251": {
+  },"260": {
     "doc": "Bash Comments",
     "title": "Using Comments in Bash",
     "content": "In Bash scripting, comments are used to annotate code, making it easier to understand and maintain. Bash supports single-line comments natively and provides workarounds for multi-line comments. ",
     "url": "/bash/comments/#using-comments-in-bash",
     
     "relUrl": "/bash/comments/#using-comments-in-bash"
-  },"252": {
+  },"261": {
     "doc": "Bash Comments",
     "title": "Bash Comments",
     "content": " ",
     "url": "/bash/comments/",
     
     "relUrl": "/bash/comments/"
-  },"253": {
+  },"262": {
     "doc": "Bash Comments",
     "title": "Single line",
     "content": "# This is a comment echo \"hello world\" . ",
     "url": "/bash/comments/#single-line",
     
     "relUrl": "/bash/comments/#single-line"
-  },"254": {
+  },"263": {
     "doc": "Bash Comments",
     "title": "Single in line comment",
     "content": "echo \"hello world\" # prints hello world ls -lh \"$dir\"/* # long list all files inside $dir . ",
     "url": "/bash/comments/#single-in-line-comment",
     
     "relUrl": "/bash/comments/#single-in-line-comment"
-  },"255": {
+  },"264": {
     "doc": "Bash Comments",
     "title": "Multi line comment style 1",
     "content": "# This is a multiline comment # and here is line 2 # Line 3 echo \"hello world\" . ",
     "url": "/bash/comments/#multi-line-comment-style-1",
     
     "relUrl": "/bash/comments/#multi-line-comment-style-1"
-  },"256": {
+  },"265": {
     "doc": "Bash Comments",
     "title": "Multi line comment - Here document",
     "content": ": &lt;&lt; 'COMMENT' This is a multi-line comment. We can add as much text as we want between the comment tags and it will be ignored by the shell. COMMENT echo \"hello world\" . The key word does not need to be COMMENT. It can be any string. The static part is the :, &lt;&lt; and ' around the keyword. Here is another example: . : &lt;&lt; 'HERE' this is another multiline comment See?! another line and another line HERE echo \"hello world\" . ",
     "url": "/bash/comments/#multi-line-comment---here-document",
     
     "relUrl": "/bash/comments/#multi-line-comment---here-document"
-  },"257": {
+  },"266": {
     "doc": "Bash Functions",
     "title": "Bash Functions",
     "content": "A function is just a small reusable pease of code. It does something and return its result back to the program. It can also return nothing. ",
     "url": "/bash/functions/#bash-functions",
     
     "relUrl": "/bash/functions/#bash-functions"
-  },"258": {
+  },"267": {
     "doc": "Bash Functions",
     "title": "1. Bash Basic function",
     "content": "# Option 1 function function_name() { # body of function here } # Option 2 function_name(){ # body of function here } # to call function: function_name . | Keep in Mind . | Bash functions do not return values. They can return: . | An exit status using return | A value using a variable (global or local) | value via STDOUT - This requests command substitution | . | . | . ",
     "url": "/bash/functions/#1-bash-basic-function",
     
     "relUrl": "/bash/functions/#1-bash-basic-function"
-  },"259": {
+  },"268": {
     "doc": "Bash Functions",
     "title": "2. Return an exit status",
     "content": "# Checks if $1 exist. 0 = true, 1 = false potato(){ [ -f \"$1\" ] &amp;&amp; return 0 || return 1 } potato \"$1\" # We can then use the $? to create logic with the exit status code. [ $? -eq 0 ] &amp;&amp; echo \"$1 exist\" || echo \"$1 doesn't exist\" . ",
     "url": "/bash/functions/#2-return-an-exit-status",
     
     "relUrl": "/bash/functions/#2-return-an-exit-status"
-  },"260": {
+  },"269": {
     "doc": "Bash Functions",
     "title": "3. Returning values with variables",
     "content": "# Using a global variable: potato(){ greeting=\"Good Morning, $1\" } potato \"Mary\" echo \"$greeting\" # Using local variable potato(){ local name=\"$1\" local age=\"$2\" local email=\"$3\" echo -e \"Hello $name\\nAt $age you will need a bigger boat.\\n\\tSent from $email\" } potato \"Mary\" \"43\" \"admin@mail.com\" . ",
     "url": "/bash/functions/#3-returning-values-with-variables",
     
     "relUrl": "/bash/functions/#3-returning-values-with-variables"
-  },"261": {
+  },"270": {
     "doc": "Bash Functions",
     "title": "4. Returning value with command substitution",
     "content": "potato() { local greeting=\"Hello, $1!\" echo \"$greeting\" } result=$(potato \"Bobby\") echo \"$result\" . ",
     "url": "/bash/functions/#4-returning-value-with-command-substitution",
     
     "relUrl": "/bash/functions/#4-returning-value-with-command-substitution"
-  },"262": {
+  },"271": {
     "doc": "Bash Functions",
     "title": "5. Can I return a status code and value at the same time?",
     "content": "Yes. Here is an example: . is_even(){ local numb=$1 if (( numb % 2 == 0 )) then echo \"even\" return 0 else echo \"not even\" return 1 fi } result=$(is_even $1) status_code=$? echo \"the $1 number is $result\" . Side Note: The example script above has a couple of gotchas. If you pass a letter instead of a number it tells you that it is even. How so?? Well, bash does arithmetic evaluation using ((...)) inside these parentheses everything is an integer. This means that every non-integer character is considered a 0 by bash. Notice that I said integer and not number. That is because bash does not support floating point numbers. You need an external utility (like bc) to handle floating point numbers. The next gotcha is the lack of $ in the numb variable. As you already know, in order to access the value of a variable, you need to preface it with a $, however, because the ((...)) are already expecting an integer, the $ becomes optional. The script below is a complete version that handles non integer input. #!/bin/bash is_even() { local numb=$1 # Ensure the input is a number if ! [[ \"$numb\" =~ ^-?[0-9]+$ ]]; then echo \"Error: Input is not an integer\" return 2 # Use a special return code for invalid input fi # Proceed with even/odd check if (( numb % 2 == 0 )); then echo \"even\" return 0 else echo \"not even\" return 1 fi } # Call the function with the user's input result=$(is_even \"$1\") status_code=$? # Check the return code if [ $status_code -eq 2 ]; then echo \"Invalid input: $1 is not an integer.\" else echo \"The $1 number is $result.\" fi . 5.1. Whats up with the arguments? . Just like your script, functions take arguments (positional parameters). These work the same way. Say that you run the script ./playground.sh john carla with the following code: . #!/bin/bash echo \"parameter/argument 1: $1\" echo \"parameter/argument 2: $2\" potato(){ echo \"In the function 1: $1\" echo \"In the function 2: $2\" } potato \"peter\" \"jane\" echo \"Passing the same parameters to the function:\" potato \"$1\" \"$2\" . The output will be: . parameter/argument 1: john parameter/argument 2: carla In the function 1: peter In the function 2: jane Passing the same parameters to the function: In the function 1: john In the function 2: carla . Notice that lines 1 and 2 have the arguments we passed to script but lines 3 and 4 have the arguments we passed to the function. You can passed the same arguments you gave to the script to the function too as you can see in lines 7 and 8 . ",
     "url": "/bash/functions/#5-can-i-return-a-status-code-and-value-at-the-same-time",
     
     "relUrl": "/bash/functions/#5-can-i-return-a-status-code-and-value-at-the-same-time"
-  },"263": {
+  },"272": {
     "doc": "Bash Functions",
     "title": "6. Move advanced examples of functions",
     "content": "6.1. Returning the content of an array . #!/bin/bash all_ip_addresses() { local ips=(\"192.168.1.10\" \"192.168.1.12\" \"192.168.1.14\") echo \"${ips[@]}\" } array=($(all_ip_addresses)) for ip in ${array[@]} do ping -c 4 $ip done . 6.2. Returning an array with mapfile . #!/bin/bash potato() { local dir=\"$1\" local fname=\"$2\" find \"$dir\" -iname \"*$fname\" -type f -print0 } # Use process substitution to pass the function's output to mapfile mapfile -d '' search &lt; &lt;(potato \"$1\" \"$2\") # Access array elements echo \"First member: ${search[0]}\" echo \"Last member: ${search[-1]}\" echo \"Length: ${#search[@]}\" # Process each file for file in \"${search[@]}\"; do # Display file details in a formatted way ls -lhgG --time-style=+%D \"$file\" | grep -v \"total\" | column -t done . Side note: The print0 option of the find command command is used to handle files with special characters in the name (ex. spaces). print0 tells find to separate filenames with a null character (\\0) instead of a newline. 6.3. Using an associative array . #!/bin/bash # Function to get disk usage as an associative array get_disk_usage() { declare -A disk_info local df_output df_output=$(df -h / | tail -1) disk_info[total]=$(echo \"$df_output\" | awk '{print $2}') disk_info[used]=$(echo \"$df_output\" | awk '{print $3}') disk_info[available]=$(echo \"$df_output\" | awk '{print $4}') disk_info[usage_percent]=$(echo \"$df_output\" | awk '{print $5}') # Return the associative array echo \"$(declare -p disk_info)\" } # Call the function and capture the associative array eval \"$(get_disk_usage)\" # Access and display the values from the associative array echo \"Disk Usage Information for '/':\" echo -e \"Total Space:\\t${disk_info[total]}\" echo -e \"Used Space:\\t${disk_info[used]}\" echo -e \"Avail. Space:\\t${disk_info[available]}\" echo -e \"Usage %:\\t${disk_info[usage_percent]}\" . Side Note: declare -p disk_info outputs the array definition as a string that can be re-evaluated using eval. ",
     "url": "/bash/functions/#6-move-advanced-examples-of-functions",
     
     "relUrl": "/bash/functions/#6-move-advanced-examples-of-functions"
-  },"264": {
+  },"273": {
     "doc": "Bash Functions",
     "title": "Bash Functions",
     "content": ". | . | Bash Basic function | . | . | Return an exit status | . | . | Returning values with variables | . | . | Returning value with command substitution | . | . | Can I return a status code and value at the same time? . | 5.1. Whats up with the arguments? | . | . | . | Move advanced examples of functions . | 6.1. Returning the content of an array | 6.2. Returning an array with mapfile | 6.3. Using an associative array | . | . | . ",

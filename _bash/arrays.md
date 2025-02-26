@@ -1,9 +1,29 @@
 ---
-title: Arrays in Bash
+title: Arrays
 layout:  page
 ---
 
 # {{page.title}}
+
+- [{{page.title}}](#pagetitle)
+  - [What is an array?](#what-is-an-array)
+  - [Declaring an array](#declaring-an-array)
+    - [Method 1: Using Parenthesis](#method-1-using-parenthesis)
+    - [Method 2: Using declare command](#method-2-using-declare-command)
+  - [Accessing elements of an array](#accessing-elements-of-an-array)
+    - [Examples](#examples)
+  - [Modifying an array](#modifying-an-array)
+  - [Looping through an array](#looping-through-an-array)
+    - [Using for](#using-for)
+    - [Interesting example:](#interesting-example)
+    - [Using while](#using-while)
+    - [Using until](#using-until)
+    - [Interesting Example](#interesting-example-1)
+  - [Working with associative arrays](#working-with-associative-arrays)
+    - [Create an associative array:](#create-an-associative-array)
+    - [Accessing values](#accessing-values)
+  - [Array operations](#array-operations)
+
 
 ## What is an array?
 
@@ -113,7 +133,8 @@ echo "All elements: ${users[*]}"
 ```
 
 <p>
-<img src="/assets/bash/arrays/modify_array.png">
+<img src="/assets/bash/arrays/modify_array.png"> 
+</p>
 
 ## Looping through an array
 
@@ -219,10 +240,20 @@ echo "The answer is correct: $input"
 
 ### Create an associative array: 
 
+Associative arrays use key value pairs to store date. For instance, you can have an array of values that stores the user's name and their corresponding ip address. 
+
+Example:
+
 ```bash
+#!/bin/bash
 declare -A users
 players=([bob]="192.168.1.16" [mary]="192.168.1.17" [joe]="192.168.1.18")
+echo "${players[bob]}"
 ```
+
+<p>
+<img src="/assets/bash/arrays/associative_array.png">
+</p>
 
 ### Accessing values
 
@@ -238,6 +269,11 @@ do
     echo "$key's ip is: ${users[$key]}"
 done 
 ```
+
+<p>
+<img src="/assets/bash/arrays/accessing_values_aac.png">
+</p>
+
 
 ## Array operations
 
