@@ -98,7 +98,7 @@ Here you will find all the information for the course.
 * **Books** 
   * Main Text Book (free): [The Linux Command Line By William Shotts](https://bit.ly/34Og1Bp)
 * **Other Free Books to Use as reference:**
-  * [GNU/Linux Command−Line Tools Summary](https://rapurl.live/mvh)
+  * [GNU/Linux Command−Line Tools Summary](https://tldp.org/LDP/GNU-Linux-Tools-Summary/GNU-Linux-Tools-Summary.pdf)
   * [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.pdf)
   * [Introduction to bash scripting](https://github.com/bobbyiliev/introduction-to-bash-scripting)
   * [Raspberry Pi Beginner's Guide 4th Edition](http://bit.ly/34QaA4O) *a bit old but still useful
