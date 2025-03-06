@@ -76,16 +76,21 @@ echo "Their name is $name"
 
 2. Notice that the script is using tabs at the beginning of every line and before the variables. 
 3. Save and execute your script.
-4. If you are planning on submitting this for extra credit, remember to take a screenshot of the output.
 
 <button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" 
     onclick="var x = document.getElementById('practice1');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
 <p align="center" style="display:none" id='practice1'><img src="/assets/extras/variables/practice1.png"/></p>
 
+> If you are doing this activity for the extra credit. Take a screenshot of the output of your script (terminal)
 
 
+## Practice 2: Using Environment Variables part 2
+g
+1. Create a shell script that uses the HOME, USER, PWD and OLDPWD environment variables to produce the following output
 
-## Practice 2: Using Environment Variables in my shell script
+<p align="center"> <img href="" ></p>
+
+2. Tips to write the script
 
 
 ## Practice 3: User defined variables
