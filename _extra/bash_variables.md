@@ -72,7 +72,7 @@ echo "Their name is $name"
 ### Scripting part
 1. Create a shell script that will display the following output:
 
-<p align="center"><img src="/assets/bash/variables/practice1_output.png"/></p>
+<p align="center"><img src="/assets/extras/variables/practice1_output.png"/></p>
 
 2. Notice that the script is using tabs at the beginning of every line and before the variables. 
 3. Save and execute your script.
@@ -85,18 +85,42 @@ echo "Their name is $name"
 
 
 ## Practice 2: Using Environment Variables part 2
-g
-1. Create a shell script that uses the HOME, USER, PWD and OLDPWD environment variables to produce the following output
+1. Create a shell script that uses the HOME, PWD and OLDPWD environment variables to produce the following output
 
-<p align="center"> <img href="" ></p>
+<p align="center"><img src="/assets/extras/variables/practice2_output.png"/></p>
 
-2. Tips to write the script
-
+<button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" 
+    onclick="var x = document.getElementById('practice2');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
+<p align="center" style="display:none" id='practice2'><img src="/assets/extras/variables/practice2.png"/></p>
 
 ## Practice 3: User defined variables
 
+Create a script that uses user defined variables to generate the following output:
+
+<p align="center"><img src="/assets/extras/variables/practice3_output.png"/></p>
+
+
+<button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" 
+    onclick="var x = document.getElementById('practice3');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
+<p align="center" style="display:none" id='practice3'><img src="/assets/extras/variables/practice3.png"/></p>
 
 ## Practice 4: Bring it all together
+
+Create a shell script that will generate the following output:
+
+
+<p align="center"><img src="/assets/extras/variables/practice4_output.png"/></p>
+
+
+The script must use the following:
+
+1. Environment variables
+2. User defined variables
+3. The commands: pwd, ls, and cd
+
+<button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" 
+    onclick="var x = document.getElementById('practice4');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
+<p align="center" style="display:none" id='practice4'><img src="/assets/extras/variables/practice4.png"/></p>
 
 
 

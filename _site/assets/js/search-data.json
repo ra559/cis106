@@ -1492,21 +1492,21 @@
   },"213": {
     "doc": "Bash Variables",
     "title": "Practice 2: Using Environment Variables part 2",
-    "content": "g . | Create a shell script that uses the HOME, USER, PWD and OLDPWD environment variables to produce the following output | . | Tips to write the script | . ",
+    "content": ". | Create a shell script that uses the HOME, PWD and OLDPWD environment variables to produce the following output | . Show Solution . ",
     "url": "/extra/bash_variables/#practice-2-using-environment-variables-part-2",
     
     "relUrl": "/extra/bash_variables/#practice-2-using-environment-variables-part-2"
   },"214": {
     "doc": "Bash Variables",
     "title": "Practice 3: User defined variables",
-    "content": " ",
+    "content": "Create a script that uses user defined variables to generate the following output: . Show Solution . ",
     "url": "/extra/bash_variables/#practice-3-user-defined-variables",
     
     "relUrl": "/extra/bash_variables/#practice-3-user-defined-variables"
   },"215": {
     "doc": "Bash Variables",
     "title": "Practice 4: Bring it all together",
-    "content": " ",
+    "content": "Create a shell script that will generate the following output: . The script must use the following: . | Environment variables | User defined variables | The commands: pwd, ls, and cd | . Show Solution . ",
     "url": "/extra/bash_variables/#practice-4-bring-it-all-together",
     
     "relUrl": "/extra/bash_variables/#practice-4-bring-it-all-together"
@@ -1995,173 +1995,166 @@
     "relUrl": "/bash/checks/"
   },"285": {
     "doc": "Bash Checks",
-    "title": "Bash Checks in Markdown Table",
-    "content": " ",
-    "url": "/bash/checks/#bash-checks-in-markdown-table",
+    "title": "String Checks",
+    "content": "| Check | Description | Returns True If | Example | . | [ -z \"$string\" ] | String is empty | The string has zero length | [ -z \"\" ] &amp;&amp; echo \"Empty\" | . | [ -n \"$string\" ] | String is not empty | The string has non-zero length | [ -n \"Hello\" ] &amp;&amp; echo \"Not Empty\" | . | [ \"$string1\" = \"$string2\" ] | Strings are equal | Both strings are identical | [ \"Hello\" = \"Hello\" ] &amp;&amp; echo \"Equal\" | . | [ \"$string1\" != \"$string2\" ] | Strings are not equal | Both strings are different | [ \"Hello\" != \"World\" ] &amp;&amp; echo \"Not Equal\" | . ",
+    "url": "/bash/checks/#string-checks",
     
-    "relUrl": "/bash/checks/#bash-checks-in-markdown-table"
+    "relUrl": "/bash/checks/#string-checks"
   },"286": {
     "doc": "Bash Checks",
-    "title": "1. String Checks",
-    "content": "| Check | Description | Returns True If | Example | . | [ -z \"$string\" ] | String is empty | The string has zero length | [ -z \"\" ] &amp;&amp; echo \"Empty\" | . | [ -n \"$string\" ] | String is not empty | The string has non-zero length | [ -n \"Hello\" ] &amp;&amp; echo \"Not Empty\" | . | [ \"$string1\" = \"$string2\" ] | Strings are equal | Both strings are identical | [ \"Hello\" = \"Hello\" ] &amp;&amp; echo \"Equal\" | . | [ \"$string1\" != \"$string2\" ] | Strings are not equal | Both strings are different | [ \"Hello\" != \"World\" ] &amp;&amp; echo \"Not Equal\" | . ",
-    "url": "/bash/checks/#1-string-checks",
+    "title": "Number Checks",
+    "content": "| Check | Description | Returns True If | Example | . | [ \"$num1\" -eq \"$num2\" ] | Numbers are equal | $num1 is equal to $num2 | [ 5 -eq 5 ] &amp;&amp; echo \"Equal\" | . | [ \"$num1\" -ne \"$num2\" ] | Numbers are not equal | $num1 is not equal to $num2 | [ 5 -ne 10 ] &amp;&amp; echo \"Not Equal\" | . | [ \"$num1\" -gt \"$num2\" ] | Number is greater than | $num1 is greater than $num2 | [ 10 -gt 5 ] &amp;&amp; echo \"Greater\" | . | [ \"$num1\" -lt \"$num2\" ] | Number is less than | $num1 is less than $num2 | [ 5 -lt 10 ] &amp;&amp; echo \"Less\" | . | [ \"$num1\" -ge \"$num2\" ] | Number is greater or equal | $num1 is greater than or equal to $num2 | [ 10 -ge 10 ] &amp;&amp; echo \"Greater/Equal\" | . | [ \"$num1\" -le \"$num2\" ] | Number is less or equal | $num1 is less than or equal to $num2 | [ 5 -le 10 ] &amp;&amp; echo \"Less/Equal\" | . ",
+    "url": "/bash/checks/#number-checks",
     
-    "relUrl": "/bash/checks/#1-string-checks"
+    "relUrl": "/bash/checks/#number-checks"
   },"287": {
     "doc": "Bash Checks",
-    "title": "2. Number Checks",
-    "content": "| Check | Description | Returns True If | Example | . | [ \"$num1\" -eq \"$num2\" ] | Numbers are equal | $num1 is equal to $num2 | [ 5 -eq 5 ] &amp;&amp; echo \"Equal\" | . | [ \"$num1\" -ne \"$num2\" ] | Numbers are not equal | $num1 is not equal to $num2 | [ 5 -ne 10 ] &amp;&amp; echo \"Not Equal\" | . | [ \"$num1\" -gt \"$num2\" ] | Number is greater than | $num1 is greater than $num2 | [ 10 -gt 5 ] &amp;&amp; echo \"Greater\" | . | [ \"$num1\" -lt \"$num2\" ] | Number is less than | $num1 is less than $num2 | [ 5 -lt 10 ] &amp;&amp; echo \"Less\" | . | [ \"$num1\" -ge \"$num2\" ] | Number is greater or equal | $num1 is greater than or equal to $num2 | [ 10 -ge 10 ] &amp;&amp; echo \"Greater/Equal\" | . | [ \"$num1\" -le \"$num2\" ] | Number is less or equal | $num1 is less than or equal to $num2 | [ 5 -le 10 ] &amp;&amp; echo \"Less/Equal\" | . ",
-    "url": "/bash/checks/#2-number-checks",
-    
-    "relUrl": "/bash/checks/#2-number-checks"
-  },"288": {
-    "doc": "Bash Checks",
-    "title": "3. File Checks",
+    "title": "File Checks",
     "content": "| Check | Description | Returns True If | Example | . | [ -e \"$file\" ] | File exists | The file exists | [ -e \"file.txt\" ] &amp;&amp; echo \"Exists\" | . | [ -d \"$file\" ] | File is a directory | The file is a directory | [ -d \"folder\" ] &amp;&amp; echo \"Directory\" | . | [ -r \"$file\" ] | File is readable | The file is readable | [ -r \"file.txt\" ] &amp;&amp; echo \"Readable\" | . | [ -w \"$file\" ] | File is writable | The file is writable | [ -w \"file.txt\" ] &amp;&amp; echo \"Writable\" | . | [ -x \"$file\" ] | File is executable | The file is executable | [ -x \"script.sh\" ] &amp;&amp; echo \"Executable\" | . | [ -s \"$file\" ] | File is not empty | The file is not empty | [ -s \"file.txt\" ] &amp;&amp; echo \"Not Empty\" | . | [ -L \"$file\" ] | File is a symbolic link | The file is a symbolic link | [ -L \"link\" ] &amp;&amp; echo \"Symbolic Link\" | . ",
-    "url": "/bash/checks/#3-file-checks",
+    "url": "/bash/checks/#file-checks",
     
-    "relUrl": "/bash/checks/#3-file-checks"
-  },"289": {
+    "relUrl": "/bash/checks/#file-checks"
+  },"288": {
     "doc": "Bash Comments",
     "title": "Using Comments in Bash",
     "content": "In Bash scripting, comments are used to annotate code, making it easier to understand and maintain. Bash supports single-line comments natively and provides workarounds for multi-line comments. ",
     "url": "/bash/comments/#using-comments-in-bash",
     
     "relUrl": "/bash/comments/#using-comments-in-bash"
-  },"290": {
+  },"289": {
     "doc": "Bash Comments",
     "title": "Bash Comments",
     "content": " ",
     "url": "/bash/comments/",
     
     "relUrl": "/bash/comments/"
-  },"291": {
+  },"290": {
     "doc": "Bash Comments",
     "title": "Single line",
     "content": "# This is a comment echo \"hello world\" . ",
     "url": "/bash/comments/#single-line",
     
     "relUrl": "/bash/comments/#single-line"
-  },"292": {
+  },"291": {
     "doc": "Bash Comments",
     "title": "Single in line comment",
     "content": "echo \"hello world\" # prints hello world ls -lh \"$dir\"/* # long list all files inside $dir . ",
     "url": "/bash/comments/#single-in-line-comment",
     
     "relUrl": "/bash/comments/#single-in-line-comment"
-  },"293": {
+  },"292": {
     "doc": "Bash Comments",
     "title": "Multi line comment style 1",
     "content": "# This is a multiline comment # and here is line 2 # Line 3 echo \"hello world\" . ",
     "url": "/bash/comments/#multi-line-comment-style-1",
     
     "relUrl": "/bash/comments/#multi-line-comment-style-1"
-  },"294": {
+  },"293": {
     "doc": "Bash Comments",
     "title": "Multi line comment - Here document",
     "content": ": &lt;&lt; 'COMMENT' This is a multi-line comment. We can add as much text as we want between the comment tags and it will be ignored by the shell. COMMENT echo \"hello world\" . The key word does not need to be COMMENT. It can be any string. The static part is the :, &lt;&lt; and ' around the keyword. Here is another example: . : &lt;&lt; 'HERE' this is another multiline comment See?! another line and another line HERE echo \"hello world\" . ",
     "url": "/bash/comments/#multi-line-comment---here-document",
     
     "relUrl": "/bash/comments/#multi-line-comment---here-document"
-  },"295": {
+  },"294": {
     "doc": "Control Statements",
     "title": "Control Statements",
     "content": "Control statements are used to control the flow of a script. In bash, we can use the following control statements: . | test command | if/else/elif | [] | [[]] | case | For/while/until loops | . In this guide, we will explore examples of each. ",
     "url": "/bash/controlflow/#control-statements",
     
     "relUrl": "/bash/controlflow/#control-statements"
-  },"296": {
+  },"295": {
     "doc": "Control Statements",
     "title": "test command",
-    "content": " ",
+    "content": "The test command in used to evaluate expressions if a expression is true or false. Examples of when this command is used includes: . | Checking file attributes (e.g., existence, permissions, size). | Comparing strings (e.g., equality, non-emptiness). | Performing numeric comparisons | . There are two ways of using test: test+ condition and [ condition ] . To use test we need to rely on the command exit status. In bash every command has an exit status. Zero (0) means that the command executed successfully where anything else other than 0 means that the command did not execute successfully. Look at the table here for a list of all bash checks . Example: . A shell script that checks if a file exist. #!/bin/bash test -e \"$1\" &amp;&amp; echo \"file $1 exist\" || echo \"file $1 does not exist\" . ",
     "url": "/bash/controlflow/#test-command",
     
     "relUrl": "/bash/controlflow/#test-command"
-  },"297": {
+  },"296": {
     "doc": "Control Statements",
     "title": "if/else/elif",
     "content": " ",
     "url": "/bash/controlflow/#ifelseelif",
     
     "relUrl": "/bash/controlflow/#ifelseelif"
-  },"298": {
+  },"297": {
     "doc": "Control Statements",
     "title": "[] VS [[]]",
     "content": " ",
     "url": "/bash/controlflow/#-vs-",
     
     "relUrl": "/bash/controlflow/#-vs-"
-  },"299": {
+  },"298": {
     "doc": "Control Statements",
     "title": "case",
     "content": " ",
     "url": "/bash/controlflow/#case",
     
     "relUrl": "/bash/controlflow/#case"
-  },"300": {
+  },"299": {
     "doc": "Control Statements",
     "title": "Loops",
     "content": "For . While . Until . ",
     "url": "/bash/controlflow/#loops",
     
     "relUrl": "/bash/controlflow/#loops"
-  },"301": {
+  },"300": {
     "doc": "Control Statements",
     "title": "Control Statements",
     "content": "Note: Work in progress . ",
     "url": "/bash/controlflow/",
     
     "relUrl": "/bash/controlflow/"
-  },"302": {
+  },"301": {
     "doc": "Bash Functions",
     "title": "Bash Functions",
     "content": "A function is just a small reusable pease of code. It does something and return its result back to the program. It can also return nothing. ",
     "url": "/bash/functions/#bash-functions",
     
     "relUrl": "/bash/functions/#bash-functions"
-  },"303": {
+  },"302": {
     "doc": "Bash Functions",
     "title": "1. Bash Basic function",
     "content": "# Option 1 function function_name() { # body of function here } # Option 2 function_name(){ # body of function here } # to call function: function_name . | Keep in Mind . | Bash functions do not return values. They can return: . | An exit status using return | A value using a variable (global or local) | value via STDOUT - This requests command substitution | . | . | . ",
     "url": "/bash/functions/#1-bash-basic-function",
     
     "relUrl": "/bash/functions/#1-bash-basic-function"
-  },"304": {
+  },"303": {
     "doc": "Bash Functions",
     "title": "2. Return an exit status",
     "content": "# Checks if $1 exist. 0 = true, 1 = false potato(){ [ -f \"$1\" ] &amp;&amp; return 0 || return 1 } potato \"$1\" # We can then use the $? to create logic with the exit status code. [ $? -eq 0 ] &amp;&amp; echo \"$1 exist\" || echo \"$1 doesn't exist\" . ",
     "url": "/bash/functions/#2-return-an-exit-status",
     
     "relUrl": "/bash/functions/#2-return-an-exit-status"
-  },"305": {
+  },"304": {
     "doc": "Bash Functions",
     "title": "3. Returning values with variables",
     "content": "# Using a global variable: potato(){ greeting=\"Good Morning, $1\" } potato \"Mary\" echo \"$greeting\" # Using local variable potato(){ local name=\"$1\" local age=\"$2\" local email=\"$3\" echo -e \"Hello $name\\nAt $age you will need a bigger boat.\\n\\tSent from $email\" } potato \"Mary\" \"43\" \"admin@mail.com\" . ",
     "url": "/bash/functions/#3-returning-values-with-variables",
     
     "relUrl": "/bash/functions/#3-returning-values-with-variables"
-  },"306": {
+  },"305": {
     "doc": "Bash Functions",
     "title": "4. Returning value with command substitution",
     "content": "potato() { local greeting=\"Hello, $1!\" echo \"$greeting\" } result=$(potato \"Bobby\") echo \"$result\" . ",
     "url": "/bash/functions/#4-returning-value-with-command-substitution",
     
     "relUrl": "/bash/functions/#4-returning-value-with-command-substitution"
-  },"307": {
+  },"306": {
     "doc": "Bash Functions",
     "title": "5. Can I return a status code and value at the same time?",
     "content": "Yes. Here is an example: . is_even(){ local numb=$1 if (( numb % 2 == 0 )) then echo \"even\" return 0 else echo \"not even\" return 1 fi } result=$(is_even $1) status_code=$? echo \"the $1 number is $result\" . Side Note: The example script above has a couple of gotchas. If you pass a letter instead of a number it tells you that it is even. How so?? Well, bash does arithmetic evaluation using ((...)) inside these parentheses everything is an integer. This means that every non-integer character is considered a 0 by bash. Notice that I said integer and not number. That is because bash does not support floating point numbers. You need an external utility (like bc) to handle floating point numbers. The next gotcha is the lack of $ in the numb variable. As you already know, in order to access the value of a variable, you need to preface it with a $, however, because the ((...)) are already expecting an integer, the $ becomes optional. The script below is a complete version that handles non integer input. #!/bin/bash is_even() { local numb=$1 # Ensure the input is a number if ! [[ \"$numb\" =~ ^-?[0-9]+$ ]]; then echo \"Error: Input is not an integer\" return 2 # Use a special return code for invalid input fi # Proceed with even/odd check if (( numb % 2 == 0 )); then echo \"even\" return 0 else echo \"not even\" return 1 fi } # Call the function with the user's input result=$(is_even \"$1\") status_code=$? # Check the return code if [ $status_code -eq 2 ]; then echo \"Invalid input: $1 is not an integer.\" else echo \"The $1 number is $result.\" fi . 5.1. Whats up with the arguments? . Just like your script, functions take arguments (positional parameters). These work the same way. Say that you run the script ./playground.sh john carla with the following code: . #!/bin/bash echo \"parameter/argument 1: $1\" echo \"parameter/argument 2: $2\" potato(){ echo \"In the function 1: $1\" echo \"In the function 2: $2\" } potato \"peter\" \"jane\" echo \"Passing the same parameters to the function:\" potato \"$1\" \"$2\" . The output will be: . parameter/argument 1: john parameter/argument 2: carla In the function 1: peter In the function 2: jane Passing the same parameters to the function: In the function 1: john In the function 2: carla . Notice that lines 1 and 2 have the arguments we passed to script but lines 3 and 4 have the arguments we passed to the function. You can passed the same arguments you gave to the script to the function too as you can see in lines 7 and 8 . ",
     "url": "/bash/functions/#5-can-i-return-a-status-code-and-value-at-the-same-time",
     
     "relUrl": "/bash/functions/#5-can-i-return-a-status-code-and-value-at-the-same-time"
-  },"308": {
+  },"307": {
     "doc": "Bash Functions",
     "title": "6. Move advanced examples of functions",
     "content": "6.1. Returning the content of an array . #!/bin/bash all_ip_addresses() { local ips=(\"192.168.1.10\" \"192.168.1.12\" \"192.168.1.14\") echo \"${ips[@]}\" } array=($(all_ip_addresses)) for ip in ${array[@]} do ping -c 4 $ip done . 6.2. Returning an array with mapfile . #!/bin/bash potato() { local dir=\"$1\" local fname=\"$2\" find \"$dir\" -iname \"*$fname\" -type f -print0 } # Use process substitution to pass the function's output to mapfile mapfile -d '' search &lt; &lt;(potato \"$1\" \"$2\") # Access array elements echo \"First member: ${search[0]}\" echo \"Last member: ${search[-1]}\" echo \"Length: ${#search[@]}\" # Process each file for file in \"${search[@]}\"; do # Display file details in a formatted way ls -lhgG --time-style=+%D \"$file\" | grep -v \"total\" | column -t done . Side note: The print0 option of the find command command is used to handle files with special characters in the name (ex. spaces). print0 tells find to separate filenames with a null character (\\0) instead of a newline. 6.3. Using an associative array . #!/bin/bash # Function to get disk usage as an associative array get_disk_usage() { declare -A disk_info local df_output df_output=$(df -h / | tail -1) disk_info[total]=$(echo \"$df_output\" | awk '{print $2}') disk_info[used]=$(echo \"$df_output\" | awk '{print $3}') disk_info[available]=$(echo \"$df_output\" | awk '{print $4}') disk_info[usage_percent]=$(echo \"$df_output\" | awk '{print $5}') # Return the associative array echo \"$(declare -p disk_info)\" } # Call the function and capture the associative array eval \"$(get_disk_usage)\" # Access and display the values from the associative array echo \"Disk Usage Information for '/':\" echo -e \"Total Space:\\t${disk_info[total]}\" echo -e \"Used Space:\\t${disk_info[used]}\" echo -e \"Avail. Space:\\t${disk_info[available]}\" echo -e \"Usage %:\\t${disk_info[usage_percent]}\" . Side Note: declare -p disk_info outputs the array definition as a string that can be re-evaluated using eval. ",
     "url": "/bash/functions/#6-move-advanced-examples-of-functions",
     
     "relUrl": "/bash/functions/#6-move-advanced-examples-of-functions"
-  },"309": {
+  },"308": {
     "doc": "Bash Functions",
     "title": "Bash Functions",
     "content": ". | . | Bash Basic function | . | . | Return an exit status | . | . | Returning values with variables | . | . | Returning value with command substitution | . | . | Can I return a status code and value at the same time? . | 5.1. Whats up with the arguments? | . | . | . | Move advanced examples of functions . | 6.1. Returning the content of an array | 6.2. Returning an array with mapfile | 6.3. Using an associative array | . | . | . ",

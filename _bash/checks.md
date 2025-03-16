@@ -5,9 +5,8 @@ layout: page
 
 # {{page.title}}
 
-# Bash Checks in Markdown Table
 
-## **1. String Checks**
+## String Checks
 
 | **Check**                      | **Description**       | **Returns True If**            | **Example**                                  |
 | ------------------------------ | --------------------- | ------------------------------ | -------------------------------------------- |
@@ -18,7 +17,7 @@ layout: page
 
 ---
 
-## **2. Number Checks**
+## Number Checks
 
 | **Check**                 | **Description**            | **Returns True If**                         | **Example**                             |
 | ------------------------- | -------------------------- | ------------------------------------------- | --------------------------------------- |
@@ -31,7 +30,7 @@ layout: page
 
 ---
 
-## **3. File Checks**
+## File Checks
 
 | **Check**        | **Description**         | **Returns True If**         | **Example**                               |
 | ---------------- | ----------------------- | --------------------------- | ----------------------------------------- |
