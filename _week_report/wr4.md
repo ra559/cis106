@@ -26,7 +26,7 @@ title: Week Report 4
 > * [Presentation](https://rapurl.live/s39)
 > * [Article](https://cis106.com/extra/thelinuxfs/)
 
-1. Create a file in the `clasNotes` directory named `notes4.md`
+1. Create a file in the `notes` directory named `notes4.md`.
 2. The file must be properly formatted using bold, code formatting and headings
 3. The file must contain the following:
    1. Each of the commands used for navigating the file system 
