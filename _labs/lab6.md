@@ -1,3 +1,7 @@
+---
+layout: page
+title: Lab 6 - Wildcard 
+---
 
 
 # {{page.title}}

@@ -270,12 +270,64 @@ The single brackets are a command ( just like test is). However, the double brac
 
 
 > if you are planning to write portable scripts, avoid [[ ]] as much as possible because it is not POSIX compliant. 
-> **What Does It Mean for a Shell to Be POSIX-Compliant?**
->
-> 
+> <br/> **What Does It Mean for a Shell to Be POSIX-Compliant?**
+> It means that it follows the standards of the Portable Operating System Interface (POSIX) specified by IEEE for maintaining compatibility between operating systems. For shells it means tht that it supports a defined set of features, commands, and behaviors that allow scripts to be portable. Bash is not exactly fully POSIX compliant but it can be. Bash has some unique syntax called Bashisms. The `[[]]` is an example of of those bash specific syntax.
+
 
 ## case 
 
+The `case` statement allows you to execute different blocks of code bassed on the value of a variable or expression. It is akin to a switch statement in other programming languages. 
+
+### Basic Syntax of case
+
+```bash
+case variable in
+    pattern1)
+        code here
+        ;;
+    pattern2)
+        code here
+        ;;
+    *)
+        code here
+        ;;
+esac
+```
+
+Form the snippet above:
+* The `;;` are required
+* the `esac` keyword ends the case statement
+* the `*` is akin to the else condition in an if/else block and it is required. This is the default case when the rest fails.
+
+Case statements are a good choice over if/else when the value of the variable is predictable. 
+
+### Example of case:
+
+A script that displays a menu and runs the block depending on the users selection
+
+```bash
+#!/bin/bash
+
+read -p "Enter a number from 1 - 3 " num
+
+case num in
+    1)
+
+    ;;
+
+    2)
+
+    ;;
+
+    3)
+
+    ;;
+    *)
+
+    ;;
+esac
+
+```
 
 ## Loops
 
