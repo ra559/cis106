@@ -339,3 +339,19 @@ Copy the directory of the previous practice. Copy the directory to the Documents
 
 <button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" onclick="var x = document.getElementById('cp-practice');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
 <p align="center" style="display:none" id='cp-practice'><img src="/assets/extras/cp_practice.png"/></p>
+
+## What will you submit for extra credit
+1. In your cis106 directory/local repository, create a new directory called "ExtraCredit" (One word no spaces in file names pleases!)
+2. Inside "`ExtraCredit`", create another directory called "`extra5`"
+3. Open your cis106 directory/local repository in VS Code
+4. Inside "`extra5`" create a markdown file called "`extra5.md`"
+5. Add all the screenshots to "extra5.md" using proper markdown syntax and labeling each screenshot using heading 2 formatting. Save the markdown file.
+6. Your markdown document should start with the following heading1: `# Extra Credit 5: Managing Files/Directories`
+7. Convert your file to PDF
+8. Run the github commands, in VS Code Terminal, to push all your changes to github:
+   1. `gid add .`
+   2. `git commit -m "Completed Extra 5"`
+   3. `git push`
+9. In blackboard submit the following:
+   1.  The URL of `extra5.md` 
+   2.  The PDF file `extra5.pdf`

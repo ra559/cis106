@@ -129,7 +129,7 @@ The script must use the following:
 2. Inside "`ExtraCredit`", create another directory called "`extra4`"
 3. Open your cis106 directory/local repository in VS Code
 4. Inside "`extra4`" create a markdown file called "`extra4.md`"
-5. Add all the screenshots to "extra1.md" using proper markdown syntax and labeling each screenshot using heading 2 formatting. Save the markdown file.
+5. Add all the screenshots to "extra4.md" using proper markdown syntax and labeling each screenshot using heading 2 formatting. Save the markdown file.
 6. Your markdown document should start with the following heading1: `# Extra Credit 4: Bash Variables`
 7. Convert your file to PDF
 8. Run the github commands, in VS Code Terminal, to push all your changes to github:
