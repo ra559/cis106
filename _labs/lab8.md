@@ -1,4 +1,7 @@
-
+---
+layout: page
+title: Lab 8 - Handling Text Files Part 2
+---
 # {{page.title}}
 
 ## Input and output redirection

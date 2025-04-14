@@ -53,7 +53,7 @@ touch $dir/{program,backup,short,downloader}.sh
 touch $dir/img-{1..3}.{png,jpg}
 touch $dir/{index_page,insert_page,instructions_page}.html
 touch $dir/{response,request}.json 
-touch $dir/Document.{doc,pdf} UsersExport.{tsv,csv}
+touch $dir/Document.{odt,pdf} UsersExport.{tsv,csv}
 touch $dir/New.{docx,xlsx,pptx,vsdx}
 touch $dir/File{01..03}.py
 # Completion message
