@@ -308,22 +308,31 @@ A script that displays a menu and runs the block depending on the users selectio
 ```bash
 #!/bin/bash
 
+echo -e " Choose one of the following options: \n \
+\t1) List $HOME \n \
+\t2) List directories only in $HOME \n \
+\t3) List all config files in /etc \n \
+\t4) Exit"
+
 read -p "Enter a number from 1 - 3 " num
 
-case num in
+case "$num" in
     1)
-
+        echo "User picked $num"
+        ls -A $HOME
     ;;
 
     2)
-
+        echo "User picked $num"
+        ls -d $HOME/*/
     ;;
 
     3)
-
+        echo "User picked $num"
+        ls /etc/*.conf
     ;;
     *)
-
+        exit
     ;;
 esac
 
@@ -332,6 +341,30 @@ esac
 ## Loops
 
 ### For
+A for loop is control structure used for iterating over a list of items and executes commands for each item in the list.
+
+The basic syntax of a for loop is:
+
+```bash
+for variable in item1 item2 item3 ...; do
+    command here
+done
+```
+
+Here is a basic example:
+
+```bash
+#!/bin/bash
+fruits=("apple" "banana" "papaya")
+for fruit in ${fruits[@]}; do
+    echo "I love $fruit"
+done:
+```
+
+Now lets see an example of a loop that iterates through a list of txt files in a given directory
+
+```
+
 
 ### While
 

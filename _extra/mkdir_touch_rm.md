@@ -242,7 +242,7 @@ Use the `rm` command to delete the entire "`OutdatedProjects`" directory, includ
 Before you can run the rm command, you will need to create the directories. Run this command that will run a script to generate the directories and files for you.
 
 ```bash
-curl https://cis106.com/assets/extra/rm_practice.sh | bash
+curl https://cis106.com/assets/extras/rm_practice.sh | bash
 ```
 
 

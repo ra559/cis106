@@ -134,6 +134,11 @@ Write a shell script that will display the following output:
 
 
 ### Script 2: Using user defined variables and user input
+
+> ***NOTE For Spring 25 Students:***
+> This script (script 2) does not apply to you as the concept of 
+> user input was not covered. Please skip this script during your studies.
+
 Write a shell script that will ask the user several questions, store the responses in variables and then use those variables in a single echo command. The output should look like this:
 
 ![script2](https://docs.google.com/drawings/d/e/2PACX-1vRAyIXO_bFoHUEDJ-RNN5whVpO_t4nHSzb4lVxRKUkoqtbByTTKx4IUkCglkeF4tYatbF3oSwgqJkMh/pub?w=1397&h=418)
@@ -146,6 +151,12 @@ Write a shell script that will ask the user several questions, store the respons
 * You have to use a single echo command
 
 ### Script 3: Using positional parameters  
+
+> ***NOTE For Spring 25 Students:***
+> This script (script 3) does not apply to you as the concept of 
+> positional parameters was not covered. Please skip this script 
+> during your studies.
+
 Write a shell script that will take 3 positional parameters. The first parameter is the name of a new directory, the second and third are file names. Use the mkdir to create the directory, and then touch to create the 2 files in the new directory. DO NOT USE CD! Here is the output of the script:
 
 ![script3](https://docs.google.com/drawings/d/e/2PACX-1vQ5vX6yDlspdziz-bIb_LdTkdXyEeCV0IShuAr9eyqcWI1c8LCE_O5W5jhWdTWKQ4L7vlNUuRHMIwoU/pub?w=1353&h=697)
@@ -167,3 +178,16 @@ Create a script that generates this output. Here are the special characters:
 ```
 
 ![script4](https://docs.google.com/drawings/d/e/2PACX-1vS8Qz8boEDg88Q01XgGJzDwcuWvkIVkDql6RTYXd9bxLfK04S8Jc1eEs-Sb6A9uEpHyJjgNMtAHKeiv/pub?w=1154&h=356)
+
+### Script 5: Using variables Part 2
+
+write a shell script that uses user defined variables and environment variables
+to generate the following output.
+
+![script5](https://docs.google.com/drawings/d/e/2PACX-1vQ4D0wl-jfATbbA6k3KApyFP94w85jdL2UAJZ29GeG9hLz8AH8nhqC4VVOyUyncT8fkUZYOXjcsppFl/pub?w=928&h=676)
+
+**The challenge here is to:**
+* Use user defined variables with mkdir, touch, tree,echo
+* Notice the empty lines in the screenshot. Try using the new line character instead of an empty echo command
+
+  
