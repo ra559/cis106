@@ -7,6 +7,7 @@ title: Welcome to the course
 
 <!-- vscode-markdown-toc -->
 - [Welcome to CIS-106-Linux Fundamentals](#welcome-to-cis-106-linux-fundamentals)
+- [Ignore this message - Delete me later](#ignore-this-message---delete-me-later)
   - [1. Special Note Regarding the final exam:](#1-special-note-regarding-the-final-exam)
   - [2. COURSE LEARNING OUTCOMES](#2-course-learning-outcomes)
   - [3. Technologies Learned/Used](#3-technologies-learnedused)
@@ -29,6 +30,8 @@ title: Welcome to the course
 
 # Welcome to CIS-106-Linux Fundamentals
 Here you will find all the information for the course.
+
+# Ignore this message - Delete me later 
 
 <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
 
