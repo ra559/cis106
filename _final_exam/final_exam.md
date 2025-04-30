@@ -179,6 +179,10 @@ Create a script that generates this output. Here are the special characters:
 
 ![script4](https://docs.google.com/drawings/d/e/2PACX-1vS8Qz8boEDg88Q01XgGJzDwcuWvkIVkDql6RTYXd9bxLfK04S8Jc1eEs-Sb6A9uEpHyJjgNMtAHKeiv/pub?w=1154&h=356)
 
+Create a script that generates this output:
+
+![script 4.2](https://docs.google.com/drawings/d/e/https://docs.google.com/drawings/d/e/2PACX-1vQYcajOxf_895yHBkvUA0f-vuFFEbU0bLqNKKD1ALZ9x1L01SRqdp05SD1VE_2gpXh2YiRg8TrszdG3/pub?w=905&h=2672PACX-1vQYcajOxf_895yHBkvUA0f-vuFFEbU0bLqNKKD1ALZ9x1L01SRqdp05SD1VE_2gpXh2YiRg8TrszdG3/pub?w=905&h=267)
+
 ### Script 5: Using variables Part 2
 
 write a shell script that uses user defined variables and environment variables
