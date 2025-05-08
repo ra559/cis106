@@ -19,9 +19,8 @@ essential_packages=(
     flameshot vlc geany tilix gcc make perl
     nemo git python3-pip net-tools vim screenfetch
     caffeine samba smbclient gnome-tweaks snapd flatpak
-    gnome-software-plugin-flatpak gnome-software-plugin-snap
     toilet figlet lolcat boxes cpufetch cowsay linuxlogo fortune pv cmatrix
-    chromium-browser xclip rsync gnome-shell-extension-manager chrome-gnome-shell gnome-screenshot
+    chromium-browser xclip rsync 
 )
 
 # Display the packages in a 3-column format
@@ -36,7 +35,7 @@ for ((i=0; i<total_packages; i+=column_count)); do
         "${essential_packages[i+2]:-}"
 done
 
-packages="curl bzip2 tar build-essential linux-headers-$(uname -r) flameshot vlc geany tilix gcc make perl nemo git python3-pip nemo git python3-pip net-tools vim screenfetch caffeine samba smbclient gnome-tweaks snapd flatpak toilet figlet lolcat boxes cpufetch cowsay linuxlogo fortune pv cmatrix chromium-browser xclip rsync gnome-shell-extension-manager chrome-gnome-shell gnome-screenshot gnome-software-plugin-flatpak gnome-software-plugin-snap "
+packages="curl bzip2 tar build-essential linux-headers-$(uname -r) flameshot vlc geany tilix gcc make perl nemo git python3-pip nemo git python3-pip net-tools vim screenfetch caffeine samba smbclient snapd flatpak toilet figlet lolcat boxes cpufetch cowsay linuxlogo fortune pv cmatrix chromium-browser xclip rsync"
 
 # Split the string into an array using whitespace as delimiter
 IFS=' ' read -r -a package_array <<< "$packages"
