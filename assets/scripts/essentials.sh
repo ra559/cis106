@@ -10,19 +10,19 @@ script_name=$(basename "$0")
 log_file="$HOME/${script_name}.error.log"
 
 # Check desktop environment
-if [[ "$XDG_CURRENT_DESKTOP" == "GNOME" ]]; then
+if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
 	essential_packages=(
-		pv tar gcc git vim vlc curl make perl nemo most bzip2 tilix geany
+		pv tar gcc git vim vlc curl tree make perl nemo most bzip2 tilix geany
 		samba snapd boxes xclip rsync figlet flatpak toilet lolcat cowsay 
-		cmatrix fortune caffeine smbclient cpufetch flameshot linuxlogo   
+		ntfs-3g cmatrix fortune caffeine smbclient cpufetch flameshot linuxlogo   
 		python3-pip net-tools screenfetch build-essential chromium
-		gnome-screenshot fonts-recommended exfat-fuse ntfs-3g
+		exfat-fuse gnome-screenshot fonts-recommended fonts-symbola  
 		gnome-tweaks chrome-gnome-shell gnome-software-plugin-snap
-		gnome-software-plugin-flatpak gnome-shell-extension-manager fonts-symbola
+		gnome-software-plugin-flatpak gnome-shell-extension-manager 
 	)
 else
 	essential_packages=(
-		pv tar gcc git vim vlc curl make perl nemo most bzip2 tilix geany
+		pv tar gcc git vim vlc curl tree make perl nemo most bzip2 tilix geany
 		samba snapd boxes xclip rsync figlet flatpak toilet lolcat cowsay 
 		cmatrix fortune caffeine smbclient cpufetch flameshot linuxlogo   
 		python3-pip net-tools screenfetch build-essential chromium
