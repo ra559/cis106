@@ -16,7 +16,7 @@ if [[ "$XDG_CURRENT_DESKTOP" == "GNOME" ]]; then
 		samba snapd boxes xclip rsync figlet flatpak toilet lolcat cowsay 
 		cmatrix fortune caffeine smbclient cpufetch flameshot linuxlogo   
 		python3-pip net-tools screenfetch build-essential chromium
-		gnome-screenshot fonts-recommended
+		gnome-screenshot fonts-recommended exfat-fuse ntfs-3g
 		gnome-tweaks chrome-gnome-shell gnome-software-plugin-snap
 		gnome-software-plugin-flatpak gnome-shell-extension-manager fonts-symbola
 	)
@@ -26,7 +26,7 @@ else
 		samba snapd boxes xclip rsync figlet flatpak toilet lolcat cowsay 
 		cmatrix fortune caffeine smbclient cpufetch flameshot linuxlogo   
 		python3-pip net-tools screenfetch build-essential chromium
-		gnome-screenshot fonts-symbola fonts-recommended
+		gnome-screenshot fonts-symbola fonts-recommended exfat-fuse ntfs-3g
 	)
 fi
 
