@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application 
-Terminal=false
-Exec=/snap/bin/chromium 'https://docs.google.com/presentation/u/0/'
-Name=Slides
-Comment=Launcher for Google Slides
-Icon=/usr/share/icons/.customIcons/googleslides.png
