@@ -9,3 +9,4 @@ streetsidesoftware.code-spell-checker
 tyriar.lorem-ipsum
 yzane.markdown-pdf
 yzhang.markdown-all-in-one
+analytic-signal.preview-pdf
