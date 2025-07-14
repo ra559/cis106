@@ -1,7 +1,7 @@
----
+
 title: page
 layout: Lab 2 - Installing Debian 12 - Windows
----
+
 
 # {{page.title}}
 
