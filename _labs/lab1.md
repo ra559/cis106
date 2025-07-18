@@ -384,7 +384,7 @@ Since you’ve just learned Markdown, you decide to format the resume using Mark
 4. Do not close the [GitHub](https://github.com/) page, you will need it later.
 
 ### What will you upload to Github:
-The entire lab1 folder. Every single file must be in your GitHub repository!
+The `lab1` folder. Every single file must be in your GitHub repository!
 
 ### Blackboard submission
 

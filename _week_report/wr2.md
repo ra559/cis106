@@ -11,10 +11,11 @@ title: Week Report 2
 
 ## Complete the following tasks
 1. Complete [lab 2 - Installing Ubuntu 24.04](https://cis106.com/labs/Lab2_new/).
-2. If you have not done so, complete week report 1, lab 1 and Discussion Board 1. 
-3. Complete Discussion Board 2 - The history of Linux. **Note**: *you can do this later as the due date is the end of the semester.*
-4. Complete Notes 2. *This and everything else from this point on must be completed inside Ubuntu Desktop 24.04 (your virtual machine)*. <b style="color:red">Windows/MacOS will no longer be used. </b>Therefore you MUST complete lab 2 before attempting the report and the notes.
-5. Complete this week's Week Report. 
+2. If you have not done so, complete Week Report 1.
+3. Complete Discussion Board 1 - Open Source. **Note**: *you can do this later as the due date is the end of the semester.*
+4. Complete Discussion Board 2 - The history of Linux. **Note**: *you can do this later as the due date is the end of the semester.*
+5. Complete Notes 2. *This and everything else from this point on must be completed inside Ubuntu Desktop 24.04 (your virtual machine)*. <b style="color:red">Windows/MacOS will no longer be used. </b>Therefore you MUST complete lab 2 before attempting the report and the notes.
+6. Complete this week's Week Report. 
 
 
 ## What will you include in your notes?
