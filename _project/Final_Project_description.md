@@ -28,24 +28,24 @@ title: Final Project Description
 
 
 ##  1. <a name='Description'></a>Description
-The goal of this project is to host a simple website (1-page site) in a web server. You will be installing Ubuntu Server in a virtual machine and managing the server from another computer. That computer can be your Host Machine (Windows) or the Ubuntu Desktop virtual machine that we use in the course. The project will give you basic/initial exposure to the following technologies:
+The goal of this project is to host a simple website (1-page site) in a web server. You will be installing Debian with no GUI in a virtual machine and managing the server from another computer. That computer can be your Host Machine (Windows) or the Debian Desktop virtual machine that we use in the course. The project will give you basic/initial exposure to the following technologies:
 
-* Virtualization (VirtualBox)
-* Ubuntu Server
+* Virtualization (VirtualBox/UTM)
+* Debian
 * Apache
 * SSH
 * HTML
 * Markdown
 * VS Code
 
-The project is divided into 3 deliverables. It is done this way, so you can work slowly through the semester as you gain more knowledge working with Ubuntu Desktop. This also allows you to earn a grade as the semester progresses because the final grade is divided equally among the 3 deliverables. The final project is 20% of your final grade, however, this can change, therefore do not skip any deliverable!
+The project is divided into 3 deliverables. It is done this way, so you can work slowly through the semester as you gain more knowledge working with Linux. This also allows you to earn a grade as the semester progresses because the final project grade is divided equally among the 3 deliverables. The final project is 15% of your final grade, however, this can change, therefore do not skip any deliverable!
 
 Each deliverable will be submitted as a Markdown document in your GitHub Repository. You will also be required to submit a PDF version of each deliverable, just in case something happens to your GitHub Repository. 
 
-No late submission will be accepted. This project is due on Dec 21st.
+**No late submission will be accepted.**
 
 ##  2. <a name='Requirements'></a>Requirements
-* A virtual machine/PC where you can install Ubuntu Server. A Virtual machine will be preferred since everything in the tutorials will be done in a virtual machine.
+* A virtual machine/PC where you can install Debian. A Virtual machine will be preferred since everything in the tutorials will be done in a virtual machine.
 
 This is the main tutorial we will follow:
 * [How To Install the Apache Web Server on Ubuntu 22.04](https://rapurl.live/ch3)
