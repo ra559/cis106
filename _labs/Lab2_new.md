@@ -1,7 +1,7 @@
----
+
 layout: post
 title: Lab 2 - Installing Ubuntu For Windows Users And Intel Macs
----
+
 
 # {{page.title}}
 
