@@ -1,7 +1,7 @@
----
+
 layout: page
 title: Lab 7 - Handling Text Files part 1
----
+
 
 # {{page.title}}
 

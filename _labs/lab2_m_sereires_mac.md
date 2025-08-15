@@ -1,7 +1,7 @@
----
+
 layout: post
 title: Lab 2 - Installing Ubuntu 24.04 in M1, M2 and M3 Macbooks
----
+
 # {{page.title}}
 
 

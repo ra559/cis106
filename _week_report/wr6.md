@@ -1,7 +1,7 @@
----
+
 layout: page
 title: Week Report 6
----
+
 
 # {{page.title}}
 

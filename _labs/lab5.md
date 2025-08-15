@@ -1,7 +1,7 @@
----
+
 layout: page
 title: Lab 5 - Managing files and directories
----
+
 
 # {{page.title}}
 

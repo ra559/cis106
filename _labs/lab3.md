@@ -1,7 +1,7 @@
----
+
 layout: page
 title: Lab 3 - The Bash Shell
----
+
 
 # {{page.title}}
 
