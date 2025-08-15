@@ -53,7 +53,7 @@ Here you will find all the information for the course.
 * Understanding of Markdown, Git and GitHub
 
 ##  3. <a name='TechnologiesLearnedUsed'></a>Technologies Learned/Used 
-* [**Ubuntu:**](https://ubuntu.com/)  is the modern, open source operating system on Linux for the enterprise server, desktop, cloud, and IoT.
+* [**Debian:**](https://www.debian.org/) The Linux distribution we will use
 * [**VirtualBox:**](https://www.virtualbox.org/)  is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use. 
 * [**Markdown:**](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language for creating formatted text using a plain-text editor.
 * [**Slack:**](https://slack.com/)  is an instant messaging program designed by Slack Technologies and owned by Salesforce.
