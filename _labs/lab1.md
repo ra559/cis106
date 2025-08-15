@@ -7,6 +7,7 @@ title: Lab 1 - Learning Markdown
 
 - [{{page.title}}](#pagetitle)
   - [Resources](#resources)
+  - [Learning Outcomes](#learning-outcomes)
   - [Question 1 What is Markdown? (10 pts)](#question-1-what-is-markdown-10-pts)
     - [1. Learn about Markdown:](#1-learn-about-markdown)
     - [2. Install and Explore VS Code:](#2-install-and-explore-vs-code)
@@ -45,6 +46,12 @@ title: Lab 1 - Learning Markdown
 * [Markdown Cheat Sheet](https://docs.google.com/drawings/d/e/2PACX-1vSZHQ6hVZ9wTWTk9_ulnNF4unMIFcw9Db7q1PHkAwbeoqGg9qPo7ObDvLM4NnZYBTIMGcdUV4TubtWk/pub?w=2132&h=1054)
 * [Markdown Official documentation](https://www.markdownguide.org/)
 * [VS Code](https://code.visualstudio.com/)
+
+## Learning Outcomes
+* How to use VS Code
+* How to use Markdown
+* How to create a GitHub Repository
+* How to add files to a GitHub Repository via the Web 
 
 ## Question 1 What is Markdown? (10 pts)
 ### 1. Learn about Markdown:

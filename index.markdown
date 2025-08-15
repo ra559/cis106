@@ -7,7 +7,6 @@ title: Welcome to the course
 
 <!-- vscode-markdown-toc -->
 - [Welcome to CIS-106-Linux Fundamentals](#welcome-to-cis-106-linux-fundamentals)
-- [Ignore this message - Delete me later](#ignore-this-message---delete-me-later)
   - [1. Special Note Regarding the final exam:](#1-special-note-regarding-the-final-exam)
   - [2. COURSE LEARNING OUTCOMES](#2-course-learning-outcomes)
   - [3. Technologies Learned/Used](#3-technologies-learnedused)
@@ -31,7 +30,6 @@ title: Welcome to the course
 # Welcome to CIS-106-Linux Fundamentals
 Here you will find all the information for the course.
 
-# Ignore this message - Delete me later 
 
 <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
 
@@ -52,7 +50,7 @@ Here you will find all the information for the course.
 * Install software and third-party utilities.
 * Managing Resources in the Linux networking environment.
 * Understanding of virtualization with Virtualbox
-* Understanding of Markdown and proper documentation techniques
+* Understanding of Markdown, Git and GitHub
 
 ##  3. <a name='TechnologiesLearnedUsed'></a>Technologies Learned/Used 
 * [**Ubuntu:**](https://ubuntu.com/)  is the modern, open source operating system on Linux for the enterprise server, desktop, cloud, and IoT.
@@ -77,24 +75,32 @@ Here you will find all the information for the course.
     * Quad-Core Processor
     * 8 Gb of RAM
     * Windows 10/11
+      * MacOS is also acceptable with some workarounds
     * 100 Gb of free space
 * **Knowledge of the following**
-  * Basic components of a personal computer
-    * Basic usage of a personal computer
+  * Basic components of a personal computer 
+    * RAM
+    * CPU
+    * Storage
+    * Motherboard
+    * ETC..
+  * Basic usage of a personal computer. Including but not limited to:
     * Internet browsing
     * Reading emails
     * Chat Applications
     * Office Productivity Suites (MS Office, Google Docs, etc)
     * Install/Remove Software
+    * Download files
     * Difference between web browser, the internet, and a search engine
-> Not knowing this things does not mean you will fail the course. It means that you will have to spend extra time studying.
+    * Understanding of your computer filesystem (how your computer organizes files)
+  
+> *Not knowing these things does not mean you will fail the course. However, It means that you will have to spend extra time studying.*
 
 ##  5. <a name='MacOSUsersReadthis:'></a>MacOS Users Read this:
-* If you have a rencent MacOS Computer ( Apple M series of CPUs), you can use it for the class. The setup is different but I can guide you. 
-* If you are using a MacOS Computer with an Intel CPU, make sure that it meets the same requirement as for windows.
+* If you have a recent MacOS Computer ( Apple M series of CPUs - AKA Apple Silicon), you can use it for the class. Some instructions may be different but if you encounter issues, let me know and I can guide you. The same is true for Intel Macs, however, **please make sure that your computer meets the minimum criteria.** 
  
 ##  6. <a name='Advice'></a>Advice
-* If you find that the content of the course is too much or that you have too many gaps in your knowledge, I suggest that you take CIS-107 then CIS 180 or CIS 116. 
+* If you find that the content of the course is too much or that you have too many gaps in your knowledge, I suggest that you take CIS-107 then CIS 180 or CIS 116. I recommend those courses first because this class focusses on the GNU/Linux Operating System. We do not cover essential topics such as parts of your computer, basic networking terminology, etc...
 * If you do not have a decent computer (one that can be used for virtualization) you will have a very poor experience in this course. Contact me to discuss your options.
 
 ##  7. <a name='Resources'></a>Resources
@@ -153,7 +159,7 @@ The instructor reserves the right to make changes to this syllabus. If changes b
       1. Your virtual machine is up and running
       2. You have signed in to Blackboard in case there is a quiz
    2. I do not wait for anyone. My class starts at 5:40 PM whether you are here or not.
-   3. <b style="color: red"> If you miss a quiz because you are late, I will not allow you to retake it. </b>
+   3. <b style="color: red"> If you miss a quiz because you are late, I will not allow you to retake it. (Of course, there are exceptions.)</b>
 3. **Regarding cheating:**
    1. Below, I list a few important rules that you should keep in mind:
       1. Communicating the contents of tests to other students is forbidden.
@@ -165,8 +171,7 @@ The instructor reserves the right to make changes to this syllabus. If changes b
 
 ## 13. <a name='Quizzes'></a>Quizzes
   
-1. There will be a quiz after every lecture
-2. Quizzes start at **5:40 PM** and end at **5:50 PM**
-3. Quizzes have  no more than 5 questions from the lab/lecture
-4. Quizzes are easy and used for self assessment purposes 
-5. Attendance will be called during the quiz
+1. Quizzes start at **5:40 PM** and end at **5:50 PM**
+2. Quizzes have  no more than 5 questions from the lab/lecture
+3. Quizzes are easy and used for self assessment purposes. That is why they are only worth 5%
+4. Attendance will be called before the quiz starts.
