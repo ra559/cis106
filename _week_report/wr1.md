@@ -10,21 +10,22 @@ title: Week Report 1
 For this week, complete the following tasks.
 
 1. Install Slack in your phone and/or computer (I suggest both) and join our Slack workspace. The Link to join is in Blackboard (Takes about 5 minutes to complete)
-3. Watch [this video](https://www.youtube.com/watch?v=wpISo9TNjfU) so that you are familiar with Git and GitHub. (10 Minutes)
-4. Watch [this video](https://www.youtube.com/watch?v=B-s71n0dHUk) so that you are familiar with VS Code's interface  (7 Minutes)
-5. Complete [Lab 1 - Learning Markdown](https://cis106.com/labs/lab1/) (Takes about 1 hours depending on how well you can use your computer)
-6. Read the syllabus or home page of course [website](https://cis106.com). Write down any questions you have for me.
-7. Read the final project description [document](https://cis106.com/project/Final_Project_description/). Write down any questions you have for me.
-8. Complete Notes 1. The instructions are in Blackboard.
+3. [OPTIONAL] Watch [this video](https://www.youtube.com/watch?v=wpISo9TNjfU) so that you are familiar with Git and GitHub. (10 Minutes)
+4. [OPTIONAL] Watch [this video](https://www.youtube.com/watch?v=B-s71n0dHUk) so that you are familiar with VS Code's interface  (7 Minutes)
+5. Complete [Lab 1 - Learning Markdown](https://cis106.com/labs/lab1/) (Takes about 1 hour depending on how well you can use your computer)
+6. Read the syllabus or home page of the course [website](https://cis106.com). Write down any questions you have for me.
+7. Complete Notes 1. 
+8. Complete Week Report 1
 
+<hr>
 
-## What will you submit:
+## What will you submit for your week report 1:
+
 ### Step 1 Prepare your submission for week report 1
-1. Create a folder in your documents directory called: `weekReports`
-2. Open the `weekReports` folder in VS Code
-3. Create another folder inside `weekReports` called `wr1`
-4. Inside `wr1`, create a markdown file called `wr1.md`
-5. In the file, `wr1.md` type the following:
+1. Create a folder in your documents directory called: `wr1`
+2. Open the `wr1` folder in VS Code
+3. Inside `wr1`, create a markdown file called `wr1.md`
+4. In the file, `wr1.md` type the following:
 
 
 ```
@@ -46,8 +47,9 @@ take a screenshot of your github account and place it here
 ![GitHub Screenshot](filename.png)
 
 ## Acknowledgements
-* By submitting this assignment I [Your full name here] acknowledge that I have read the syllabus an final project description
-* I also acknowledge that I have written down any questions that I have for the professor and will ask them in class, via Slack or Email
+* By submitting this assignment I [Your full name here] acknowledge that I have read the syllabus or home page of the course
+* I also acknowledge that I have written down any questions that I have for the professor and will ask them in class, via Slack or 
+* I also acknowledge that I am aware that the final exam is In Person
 ```
 
 ### Step 2 Upload to GitHub
@@ -76,9 +78,12 @@ take a screenshot of your github account and place it here
 
 <hr>
 
-## Special Note:
-* The final exam is in person. 
-* The exam is performance based and will require access to a Linux Virtual Machine. 
-* If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you. There is a limited availability therefore let me know as soon as possible if you will be needing a computer for the final exam.
+### Regarding Late submissions
+Late submissions will be penalized 20 points. See blackboard for due date
 
+### Special Note Regarding the final exam:
+* You will be required to use markdown during your final exam.
+* The final exam is in person.
+* The exam is performance based and will require access to a Linux Virtual Machine.
+* If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you.
 
