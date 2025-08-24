@@ -263,7 +263,7 @@ Run these commands to install required tools:
 ```bash
 wget https://cis106.com/assets/scripts/essentials.sh
 chmod +x essentials.sh
-./essentials.sh
+./essentials.sh -a
 ```
 
 > **Note**: This may take a while depending on your internet speed.
