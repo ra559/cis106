@@ -19,6 +19,23 @@ For this week, complete the following tasks.
 
 <hr>
 
+## What will you include in your notes?
+
+1. Create a folder in your Documents folder called: `notes1`
+2. Open the `notes1` folder inside VS Code and create a file called: `notes1.md`
+3. Inside the notes1.md file type and answer the following questions using proper markdown syntax (headings, paragraph formatting, bullet points, etc..) 
+   1. What is Markdown?
+   2. What is Git?
+   3. What is GitHub?
+   4. What is Slack?
+4. Save and convert the file to PDF
+5. Compress the folder to a zip file and upload the file to your github repository
+6. In Blackboard: 
+   1. Submit the PDF file `notes1.pdf`
+   2. Submit the URL of your github repository. Make sure that your github repository contains your Notes1.zip file. If the zip file is not there I will not award you a passing grade for this Notes
+
+
+
 ## What will you submit for your week report 1:
 
 ### Step 1 Prepare your submission for week report 1
