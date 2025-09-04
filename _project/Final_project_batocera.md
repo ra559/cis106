@@ -1,7 +1,7 @@
----
+
 layout: page
 title: Final Project Alternative - Emulation Machine with Batocera and Raspberry PI
----
+
 
 # {{page.title}}
 

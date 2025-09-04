@@ -46,6 +46,7 @@ title: Lab 1 - Learning Markdown
 * [Markdown Cheat Sheet](https://docs.google.com/drawings/d/e/2PACX-1vSZHQ6hVZ9wTWTk9_ulnNF4unMIFcw9Db7q1PHkAwbeoqGg9qPo7ObDvLM4NnZYBTIMGcdUV4TubtWk/pub?w=2132&h=1054)
 * [Markdown Official documentation](https://www.markdownguide.org/)
 * [VS Code](https://code.visualstudio.com/)
+* [Lab video](https://youtu.be/L-7l82_2VnY)
 
 ## Learning Outcomes
 * How to use VS Code

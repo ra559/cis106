@@ -4,7 +4,7 @@ title: Week Report 1
 ---
 # {{page.title}}
 
-> Video [here](https://youtu.be/kBsY-uoEuBU)
+> Video [here](https://youtu.be/rTSmOL1RiuY)
 
 ## List of Tasks
 For this week, complete the following tasks.

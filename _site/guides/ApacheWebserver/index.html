@@ -1,0 +1,95 @@
+<h1 id="setting-up-a-web-server-in-debian">Setting up a web server in Debian</h1>
+
+<h2 id="requirements">Requirements</h2>
+<ul>
+  <li>Hypervisor: VirtualBox</li>
+  <li>Host OS: Windows 11/10 - MacOS (for Intel CPUs)</li>
+  <li>Guest OS: Debian</li>
+  <li>Server Application: Apache</li>
+  <li>Other:
+    <ul>
+      <li>SSH - For remote management of the server virtual machine</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="step-1-install-virtualbox">Step 1: Install VirtualBox</h2>
+<blockquote>
+  <p><strong>Note:</strong> the version of VirtualBox that will be used in this guide is older. We will use VirtualBox 7.0 instead of 7.1 because 7.0 is vastly more stable than 7.1. You can use 7.1 if you want.</p>
+</blockquote>
+
+<h3 id="host-machine-system-requirements">Host Machine System Requirements:</h3>
+<ul>
+  <li><strong>CPU</strong>: Quad core CPU or higher</li>
+  <li><strong>RAM</strong>: 8GB or More</li>
+  <li><strong>Free Storage</strong>: 60GB or more</li>
+</ul>
+
+<h3 id="guest-machine-system-requirements">Guest Machine System Requirements</h3>
+<ul>
+  <li><strong>CPU</strong>: 1 Core</li>
+  <li><strong>RAM</strong>: 1 GB</li>
+  <li><strong>Free Storage</strong>: 20 GB</li>
+</ul>
+
+<h3 id="files-to-download">Files to download:</h3>
+<ul>
+  <li>Debian ISO</li>
+  <li>VirtualBox 7.0</li>
+  <li>VirtualBox 7.0 Extension Pack</li>
+</ul>
+
+<ol>
+  <li>Install VirtualBox. The installer is straight forward. If you need assistance, refer to this video.</li>
+  <li>Install VirtualBox extension Pack by opening the file. If you need assistance, refer to this video.</li>
+</ol>
+
+<h2 id="step-2-create-a-debian-virtual-machine">Step 2: Create a Debian Virtual Machine</h2>
+<ol>
+  <li>Follow the steps in this presentation:</li>
+</ol>
+
+<h2 id="step-3-install-debian">Step 3: Install Debian</h2>
+<ol>
+  <li>Follow the steps in this presentation:</li>
+</ol>
+
+<h2 id="step-4-update">Step 4: Update</h2>
+<p>sudo apt update &amp;&amp; sudo apt upgrade -y</p>
+
+<h2 id="step-5-configure-apache">Step 5: Configure Apache</h2>
+
+<ol>
+  <li>Check that Apache is enabled and running: <code class="language-plaintext highlighter-rouge">systemctl status apache2</code></li>
+  <li>Check that SSH is enabled and running: <code class="language-plaintext highlighter-rouge">systemctl status ssh</code></li>
+  <li>Install UFW: <code class="language-plaintext highlighter-rouge">sudo apt install ufw</code></li>
+  <li>Enable UFW: <code class="language-plaintext highlighter-rouge">sudo ufw enable</code></li>
+  <li>Configure UFW to allow http(s) and ssh traffic
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">sudo ufw allow 'WWW Full'</code></li>
+      <li><code class="language-plaintext highlighter-rouge">sudo ufw allow 'Apache'</code></li>
+    </ol>
+  </li>
+</ol>
+
+<p>At this point you should be able to see the default apache index.html site.</p>
+
+<ol>
+  <li>Get the IP address of your virtual machine: <code class="language-plaintext highlighter-rouge">hostname -I</code></li>
+  <li>Open a web browser in your host machine and type the IP address in the URL bar.</li>
+</ol>
+
+<p><img src="/assets/guides/webserver/apacheindex.png" alt="alt text" /></p>
+
+<h2 id="step-6-remote-access-to-the-server">Step 6: Remote Access to the server</h2>
+<ol>
+  <li>In your host OS, you will need to open a terminal application and use the SSH command.</li>
+  <li>Here is the general formula of the ssh command:</li>
+</ol>
+
+<p><img src="https://rapurl.live/7ge" alt="ssh syntax" /><br /></p>
+
+<p>From this point on, we can manage the server from our Host OS</p>
+
+<h2 id="step-7-setup-virtual-hosts">Step 7: Setup Virtual Hosts</h2>
+<p>Virtual host allows us to serve more than one website in a single web server. By default, Apache has one server block enabled. This server block is served from the directory: /var/www/html. For a single website, all the files are placed within this directory. When we setup virtual hosts, each site has its own directory. The recommendation is to leave the default html directory and for each site a new directory inside /var/www. In this project, we will have one virtual site called mywebsite. You are welcome to use a different name just remember to adjust every command where the word mywebsite is reference for your preferred website domain name.</p>

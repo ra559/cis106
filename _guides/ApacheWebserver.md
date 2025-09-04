@@ -5,10 +5,19 @@ layout: page
 
 # {{page.title}}
 
+## READ ME
+This guide assumes the following:
+1. You have installed Virtualbox 
+2. You know how to create a Debian virtual machine
+
+If you do have not installed Virtualbox, or do not know how to create a virtual machine, follow steps 1, 2 and 3 of Lab 2. This guide starts from the point of creating a Debian 13 Web Server Virtual Machine.
+
+<hr>
+
 ## Requirements
 * Hypervisor: VirtualBox  
-* Host OS: Windows 11/10 - MacOS (for Intel CPUs)
-* Guest OS: Debian 
+* Host OS: Windows 11/10 or MacOS (Intel/Apple Silicon)
+* Guest OS: Debian 13 (NO GUI)
 * Server Application: Apache
 * Other:
   * SSH - For remote management of the server virtual machine
@@ -23,32 +32,33 @@ layout: page
 * **RAM**: 1 GB
 * **Free Storage**: 20 GB
 
-## Step 1: Install VirtualBox
+<hr>
 
-1. Go to [virtualbox.org](https://www.virtualbox.org/) and download the installer for your operating system:
-   1. Click on the Download button
-   2. On the VirtualBox Platform packages, select your Operating System
-   3. Download the Extension Pack by clicking on the "Accept and Download" button
-2. Download the [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
-3. Install the Microsoft Visual C++ Redistributable
-4. Install VirtualBox
-5. Install The VirtualBox Extension pack
+## Step 1: Create a virtual machine
 
-### Screenhots
-![VirtualBox](https://docs.google.com/drawings/d/e/2PACX-1vQQfiDo_On7FgpcNt2wlEG_9XGnNgWFwqX28YbbSnQGDBZ0D_cdDuxk_1R_z1HP3sR4JsHMAhadyIcg/pub?w=960&h=720)
+1. 
 
-<br>
-
-![Microsoft Visual C++](https://docs.google.com/drawings/d/e/2PACX-1vTiCrPwstw2j6puZ-69aeXSI-HKAH23LXdsONySvSd4uj4JKhXIMoSUbtufplP-8jgFL3KLfkWA2kvv/pub?w=960&h=720)
-
+<hr>
 
 ## Step 2: Create a Debian Virtual Machine
 ### Files to download:
-* [Debian ISO](https://www.debian.org/)
-  * Got to [Debian.org](https://www.debian.org/) and click on download
+* Download the Debian ISO. Which Debian ISO Should You Download?
 
-1. Create a virtual machine where Debian will be installed.
-   1. Follow the steps in this presentation: 
+
+| Your Computer Type        | CPU Type               | ISO File to Download              | Download Link                                                                                            |
+| ------------------------- | ---------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **Windows 11/10**         | Intel or AMD (x86\_64) | `debian-13.0.0-amd64-netinst.iso` | [Download](https://www.debian.org/) -> Click the black **Download** button                                |
+| **macOS (Intel)**         | Intel (x86\_64)        | `debian-13.0.0-amd64-netinst.iso` | [Download](https://www.debian.org/) -> Click the black **Download** button                                |
+| **macOS (Apple Silicon)** | ARM (arm64)            | `debian-13.0.0-arm64-netinst.iso` | [Direct Link](https://cdimage.debian.org/debian-cd/current/arm64/iso-cd/debian-13.0.0-arm64-netinst.iso) |
+
+
+1. Create a virtual machine where Debian will be installed that meets the following specifications:
+   1. RAM: 1GB
+   2. CPU: 1
+   3. Storage: 20GB
+
+2. Follow the steps in this [presentation](https://docs.google.com/presentation/d/e/2PACX-1vSL0uIh10efjylcStOP8r9AxUlq1mZ-mQ_ojA4ESu7eLgMJOdYlOpbXdplPlA6gIiIrTU4LS_6dCV27/pub?start=false&loop=false&delayms=3000&slide=id.p) as a general guide and adjust the settings accordingly.
+
 
 ## Step 3: Install Debian
 2. Turn on the virtual machine and install Debian.

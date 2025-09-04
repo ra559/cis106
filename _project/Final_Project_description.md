@@ -47,13 +47,9 @@ Each deliverable will be submitted as a Markdown document in your GitHub Reposit
 ##  2. <a name='Requirements'></a>Requirements
 * A virtual machine/PC where you can install Debian. A Virtual machine will be preferred since everything in the tutorials will be done in a virtual machine.
 
-This is the main tutorial we will follow:
-* [How To Install the Apache Web Server on Ubuntu 22.04](https://rapurl.live/ch3)
-
 Here are some sources you can use to investigate:
 * [What is a Web Server](https://rapurl.live/pbe)
 * [What is SSH](https://rapurl.live/9bg)
-* [What is Ubuntu Server](https://rapurl.live/57a)
 * [Open Source Web Servers](https://rapurl.live/pkm)
 
 ##  3. <a name='Deliverable1:ProjectsRequirements'></a>Deliverable 1: Project's Requirements

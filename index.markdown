@@ -31,6 +31,8 @@ title: Welcome to the course
 Here you will find all the information for the course.
 
 
+> README: I am currently migrating the course from using Ubuntu to Debian. You will find some pages and documents referencing Ubuntu. Since Ubuntu is based on Debian, everything will work the same. 
+
 <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
 
 ##  1. <a name='SpecialNoteRegardingthefinalexam:'></a>Special Note Regarding the final exam:
