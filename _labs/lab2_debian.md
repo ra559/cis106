@@ -138,6 +138,16 @@ Which Debian ISO Should You Download?
 | **macOS (Apple Silicon)** | ARM (arm64)            | `debian-13.0.0-arm64-netinst.iso` | [Direct Link](https://cdimage.debian.org/debian-cd/current/arm64/iso-cd/debian-13.0.0-arm64-netinst.iso) |
 
 
+> **ATTENTION MACOS USERS** <br>
+> If your mac computer has an Apple Sillicon CPU (M Series), the latest version of virtualbox 7.2 is not working. Please download version 7.1 instead. 
+> To obtain the installer for 7.1, follow these steps:
+> 1. In virtualbox download page, scroll down to ["Previews releases"](https://www.virtualbox.org/wiki/Download_Old_Builds)
+> 2. Select [Virtualbox 7.1](http://virtualbox.org/wiki/Download_Old_Builds_7_1)
+> 3. Then select [​macOS / Apple Silicon hosts](https://download.virtualbox.org/virtualbox/7.1.12/VirtualBox-7.1.12-169651-macOSArm64.dmg)
+> 4. Also download the [Extension Pack](https://download.virtualbox.org/virtualbox/7.1.12/Oracle_VirtualBox_Extension_Pack-7.1.12.vbox-extpack)
+
+
+
 1. [VirtualBox Installer](https://www.virtualbox.org/wiki/Downloads)
 2. [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads)
 3. <span style="color:red">[Windows ONLY]</span> [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-microsoft-visual-c-redistributable-version)
@@ -364,6 +374,9 @@ git clone git@github.com:YourGitHubUsername/YourRepositoryName.git
 ```
 
 ### 8. Visual Guides
+
+> These recordings were made in Ubuntu 24.04 but they will work the same for Debian 13. 
+
 
 <p align="center"><img src="/assets/lab2/git_username_config.gif"/></p> 
 <p align="center"><img src="/assets/lab2/ssh_key.gif"/></p> 
