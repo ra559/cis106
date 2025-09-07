@@ -68,7 +68,7 @@ title: Lab 2 - Installing Debian 13
 
 
 ## Video Guide Here
-[Lab 2 Installing Debian 13 ](https://youtu.be/Q4aMerJX0XE)
+[Lab 2 Installing Debian 13 ](https://youtu.be/lu159mwLfls)
 
 
 ## Presentations:

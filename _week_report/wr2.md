@@ -5,7 +5,7 @@ title: Week Report 2
 # {{page.title}}
 
 ## Video Here
-[Week Report 2 Spring 24](https://youtu.be/jqLjiQKnRgc)
+[Week Report 2 Spring 24](https://youtu.be/0h1efShVND4)
 
 ## Complete the following tasks
 1. Complete [lab 2 - Installing Debian 13](https://cis106.com/labs/lab2_debian/).
@@ -51,7 +51,7 @@ Lecture 2 Introduction to Linux Notes (this is the tittle of the document - Head
 > Since you already completed lab2, the remaining of the work in this course will be completed inside the virtual machine. Windows/MacOS will not be used for the remaining of the course!!! <b style="color: red">PLEASE DO NOT EDIT OR UPLOAD FILES TO GITHUB VIA THE WEBSITE. </b>You must use VS Code Terminal to commit and push to your repository. If you decide to ignore this. You are on your own. If you don't understand, please ask! 
 > This report can only be completed after lab 2!
 
-1. If you have not done so, Create a folder inside the `weekReports` folder called `wr2`. You probably did this already during lab 2.
+1. If you have not done so, create a folder inside the `weekReports` folder called `wr2`. You probably did this already during lab 2.
 2. Open the `cis106` folder in VS Code
 3. Inside the `wr2` folder, create a file called `wr2.md`
 4. Add a link to your notes and lab2 markdown files in github.
@@ -96,4 +96,4 @@ git push
 * It is performance-based and requires access to a Linux Virtual Machine.
 * If you do not have a laptop/computer you can bring to school:
   * A Linux workstation will be available on campus.
-  * Request it early—available computers are limited.
+  * Request it early-available computers are limited.
