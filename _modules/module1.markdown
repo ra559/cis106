@@ -19,7 +19,9 @@ title: Module 1 What is Linux?
 1. [Introduction to Linux](https://rapurl.live/dbx)
 2. [The basics of Virtualization](https://rapurl.live/bt7)
 3. [Using VirtualBox](http://bit.ly/3hk03nI)
+   1. [Creating a virtual machine](https://docs.google.com/presentation/d/e/2PACX-1vSL0uIh10efjylcStOP8r9AxUlq1mZ-mQ_ojA4ESu7eLgMJOdYlOpbXdplPlA6gIiIrTU4LS_6dCV27/pub?start=false&loop=false&delayms=3000&slide=id.p)
 4. [Installing Ubuntu 24.04 in virtualbox](https://rapurl.live/vjw)
+5. [Debian Installer](https://docs.google.com/presentation/d/e/2PACX-1vSN5c6pPHfnlbcl10KlrxZ4kh606rIkDwdFd6uo9VqpOiwHrlqOOYFA3_ypMp9MA_R65TtbQPgJYHnx/pub?start=false&loop=false&delayms=3000&slide=id.g374a13ca6e9_0_0)
 
 ## Lecture 3: The desktop environment 
 * Presentations
@@ -30,7 +32,7 @@ title: Module 1 What is Linux?
          1. Pages 1 - 6 (25 - 30 of the pdf)
       2. Part 4 - Writing Shell Scripts
          1. Pages 365 (389 of the pdf)
-3. [Managing Software](https://rapurl.live/nft)
+3. [Managing Software](https://docs.google.com/presentation/d/e/2PACX-1vSF-MLL-pMvSnYq71x9ZOUVNrJvwfL9ZMJSBEppKJfTUETA6AZgPA-Q6XcYCbok3MBGrfMD5llDMRci/pub?start=false&loop=false&delayms=3000)
    1. Recommended reading:
       1. Part 3 - Common Tasks and Essential Tools - The Linux Command Line Fifth Edition By William Shots
          1. Package management - Pages 171 - 181 (196 - 205 of the PDF)
