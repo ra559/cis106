@@ -36,3 +36,4 @@ title: Module 1 What is Linux?
    1. Recommended reading:
       1. Part 3 - Common Tasks and Essential Tools - The Linux Command Line Fifth Edition By William Shots
          1. Package management - Pages 171 - 181 (196 - 205 of the PDF)
+4. [Shell Scripting Chapter 1](https://docs.google.com/presentation/d/e/2PACX-1vSGaFVc1w27_WXIBJUGfPFjWB0nN3jL7jNFfCGuv3JaDI0DnS0OBPZnMvNPFzoRR58ClJikkDJFZwyf/pub?start=false&loop=false&delayms=3000)
