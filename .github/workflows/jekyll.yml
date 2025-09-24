@@ -1,0 +1,42 @@
+name: Jekyll Build and Deploy
+
+on:
+  push:
+    branches:
+      - main  # or master, depending on your default branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'    # Match what you use locally
+          bundler-cache: true    # Cache gems for faster builds
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site   # Jekyll’s build output
+          
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
