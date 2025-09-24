@@ -16,7 +16,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'    # bump from 3.1 → 3.2 to match Bundler 2.7.x
+          ruby-version: '3.2'
           bundler-cache: true
 
       - name: Install dependencies
@@ -29,14 +29,18 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site   # Jekyll’s build output
-          
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
+    environment:
+      name: github-pages      # REQUIRED for Pages deployments
+      url: ${{ steps.deployment.outputs.page_url }}
     permissions:
       pages: write
       id-token: write
 
     steps:
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
