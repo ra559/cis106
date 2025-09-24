@@ -1,56 +1,46 @@
 title: Linux Fundamentals
 email: linuxworkshop67@gmail.com
 description: >-
-        Here you will find all the information about CIS 106 Linux fundamentals.
+  Here you will find all the information about CIS 106 Linux fundamentals.
 baseurl: "" 
 url: "" 
-#For local development
-theme: just-the-docs
 
-#For github deployment
-#remote_theme: pmarsceill/just-the-docs
-#color_scheme: nil
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+theme: just-the-docs
 color_scheme: nil
 search_enable: true
+
+aux_links:
+  Template Repository: https://github.com/just-the-docs/just-the-docs-template
 
 collections:
   modules:
     permalink: "/:collection/:path/"
     output: true
-
   week_report:
-    permalink: "/:collection:/:path"
+    permalink: "/:collection/:path/"
     output: true
-
   labs:
     permalink: "/:collection/:path/"
     output: true
-
   docs:
     permalink: "/:collection/:path/"
     output: true
-
   guides:
     permalink: "/:collection/:path/"
     output: true
-
   project:
     permalink: "/:collection/:path/"
     output: true
   final_exam:
     permalink: "/:collection/:path/"
     output: true
-
   extra:
     permalink: "/:collection/:path/"
     output: true
-  
   bash:
     permalink: "/:collection/:path/"
     output: true
-    
+
 just_the_docs:
   collections:
     modules:
@@ -59,16 +49,15 @@ just_the_docs:
       name: Week_Report
     labs:
       name: Labs
-
     docs:
-      name: Documentation    
+      name: Documentation
     guides:
       name: Guides
     project:
-      name: Project    
+      name: Project
     extra:
-      name: Extra  
+      name: Extra
     final_exam:
       name: Final_Exam
     bash:
-      name: bash
+      name: Bash
