@@ -14,6 +14,24 @@ log_file="$HOME/${script_name}.error.log"
 
 # Package selection
 if [[ "${XDG_CURRENT_DESKTOP:-}${DESKTOP_SESSION:-}" == *"GNOME"* ]]; then
+	if [[ "${DESKTOP_SESSION}" == *"ubuntu"* ]]; then
+	essential_packages=(
+		pv git gcc vim vlc
+		curl make most nemo perl tar tree wget
+		bzip2 geany samba tilix xclip
+		boxes cowsay figlet lolcat rsync snapd toilet 
+		ntfs-3g caffeine cmatrix flatpak flameshot fortune linuxlogo
+		cpufetch exfat-fuse net-tools smbclient
+		chromium screenfetch
+		gnome-tweaks python3-pip
+		build-essential fonts-symbola
+		fonts-recommended gnome-screenshot
+		chrome-gnome-shell
+		gnome-software-plugin-snap gnome-software-plugin-flatpak
+		gnome-shell-extension-manager
+
+	)
+	else
 	essential_packages=(
 		pv git gcc vim vlc
 		curl make most nemo perl tar tree wget
@@ -33,6 +51,7 @@ if [[ "${XDG_CURRENT_DESKTOP:-}${DESKTOP_SESSION:-}" == *"GNOME"* ]]; then
 		gnome-shell-extension-system-monitor
 		gnome-shell-extension-tiling-assistant
 	)
+	fi
 else
 	essential_packages=(
 		pv git gcc vim vlc
@@ -143,6 +162,7 @@ help(){
 	echo -e "\tA basic bash script to install necessary software that will be used during the semester."
 	echo -e "\n\033[1mOPTIONS\033[0m"
 	echo -e "\t\033[1m-a\033[0m\tInstall all the necessary software and the bash_aliases"
+	echo -e "\t\033[1m-i\033{0m\tInstall all the necessary software only"
 	echo -e "\t\033[1m-b\033[0m\tInstall only the bash_aliases"
 	echo -e "\t\033[1m-h\033[0m\tDisplays this help/man makeshift message"
 	echo -e "\n\033[1mEXAMPLES\033[0m"
@@ -200,10 +220,52 @@ run(){
 	fi
 }
 
+
+software_only(){
+	sudo -v || fatal "You must have sudo privileges to run this script."
+
+	sys_update
+	clear
+	info "The following packages will be installed:\n"
+
+	local column_count=3
+	local total_packages=${#essential_packages[@]}
+	for ((i=0; i<total_packages; i+=column_count)); do
+		printf "%-30s %-30s %-30s\n" \
+			"${essential_packages[i]}" \
+			"${essential_packages[i+1]:-}" \
+			"${essential_packages[i+2]:-}"
+	done
+
+	echo -e "\n⚠️  Any error messages or warnings will be logged in: $log_file"
+
+	for package in "${essential_packages[@]}"; do
+		if dpkg -s "$package" &>/dev/null; then
+			warn "$package is already installed. Skipping."
+			continue
+		fi
+
+		info "Installing $package..."
+		sudo apt install -y "$package" &> /dev/null &
+		install_pid=$!
+		spinner $install_pid
+		wait $install_pid
+		if [[ $? -eq 0 ]]; then
+			success "$package installed"
+		else
+			warn "$package could not be installed!" | tee -a "$log_file"
+		fi
+	done
+	broom
+}
+
+
+
 # Option parsing
-while getopts ":ab:h" opt; do
+while getopts ":aib:h" opt; do
 	case "$opt" in
 		a) run ;;
+		i) software_only ;;
 		b) set_alias ;;
 		h) help; exit 0 ;;
 		\?) fatal "Invalid option: -$OPTARG" ;;

@@ -5,11 +5,11 @@ description: >-
 baseurl: "" 
 url: "" 
 #For local development
-#theme: just-the-docs
+theme: just-the-docs
 
 #For github deployment
-remote_theme: pmarsceill/just-the-docs
-color_scheme: nil
+#remote_theme: pmarsceill/just-the-docs
+#color_scheme: nil
 search_enabled: true
 
 collections:
