@@ -3,7 +3,7 @@ name: Jekyll Build and Deploy
 on:
   push:
     branches:
-      - main  # or master, depending on your default branch
+      - main  # change if your default branch is different
 
 jobs:
   build:
@@ -16,8 +16,8 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'    # Match what you use locally
-          bundler-cache: true    # Cache gems for faster builds
+          ruby-version: '3.2'    # bump from 3.1 → 3.2 to match Bundler 2.7.x
+          bundler-cache: true
 
       - name: Install dependencies
         run: bundle install
