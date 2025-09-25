@@ -6,7 +6,7 @@ title: Week Report 3
 # {{page.title}}
 
 ## Video here
-[Week Report 3 ](https://youtu.be/I_G4xnDy6q0)
+[Week Report 3 ](https://youtu.be/0FkSHt4DmRo)
 
 > **Note**: This cannot be completed if you have not completed lab 2.
 
@@ -30,13 +30,13 @@ title: Week Report 3
    6. [Practice 8: Using man](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.g2b6d39ab458_0_97)
    7. [Practice 9: Using the help option](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.g2b6d39ab458_0_102)
    8. [Practice 10: Solution](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.g2b6d39ab458_0_107)
-2. Complete [Lab 3 - The GNOME DE and The Bash Shell](https://cis106.com/labs/lab3)
-3. [Complete Notes 3](http://cis106.com/week_report:/wr3#3-what-to-include-in-notes-3)
-4. [Complete Week Report 3](http://cis106.com/week_report:/wr3#4-complete-week-report-3)
+2. Complete [Lab 3 - The GNOME DE and The Bash Shell](https://cis106.com/labs/lab3/)
+3. [Complete Notes 3](https://cis106.com/week_report/wr3/#3-what-to-include-in-notes-3)
+4. [Complete Week Report 3](https://cis106.com/week_report/wr3/#4-complete-week-report-3)
 
 ### 2. Complete lab 3
-   1. Video [here](https://youtu.be/8Pfpno_g2sw)
-   2. Instructions [here](http://cis106/labs/lab3/)
+   1. Video [here](https://youtu.be/0FkSHt4DmRo)
+   2. Instructions [here](https://cis106.com/labs/lab3/)
 
 ### 3. What to include in notes 3:
 * Create a markdown file that includes the following:

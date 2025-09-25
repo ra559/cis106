@@ -6,7 +6,7 @@ title: Lab 3 - The GNOME DE and The Bash Shell
 # {{page.title}}
 
 ## Video here
-[VIDEO](https://youtu.be/WD1QNH05Nn4)
+[VIDEO](https://youtu.be/0FkSHt4DmRo)
 
 
 - [{{page.title}}](#pagetitle)

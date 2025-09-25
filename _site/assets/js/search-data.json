@@ -191,135 +191,135 @@
     "doc": "Week Report 1",
     "title": "Week Report 1",
     "content": "Video here . ",
-    "url": "/week_report:/wr1",
+    "url": "/week_report/wr1/",
     
-    "relUrl": "/week_report:/wr1"
+    "relUrl": "/week_report/wr1/"
   },"28": {
     "doc": "Week Report 1",
     "title": "List of Tasks",
     "content": "For this week, complete the following tasks. | Install Slack in your phone and/or computer (I suggest both) and join our Slack workspace. The Link to join is in Blackboard (Takes about 5 minutes to complete) | [OPTIONAL] Watch this video so that you are familiar with Git and GitHub. (10 Minutes) | [OPTIONAL] Watch this video so that you are familiar with VS Code’s interface (7 Minutes) | Complete Lab 1 - Learning Markdown (Takes about 1 hour depending on how well you can use your computer) | Read the syllabus or home page of the course website. Write down any questions you have for me. | Complete Notes 1. | Complete Week Report 1 | . ",
-    "url": "/week_report:/wr1#list-of-tasks",
+    "url": "/week_report/wr1/#list-of-tasks",
     
-    "relUrl": "/week_report:/wr1#list-of-tasks"
+    "relUrl": "/week_report/wr1/#list-of-tasks"
   },"29": {
     "doc": "Week Report 1",
     "title": "What will you include in your notes?",
     "content": ". | Create a folder in your Documents folder called: notes1 | Open the notes1 folder inside VS Code and create a file called: notes1.md | Inside the notes1.md file type and answer the following questions using proper markdown syntax (headings, paragraph formatting, bullet points, etc..) . | What is Markdown? | What is Git? | What is GitHub? | What is Slack? | . | Save and convert the file to PDF | Compress the folder to a zip file and upload the file to your github repository | In Blackboard: . | Submit the PDF file notes1.pdf | Submit the URL of your github repository. Make sure that your github repository contains your Notes1.zip file. If the zip file is not there I will not award you a passing grade for this Notes | . | . ",
-    "url": "/week_report:/wr1#what-will-you-include-in-your-notes",
+    "url": "/week_report/wr1/#what-will-you-include-in-your-notes",
     
-    "relUrl": "/week_report:/wr1#what-will-you-include-in-your-notes"
+    "relUrl": "/week_report/wr1/#what-will-you-include-in-your-notes"
   },"30": {
     "doc": "Week Report 1",
     "title": "What will you submit for your week report 1:",
     "content": "Step 1 Prepare your submission for week report 1 . | Create a folder in your documents directory called: wr1 | Open the wr1 folder in VS Code | Inside wr1, create a markdown file called wr1.md | In the file, wr1.md type the following: | . --- name: your name assignment: week report 1 course: cis106 semester: spring 23 for example --- Week Report 1 Submission ## Slack Screenshot take a screenshot of slack and place it here ![Slack screenshot](filename.png) ## Github Screenshot take a screenshot of your github account and place it here ![GitHub Screenshot](filename.png) ## Acknowledgements * By submitting this assignment I [Your full name here] acknowledge that I have read the syllabus or home page of the course * I also acknowledge that I have written down any questions that I have for the professor and will ask them in class, via Slack or * I also acknowledge that I am aware that the final exam is In Person . Step 2 Upload to GitHub . | Once you have placed the screenshots in your markdown file, and typed the acknowledgment, save the file and convert the file to pdf. | READ the syllabus or home page of the site PLEASE! | . | Upload the weekReports folder to GitHub. | . Step 3 Submit . | In blackboard, under week report 1, submit the following: . | The URL to your GitHub repository | The PDF file of your week report 1 (wr1.pdf) | . | . ",
-    "url": "/week_report:/wr1#what-will-you-submit-for-your-week-report-1",
+    "url": "/week_report/wr1/#what-will-you-submit-for-your-week-report-1",
     
-    "relUrl": "/week_report:/wr1#what-will-you-submit-for-your-week-report-1"
+    "relUrl": "/week_report/wr1/#what-will-you-submit-for-your-week-report-1"
   },"31": {
     "doc": "Week Report 1",
     "title": "How will you be graded:",
     "content": "| Item | Points | . | GitHub Repository URL containing all the files | 25pts | . | PDF File with the screenshots | 25pts | . | Proper markdown syntax | 25pts | . | Acknowledgement message | 25pts | . Regarding Late submissions . Late submissions will be penalized 20 points. See blackboard for due date . Special Note Regarding the final exam: . | You will be required to use markdown during your final exam. | The final exam is in person. | The exam is performance based and will require access to a Linux Virtual Machine. | If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you. | . ",
-    "url": "/week_report:/wr1#how-will-you-be-graded",
+    "url": "/week_report/wr1/#how-will-you-be-graded",
     
-    "relUrl": "/week_report:/wr1#how-will-you-be-graded"
+    "relUrl": "/week_report/wr1/#how-will-you-be-graded"
   },"32": {
     "doc": "Week Report 2",
     "title": "Week Report 2",
     "content": " ",
-    "url": "/week_report:/wr2",
+    "url": "/week_report/wr2/",
     
-    "relUrl": "/week_report:/wr2"
+    "relUrl": "/week_report/wr2/"
   },"33": {
     "doc": "Week Report 2",
     "title": "Video Here",
     "content": "Week Report 2 Spring 24 . ",
-    "url": "/week_report:/wr2#video-here",
+    "url": "/week_report/wr2/#video-here",
     
-    "relUrl": "/week_report:/wr2#video-here"
+    "relUrl": "/week_report/wr2/#video-here"
   },"34": {
     "doc": "Week Report 2",
     "title": "Complete the following tasks",
     "content": ". | Complete lab 2 - Installing Debian 13. | If you have not done so, complete Week Report 1. | Complete Discussion Board 1 - Open Source. Note: you can do this later as the due date is the end of the semester. | Complete Discussion Board 2 - The history of Linux. Note: you can do this later as the due date is the end of the semester. | Complete Notes 2. This and everything else from this point on must be completed inside Debian (your virtual machine). Windows/MacOS will no longer be used. Therefore you MUST complete lab 2 before attempting the report and the notes. | Complete this week’s Week Report. | . ",
-    "url": "/week_report:/wr2#complete-the-following-tasks",
+    "url": "/week_report/wr2/#complete-the-following-tasks",
     
-    "relUrl": "/week_report:/wr2#complete-the-following-tasks"
+    "relUrl": "/week_report/wr2/#complete-the-following-tasks"
   },"35": {
     "doc": "Week Report 2",
     "title": "What will you include in your notes?",
     "content": "Notes: . | folder and directory mean the same thing! | local repository means your cis106 folder inside your virtual machine | . | If you have not done so, create a folder inside your cis106 folder called notes | Inside the notes directory/folder create a new folder called notes2 | Open the cis106 directory/folder inside vs code. | Using vs code file manager, create a file inside the notes2 directory called notes2.md | In the file notes2.md, answer the following questions. Make sure to use proper markdown syntax to make your notes file look presentable. Use headings, paragraphs and bullet point formatting. This, at a minimum, should make your file look presentable. NO SCREENSHOTS! All the information to answer the questions can be found in the Lecture 2 presentation Introduction to Linux and The basics of virtualization | . Lecture 2 Introduction to Linux Notes (this is the tittle of the document - Heading 1 formatting please!) 1. What is an Operating System? 2. What is a kernel? 3. Which other parts aside from the kernel identify an OS? 4. What is linux and linux distribution? 6. List at least 4 linux characteristics: 7. What is Debian? 9. List and define the different types of licensing agreements 10. What is Free Software? Define the 4 freedoms. 11. What is virtualization? . ",
-    "url": "/week_report:/wr2#what-will-you-include-in-your-notes",
+    "url": "/week_report/wr2/#what-will-you-include-in-your-notes",
     
-    "relUrl": "/week_report:/wr2#what-will-you-include-in-your-notes"
+    "relUrl": "/week_report/wr2/#what-will-you-include-in-your-notes"
   },"36": {
     "doc": "Week Report 2",
     "title": "What will you submit for your week report:",
     "content": "Note: Since you already completed lab2, the remaining of the work in this course will be completed inside the virtual machine. Windows/MacOS will not be used for the remaining of the course!!! PLEASE DO NOT EDIT OR UPLOAD FILES TO GITHUB VIA THE WEBSITE. You must use VS Code Terminal to commit and push to your repository. If you decide to ignore this. You are on your own. If you don’t understand, please ask! This report can only be completed after lab 2! . | If you have not done so, create a folder inside the weekReports folder called wr2. You probably did this already during lab 2. | Open the cis106 folder in VS Code | Inside the wr2 folder, create a file called wr2.md | Add a link to your notes and lab2 markdown files in github. | Add a screenshot of your Debian Desktop (virtual machine) with a terminal open or firefox in the cis106.com website | Convert the wr2.md file to pdf | Push all the changes to github | In blackboard, submit the URL to the wr2.md file and the pdf file wr2.pdf | . ",
-    "url": "/week_report:/wr2#what-will-you-submit-for-your-week-report",
+    "url": "/week_report/wr2/#what-will-you-submit-for-your-week-report",
     
-    "relUrl": "/week_report:/wr2#what-will-you-submit-for-your-week-report"
+    "relUrl": "/week_report/wr2/#what-will-you-submit-for-your-week-report"
   },"37": {
     "doc": "Week Report 2",
     "title": "Special Note 1 - VM Snapshots",
     "content": "Please take a snapshot of your virtual machine after you complete the report. The virtual machine must be off before you take the snapshot. This process is show in the video You should have at least 2 snapshots of your vm. Keep in mind that snapshots take space. ",
-    "url": "/week_report:/wr2#special-note-1---vm-snapshots",
+    "url": "/week_report/wr2/#special-note-1---vm-snapshots",
     
-    "relUrl": "/week_report:/wr2#special-note-1---vm-snapshots"
+    "relUrl": "/week_report/wr2/#special-note-1---vm-snapshots"
   },"38": {
     "doc": "Week Report 2",
     "title": "Special Note 2 – Git Command Quick Reference",
     "content": "You’ll be using Git frequently this semester. Here’s a quick reminder of the most common commands: . | Command | Purpose | . | git clone repository/url/here | Download a GitHub repository to your computer. | . | git pull | Synchronize your local repository with the latest changes from GitHub. Always run this before starting work in VS Code. | . | git add . | Track all changes made to your files. | . | git commit -m \"description here\" | Save a snapshot of your tracked changes with a short description. | . | git push | Send your committed changes to GitHub. | . Command Order: . git pull git add . git commit -m \"message\" git push . ⚠️ Warning: ⚠️ Avoid making changes directly in the GitHub website unless you: . | Know exactly what you are doing, and | Remember to run git pull before working locally. | . ",
-    "url": "/week_report:/wr2#special-note-2--git-command-quick-reference",
+    "url": "/week_report/wr2/#special-note-2--git-command-quick-reference",
     
-    "relUrl": "/week_report:/wr2#special-note-2--git-command-quick-reference"
+    "relUrl": "/week_report/wr2/#special-note-2--git-command-quick-reference"
   },"39": {
     "doc": "Week Report 2",
     "title": "Special Note Regarding the Final Exam",
     "content": ". | The final exam will be in person. | It is performance-based and requires access to a Linux Virtual Machine. | If you do not have a laptop/computer you can bring to school: . | A Linux workstation will be available on campus. | Request it early-available computers are limited. | . | . ",
-    "url": "/week_report:/wr2#special-note-regarding-the-final-exam",
+    "url": "/week_report/wr2/#special-note-regarding-the-final-exam",
     
-    "relUrl": "/week_report:/wr2#special-note-regarding-the-final-exam"
+    "relUrl": "/week_report/wr2/#special-note-regarding-the-final-exam"
   },"40": {
     "doc": "Week Report 3",
     "title": "Week Report 3",
     "content": " ",
-    "url": "/week_report:/wr3",
+    "url": "/week_report/wr3/",
     
-    "relUrl": "/week_report:/wr3"
+    "relUrl": "/week_report/wr3/"
   },"41": {
     "doc": "Week Report 3",
     "title": "Video here",
     "content": "Week Report 3 . Note: This cannot be completed if you have not completed lab 2. 1. Study Material . | Presentations: . | Exploring Desktop Environments | Gnome documentation | What is a Shell? . | Recommended reading: . | Part 1 - Learning the shell - The Linux Command Line Fifth Edition By William Shots | Pages 1 - 6 (25 - 30 of the pdf) | . | . | . | . 2. Tasks to complete . | Complete the lectures’s practice (3 to 10) and take a screenshot. Place the screenshots in the wr3 folder/directory inside the week_reports folder/directory. Just take a screenshot of your terminal after running the last command in each practice. Make sure to clear your screen before you start each practice. You will use these screenshots when creating your week report 3 submission therefore place them in the correct wr3 folder. If you do not understand what this means, watch the video as there is a live demonstration there. | Practice 3: Basic Shell Usage Commands | Practice 4: Basic System Information Commands | Practice 5: Basic Hardware Information Commands | Practice 6: Basic “Fun” commands | Practice 7: Using the command history | Practice 8: Using man | Practice 9: Using the help option | Practice 10: Solution | . | Complete Lab 3 - The GNOME DE and The Bash Shell | Complete Notes 3 | Complete Week Report 3 | . 2. Complete lab 3 . | Video here | Instructions here | . 3. What to include in notes 3: . | Create a markdown file that includes the following: . | Answers to the following questions: . | What is a graphical user interface (GUI)? | What is a desktop environment? | What is the command line interface (CLI)? | How do I access the command line interface (CLI)? | What is a virtual console? | What is a terminal emulator? | What is bash? | What is the shell prompt? | . | Definition, usage, and examples of the following commands: . | clear | echo | date | free | uname | history | man | tldr | cheat | hostname | df | du | figlet | . | . | . You can add more commands too from the presentation! This video contains an example from a couple of semesters ago . 4. Complete week report 3 . | Inside the wr3 directory/folder, create a markdown file called wr3.md | The wr3.md file must include the following: . | Heading 1: Week Report 3 | Heading 2: Completed work for week 3 | A bulleted list of the following URLs: . | Link to lab3.md | Link to notes3.md | . | Heading 2: Practice screenshots . | Heading 3:Practice 3 . | Screenshot of practice 3 | . | . | Repeat the process for the remaining practice. | . | . ",
-    "url": "/week_report:/wr3#video-here",
+    "url": "/week_report/wr3/#video-here",
     
-    "relUrl": "/week_report:/wr3#video-here"
+    "relUrl": "/week_report/wr3/#video-here"
   },"42": {
     "doc": "Week Report 3",
     "title": "What will you submit:",
     "content": ". | Convert wr3.md to pdf | Push everything to github: | In blackboard submit: . | URL to wr3.md in github | The pdf file wr3.pdf | . | . ",
-    "url": "/week_report:/wr3#what-will-you-submit",
+    "url": "/week_report/wr3/#what-will-you-submit",
     
-    "relUrl": "/week_report:/wr3#what-will-you-submit"
+    "relUrl": "/week_report/wr3/#what-will-you-submit"
   },"43": {
     "doc": "Week Report 3",
     "title": "Special Note 1",
     "content": "Please take a snapshot of your virtual machine after you complete the report. The virtual machine must be off before you take the snapshot. ",
-    "url": "/week_report:/wr3#special-note-1",
+    "url": "/week_report/wr3/#special-note-1",
     
-    "relUrl": "/week_report:/wr3#special-note-1"
+    "relUrl": "/week_report/wr3/#special-note-1"
   },"44": {
     "doc": "Week Report 3",
     "title": "Special Note 2 – Git Command Quick Reference",
     "content": "You’ll be using Git frequently this semester. Here’s a quick reminder of the most common commands: . | Command | Purpose | . | git clone repository/url/here | Download a GitHub repository to your computer. | . | git pull | Synchronize your local repository with the latest changes from GitHub. Always run this before starting work in VS Code. | . | git add . | Track all changes made to your files. | . | git commit -m \"description here\" | Save a snapshot of your tracked changes with a short description. | . | git push | Send your committed changes to GitHub. | . ",
-    "url": "/week_report:/wr3#special-note-2--git-command-quick-reference",
+    "url": "/week_report/wr3/#special-note-2--git-command-quick-reference",
     
-    "relUrl": "/week_report:/wr3#special-note-2--git-command-quick-reference"
+    "relUrl": "/week_report/wr3/#special-note-2--git-command-quick-reference"
   },"45": {
     "doc": "Week Report 3",
     "title": "Special Note 3:",
     "content": ". | The final exam is in person. | The exam is performance based and will require access to a Linux Virtual Machine. | If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you. | . ",
-    "url": "/week_report:/wr3#special-note-3",
+    "url": "/week_report/wr3/#special-note-3",
     
-    "relUrl": "/week_report:/wr3#special-note-3"
+    "relUrl": "/week_report/wr3/#special-note-3"
   },"46": {
     "doc": "Lab 1 - Learning Markdown",
     "title": "Lab 1 - Learning Markdown",
