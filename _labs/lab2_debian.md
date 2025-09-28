@@ -135,7 +135,7 @@ Which Debian ISO Should You Download?
 | ------------------------- | ---------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | **Windows 11/10**         | Intel or AMD (x86\_64) | `debian-13.0.0-amd64-netinst.iso` | [Download](https://www.debian.org/) -> Click the black **Download** button                                |
 | **macOS (Intel)**         | Intel (x86\_64)        | `debian-13.0.0-amd64-netinst.iso` | [Download](https://www.debian.org/) -> Click the black **Download** button                                |
-| **macOS (Apple Silicon)** | ARM (arm64)            | `debian-13.0.0-arm64-netinst.iso` | [Direct Link](https://cdimage.debian.org/debian-cd/current/arm64/iso-cd/debian-13.0.0-arm64-netinst.iso) |
+| **macOS (Apple Silicon)** | ARM (arm64)            | `debian-13.0.0-arm64-netinst.iso` | [Direct Link](https://cdimage.debian.org/debian-cd/current/arm64/iso-cd/) |
 
 
 > **ATTENTION MACOS USERS** <br>
