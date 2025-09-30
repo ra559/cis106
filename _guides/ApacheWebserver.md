@@ -12,27 +12,27 @@ layout: page
     - [Guest Machine System Requirements](#guest-machine-system-requirements)
   - [Step 1: Create a virtual machine](#step-1-create-a-virtual-machine)
     - [Files to download:](#files-to-download)
-  - [Step 3: Install Debian](#step-3-install-debian)
-  - [Step 4: Update](#step-4-update)
-  - [Step 5: Configure the server](#step-5-configure-the-server)
+  - [Step 2: Install Debian](#step-2-install-debian)
+  - [Step 3: Update](#step-3-update)
+  - [Step 4: Configure the server](#step-4-configure-the-server)
     - [1. Configure the firewall](#1-configure-the-firewall)
     - [2. Check Running services](#2-check-running-services)
     - [3. Check if the web server is working](#3-check-if-the-web-server-is-working)
-  - [Step 6: Remote Access to the server](#step-6-remote-access-to-the-server)
+  - [Step 5: Remote Access to the server](#step-5-remote-access-to-the-server)
     - [Understanding the virtual machine networking](#understanding-the-virtual-machine-networking)
     - [How to tell if you can use Bridge Network Adapter](#how-to-tell-if-you-can-use-bridge-network-adapter)
       - [More on this IPV4 stuff!](#more-on-this-ipv4-stuff)
     - [How to use NAT with Port Forwarding](#how-to-use-nat-with-port-forwarding)
       - [What is port forwarding?](#what-is-port-forwarding)
       - [How to enable port forwarding](#how-to-enable-port-forwarding)
-  - [Step 7: Managing our Server Virtual Machine from the Host](#step-7-managing-our-server-virtual-machine-from-the-host)
+  - [Step 6: Managing our Server Virtual Machine from the Host](#step-6-managing-our-server-virtual-machine-from-the-host)
     - [How do I use SSH](#how-do-i-use-ssh)
     - [How do I connect to my virtual machine from my host machine](#how-do-i-connect-to-my-virtual-machine-from-my-host-machine)
-  - [Step 8: Adding content to our web server](#step-8-adding-content-to-our-web-server)
+  - [Step 7: Adding content to our web server](#step-7-adding-content-to-our-web-server)
     - [Uploading files using SCP - Alternative 1: Using the command line](#uploading-files-using-scp---alternative-1-using-the-command-line)
     - [Uploading files using Filezilla - Alternative 2: Using a graphical application](#uploading-files-using-filezilla---alternative-2-using-a-graphical-application)
     - [How do I add files?](#how-do-i-add-files)
-  - [Step 9: Using Git in our server](#step-9-using-git-in-our-server)
+  - [Step 8: Using Git in our server](#step-8-using-git-in-our-server)
     - [Here is an example of this workflow](#here-is-an-example-of-this-workflow)
 
 
@@ -92,7 +92,7 @@ This guide assumes the following:
 
 <hr>
 
-## Step 3: Install Debian
+## Step 2: Install Debian
 2. Turn on the virtual machine and install Debian.
    1. Follow the steps in this [presentation](https://docs.google.com/presentation/d/e/2PACX-1vSN5c6pPHfnlbcl10KlrxZ4kh606rIkDwdFd6uo9VqpOiwHrlqOOYFA3_ypMp9MA_R65TtbQPgJYHnx/pub?start=false&loop=false&delayms=3000&slide=id.g374a13ca6e9_0_0) as a general guide. Please do not install a desktop environment as we wont need one. When you get to [this step](https://docs.google.com/presentation/d/e/2PACX-1vSN5c6pPHfnlbcl10KlrxZ4kh606rIkDwdFd6uo9VqpOiwHrlqOOYFA3_ypMp9MA_R65TtbQPgJYHnx/pub?start=false&loop=false&delayms=3000&slide=id.g374a13ca6e9_0_183), pick: Web Server, SSH Server, and Standard System Utilities
 
@@ -102,7 +102,7 @@ This guide assumes the following:
 
 <hr>
 
-## Step 4: Update
+## Step 3: Update
 
 1. Once the Debian is installed, the virtual machine will reboot. This virutal machine does not have a desktop environment so we will be presented with a [TTY](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.g62ffdcbad3_0_101) to sign to. Enter your username and password. 
 2. Update Debian using the following command:
@@ -113,7 +113,7 @@ sudo apt update && sudo apt upgrade -y
 
 <hr>
 
-## Step 5: Configure the server
+## Step 4: Configure the server
 
 ### 1. Configure the firewall
 First, let's install, enable, and configure the firewall. 
@@ -152,7 +152,7 @@ less index.html # press q to exit
 
 <hr>
 
-## Step 6: Remote Access to the server
+## Step 5: Remote Access to the server
 
 ### Understanding the virtual machine networking
 
@@ -242,7 +242,7 @@ In our virtual machine setup, the virtual machine has an internal only IP Addres
 
 <hr>
 
-## Step 7: Managing our Server Virtual Machine from the Host
+## Step 6: Managing our Server Virtual Machine from the Host
 
 Currently, every time we need to do anything on the server VM, we need to turn on the virtual machine and sign in directly in the virtual machine TTY. If you have physical access to the server, this is fine. However, that is not how things work in the real world. Most of the time, you are configuring servers that are not on premise. Either they are hosted on the Cloud, VPS (virtual private server), or they are virtual machines running on a virtualization server. There is also the concept of containers which work similarly like virtual machines. 
 
@@ -278,7 +278,7 @@ Here is an example using NAT with Port Forwarding
 
 <hr>
 
-## Step 8: Adding content to our web server
+## Step 7: Adding content to our web server
 
 Our server stores all the files in `/var/www/html/` by default. That is the directory where we will place all of our pages. By default, this directory is owned by root and regular users cannot place data there. So we will change the permissions of the `/var/www/html` directory so that we can create and modify files there. 
 
@@ -332,7 +332,7 @@ Here is the port forwarding example expanded:
 
 <hr>
 
-## Step 9: Using Git in our server
+## Step 8: Using Git in our server
 
 At this point, we already know how to upload files to our server. However, it would be much more efficient if we could just store everything in a Github repository and then clone the repository in our server. That will allow us to work on our website and when we are ready to publish the changes, we just pull the latest updates from the server. 
 
