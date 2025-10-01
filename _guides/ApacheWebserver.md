@@ -7,6 +7,7 @@ layout: page
 
 - [{{page.title}}](#pagetitle)
   - [READ ME](#read-me)
+  - [Video](#video)
   - [Requirements](#requirements)
     - [Host Machine System Requirements](#host-machine-system-requirements)
     - [Guest Machine System Requirements](#guest-machine-system-requirements)
@@ -42,6 +43,8 @@ This guide assumes the following:
 1. You have installed Virtualbox 
 2. You know how to create a Debian virtual machine
 
+## Video
+![Video](https://youtu.be/opAZoJPpI9A)
 
 <hr>
 
@@ -340,7 +343,7 @@ At this point, we already know how to upload files to our server. However, it wo
 1. Sign in to GitHub and create a repository called `portfolio`
 2. Clone the repository in your host machine or the computer that you use to write code
    1. *For students taking CIS106, this would be your Desktop Virtual Machine*
-   2. To clone the repository use the command: `git clone git@github.com:github-username/portfolio`
+   2. To clone the repository use the command: `git clone https://github.com/github-username/portfolio`
 3. Open the local repository (portfolio folder) in VS Code 
 4. Create a markdown file called `index.md`
 5. Write your resume in markdown and when you are done convert the file to html.
