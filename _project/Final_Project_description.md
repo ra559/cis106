@@ -5,34 +5,12 @@ title: Final Project Description
 
 # {{page.title}}
 
-<!-- vscode-markdown-toc -->
-* 1. [Description](#Description)
-* 2. [Requirements](#Requirements)
-* 3. [Deliverable 1: Project's Requirements](#Deliverable1:ProjectsRequirements)
-	* 3.1. [How am I going to grade deliverable 1?](#HowamIgoingtogradedeliverable1)
-* 4. [Deliverable 2 Installing Ubuntu Server And Apache](#Deliverable2InstallingUbuntuServerAndApache)
-	* 4.1. [Resources:](#Resources:)
-	* 4.2. [How am I going to grade deliverable 2?](#HowamIgoingtogradedeliverable2)
-* 5. [Deliverable 3 Hosting a simple website](#Deliverable3Hostingasimplewebsite)
-	* 5.1. [Option 1: Resume](#Option1:Resume)
-	* 5.2. [What will you submit for option 1:](#Whatwillyousubmitforoption1:)
-	* 5.3. [Option 2: A simple site](#Option2:Asimplesite)
-	* 5.4. [What will you submit for option 2:](#Whatwillyousubmitforoption2:)
-	* 5.5. [How am I going to grade deliverable 3?](#HowamIgoingtogradedeliverable3?)
-
-<!-- vscode-markdown-toc-config
-	numbering=true
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->
-
-
-##  1. <a name='Description'></a>Description
-The goal of this project is to host a simple website (1-page site) in a web server. You will be installing Debian with no GUI in a virtual machine and managing the server from another computer. That computer can be your Host Machine (Windows) or the Debian Desktop virtual machine that we use in the course. The project will give you basic/initial exposure to the following technologies:
+## Description
+The goal of this project is to host a web server using Debian 13, Apache, and VirtualBox as the hypervisor. This project will expose students to the following technologies:
 
 * Virtualization (VirtualBox/UTM)
-* Debian
-* Apache
+* Debian 13 - No Desktop Environment
+* Apache Web Server
 * SSH
 * HTML
 * Markdown
@@ -44,145 +22,131 @@ Each deliverable will be submitted as a Markdown document in your GitHub Reposit
 
 **No late submission will be accepted.**
 
-##  2. <a name='Requirements'></a>Requirements
-* A virtual machine/PC where you can install Debian. A Virtual machine will be preferred since everything in the tutorials will be done in a virtual machine.
+## Requirements
+* A virtual machine/PC where you can install Debian. 
 
-Here are some sources you can use to investigate:
-* [What is a Web Server](https://rapurl.live/pbe)
-* [What is SSH](https://rapurl.live/9bg)
-* [Open Source Web Servers](https://rapurl.live/pkm)
-
-##  3. <a name='Deliverable1:ProjectsRequirements'></a>Deliverable 1: Project's Requirements
-> **Old Video with more details is available [here](https://youtu.be/F0DdCC5Lq3A)** <br>
-> **Newer and shorter video is available [here](https://youtu.be/CYasEYqKq-s)**<br>
-> **[Image resize tool](https://www.simpleimageresizer.com/upload)<br>
-> **Example of how the deliverable should look like [here](https://github.com/linuxworkshop67/cis106/tree/main/finalProject)**
+## Deliverable 1: Project's Requirements
+The goal of deliverable 1 is to demystify the task. You are required to familiarize your self with the technologies that we will use to complete the project.
 
 For **deliverable 1**, we are going to accomplish the following tasks:
-1. Read the tutorial. Write down every concept you don't understand and research them.
-2. Answer The following questions:
-* What is a web server? Hardware and software side
-* What are some different web server applications?
+
+1. Answer The following questions:
+* What is a web server? (In the context of software Ex. Apache)
+* What are some different web server applications? Include definitions, project's website/where to download it, which operating system is available for and its latest version. 
 * What is virtualization?
 * What is virtualbox?
 * What is a virtual machine?
-* What is Ubuntu Server?
+* In the context of virtualization, what does host machine and guest machine mean?
+* What is Debian?
 * What is a firewall?
 * What is SSH?
+* What is an IP Address?
+* What is a network mask?
+* What is a port? (in the context of networking/computers)
+* What is port forwarding?
+* What is localhost? (in the context of networking/computers)
+* What does this ip address represent 127.0.0.1?
+* What is Git?
+* What is GitHub? 
+2. Read the tutorial. Write down every concept you don't understand and research.
 
-To demonstrate the completion of deliverable 1, the student needs to submit a markdown and pdf file where all the questions are answered. [Here you can find an example of how the document should look like.](https://github.com/linuxworkshop67/cis106/blob/main/finalProject/deliverable%201/deliverable1.md)
 
-###  3.1. <a name='HowamIgoingtogradedeliverable1'></a>How am I going to grade deliverable 1?
+To demonstrate the completion of deliverable 1, the student needs to submit a markdown and pdf file where all the questions are answered. Here you can find an example of how the document should look like.
+
+
+###  How am I going to grade deliverable 1?
 * Your markdown file should contain:
   * Proper markdown syntax
   * Well organized and easy to read
-  * Images properly resized. Use a tool or HTML to resize them so that they don't break the formatting.
-  * A table displaying the different web server software you found with their respective license and website where we can learn more about the project. See the [example](https://github.com/linuxworkshop67/cis106/blob/main/finalProject/deliverable%201/deliverable1.md). 
-  
+  * If you used any images, properly resized them. Use an image resizing tool or HTML to resize them so that they don't break the formatting.
+  * Here is an example of how I expect the formatting to be:
+    * [Final Project example for deliverable 1](https://github.com/robertalberto0713/cis106/blob/main/final_project/deliverable1/deliverable1.md)
+
+
+### What will you submit for Deliverable 1
+1. Convert the deliverable1.md file to pdf and html
+2. In blackboard, submit the pdf file and the URL to the markdown file as it appears in Github. Just like you do for your labs/week reports/notes
+
 <hr>
 
-##  4. <a name='Deliverable2InstallingUbuntuServerAndApache'></a>Deliverable 2 Installing Ubuntu Server And Apache
+
+##  Deliverable 2 Setting Up The Web Server
 
 > *Video:[Deliverable 2 Latest Video 0-100!](https://youtu.be/6L0OXwMT-tg)
 
-###  4.1. <a name='Resources:'></a>Resources:
+### Resources:
 * [Apache Commands You Should know](https://linuxize.com/post/apache-commands-you-should-know/)
 * [IP Command With Examples](https://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/)
 * [UFW Essentials](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands) 
 * [How To Troubleshoot Common Apache Errors](https://www.digitalocean.com/community/tutorials/how-to-troubleshoot-common-apache-errors)
 
-Follow [this guide](https://cis106.com/project/Final_project_deliverable2_web_server/) to install Ubuntu Server and Apache. After completing the installation, answer the following questions. You must **type your answer and take screenshots** of the commands and their output.
+Follow [this guide](https://cis106.com/guides/ApacheWebserver/) to install Debian with a web server. After completing the installation, which is only steps 1 to 6, answer the following questions. You must **type your answer and take screenshots** of the commands and their output.
 
 1. What are the server hardware specifications (virtual machine settings)? **Take a screenshot - don't type it!**
-2. What is Ubuntu server log in screen? **Take screenshot - do not type it!**
-3. What is the IP address of your Ubuntu Server Virtual Machine? 
-4. How do you enable the Ubuntu Firewall?
-5. How do you check if the Ubuntu Firewall is running?
-6. How do you disable the Ubuntu Firewall?
-7. How do you add Apache to the Firewall?
-8. What is the command you used to install Apache?
-9. What is the command you use to check if Apache is running?
-10. What is the command you use to stop Apache?
-11. What is the command you use to restart Apache?
-12. What is the command used to test Apache configuration?
-13. What is the command used to check the installed version of Apache?
-
-**For every unique command (ip, ufw, systemctl, etc...) that answers the question you must provide:**
-1. Definition of the command 
-2. Explain how the command works (syntax) 
-3. Some examples (2 or 3). Use inline code formatting or code block formatting when appropriate.
-4. Screenshot of the examples. Make sure the screenshots are properly formatted. Not too big and not too small. Use either a resizing tool or HTML.
+2. What is the Debian Login Screen? **(Take screenshot - do not type it!)**
+3. What is the IP address of your Debian Server Virtual Machine? **(type the command and show a screenshot of the commands output)**
+4. How do you work with the Firewall in Debian? **(Type and explain what each command does)**
+   1. How do you check if the Firewall is running? 
+   2. How do you disable the Firewall?
+   3. How do you add Apache to the Firewall?
+5. What different commands do we use to work with Apache? **(Type and explain what each command does and include a screenshot!)**
+   1.  What is the command you use to check if Apache is running?
+   2.  What is the command you use to stop Apache?
+   3.  What is the command you use to restart Apache?
+   4.  What is the command used to test Apache configuration?
+   5.  What is the command used to check the installed version of Apache?
+   6.  What are some common configuration files for Apache?
+   7.  Where does Apache store logs?
+   8.  What are some basic commands we can use to review logs?
+6. Not all the answers are in the guide. Some researching and testing is required
+7. Make sure the screenshots are properly formatted. Not too big and not too small. Use either a resizing tool or HTML.
 
 <br>
-> Reviewing logs is an essential part of system administration; read the tutorial **"How To Troubleshoot Common Apache Errors"**. After you have finished reading the tutorial, answer the following questions:
-<br>
 
-1. What are the most common commands to troubleshoot Apache errors? Provide a brief description of each command. 
-2. Which are the common Apache Log Files, and what are they used for? Provide examples and screenshots of where they are located in you server, you can use any of he following commands: <br> 
-`cat`,`head`,`tail`
+To demonstrate the completion of deliverable 2, the student must submit a markdown and pdf file where all the questions are answered.
 
 
-To demonstrate the completion of deliverable 2, the student must submit a markdown and pdf file where all the questions are answered. [Here](https://github.com/linuxworkshop67/cis106/blob/main/finalProject/deliverable%202/deliverable2.md) you can find an example of how the document should look like.
-
-
-###  4.2. <a name='HowamIgoingtogradedeliverable2'></a>How am I going to grade deliverable 2?
+### How am I going to grade deliverable 2?
 * Your markdown file should contain:
   * Proper markdown syntax
   * Well organized and easy to read
   * Images properly resized. Use a tool or HTML to resize them so that they don't break the formatting.
-  * Screenshot of your web server virtual machine settings (hardware)
-  * Screenshot of the first screen that shows up when you log in to your server
-  * Screenshot of the different apache log files
+  * All required screenshot are included
+
+## Deliverable 3 Adding content to the server
+
+1. Use Step 7 and 8 from [the guide](https://cis106.com/guides/ApacheWebserver/) to learn how to add content to your web server.
+   1. Note: When you get to the part where I am writing a resume, you can just copy/paste from lab 1 Challenge question. There is no need to re-invent the wheel.
+2. After you have learned how to add content to your web server, make sure that you remove every file inside the `/var/www/html/` directory. You did Step 7 and 8 just to learn how to add files to your server. We want a clean `/var/www/html/` directory to continue.
+3. Now, You will create a new repository for a website you will build. Pick any topic you like. Your website should include the following elements:
+   1. At lest 3 sections
+   2. Images
+   3. Tables
+4. You will write this website in markdown and then convert it to HTML. After you have converted the website to html, embed this style sheet so that it looks better than just plain HTML.
+5. These are the general steps to guide you:
+   1. Create a repository in Github - Name it whatever you want
+   2. Clone the repository in your Debian Desktop Virtual Machine
+   3. Open the repository in VS Code and then create the markdown file
+   4. Name your markdown file `index.md` 
+   5. Convert the markdown file to HTML
+   6. Add the stylesheet to your HTML file
+   7. Commit and push your changes to Github
+   8. Clone the repository in your Server Virtual machine under the directory `/var/www/html/`
+6. Confirm, in your Host OS, that your web server is hosting the website you just created. The URL should be one of the following:
+   1. `http://localhost:8080/name-of-repository/index.html` (Port Forwarding)
+   2. `http://SERVER-IP-ADDRESS/name-of-repository/index.html` (Bridge Network Adapter)
+   3. Note: I suggest that you open the site on an Incognito Window to avoid cache
 
 
-##  5. <a name='Deliverable3Hostingasimplewebsite'></a>Deliverable 3 Hosting a simple website
-
-> *Video*:[Deliverable 3 Latest Video 0-100!](https://youtu.be/3MRK9zbBcQY)
-
-For this deliverable, you have 2 options; Pick one! 
-
-###  5.1. <a name='Option1:Resume'></a>Option 1: Resume 
-* Create a simple resume of yourself. Here is an example of the kind of information to include:
-  * http://resume-template.joelglovier.com/ 
-* You do not need to include a photo of yourself, instead use a stock photo
-  * You can find stock photos here: https://www.pexels.com/ 
-* Once you have created your markdown file, convert the file to HTML.
-* Compress all the files into a single archive so that they are easier to move.
-* Send the files to the server.
-* Once you have transferred the archive to the server, decompress the archive and move the files to their respective folder so that they can be served by the web server.
-* Open your website in the browser of your host computer or Ubuntu desktop computer and take a screenshot of the browser.
-
-###  5.2. <a name='Whatwillyousubmitforoption1:'></a>What will you submit for option 1:
-* To demonstrate the completion of this deliverable, submit the following:
-  * The URL to the GitHub repository in the final project folder where I can find all the files you used for creating the site including the markdown file, HTML file and the images. 
-  * The screenshot of your website running. See the example [here](https://github.com/linuxworkshop67/cis106/blob/main/finalProject/deliverable%203/option%201%20example/deliverable3.PNG). 
-  * <b style="color: red">I need to see the entire browser window with the ip address of your server in the URL bar showing your website running!</b>
-
-
-###  5.3. <a name='Option2:Asimplesite'></a>Option 2: A simple site 
-* Create a markdown file that contains instructions on how to set up a Web Server in Ubuntu Server. Include screenshots where you find them necessary. Make sure to explain each command that is necessary. Your Deliverable must contain the following:
-    * Introduction (Keep it simple)
-    * Basic terminology that the reader must know
-    * Step-by-step instructions
-    * Step 1: Installing VirtualBox
-    * Step 2: Installing Ubuntu Server
-    * Step 3: Installing Apache
-    * Step 4: Setting up the firewall
-* After creating the markdown file, convert the markdown file to PDF. 
-* Rename the PDF to index.html
-* Compress all the files, including images, in an archive and transfer the file to your web server
-* Decompress the archive in your web server and move all the files to their proper destination. 
-* Open your site in the host computer or Ubuntu desktop computer and take a screenshot. 
-
-###  5.4. <a name='Whatwillyousubmitforoption2:'></a>What will you submit for option 2:
+### What will you submit for option 2:
 
 * To demonstrate the completion of this deliverable, submit the following:
-    * The URL to the GitHub repository in the final project folder where I can find all the files you used for creating the site including the markdown file, HTML file and the images. 
-    * The screenshot of your website running
-* <b style="color: red">I need to see the entire browser window with the ip address of your server in the URL bar showing your website running!</b>
+    * The URL to the GitHub repository For Deliverable3.md and the URL of your new Github Repository (the one you used for creating the basic website)
+    * The screenshot of your website running. You will take a screenshot and submit it in Blackboard. The screenshot needs to show me the entire browser window include the URL bar showing the Web Site URL. 
+  * **PLEASE SEE THE VIDEO IF YOU DO NOT UNDERSTAND WHAT I AM EXPECTING HERE!** 
 
-
-###  5.5. <a name='HowamIgoingtogradedeliverable3?'></a>How am I going to grade deliverable 3?
+### How am I going to grade deliverable 3?
 * Your github repository deliverable 3 directory/folder must contain:
-  * All the files used for making the markdown and html file
-  * A screenshot of our html file running on your web server. See example [here](https://github.com/linuxworkshop67/cis106/blob/main/finalProject/deliverable%203/option%201%20example/deliverable3.PNG) 
+  * I will make sure that the github repositories contain all the necessary files
+  * I will look at the screenshot of your server and make sure that the site is being served from the server. See an example here.
+

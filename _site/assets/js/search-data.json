@@ -708,7 +708,7 @@
   },"101": {
     "doc": "Setting up a web server in Debian",
     "title": "Setting up a web server in Debian",
-    "content": ". | Setting up a web server in Debian . | READ ME | Requirements . | Host Machine System Requirements | Guest Machine System Requirements | . | Step 1: Create a virtual machine . | Files to download: | . | Step 2: Install Debian | Step 3: Update | Step 4: Configure the server . | 1. Configure the firewall | 2. Check Running services | 3. Check if the web server is working | . | Step 5: Remote Access to the server . | Understanding the virtual machine networking | How to tell if you can use Bridge Network Adapter . | More on this IPV4 stuff! | . | How to use NAT with Port Forwarding . | What is port forwarding? | How to enable port forwarding | . | . | Step 6: Managing our Server Virtual Machine from the Host . | How do I use SSH | How do I connect to my virtual machine from my host machine | . | Step 7: Adding content to our web server . | Uploading files using SCP - Alternative 1: Using the command line | Uploading files using Filezilla - Alternative 2: Using a graphical application | How do I add files? | . | Step 8: Using Git in our server . | Here is an example of this workflow | . | . | . ",
+    "content": ". | Setting up a web server in Debian . | READ ME | Video | Requirements . | Host Machine System Requirements | Guest Machine System Requirements | . | Step 1: Create a virtual machine . | Files to download: | . | Step 2: Install Debian | Step 3: Update | Step 4: Configure the server . | 1. Configure the firewall | 2. Check Running services | 3. Check if the web server is working | . | Step 5: Remote Access to the server . | Understanding the virtual machine networking | How to tell if you can use Bridge Network Adapter . | More on this IPV4 stuff! | . | How to use NAT with Port Forwarding . | What is port forwarding? | How to enable port forwarding | . | . | Step 6: Managing our Server Virtual Machine from the Host . | How do I use SSH | How do I connect to my virtual machine from my host machine | . | Step 7: Adding content to our web server . | Uploading files using SCP - Alternative 1: Using the command line | Uploading files using Filezilla - Alternative 2: Using a graphical application | How do I add files? | . | Step 8: Using Git in our server . | Here is an example of this workflow | . | . | . ",
     "url": "/guides/ApacheWebserver/",
     
     "relUrl": "/guides/ApacheWebserver/"
@@ -721,1202 +721,1209 @@
     "relUrl": "/guides/ApacheWebserver/#read-me"
   },"103": {
     "doc": "Setting up a web server in Debian",
+    "title": "Video",
+    "content": ". ",
+    "url": "/guides/ApacheWebserver/#video",
+    
+    "relUrl": "/guides/ApacheWebserver/#video"
+  },"104": {
+    "doc": "Setting up a web server in Debian",
     "title": "Requirements",
     "content": ". | Hypervisor: VirtualBox | Host OS: Windows 11/10 or MacOS (Intel/Apple Silicon) | Guest OS: Debian 13 (NO GUI) | Server Application: Apache | SSH:For remote management of the server virtual machine | Git/GitHub: To Upload files to the web server | . Host Machine System Requirements . | CPU: Quad core CPU or higher | RAM: 8GB or More | Free Storage: 60GB or more | . Guest Machine System Requirements . | CPU: 1 Core | RAM: 1 GB | Storage: 10 GB | . ",
     "url": "/guides/ApacheWebserver/#requirements",
     
     "relUrl": "/guides/ApacheWebserver/#requirements"
-  },"104": {
+  },"105": {
     "doc": "Setting up a web server in Debian",
     "title": "Step 1: Create a virtual machine",
     "content": "Files to download: . | Download the Debian ISO. Which Debian ISO Should You Download? | . | Your Computer Type | CPU Type | ISO File to Download | Download Link | . | Windows 11/10 | Intel or AMD (x86_64) | debian-13.0.0-amd64-netinst.iso | Download -&gt; Click the black Download button | . | macOS (Intel) | Intel (x86_64) | debian-13.0.0-amd64-netinst.iso | Download -&gt; Click the black Download button | . | macOS (Apple Silicon) | ARM (arm64) | debian-13.0.0-arm64-netinst.iso | Direct Link | . | Create a virtual machine where Debian will be installed that meets the following specifications: . | RAM: 1GB | CPU: 1 | Storage: 20GB | . | Follow the steps in this presentation as a general guide and adjust the settings accordingly. | . ",
     "url": "/guides/ApacheWebserver/#step-1-create-a-virtual-machine",
     
     "relUrl": "/guides/ApacheWebserver/#step-1-create-a-virtual-machine"
-  },"105": {
+  },"106": {
     "doc": "Setting up a web server in Debian",
     "title": "Step 2: Install Debian",
     "content": ". | Turn on the virtual machine and install Debian. | Follow the steps in this presentation as a general guide. Please do not install a desktop environment as we wont need one. When you get to this step, pick: Web Server, SSH Server, and Standard System Utilities | . | . ",
     "url": "/guides/ApacheWebserver/#step-2-install-debian",
     
     "relUrl": "/guides/ApacheWebserver/#step-2-install-debian"
-  },"106": {
+  },"107": {
     "doc": "Setting up a web server in Debian",
     "title": "Step 3: Update",
     "content": ". | Once the Debian is installed, the virtual machine will reboot. This virutal machine does not have a desktop environment so we will be presented with a TTY to sign to. Enter your username and password. | Update Debian using the following command: | . sudo apt update &amp;&amp; sudo apt upgrade -y . ",
     "url": "/guides/ApacheWebserver/#step-3-update",
     
     "relUrl": "/guides/ApacheWebserver/#step-3-update"
-  },"107": {
+  },"108": {
     "doc": "Setting up a web server in Debian",
     "title": "Step 4: Configure the server",
     "content": "1. Configure the firewall . First, let’s install, enable, and configure the firewall. | Install: sudo apt install ufw | Enable: sudo ufw enable | Configure: . | sudo ufw allow 'WWW Full' | sudo ufw allow 'OpenSSH' | . | . You can learn more about ufw here . 2. Check Running services . | Check that Apache is enabled and running. Use the following command: . | systemctl status apache2 | . | Check that SSH is enabled and running. Use the following command: . | systemctl status ssh | . | Check that UFW is enabled and running. Use the following command: . | systemctl status ufw | . | If any of these services are not running, enable them and restart them. You can lear more abo0ut the systemctl command here. | . 3. Check if the web server is working . At this point you should be able to see the default apache index.html site. The easiest way to see if the web server is hosting something is by using curl or wget. Since wget is installed by default, use the following command to download the index.html document that is currently being hosted by the server: . wget localhost # You can also use this alternative command: wget 127.0.0.1 . Take a look at the index.html file. It should be Apache’s Home page. ls -l index.html less index.html # press q to exit . ",
     "url": "/guides/ApacheWebserver/#step-4-configure-the-server",
     
     "relUrl": "/guides/ApacheWebserver/#step-4-configure-the-server"
-  },"108": {
+  },"109": {
     "doc": "Setting up a web server in Debian",
     "title": "Step 5: Remote Access to the server",
     "content": "Understanding the virtual machine networking . Depending on the network configuration of your virtual machine you may not be able to reach your web server from outside of your virtual machine. Take a moment to look at the network settings of your virtual machine: . The “Attached to” configuration has the following options (See the Introduction to Networking Modes in VBOX documentation) . | Not attached: In this mode, Oracle VirtualBox reports to the guest that a network card is present, but that there is no connection. | Network Address Translation (NAT): In this mode, your virtual machine connects to the internet via your host machine. The virtual machine is isolated. This isolation makes your virtual machine not reachable from other computers in your network. | NAT Network: This mode allows you to use NAT between your VMs, as well as with external connections. You first have to create the NAT Network service that you want to use, and then select NAT Network as the network mode. | Bridged networking: This is for more advanced networking needs, such as network simulations and running servers in a guest. When enabled, Oracle VirtualBox connects to one of your installed network cards and exchanges network packets directly, circumventing your host operating system’s network stack. This is the easiest way to setup a server in a virtual machine! | Internal networking: This can be used to create a different kind of software-based network which is visible to selected virtual machines, but not to applications running on the host or to the outside world. | Host-only networking: This can be used to create a network containing the host and a set of virtual machines, without the need for the host’s physical network interface. Instead, a virtual network interface, similar to a loopback interface, is created on the host, providing connectivity among virtual machines and the host. | Cloud networking: This can be used to connect a local VM to a subnet on a remote cloud service. | Generic networking: Rarely used modes that share the same generic network interface, by allowing the user to select a driver which can be included with Oracle VirtualBox or be distributed in an extension pack. | . This information was extracted from Virtualbox Documentation. For this project, we will use either NAT with Port Forwarding or Bridge Adapter. The easiest of the two options is Bridge Adapter because all we need to do is change the Attached to Setting to “Bridge”. This will allow our VM to get an IP address from your Home Router and it will be just another computer in your network. However, for some people, this is not possible because their network interface card does not allow them to use Bridge mode. Some routers also may reject a Bridged Network adapter. For example, in the College Network, we cannot use Bridge Network Adapter because the router rejects the connection. So the first thing we need to do is figure out if we can use Bridge Network Adapter. How to tell if you can use Bridge Network Adapter . | Turn off your virtual machine and then change the network adapter settings to “Bridge Adapter” | Start your virtual machine and sign in | Type the command: hostname -I to see if your virtual machine gets an IP address. If it gets an IP Address, write it down. | Find out the IP address of your host machine (Windows/MacOS) . | For Windows | For MacOS | . | Compare the IP address of your server virtual machine and the host OS. Notice that they are similar. Either the first 2 or first 3 octets need to be the same (depending on your networks subnet mask). For example: . | Host OS: 192.168.1.09 | VM OS: 192.168.1.11 | . | This is because of how IP Version 4 works. In IPV4 we have the concept of Subnet mask. The subnet mask tells which part of that address is the network and which part is the host. | If your virtual machine got an IP address, and said IP looks like your host IP, then you can use Bridge Network adapter. | If your virtual machine did not get an IP address, then you cannot use “Bridge Network Adapter”. Please use NAT with Port Forwarding. | . More on this IPV4 stuff! . | An IPv4 address is 32 bits, usually written like 192.168.1.10. | A subnet mask is also 32 bits, like 255.255.255.0. How they relate: . | Line up the address and the mask in binary. | Wherever the mask has 1s, that part of the IPv4 address is the network ID. | Wherever the mask has 0s, that part of the IPv4 address is the host ID (the device inside that network). | . | . | What it means | Human readable | Binary | . | IP Address: | 192.168.1.10 | 11000000.10101000.00000001.00001010 | . | Network Mask: | 255.255.255.0 | 11111111.11111111.11111111.00000000 | . | Network ID: | 192.168.1.0 | 11000000.10101000.00000001.00000000 | . | Host ID: |   | ————————–.00001010 | . So how do we read the IP Address 192.168.1.10/24? Simple! The device 10 on the 192.168.1 network . | Network part = 192.168.1 | Host part = 10 | . This specific network mask configuration allows for up to up to 254 devices. But what does that /24 mean? Well, since IPV4 uses 32 bit addresses, it means that each octet has 8 bits (8x4=32). So the network mask as 3 populated octets (3x8=24). We call this a CIDR notation (Classless Inter-Domain Routing). In plain english it means: “the first 24 bits of the IPv4 address are the network part”. How to use NAT with Port Forwarding . What is port forwarding? . A port is like a numbered door on an IP address. It lets a computer run many different network services on the same IP without mixing them up. For example, HTTP(S) runs on ports 80 and 443 respectively. SSH runs on port 22 and FTP on port 21. When you connect to an IP, you’re really connecting to an IP + port pair (called a socket). The computer receiving the request knows which port to use for each request. The issue is that in our case we are using a virtual machine with a NAT network. Therefore in order to penetrate this NAT network, we need to tell Virtualbox that every request that arrives to a custom port be routed to the virtual machine. That is what port forwarding does. Port forwarding is when traffic that arrives at a certain port on one machine is forwarded to another machine and port. In our virtual machine setup, the virtual machine has an internal only IP Address (NAT). This VM cannot accept external requests. With port forwarding, you are configuring the host so that if any traffic on a given custom port arrives, we will send it over to the virtual machine port. So in a nutshell, it creates a tunnel where communication can come in and go out! . How to enable port forwarding . | Open the virtual machine network settings and make sure the adapter is set to NAT | Click on Port Forwarding and add the rules as they are shown in the image below: | . | Since we are setting a web server, we need to forward port 80 as http runs on port 80 | We will be using SSH to administer the server therefore we need to forward port 22 | . ",
     "url": "/guides/ApacheWebserver/#step-5-remote-access-to-the-server",
     
     "relUrl": "/guides/ApacheWebserver/#step-5-remote-access-to-the-server"
-  },"109": {
+  },"110": {
     "doc": "Setting up a web server in Debian",
     "title": "Step 6: Managing our Server Virtual Machine from the Host",
     "content": "Currently, every time we need to do anything on the server VM, we need to turn on the virtual machine and sign in directly in the virtual machine TTY. If you have physical access to the server, this is fine. However, that is not how things work in the real world. Most of the time, you are configuring servers that are not on premise. Either they are hosted on the Cloud, VPS (virtual private server), or they are virtual machines running on a virtualization server. There is also the concept of containers which work similarly like virtual machines. This is where SSH comes into play. SSH (Secure Shell) is a protocol that lets you securely connect to another computer over a network. SSH uses encryption to protect login credentials and data in transfer. It uses port 22 by default. SSH is also used for transferring files securely. As an IT, computer science, and web development student, it is canonical that you learn the fundamentals of SSH. How do I use SSH . This is the general formula for using ssh with and without port forwarding: . | In the formula, the specified port is 2222 because that is the custom port we are forwarding from our host machine (127.0.0.1) to the server virtual machine. | If we were to connect from another computer that is not our host machine then we would need to replace the local host IP address with the actual IP address of the machine. | . How do I connect to my virtual machine from my host machine . | Windows, MacOS, and most Linux distributions have ssh already installed. All you need to do is open your terminal application: . | On Windows is PowerShell | On MacOs is Terminal | On Linux, well, whatever is your preferred terminal application | . | Then type the SSH command that fits your network configuration. For example: . | If I am using Bridge Network Adapter, and my virtual machine’s IP Address is 192.168.1.157 then my command would be: . | ssh rap@192.168.1.157 | . | If I am using NAT with Port forwarding, then my the command I would use is: . | ssh -p 2222 rap@127.0.0.1 | . | . | . Here is an example using Bridge Network Adapter . Here is an example using NAT with Port Forwarding . ",
     "url": "/guides/ApacheWebserver/#step-6-managing-our-server-virtual-machine-from-the-host",
     
     "relUrl": "/guides/ApacheWebserver/#step-6-managing-our-server-virtual-machine-from-the-host"
-  },"110": {
+  },"111": {
     "doc": "Setting up a web server in Debian",
     "title": "Step 7: Adding content to our web server",
     "content": "Our server stores all the files in /var/www/html/ by default. That is the directory where we will place all of our pages. By default, this directory is owned by root and regular users cannot place data there. So we will change the permissions of the /var/www/html directory so that we can create and modify files there. | Use the chown command to change the ownership of the directory: sudo chown -R $USER:www-data /var/www/html | Use the chmod command to change the permissions of the folder: sudo chmod -R 775 /var/www/html | . Now, we can create html documents in our host machine and upload them to the server using SSH. This is something we will work on later. For now, lets test our web server with an already built website. | In your host machine, go to this page: html5up.net and download one of the templates. I will choose this one. | There are many ways to upload files to the server. In this guide, we will 2 ways: | . Uploading files using SCP - Alternative 1: Using the command line . | The command for uploading files via SCP when using port forwarding is: scp -P port file-to-upload remote-username@127.0.0.1:/path/to/place/file | So in my case the command would be: scp -P 2222 ~/Downloads/html5up-paradigm-shift.zip rap@127.0.0.1:/var/www/html | The command for uploading files via SCP when using Bridge Network Adapter is: scp file-to-upload remote-username@remote-server-ip-address:/path/to/place/ | So in my case the command would be: scp ~/Downloads/html5up-paradigm-shift.zip rap@192.168.1.157:/var/www/html | . Here is the port forwarding example expanded: . Uploading files using Filezilla - Alternative 2: Using a graphical application . | Install the FileZilla application in your host machine. You can download it from here: filezilla-project.org. You need the FileZilla Client, not the server! If you are using Linux as your host OS, install Filezilla from your repository. | After you install fileZilla, open it. | Click on File -&gt; Site Manager -&gt; New Site | Change the following settings: . | Protocol: SFTP - SSH File Transfer Protocol | Host: . | If you are using Bridge Network Adapter: Use the IP address of your virtual machine. In my case it is 192.168.1.157 | If you are using NAT Port Forwarding use: 127.0.0.1 | . | Port: . | If you are using Bridge Network Adapter use: 22 | If you are using NAT Port Forwarding use: 2222 | . | Login Type: Normal | User: your user name in the server. In my case, it is rap | Password: your password to sign in to the server | . | Click on OK | Click on the drop down and select your new connection | You will be presented with an unknown host key message. Click ok | Now you have successfully connected to your server | . How do I add files? . | The left panel represents your host machine. Navigate to the location you have the zip file | The right panel represents your server. Navigate to /var/www/html/ | Drag and drop the zip file from the left to the right | . ",
     "url": "/guides/ApacheWebserver/#step-7-adding-content-to-our-web-server",
     
     "relUrl": "/guides/ApacheWebserver/#step-7-adding-content-to-our-web-server"
-  },"111": {
+  },"112": {
     "doc": "Setting up a web server in Debian",
     "title": "Step 8: Using Git in our server",
-    "content": "At this point, we already know how to upload files to our server. However, it would be much more efficient if we could just store everything in a Github repository and then clone the repository in our server. That will allow us to work on our website and when we are ready to publish the changes, we just pull the latest updates from the server. Here is an example of this workflow . | Sign in to GitHub and create a repository called portfolio | Clone the repository in your host machine or the computer that you use to write code . | For students taking CIS106, this would be your Desktop Virtual Machine | To clone the repository use the command: git clone git@github.com:github-username/portfolio | . | Open the local repository (portfolio folder) in VS Code | Create a markdown file called index.md | Write your resume in markdown and when you are done convert the file to html. | Note For CIS106 Students: . | Your index.md file should include a general idea of how you expect your resume to look like when you graduate. | Please include a section for Projects and in there link to your github repository | You have full creative freedom in this part. I suggest not to put real contact information like phone numbers or email addresses. | . | . | Push your changes to your GitHub repository | Ssh into your server and clone your repository in the directory: /var/www/html | Now, from your host computer you can see your webpage using the following URL. | Port Forwarding: http://127.0.0.1:8080/portfolio/ | Bridge Network: http://192.168.1.157/portfolio/ | . | In the future, for any changes you make, simply follow these general steps. | Push the changes to GitHub | SSH into the server | cd into the local repository: cd /var/www/html/portfolio | Pull the latest changes: git pull | . | . ",
+    "content": "At this point, we already know how to upload files to our server. However, it would be much more efficient if we could just store everything in a Github repository and then clone the repository in our server. That will allow us to work on our website and when we are ready to publish the changes, we just pull the latest updates from the server. Here is an example of this workflow . | Sign in to GitHub and create a repository called portfolio | Clone the repository in your host machine or the computer that you use to write code . | For students taking CIS106, this would be your Desktop Virtual Machine | To clone the repository use the command: git clone https://github.com/github-username/portfolio | . | Open the local repository (portfolio folder) in VS Code | Create a markdown file called index.md | Write your resume in markdown and when you are done convert the file to html. | Note For CIS106 Students: . | Your index.md file should include a general idea of how you expect your resume to look like when you graduate. | Please include a section for Projects and in there link to your github repository | You have full creative freedom in this part. I suggest not to put real contact information like phone numbers or email addresses. | . | . | Push your changes to your GitHub repository | Ssh into your server and clone your repository in the directory: /var/www/html | Now, from your host computer you can see your webpage using the following URL. | Port Forwarding: http://127.0.0.1:8080/portfolio/ | Bridge Network: http://192.168.1.157/portfolio/ | . | In the future, for any changes you make, simply follow these general steps. | Push the changes to GitHub | SSH into the server | cd into the local repository: cd /var/www/html/portfolio | Pull the latest changes: git pull | . | . ",
     "url": "/guides/ApacheWebserver/#step-8-using-git-in-our-server",
     
     "relUrl": "/guides/ApacheWebserver/#step-8-using-git-in-our-server"
-  },"112": {
+  },"113": {
     "doc": "Setup SSH Guide",
     "title": "Setup SSH Guide",
     "content": " ",
     "url": "/guides/SetupSSHUbuntuServer/",
     
     "relUrl": "/guides/SetupSSHUbuntuServer/"
-  },"113": {
+  },"114": {
     "doc": "Setup SSH Guide",
     "title": "Installation",
     "content": ". | Make sure that your server and your client computer are in the same network. The easiest way to do this is to make sure that the network addapter in the viertual machine is set to bridge instead of nat. To do this go, open the virtual machine settings and in the network section change the adapter to Bridge. | . | However, your network may prevent you from doing this. Some IDS and smart routers may prevent you from getting an IP. In this case, you need to use port forwarding in your virtual machine. Here is a guide on how to do it. Portforwarding Example . | Make sure that the ssh server program is installed in the server virtual machine sudo apt install openssh-server -y . | Make sure that the ssh client program is installed in the client machine. This is the computer that you will be using to manage your server. sudo apt install openssh-server -y . | Enable and start ssh in the server: sudo systemctl enable ssh; sudo systemctl start ssh . | Test the connection by loging in to the server from the client. First, use the ip or hostname command to find out the ip address of the server. | On the server type, hostname -I this will give you the ip address of your server. | On the client type: ssh username@server-ip-address . | If you are using port forwarding, your command will be: | . ssh -p 2222 username@127.0.0.1 . | Read and answer the questions and you will connect sucessfully. | . ",
     "url": "/guides/SetupSSHUbuntuServer/#installation",
     
     "relUrl": "/guides/SetupSSHUbuntuServer/#installation"
-  },"114": {
+  },"115": {
     "doc": "Setup SSH Guide",
     "title": "Setup private and public key authentication with or without password:",
     "content": ". | On the server, configure the firewall to accept ssh connections. sudo ufw allow ssh sudo ufw enable sudo ufw status . | Now we need to generate an ssh key in our client computer. If you are using your ubuntu machine from the course, then you already have one. If you are not, then you must create the ssh keys: | In your client machine type: ssh-keygen . | Now you can type this command to copy your ssh key to the server ssh-copy-id -i .ssh/id_rsa.pub webmaster@server-ip-address . | if you are using port forwarding, use this command instead: ssh-copy-id -i .ssh/id_rsa.pub -p 2222 webmaster@127.0.0.1 . | . if you use port forwarding your command will be: . ssh-copy-id -p 2222 username@127.0.0.1 . | Now you can connect to your server without having to remember the password. | . ",
     "url": "/guides/SetupSSHUbuntuServer/#setup-private-and-public-key-authentication-with-or-without-password",
     
     "relUrl": "/guides/SetupSSHUbuntuServer/#setup-private-and-public-key-authentication-with-or-without-password"
-  },"115": {
+  },"116": {
     "doc": "How to Setup Git and Github in Ubuntu 20.04",
     "title": "How to Setup Git and Github in Ubuntu 20.04",
     "content": " ",
     "url": "/guides/Ubuntu%20Github%20Setup/",
     
     "relUrl": "/guides/Ubuntu%20Github%20Setup/"
-  },"116": {
+  },"117": {
     "doc": "How to Setup Git and Github in Ubuntu 20.04",
     "title": "Assumptions:",
     "content": "I assume the following: . | You have a computer running Ubuntu and VS Code is installed in it. | You have a basic understanding of the Linux Command Line and your Terminal Emulator | You have a Github Account | . ",
     "url": "/guides/Ubuntu%20Github%20Setup/#assumptions",
     
     "relUrl": "/guides/Ubuntu%20Github%20Setup/#assumptions"
-  },"117": {
+  },"118": {
     "doc": "How to Setup Git and Github in Ubuntu 20.04",
     "title": "Install and setup git",
     "content": "Install command: sudo apt install git -y . ",
     "url": "/guides/Ubuntu%20Github%20Setup/#install-and-setup-git",
     
     "relUrl": "/guides/Ubuntu%20Github%20Setup/#install-and-setup-git"
-  },"118": {
+  },"119": {
     "doc": "How to Setup Git and Github in Ubuntu 20.04",
     "title": "Setup Git",
     "content": ". | Set your username: git config --global user.name 'your username here' | Set your email address: git config --global user.email 'your email here' | . ",
     "url": "/guides/Ubuntu%20Github%20Setup/#setup-git",
     
     "relUrl": "/guides/Ubuntu%20Github%20Setup/#setup-git"
-  },"119": {
+  },"120": {
     "doc": "How to Setup Git and Github in Ubuntu 20.04",
     "title": "Setup SSH authentication",
     "content": ". | Generate an ssh key: ssh-keygen -t ed25519 -C \"your_email@example.com\" This creates a new SSH key, using the provided email as a label. When you’re prompted to: \"Enter a file in which to save the key,\" press Enter. This accepts the default file location. At the prompt, to type a secure passphrase, press enter for no passphrase. If you want to use a passphrase, go ahead as it provides an extra layer of security. However, for this course you do not need to add a passphase. | Use the following command to see your public ssh key: cat ~/.ssh/id_ed25519.pub copy the entire output of this command to the clipboard. See examle here: . | In your github page, go to settings &gt; SSH and GPG Keys Here add your ssh key that you copied to the clipboad in the step prior. Type yes (the whole word) and press enter and you are done . | Test you ssh connection by using this command: ssh -T git@github.com You will see the following outcome: . | . If you do not see an error message or a different message than the one shown prior, then your SSH connection is correct. Now you can push and clone using SSH. ",
     "url": "/guides/Ubuntu%20Github%20Setup/#setup-ssh-authentication",
     
     "relUrl": "/guides/Ubuntu%20Github%20Setup/#setup-ssh-authentication"
-  },"120": {
+  },"121": {
     "doc": "Customize Gedit",
     "title": "Customize Gedit",
     "content": " ",
     "url": "/guides/custimizeGedit/",
     
     "relUrl": "/guides/custimizeGedit/"
-  },"121": {
+  },"122": {
     "doc": "Customize Gedit",
     "title": "Video:",
     "content": ". | Here | . ",
     "url": "/guides/custimizeGedit/#video",
     
     "relUrl": "/guides/custimizeGedit/#video"
-  },"122": {
+  },"123": {
     "doc": "Customize Gedit",
     "title": "Synopsis",
     "content": "Make Gedit feel and look more like an IDE than a text editor . ",
     "url": "/guides/custimizeGedit/#synopsis",
     
     "relUrl": "/guides/custimizeGedit/#synopsis"
-  },"123": {
+  },"124": {
     "doc": "Customize Gedit",
     "title": "What is Gedit",
     "content": "Gedit is a text editor designed for the GNOME desktop environment. It was GNOME’s default text editor and part of the GNOME Core Applications until GNOME version 42 in March 2022, which changed the default text editor to GNOME Text Editor. ",
     "url": "/guides/custimizeGedit/#what-is-gedit",
     
     "relUrl": "/guides/custimizeGedit/#what-is-gedit"
-  },"124": {
+  },"125": {
     "doc": "Customize Gedit",
     "title": "How to install Gedit",
     "content": "If you are using Gnome, gedit is installed by default. This is the default text editor for Gnome. To install gedit: sudo apt install gedit gedit-plugins -y If you are using gnome, install the plugins package otherwise the plugins won’t be available. Gnome Text Editor and gedit are essentially the same app. ",
     "url": "/guides/custimizeGedit/#how-to-install-gedit",
     
     "relUrl": "/guides/custimizeGedit/#how-to-install-gedit"
-  },"125": {
+  },"126": {
     "doc": "Customize Gedit",
     "title": "Installing and using plugins",
     "content": ". | Open gedit (text editor) and go to preferences &gt; Plugins | Enable the following plugins: . | Bracket Autocompletion: will auto close brackets, parenthesis, and quotes | Code Comment: will allow us to do multi line commenting. (CTRL + M and CTRL + Shift + M) | Embedded terminal: Will give us a quick terminal at the bottom of the gedit window. | File Browser Panel: Will give us a file manager to the left of the window. | Multi Edit: will give us multi line editing. | Open Links: will allow us to open URLs | Quick highlight: Will automatically highlight all instances of the highlighted word | Quick open: with CTRL + Alt + o ,opens a menu to open recently edited files | Session Saver: saves the session so when you close gedit and open it again, it opens on the last session | Text Size: will us to increase or decrease the size of the text using CTRL + and CTRL - | Word completion: Will enable autocomplete of common words in the script | . | . ",
     "url": "/guides/custimizeGedit/#installing-and-using-plugins",
     
     "relUrl": "/guides/custimizeGedit/#installing-and-using-plugins"
-  },"126": {
+  },"127": {
     "doc": "Customize Gedit",
     "title": "Enabling functionality",
     "content": ". | In the view tab of the preferences window enable the following: . | Display line numbers | Display right margin at column 80 | Display overview map | In the editor tab: . | Set the tab width to 4 spaces | Autosave the file every 5 minutes | . | . | . | In the Font and color: . | Download the font Firacode Nerd Font Mono | Install the font . | Extract the archive in a the directory .fonts located in YOUR home directory. If the directory is not there, press CTRL + H to enable hidden files. If the directory is not there still, create it. | Open a terminal and type the command: fc-cache -f -v to refresh the font cache. | Go back to gedit Font &amp; Colors tab inside preferences. | Change the font to FiraMono Nerd Font Mono Regular (if you cant find the font, close gedit and open it again) | . | . | . | Changing the theme . | Optional (change the font size to a size you are more comfortable with) | Optional (change the color scheme to something you prefer or matches our preference). I like the dracula theme which you can download from here | Here are other themes you can download too! | You will need to place these themes in: $HOME/.local/share/gedit/styles/ | Themes are xml files so you need to extract the xz file in that directory. | . | In the view options of the hamburger menu, enable: . | Side Panel | Bottom Panel | . | . ",
     "url": "/guides/custimizeGedit/#enabling-functionality",
     
     "relUrl": "/guides/custimizeGedit/#enabling-functionality"
-  },"127": {
+  },"128": {
     "doc": "Customize Gedit",
     "title": "Testing Gedit",
     "content": "Here is the source code: . Bash . #!/bin/bash main (){ echo \"Hello world\" } main . HTML . &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;style&gt; button { background-color: #04AA6D; border: none; color: white; padding: 15px 32px; font-size: 25px; } &lt;/style&gt; &lt;body&gt; &lt;button onclick=\"say();\" id=\"btn\" type=\"button\"&gt;Say hello!&lt;/button&gt; &lt;h1 id=\"msg\"&gt;&lt;/h1&gt; &lt;/body&gt; &lt;script&gt; function say(){ document.getElementById(\"msg\").innerHTML = \"Hello world!\"; } &lt;/script&gt; &lt;/html&gt; . Python . #!/usr/bin/python3 def hello(): print(\"hello World\") hello() . C++ . #include &lt;iostream&gt; using std::cout; int main() { cout &lt;&lt; \"Hello World!\\n\"; return 0; } // g++ hello.cpp &amp;&amp; ./a.out to compile and run . Rust . fn main() { println!(\"Hello World!\"); } // Must have rust installed: // curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh // rustc hello.rs &amp;&amp; ./hello to compile and run . ",
     "url": "/guides/custimizeGedit/#testing-gedit",
     
     "relUrl": "/guides/custimizeGedit/#testing-gedit"
-  },"128": {
+  },"129": {
     "doc": "FORMAT control characters",
     "title": "FORMAT control characters supported by the GNU/date command",
     "content": "| %FORMAT String | Description | . | %% | a literal % | . | %a | locale’s abbreviated weekday name (e.g., Sun) | . | %A | locale’s full weekday name (e.g., Sunday) | . | %b | locale’s abbreviated month name (e.g., Jan) | . | %B | locale’s full month name (e.g., January) | . | %c | locale’s date and time (e.g., Thu Mar 3 23:05:25 2005) | . | %C | century; like %Y, except omit last two digits (e.g., 21) | . | %d | day of month (e.g, 01) | . | %D | date; same as %m/%d/%y | . | %e | day of month, space padded; same as %_d | . | %F | full date; same as %Y-%m-%d | . | %g | last two digits of year of ISO week number (see %G) | . | %G | year of ISO week number (see %V); normally useful only with %V | . | %h | same as %b | . | %H | hour (00..23) | . | %I | hour (01..12) | . | %j | day of year (001..366) | . | %k | hour ( 0..23) | . | %l | hour ( 1..12) | . | %m | month (01..12) | . | %M | minute (00..59) | . | %n | a newline | . | %N | nanoseconds (000000000..999999999) | . | %p | locale’s equivalent of either AM or PM; blank if not known | . | %P | like %p, but lower case | . | %r | locale’s 12-hour clock time (e.g., 11:11:04 PM) | . | %R | 24-hour hour and minute; same as %H:%M | . | %s | seconds since 1970-01-01 00:00:00 UTC | . | %S | second (00..60) | . | %t | a tab | . | %T | time; same as %H:%M:%S | . | %u | day of week (1..7); 1 is Monday | . | %U | week number of year, with Sunday as first day of week (00..53) | . | %V | ISO week number, with Monday as first day of week (01..53) | . | %w | day of week (0..6); 0 is Sunday | . | %W | week number of year, with Monday as first day of week (00..53) | . | %x | locale’s date representation (e.g., 12/31/99) | . | %X | locale’s time representation (e.g., 23:13:48) | . | %y | last two digits of year (00..99) | . | %Y | year | . | %z | +hhmm numeric timezone (e.g., -0400) | . | %:z | +hh:mm numeric timezone (e.g., -04:00) | . | %::z | +hh:mm:ss numeric time zone (e.g., -04:00:00) | . | %:::z | numeric time zone with : to necessary precision (e.g., -04, +05:30) | . | %Z | alphabetic time zone abbreviation (e.g., EDT) | . ",
     "url": "/guides/format-control-char-date-command/#format-control-characters-supported-by-the-gnudate-command",
     
     "relUrl": "/guides/format-control-char-date-command/#format-control-characters-supported-by-the-gnudate-command"
-  },"129": {
+  },"130": {
     "doc": "FORMAT control characters",
     "title": "Example:",
     "content": ". | ls -l --time-style=+%Z / | . ",
     "url": "/guides/format-control-char-date-command/#example",
     
     "relUrl": "/guides/format-control-char-date-command/#example"
-  },"130": {
+  },"131": {
     "doc": "FORMAT control characters",
     "title": "FORMAT control characters",
     "content": " ",
     "url": "/guides/format-control-char-date-command/",
     
     "relUrl": "/guides/format-control-char-date-command/"
-  },"131": {
+  },"132": {
     "doc": "Install Ubuntu Server 24.04 In VirtualBox 7",
     "title": "Install Ubuntu Server 20.04 In VirtualBox",
     "content": " ",
     "url": "/guides/install-ubuntu-server-20.04/#install-ubuntu-server-2004-in-virtualbox",
     
     "relUrl": "/guides/install-ubuntu-server-20.04/#install-ubuntu-server-2004-in-virtualbox"
-  },"132": {
+  },"133": {
     "doc": "Install Ubuntu Server 24.04 In VirtualBox 7",
     "title": "Step 1",
     "content": ". | Download Ubuntu Server 24.04 iso file. | . ",
     "url": "/guides/install-ubuntu-server-20.04/#step-1",
     
     "relUrl": "/guides/install-ubuntu-server-20.04/#step-1"
-  },"133": {
+  },"134": {
     "doc": "Install Ubuntu Server 24.04 In VirtualBox 7",
     "title": "Step 2",
     "content": ". | Create a virtual machine that meets Ubuntu Server 24.04 Minimun requirements.. | The minimum system requirements are: . | CPU: 1 core | RAM: 1 gigabyte or more | Disk: a minimum of 30 gigabytes | . | . | . ",
     "url": "/guides/install-ubuntu-server-20.04/#step-2",
     
     "relUrl": "/guides/install-ubuntu-server-20.04/#step-2"
-  },"134": {
+  },"135": {
     "doc": "Install Ubuntu Server 24.04 In VirtualBox 7",
     "title": "Step 3",
     "content": ". | Turn on Virtual Machine | Start the installer. | . ",
     "url": "/guides/install-ubuntu-server-20.04/#step-3",
     
     "relUrl": "/guides/install-ubuntu-server-20.04/#step-3"
-  },"135": {
+  },"136": {
     "doc": "Install Ubuntu Server 24.04 In VirtualBox 7",
     "title": "Install Ubuntu Server 24.04 In VirtualBox 7",
     "content": " ",
     "url": "/guides/install-ubuntu-server-20.04/",
     
     "relUrl": "/guides/install-ubuntu-server-20.04/"
-  },"136": {
+  },"137": {
     "doc": "Kvm + Virtmanager",
     "title": "Kvm + Virtmanager",
     "content": "Note: This guide was tested on Ubuntu 22.04 and 24.04 Source: How to Install KVM on Ubuntu 20.04 This is a work in progress . ",
     "url": "/guides/install_virtmanager/",
     
     "relUrl": "/guides/install_virtmanager/"
-  },"137": {
+  },"138": {
     "doc": "Kvm + Virtmanager",
     "title": "Step 1",
     "content": ". | Check if virtualization is supported using the commands: egrep -c '(vmx|svm)' /proc/cpuinfoThis command should return any number greater than 0 | Install cpu checker: sudo apt update &amp;&amp; sudo apt install cpu-checker | Check if your system supports KVM sudo kvm-ok This should return the following output: INFO: /dev/kvm exists KVM acceleration can be used . | . ",
     "url": "/guides/install_virtmanager/#step-1",
     
     "relUrl": "/guides/install_virtmanager/#step-1"
-  },"138": {
+  },"139": {
     "doc": "Kvm + Virtmanager",
     "title": "Step 2",
     "content": ". | Install KVM and other dependencies: sudo apt install -y qemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager | Enable the virtualization daemon: sudo systemctl status libvirtd | Check if the kvm modules are running: lsmod | grep -i kvm | This should return the following output (similar): kvm_amd 208896 0 kvm 1417216 1 kvm_amd ccp 155648 4 kvm_amd . | Add your user to the necessary groups. This will allow qemu to use iso files: sudo usermod -aG libvirt-qemu $USER and sudo usermod -aG libvirt $USER | You can make virtual machines with virt-manager now. The process is similar to Virtualbox. | If you get an error message in virt-manager that reads: QEMU/KVM - Not Connected, reboot. | . ",
     "url": "/guides/install_virtmanager/#step-2",
     
     "relUrl": "/guides/install_virtmanager/#step-2"
-  },"139": {
+  },"140": {
     "doc": "Kvm + Virtmanager",
     "title": "Pending on this guide:",
     "content": ". | Add steps to create virtual machines graphically and via the command line | Add steps to export virtual machines | Add steps to create snapshopts and install spice tools | . ",
     "url": "/guides/install_virtmanager/#pending-on-this-guide",
     
     "relUrl": "/guides/install_virtmanager/#pending-on-this-guide"
-  },"140": {
+  },"141": {
     "doc": "Install Jekyll",
     "title": "How to install Jekyll in Ubuntu",
     "content": ". | Note: This is a daft. | Main guide | tutorial | . ",
     "url": "/guides/jekyll/#how-to-install-jekyll-in-ubuntu",
     
     "relUrl": "/guides/jekyll/#how-to-install-jekyll-in-ubuntu"
-  },"141": {
+  },"142": {
     "doc": "Install Jekyll",
     "title": "Dependencies:",
     "content": "sudo apt-get install ruby-full build-essential zlib1g-dev . ",
     "url": "/guides/jekyll/#dependencies",
     
     "relUrl": "/guides/jekyll/#dependencies"
-  },"142": {
+  },"143": {
     "doc": "Install Jekyll",
     "title": "Gem Installation directory",
     "content": "echo 'export GEM_HOME=\"$HOME/gems\"' &gt;&gt; ~/.bashrc echo 'export PATH=\"$HOME/gems/bin:$PATH\"' &gt;&gt; ~/.bashrc source ~/.bashrc . ",
     "url": "/guides/jekyll/#gem-installation-directory",
     
     "relUrl": "/guides/jekyll/#gem-installation-directory"
-  },"143": {
+  },"144": {
     "doc": "Install Jekyll",
     "title": "Install jekyll",
     "content": "gem install jekyll bundler . ",
     "url": "/guides/jekyll/#install-jekyll",
     
     "relUrl": "/guides/jekyll/#install-jekyll"
-  },"144": {
+  },"145": {
     "doc": "Install Jekyll",
     "title": "Create a jekyll site",
     "content": "To generate a new site, use the command: jekyll new name-of-site. This will generate a directoryw with the name of the site in the current directory. ",
     "url": "/guides/jekyll/#create-a-jekyll-site",
     
     "relUrl": "/guides/jekyll/#create-a-jekyll-site"
-  },"145": {
+  },"146": {
     "doc": "Install Jekyll",
     "title": "Install Jekyll",
     "content": " ",
     "url": "/guides/jekyll/",
     
     "relUrl": "/guides/jekyll/"
-  },"146": {
+  },"147": {
     "doc": "Install NodeJS",
     "title": "How to install NodeJS and NPM in Ubuntu",
     "content": ". | Sources: . | Digital Ocean | NVM Cheat Sheet | NPX Cheat Sheet | NPM Cheat sheet | NPM VS NPX | React cheat sheet | JS Cheat Sheet | . | . This was tested on Ubuntu 22.04 and 24.04 . ",
     "url": "/guides/nodejs/#how-to-install-nodejs-and-npm-in-ubuntu",
     
     "relUrl": "/guides/nodejs/#how-to-install-nodejs-and-npm-in-ubuntu"
-  },"147": {
+  },"148": {
     "doc": "Install NodeJS",
     "title": "Installation",
     "content": "The Digital Ocean article discusses multiple ways of getting this done. I prefer using node version manager because it allows me to have more than 1 version. | Run this command: | . curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh . | If it does not return an error repeat the command and pipe it to bash | . curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash &amp;&amp; source $HOME/.bashrc . | Now check which versions of node are avaialable: | . nvm list-remote . | Basic nvm commands: | . ",
     "url": "/guides/nodejs/#installation",
     
     "relUrl": "/guides/nodejs/#installation"
-  },"148": {
+  },"149": {
     "doc": "Install NodeJS",
     "title": "Basic Syntax of Node Version Manager",
     "content": "| Command | Description | . | nvm ls-remote | Lists all available versions of Node | . | nvm ls | Lists all locally installed versions | . | nvm install node | Installs the newest release of Node | . | nvm install &lt;version&gt; | Installs the given release of Node | . | nvm use &lt;version&gt; | Switches and uses the given Node release | . | nvm which &lt;version&gt; | Shows path to the given Node version | . | nvm current | Shows what is the currently used Node version | . | nvm alias default &lt;version&gt; | Sets the default Node version to the given version | . | nvm unalias &lt;alias_name&gt; | Deletes the alias named | . | nvm --help | Shows NVM help documents. | . | nvm exec &lt;version&gt; node app.js | Run Node app.js with the PATH pointing to given node version | . | nvm set-colors cgYmW | Set text colors to cyan, green, bold yellow, magenta, and white | . | nvm run &lt;version&gt; app.js | Run app.js using given Node version | . | nvm install-latest-npm | Update your version of npm if you use Node installed through nvm | . | nvm root &lt;path&gt; | Set the directory where nvm should store different versions of node.js. | . | nvm proxy [url] | Set a proxy to use for downloads. Leave [url] blank to see the current proxy. Set [url] to “none” to remove the proxy. | . | nvm -v | Check if nvm is installed | . | nvm uninstall &lt;version&gt; | Un-Install a specific version | . | nvm ls | Show versions available locally | . | nvm uninstall --lts | Uninstall the latest long term support version | . ",
     "url": "/guides/nodejs/#basic-syntax-of-node-version-manager",
     
     "relUrl": "/guides/nodejs/#basic-syntax-of-node-version-manager"
-  },"149": {
+  },"150": {
     "doc": "Install NodeJS",
     "title": "NPM VS NPX",
     "content": "NPM . | The npm stands for Node Package Manager and it is the default package manager for Node.js. | It is written entirely in JavaScript, developed by Isaac Z. Schlueter. | NPM manages all the packages and modules for node.js and consists of command-line client npm. Cheat cheat . | . | Command | Description | . | npm i | Alias for npm install | . | npm install | Install everything in package.json | . | npm install --production | Install everything in package.json, except devDependecies | . | npm install lodash | Install a package | . | npm install --save-dev lodash | Install as devDependency | . | npm install --save-exact lodash | Install with exact | . | npm list | Lists the installed versions of all dependencies in this software | . | npm list -g --depth 0 | Lists the installed versions of all globally installed packages | . | npm view | Lists the latest versions of all dependencies in this software | . | npm outdated | Lists only the dependencies in this software which are outdated | . | npm update | Update production packages | . | npm update --dev | Update dev packages | . | npm update -g | Update global packages | . | npm update lodash | Update a package | . | npm rm lodash | Remove package production packages | . | npm i sax | NPM package | . | npm i sax@latest | Specify tag latest | . | npm i sax@3.0.0 | Specify version 3.0.0 | . | npm i sax@\"&gt;=1 &lt;2.0\" | Specify version range | . | npm i @org/sax | Scoped NPM package | . | npm i user/repo | GitHub | . | npm i user/repo#master | GitHub | . | npm i github:user/repo | GitHub | . | npm i gitlab:user/repo | GitLab | . | npm i /path/to/repo | Absolute path | . | npm i ./archive.tgz | Tarball | . | npm i https://site.com/archive.tgz | Tarball via HTTP | . | npm version 1.2.3 | Bump the package version to 1.2.3 | . | npm version major | Bump the major package version by 1 (1.2.3 → 2.0.0) | . | npm version minor | Bump the minor package version by 1 (1.2.3 → 1.3.0) | . | npm version patch | Bump the patch package version by 1 (1.2.3 → 1.2.4) | . | npm owner add USERNAME PACKAGENAME | Add someone as an owner | . | npm deprecate PACKAGE@\"&lt; 0.2.0\" \"critical bug fixed in v0.2.0\" | Adds warning to those that install a package of old versions | . | npm update [-g] PACKAGE | update all packages, or selected packages | . | npm outdated [PACKAGE] | Check for outdated packages | . NPX: . | The npx stands for Node Package Execute and it comes with the npm, when you installed npm above 5.2.0 version then automatically npx will installed. | It is an npm package runner that can execute any package that you want from the npm registry without even installing that package. | The npx is useful during a single time use package. If you have installed npm below 5.2.0 then npx is not installed in your system. | . Cheat cheat . | Command | description | . | npx server &lt;folder-name&gt; | Create local server | . | npx pretty-quick | Format using prettier | . | npx envinfo | Show system info | . | npx envinfo --preset &lt;package-name&gt; | To show system info and show specific npm packages info | . | npx json-server &lt;json-file-link&gt; | Run a json server with .json file | . | npx sort-package-json | Sort package.json file | . | npx npm-upgrade | Check for node module updates and update them interactively | . | npx gvi &lt;package-name&gt; | Get the package version information | . | npx set-default-browser &lt;browser-name&gt; | Set any browser as default browser via cli | . | npx npkill | Delete node_modules | . | npx fx &lt;file.json&gt; | View JSON from terminal | . ",
     "url": "/guides/nodejs/#npm-vs-npx",
     
     "relUrl": "/guides/nodejs/#npm-vs-npx"
-  },"150": {
+  },"151": {
     "doc": "Install NodeJS",
     "title": "Testing",
     "content": " ",
     "url": "/guides/nodejs/#testing",
     
     "relUrl": "/guides/nodejs/#testing"
-  },"151": {
+  },"152": {
     "doc": "Install NodeJS",
     "title": "Install NodeJS",
     "content": " ",
     "url": "/guides/nodejs/",
     
     "relUrl": "/guides/nodejs/"
-  },"152": {
+  },"153": {
     "doc": "How to install Starship Shell",
     "title": "How to install Starship Shell",
     "content": " ",
     "url": "/guides/starshipShell/",
     
     "relUrl": "/guides/starshipShell/"
-  },"153": {
+  },"154": {
     "doc": "How to install Starship Shell",
     "title": "What is starship shell?",
     "content": "Is a customizable shell prompt. Learn more in the projects website: starship.rs . ",
     "url": "/guides/starshipShell/#what-is-starship-shell",
     
     "relUrl": "/guides/starshipShell/#what-is-starship-shell"
-  },"154": {
+  },"155": {
     "doc": "How to install Starship Shell",
     "title": "How to install",
     "content": ". | Run this command: | . curl -sS https://starship.rs/install.sh | sh . | Open the file ~/.bashrc and add this line at the end: | . eval \"$(starship init bash)\" .bashrc is a hidden file. You will need to enable hidden files view (CTRL + H) to see this file if you are doing this graphically . | Restart the terminal or run the command: source ~/bashrc . | How to customize the shell prompt . | . Read the manual: Starship Config. If you want the same config I use, then run this command: . curl https://cis106.com/assets/starship.toml -o $HOME/.config/starship.toml . Screenshots . ",
     "url": "/guides/starshipShell/#how-to-install",
     
     "relUrl": "/guides/starshipShell/#how-to-install"
-  },"155": {
+  },"156": {
     "doc": "Final Project Description",
     "title": "Final Project Description",
-    "content": ". | . | Description | . | . | Requirements | . | . | Deliverable 1: Project’s Requirements . | 3.1. How am I going to grade deliverable 1? | . | . | . | Deliverable 2 Installing Ubuntu Server And Apache . | 4.1. Resources: | 4.2. How am I going to grade deliverable 2? | . | . | . | Deliverable 3 Hosting a simple website . | 5.1. Option 1: Resume | 5.2. What will you submit for option 1: | 5.3. Option 2: A simple site | 5.4. What will you submit for option 2: | 5.5. How am I going to grade deliverable 3? | . | . | . ",
+    "content": " ",
     "url": "/project/Final_Project_description/",
     
     "relUrl": "/project/Final_Project_description/"
-  },"156": {
-    "doc": "Final Project Description",
-    "title": "1. Description",
-    "content": "The goal of this project is to host a simple website (1-page site) in a web server. You will be installing Debian with no GUI in a virtual machine and managing the server from another computer. That computer can be your Host Machine (Windows) or the Debian Desktop virtual machine that we use in the course. The project will give you basic/initial exposure to the following technologies: . | Virtualization (VirtualBox/UTM) | Debian | Apache | SSH | HTML | Markdown | VS Code | . The project is divided into 3 deliverables. It is done this way, so you can work slowly through the semester as you gain more knowledge working with Linux. This also allows you to earn a grade as the semester progresses because the final project grade is divided equally among the 3 deliverables. The final project is 15% of your final grade, however, this can change, therefore do not skip any deliverable! . Each deliverable will be submitted as a Markdown document in your GitHub Repository. You will also be required to submit a PDF version of each deliverable, just in case something happens to your GitHub Repository. No late submission will be accepted. ",
-    "url": "/project/Final_Project_description/#1-description",
-    
-    "relUrl": "/project/Final_Project_description/#1-description"
   },"157": {
     "doc": "Final Project Description",
-    "title": "2. Requirements",
-    "content": ". | A virtual machine/PC where you can install Debian. A Virtual machine will be preferred since everything in the tutorials will be done in a virtual machine. | . Here are some sources you can use to investigate: . | What is a Web Server | What is SSH | Open Source Web Servers | . ",
-    "url": "/project/Final_Project_description/#2-requirements",
+    "title": "Description",
+    "content": "The goal of this project is to host a web server using Debian 13, Apache, and VirtualBox as the hypervisor. This project will expose students to the following technologies: . | Virtualization (VirtualBox/UTM) | Debian 13 - No Desktop Environment | Apache Web Server | SSH | HTML | Markdown | VS Code | . The project is divided into 3 deliverables. It is done this way, so you can work slowly through the semester as you gain more knowledge working with Linux. This also allows you to earn a grade as the semester progresses because the final project grade is divided equally among the 3 deliverables. The final project is 15% of your final grade, however, this can change, therefore do not skip any deliverable! . Each deliverable will be submitted as a Markdown document in your GitHub Repository. You will also be required to submit a PDF version of each deliverable, just in case something happens to your GitHub Repository. No late submission will be accepted. ",
+    "url": "/project/Final_Project_description/#description",
     
-    "relUrl": "/project/Final_Project_description/#2-requirements"
+    "relUrl": "/project/Final_Project_description/#description"
   },"158": {
     "doc": "Final Project Description",
-    "title": "3. Deliverable 1: Project’s Requirements",
-    "content": "Old Video with more details is available here Newer and shorter video is available here Image resize tool **Example of how the deliverable should look like here . For deliverable 1, we are going to accomplish the following tasks: . | Read the tutorial. Write down every concept you don’t understand and research them. | Answer The following questions: . | What is a web server? Hardware and software side | What are some different web server applications? | What is virtualization? | What is virtualbox? | What is a virtual machine? | What is Ubuntu Server? | What is a firewall? | What is SSH? | . | . To demonstrate the completion of deliverable 1, the student needs to submit a markdown and pdf file where all the questions are answered. Here you can find an example of how the document should look like. 3.1. How am I going to grade deliverable 1? . | Your markdown file should contain: . | Proper markdown syntax | Well organized and easy to read | Images properly resized. Use a tool or HTML to resize them so that they don’t break the formatting. | A table displaying the different web server software you found with their respective license and website where we can learn more about the project. See the example. | . | . ",
-    "url": "/project/Final_Project_description/#3-deliverable-1-projects-requirements",
+    "title": "Requirements",
+    "content": ". | A virtual machine/PC where you can install Debian. | . ",
+    "url": "/project/Final_Project_description/#requirements",
     
-    "relUrl": "/project/Final_Project_description/#3-deliverable-1-projects-requirements"
+    "relUrl": "/project/Final_Project_description/#requirements"
   },"159": {
     "doc": "Final Project Description",
-    "title": "4. Deliverable 2 Installing Ubuntu Server And Apache",
-    "content": "*Video:Deliverable 2 Latest Video 0-100! . 4.1. Resources: . | Apache Commands You Should know | IP Command With Examples | UFW Essentials | How To Troubleshoot Common Apache Errors | . Follow this guide to install Ubuntu Server and Apache. After completing the installation, answer the following questions. You must type your answer and take screenshots of the commands and their output. | What are the server hardware specifications (virtual machine settings)? Take a screenshot - don’t type it! | What is Ubuntu server log in screen? Take screenshot - do not type it! | What is the IP address of your Ubuntu Server Virtual Machine? | How do you enable the Ubuntu Firewall? | How do you check if the Ubuntu Firewall is running? | How do you disable the Ubuntu Firewall? | How do you add Apache to the Firewall? | What is the command you used to install Apache? | What is the command you use to check if Apache is running? | What is the command you use to stop Apache? | What is the command you use to restart Apache? | What is the command used to test Apache configuration? | What is the command used to check the installed version of Apache? | . For every unique command (ip, ufw, systemctl, etc…) that answers the question you must provide: . | Definition of the command | Explain how the command works (syntax) | Some examples (2 or 3). Use inline code formatting or code block formatting when appropriate. | Screenshot of the examples. Make sure the screenshots are properly formatted. Not too big and not too small. Use either a resizing tool or HTML. | . Reviewing logs is an essential part of system administration; read the tutorial “How To Troubleshoot Common Apache Errors”. After you have finished reading the tutorial, answer the following questions: . | What are the most common commands to troubleshoot Apache errors? Provide a brief description of each command. | Which are the common Apache Log Files, and what are they used for? Provide examples and screenshots of where they are located in you server, you can use any of he following commands: cat,head,tail | . To demonstrate the completion of deliverable 2, the student must submit a markdown and pdf file where all the questions are answered. Here you can find an example of how the document should look like. 4.2. How am I going to grade deliverable 2? . | Your markdown file should contain: . | Proper markdown syntax | Well organized and easy to read | Images properly resized. Use a tool or HTML to resize them so that they don’t break the formatting. | Screenshot of your web server virtual machine settings (hardware) | Screenshot of the first screen that shows up when you log in to your server | Screenshot of the different apache log files | . | . ",
-    "url": "/project/Final_Project_description/#4-deliverable-2-installing-ubuntu-server-and-apache",
+    "title": "Deliverable 1: Project’s Requirements",
+    "content": "The goal of deliverable 1 is to demystify the task. You are required to familiarize your self with the technologies that we will use to complete the project. For deliverable 1, we are going to accomplish the following tasks: . | Answer The following questions: . | What is a web server? (In the context of software Ex. Apache) | What are some different web server applications? Include definitions, project’s website/where to download it, which operating system is available for and its latest version. | What is virtualization? | What is virtualbox? | What is a virtual machine? | In the context of virtualization, what does host machine and guest machine mean? | What is Debian? | What is a firewall? | What is SSH? | What is an IP Address? | What is a network mask? | What is a port? (in the context of networking/computers) | What is port forwarding? | What is localhost? (in the context of networking/computers) | What does this ip address represent 127.0.0.1? | What is Git? | What is GitHub? | . | Read the tutorial. Write down every concept you don’t understand and research. | . To demonstrate the completion of deliverable 1, the student needs to submit a markdown and pdf file where all the questions are answered. Here you can find an example of how the document should look like. How am I going to grade deliverable 1? . | Your markdown file should contain: . | Proper markdown syntax | Well organized and easy to read | If you used any images, properly resized them. Use an image resizing tool or HTML to resize them so that they don’t break the formatting. | Here is an example of how I expect the formatting to be: . | Final Project example for deliverable 1 | . | . | . What will you submit for Deliverable 1 . | Convert the deliverable1.md file to pdf and html | In blackboard, submit the pdf file and the URL to the markdown file as it appears in Github. Just like you do for your labs/week reports/notes | . ",
+    "url": "/project/Final_Project_description/#deliverable-1-projects-requirements",
     
-    "relUrl": "/project/Final_Project_description/#4-deliverable-2-installing-ubuntu-server-and-apache"
+    "relUrl": "/project/Final_Project_description/#deliverable-1-projects-requirements"
   },"160": {
     "doc": "Final Project Description",
-    "title": "5. Deliverable 3 Hosting a simple website",
-    "content": "Video:Deliverable 3 Latest Video 0-100! . For this deliverable, you have 2 options; Pick one! . 5.1. Option 1: Resume . | Create a simple resume of yourself. Here is an example of the kind of information to include: . | http://resume-template.joelglovier.com/ | . | You do not need to include a photo of yourself, instead use a stock photo . | You can find stock photos here: https://www.pexels.com/ | . | Once you have created your markdown file, convert the file to HTML. | Compress all the files into a single archive so that they are easier to move. | Send the files to the server. | Once you have transferred the archive to the server, decompress the archive and move the files to their respective folder so that they can be served by the web server. | Open your website in the browser of your host computer or Ubuntu desktop computer and take a screenshot of the browser. | . 5.2. What will you submit for option 1: . | To demonstrate the completion of this deliverable, submit the following: . | The URL to the GitHub repository in the final project folder where I can find all the files you used for creating the site including the markdown file, HTML file and the images. | The screenshot of your website running. See the example here. | I need to see the entire browser window with the ip address of your server in the URL bar showing your website running! | . | . 5.3. Option 2: A simple site . | Create a markdown file that contains instructions on how to set up a Web Server in Ubuntu Server. Include screenshots where you find them necessary. Make sure to explain each command that is necessary. Your Deliverable must contain the following: . | Introduction (Keep it simple) | Basic terminology that the reader must know | Step-by-step instructions | Step 1: Installing VirtualBox | Step 2: Installing Ubuntu Server | Step 3: Installing Apache | Step 4: Setting up the firewall | . | After creating the markdown file, convert the markdown file to PDF. | Rename the PDF to index.html | Compress all the files, including images, in an archive and transfer the file to your web server | Decompress the archive in your web server and move all the files to their proper destination. | Open your site in the host computer or Ubuntu desktop computer and take a screenshot. | . 5.4. What will you submit for option 2: . | To demonstrate the completion of this deliverable, submit the following: . | The URL to the GitHub repository in the final project folder where I can find all the files you used for creating the site including the markdown file, HTML file and the images. | The screenshot of your website running | . | I need to see the entire browser window with the ip address of your server in the URL bar showing your website running! | . 5.5. How am I going to grade deliverable 3? . | Your github repository deliverable 3 directory/folder must contain: . | All the files used for making the markdown and html file | A screenshot of our html file running on your web server. See example here | . | . ",
-    "url": "/project/Final_Project_description/#5-deliverable-3-hosting-a-simple-website",
+    "title": "Deliverable 2 Setting Up The Web Server",
+    "content": "*Video:Deliverable 2 Latest Video 0-100! . Resources: . | Apache Commands You Should know | IP Command With Examples | UFW Essentials | How To Troubleshoot Common Apache Errors | . Follow this guide to install Debian with a web server. After completing the installation, which is only steps 1 to 6, answer the following questions. You must type your answer and take screenshots of the commands and their output. | What are the server hardware specifications (virtual machine settings)? Take a screenshot - don’t type it! | What is the Debian Login Screen? (Take screenshot - do not type it!) | What is the IP address of your Debian Server Virtual Machine? (type the command and show a screenshot of the commands output) | How do you work with the Firewall in Debian? (Type and explain what each command does) . | How do you check if the Firewall is running? | How do you disable the Firewall? | How do you add Apache to the Firewall? | . | What different commands do we use to work with Apache? (Type and explain what each command does and include a screenshot!) . | What is the command you use to check if Apache is running? | What is the command you use to stop Apache? | What is the command you use to restart Apache? | What is the command used to test Apache configuration? | What is the command used to check the installed version of Apache? | What are some common configuration files for Apache? | Where does Apache store logs? | What are some basic commands we can use to review logs? | . | Not all the answers are in the guide. Some researching and testing is required | Make sure the screenshots are properly formatted. Not too big and not too small. Use either a resizing tool or HTML. | . To demonstrate the completion of deliverable 2, the student must submit a markdown and pdf file where all the questions are answered. How am I going to grade deliverable 2? . | Your markdown file should contain: . | Proper markdown syntax | Well organized and easy to read | Images properly resized. Use a tool or HTML to resize them so that they don’t break the formatting. | All required screenshot are included | . | . ",
+    "url": "/project/Final_Project_description/#deliverable-2-setting-up-the-web-server",
     
-    "relUrl": "/project/Final_Project_description/#5-deliverable-3-hosting-a-simple-website"
+    "relUrl": "/project/Final_Project_description/#deliverable-2-setting-up-the-web-server"
   },"161": {
+    "doc": "Final Project Description",
+    "title": "Deliverable 3 Adding content to the server",
+    "content": ". | Use Step 7 and 8 from the guide to learn how to add content to your web server. | Note: When you get to the part where I am writing a resume, you can just copy/paste from lab 1 Challenge question. There is no need to re-invent the wheel. | . | After you have learned how to add content to your web server, make sure that you remove every file inside the /var/www/html/ directory. You did Step 7 and 8 just to learn how to add files to your server. We want a clean /var/www/html/ directory to continue. | Now, You will create a new repository for a website you will build. Pick any topic you like. Your website should include the following elements: . | At lest 3 sections | Images | Tables | . | You will write this website in markdown and then convert it to HTML. After you have converted the website to html, embed this style sheet so that it looks better than just plain HTML. | These are the general steps to guide you: . | Create a repository in Github - Name it whatever you want | Clone the repository in your Debian Desktop Virtual Machine | Open the repository in VS Code and then create the markdown file | Name your markdown file index.md | Convert the markdown file to HTML | Add the stylesheet to your HTML file | Commit and push your changes to Github | Clone the repository in your Server Virtual machine under the directory /var/www/html/ | . | Confirm, in your Host OS, that your web server is hosting the website you just created. The URL should be one of the following: . | http://localhost:8080/name-of-repository/index.html (Port Forwarding) | http://SERVER-IP-ADDRESS/name-of-repository/index.html (Bridge Network Adapter) | Note: I suggest that you open the site on an Incognito Window to avoid cache | . | . What will you submit for option 2: . | To demonstrate the completion of this deliverable, submit the following: . | The URL to the GitHub repository For Deliverable3.md and the URL of your new Github Repository (the one you used for creating the basic website) | The screenshot of your website running. You will take a screenshot and submit it in Blackboard. The screenshot needs to show me the entire browser window include the URL bar showing the Web Site URL. | PLEASE SEE THE VIDEO IF YOU DO NOT UNDERSTAND WHAT I AM EXPECTING HERE! | . | . How am I going to grade deliverable 3? . | Your github repository deliverable 3 directory/folder must contain: . | I will make sure that the github repositories contain all the necessary files | I will look at the screenshot of your server and make sure that the site is being served from the server. See an example here. | . | . ",
+    "url": "/project/Final_Project_description/#deliverable-3-adding-content-to-the-server",
+    
+    "relUrl": "/project/Final_Project_description/#deliverable-3-adding-content-to-the-server"
+  },"162": {
     "doc": "Shell Scripting Extra practice 1",
     "title": "Shell Scripting Extra practice 1",
     "content": " ",
     "url": "/extra/Shell_scripting_Basics/",
     
     "relUrl": "/extra/Shell_scripting_Basics/"
-  },"162": {
+  },"163": {
     "doc": "Shell Scripting Extra practice 1",
     "title": "Goal",
     "content": "This extra credit is just to practice basic shell scripting. The main goal is to get comfortable doing the following: . | Creating and executing a basic script | Using the man command to get help | . We will use the following commands only: . | echo: to display text | date: to manipulate dates | df: disk space usage | free: memory usage | uname: basic system information | clear: clear screen | . ",
     "url": "/extra/Shell_scripting_Basics/#goal",
     
     "relUrl": "/extra/Shell_scripting_Basics/#goal"
-  },"163": {
+  },"164": {
     "doc": "Shell Scripting Extra practice 1",
     "title": "How to write and execute a basic script step by step",
     "content": "1. The tools: . | To write the script you will need a text editor. These text editors are easy to use: . | Gnome Text Editor: Ubuntu’s default text editor | Geany: More advanced and feature rich but still easy enough for beginners | . | There are a tone more. A simple google search will tell you so! However the text editor you choose is irrelevant so just pick one and move on. | In this guide I will be using Gnome Text and Geany. | A terminal emulator to run the script. Any terminal emulator will work but here I will be using Tilix. | . 2. Write the script . | Open your text editor | The first line of code is the shell declaration or shebang: #!/bin/bash This line will tell the shell (bash) who will be running the script. This line is important because without it, all the commands in the script will be run by the current shell. | Save your file with the file extension .sh. The file extension is not mandatory but it is good practice. | In this guide, we will be placing all our scripts in a folder/directory called scripts in your home directory. This will make it easier to find our scripts. | . 3. Execute the script . | Open your terminal emulator. | The most basic way of running a script is using this formula: . | shell + path/to/script/ | . | For example, we know that our shell is bash and we placed our script in ~/scripts/ therefore the command to execute our script will be: . | bash ~/scripts/hello.sh | . | This part of the path: ~ is a shorthand for /home/$USER which is the current’s user home directory. If you want to learn more about this read read the presentation The Linux Filesystem or the article The Linux FS. For now, every script will be placed in ~/scripts/ so you should not worry about it. | . 4. Add more code to the script . | Notice that when you ran the script, nothing happened. That is because there is nothing to do in the script. | Let’s write some basic commands in the script: . | Use echo to print/display a line of text: . | echo \"hello world\" | . | . | Save and run the script. Notice that the line “hello world” is displayed in the terminal. | . ",
     "url": "/extra/Shell_scripting_Basics/#how-to-write-and-execute-a-basic-script-step-by-step",
     
     "relUrl": "/extra/Shell_scripting_Basics/#how-to-write-and-execute-a-basic-script-step-by-step"
-  },"164": {
+  },"165": {
     "doc": "Shell Scripting Extra practice 1",
     "title": "Let’s Practice!",
     "content": "You should now be comfortable writing and executing a basic script. However, before we practice, let’s make our environment more comfortable. Customize Gnome Text Editor: . | Open the Text Editor Preferences: . | Choose a theme you like | Enable custom font and increase the size to a size you are more comfortable with | Enable “Highlight Current Line” | Enable “Display Overview Map” | Disable “Restore Session” | . | In the Options menu: . | Enable line numbers | Change the “Spaces per tab” to 4 | Disable “Check Spelling” | . | . Now, let’s place the terminal emulator and text editor side by side. Use the Windows/Super Key + Right Arrow to snap one window to the right then select the terminal emulator to snap it to the left. This will allow us to work more efficiently . ",
     "url": "/extra/Shell_scripting_Basics/#lets-practice",
     
     "relUrl": "/extra/Shell_scripting_Basics/#lets-practice"
-  },"165": {
+  },"166": {
     "doc": "Shell Scripting Extra practice 1",
     "title": "Practice 1: Learning more about echo",
     "content": "The echo command is used to display/print text to the screen. The formula for the command is: . echo + option + \"String you want to display\" . Where option can be one of the followings: . | -n: Do not output a trailing new line. | -e: Enable interpretation of backslash escapes. See man echo for a list of backslash escapes | -E: disable interpretation of backslash escapes (this is the default behavior) | . In a terminal emulator practice the echo command. You may need to open the man page of echo for reference. To practice echo, complete the following tasks: . | Display a line of text. | Display a line of text suppressing the trailing new line | Display a line of text with a tab at the beginning of the line | Display multiple lines of text in a single echo command | Display multiple lines of text in a single command including horizontal and vertical tabs | . Show Solution . ",
     "url": "/extra/Shell_scripting_Basics/#practice-1-learning-more-about-echo",
     
     "relUrl": "/extra/Shell_scripting_Basics/#practice-1-learning-more-about-echo"
-  },"166": {
+  },"167": {
     "doc": "Shell Scripting Extra practice 1",
     "title": "Practice 2: Working with more than just echo",
     "content": "| NOTE: At the top of this guide, you have a short description of some basic commands. When needed, use the man command to read the man page of any of those commands | . | Create a shell script named systemInfo.sh and save it in the scripts directory/folder. | This script should output the following information about your system: . | Current date in UTC | Disk space usage in human readable format | Memory/RAM usage in human readable format | Network node hostname (machines name) | Type of processor and type of operating system | . | Make sure that each part is described before it is printed to the screen. This is an example output of your program: | . See Example . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of the output of your script (terminal) . ",
     "url": "/extra/Shell_scripting_Basics/#practice-2-working-with-more-than-just-echo",
     
     "relUrl": "/extra/Shell_scripting_Basics/#practice-2-working-with-more-than-just-echo"
-  },"167": {
+  },"168": {
     "doc": "Shell Scripting Extra practice 1",
     "title": "Practice 3: More on Echo!",
     "content": "In this practice, use what you have learned about echo to better the script’s output. | Make a copy of systemInfo.sh called systemInfo2.sh | Your goal is to use echo to make the information more presentable. You may need to move some parts around. | Here are some tips: . | Echo can insert new empty lines | Echo can insert tabs within text | Echo can suppress the new line putting the output of echo in the same line as the next command | . | You should review the man page of echo and practice some of those commands. | This is how the output of your script should look like: | . See Example . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of the output of your script (terminal) . ",
     "url": "/extra/Shell_scripting_Basics/#practice-3-more-on-echo",
     
     "relUrl": "/extra/Shell_scripting_Basics/#practice-3-more-on-echo"
-  },"168": {
+  },"169": {
     "doc": "Shell Scripting Extra practice 1",
     "title": "What will you submit for extra credit",
     "content": ". | In your cis106 directory/local repository, create a new directory called “ExtraCredit” (One word no spaces in file names pleases!) | Inside “ExtraCredit”, create another directory called “extra2” | Open your cis106 directory/local repository in VS Code | Inside “extra2” create a markdown file called “extra2.md” | Add all the screenshots to “extra2.md” using proper markdown syntax and labeling each screenshot using heading 2 formatting. Save the markdown file. | Your markdown document should start with the following heading1: # Extra Credit 2: Shell Scripting Extra practice 1 | Convert your file to PDF | Run the github commands, in VS Code Terminal, to push all your changes to github: . | gid add . | git commit -m \"Completed Extra 1\" | git push | . | In blackboard submit the following: . | The URL of extra2.md | The PDF file extra2.pdf | . | . ",
     "url": "/extra/Shell_scripting_Basics/#what-will-you-submit-for-extra-credit",
     
     "relUrl": "/extra/Shell_scripting_Basics/#what-will-you-submit-for-extra-credit"
-  },"169": {
+  },"170": {
     "doc": "Bash Variables",
     "title": "Bash Variables",
     "content": " ",
     "url": "/extra/bash_variables/",
     
     "relUrl": "/extra/bash_variables/"
-  },"170": {
+  },"171": {
     "doc": "Bash Variables",
     "title": "What is a variable?",
     "content": ". | A variable is a placeholder for data that can be reused and changed later on in your program. In general, bash uses 2 types of variables: . | Environment variables . | These are used by the shell to story system and user session information. | To see a list of environment variables, use the command env | . | User defined variables . | these are created by the user and exist only in the shell script and any subshell that runs said script | When creating variables, follow these rules: . | variable names cannot start with a number | variable names can be up to 20 characters long | variables are case sensitive (name is not the same thing as NAME) | values are assigned using an = sign and no spaces (name=”bob”) | Bash stores all values as string but you should still use “” . | Bash is technically untyped, which means that there are no other data types other than string. | There are exceptions to this rule but we should leave those for another lecture | . | . | . | . | . What is string? . A string is a type of data in programming that represents text. It is made up of letters, numbers, symbols, or spaces and is usually enclosed in quotes (\" or '). Strings are not the only types of data used in programming. You also have numbers which can be floating point or integers. You also have boolean which is only true or false. There is also arrays which are a list of values. Depending on the programming language, you will also encounter other types of data. So why do we say that bash is untyped? . We say that Bash is untyped (or dynamically typed with weak typing) because it does not have explicit data types like other programming languages. Instead, bash defaults everything to string. This means that the following variables are all strings: . #!/bin/bash name=\"bob\" age=35 student=true height=5.9 . Does that mean that I cannot do math in bash? . NO! Bash can do math but values need to be explicitly treated as numbers. One way is to user arithmetic expansion: . #!/bin/bash number1=2 number2=2 sum=$(( number1 + number2 )) echo \"The sum of $number1 and $number2 is: $sum\" . We will cover math in bash in a later lecture. ",
     "url": "/extra/bash_variables/#what-is-a-variable",
     
     "relUrl": "/extra/bash_variables/#what-is-a-variable"
-  },"171": {
+  },"172": {
     "doc": "Bash Variables",
     "title": "How do I use a variable?",
     "content": "Regardless of the type (environment or user defined), to use a variable, you must first put a $ and then the variable name. That is call “accessing a variable”. Here is an example: . #!/bin/bash # Using an environment variable: echo \"Current user is $USER\" # Using a user defined variable: name=\"bob\" echo \"Their name is $name\" . ",
     "url": "/extra/bash_variables/#how-do-i-use-a-variable",
     
     "relUrl": "/extra/bash_variables/#how-do-i-use-a-variable"
-  },"172": {
+  },"173": {
     "doc": "Bash Variables",
     "title": "Practice 1: Environment Variables",
     "content": "Practice env or printenv command first . | Open a terminal emulator and run the env command to display all the environment variables. You can also use the printenv command. | Using the echo command display the content of the following variables: . | USER, HOME, SHELL, PWD | . | There are some environment variables that become available as you start using your system. For example OLDPWD which stores the absolute path of the previous working directory. Change your current working directory to ~/Downloads then display the content of the variable OLDPWD | . Scripting part . | Create a shell script that will display the following output: | . | Notice that the script is using tabs at the beginning of every line and before the variables. | Save and execute your script. | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of the output of your script (terminal) . ",
     "url": "/extra/bash_variables/#practice-1-environment-variables",
     
     "relUrl": "/extra/bash_variables/#practice-1-environment-variables"
-  },"173": {
+  },"174": {
     "doc": "Bash Variables",
     "title": "Practice 2: Using Environment Variables part 2",
     "content": ". | Create a shell script that uses the HOME, PWD and OLDPWD environment variables to produce the following output | . Show Solution . ",
     "url": "/extra/bash_variables/#practice-2-using-environment-variables-part-2",
     
     "relUrl": "/extra/bash_variables/#practice-2-using-environment-variables-part-2"
-  },"174": {
+  },"175": {
     "doc": "Bash Variables",
     "title": "Practice 3: User defined variables",
     "content": "Create a script that uses user defined variables to generate the following output: . Show Solution . ",
     "url": "/extra/bash_variables/#practice-3-user-defined-variables",
     
     "relUrl": "/extra/bash_variables/#practice-3-user-defined-variables"
-  },"175": {
+  },"176": {
     "doc": "Bash Variables",
     "title": "Practice 4: Bring it all together",
     "content": "Create a shell script that will generate the following output: . The script must use the following: . | Environment variables | User defined variables | The commands: pwd, ls, and cd | . Show Solution . ",
     "url": "/extra/bash_variables/#practice-4-bring-it-all-together",
     
     "relUrl": "/extra/bash_variables/#practice-4-bring-it-all-together"
-  },"176": {
+  },"177": {
     "doc": "Bash Variables",
     "title": "What will you submit for extra credit",
     "content": ". | In your cis106 directory/local repository, create a new directory called “ExtraCredit” (One word no spaces in file names pleases!) | Inside “ExtraCredit”, create another directory called “extra4” | Open your cis106 directory/local repository in VS Code | Inside “extra4” create a markdown file called “extra4.md” | Add all the screenshots to “extra4.md” using proper markdown syntax and labeling each screenshot using heading 2 formatting. Save the markdown file. | Your markdown document should start with the following heading1: # Extra Credit 4: Bash Variables | Convert your file to PDF | Run the github commands, in VS Code Terminal, to push all your changes to github: . | gid add . | git commit -m \"Completed Extra 4\" | git push | . | In blackboard submit the following: . | The URL of extra4.md | The PDF file extra4.pdf | . | . ",
     "url": "/extra/bash_variables/#what-will-you-submit-for-extra-credit",
     
     "relUrl": "/extra/bash_variables/#what-will-you-submit-for-extra-credit"
-  },"177": {
+  },"178": {
     "doc": "Cd ../ vs cd -",
     "title": "Cd ../ vs cd -",
     "content": " ",
     "url": "/extra/cd_parent_vs_cd_previous/",
     
     "relUrl": "/extra/cd_parent_vs_cd_previous/"
-  },"178": {
+  },"179": {
     "doc": "Cd ../ vs cd -",
     "title": "Concepts",
     "content": ". | Environment variable: is a dynamic-named value typically used to configure the behavior of programs and applications, provide information about the system environment, or store temporary data. | $PWD: Stores the absolute path of the current working directory | $OLDPWD: Stores the absolute path of the previous current working directory | . | Parent directory: refers to the directory that contains another directory or file. It’s the directory that is one level higher in the directory tree hierarchy. | Current directory: refers to the directory in which you are currently working or the directory that your shell session is currently “in.” | . ",
     "url": "/extra/cd_parent_vs_cd_previous/#concepts",
     
     "relUrl": "/extra/cd_parent_vs_cd_previous/#concepts"
-  },"179": {
+  },"180": {
     "doc": "Cd ../ vs cd -",
     "title": "cd ..",
     "content": "We user cd ../ when we want to navigate the the directory above the current directory. Say that your current working directory is /home/student/Downloads/Games/Doom/ and you want to go to /home/student/Downloads/Games. In this instance the cd ../ command will take you there. The 2 dots indicate the parent directory of the current working directory. You can use it to navigate to more than 1 parent directory for example, if we want to go to /home/student, we would use cd ../../../ . Notice that in this instance we only moved up in the directory tree. ",
     "url": "/extra/cd_parent_vs_cd_previous/#cd-",
     
     "relUrl": "/extra/cd_parent_vs_cd_previous/#cd-"
-  },"180": {
+  },"181": {
     "doc": "Cd ../ vs cd -",
     "title": "cd -",
     "content": "cd - is used to move between 2 directories. These are the current directory and the previous current directory. Linux has 2 environment variables to keep track of this information; $OLDPWD and $PWD. Every time you use the cd command these 2 variables get updated to reflect the current information. So if your current working directory is /home/student/Downloads/Games/Doom and you use cd to change to /usr/share/themes then the current value of those variables would be: . | OLDPWD=home/student/Downloads/Games/Doom | PWD=/usr/share/themes | . Now, if you use the cd - command, then bash will change directories to the value in $OLDPWD and update the variables accordingly. So the values now are: . | OLDPWD=/usr/share/themes | PWD=home/student/Downloads/Games/Doom | . ",
     "url": "/extra/cd_parent_vs_cd_previous/#cd--",
     
     "relUrl": "/extra/cd_parent_vs_cd_previous/#cd--"
-  },"181": {
+  },"182": {
     "doc": "Cd ../ vs cd -",
     "title": "When should I use cd -?",
     "content": "Well that depends on your workflow and what you are doing at the moment. Since we can switch between 2 directories without typing the path, this comes handy in the following essenarios: . | If you are working in two directories and need to switch between them frequently, and the path is long and you don’t want to type all of that. | If you are editing files in different directories using a command-line | If you are working in a temporary directory you can switch back and forward between the temp directory and the current directory | If you are writing script that requires you to move from 2 directories, cd - allows you to do that without storing the paths in variables. | . ",
     "url": "/extra/cd_parent_vs_cd_previous/#when-should-i-use-cd--",
     
     "relUrl": "/extra/cd_parent_vs_cd_previous/#when-should-i-use-cd--"
-  },"182": {
+  },"183": {
     "doc": "Cd ../ vs cd -",
     "title": "When should I use cd ../?",
     "content": "All the time honestly! typing .. is quicker than typing a path backwards. So whenever you need to switch back to the parent directory, use this instead! . ",
     "url": "/extra/cd_parent_vs_cd_previous/#when-should-i-use-cd-",
     
     "relUrl": "/extra/cd_parent_vs_cd_previous/#when-should-i-use-cd-"
-  },"183": {
+  },"184": {
     "doc": "Cd ../ vs cd -",
     "title": "Then what’s up with .. and .?",
     "content": "A single dot (.), represents the current directory where the 2 dots, as mentioned earlier represents the parent directory. This means that: . | ls . and ls do the same thing because by default ls will list the current directory. | cd . will do nothing because it will try to change directory to the current directory. And you cannot go into a room that you are already in! | . However, there are legit uses for the single dot (.) For example, when you want to copy a file from one directory the current directory: . | cp ~/Pictures/Wallpapers/wall.png ./ | . Or when writing paths to files in the current directory in markdown: . | ![wall](./wall.png) | . ",
     "url": "/extra/cd_parent_vs_cd_previous/#then-whats-up-with--and-",
     
     "relUrl": "/extra/cd_parent_vs_cd_previous/#then-whats-up-with--and-"
-  },"184": {
+  },"185": {
     "doc": "Getting Comfortable with Ubuntu 24.04",
     "title": "Getting Comfortable with Ubuntu 24.04",
     "content": ". | Getting Comfortable with Ubuntu 24.04 . | Question 1: Working With Files . | Part 2 - Working with files | . | Question 2: Exploring System Settings | Question 3: Installing Applications Graphically | Question 4: Editing a document | Question 5: Installing Gnome Extensions | What will you submit for extra credit | . | . the goal of this lab/article/page is to give you exposure to using Ubuntu 24.04 (Gnome Desktop Environment) We Will be performing basic computer task . ",
     "url": "/extra/getting_confortable_with_ubuntu/",
     
     "relUrl": "/extra/getting_confortable_with_ubuntu/"
-  },"185": {
+  },"186": {
     "doc": "Getting Comfortable with Ubuntu 24.04",
     "title": "Question 1: Working With Files",
     "content": ". | 1- Open the file manager (files) and explore its interface. Use the image below for help. | . The information in this image was extracted from OpenSuse Documentation. | 2- Practice the following shortcuts: | . | Key Combination | Description | . | Alt + ⬅ &amp; Alt + ➡ | Go backward/go forward | . | Alt + ↑ | Open the parent directory | . | ←, →, ↑, ↓ | Select an item | . | Alt + ↓ or Enter | Open an item | . | Alt + Enter | Open an item’s Properties dialog | . | Shift + Alt ↓ | Open an item and close the current directory | . | Ctrl + L | Toggles the path bar from buttons to path | . | Alt + Home | Opens the home directory | . | any number or letter | Starts a search within the current directory | . | Ctrl + T | Start a search within the current directories and their subdirectories | . | Del | Moves the selected file or directory to the trash, from which it can be restored with Undo | . The information in this image was extracted from OpenSuse Documentation. | 3- In your home directory, create a new directory called Games. | 4- Inside the Games directory, create 3 more directories called: fps,action,rpg | 5- Delete the Games directory | 6- Open the Trash and restore the Games directory | 7- Delete the Games directory again | 8- Empty the Trash | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of your file manager with your trash empty. That will be the proof of submission for question 1 . Part 2 - Working with files . | 1- Open the file manager if it is not open | 2- Use Firefox or any other web browser of your choice to download the following this zip file: https://cis106.com/assets/extras/gcu/site.zip | 3- Decompress/unzip the file in your Downloads directory. | 4- Inside the Downloads directory you should now have a new directory called site | 5- Inside the site directory you should have 3 files: . | site.html | SCRIPT.js | STYLE.css | . | . Show Solution . | 6- Use the website, Pexel.com to download 3 Landscape format images. | 7- Move the images to the site directory | 8- Rename the images to: image1.jpg, image2.jpg, and image3.jpg | 9- Open the file site.html. Notice that the website looks broken. | 10- Rename the files SCRIPT.js and STYLES.css to: . | STYLE.css =&gt; style.css | SCRIPT.js =&gt; script.js | . | 11- Refresh the website site.html and you will notice that now it looks as expected. This is because Linux is case sensitive. So STYLES.css is not the same as styles.css | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of your file manager with your the site directory open. Take another screenshof of Firefox showing the site. Those 2 will be the proof of submission for question 1 part 2 . ",
     "url": "/extra/getting_confortable_with_ubuntu/#question-1-working-with-files",
     
     "relUrl": "/extra/getting_confortable_with_ubuntu/#question-1-working-with-files"
-  },"186": {
+  },"187": {
     "doc": "Getting Comfortable with Ubuntu 24.04",
     "title": "Question 2: Exploring System Settings",
     "content": "There are two ways of accessing the settings app: . | Via the system menu: | . The information in this image was extracted from Ubuntu's Documentation. | Searching for Settings using the applications launcher: | . | Use the settings app to perform the following tasks: . | 1- Appearance: . | Choose light or dark mode | Choose an accent color you like | Change the wallpaper . | You can download a wallpaper from the internet if you want or use a predefined one. | . | . | . | . Show Solution . | 2- Ubuntu Desktop: . | Play around with the setting of the Desktop Icons and Dock | . | . Show Solution . | Keyboard: . | Add a custom shortcut for the following applications: . | Firefox . | name: Web Browser | command: firefox | shortcut: Super Key (Windows key) + W (or any other key combination you want) | . | Tilix . | name: terminal | command: tilix | shortcut: Super key (windows key) + Enter (or any other key combination you want) | . | Files . | name: File manager | command: nautilus | shortcut: Super key (windows key) + F (or any other key combination you want) | . | VS Code . | name: VS Code | command: code | shortcut: Super + C (or any other key combination you want) | . | Geany . | name: Text Editor | command: geany | shortcut: Super + t (or any other key combination you want) | . | . | To add custom shortcut, follow these steps: . | 1- Click on Keyboard and then scroll down to “View and Customize Shortcuts” | 2- In the dialog that pops up, scroll down to “Custom Shortcut” | 3- Click on “Add Shortcut…” | . | . | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of your desktop showing that you changed the wallpaper or the position of the doc. Take another screenshot showing your custom shortcuts. That will be the proof of submission for question 2 . ",
     "url": "/extra/getting_confortable_with_ubuntu/#question-2-exploring-system-settings",
     
     "relUrl": "/extra/getting_confortable_with_ubuntu/#question-2-exploring-system-settings"
-  },"187": {
+  },"188": {
     "doc": "Getting Comfortable with Ubuntu 24.04",
     "title": "Question 3: Installing Applications Graphically",
     "content": "To install applications graphically, we use the Software Center also known as the App Center. Let’s install a couple of applications: . | Open the App Center | Search for LibreOffice and install it - This is a productivity suite just like Microsoft Software | Search for a Tetris game. Install one of the options. | Wait until the apps finish installing | Open the LibreOffice Writer and close it | Open the tetris game and close it | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of the tetris game you installed. That will be the proof of submission for question 3 . ",
     "url": "/extra/getting_confortable_with_ubuntu/#question-3-installing-applications-graphically",
     
     "relUrl": "/extra/getting_confortable_with_ubuntu/#question-3-installing-applications-graphically"
-  },"188": {
+  },"189": {
     "doc": "Getting Comfortable with Ubuntu 24.04",
     "title": "Question 4: Editing a document",
     "content": "In this question we will be editing word documents and pdf files. | Download this word document | Open the word document in LibreOffice. | Edit the document and export it to pdf | Open the PDF file in libre Office Draw | Edit the PDf and export it again | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of the edited pdf document showing your edits. That will be the proof of submission for question 4 . ",
     "url": "/extra/getting_confortable_with_ubuntu/#question-4-editing-a-document",
     
     "relUrl": "/extra/getting_confortable_with_ubuntu/#question-4-editing-a-document"
-  },"189": {
+  },"190": {
     "doc": "Getting Comfortable with Ubuntu 24.04",
     "title": "Question 5: Installing Gnome Extensions",
     "content": "Gnome extensions allow you to add extra functionality to your desktop environment. As part of the initial setup for the class, you installed the gnome extension app that allows you to download extensions. | Open the app “Extensions Manager” | Search for the extension “Caffeine” and install it. This extension is used for preventing your computer to go to sleep. To use the extension, click on the system menu. You will see a new icon ( a cup of coffee). | Search for the extension “Apps Menu” by “Fmuelliner” and install it. This will give you a windows like menu at the top left corner. | You can disable or uninstall any Extension you want. Keep in mind that system updates make break some extensions. I recommend keeping the number of extensions to a minimum. | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of your desktop showing the extensions. That will be the proof of submission for question 5 . ",
     "url": "/extra/getting_confortable_with_ubuntu/#question-5-installing-gnome-extensions",
     
     "relUrl": "/extra/getting_confortable_with_ubuntu/#question-5-installing-gnome-extensions"
-  },"190": {
+  },"191": {
     "doc": "Getting Comfortable with Ubuntu 24.04",
     "title": "What will you submit for extra credit",
     "content": ". | In your cis106 directory/local repository, create a new directory called “ExtraCredit” (One word no spaces in file names pleases!) | Inside “ExtraCredit”, create another directory called “extra1” | Open your cis106 directory/local repository in VS Code | Inside “extra1” create a markdown file called “extra1.md” | Add all the screenshots to “extra1.md” using proper markdown syntax and labeling each screenshot using heading 2 formatting. Save the markdown file. | Your markdown document should start with the following heading1: # Extra Credit 1: Getting used to the Gnome Desktop Environment | Convert your file to PDF | Run the github commands, in VS Code Terminal, to push all your changes to github: . | gid add . | git commit -m \"Completed Extra 1\" | git push | . | In blackboard submit the following: . | The URL of extra1.md | The PDF file extra1.pdf | . | . ",
     "url": "/extra/getting_confortable_with_ubuntu/#what-will-you-submit-for-extra-credit",
     
     "relUrl": "/extra/getting_confortable_with_ubuntu/#what-will-you-submit-for-extra-credit"
-  },"191": {
+  },"192": {
     "doc": "Markdown Extra Practice",
     "title": "Markdown Extra Practice",
     "content": "If you wish to practice more markdown, try to recreate the following documents in markdown: . ",
     "url": "/extra/lab1_md_extra_practice/",
     
     "relUrl": "/extra/lab1_md_extra_practice/"
-  },"192": {
+  },"193": {
     "doc": "Markdown Extra Practice",
     "title": "Document 1",
     "content": "Create a markdown document from this page, that contains the following: . | Several sections of paragraphs | ordered and unordered lists | A couple of images . | The Linux mascot | Linux distributions logos | Desktop environment screenshots | . | At least 1 table. | . Try to make the document look as professional as possible . ",
     "url": "/extra/lab1_md_extra_practice/#document-1",
     
     "relUrl": "/extra/lab1_md_extra_practice/#document-1"
-  },"193": {
+  },"194": {
     "doc": "Markdown Extra Practice",
     "title": "Document 2",
     "content": "To practice note taking and code formatting, use this introduction to python website and create a 1 page document that shows how to get started with python. You just simply include the following: Learn the Basics . | Hello, World! | Variables and Types | Lists | Basic Operators | String Formatting | Basic String Operations | Conditions | Loops | . ",
     "url": "/extra/lab1_md_extra_practice/#document-2",
     
     "relUrl": "/extra/lab1_md_extra_practice/#document-2"
-  },"194": {
+  },"195": {
     "doc": "Markdown Extra Practice",
     "title": "Document 3",
     "content": "To practice tables, use the following images and create a pdf file that contains all of these tables: . Table 1 . You can download the images from here . ",
     "url": "/extra/lab1_md_extra_practice/#document-3",
     
     "relUrl": "/extra/lab1_md_extra_practice/#document-3"
-  },"195": {
+  },"196": {
     "doc": "Learning Git",
     "title": "Learning Git",
     "content": ". | Presentation here | Cheat Sheet here | . ",
     "url": "/extra/learning-git/",
     
     "relUrl": "/extra/learning-git/"
-  },"196": {
+  },"197": {
     "doc": "Learning Git",
     "title": "Setup Git",
     "content": ". | Set your username: git config --global user.name 'your username here' | Set your email address: git config --global user.email 'your email here' | . ",
     "url": "/extra/learning-git/#setup-git",
     
     "relUrl": "/extra/learning-git/#setup-git"
-  },"197": {
+  },"198": {
     "doc": "Learning Git",
     "title": "Setup SSH authentication",
     "content": ". | Generate an ssh key: ssh-keygen -t ed25519 -C \"your_email@example.com\" This creates a new SSH key, using the provided email as a label. When you’re prompted to: \"Enter a file in which to save the key,\" press Enter. This accepts the default file location. At the prompt, to type a secure passphrase, press enter for no passphrase. If you want to use a passphrase, go ahead as it provides an extra layer of security. However, for this course you do not need to add a passphase. | Use the following command to see your public ssh key: cat ~/.ssh/id_ed25519.pub copy the entire output of this command to the clipboard. See examle here: . | In your github page, go to settings &gt; SSH and GPG Keys Here add your ssh key that you copied to the clipboad in the step prior. Type yes (the whole word) and press enter and you are done . | Test you ssh connection by using this command: ssh -T git@github.com You will see the following outcome: . | . If you do not see an error message or a different message than the one shown prior, then your SSH connection is correct. Now you can push and clone using SSH. ",
     "url": "/extra/learning-git/#setup-ssh-authentication",
     
     "relUrl": "/extra/learning-git/#setup-ssh-authentication"
-  },"198": {
+  },"199": {
     "doc": "Mkdir, touch, and rm",
     "title": "Mkdir, touch, and rm",
     "content": ". | . | Commands reference table | . | . | MKDIR . | 2.1. Description | 2.2. Formula/usage | 2.3. Examples | 2.4. Practice | . | 2.4.1. Description | 2.4.2. Solution | . | . | . | TOUCH . | 3.1. Description | 3.2. Formula/usage | 3.3. Examples | 3.4. Practice | . | 3.4.1. Description | 3.4.2. Solution | . | . | . | RM . | 4.1. Description | 4.2. Formula/usage | 4.3. Examples | 4.4. Practice | . | . | . | MV . | 5.1. Description | 5.2. Formula/usage | . | 5.2.1. Moving | 5.2.2. Renaming * 5.3. Examples * 5.4. Practice | . | . | . | CP . | 6.1. Description | 6.2. Formula/usage | 6.3. Examples | 6.4. Practice | . | . | . ",
     "url": "/extra/mkdir_touch_rm/",
     
     "relUrl": "/extra/mkdir_touch_rm/"
-  },"199": {
+  },"200": {
     "doc": "Mkdir, touch, and rm",
     "title": "1. Commands reference table",
     "content": "These are the most basic commands to manage files and directories. | Command | Definition | Formula | Example | . | mkdir | makes directories | mkdir + option + new directory(ies) name | mkdir ~/Downloads/games | . | touch | makes files | touch + option + new file(s) name | touch ~/Downloads/games/list.txt | . | rm | removes files | rm + option + files to delete | rm ~/Downloads/games/list.txt | . | mv | moves files &amp; directories | mv + option + source path + destination path | mv ~/Downloads/games ~/Documents/ | . | mv | rename files &amp; directories | mv + option + old name + new name | mv ~/Documents/games/old.txt ~/Documents/games/mylist.txt | . | cp | copies files &amp; directories | cp + option + sources path + destination | cp -r ~/Downloads/oldGames/ ~/Games/ | . ",
     "url": "/extra/mkdir_touch_rm/#1-commands-reference-table",
     
     "relUrl": "/extra/mkdir_touch_rm/#1-commands-reference-table"
-  },"200": {
+  },"201": {
     "doc": "Mkdir, touch, and rm",
     "title": "2. MKDIR",
     "content": "2.1. Description . | Used for create directories. Mkdir can make 1 or multiple directories by separating each directory name with a space. | . 2.2. Formula/usage . mkdir + option + directory names . Where directory name can be: . | Just the name of the directory if you want to create them in the current working directory | Absolute or relative path if you want to create the directory in a different location | . 2.3. Examples . | Using relative path: Create a directory in your current working directory called games . | mkdir games | . | Using relative path: Create 3 directories inside the games directories called: action, adventure,fps . | mkdir games/action games/adventure games/fps | . | Using absolute path: Create a directory in the action directory called wonderboy . | mkdir ~/games/action/wonderboy | . | Using absolute path: Create 2 directories, one in fps and another in adventure. Call them cod and uncharted . | mkdir ~/games/fps/cod ~/games/adventure/uncharted | . | Create a parent and subdirectory at the same time . | mkdir -p ~/Documents/school/english/homework | . | Create a directory and display a message confirming the directory creation (verbose output) . | mkdir -pv ~/Downloads/games | mkdir -pv ~/Downloads/games/action games/fps/doom practice | . | . 2.4. Practice . 2.4.1. Description . You have just been assigned the task of organizing a new project called “ProjectPhoenix” on your company’s server. For this project, you need to set up a directory structure that will hold various types of documents. The structure should look like this: . ProjectDelta/ ├── planning/ │  ├── meetings/ │ └── drafts/ ├── development/ │ ├── code/ │ └── documentation/ └── testing/ ├── unit_tests/ └── integration_tests/ . 2.4.2. Solution . Show Solution . ",
     "url": "/extra/mkdir_touch_rm/#2-mkdir",
     
     "relUrl": "/extra/mkdir_touch_rm/#2-mkdir"
-  },"201": {
+  },"202": {
     "doc": "Mkdir, touch, and rm",
     "title": "3. TOUCH",
     "content": "3.1. Description . touch is used to create an empty file or to update the timestamp of an existing file. If the specified file does not exist, touch will create it. If the file exists, touch will update its access and modification times to the current time. 3.2. Formula/usage . | touch + option + file(s) name | . Where file name can be: . | Just the name of the files if you want to create them in the current working directory | Absolute or relative path if you want to create the directory in a different location | . 3.3. Examples . | Create multiple files in the current working working directory . | touch notes.txt program.py page.html | . | Create multiple files in different directories using absolute path . | touch ~/games/action/wonderboy/run.txt ~/games/adventure/uncharted/todo.md | . | Create multiple files in different directories using relative path . | touch games/action/run.sh games/fps/readme.md | . | . 3.4. Practice . 3.4.1. Description . In th previous practice, you created a directory structure. Add the following files to each directory: . ProjectDelta/ ├── development │   ├── code │   │   ├── app.js │   │   ├── index.html │   │   └── styles.css │   └── documentation │   └── readme.md ├── planning │   ├── drafts │   │   └── notes.md │   └── meetings │   └── schedule.docx └── testing ├── integration_tests │   └── instructions.md └── unit_tests └── test.js 10 directories, 8 files . 3.4.2. Solution . Show Solution . ",
     "url": "/extra/mkdir_touch_rm/#3-touch",
     
     "relUrl": "/extra/mkdir_touch_rm/#3-touch"
-  },"202": {
+  },"203": {
     "doc": "Mkdir, touch, and rm",
     "title": "4. RM",
     "content": "4.1. Description . The rm command is used to remove files and directories. It is a powerful command that can permanently delete files, so it should be used with caution. By default, rm removes files, but with certain options, it can also delete directories and their contents. In Linux, only empty directories can be removed. When you try to remove non-empty directories the following error is shown: “rm: cannot remove 'directory_name/': Is a directory”. Even when using the rmdir command, trying to remove a non empty directory results in the following error: “rmdir: failed to remove 'directory_name/': Directory not empty”. To remove directories use the -r option. See examples. 4.2. Formula/usage . | rm + option + directories or files to remove | . Where file/directory name can be: . | Just the name of the files/directories if they are located in the current working directory | Absolute or relative path if they are located in a different location | . Common Options: . | -f: Force removal without prompting for confirmation. | -r or -R: Recursively remove directories and their contents. | -i: Prompt before each removal. | -v: Verbose mode, showing the files as they are removed. | . 4.3. Examples . | Remove files using absolute path . | rm ~/games/action/run.sh ~/games/adventure/uncharted/todo.md | . | Remove files using relative path . | rm games/fps/readme.md games/notes.txt games/page.html | . | Remove files and directories but prompt for confirmation before removing and display removal message when done . | rm -vir games/program.py ~/ProjectDelta | . | Remove a non empty directory forcing the removal . | rm -rf games/ | . | . 4.4. Practice . You have a folder named “OutdatedProjects” in your home directory. This folder contains old project files that you no longer need, including subdirectories with their own files. You want to clean up your home directory by completely removing the “OutdatedProjects” folder and all of its contents. The directory structure looks like this: . /home/user/OutdatedProjects/ ├── projectA/ │ └── old_data.txt ├── projectB/ │ └── old_report.txt ├── projectC/ │ └── notes.txt └── archived_files.txt . Use the rm command to delete the entire “OutdatedProjects” directory, including all of its subdirectories and files, using an absolute path. Before you can run the rm command, you will need to create the directories. Run this command that will run a script to generate the directories and files for you. curl https://cis106.com/assets/extras/rm_practice.sh | bash . Show Solution . ",
     "url": "/extra/mkdir_touch_rm/#4-rm",
     
     "relUrl": "/extra/mkdir_touch_rm/#4-rm"
-  },"203": {
+  },"204": {
     "doc": "Mkdir, touch, and rm",
     "title": "5. MV",
     "content": "5.1. Description . The mv command is used for moving and renaming files and directories. Keep the following points in mind about the mv command: . | mv cannot rename more than 1 file at the time | mv can move and rename a file at the same time | mv will set the last argument as the destination or file new name | Common options of the mv command: . | -i: Prompt before overwriting an existing file. | -u: Move only when the source file is newer than the destination file or when the destination file is missing. | -v: Verbose mode, showing the files as they are moved or renamed. | . | . 5.2. Formula/usage . 5.2.1. Moving . | mv + option + files/directories to move + destination directory 5.2.2. Renaming . | mv + option + old name + new name | . 5.3. Examples . | Move multiple files using a combination of absolute path and relative path . | mv -v ~/games/ schoolProject/ Documents/school/hmw.txt ~/Downloads/new_folder/ . | In this example: . | ~/games, schoolProject/, and, Documents/school/hmw.txt are moved to ~/Downloads/new_folder/ | -v enables verbose output. | . | . | . | Rename a directory . | mv -v ~/Downloads/new_folder ~/Downloads/projectAvalon/ | . | Rename a file . | mv -v ~/Downloads/projectAvalon/hmw.txt ~/Downloads/projectAvalon/submission.txt | . | Move and rename a file in a single command . | mv -v ~/Downloads/projectAvalon/submission.txt ~/Documents/cis107_document.txt | . | Move and rename a directory in a single command . | mv -v ~/Downloads/projectAvalon/ ~/Documents/Avalon | . | . 5.4. Practice . You are working on a web development project named “AlphaProject”. You have been give all the files for this project. Your task is to organize the folder. You have to use the mv command for renaming and moving. You are not allowed to create new directories. To get all the necessary files, run this command, which will run a script to generate the directory “AlphaProject” including all the necessary files. curl https://cis106.com/assets/extras/mv_practice.sh | bash . Show Solution . ",
     "url": "/extra/mkdir_touch_rm/#5-mv",
     
     "relUrl": "/extra/mkdir_touch_rm/#5-mv"
-  },"204": {
+  },"205": {
     "doc": "Mkdir, touch, and rm",
     "title": "6. CP",
     "content": "6.1. Description . The cp command is used to copy files and directories. Cp requires -r option to copy directories. You can copy and rename a directory or file in a single command too. However, this only works when trying to copy a single file or directory. This is like making a backup sort-of-speak. Common Options: . | -r or -R: Recursively copy directories and their contents. | -i: Prompt before overwriting an existing file. | -u: Copy only when the source file is newer than the destination file or when the destination file is missing. | -v: Verbose mode, showing the files as they are copied. | -a: Copy files and directories, preserving attributes like timestamps and permissions. | . 6.2. Formula/usage . | cp + option + source files/directories + destination directory | . 6.3. Examples . | Copy several files using a combination of absolute and relative path. | cp -r ~/projectOrion/ ~/Downloads/games.txt Videos/example.mp4 Pictures/bg.png ~/bookProject/ . | Note: Here we have to use -r because there is a directory in the sources to copy (~/projectOrion) | . | . | Copy a directory with verbose output . | cp -rv ~/projectOrion/ ~/Documents/ | . | . 6.4. Practice . Copy the directory of the previous practice. Copy the directory to the Documents directory. The name of the copy is: AlphaProjectBackup . Show Solution . ",
     "url": "/extra/mkdir_touch_rm/#6-cp",
     
     "relUrl": "/extra/mkdir_touch_rm/#6-cp"
-  },"205": {
+  },"206": {
     "doc": "Mkdir, touch, and rm",
     "title": "What will you submit for extra credit",
     "content": ". | In your cis106 directory/local repository, create a new directory called “ExtraCredit” (One word no spaces in file names pleases!) | Inside “ExtraCredit”, create another directory called “extra5” | Open your cis106 directory/local repository in VS Code | Inside “extra5” create a markdown file called “extra5.md” | Add all the screenshots to “extra5.md” using proper markdown syntax and labeling each screenshot using heading 2 formatting. Save the markdown file. | Your markdown document should start with the following heading1: # Extra Credit 5: Managing Files/Directories | Convert your file to PDF | Run the github commands, in VS Code Terminal, to push all your changes to github: . | gid add . | git commit -m \"Completed Extra 5\" | git push | . | In blackboard submit the following: . | The URL of extra5.md | The PDF file extra5.pdf | . | . ",
     "url": "/extra/mkdir_touch_rm/#what-will-you-submit-for-extra-credit",
     
     "relUrl": "/extra/mkdir_touch_rm/#what-will-you-submit-for-extra-credit"
-  },"206": {
+  },"207": {
     "doc": "Practice Virtualization",
     "title": "Practice Virtualization",
     "content": "This is for Students using VirtualBox in Windows or MacOS with an Intel CPU . ",
     "url": "/extra/practice_virtualization/",
     
     "relUrl": "/extra/practice_virtualization/"
-  },"207": {
+  },"208": {
     "doc": "Practice Virtualization",
     "title": "Option 1",
     "content": "Simply create virtual machines of Windows or Ubuntu using Lab 2 as a guide. Keep in mind the following: . | The minimun hardware requirements and recommended requires of the OS. | For example here is for Windows | . | To optain an iso file for Windows, use the Windows 10 Media creation tool or Windows 11 media creation tool. | . For Ubuntu, try out the many Ubuntu Flavors in a virtual machine. You can use the live session or do the full installation . Just remember to delete the virtual machine completely when you are done practicing . ",
     "url": "/extra/practice_virtualization/#option-1",
     
     "relUrl": "/extra/practice_virtualization/#option-1"
-  },"208": {
+  },"209": {
     "doc": "Practice Virtualization",
     "title": "Option 2",
     "content": ". | You can download pre-made VDI images from osboxes.org | . ",
     "url": "/extra/practice_virtualization/#option-2",
     
     "relUrl": "/extra/practice_virtualization/#option-2"
-  },"209": {
+  },"210": {
     "doc": "VM Test Activity",
     "title": "VM Test Activity",
     "content": " ",
     "url": "/extra/testingvms/",
     
     "relUrl": "/extra/testingvms/"
-  },"210": {
+  },"211": {
     "doc": "VM Test Activity",
     "title": "Goal",
     "content": ". | All the activities in this lab should be executed reliably with minimal slow downs with a virtual machine that meets the following criteria: . | CPU: 2 Cores | RAM: 4 GB | HDD: 50 GB | . ",
     "url": "/extra/testingvms/#goal",
     
     "relUrl": "/extra/testingvms/#goal"
-  },"211": {
+  },"212": {
     "doc": "VM Test Activity",
     "title": "Applications installed:",
     "content": ". | Code Editor: VS Code | Text Editor: Geany | Web Browser: Firefox, Librewolf, Chromium | . ",
     "url": "/extra/testingvms/#applications-installed",
     
     "relUrl": "/extra/testingvms/#applications-installed"
-  },"212": {
+  },"213": {
     "doc": "VM Test Activity",
     "title": "Test 1: Creating Markdown Documents",
     "content": ". | Download or clone this github repository: https://github.com/ra559/markdown-test | Open the directory in vs code | Create a markdown file called: husky.md | Use the text in the husky.txt file to create the husky.md file. | The document should contain as much markdown format as possible. | Convert the document to pdf | Convert the document to html | Preview the pdf file in vs code | Preview the html file using live server | . were you able to complete this test without major slowdowns? . ",
     "url": "/extra/testingvms/#test-1-creating-markdown-documents",
     
     "relUrl": "/extra/testingvms/#test-1-creating-markdown-documents"
-  },"213": {
+  },"214": {
     "doc": "VM Test Activity",
     "title": "Test 2: Basic Website",
     "content": ". | Open the markdown-test directory from the previous test in vs code | Add some css and bootstrap to the html | Add some javascript | Preview the website with live preview | . Were you able to complete this test without major slowdowns? . ",
     "url": "/extra/testingvms/#test-2-basic-website",
     
     "relUrl": "/extra/testingvms/#test-2-basic-website"
-  },"214": {
+  },"215": {
     "doc": "VM Test Activity",
     "title": "Test 3: Basic Jekyll Site",
     "content": ". | Use this guide to install Jekyll | Use this guide to create your jekyll site. | Add some entries to your site | Constantly server your site with --trace enabled. | . Were you able to complete this test without major slowdowns? . ",
     "url": "/extra/testingvms/#test-3-basic-jekyll-site",
     
     "relUrl": "/extra/testingvms/#test-3-basic-jekyll-site"
-  },"215": {
+  },"216": {
     "doc": "VM Test Activity",
     "title": "Test 3: Terminal + Vs Code + Web Browser",
     "content": ". | Use this Linux FS guide to practice some commands. | Create a markdown file and take screenshots. | Add the screenshots to the markdown file and convert the file to pdf | . Were you able to complete this test without major slowdowns? . ",
     "url": "/extra/testingvms/#test-3-terminal--vs-code--web-browser",
     
     "relUrl": "/extra/testingvms/#test-3-terminal--vs-code--web-browser"
-  },"216": {
+  },"217": {
     "doc": "The Linux FS",
     "title": "The Linux FS",
     "content": "All The videos here . ",
     "url": "/extra/thelinuxfs/",
     
     "relUrl": "/extra/thelinuxfs/"
-  },"217": {
+  },"218": {
     "doc": "The Linux FS",
     "title": "Other Review Videos:",
     "content": ". | REVIEW 4: The LS command and Practice | Linux Tutorials The ls command GeeksforGeeks | How to Use The ls Command on the Linux Command Line | . | The Linux FS . | Other Review Videos: | Basic Concepts . | Special characters: | Bash Environment Variables | Bash Tips: | . | Commands to navigate the linux filesystem . | PWD | CD | Practice CD command: | LS . | Output of LS -L explained: | . | Practice LS command: | Tree | EXA | . | What will you submit for extra credit | . | . ",
     "url": "/extra/thelinuxfs/#other-review-videos",
     
     "relUrl": "/extra/thelinuxfs/#other-review-videos"
-  },"218": {
+  },"219": {
     "doc": "The Linux FS",
     "title": "Basic Concepts",
     "content": ". | The root directory: The first directory in the filesystem that contains the entire filesystem represented by “/”. | Current working directory: Also known as the present working directory. It is the directory where you are currently working in. You are always working from a directory. | Parent Directory: a dirtectory containing one or more directories and files. | Child directory: a better name for this is a subdirectory or subfolder. This is a directory inside another directory. See image for visual reference. | . | YOUR HOME DIRECTORY: This is your user’s personal directory where all your files are located. Every user has it’s own home directory just like in a apartment complex they all residents have their own apartment while sharing the common areas. You have total ownership of your home directory but outside of the home directory only the root user can make changes. An example absolute path, assuming that user name is maria53, would be /home/maria53 | The home Directory: This is the parent directory of all the home directories. This is where all the users’ home directory are. The absolute path of this directory is /home. Noticed that it starts at the root. | The root user: This is the administrator account of your system. To perform administrative tasks or to manage directories and files outside of your home directory, you must obtain root privileges using the sudo command at the beginning of the command. | Path name: Also known as file path. This is the location of a given file in your computer. A path name can be absolute path or relative path. | Absolute Path: The location of a file starting at the root of the file system. For example, /home/maria53/Downloads/list.txt is the absolute path of the file list.txt. The advantage of absolute paths is that they can be used at any point of the file system regardless of your current directory. Any command that is given an absolute path will be able to find the file because it will start at the beginning of the filesystem. The disadvantage is that a command can be long to type if the file path is long. | Relative Path: The location of a file starting from a child directory of the current working directory or from the current directory itself. The advantage of using relative path is that typing commands is faster. The disadvantage of relative paths is that they cannot work from anywhere in the filesystem. In order for a relative path to work, a file must be reachable from the current directory onwards. Another disadvantage of relative paths is that they require a better mental understanding of the linux filesystem in the sense that you must keep a mental image of the directory tree that you are working with. An example of a relative path would be Downloads/list.txt assuming that the current working directory is /home/maria53 Special characters: . Special characters are function like commands that tell the shell to perform a specific action without having to type the complete command. These special characters make working on the command line more efficiently. Here is short list to keep in mind. | . (single period): represents the current directory. | .. (2 consecutive periods): represents the parent directory. | ~ (tilde character): expands the current users home directory. It is like a variable that the shell uses to store the absolute path of the user’s home directory. This ~/Downloads is the same as typing /home/maria53/Downlods | / (one forward slash): as mentioned earlier, this is the root directory and the shortest path in the system. This is the beginning of the directory tree. There is nothing before it and everything after it. | - (hyphen-minus): is used to move to the previous current working directory. | # (hash or number sign): This is used for single line comments in shell scripting. | ! (single exclamation mark): used for repeating a command from the history. For example !5 will repeat the 5th command in the command history. To view the entire command history type history. | !! (2 consecutive exclamaton marks): are used for repeating the previous command. For example, !! will repeat the previous command while, sudo !! will repeat the previous command but will add sudo at the beginning of the command. This is useful for times when we forget to type sudo when performing administrative tasks. | . Bash Environment Variables . | What is a variable? . | In programming, a variable is place to store data. A variable is like a box with a label. For example, if you a lot of pens in your desk and you place them in a box a label it pens, now the box store your pens. In programming a variable can be used to store temporary or permanent information that you will continuously reuse in your program. For example, username='maria53' the variable name now stores the value maria. When evener the programs need to access the maria’s username, it can do it by referencing the variable username. | . | What is an environment variable? . | Environment variables store values of a user’s environment and can be used in commands in the shell. These values can be unique to the user’s environment which makes them ideal when writhing commands that you want to use regales of which user is using the computer. To see a list of your environment variables type env. To use the value stored in an environment variable you must prepend the variable name with a $. Here are some useful environment variables: | $USER = stores the current’s user username | $HOME = stores the absolute path of current’s user home directory | $PWD = stores the absolute path of the present working directory. | $OLDPWD = stores the absolute path of the previous current working directory | . | . Bash Tips: . | Tab Completion: autocomplete a command/pathname by pressing the tab key | Arrow keys: allows you to move, edit, and repeat commands | Ctrl + a: go to the start of the command line | Ctrl + e: go to the end of the command line . | Shortcut list | . | . ",
     "url": "/extra/thelinuxfs/#basic-concepts",
     
     "relUrl": "/extra/thelinuxfs/#basic-concepts"
-  },"219": {
+  },"220": {
     "doc": "The Linux FS",
     "title": "Commands to navigate the linux filesystem",
     "content": "To navigate the linux filesystem, you only need to master 3 commands: cd, pwd and ls. While there are other useful commands, those can be considered complimentary and you should learn them after you have mastered those 3. PWD . | Usage . | Displays the absolute path of the current working directory. | . | Formula . | pwd | . | Examples . | Print the absolute path of current working directory . | pwd | . | . | . CD . | Usage . | Changes the current working directory. In other words, it moves you from one directory to another. By default, it will always send you to your home directory. | . | Formula . | cd + destination absolute path or relative path | . | Examples . | Go (change your current directory) to your home directory (there is more than 1 way of doing this): . | cd (without any arguments, cd will take you home) | cd ~ (using the ~ special character. as ~ will expand to the absolute path of the user’s home directory) | cd $HOME (using the $HOME environment variable) | cd /home/$USER/Downloads (using $USER environment variable in the path) | . | Go to a specified directory with absolute path: . | cd /usr/share/themes | . | Go to a specified directory with relative path assuming your current working directory is /home . | cd maria53/Downloads/ | . | Go to the previous working directory. This is useful when you are working with 2 directories located far in the directory tree . | cd - | . | Go to the previous directory in the directory tree. One directory above. | cd ../ | . | Go to 2 directories above the directory tree . | cd ../../ | . | . | . Practice CD command: . Try to complete these tasks without looking at the solution. Use the image below as a reference: . | Using absolute path, go to the directory “/user/share/themes/Adwaita” | Go back to your home directory. | Go back to the “/user/share/themes/Adwaita” using the - special character. | Go to the root of the filesystem using the “..” special character. | Go to your “Downloads” directory 1 directory at the time. Display/Print your present working directory once you have reached the “Downloads” directory. | Go back to your home directory and then to the “Pictures” directory. | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of the terminal showing all the commands you used to complete the practice . LS . | Usage . | ls is used for listing files and directories. By default it will list the current directory when no directory is specified. Listing means to see what is inside a directory. | . | Formula . | ls + option + directory to list | . | Examples . | See all the options of the ls command (extracted from the man page): . | ls --help | . | List the current directory: . | ls | . | List all the files including hidden files in current directory: . | ls -A | . | List all the files inside a given directory: . | ls -A /usr/share/fonts/X11 (absolute path) | ls -A Documents/ (relative path assuming that the $PWD is $HOME) | . | Long list a directory . | ls -lA ~/Pictures | . | List a directory recursively . | ls -R Documents/ | . | Long list a directory only . | ls -ld Documents/ | . | List a directory sorted by last modified . | ls -t Documents/ | . | List a directory sorted by file size . | ls -S Documents/ | . | Long list a directory excluding group and owner information, with human readable file size and sorted in reverse order. | ls -lhgGr Documents/ | . | . | . Output of LS -L explained: . Practice LS command: . Try to complete these tasks without looking at the solution. | Use this command to download some example files: curl https://raw.githubusercontent.com/ra559/cis106/main/assets/scripts/practice_ls.sh | bash | The command above will create a directory in your home directory called practicels Here you will find 10 example files to practice ls. If the command above did not work, read the output carefully and try to fix it yourself. You can also download the zip file on your own. Read the basic script for the URL. | . | list all the files in the practice directory. | long list all the files in the practice directory. | long list all the files in the practice directory sorted by file size with human readable file sizes | long list all the files in the practice directory sorted by file size with human readable file sizes and in reverse order. | long list all the files in the practice directory without the group and owner, with human readable file sizes, sorted by file extension and with full time stamp. | . Show Solution . If you are doing this activity for the extra credit. Take a screenshot of the terminal showing all the commands you used to complete the practice . Tree . | Usage . | used to display a recursive directory listing (tree) of files. | . | Formula . | tree + option + directory | . | Examples . | Display a tree of the home directory . | tree ~ or tree $HOME or tree /home/$USER | . | Display a tree of a directory with file permissions . | tree -p ~/practicels | . | Display a tree of a directory with the full path prefix, with the user and group owner, human readable file sizes, and the date of last modified. | tree -pughD ~/practicels/ | . | . | . EXA . | Usage . | Used the same way as ls. To list files and directories. Exa is a modern replacement for ls written in Rust. Exa is not installed by default. You will need to install it using your linux distribution package manager. | . | Formula . | exa + option + directory | . | Examples . | list all files in a given directory in a single line . | exa -1 ~/practicels | . | long list all the files in a given directory . | exa -l ~/practicels | . | long list all the files in a given directory with headers . | exa -lh ~/practicels | . | list a directory in a tree like format . | exa -T ~/practicels | . | . | . ",
     "url": "/extra/thelinuxfs/#commands-to-navigate-the-linux-filesystem",
     
     "relUrl": "/extra/thelinuxfs/#commands-to-navigate-the-linux-filesystem"
-  },"220": {
+  },"221": {
     "doc": "The Linux FS",
     "title": "What will you submit for extra credit",
     "content": ". | In your cis106 directory/local repository, create a new directory called ExtraCredit (One word no spaces in file names pleases!) | Inside ExtraCredit, create another directory called extra3 | Open your cis106 directory/local repository in VS Code | Inside extra3 create a markdown file called extra3.md | Add all the screenshots to extra3.md using proper markdown syntax and labeling each screenshot using heading 2 formatting. Save the markdown file. | Your markdown document should start with the following heading1: # Extra Credit 3: The Linux FS | Convert your file to PDF | Run the github commands, in VS Code Terminal, to push all your changes to github: . | gid add . | git commit -m \"Completed Extra 1\" | git push | . | In blackboard submit the following: . | The URL of extra3.md | The PDF file extra3.pdf | . | . ",
     "url": "/extra/thelinuxfs/#what-will-you-submit-for-extra-credit",
     
     "relUrl": "/extra/thelinuxfs/#what-will-you-submit-for-extra-credit"
-  },"221": {
+  },"222": {
     "doc": "Wildcards",
     "title": "Wildcards",
     "content": " ",
     "url": "/extra/wildcards/",
     
     "relUrl": "/extra/wildcards/"
-  },"222": {
+  },"223": {
     "doc": "Wildcards",
     "title": "Description",
     "content": "Wildcards or file globing is a shell feature that, using special characters, allows us to rapidly specify groups of filenames. Because we work with files all the time, it is useful to be able to work with multiple files at the same time. Why and when should I use a wildcard? . Using wildcards can save you a lot of time. Imagine you need to move all the text files in a folder. You could move them one by one—if you know each file’s name. But what if there are 300 files? Moving them one at a time would take forever! Wildcards help you by allowing you to match all files that meet a certain pattern or criteria, so you can move them all at once with a single command. Here are some examples: . | Copy all photos from a drive to a flash drive. | Delete certain types of files from a folder. | List all files that have a date in their name. | . There are only 3 wildcards. Here is how they work: . | Wildcard | definition | example | . | * | matches 0 to any number of characters | ls ~/Downloads/*.png | . | ? | matches 1 character | ls ~/Downloads/f?ll.sh | . | [] | matches 1 character from a set | ls ~/Downloads/f[0-9]ll.sh | . ",
     "url": "/extra/wildcards/#description",
     
     "relUrl": "/extra/wildcards/#description"
-  },"223": {
+  },"224": {
     "doc": "Wildcards",
     "title": "What does “matches x number of character” really mean?",
     "content": "This refers to the number of characters in the file name that can be matched everytime the wildcard is used in a command. For example, here is an illustration using the * wildcard: . Notice that because the * wildcard matches 0 characters and also any number of characters, this command: ls *SC*.png matches the files Script_remover.sh and BackupScript.sh. To practice the wildcards, run this command: . curl https://cis106.com/assets/extras/wildcards.sh | bash . This will create a directory in your home directory called wildcard_extra_practice. This directory contains a bunch of files and directories (created at random). All the examples here will use the files in this directory. ",
     "url": "/extra/wildcards/#what-does-matches-x-number-of-character-really-mean",
     
     "relUrl": "/extra/wildcards/#what-does-matches-x-number-of-character-really-mean"
-  },"224": {
+  },"225": {
     "doc": "Wildcards",
     "title": "The * (star/asterisk) wildcard",
     "content": "Examples: . | List all of the directories inside a given directory without listing their content . | ls -1d wildcard_extra_practice/*/ | . | . | Move all the .sh (shell scripts) files . | mv wildcard_extra_practice/*.sh wildcard_extra_practice/scripts/ | . | . | List and then move all the image files in the wildcard_extra_practice directory. You will need to create a directory first. | mkdir wildcard_extra_practice/images/ | ls wildcard_extra_practice/img-*.* | mv -v wildcard_extra_practice/img-*.* wildcard_extra_practice/images/ | . | . ",
     "url": "/extra/wildcards/#the--starasterisk-wildcard",
     
     "relUrl": "/extra/wildcards/#the--starasterisk-wildcard"
-  },"225": {
+  },"226": {
     "doc": "Wildcards",
     "title": "The ? (question mark) wildcard",
     "content": "Examples: . | List all the files that contain a 4 letter file extension. | ls -1X wildcard_extra_practice/*.???? | . | List all the files that contain a 4 letter file extension and start with letter i: . | ls -1X wildcard_extra_practice/i*.???? | . | List all th files Microsoft Office 365 files. | ls -1X wildcard_extra_practice/*.???x | . | . ",
     "url": "/extra/wildcards/#the--question-mark-wildcard",
     
     "relUrl": "/extra/wildcards/#the--question-mark-wildcard"
-  },"226": {
+  },"227": {
     "doc": "Wildcards",
     "title": "The [] (square brackets) wildcard",
     "content": "| POSIX class | Represents | Means | Example using ls | . | [:upper:] | [A-Z] | Uppercase letters | ls *[[:upper:]]* - List files with uppercase letters | . | [:lower:] | [a-z] | Lowercase letters | ls *[[:lower:]]* - List files with lowercase letters | . | [:digit:] | [0-9] | Digits | ls *[[:digit:]]* - List files containing digits | . | [:alpha:] | [A-Za-z] | Alphabetic characters | ls *[[:alpha:]]* - List files with alphabetic characters | . | [:alnum:] | [A-Za-z0-9] | Alphanumeric characters | ls *[[:alnum:]]* - List files with alphanumeric characters | . | [:space:] | [ \\t\\n\\r\\f\\v] | Whitespace characters | ls *[[:space:]]* - List files with spaces in names | . | [:punct:] | Punctuation | Punctuation characters | ls *[[:punct:]]* - List files with punctuation characters | . | [:blank:] | [ \\t] | Space and tab | ls *[[:blank:]]* - List files with spaces or tabs | . | [:xdigit:] | [0-9A-Fa-f] | Hexadecimal digits | ls *[[:xdigit:]]* - List files with hexadecimal characters | . | [:cntrl:] | Control characters | Control characters | ls *[[:cntrl:]]* - List files with control characters | . | [:print:] | Printable | Printable characters | ls *[[:print:]]* - List files with printable characters | . | [:graph:] | Graphical | Visible characters (not spaces) | ls *[[:graph:]]* - List files with graphical characters | . | [:word:] | [A-Za-z0-9_] | Word characters (alphanumeric + underscore) | ls *[[:word:]]* - List files containing word characters | . | [:ascii:] | ASCII characters | All ASCII characters (0-127) | ls *[[:ascii:]]* - List files containing ASCII characters | . Examples: . | List all the files that start with a capital letter . | ls wildcard_extra_practice/[A-Z]* | . | List all the files that contain a number in their name . | ls wildcard_extra_practice/*[0-9]* | . | List all the files that start with a capital letter and have a 2 character file extension . | ls wildcard_extra_practice/[A-Z]*.?? | . | List all the files that contain a punctuation character in the name and a 4 character file extension . | ls wildcard_extra_practice/*[[:punct:]]*.???? | . | . Note: . | Wildcards also have their limitations. | For instance, “List all the files that do not contain a digit in the file name” You may assume that the approach would be ls *[!0-9]*. However, this does not work. This wildcard translates to: “all files and directories in the current directory whose names contain at least one character that is not a digit (0-9)” However, if you ever need this, here are two approaches: . | Use ls + grep: . | ls *[!0-9]* | grep -v '[0-9]' | . | Use find: . | find ./ -not -name '*[0-9]*' | . | Find is preferred for scripts because ls is not suited for shell scripts. ls is intended to be a human friendly tool and the output is difficult to parse properly. | . | . ",
     "url": "/extra/wildcards/#the--square-brackets-wildcard",
     
     "relUrl": "/extra/wildcards/#the--square-brackets-wildcard"
-  },"227": {
+  },"228": {
     "doc": "Wildcards",
     "title": "Brace Expansion",
     "content": "Brace expansion is not a wildcard but a feature of the bash shell that allows you to create strings without needing loops. The strings can be filenames, sequences, or patterns. Brace expansion is handled before file globing and variable expansion. Brace expansion is used in the following manner: . | Open brace ({) + pattern separated by commas with no spaces + closing brace (}). | . Examples: . | Create 3 html files . | touch {index,about,contact}.html | . | Create 10 files numbered 1 to 10 . | touch file{1..10}.txt | . | Create a directory structure in a single command: . | mkdir -vp website/{assets,scripts,extras} | . | Create an even more complex directory structure . | mkdir -vp website/{assets/{imgs,audio},scripts/{js,python},extras/{docs,helper}} | . | Create files in increments using A to Z in the file name . | touch file{A..Z}.txt | . | Remove the same 100 files created in the previous example: . | rm file{A..Z}.txt | . | . ",
     "url": "/extra/wildcards/#brace-expansion",
     
     "relUrl": "/extra/wildcards/#brace-expansion"
-  },"228": {
+  },"229": {
     "doc": "Wildcards",
     "title": "Challenge Practice 1:",
     "content": ". | Inside the wildcard_extra_practice directory, create a new directory called: Office365. | Research a list of Microsoft Office 365 file extensions and use that knowledge to identify which files in the wildcard_extra_practice directory are Office 365 files. You should also research any file extension you do not recognized from the files in the wildcard_extra_practice directory. | Use a wildcard to move all the Office 365 files to the wildcard_extra_practice/Office365 directory | . Show Solution . ",
     "url": "/extra/wildcards/#challenge-practice-1",
     
     "relUrl": "/extra/wildcards/#challenge-practice-1"
-  },"229": {
+  },"230": {
     "doc": "Wildcards",
     "title": "Challenge Practice 2:",
     "content": ". | Change your current working directory to ~/wildcard_extra_practice | List and then remove all the files that contain 2 numbers in their file name right before the file extension. Be very careful with this step. | Create a new directory called practice_docs. | Move all the html, odt, and pdf files to practice_docs | . Show Solution . ",
     "url": "/extra/wildcards/#challenge-practice-2",
     
     "relUrl": "/extra/wildcards/#challenge-practice-2"
-  },"230": {
+  },"231": {
     "doc": "Wildcards",
     "title": "Challenge Practice 3:",
     "content": ". | List all the image files in the ~/wildcard_extra_practice directory. Ignore the images subirectory. Only the images in ~/wildcard_extra_practice must be listed. | Copy the images you listed in the previous step to the images subdirectory. | Inside the images subdirectory, create 1 directory for every file type. | Move each file type to its respective new subdirectory | . Show Solution . ",
     "url": "/extra/wildcards/#challenge-practice-3",
     
     "relUrl": "/extra/wildcards/#challenge-practice-3"
-  },"231": {
+  },"232": {
     "doc": "Wildcards",
     "title": "What will you submit for extra credit",
     "content": ". | In your cis106 directory/local repository, create a new directory called “ExtraCredit” (One word no spaces in file names pleases!) | Inside “ExtraCredit”, create another directory called “extra6” | Open your cis106 directory/local repository in VS Code | Inside “extra6” create a markdown file called “extra6.md” | Add all the screenshots to “extra6.md” using proper markdown syntax and labeling each screenshot using heading 2 formatting. Save the markdown file. | Your markdown document should start with the following heading 1: # Extra Credit 6: Wildcards | Convert your file to PDF | Run the github commands, in VS Code Terminal, to push all your changes to github: . | gid add . | git commit -m \"Completed Extra 5\" | git push | . | In blackboard submit the following: . | The URL of extra6.md | The PDF file extra6.pdf | . | . ",
     "url": "/extra/wildcards/#what-will-you-submit-for-extra-credit",
     
     "relUrl": "/extra/wildcards/#what-will-you-submit-for-extra-credit"
-  },"232": {
+  },"233": {
     "doc": "Final Exam Study Guide",
     "title": "Final Exam Study Guide",
     "content": ". ",
     "url": "/final_exam/final_exam/",
     
     "relUrl": "/final_exam/final_exam/"
-  },"233": {
+  },"234": {
     "doc": "Final Exam Study Guide",
     "title": "Special Note:",
     "content": ". | The final exam is in person. | The exam is performance based and will require access to a Linux Virtual Machine. | If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you. | . ",
     "url": "/final_exam/final_exam/#special-note",
     
     "relUrl": "/final_exam/final_exam/#special-note"
-  },"234": {
+  },"235": {
     "doc": "Final Exam Study Guide",
     "title": "Recommendations",
     "content": ". | Arrive to the classroom 30 minutes before the exam starts (5:00 PM) . | This will allow you to test your virtual machine, perform any maintenance, test your internet connection, do a test pull and push, and troubleshoot any hardware problem. | . | Make sure your github repository is organized . | Since you are allowed to use your notes during your exam, it is to your benefit to have all your notes organized. | I recommend creating a single document with all of notes and converting it to pdf. This will make it easier to find information. | BE AWARE that you can only use your notes - NOT YOUR LABS - for the exam. So if I catch you looking at your labs, presentations, book, or the internet during the exam, this will constitute cheating and your exam will be terminated | . | Update Windows and Ubuntu the day before the final exam . | Do not update virtualbox | Create a snapshot of your virtual machine before updating. If anyting goes wrong, you will be able to recover. | . | If you plan on using one of my computers: . | Arrive 15 to 20 minutes early | You will need to clone your repository | You will need to make sure everything works for you | . | . WARNING Your lack of preparation does not constitute an emergency for me. There are no make up exams. You are either here for the exam or your are not! There is another class after our class. Which means that the exam starts at 5:40 and ends at 6:55 on the dot! You must save the last 10 minutes of the exam to prepare your submission. ",
     "url": "/final_exam/final_exam/#recommendations",
     
     "relUrl": "/final_exam/final_exam/#recommendations"
-  },"235": {
+  },"236": {
     "doc": "Final Exam Study Guide",
     "title": "Commands to study",
     "content": ". | Make sure you understand them well. Then include 3 - 5 examples that you understand and can use without any challenge. | Don’t memorize. | awk | cat | cp | cut | grep | head | ls | man | mkdir | mv | tac | tail | touch | tr | tree | . ",
     "url": "/final_exam/final_exam/#commands-to-study",
     
     "relUrl": "/final_exam/final_exam/#commands-to-study"
-  },"236": {
+  },"237": {
     "doc": "Final Exam Study Guide",
     "title": "Concepts to study",
     "content": "Working with Git, GitHub, and Markdown . | How to create a github repository | How to clone a github repository | How to use the git commands | How to write a markdown file that contains images and proper headings | How to convert a markdown file to pdf | . How to Practice? . | Create a repository in github. Give it any name you want. | Clone the repository in your virtual machine | Open the repository/folder/directory in vs code | Create a markdown file inside containing random text. Make sure you have headings, images, pagrapaths, bullet points etc… | Convert the file to html and pdf | Push everything to github | Do you see the files there? | Add a couple more html files by repeating the process. | Did you get lost? if so, you know what you need to study! | . Linux Specific Concents . | How to compress (zip) a directory/folder | The linux filesystem | Absolute path and relative path | When should you use absolute vs relative | Moving around the filesystem with absolute and relative (pwd,cd, ls, and tree) | How to work with multiple terminals open? | How to work with manual pages? | How to parse (search) for specific words in the manual page | How to redirect output (&gt;, &gt;&gt;, and |) | How to append the output of a command to a file | How and when to redirect the output of a command to another (pipes) | How to use echo and output redirection to create a new file that contains some text | How to use wildcards . | For copying and moving multiple files at the same time | . | How to use brace expansion . | For creating entire directory structures in a single command | . | . How to practice? . | Go through the presentations and try to do the practice without looking at the solutions. | Go over all the challenge questions. Do them again using only your notes as reference. That will allow you to know if you need to enhance them or if they are good enough for the final | Did you get lost? Where? Why? Get to the answer without using google or chatgpt. Annotate and add those annotations to your notes | Need more help? Take a look at the extra section of the website and the youtube channel | . ",
     "url": "/final_exam/final_exam/#concepts-to-study",
     
     "relUrl": "/final_exam/final_exam/#concepts-to-study"
-  },"237": {
+  },"238": {
     "doc": "Final Exam Study Guide",
     "title": "Regarding shell scripting:",
     "content": ". | How to create and execute a basic script . | The Bash Shell Lecture - Page 28 | . | How to create user defined variables and environment variables . | The Linux Filesystem Lecture - Page 40 | . | How to use positional parameters . | Shell Scripting - Getting user input Lecture - page 3 - 6 | . | How to use command substitution to store the output of a command in a variable . | Shell Scripting - Getting user input Lecture - Page 7 | . | . ",
     "url": "/final_exam/final_exam/#regarding-shell-scripting",
     
     "relUrl": "/final_exam/final_exam/#regarding-shell-scripting"
-  },"238": {
+  },"239": {
     "doc": "Final Exam Study Guide",
     "title": "How to practice shell scripting for your final exam.",
     "content": "Challenge yourself to write these scripts. Try to do them on your own simply using your notes and the presentation. Everytime you find yourself lost, take notes of the problem and the solution so that you can have it for reference. Script 1: Using Echo and environment variables . Write a shell script that will display the following output: . The challenge here is to: . | Use echo to display messages that include tabs and new lines | Use echo and environment variables together | In this screenshot I use HOME, USER, PWD, and OLDPWD | There is also a cd command in there | . Script 2: Using user defined variables and user input . NOTE For Spring 25 Students: This script (script 2) does not apply to you as the concept of user input was not covered. Please skip this script during your studies. Write a shell script that will ask the user several questions, store the responses in variables and then use those variables in a single echo command. The output should look like this: . The challenge here is to: . | Collect user information and store in a variable | Use the variables in an echo command to generate a multi line message | You have to use a single echo command | . Script 3: Using positional parameters . NOTE For Spring 25 Students: This script (script 3) does not apply to you as the concept of positional parameters was not covered. Please skip this script during your studies. Write a shell script that will take 3 positional parameters. The first parameter is the name of a new directory, the second and third are file names. Use the mkdir to create the directory, and then touch to create the 2 files in the new directory. DO NOT USE CD! Here is the output of the script: . The challenge here is to: . | Use positional parameters with echo, mkdir, touch and tree. | Remember to use quotes around your variables. For example tree \"$1\" | Use positional parameters and brace expansion to create the files | . Script 4: Extra! . Create a script that generates this output. Here are the special characters: . ┌ ┐ └ ┘ │ ─ . Create a script that generates this output: . Script 5: Using variables Part 2 . write a shell script that uses user defined variables and environment variables to generate the following output. The challenge here is to: . | Use user defined variables with mkdir, touch, tree,echo | Notice the empty lines in the screenshot. Try using the new line character instead of an empty echo command | . ",
     "url": "/final_exam/final_exam/#how-to-practice-shell-scripting-for-your-final-exam",
     
     "relUrl": "/final_exam/final_exam/#how-to-practice-shell-scripting-for-your-final-exam"
-  },"239": {
+  },"240": {
     "doc": "ANSI Escape Sequences",
     "title": "ANSI Escape Sequences",
     "content": "| Escape Sequence | Effect | . | \\033[0m | Reset / Normal | . | \\033[1m | Bold / Increased intensity | . | \\033[2m | Faint / Decreased intensity (may not display) | . | \\033[3m | Italicized (not supported in some terminals) | . | \\033[4m | Underlined | . | \\033[5m | Blink (often disabled or not supported) | . | \\033[7m | Inverted / Reverse video | . | \\033[8m | Hidden (conceal text) | . | \\033[9m | Strikethrough text (not widely supported) | . | \\033[10m | Primary font (not widely used) | . | \\033[11m-19m | Alternate fonts 1-9 (rarely supported) | . | \\033[21m | Bold off (reset bold) | . | \\033[22m | Normal color (no bold, no underlined) | . | \\033[23m | Not italicized (reset italic) | . | \\033[24m | Not underlined (remove underline) | . | \\033[25m | Blink off (remove blink) | . | \\033[27m | Reverse off (reset reverse video) | . | \\033[28m | Reveal (unhide text) | . | \\033[29m | Reset strikethrough (remove strikethrough effect) | . | \\033[30m | Set text color to black | . | \\033[31m | Set text color to red | . | \\033[32m | Set text color to green | . | \\033[33m | Set text color to yellow | . | \\033[34m | Set text color to blue | . | \\033[35m | Set text color to magenta | . | \\033[36m | Set text color to cyan | . | \\033[37m | Set text color to white | . | \\033[38m | Set custom text color (ANSI 256 colors or RGB values) | . | \\033[39m | Reset text color to default | . | \\033[40m | Set background color to black | . | \\033[41m | Set background color to red | . | \\033[42m | Set background color to green | . | \\033[43m | Set background color to yellow | . | \\033[44m | Set background color to blue | . | \\033[45m | Set background color to magenta | . | \\033[46m | Set background color to cyan | . | \\033[47m | Set background color to white | . | \\033[48m | Set custom background color (ANSI 256 colors or RGB) | . | \\033[49m | Reset background color to default | . | \\033[50m | Fraktur (not widely supported) | . | \\033[51m | Framed (rarely supported) | . | \\033[52m | Encircled (rarely supported) | . All unsafe sequences are bold. Unsafe means that the particular sequence is not universally supported across terminal emulators. ",
     "url": "/bash/ANSI_escape_sequences/",
     
     "relUrl": "/bash/ANSI_escape_sequences/"
-  },"240": {
+  },"241": {
     "doc": "ANSI Escape Sequences",
     "title": "What are ANSI Escape Sequences/Characters?",
     "content": "ANSI escape characters are sequences of characters used to control text formatting, color, and cursor movement in your terminal. They are used for text styling, color formatting, cursor control and screen movements. They are common in shell scripts. ",
     "url": "/bash/ANSI_escape_sequences/#what-are-ansi-escape-sequencescharacters",
     
     "relUrl": "/bash/ANSI_escape_sequences/#what-are-ansi-escape-sequencescharacters"
-  },"241": {
+  },"242": {
     "doc": "ANSI Escape Sequences",
     "title": "Structure of ANSI Escape Sequences",
     "content": "Take the following Escape Sequence: \\033[31m This is used to set the text color to RED. ANSI Escape codes follow the following formula/patter: . ESC[&lt;parameters&gt;&lt;command&gt; . | ESC (\\033 or \\x1B): Starts the sequence | [ ... ]: The Control Sequence Introducer (CSI) | &lt;parameters&gt;: (optional) Numeric values separated by semicolons (;) to define styles or actions | &lt;command&gt;: A letter that specifies the action. | . ANSI Commands: . Notice that each of text formatting ends in a lowercase m. That is because m is the command for applying the color formatting. There are formats you should be aware exist too. | H: move the cursor to a specified position. Ex. \\033[10;10H moves the cursor to row 10 column 10 | J: Clears part of the screen. Ex: \\033[2J Will clear the screen | K: Clears part of a line. Ex. \\033[3D\\033[K clears from Cursor to End of Line. | . Be aware that H,J,K, may not be supported by your terminal emulator, bash version, or operating system all together. M is more widely supported but still there are many codes that are not. How can I use these codes in my scripts? . The easiest way is to assign them to variables and then use them as you would any other value. For example, . #!/bin/bash RESET=\"\\033[0m\" BOLD=\"\\033[1m\" RED=\"\\033[31m\" echo -e $BOLD$RED\"This text is red\"$RESET . Keep in mind that you must use the reset sequence when you are done formatting otherwise it will keep the formatting for the rest of the script. The example above will set the text color to RED and the font style to bold. You can also download and import some of the sequences in the table above and use the colors as variables. Here is the source file: ansi_sequences.sh. And here is how you can add it to your scripts . Note: Your must have curl instaled . I recommend this example for times when you will the script once. #!/bin/bash curl https://cis106.com/assets/scripts/ansi_escape_codes.sh -o ansi_codes source ansi_codes # Place the rest of your script here echo -e $BackgroundYellow echo -e \"┌───────────────────────────────────────┐\" echo -e \"│ Random Text Goes in this banner │\" echo -e \"└───────────────────────────────────────┘\" echo $Reset # End of script rm ansi_codes # This will remove the ansi_codes file. If you plan on using these codes frequently, here is a better snippet that checks if the file ansi_codes is in your current directory or not. If it is, it skips the curl command. #!/bin/bash [ ! -e ansi_codes ] &amp;&amp; [ ! -s ansi_codes ] &amp;&amp; curl -s https://cis106.com/assets/scripts/ansi_escape_codes.sh -o ansi_codes source ansi_codes . Example: . #!/bin/bash [ ! -e ansi_codes ] &amp;&amp; [ ! -s ansi_codes ] &amp;&amp; curl -s https://cis106.com/assets/scripts/ansi_escape_codes.sh -o ansi_codes source ansi_codes # Place the rest of your script here echo -e $BackgroundYellow\"┌───────────────────────────────────────┐\"$Reset echo -e $BackgroundYellow\"│\"$Blue\" Random Text Goes in this banner\"$Reset$BackgroundYellow\" │\"$Reset echo -e $BackgroundYellow\"└───────────────────────────────────────┘\"$Reset # End of script . ",
     "url": "/bash/ANSI_escape_sequences/#structure-of-ansi-escape-sequences",
     
     "relUrl": "/bash/ANSI_escape_sequences/#structure-of-ansi-escape-sequences"
-  },"242": {
+  },"243": {
     "doc": "Arrays",
     "title": "Arrays",
     "content": ". | Arrays . | What is an array? | Declaring an array . | Method 1: Using Parenthesis | Method 2: Using declare command | . | Accessing elements of an array . | Examples | . | Modifying an array | Looping through an array . | Using for | Interesting example: | Using while | Using until | Interesting Example | . | Working with associative arrays . | Create an associative array: | Accessing values | . | Array operations | . | . ",
     "url": "/bash/arrays/",
     
     "relUrl": "/bash/arrays/"
-  },"243": {
+  },"244": {
     "doc": "Arrays",
     "title": "What is an array?",
     "content": "An array in Bash is a data structure that can store multiple values in a single variable. There are two types of arrays in bash: . | Indexed arrays: this type uses numeric indenes starting at 0 | Associative Arrays: this type uses keys (like a dictionary) | . ",
     "url": "/bash/arrays/#what-is-an-array",
     
     "relUrl": "/bash/arrays/#what-is-an-array"
-  },"244": {
+  },"245": {
     "doc": "Arrays",
     "title": "Declaring an array",
     "content": "Method 1: Using Parenthesis . The formula is simple: array name+=+(+elements separated by a space+). Example: . #!/bin/bash # Array declaration example users=(\"john\" \"Mary\" \"Peter\" \"Ivan\") . This method is used for creating indexed arrays. It cannot be used to create associative arrays. Method 2: Using declare command . The declare command is used to create and modify variables. It allows to control the scope of the variables as well. In the case of arrays, we can use to create indexed arrays or associative arrays. The syntax is: declare+options+array_name+=+value . Example: . #!/bin/bash # Indexed array declare -a users=(\"john\" \"peter\" \"joe\") # Accessing values echo ${users[0]}1 . #!/bin/bash declare -A user # Assign values user[\"name\"]=\"Alice\" user[\"age\"]=35 user[\"eyes\"]=\"brown\" user[\"city\"]=\"New York\" user[\"email\"]=\"alice_88@email.com\" user[\"username\"]=\"a_wa339\" # accessing values: echo -e ${user[\"name\"]} lives in ${user[\"city\"]}. She is ${user[\"age\"]} years old \\ her eyes color is ${user[\"eyes\"]}. Her email address is ${user[\"email\"]}. ",
     "url": "/bash/arrays/#declaring-an-array",
     
     "relUrl": "/bash/arrays/#declaring-an-array"
-  },"245": {
+  },"246": {
     "doc": "Arrays",
     "title": "Accessing elements of an array",
     "content": "The formula to access the an element of an array is as follows: . | $+{+name_of_array+[+index+]+} | . Examples . #!/bin/bash users=(\"john\" \"peter\" \"mario\") echo ${users[0]} # outputs john echo ${users[*]} # outputs all elements echo ${users[@]} # outputs all elements echo ${#users[@]} # Array length echo ${users[-1]} # Last element . ",
     "url": "/bash/arrays/#accessing-elements-of-an-array",
     
     "relUrl": "/bash/arrays/#accessing-elements-of-an-array"
-  },"246": {
+  },"247": {
     "doc": "Arrays",
     "title": "Modifying an array",
     "content": ". | To add an element to the end of an array: . | array_name+=(element) | Example: users+=(\"fred\") | . | To update a given element: . | array_name[index_here]=\"element\" | Example: users[0]=\"root\" | . | To remove an element: . | unset array_name[index_to_delete] | Example: unset users[-1] | . | To clear an entire array: . | unset array_name | Example: unset users | . | . #!/bin/bash users=(\"john\" \"peter\" \"mario\") echo -e \"Current size:\\t${#users[*]}\" echo -e \"Adding a new element: fred\" users+=(\"fred\") #adding element echo -e \"New size:\\t${#users[*]}\" echo -e \"All elements\\t${users[*]}\" echo -e \"Updating first element to root\" users[0]=\"root\" # updating first element echo \"All element: ${users[*]}\" echo \"Removing last element\" unset users[-1] # removing last element echo \"All elements: ${users[*]}\" echo \"Clearing array\" unset users echo \"All elements: ${users[*]}\" . ",
     "url": "/bash/arrays/#modifying-an-array",
     
     "relUrl": "/bash/arrays/#modifying-an-array"
-  },"247": {
+  },"248": {
     "doc": "Arrays",
     "title": "Looping through an array",
     "content": "Using for . Example: . #!/bin/bash users=(\"john\" \"peter\" \"mario\") for user in \"${users[*]}\" do echo \"Current user: $user\" done # Example using indexes: for i in \"${!users[@]}\" do echo \"User $i =&gt; ${users[$i]}\" done . Interesting example: . Create a script that will get an array of all the users in a system then display each user name . #!/bin/bash users=($(awk -F\":\" '{print $1}' /etc/passwd | tr '\\n' \" \")) for user in \"${users[@]}\" do echo \"User: $user\" done . Using while . Example: . #!/bin/bash users=(\"john\" \"peter\" \"mario\") index=0 while [[ $index -lt ${#users[@]} ]] do echo \"User $index =&gt; ${users[$index]}\" ((index++)) done . | This loop runs until the index is less than the length of the array | . Using until . #!/bin/bash users=(\"john\" \"peter\" \"mario\") index=0 until [[ $index -ge ${#users[@]} ]] do echo \"User $index =&gt; ${users[$index]}\" ((index++)) done . | The until loop continues until the condition becomes true. The opposite of a while loop. | . Interesting Example . | You can use until and arrays to validate user input when the input is predictable. | For example, you need the user to answer in one of the following forms: y Y Yes YES No NO n | . #!/bin/bash valid=(\"y\" \"Y\" \"YES\" \"Yes\" \"yes\" \"n\" \"N\" \"no\" \"No\" \"NO\") input=\"\" until [[ \"${valid[@]}\" =~ \"$input\" ]] do read -p \"Continue? (y/n) \" input done echo \"The answer is correct: $input\" . ",
     "url": "/bash/arrays/#looping-through-an-array",
     
     "relUrl": "/bash/arrays/#looping-through-an-array"
-  },"248": {
+  },"249": {
     "doc": "Arrays",
     "title": "Working with associative arrays",
     "content": "Create an associative array: . Associative arrays use key value pairs to store date. For instance, you can have an array of values that stores the user’s name and their corresponding ip address. Example: . #!/bin/bash declare -A users players=([bob]=\"192.168.1.16\" [mary]=\"192.168.1.17\" [joe]=\"192.168.1.18\") echo \"${players[bob]}\" . Accessing values . declare -A users users=([bob]=\"192.168.1.16\" [mary]=\"192.168.1.17\" [joe]=\"192.168.1.18\") echo \"${users[bob]}\" ## Looping through keys for key in \"${!users[@]}\" do echo \"$key's ip is: ${users[$key]}\" done . ",
     "url": "/bash/arrays/#working-with-associative-arrays",
     
     "relUrl": "/bash/arrays/#working-with-associative-arrays"
-  },"249": {
+  },"250": {
     "doc": "Arrays",
     "title": "Array operations",
     "content": "#!/bin/bash users=($(awk -F\":\" '{print $1}' /etc/passwd | tr '\\n' \" \")) # Slicing echo \"${users[@]:1:2}\" # Start at index 1, take 2 elements # Sorting sortedUsers=($(printf \"%s\\n\" \"${users[@]}\" | sort)) echo \"${sortedUsers[@]}\" # Searching for a given element search_string=$(echo $USER) for item in \"${sortedUsers[@]}\" do if [ \"$item\" == \"$search_string\" ] then echo \"array contains $search_string\" if done ## passing an array to a function print_users(){ local array=(\"$@\") for item in \"${array[@]}\" do echo \"$item\" done } print_users \"${sorted_users[@]}\" ## Reading an array from a file mapfile -t my_array &lt; file.txt echo \"${my_array[@]}\" . ",
     "url": "/bash/arrays/#array-operations",
     
     "relUrl": "/bash/arrays/#array-operations"
-  },"250": {
+  },"251": {
     "doc": "Bash Checks",
     "title": "Bash Checks",
     "content": " ",
     "url": "/bash/checks/",
     
     "relUrl": "/bash/checks/"
-  },"251": {
+  },"252": {
     "doc": "Bash Checks",
     "title": "String Checks",
     "content": "| Check | Description | Returns True If | Example | . | [ -z \"$string\" ] | String is empty | The string has zero length | [ -z \"\" ] &amp;&amp; echo \"Empty\" | . | [ -n \"$string\" ] | String is not empty | The string has non-zero length | [ -n \"Hello\" ] &amp;&amp; echo \"Not Empty\" | . | [ \"$string1\" = \"$string2\" ] | Strings are equal | Both strings are identical | [ \"Hello\" = \"Hello\" ] &amp;&amp; echo \"Equal\" | . | [ \"$string1\" != \"$string2\" ] | Strings are not equal | Both strings are different | [ \"Hello\" != \"World\" ] &amp;&amp; echo \"Not Equal\" | . ",
     "url": "/bash/checks/#string-checks",
     
     "relUrl": "/bash/checks/#string-checks"
-  },"252": {
+  },"253": {
     "doc": "Bash Checks",
     "title": "Number Checks",
     "content": "| Check | Description | Returns True If | Example | . | [ \"$num1\" -eq \"$num2\" ] | Numbers are equal | $num1 is equal to $num2 | [ 5 -eq 5 ] &amp;&amp; echo \"Equal\" | . | [ \"$num1\" -ne \"$num2\" ] | Numbers are not equal | $num1 is not equal to $num2 | [ 5 -ne 10 ] &amp;&amp; echo \"Not Equal\" | . | [ \"$num1\" -gt \"$num2\" ] | Number is greater than | $num1 is greater than $num2 | [ 10 -gt 5 ] &amp;&amp; echo \"Greater\" | . | [ \"$num1\" -lt \"$num2\" ] | Number is less than | $num1 is less than $num2 | [ 5 -lt 10 ] &amp;&amp; echo \"Less\" | . | [ \"$num1\" -ge \"$num2\" ] | Number is greater or equal | $num1 is greater than or equal to $num2 | [ 10 -ge 10 ] &amp;&amp; echo \"Greater/Equal\" | . | [ \"$num1\" -le \"$num2\" ] | Number is less or equal | $num1 is less than or equal to $num2 | [ 5 -le 10 ] &amp;&amp; echo \"Less/Equal\" | . ",
     "url": "/bash/checks/#number-checks",
     
     "relUrl": "/bash/checks/#number-checks"
-  },"253": {
+  },"254": {
     "doc": "Bash Checks",
     "title": "File Checks",
     "content": "| Check | Description | Returns True If | Example | . | [ -e \"$file\" ] | File exists | The file exists | [ -e \"file.txt\" ] &amp;&amp; echo \"Exists\" | . | [ -d \"$file\" ] | File is a directory | The file is a directory | [ -d \"folder\" ] &amp;&amp; echo \"Directory\" | . | [ -r \"$file\" ] | File is readable | The file is readable | [ -r \"file.txt\" ] &amp;&amp; echo \"Readable\" | . | [ -w \"$file\" ] | File is writable | The file is writable | [ -w \"file.txt\" ] &amp;&amp; echo \"Writable\" | . | [ -x \"$file\" ] | File is executable | The file is executable | [ -x \"script.sh\" ] &amp;&amp; echo \"Executable\" | . | [ -s \"$file\" ] | File is not empty | The file is not empty | [ -s \"file.txt\" ] &amp;&amp; echo \"Not Empty\" | . | [ -L \"$file\" ] | File is a symbolic link | The file is a symbolic link | [ -L \"link\" ] &amp;&amp; echo \"Symbolic Link\" | . ",
     "url": "/bash/checks/#file-checks",
     
     "relUrl": "/bash/checks/#file-checks"
-  },"254": {
+  },"255": {
     "doc": "Bash Comments",
     "title": "Using Comments in Bash",
     "content": "In Bash scripting, comments are used to annotate code, making it easier to understand and maintain. Bash supports single-line comments natively and provides workarounds for multi-line comments. ",
     "url": "/bash/comments/#using-comments-in-bash",
     
     "relUrl": "/bash/comments/#using-comments-in-bash"
-  },"255": {
+  },"256": {
     "doc": "Bash Comments",
     "title": "Bash Comments",
     "content": " ",
     "url": "/bash/comments/",
     
     "relUrl": "/bash/comments/"
-  },"256": {
+  },"257": {
     "doc": "Bash Comments",
     "title": "Single line",
     "content": "# This is a comment echo \"hello world\" . ",
     "url": "/bash/comments/#single-line",
     
     "relUrl": "/bash/comments/#single-line"
-  },"257": {
+  },"258": {
     "doc": "Bash Comments",
     "title": "Single in line comment",
     "content": "echo \"hello world\" # prints hello world ls -lh \"$dir\"/* # long list all files inside $dir . ",
     "url": "/bash/comments/#single-in-line-comment",
     
     "relUrl": "/bash/comments/#single-in-line-comment"
-  },"258": {
+  },"259": {
     "doc": "Bash Comments",
     "title": "Multi line comment style 1",
     "content": "# This is a multiline comment # and here is line 2 # Line 3 echo \"hello world\" . ",
     "url": "/bash/comments/#multi-line-comment-style-1",
     
     "relUrl": "/bash/comments/#multi-line-comment-style-1"
-  },"259": {
+  },"260": {
     "doc": "Bash Comments",
     "title": "Multi line comment - Here document",
     "content": ": &lt;&lt; 'COMMENT' This is a multi-line comment. We can add as much text as we want between the comment tags and it will be ignored by the shell. COMMENT echo \"hello world\" . The key word does not need to be COMMENT. It can be any string. The static part is the :, &lt;&lt; and ' around the keyword. Here is another example: . : &lt;&lt; 'HERE' this is another multiline comment See?! another line and another line HERE echo \"hello world\" . ",
     "url": "/bash/comments/#multi-line-comment---here-document",
     
     "relUrl": "/bash/comments/#multi-line-comment---here-document"
-  },"260": {
+  },"261": {
     "doc": "Control Statements",
     "title": "Control Statements",
     "content": "Control statements are used to control the flow of a script. In bash, we can use the following control statements: . | test command | if/else/elif | [] | [[]] | case | For/while/until loops | . In this guide, we will explore examples of each. ",
     "url": "/bash/controlflow/#control-statements",
     
     "relUrl": "/bash/controlflow/#control-statements"
-  },"261": {
+  },"262": {
     "doc": "Control Statements",
     "title": "test command",
     "content": "The test command in used to evaluate expressions if a expression is true or false. Examples of when this command is used includes: . | Checking file attributes (e.g., existence, permissions, size). | Comparing strings (e.g., equality, non-emptiness). | Performing numeric comparisons | . There are two ways of using test: test+ condition and [ condition ] . To use test we need to rely on the command exit status. In bash every command has an exit status. Zero (0) means that the command executed successfully where anything else other than 0 means that the command did not execute successfully. Look at the table here for a list of all bash checks . Example: . A shell script that checks if a file exist. #!/bin/bash test -e \"$1\" &amp;&amp; echo \"file $1 exist\" || echo \"file $1 does not exist\" . ",
     "url": "/bash/controlflow/#test-command",
     
     "relUrl": "/bash/controlflow/#test-command"
-  },"262": {
+  },"263": {
     "doc": "Control Statements",
     "title": "if/else/elif",
     "content": "If/else/elif statements are used to execute commands if a particular condition is true. We use if statements all the time for making decisions. For example: . if (it is raining outside) then bring an umbrella elif (it is sunny outside) bring a hat elif (it is snowing outside) wear a heavy clothes end if statement . if (hungry?) then eat else continue working end of if statement . In shell scripting, we say that something is true when it returns 0 as an exit status. False is any status code that is not 0. For example, run this command: ls downloads1. This will result in an error because we currently do not have a directory called downloads1. Now type: echo $? to display the status code of the last command that was run. Then run the command ls and repeat the echo command: echo $?. Do you see the difference? . IF statement basic fomula: . # if if (condition_command); then command1 command2 ... last_command fi # if/else if (condition_command); then command1 command2 ... last_command else command1 command2 ... last_command fi # if/elif if (condition_command); then command1 command2 ... last_command elif (condition_command); then command1 command2 ... last_command else command1 command2 ... last_command fi . The condition command can be: . | A command such as ls | Numerical comparison | String comparison | Bash checks | . If statements end with the fi keyword. This keyword is required! . Example of if statements . Basic if . #!/bin/bash if (ls); then echo \"ls command ran successfully\" fi . Notice that the output of ls is displayed in the screen and since the command executed successfully, it executed the echo command. if you do not want to see the output of the command in the condition block, the you can pipe the output ot /dev/null. Here is an example: . #!/bin/bash if (ls &amp;&gt; /dev/null); then echo -e \"\\nls command ran successfully\" fi . If with else . #!/bin/bash games=\"$HOME/games1\" if (ls \"$games\" 2&gt; /dev/null); then touch \"$games/gamelist.txt\" else mkdir \"$games\" touch \"$games/gamelist.txt\" ls $games fi . This is a basic script that lists the directory “games1” to see if the directory exits. If the directory exist, it will return 0 (true) and the touch command will be executed. If the ls command returns anything else other than 0 (false), then the else block will be executed, creating the directory and then the file gamelist.txt . There is a more efficient way of doing this. However, this example serves as a good illustration on how the if/else statements can be used. Using elif . For this example, refer to the doc: bash checks. #!/bin/bash # Check if a file, directory, or something else exists read -p \"Enter a path: \" path if [ -f \"$path\" ]; then echo \"It is a regular file.\" elif [ -d \"$path\" ]; then echo \"It is a directory.\" elif ls \"$path\" &amp;&gt; /dev/null; then echo \"It exists but is neither a file nor a directory.\" else echo \"The path does not exist.\" fi . Notice that here I am not using () but instead []. In the next session, we will discuss why. Basically, this script will simply check if the path given by the user is a regular file or a directory. If it is neither of those, then it will let the user know that the path exists but it is neither. If those 3 conditions fail, then it will default to tell the user that the given path does not exist. ",
     "url": "/bash/controlflow/#ifelseelif",
     
     "relUrl": "/bash/controlflow/#ifelseelif"
-  },"263": {
+  },"264": {
     "doc": "Control Statements",
     "title": "[] VS [[]] VS ()",
     "content": "Whats the deal with the brackets and the parenthesis? and then there is also the double brackets! . () . We use the () to start a subshell. So when you write this: . if (ls &amp;&gt; /dev/null); then #command fi . You are executing ls in a subshell and then the exit status code of said subshell is what is evaluated to true/false. THIS IS NOT REQUIRED! in fact, this approach creates unnecessary overhead by starting a new shell inside our script. It is common for programmers that do not write bash often to prefer the parenthesis approach. However, unless you really want to open a subshell, you should instead write your if statements like this: . if ls &amp;&gt; /dev/null; then #command fi . [] . we use the single brackets when we want to do bash tests. Just like the test command. See bash checks doc for a list of all tests with examples. Here is the same example we saw earlier: . #!/bin/bash # Check if a file, directory, or something else exists read -p \"Enter a path: \" path if [ -f \"$path\" ]; then echo \"It is a regular file.\" elif [ -d \"$path\" ]; then echo \"It is a directory.\" elif ls \"$path\" &amp;&gt; /dev/null; then echo \"It exists but is neither a file nor a directory.\" else echo \"The path does not exist.\" fi . This can also be used for string and number comparisons as well. [[ ]] . If the single brackets do comparison and tests, what do we need the double brackets for? The single brackets are a command ( just like test is). However, the double brackets are not. Instead, they are a bash builtin keyword. The double brackets can do the following: . | Supports pattern matching (== with * wildcard) | Supports regular expressions (=~) | Allows logical operators (&amp;&amp;, ||) without escaping | Prevents word-splitting and unintended globbing. | . Table with key difference: . | Feature | [ ] (Single Brackets) | [[ ]] (Double Brackets) | . | POSIX Standard | ✅ Yes (works in all shells) | ❌ No (Bash/Ksh/Zsh only) | . | String Comparisons | Requires quoting variables | No need to quote variables | . | Wildcards (*) | ❌ No | ✅ Yes (== supports patterns) | . | Regex Matching (=~) | ❌ No | ✅ Yes | . | Logical Operators (&amp;&amp;, ||) | ❌ No (requires separate [ ] calls) | ✅ Yes (directly usable) | . | Safer with Empty Variables | ❌ No | ✅ Yes | . if you are planning to write portable scripts, avoid [[ ]] as much as possible because it is not POSIX compliant. What Does It Mean for a Shell to Be POSIX-Compliant? It means that it follows the standards of the Portable Operating System Interface (POSIX) specified by IEEE for maintaining compatibility between operating systems. For shells it means tht that it supports a defined set of features, commands, and behaviors that allow scripts to be portable. Bash is not exactly fully POSIX compliant but it can be. Bash has some unique syntax called Bashisms. The [[]] is an example of of those bash specific syntax. ",
     "url": "/bash/controlflow/#-vs--vs-",
     
     "relUrl": "/bash/controlflow/#-vs--vs-"
-  },"264": {
+  },"265": {
     "doc": "Control Statements",
     "title": "case",
     "content": "The case statement allows you to execute different blocks of code bassed on the value of a variable or expression. It is akin to a switch statement in other programming languages. Basic Syntax of case . case variable in pattern1) code here ;; pattern2) code here ;; *) code here ;; esac . Form the snippet above: . | The ;; are required | the esac keyword ends the case statement | the * is akin to the else condition in an if/else block and it is required. This is the default case when the rest fails. | . Case statements are a good choice over if/else when the value of the variable is predictable. Example of case: . A script that displays a menu and runs the block depending on the users selection . #!/bin/bash echo -e \" Choose one of the following options: \\n \\ \\t1) List $HOME \\n \\ \\t2) List directories only in $HOME \\n \\ \\t3) List all config files in /etc \\n \\ \\t4) Exit\" read -p \"Enter a number from 1 - 3 \" num case \"$num\" in 1) echo \"User picked $num\" ls -A $HOME ;; 2) echo \"User picked $num\" ls -d $HOME/*/ ;; 3) echo \"User picked $num\" ls /etc/*.conf ;; *) exit ;; esac . ",
     "url": "/bash/controlflow/#case",
     
     "relUrl": "/bash/controlflow/#case"
-  },"265": {
+  },"266": {
     "doc": "Control Statements",
     "title": "Loops",
     "content": "For . A for loop is control structure used for iterating over a list of items and executes commands for each item in the list. The basic syntax of a for loop is: . for variable in item1 item2 item3 ...; do command here done . Here is a basic example: . #!/bin/bash fruits=(\"apple\" \"banana\" \"papaya\") for fruit in ${fruits[@]}; do echo \"I love $fruit\" done: . Now lets see an example of a loop that iterates through a list of txt files in a given directory . ``` . While . Until . ",
     "url": "/bash/controlflow/#loops",
     
     "relUrl": "/bash/controlflow/#loops"
-  },"266": {
+  },"267": {
     "doc": "Control Statements",
     "title": "Control Statements",
     "content": "Note: Work in progress . ",
     "url": "/bash/controlflow/",
     
     "relUrl": "/bash/controlflow/"
-  },"267": {
+  },"268": {
     "doc": "Bash Functions",
     "title": "Bash Functions",
     "content": "A function is just a small reusable pease of code. It does something and return its result back to the program. It can also return nothing. ",
     "url": "/bash/functions/#bash-functions",
     
     "relUrl": "/bash/functions/#bash-functions"
-  },"268": {
+  },"269": {
     "doc": "Bash Functions",
     "title": "1. Bash Basic function",
     "content": "# Option 1 function function_name() { # body of function here } # Option 2 function_name(){ # body of function here } # to call function: function_name . | Keep in Mind . | Bash functions do not return values. They can return: . | An exit status using return | A value using a variable (global or local) | value via STDOUT - This requests command substitution | . | . | . ",
     "url": "/bash/functions/#1-bash-basic-function",
     
     "relUrl": "/bash/functions/#1-bash-basic-function"
-  },"269": {
+  },"270": {
     "doc": "Bash Functions",
     "title": "2. Return an exit status",
     "content": "# Checks if $1 exist. 0 = true, 1 = false potato(){ [ -f \"$1\" ] &amp;&amp; return 0 || return 1 } potato \"$1\" # We can then use the $? to create logic with the exit status code. [ $? -eq 0 ] &amp;&amp; echo \"$1 exist\" || echo \"$1 doesn't exist\" . ",
     "url": "/bash/functions/#2-return-an-exit-status",
     
     "relUrl": "/bash/functions/#2-return-an-exit-status"
-  },"270": {
+  },"271": {
     "doc": "Bash Functions",
     "title": "3. Returning values with variables",
     "content": "# Using a global variable: potato(){ greeting=\"Good Morning, $1\" } potato \"Mary\" echo \"$greeting\" # Using local variable potato(){ local name=\"$1\" local age=\"$2\" local email=\"$3\" echo -e \"Hello $name\\nAt $age you will need a bigger boat.\\n\\tSent from $email\" } potato \"Mary\" \"43\" \"admin@mail.com\" . ",
     "url": "/bash/functions/#3-returning-values-with-variables",
     
     "relUrl": "/bash/functions/#3-returning-values-with-variables"
-  },"271": {
+  },"272": {
     "doc": "Bash Functions",
     "title": "4. Returning value with command substitution",
     "content": "potato() { local greeting=\"Hello, $1!\" echo \"$greeting\" } result=$(potato \"Bobby\") echo \"$result\" . ",
     "url": "/bash/functions/#4-returning-value-with-command-substitution",
     
     "relUrl": "/bash/functions/#4-returning-value-with-command-substitution"
-  },"272": {
+  },"273": {
     "doc": "Bash Functions",
     "title": "5. Can I return a status code and value at the same time?",
     "content": "Yes. Here is an example: . is_even(){ local numb=$1 if (( numb % 2 == 0 )) then echo \"even\" return 0 else echo \"not even\" return 1 fi } result=$(is_even $1) status_code=$? echo \"the $1 number is $result\" . Side Note: The example script above has a couple of gotchas. If you pass a letter instead of a number it tells you that it is even. How so?? Well, bash does arithmetic evaluation using ((...)) inside these parentheses everything is an integer. This means that every non-integer character is considered a 0 by bash. Notice that I said integer and not number. That is because bash does not support floating point numbers. You need an external utility (like bc) to handle floating point numbers. The next gotcha is the lack of $ in the numb variable. As you already know, in order to access the value of a variable, you need to preface it with a $, however, because the ((...)) are already expecting an integer, the $ becomes optional. The script below is a complete version that handles non integer input. #!/bin/bash is_even() { local numb=$1 # Ensure the input is a number if ! [[ \"$numb\" =~ ^-?[0-9]+$ ]]; then echo \"Error: Input is not an integer\" return 2 # Use a special return code for invalid input fi # Proceed with even/odd check if (( numb % 2 == 0 )); then echo \"even\" return 0 else echo \"not even\" return 1 fi } # Call the function with the user's input result=$(is_even \"$1\") status_code=$? # Check the return code if [ $status_code -eq 2 ]; then echo \"Invalid input: $1 is not an integer.\" else echo \"The $1 number is $result.\" fi . 5.1. Whats up with the arguments? . Just like your script, functions take arguments (positional parameters). These work the same way. Say that you run the script ./playground.sh john carla with the following code: . #!/bin/bash echo \"parameter/argument 1: $1\" echo \"parameter/argument 2: $2\" potato(){ echo \"In the function 1: $1\" echo \"In the function 2: $2\" } potato \"peter\" \"jane\" echo \"Passing the same parameters to the function:\" potato \"$1\" \"$2\" . The output will be: . parameter/argument 1: john parameter/argument 2: carla In the function 1: peter In the function 2: jane Passing the same parameters to the function: In the function 1: john In the function 2: carla . Notice that lines 1 and 2 have the arguments we passed to script but lines 3 and 4 have the arguments we passed to the function. You can passed the same arguments you gave to the script to the function too as you can see in lines 7 and 8 . ",
     "url": "/bash/functions/#5-can-i-return-a-status-code-and-value-at-the-same-time",
     
     "relUrl": "/bash/functions/#5-can-i-return-a-status-code-and-value-at-the-same-time"
-  },"273": {
+  },"274": {
     "doc": "Bash Functions",
     "title": "6. Move advanced examples of functions",
     "content": "6.1. Returning the content of an array . #!/bin/bash all_ip_addresses() { local ips=(\"192.168.1.10\" \"192.168.1.12\" \"192.168.1.14\") echo \"${ips[@]}\" } array=($(all_ip_addresses)) for ip in ${array[@]} do ping -c 4 $ip done . 6.2. Returning an array with mapfile . #!/bin/bash potato() { local dir=\"$1\" local fname=\"$2\" find \"$dir\" -iname \"*$fname\" -type f -print0 } # Use process substitution to pass the function's output to mapfile mapfile -d '' search &lt; &lt;(potato \"$1\" \"$2\") # Access array elements echo \"First member: ${search[0]}\" echo \"Last member: ${search[-1]}\" echo \"Length: ${#search[@]}\" # Process each file for file in \"${search[@]}\"; do # Display file details in a formatted way ls -lhgG --time-style=+%D \"$file\" | grep -v \"total\" | column -t done . Side note: The print0 option of the find command command is used to handle files with special characters in the name (ex. spaces). print0 tells find to separate filenames with a null character (\\0) instead of a newline. 6.3. Using an associative array . #!/bin/bash # Function to get disk usage as an associative array get_disk_usage() { declare -A disk_info local df_output df_output=$(df -h / | tail -1) disk_info[total]=$(echo \"$df_output\" | awk '{print $2}') disk_info[used]=$(echo \"$df_output\" | awk '{print $3}') disk_info[available]=$(echo \"$df_output\" | awk '{print $4}') disk_info[usage_percent]=$(echo \"$df_output\" | awk '{print $5}') # Return the associative array echo \"$(declare -p disk_info)\" } # Call the function and capture the associative array eval \"$(get_disk_usage)\" # Access and display the values from the associative array echo \"Disk Usage Information for '/':\" echo -e \"Total Space:\\t${disk_info[total]}\" echo -e \"Used Space:\\t${disk_info[used]}\" echo -e \"Avail. Space:\\t${disk_info[available]}\" echo -e \"Usage %:\\t${disk_info[usage_percent]}\" . Side Note: declare -p disk_info outputs the array definition as a string that can be re-evaluated using eval. ",
     "url": "/bash/functions/#6-move-advanced-examples-of-functions",
     
     "relUrl": "/bash/functions/#6-move-advanced-examples-of-functions"
-  },"274": {
+  },"275": {
     "doc": "Bash Functions",
     "title": "Bash Functions",
     "content": ". | . | Bash Basic function | . | . | Return an exit status | . | . | Returning values with variables | . | . | Returning value with command substitution | . | . | Can I return a status code and value at the same time? . | 5.1. Whats up with the arguments? | . | . | . | Move advanced examples of functions . | 6.1. Returning the content of an array | 6.2. Returning an array with mapfile | 6.3. Using an associative array | . | . | . ",
