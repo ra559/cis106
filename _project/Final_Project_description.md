@@ -123,8 +123,8 @@ To demonstrate the completion of deliverable 2, the student must submit a markdo
    2. Images
    3. Tables
 4. You will write this website in markdown and then convert it to HTML. After you have converted the website to html, embed this [style sheet](https://raw.githubusercontent.com/robertalberto0713/cis106/refs/heads/main/final_project/deliverable2/style.css) so that it looks better than just plain HTML.
-   1. Once the HTML is generated, open the html file and insert this line to load the style sheet: `<link rel="stylesheet" href="style.css">`
-   2. You will place that line right after the last closing `</style>` tag and before the `<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>` line. Here is an [example](https://raw.githubusercontent.com/robertalberto0713/cis106/refs/heads/main/final_project/deliverable2/deliverable2.html#:~:text=%3Clink%20rel%3D%22stylesheet%22%20href%3D%22style.css%22%3E)
+   1. Once the HTML is generated, open the html file and insert this line to load the style sheet: <br> `<link rel="stylesheet" href="style.css">`
+   2. You will place that line right after the last closing `</style>` tag and before the <br> `<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>` line. Here is an [example](https://raw.githubusercontent.com/robertalberto0713/cis106/refs/heads/main/final_project/deliverable2/deliverable2.html#:~:text=%3Clink%20rel%3D%22stylesheet%22%20href%3D%22style.css%22%3E)
    3. And here is a [screenshot](https://github.com/robertalberto0713/cis106/blob/main/final_project/deliverable3/stylesheet_location.png)
 5. These are the general steps to guide you:
    1. Create a repository in Github - Name it whatever you want
