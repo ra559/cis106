@@ -3,6 +3,14 @@ layout: "page"
 title: Lab 4 - Software Installation and Shell Scripting
 ---
 
+# {{page.title}}
+
+## Video
+
+## Learning outcomes
+* How to search, install, and remove software using APT
+* How to create and run a basic shell script
+
 ## Question 1: Using APT 
 
 ### General formula of the apt command:
