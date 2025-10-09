@@ -142,7 +142,7 @@ Of course, printing text is not the only thing we can do. In reality, bash is a 
 ## Challenge question
 Write a shell script that displays the following output:
 
-![cqo](/assets/lab3/challenngeQoutput1.png)
+![cqo](/assets/lab4/output.png)
 
 1. Take a screenshot of your text editor and your terminal after you run the script. Name your screenshots `q3.1png` and `q3.2png`. Place them in your `lab4/` directory/folder
 
