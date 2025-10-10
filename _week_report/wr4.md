@@ -15,6 +15,7 @@ title: Week Report 4
 3. Complete [Lab 4](https://cis106.com/labs/lab4/)
 4. Complete [Notes 4](https://cis106.com/week_report/wr4/#what-to-include-in-notes-4)
 5. Complete [Week Report 4](https://cis106.com/week_report/wr4/#what-will-you-submit-for-week-report-4)
+6. Work on your Discussion Boards
 
 
 ## What to include in Notes 4
