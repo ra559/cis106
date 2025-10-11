@@ -4,8 +4,31 @@ title: Lab 4 - Software Installation and Shell Scripting
 ---
 
 # {{page.title}}
+- [{{page.title}}](#pagetitle)
+  - [Video](#video)
+  - [Learning outcomes](#learning-outcomes)
+  - [Question 1: Using APT](#question-1-using-apt)
+    - [General formula of the apt command:](#general-formula-of-the-apt-command)
+    - [Searching for packages](#searching-for-packages)
+    - [Installing packages](#installing-packages)
+    - [Removing packages](#removing-packages)
+    - [Cleaning the system](#cleaning-the-system)
+  - [Question 2 - Shell Scripting  - Part 1](#question-2---shell-scripting----part-1)
+    - [Creating a shell script](#creating-a-shell-script)
+    - [Printing text to the screen](#printing-text-to-the-screen)
+    - [Running other commands in a script](#running-other-commands-in-a-script)
+  - [Challenge question](#challenge-question)
+    - [Tips:](#tips)
+  - [What will you submit:.](#what-will-you-submit)
+  - [How I will grade you:](#how-i-will-grade-you)
+  - [Special Note 1 - Practice creating a basic script](#special-note-1---practice-creating-a-basic-script)
+  - [Special Note 2 - Git Command Quick Reference](#special-note-2---git-command-quick-reference)
+  - [Special Note Regarding the Final Exam](#special-note-regarding-the-final-exam)
+
 
 ## Video
+[Lab 4 video explanation](https://youtu.be/nqcJYj8dcRE)
+
 
 ## Learning outcomes
 * How to search, install, and remove software using APT

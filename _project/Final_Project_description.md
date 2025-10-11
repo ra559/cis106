@@ -5,6 +5,23 @@ title: Final Project Description
 
 # {{page.title}}
 
+- [{{page.title}}](#pagetitle)
+  - [Video:](#video)
+  - [Description](#description)
+  - [Requirements](#requirements)
+  - [Deliverable 1: Project's Requirements](#deliverable-1-projects-requirements)
+    - [How am I going to grade deliverable 1?](#how-am-i-going-to-grade-deliverable-1)
+    - [What will you submit for Deliverable 1](#what-will-you-submit-for-deliverable-1)
+  - [Deliverable 2 Setting Up The Web Server](#deliverable-2-setting-up-the-web-server)
+    - [Resources:](#resources)
+    - [How am I going to grade deliverable 2?](#how-am-i-going-to-grade-deliverable-2)
+  - [Deliverable 3 Adding content to the server](#deliverable-3-adding-content-to-the-server)
+    - [How am I going to grade deliverable 3?](#how-am-i-going-to-grade-deliverable-3)
+
+
+## Video:
+[Final Project Explanation](https://youtu.be/mR-bPxR90VE)
+
 ## Description
 The goal of this project is to host a web server using Debian 13, Apache, and VirtualBox as the hypervisor. This project will expose students to the following technologies:
 
@@ -72,7 +89,7 @@ To demonstrate the completion of deliverable 1, the student needs to submit a ma
 
 ##  Deliverable 2 Setting Up The Web Server
 
-> *Video:[Deliverable 2 Latest Video 0-100!](https://youtu.be/6L0OXwMT-tg)
+> *Video:[Setting up a Web Server in Debian 13 Using VirtualBox 7.2 (Windows 11 Host)](https://youtu.be/opAZoJPpI9A)
 
 ### Resources:
 * [Apache Commands You Should know](https://linuxize.com/post/apache-commands-you-should-know/)
@@ -112,6 +129,8 @@ To demonstrate the completion of deliverable 2, the student must submit a markdo
   * Well organized and easy to read
   * Images properly resized. Use a tool or HTML to resize them so that they don't break the formatting.
   * All required screenshot are included
+  * Here is an example of how I expect the formatting to be:
+    * [Final Project example for deliverable 2](https://github.com/robertalberto0713/cis106/blob/main/final_project/deliverable2/deliverable2.md)
 
 ## Deliverable 3 Adding content to the server
 
@@ -145,3 +164,5 @@ To demonstrate the completion of deliverable 2, the student must submit a markdo
 * Your markdown file for deliverable 3 should simply contain:
   * Screenshots of your web site running on your web server (At least 2 screenshots)
   * The link to your web site repository (the one you cloned in your server)
+  * Here is an example of how I expect the formatting to be:
+    * [Final Project example for deliverable 3](https://github.com/robertalberto0713/cis106/blob/main/final_project/deliverable3/deliverable3.md)

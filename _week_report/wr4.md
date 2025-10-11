@@ -4,6 +4,7 @@ title: Week Report 4
 ---
 
 ## Video
+[Week Report 4 Video Explanation](https://youtu.be/lY96atbH8mI)
 
 ## Study Material
 * [Managing Software](https://docs.google.com/presentation/d/e/2PACX-1vSF-MLL-pMvSnYq71x9ZOUVNrJvwfL9ZMJSBEppKJfTUETA6AZgPA-Q6XcYCbok3MBGrfMD5llDMRci/pub?start=false&loop=false&delayms=3000)
@@ -14,6 +15,7 @@ title: Week Report 4
 2. Complete [Practice 1](https://docs.google.com/presentation/d/e/2PACX-1vSGaFVc1w27_WXIBJUGfPFjWB0nN3jL7jNFfCGuv3JaDI0DnS0OBPZnMvNPFzoRR58ClJikkDJFZwyf/pub?start=false&loop=false&delayms=3000&slide=id.g3828ac9dff4_0_16) from the [Shell Scripting Presentation](https://docs.google.com/presentation/d/e/2PACX-1vSGaFVc1w27_WXIBJUGfPFjWB0nN3jL7jNFfCGuv3JaDI0DnS0OBPZnMvNPFzoRR58ClJikkDJFZwyf/pub?start=false&loop=false&delayms=3000&slide=id.p).Take a screenshot of the terminal and place it in the `wr4/` directory/folder
 3. Complete [Lab 4](https://cis106.com/labs/lab4/)
 4. Complete [Notes 4](https://cis106.com/week_report/wr4/#what-to-include-in-notes-4)
+   1. Video explanation [here](https://youtu.be/1YE6jLuxoGo)
 5. Complete [Week Report 4](https://cis106.com/week_report/wr4/#what-will-you-submit-for-week-report-4)
 6. Work on your Discussion Boards
 
