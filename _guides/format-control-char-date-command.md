@@ -55,3 +55,6 @@ title: FORMAT control characters
 
 ## Example:
 * `ls -l --time-style=+%Z /`
+* `date +%z`
+
+![](/assets//guides/format-control.png)

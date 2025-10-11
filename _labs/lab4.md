@@ -26,9 +26,9 @@ title: Lab 4 - Software Installation and Shell Scripting
 
 ### Searching for packages
 1. Open Tilix (terminal application) and search for a tetris clone using the search string `"tetris clone"`. The command should return 3 packages: `bastet, ltris, tint` 
-2. Now, use the search string `tetris` to search for all packages related to `tetris`
+2. Now, use the search string `"tetris"` to search for all packages related to `tetris`
 3. Repeat the previews search but this time use packages name only. Use the command: `apt search --names-only "tetris"`. Notice that this command only returned packages whose name include the word tetris
-4. Take a screenshot of your terminal. Name your screenshot `q1.1.png` and place it in your `lab4/` directory/folder
+4. **Take a screenshot of your terminal. Name your screenshot** `q1.1.png` **and place it in your** `lab4/` **directory/folder**
 
 > **So Whats the difference?** <br>
 > * `apt search "tetris"` searches for the pattern “tetris” in both package names and their descriptions (and other searchable metadata).
@@ -39,15 +39,22 @@ title: Lab 4 - Software Installation and Shell Scripting
 1. Install the packages `bastet` and `blockattack`
 2. Split Tilix in 2 and show the package information for both packages. Compare the output of each command. Press letter `q` when you are done reading.
 3. Install the package `blockout2`, `cuyo` and remove the package `blockattack`. <br> **Use the command:** `sudo apt install blockout2+ cuyo+ blockattack-`
-4. Take a screenshot of your terminal. Name your screenshot `q1.2.png` and place it in your `lab4/` directory/folder
+4. **Take a screenshot of your terminal. Name your screenshot** `q1.2.png` **and place it in your** `lab4/` **directory/folder**
+
+<hr>
 
 > **So what's up with those + and - signs?** <br>
 > APT can install and remove applications in a single command. Simply mark the packages you want to install with a `+` sign and those you want to remove with a `-`
 
+<hr>
+
+
 ### Removing packages
 1. Remove the package `cuyo`
 2. Purge the package `cuyo`
-3. Take a screenshot of your terminal. Name your screenshot `q1.3.png` and place it in your `lab4/` directory/folder
+3. **Take a screenshot of your terminal. Name your screenshot** `q1.3.png` **and place it in your** `lab4/` **directory/folder**
+
+<hr>
 
 > **So what was the difference?**<br>
 > * `sudo apt remove cuyo`: 
@@ -59,6 +66,9 @@ title: Lab 4 - Software Installation and Shell Scripting
 >   * Equivalent to `apt remove --purge cuyo`.
 >   * Leaves only user-specific files under `$HOME`.
 > *It is important to remember that purging a package does not remove user level configurations under* `$HOME` *that means that we must delete those manually whenever that applies.*
+
+<hr>
+
 
 ### Cleaning the system
 
@@ -77,7 +87,7 @@ If you want to clean your system, you can use the following 1-liner:
 sudo apt clean && sudo apt autoclean && sudo apt autoremove && sudo apt autopurge
 ```
 
-1. Take a screenshot of your terminal. Name your screenshot `q1.4.png` and place it in your `lab4/` directory/folder
+1. **Take a screenshot of your terminal. Name your screenshot** `q1.4.png` **and place it in your** `lab4/` **directory/folder**
 
 <hr>
 
@@ -94,18 +104,22 @@ Since we will be creating simple shell scripts, you can use Gnome Text or Geany.
 
 1. Open Gnome Text (text editor)
 2. Save the file as: `lab4-script1.sh` in the `scripts/` directory/folder located in your home directory/folder. If you do not have the directory, make it.
-3. The first line of your script is the shebang or shell declaration: `!#/bin/bash` you may also find it written like this: `#!/usr/bin/env bash`. For the sake of this exercise, we will stick to `#!/bin/bash`.
+3. The first line of your script is the shebang or shell declaration: <br> `#!/bin/bash` <br> You may also find it written like this: <br> `#!/usr/bin/env bash` <br> For the sake of this exercise, we will stick to: `#!/bin/bash`.
 4. Save your file. 
 5. Currently, you have a script that does nothing. Let's execute:
-   1. Open your Terminal Application
+   1. Open your Terminal Application (Gnome Terminal or Tilix)
    2. Navigate to the directory that contains your script. In our case, it is `scripts/`. Use the command: `cd scripts/`
    3. Run the script using this command: `bash lab4-script1.sh`
    4. Notice that nothing was displayed on the screen because our script does nothing.
-6. Take a screenshot of your text editor. Name your screenshot `q2.1.png` and place it in your `lab4/` directory/folder
+6. **Take a screenshot of your text editor. Name your screenshot** `q2.1.png` **and place it in your** `lab4/` **directory/folder**
+
+<hr>
 
 > **If you need to know:** <br>
 > 1. `#!/bin/bash`: Executes the script using the Bash binary located specifically at /bin/bash. This assumes that bash is installed in the system but can fail in systems that install bash in a different path.
 > 2. `#!/usr/bin/env bash`: Uses the `env` command to locate Bash in the user’s PATH. This makes the script portable and will make sure that bash runs the script regardless of where it is installed (as long as it is in the PATH)
+
+<hr>
 
 
 ### Printing text to the screen
@@ -122,7 +136,7 @@ Simplest thing to do in a shell script is to print text to the screen. This is a
    1. A line of text with a horizontal tab
    2. 2 lines of text in a single `echo` command 
 7. Save and run the script
-8. Take a screenshot of your text editor. Name your screenshot `q2.2png` and place it in your `lab4/` directory/folder
+8. **Take a screenshot of your text editor. Name your screenshot** `q2.2png` **and place it in your** `lab4/` **directory/folder**
 
 ### Running other commands in a script
 Of course, printing text is not the only thing we can do. In reality, bash is a complete programming language that you can use to do anything (some things you should not do in Bash). So now lets add a couple of more commands to our script.
@@ -134,7 +148,7 @@ Of course, printing text is not the only thing we can do. In reality, bash is a 
    1. `the current user is: ` and in the same line: `username of current user`
 4. Use the `echo` and `free` command to show how much used and free memory the system has:
    1. `Memory usage:` and `the output of free -h` 
-5. Take a screenshot of your text editor and your terminal. Name your screenshots `q2.3png` and `q2.4png`. Place them in your `lab4/` directory/folder
+5. **Take a screenshot of your text editor and your terminal. Name your screenshots** `q2.3png` **and** `q2.4png`. **Place them in your** `lab4/` **directory/folder**
 
 
 <hr>
@@ -144,11 +158,12 @@ Write a shell script that displays the following output:
 
 ![cqo](/assets/lab4/output.png)
 
-1. Take a screenshot of your text editor and your terminal after you run the script. Name your screenshots `q3.1png` and `q3.2png`. Place them in your `lab4/` directory/folder
+1. **Take a screenshot of your text editor and your terminal after you run the script. Name your screenshots** `q3.1png` **and** `q3.2png`. **Place them in your** `lab4/` **directory/folder**
 
 ### Tips:
-* You will need to read the man page of the `echo`, `uname`, and `date` commands
-* The date format in the screenshot is `RFC 5322`
+* This is the line character I use to generate the horizontal line you see: "`─`"
+* You will need the **man page** of the following commands: `echo`, `hostname` (or `uname`), `uptime`, `figlet`, `free`, `df` and `date`. You can also look at the "What is a shell" presentation from the previous lab which contains examples of these commands.
+* The date format can be achieved using the [format control characters](https://cis106.com/guides/format-control-char-date-command/).
 * Save the script in the lab4 directory/folder
 * Name the script `challenge_lab4.sh`
 * The command to run the script is `bash ~/cis106/labs/lab4/challenge_lab4.sh` if this does not work, it is because you saved the script in the wrong folder. Retrace your steps to troubleshoot. 
@@ -157,7 +172,7 @@ Write a shell script that displays the following output:
 
 
 
-## What will you submit:
+## What will you submit:.
 1. Place and properly label (using headings) all the screenshots
 2. Convert the file to pdf
 3. Push everything to github
