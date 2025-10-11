@@ -44,7 +44,7 @@ This guide assumes the following:
 2. You know how to create a Debian virtual machine
 
 ## Video
-![Video](https://youtu.be/opAZoJPpI9A)
+[Video](https://youtu.be/opAZoJPpI9A)
 
 <hr>
 
