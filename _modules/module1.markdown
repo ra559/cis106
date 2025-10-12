@@ -32,8 +32,3 @@ title: Module 1 What is Linux?
          1. Pages 1 - 6 (25 - 30 of the pdf)
       2. Part 4 - Writing Shell Scripts
          1. Pages 365 (389 of the pdf)
-3. [Managing Software](https://docs.google.com/presentation/d/e/2PACX-1vSF-MLL-pMvSnYq71x9ZOUVNrJvwfL9ZMJSBEppKJfTUETA6AZgPA-Q6XcYCbok3MBGrfMD5llDMRci/pub?start=false&loop=false&delayms=3000)
-   1. Recommended reading:
-      1. Part 3 - Common Tasks and Essential Tools - The Linux Command Line Fifth Edition By William Shots
-         1. Package management - Pages 171 - 181 (196 - 205 of the PDF)
-4. [Shell Scripting Chapter 1](https://docs.google.com/presentation/d/e/2PACX-1vSGaFVc1w27_WXIBJUGfPFjWB0nN3jL7jNFfCGuv3JaDI0DnS0OBPZnMvNPFzoRR58ClJikkDJFZwyf/pub?start=false&loop=false&delayms=3000)
