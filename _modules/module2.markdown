@@ -4,7 +4,15 @@ title: Module 2 Using Ubuntu
 ---
 # {{page.title}}
 
-## Lecture 4: Managing Files and directories
+## Lecture 4: Managing Software and shell scripting 
+1. [Managing Software](https://docs.google.com/presentation/d/e/2PACX-1vSF-MLL-pMvSnYq71x9ZOUVNrJvwfL9ZMJSBEppKJfTUETA6AZgPA-Q6XcYCbok3MBGrfMD5llDMRci/pub?start=false&loop=false&delayms=3000)
+   1. Recommended reading:
+      1. Part 3 - Common Tasks and Essential Tools - The Linux Command Line Fifth Edition By William Shots
+         1. Package management - Pages 171 - 181 (196 - 205 of the PDF)
+2. [Shell Scripting Chapter 1](https://docs.google.com/presentation/d/e/2PACX-1vSGaFVc1w27_WXIBJUGfPFjWB0nN3jL7jNFfCGuv3JaDI0DnS0OBPZnMvNPFzoRR58ClJikkDJFZwyf/pub?start=false&loop=false&delayms=3000)
+
+
+## Lecture 5: Managing Files and directories
 1. [The Linux filesystem](https://rapurl.live/s39)
    1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vRzi-pHAUV4x_mqsbAiiAwTtIGZcXMauEIOUfiBySC4sPr0gszaQmebawSQaj0r2gCIv4r2Dam-fgT4/pub?start=false&loop=false&delayms=3000)
    1. Recommended reading:
@@ -27,7 +35,7 @@ title: Module 2 Using Ubuntu
          1. Part 4 - Writing Shell Scripts - The Linux Command Line Fifth Edition By William Shotts
             1. Reading Keyboard input - Pages 410 - 421 (434 - 445 of the PDF) 
 
-## Lecture 5: Handling Text Files
+## Lecture 6: Handling Text Files
 1. [Handling Text Files](https://rapurl.live/he6)
    1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vTcX5KnC5CobScFyIcO36lbsFBFGyxjfuWxySriFiGt_9K_PbieWK28QT1n_w2ZrXoA70N1Rhyz4Pj3/pub?start=false&loop=false&delayms=3000)
 2. [The Basics of Vim](https://rapurl.live/5mi)
@@ -39,7 +47,7 @@ title: Module 2 Using Ubuntu
          1. Part 3 - Common Tasks Essential tools - The Linux Command Line By William Shotts
             1. Text Processing - Pages 273 - 314 (297 - 338 of the pdf)
 
-## Lecture 6: Permissions
+## Lecture 7: Permissions
 1. [File permissions](https://rapurl.live/utl)
    1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vTLvihjhePRAw2b5njGhPNnGSdK47u7To-zl4-W6D808aftWJS_XeBorJz3msH2lOwARO_mP3kir7Wt/pub?start=false&loop=false&delayms=3000)
       1. Recommended reading:

@@ -4,7 +4,7 @@ title: Module 3 Administration
 ---
 # {{page.title}}
 
-## Lecture 7
+## Lecture 8
 1. [Managing processes]()
    1. Recommended reading:
       1. Part 1 - Learning the shell - The Linux Command Line by William Shotts
@@ -13,7 +13,7 @@ title: Module 3 Administration
    1. Recommended reading:
       1. Part 3 - Common tasks and essential tools -  The Linux Command Line by William Shotts
          1. Networking - 201 - 215 (225 - 241 of the pdf)
-## Lecture 8
+## Lecture 9
 1. [Shell scripting]()
    1. Hello World
    2. Working with Variables
@@ -30,5 +30,5 @@ title: Module 3 Administration
    8. Arithmetic and string operations
    9. Arrays
 
-## Lecture 9
+## Lecture 10
 1. [Scheduling Tasks]()
