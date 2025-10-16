@@ -23,7 +23,7 @@ title: Lab 5 - The Linux File system
 4. Change your present working directory (PWD) to **the root of the filesystem (/)**
 5. Change your present working directory (PWD) to `/dev/cpu/0` (if for whatever reason you don't have this directory then use: `/home/your-user-name-here/Downloads/`)
 
-<p align="center" style="display:block"> <img src="/assets/lab4-1.gif" width="500" /> </p> 
+<p align="center" style="display:block"> <img src="/assets/lab5/q1-demo1.gif" width="500" /> </p> 
 
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer 1-5.**
 
@@ -34,7 +34,7 @@ title: Lab 5 - The Linux File system
 9. Where are you now? 
 10. Change the working directory to the `Documents/` directory.
 
-<p align="center" style="display:block"> <img src="/assets/lab4-1-1.gif" width="500" /> </p> 
+<p align="center" style="display:block"> <img src="/assets/lab5/q1-demo2.gif" width="500" /> </p> 
 
 
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 6-10.**
@@ -47,11 +47,15 @@ You can do this graphically like this:
 
 <p align="center" style="display:block"> <img src="/assets/lab5/q2-demo.gif" width="500" /> </p> 
 
+
+
 Or you can use these commands:
 
 ```bash
 wget https://cis106.com/assets/lab5files.zip && unzip lab5files.zip
 ```
+
+<p align="center" style="display:block"> <img src="/assets/lab5/q2-demo2.gif" width="500" /> </p> 
 
 
 1. Change your present working directory to `/usr/share/`. Using absolute path, list all the files inside the `lab4files` directory.
