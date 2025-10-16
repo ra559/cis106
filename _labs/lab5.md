@@ -42,16 +42,15 @@ title: Lab 5 - The Linux File system
 <hr>
 
 ## Question 2 | The ls command
-Download this compressed zip file: [lab4files.zip](/assets/lab5files.zip) Decompress the zip file in **your home** directory.
+Download this compressed zip file: [lab5files.zip](/assets/lab5files.zip) Decompress the zip file in **your home** directory.
 You can do this graphically like this:
 
-<p align="center" style="display:block"> <img src="/assets/lab4-2-1.gif" width="500" /> </p> 
+<p align="center" style="display:block"> <img src="/assets/lab5/q2-demo.gif" width="500" /> </p> 
 
 Or you can use these commands:
 
 ```bash
-wget https://cis106.com/assets/lab5files.zip
-unzip lab4files.zip
+wget https://cis106.com/assets/lab5files.zip && unzip lab5files.zip
 ```
 
 
