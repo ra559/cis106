@@ -63,11 +63,11 @@ wget https://cis106.com/assets/lab5files.zip && unzip lab5files.zip
 <p align="center" style="display:block"> <img src="/assets/lab5/q2-demo2.gif" width="500" /> </p> 
 
 
-1. Change your present working directory to `/usr/share/`. Using absolute path, list all the files inside the `lab4files` directory.
+1. Change your present working directory to `/usr/share/`. Using absolute path, list all the files inside the `lab5files` directory.
 2. Change your present working directory to `~/lab4files`. Long list all the files inside your current working directory with **human readable** file sizes.
-3. Long list all the files inside `lab4files` with **human readable** file size, and **sorted by file size**.
-4. Long list all the files inside `lab4files` with **human readable** file size, **sorted by file size**, **without the user nor the group name**, and **showing their inode number**.
-5. List all the files inside `lab4files` **sorted by file extension** and in **reverse order**. 
+3. Long list all the files inside `lab5files` with **human readable** file size, and **sorted by file size**.
+4. Long list all the files inside `lab5files` with **human readable** file size, **sorted by file size**, **without the user nor the group name**, and **showing their inode number**.
+5. List all the files inside `lab5files` **sorted by file extension** and in **reverse order**. 
 
 > **Take a screenshot of the terminal only. Your screenshot must show all the commands that you used to answer questions 1-5. Multiple screenshots may be **required****
 
