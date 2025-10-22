@@ -6,7 +6,7 @@ title: Lab 5 - The Linux File system
 # {{page.title}} 
 
 ## Video
-* [Video here]()
+* [Video here](https://youtu.be/asSi3ILWlM8)
 
 ## Question 1 | Moving around the file system
 
