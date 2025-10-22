@@ -1,7 +1,7 @@
-
+---
 layout: page
 title: Week Report 5
-
+---
 
 # {{page.title}}
 
@@ -64,7 +64,7 @@ Complete the practice exercises of each presentation. Take a screenshot of the t
       2. [Practice 3](https://docs.google.com/presentation/d/e/2PACX-1vSGaFVc1w27_WXIBJUGfPFjWB0nN3jL7jNFfCGuv3JaDI0DnS0OBPZnMvNPFzoRR58ClJikkDJFZwyf/pub?start=false&loop=false&delayms=3000&slide=id.g385f7afe5f3_0_402)
 
 ### 4. Complete Lab 5
-* Complete lab 5. The link is available [here]().
+* Complete lab 5. The link is available [here](https://cis106.com/labs/lab5/).
 * Please complete lab 5 after tasks 2 and 3. You will need the practice to be able to answer the challenge question.
 
 ### 5. Complete Week Report 5
