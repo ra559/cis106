@@ -1,54 +1,85 @@
-
+---
 layout: page
 title: Week Report 6
-
+---
 
 # {{page.title}}
 
-> *video [here](https://youtu.be/8GUIwzedyoQ)*
- 
-## Complete the following tasks
-1. Complete notes 6
-2. Complete Week Report 6
-3. Complete Lab 6
-4. Work on your final project
+## Video
+* [Video here](#)
 
-## Notes 6
-* Explain how to use each of the wildcards (`*`, `?`, and `[]`)
-* Explain how to use brace expansion (`{}`)
-* Include at least 3 examples of each
-* There is an article in the website that can help you [here](https://cis106.com/extra/wildcards/).
-* I suggest that you copy the [table](https://cis106.com/extra/wildcards/#why-and-when-should-i-use-a-wildcard) that explains each wildcard and has an example. It will be useful in your final exam.
+## Study Material
+* [Presentation](https://rapurl.live/jya)
+* [Extra Practice](https://cis106.com/extra/mkdir_touch_rm/)
 
-## What will you submit for your week report:
-1. Complete every practice in the [wildcards presentation](https://rapurl.live/h69)
-2. Take a screenshot of your terminal showing most if not all of the commands used in each practice.
-3. Make sure to label each screenshot using heading 2 or 3 (just like week report 5)
-4. Convert the file to pdf
-5. Push everything to Github
-6. In Blackboard, submit the pdf file for week report 6 and the Github url of the `wr6.md` file
+## Tasks to complete
 
+### 1. Complete 1 discussion board
+* Work on your discussion boards. It should not take you more than 10 minutes to post 1 reply. 
 
+### 2. Complete Notes 6
+1. For each of the following commands include: Definition, Usage/Formula, and Examples.
+   1. `mkdir`
+   2. `touch`
+   3. `rm`
+   4. `cp`
+   5. `mv`
+
+> Your markdown file should be properly formatted. Use inline code formatting, code blocks, bold, etc ...
+> ***I will take points off for improper formatting***
+> Refer to Notes 5 for an example0
+
+**When you finish, do the usual:**
+1. Convert the markdown file to pdf
+2. Push everything to GitHub
+3. Submit the GitHub URL of the markdown file in Blackboard
+4. Submit the PDF file in Blackboard
+
+### 3. Complete Lab 6
+* Complete lab 6. The link is available [here](https://cis106.com/labs/lab6/).
+
+### 4. Complete Week Report 6
+* Add links to your notes 6 and lab 6
+
+* **When you finish, do the usual:**
+1. Convert `wr6.md` to pdf
+2. Push everything to GitHub:
+3. In blackboard submit:
+   1. URL to `wr6.md` in GitHub
+   2. The pdf file `wr6.pdf`	
+
+### 5. Work on your Final Project
+* Remember to take at least 20 minutes to work on your final project. 
 
 <hr>
 
 <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
 
-## Special Note 1
-> Please take a snapshot of your virtual machine after you complete the report. The virtual machine is must be off before you take the snapshot. This process is show in the video
-> You should have at least 2 snapshots of your vm. Keep in mind that snapshots take space.
-> For Mac Users using UTM, snapshots are not supported therefore ignore this. Just keep your repository updated on github in case of a catastrophic failure.
 
-### Special Note 2
-You are going to be using the git commands a lot. Here is a quick reference:
-* `git clone repository/url/here`: is the command to clone a repository where cloning means downloading a repository to your computer
-* `git pull`: to pull/synchronize your repository from github to your local machine. Always run this command BEFORE you start working VS Code
-* `git add .`: to track all the changes made to your file. 
-* `git commit -m "label for your changes here"`: this command will label all the changes you added with the `add` command
-* `git push`: will send all your changes to your github repository
+## Special Note 1 – Git Command Quick Reference
+You’ll be using Git frequently this semester. Here’s a quick reminder of the most common commands:
 
+| Command                            | Purpose                                                                                                                     |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `git clone repository/url/here`    | Download a GitHub repository to your computer.                                                                              |
+| `git pull`                         | Synchronize your local repository with the latest changes from GitHub. Always run this **before** starting work in VS Code. |
+| `git add .`                        | Track all changes made to your files.                                                                                       |
+| `git commit -m "description here"` | Save a snapshot of your tracked changes with a short description.                                                           |
+| `git push`                         | Send your committed changes to GitHub.                                                                                      |
 
-## Special Note 3:
+**Command Order:**
+```bash
+git pull 
+git add . 
+git commit -m "message" 
+git push
+```
+
+> ⚠️ Warning: ⚠️  <br> Avoid making changes directly in the GitHub website unless you:
+> * Know exactly what you are doing, and
+> * Remember to run git pull before working locally.
+
+## Special Note 2:
 * The final exam is in person. 
 * The exam is performance based and will require access to a Linux Virtual Machine. 
 * If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you.
