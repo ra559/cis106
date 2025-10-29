@@ -6,7 +6,7 @@ title: Week Report 6
 # {{page.title}}
 
 ## Video
-* [Video here](#)
+* [Video here](https://youtu.be/c6g-n-opXRQ)
 
 ## Study Material
 * [Presentation](https://rapurl.live/jya)

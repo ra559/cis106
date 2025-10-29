@@ -6,7 +6,7 @@ title: Lab 6 - Managing files and directories
 # {{page.title}}
 
 * Presentation [here](https://rapurl.live/f6n)
-* Video [here](#)
+* Video [here](https://youtu.be/c6g-n-opXRQ)
 * Extra resources:
   * [Extra Credit](https://cis106.com/extra/mkdir_touch_rm/)
   * [Playlist from previews semester on the commands](https://youtube.com/playlist?list=PL5lh7Nw87hufz3zTPu8XYGi9frBwZBPZN&si=MGFp6dWJT-pYsQvL)
