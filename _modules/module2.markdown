@@ -24,8 +24,8 @@ title: Module 2 Using Ubuntu
       1. Recommended reading:
          1. Part 1 - Learning the shell - The Linux Command Line Fifth Edition By William Shotts
             1. Pages 25 - 41 (49 - 65 of the PDF) 
-3. [Wildcards](https://rapurl.live/h69)
-   1. Alternative [link](https://docs.google.com/presentation/d/e/2PACX-1vTyTqtTUtZG5HwWy2N-XBprh6KM0ONG-i3M9qVkQ9ZGBSRZhAWLMJN9py4j_nWUcbgUj3nhh2bauz1I/pub?start=false&loop=false&delayms=3000)
+3. [Wildcards](https://rapurl.live/9j6)
+   1. Alternative [link](https://docs.google.com/presentation/d/e/2PACX-1vTeIfbB0Hfh8D0h3ZgNVU4cEdORoRKERQnRroK6_aRkMMQKGRt1y0crrDmFgK81gHsflWUHqTrCh5ep/pub?start=false&loop=false&delayms=3000)
       1. Recommended reading:
          1. Part 1 - Learning the shell - The Linux Command Line Fifth Edition By William Shotts
             1. Pages 25 - 41 (49 - 65 of the PDF)

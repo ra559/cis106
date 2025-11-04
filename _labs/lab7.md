@@ -1,74 +1,149 @@
-
+---
 layout: page
-title: Lab 7 - Handling Text Files part 1
+title: Lab 7 - Wildcards & Brace Expansion 
+---
 
 
 # {{page.title}}
 
+## WORK in PROGRESS
+
+
+## A Brief description of the wildcards.
+
+![wildcards](/assets/wildcardcheatsheet.png)
+> Cheat Sheet [here](https://rapurl.live/zot)
+
 ## Video
-* [here](https://youtu.be/rpu30qMEZhQ)
-* This video is from last semester
-  
-## Notes: 
-* Make sure to download the text files. See [Slide numbers: 3 and 4](https://rapurl.live/he6) from the presentation.
-* There is no challenge question for this lab. All we are going to do is practice so try to understand the commands before you run them. Part 2 will use this command differently so you need to understand the basic function of the command well
-* All of these commands will be used in your final exam in one way or the other. 
+Video [here](https://youtu.be/8GUIwzedyoQ) 
+Presentation [here](https://rapurl.live/9j6)
 
-## Question 1: cat, head, tail
-1. Display the content of the `cereal.csv` file
-2. Display the content of the `cereal.csv` file in reverse order
-3. Display the content of the `cereal.csv` file with line numbers, showing non-printable characters and the $ indicating the end of each line.
-4. Display the first 2 lines of the `cereal.csv` file
-5. Display the last 2 lines of the `cereal.csv` file
-
-> Take a screenshot of your terminal showing the commands you used to complete this question. You will need more than 1 screenshot. You will receive full credit if I can see the screenshot and at least a portion of the output. 
-
-## Question 2: cut and sort
-1. Display the first field of the `cars.csv` file
-2. Display the first and the 3rd fields of the `cars.csv` file
-3. Repeat the previous command but replace the delimiter with an equal sign and 2 spaces. Like this (` = `)
-4. Sort the `cars.csv` file
-5. Sort the `cereal.csv` file by **“calories”**
-
-> Take a screenshot of your terminal showing the commands you used to complete this question. You will need more than 1 screenshot. You will receive full credit if I can see the screenshot and at least a portion of the output. 
-
-## Question 3:  grep
-1. Display every line that contains the word **“War”** in the book `war-and-peace`
-2. Repeat the previous command with case sensitivity disabled 
-3. Repeat the previous command but this time only display the total number of lines that contain the word **“war”**
-4. The previous command will match the word **war** even if it is part of another word. Now, instead, let's match only the word war. How would you do this? 
-5. Display every line that starts with the word **peace**. Include line numbers in the command.
-6. Display every line that starts with the word **The**. Include line numbers in the command.
-7. Display every line that contains the word **love** inside every book file. It cannot be a variation of the word love. It has the be the exact word regardless of the case. 
-8.  Search for any 5-letter word that starts with **l** (el) and ends in the letter **d** in every book file. (notice lower case L and lower case d). Make sure to include line numbers.
-9.  Search for any 4-letter word that starts with **d**, contains a vowel after **d**, and 3 more characters in every book.
-10. Search for every word that contains 2 repeated **a** letters in the book `dracula`
+> **Note:** Wildcards are all about pattern matching. They can be confusing but once you get a hold of them, you will never forget them. The table above gives you a summary of each wildcard. The goal of this lab is to give you enough practice for you to master wildcards in their basic form. Wildcards are very powerful because they can be combined to match pretty much any pattern that you can think of. 
 
 
 
-> Take a screenshot of your terminal showing the commands you used to complete this question. You will need more than 1 screenshot. You will receive full credit if I can see the screenshot and at least a portion of the output. 
+## Question 1: Complete Practice exercise
+1. Complete the practice exercise in the presentation. Take a screenshot of your terminal after finishing each practice. 
+   1. [Practice 1: The * wildcard](https://docs.google.com/presentation/d/e/2PACX-1vTeIfbB0Hfh8D0h3ZgNVU4cEdORoRKERQnRroK6_aRkMMQKGRt1y0crrDmFgK81gHsflWUHqTrCh5ep/pub?start=false&loop=false&delayms=3000&slide=id.g3a010358aa1_0_7)
+   2. [Practice 2: The ? wildcard](https://docs.google.com/presentation/d/e/2PACX-1vTeIfbB0Hfh8D0h3ZgNVU4cEdORoRKERQnRroK6_aRkMMQKGRt1y0crrDmFgK81gHsflWUHqTrCh5ep/pub?start=false&loop=false&delayms=3000&slide=id.g3a010358aa1_0_299)
+   3. [Practice 3: The [] wildcard](https://docs.google.com/presentation/d/e/2PACX-1vTeIfbB0Hfh8D0h3ZgNVU4cEdORoRKERQnRroK6_aRkMMQKGRt1y0crrDmFgK81gHsflWUHqTrCh5ep/pub?start=false&loop=false&delayms=3000&slide=id.g3a010358aa1_0_564)
+   4. [Practice 4: Brace Expansion](https://docs.google.com/presentation/d/e/2PACX-1vTeIfbB0Hfh8D0h3ZgNVU4cEdORoRKERQnRroK6_aRkMMQKGRt1y0crrDmFgK81gHsflWUHqTrCh5ep/pub?start=false&loop=false&delayms=3000&slide=id.g3a010358aa1_0_667)
 
-## What will you Submit:
-* Place all the screenshots and answers to your questions in a the `lab7.md` file.
-* Convert your markdown file to pdf 
-* Push the changes to Github: <br>`git pull; git add .; git commit -m "lab7-p1 complete; git push"`<br>
-* Submit the URL of `lab7.md` and the pdf file
-* Take a snapshot of your system and delete the previous snapshot.
+### Deliverable of Question 1
+* Add each screenshot to your `lab7.md` file
+* Make sure to label each screenshot properly using heading 3 formatting or just a bold paragraph. Ex:
 
-### Special Note
-You are going to be using the git commands a lot. Here is a quick reference:
-* `git clone repository/url/here`: is the command to clone a repository where cloning means downloading a repository to your computer
-* `git pull`: to pull/synchronize your repository from github to your local machine. Always run this command BEFORE you start working VS Code
-* `git add .`: to track all the changes made to your file. 
-* `git commit -m "label for your changes here"`: this command will label all the changes you added with the `add` command
-* `git push`: will send all your changes to your github repository
+```
+### Practice 1
+![p1](prac1.png)
+```
 
-> Always run the commands in this order: `pull` =>  `add` =>  `commit` => `push` 
-> **Never use the github website to make changes to your repository unless you know what you are doing and can remember to pull the changes before working on your local repository!**
+## Question 2: Challenge 1
+Organize a directory using only wildcards. You are not allowed to operate on files individually. Every command you use to organize the files must use a wildcard.
 
-<p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
+1. Clone this directory to get all the files you need.
+2. Once you finish organizing the files the directory most look like this:
 
-## Special Note:
-* The final exam is in person. 
-* The exam is performance based and will require access to a Linux Virtual Machine. 
-* If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you.
+### Deliverable of Question 2
+* Take a screenshot (or more than 1) show each command you use to organize the directory
+* Use the `tree` command to display a tree of the organized directory. 
+* Place the screenshots in your `lab7.md` file as you always do in every lab
+
+## Question 3: Challenge 2
+Use brace expansion to create the following directories:
+
+
+### Directory 1
+
+```
+wallpapers/
+└── cars
+    ├── 1080p
+    ├── 2k
+    └── 4k
+```
+
+### Directory 2
+
+```
+assets/
+├── imgs
+│   ├── large
+│   └── small
+└── video
+    ├── large
+    └── small
+```
+
+### Directory 3
+* You need to create the pdf files as well. Remember mkdir creates directories while touch creates files. 
+
+```
+docs/
+└── books
+    ├── history
+    │   ├── fall
+    │   │   └── book.pdf (this is a file not a directory)https://rapurl.live/9j6
+    │   └── spring
+    │       └── book.pdf (this is a file not a directory)
+    └── math
+        ├── 2024
+        │   └── book.pdf (this is a file not a directory)
+        └── 2025
+            └── book.pdf (this is a file not a directory)
+```
+
+### Deliverable of Question 3
+* Take a screenshot (or more than 1) show each command you use to create the directories 
+* Use the `tree` command to display a tree of each directory directory. 
+* Place the screenshots in your `lab7.md` file as you always do in every lab
+
+
+<hr>
+
+
+## What will you submit:
+1. After placing every screenshot in your `lab7.md` file, convert the file to pdf
+2. Push everything to GitHub
+3. In Blackboard, submit the pdf file `lab7.pdf` and the URL of `lab7.md` in GitHub
+
+## How I will grade you:
+* Question 1: 50 pts 
+* Question 2: 25 pts
+* Question 3: 25 pts
+
+
+<hr>
+
+## Special Note 1 - Practice navigating the file system
+* Focus on the steps you took to answer the challenge questions. You will have 1 question in the final that requires the same workflow.
+
+## Special Note 2 - Git Command Quick Reference
+You’ll be using Git frequently this semester. Here’s a quick reminder of the most common commands:
+
+| Command                            | Purpose                                                                                                                     |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `git clone repository/url/here`    | Download a GitHub repository to your computer.                                                                              |
+| `git pull`                         | Synchronize your local repository with the latest changes from GitHub. Always run this **before** starting work in VS Code. |
+| `git add .`                        | Track all changes made to your files.                                                                                       |
+| `git commit -m "description here"` | Save a snapshot of your tracked changes with a short description.                                                           |
+| `git push`                         | Send your committed changes to GitHub.                                                                                      |
+
+**Command Order:**
+```bash
+git pull 
+git add . 
+git commit -m "message" 
+git push
+```
+
+> ⚠️ Warning: ⚠️  <br> Avoid making changes directly in the GitHub website unless you:
+> * Know exactly what you are doing, and
+> * Remember to run git pull before working locally.
+
+## Special Note Regarding the Final Exam
+* The final exam will be in person.
+* It is performance-based and requires access to a Linux Virtual Machine.
+* If you do not have a laptop/computer you can bring to school:
+  * A Linux workstation will be available on campus.
+  * Request it early—available computers are limited.
