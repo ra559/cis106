@@ -18,7 +18,14 @@ title: Week Report 7
 
 ## What are you going to include in your notes
 * How to use each of the wildcards. Include 2 - 3 examples. You can use any command.
-* How to use Brace Expansion to create entire directory structures. Include at least 2 examples
+* How to use Brace Expansion to create entire directory structures. Include at least 2 examples+
+
+### When you finish, do the usual:
+1. Convert `notes7.md` to pdf
+2. Push everything to GitHub:
+3. In blackboard submit:
+   1. URL to `notes7.md` in GitHub
+   2. The pdf file `notes7.pdf`	
 
 ## What will you submit for week report 7
 1. Include a screenshot of your discussion board post

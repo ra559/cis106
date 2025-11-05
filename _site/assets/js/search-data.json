@@ -491,7 +491,7 @@
   },"70": {
     "doc": "Week Report 7",
     "title": "What are you going to include in your notes",
-    "content": ". | How to use each of the wildcards. Include 2 - 3 examples. You can use any command. | How to use Brace Expansion to create entire directory structures. Include at least 2 examples | . ",
+    "content": ". | How to use each of the wildcards. Include 2 - 3 examples. You can use any command. | How to use Brace Expansion to create entire directory structures. Include at least 2 examples+ | . When you finish, do the usual: . | Convert notes7.md to pdf | Push everything to GitHub: | In blackboard submit: . | URL to notes7.md in GitHub | The pdf file notes7.pdf | . | . ",
     "url": "/week_report/wr7/#what-are-you-going-to-include-in-your-notes",
     
     "relUrl": "/week_report/wr7/#what-are-you-going-to-include-in-your-notes"
