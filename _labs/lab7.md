@@ -6,7 +6,28 @@ title: Lab 7 - Wildcards & Brace Expansion
 
 # {{page.title}}
 
-## WORK in PROGRESS
+## WORK IN PROGRESS
+
+
+- [{{page.title}}](#pagetitle)
+  - [WORK IN PROGRESS](#work-in-progress)
+  - [A Brief description of the wildcards.](#a-brief-description-of-the-wildcards)
+  - [Video](#video)
+  - [Question 1: Complete Practice exercise](#question-1-complete-practice-exercise)
+    - [Deliverable of Question 1](#deliverable-of-question-1)
+  - [Question 2: Challenge 1](#question-2-challenge-1)
+    - [Directory 1](#directory-1)
+    - [Directory 2](#directory-2)
+    - [Deliverable of Question 2](#deliverable-of-question-2)
+  - [Question 3: Challenge 2](#question-3-challenge-2)
+    - [Rules of the challenge](#rules-of-the-challenge)
+    - [Tips to approach this challenge](#tips-to-approach-this-challenge)
+    - [Deliverable of Question 3](#deliverable-of-question-3)
+  - [What will you submit:](#what-will-you-submit)
+  - [How I will grade you:](#how-i-will-grade-you)
+  - [Special Note 1 - Practice navigating the file system](#special-note-1---practice-navigating-the-file-system)
+  - [Special Note 2 - Git Command Quick Reference](#special-note-2---git-command-quick-reference)
+  - [Special Note Regarding the Final Exam](#special-note-regarding-the-final-exam)
 
 
 ## A Brief description of the wildcards.
@@ -38,24 +59,15 @@ Presentation [here](https://rapurl.live/9j6)
 ![p1](prac1.png)
 ```
 
+<hr>
+
 ## Question 2: Challenge 1
-Organize a directory using only wildcards. You are not allowed to operate on files individually. Every command you use to organize the files must use a wildcard.
-
-1. Clone this directory to get all the files you need.
-2. Once you finish organizing the files the directory most look like this:
-
-### Deliverable of Question 2
-* Take a screenshot (or more than 1) show each command you use to organize the directory
-* Use the `tree` command to display a tree of the organized directory. 
-* Place the screenshots in your `lab7.md` file as you always do in every lab
-
-## Question 3: Challenge 2
 Use brace expansion to create the following directories:
 
 
 ### Directory 1
 
-```
+```bash
 wallpapers/
 └── cars
     ├── 1080p
@@ -65,7 +77,7 @@ wallpapers/
 
 ### Directory 2
 
-```
+```bash
 assets/
 ├── imgs
 │   ├── large
@@ -75,32 +87,46 @@ assets/
     └── small
 ```
 
-### Directory 3
-* You need to create the pdf files as well. Remember mkdir creates directories while touch creates files. 
 
-```
-docs/
-└── books
-    ├── history
-    │   ├── fall
-    │   │   └── book.pdf (this is a file not a directory)https://rapurl.live/9j6
-    │   └── spring
-    │       └── book.pdf (this is a file not a directory)
-    └── math
-        ├── 2024
-        │   └── book.pdf (this is a file not a directory)
-        └── 2025
-            └── book.pdf (this is a file not a directory)
-```
-
-### Deliverable of Question 3
+### Deliverable of Question 2
 * Take a screenshot (or more than 1) show each command you use to create the directories 
 * Use the `tree` command to display a tree of each directory directory. 
 * Place the screenshots in your `lab7.md` file as you always do in every lab
-
+* Once you have finished this question, delete the directories. 
 
 <hr>
 
+## Question 3: Challenge 2
+Organize a directory using only wildcards and brace expansion. You are not allowed to operate on files individually. Every command you use to organize the files must use a wildcard.
+
+1. Run this script to generate the directory that contains all the files you will work with. I recommended making a copy of the directory before you start working on this.<br>`curl https://cis106.com/assets/scripts/chq-lab7.sh | bash`<br>
+2. Once you finish organizing the files, the directory must look like the terminal on the right. The terminal on the left shows you the starting point. The terminal on the right shows you the final result. Use the output of the terminal on the right to understand where you must place each file.
+
+<p align="center"><img src="/assets/lab7/ch1solved.png"/></p>
+
+### Rules of the challenge
+1. You are not allowed to create directories using the file manager. 
+2. You are not allowed to create directories 1 at a time. You have to use brace expansion
+3. You are not allowed to move files 1 at a time. You have to use wildcards. 
+4. You are not allowed to use the file manager. You have to complete this challenge using just the terminal
+
+### Tips to approach this challenge
+1. Use more than 1 terminal. 
+   1. A terminal window for listing files. 
+   2. Another terminal window should be used for creating the necessary directories
+   3. Another terminal window for moving the files to their respective directories
+2. You should identify the necessary directories and subdirectories that you will need to create before using the Brace Expansion. I suggest you write the brace expansion in a text editor first. **Remember:** No spaces within the brace!
+3. Use the image above to figure out what the files have in common to understand which wildcard or combination of wildcards will be best.
+4. Before you attempt to move the files, try listing them first. That will allow you to test your wildcard before moving. **If it works with ls then it will work with mv!**
+
+### Deliverable of Question 3
+* Take a screenshot (or more than 1) show each command you use to organize the directory
+* Use the `tree` command to display a tree of the organized directory. 
+* Place the screenshots in your `lab7.md` file as you always do in every lab
+* Once you have finished this question, delete the directories. 
+
+
+<hr>
 
 ## What will you submit:
 1. After placing every screenshot in your `lab7.md` file, convert the file to pdf
