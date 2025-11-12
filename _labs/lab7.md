@@ -36,7 +36,7 @@ title: Lab 7 - Wildcards & Brace Expansion
 > Cheat Sheet [here](https://rapurl.live/zot)
 
 ## Video
-* [Lab Video](#) 
+* [Lab Video](https://youtu.be/xwqAEsgFU08) 
 * [Presentation](https://rapurl.live/9j6)
 * [Wildcard Extra practice/review](https://youtu.be/QyGUtNsKPPE)
 

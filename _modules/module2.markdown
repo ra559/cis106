@@ -36,8 +36,8 @@ title: Module 2 Using Ubuntu
             1. Reading Keyboard input - Pages 410 - 421 (434 - 445 of the PDF) 
 
 ## Lecture 6: Handling Text Files
-1. [Handling Text Files](https://rapurl.live/he6)
-   1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vTcX5KnC5CobScFyIcO36lbsFBFGyxjfuWxySriFiGt_9K_PbieWK28QT1n_w2ZrXoA70N1Rhyz4Pj3/pub?start=false&loop=false&delayms=3000)
+1. [Handling Text Files - Part 1](https://rapurl.live/dtc)
+   1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vQinYrDhi0FcbL95aDMDQ7CSMVp_TwwlFxotFyZgr7fzJcs_didbQ8Mm1bQ406gYyrRTLZiWE6BZ5rH/pub?start=false&loop=false&delayms=3000)
 2. [The Basics of Vim](https://rapurl.live/5mi)
    1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vQOSwboIunBhoeFJ0UZrBdGYHC9I0MHEEzp_m68LWX2-G9fb-wHvCTL-MeZt10yTy1K-gsVrP2DHEHy/pub?start=false&loop=false&delayms=3000)
 3. [How to Use Nano on Linux / Mac](https://shorturl.at/svxD9)

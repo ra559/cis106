@@ -6,15 +6,17 @@ title: Week Report 7
 # {{page.title}}
 
 ## Video
-* [Video here](#)
-
+* [Video here](https://youtu.be/xwqAEsgFU08)
+* [Presentation](https://rapurl.live/9j6)
+* [Wildcard Extra practice/review](https://youtu.be/QyGUtNsKPPE)
 
 ## Complete the following tasks
 1. Complete 1 Discussion board
 2. Complete notes 7
 3. Complete Lab 7
 4. Complete Week Report 7
-5. Work on your final project
+5. Take a snapshot of your virtual machine (see video for example)
+6. Work on your final project
 
 ## What are you going to include in your notes
 * How to use each of the wildcards. Include 2 - 3 examples. You can use any command.
