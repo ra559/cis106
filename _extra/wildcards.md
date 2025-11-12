@@ -5,13 +5,15 @@ title: Wildcards
 
 # {{page.title}}
 
+## Video:
+[Wildcard Extra practice/review](https://youtu.be/QyGUtNsKPPE)
 
 ## Description
 
 Wildcards or file globing is a shell feature that, using special characters, allows us to rapidly specify groups of filenames. Because we work with files all the time, it is useful to be able to work with multiple files at the same time. 
 
 ### Why and when should I use a wildcard?
-Using wildcards can save you a lot of time. Imagine you need to move all the text files in a folder. You could move them one by one—if you know each file's name. But what if there are 300 files? Moving them one at a time would take forever! Wildcards help you by allowing you to match all files that meet a certain pattern or criteria, so you can move them all at once with a single command. Here are some examples:
+Using wildcards can save you a lot of time. Imagine you need to move all the text files in a folder. You could move them one by one-if you know each file's name. But what if there are 300 files? Moving them one at a time would take forever! Wildcards help you by allowing you to match all files that meet a certain pattern or criteria, so you can move them all at once with a single command. Here are some examples:
 
 * Copy all photos from a drive to a flash drive.
 * Delete certain types of files from a folder.
