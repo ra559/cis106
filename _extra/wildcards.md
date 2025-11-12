@@ -83,7 +83,7 @@ This will create a directory in your home directory called `wildcard_extra_pract
   * `ls -1X wildcard_extra_practice/*.????` 
 * List all the files that contain a 4 letter file extension and start with letter i:
   * `ls -1X wildcard_extra_practice/i*.????` 
-* List all th files Microsoft Office 365 files.
+* List all the Microsoft Office 365 files.
   * `ls -1X wildcard_extra_practice/*.???x`
 
 
