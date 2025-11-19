@@ -6,7 +6,7 @@ title: Week Report 8
 # {{page.title}}
 
 ## Video/Resources
-* [Video here](#)
+* [Video here](https://youtu.be/0LctHKP3q-E)
 * [Presentation](https://rapurl.live/iap)
 
 ## Complete the following tasks
