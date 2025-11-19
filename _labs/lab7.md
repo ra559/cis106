@@ -6,11 +6,7 @@ title: Lab 7 - Wildcards & Brace Expansion
 
 # {{page.title}}
 
-## WORK IN PROGRESS
-
-
 - [{{page.title}}](#pagetitle)
-  - [WORK IN PROGRESS](#work-in-progress)
   - [A Brief description of the wildcards.](#a-brief-description-of-the-wildcards)
   - [Video](#video)
   - [Question 1: Complete Practice exercise](#question-1-complete-practice-exercise)
@@ -25,7 +21,7 @@ title: Lab 7 - Wildcards & Brace Expansion
     - [Deliverable of Question 3](#deliverable-of-question-3)
   - [What will you submit:](#what-will-you-submit)
   - [How I will grade you:](#how-i-will-grade-you)
-  - [Special Note 1 - Practice navigating the file system](#special-note-1---practice-navigating-the-file-system)
+  - [Special Note 1 - Regarding your final Exam](#special-note-1---regarding-your-final-exam)
   - [Special Note 2 - Git Command Quick Reference](#special-note-2---git-command-quick-reference)
   - [Special Note Regarding the Final Exam](#special-note-regarding-the-final-exam)
 
@@ -142,7 +138,7 @@ Organize a directory using only wildcards and brace expansion. You are not allow
 
 <hr>
 
-## Special Note 1 - Practice navigating the file system
+## Special Note 1 - Regarding your final Exam
 * Focus on the steps you took to answer the challenge questions. You will have 1 question in the final that requires the same workflow.
 
 ## Special Note 2 - Git Command Quick Reference

@@ -30,7 +30,7 @@ title: Week Report 7
    2. The pdf file `notes7.pdf`	
 
 ## What will you submit for week report 7
-1. Include a screenshot of your discussion board post
+1. Include a screenshot of your discussion board post 
 2. Include a link to your lab 7 file
 3. Include a link to your notes 7 file
 

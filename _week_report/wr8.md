@@ -1,42 +1,44 @@
-
+---
 layout: page
 title: Week Report 8
-
+---
 
 # {{page.title}}
-## Complete the following tasks In this order please!!!!
-1. Complete Notes 8
-2. Complete Week Report (The practice from the presentation)
-   1. [Practice 5](https://docs.google.com/presentation/d/e/2PACX-1vTcX5KnC5CobScFyIcO36lbsFBFGyxjfuWxySriFiGt_9K_PbieWK28QT1n_w2ZrXoA70N1Rhyz4Pj3/pub?start=false&loop=false&delayms=3000&slide=id.g1954a3aa060_0_14)
-   2. [Practice 6](https://docs.google.com/presentation/d/e/2PACX-1vTcX5KnC5CobScFyIcO36lbsFBFGyxjfuWxySriFiGt_9K_PbieWK28QT1n_w2ZrXoA70N1Rhyz4Pj3/pub?start=false&loop=false&delayms=3000&slide=id.g1954a3aa060_0_35)
-   3. [Practice 7](https://docs.google.com/presentation/d/e/2PACX-1vTcX5KnC5CobScFyIcO36lbsFBFGyxjfuWxySriFiGt_9K_PbieWK28QT1n_w2ZrXoA70N1Rhyz4Pj3/pub?start=false&loop=false&delayms=3000&slide=id.g1954a3aa060_0_49)
-   4. Label each screenshot accordingly using proper markdown heading 2 syntax
-3. Complete Lab 8 Handling Text Files Part 2
-   1. Video [here](https://youtu.be/LuqYlMvJ-ic)
-   2. Description [here](https://cis106.com/labs/lab8/)
+
+## Video/Resources
+* [Video here](#)
+* [Presentation](https://rapurl.live/iap)
+
+## Complete the following tasks
+1. Complete 1 Discussion board
+2. Complete notes 8
+3. Complete Lab 8
+4. Complete Week Report 8
+5. Work on your final project
 
 
-## Notes 6
-* Explain how to use each of the following commands:
-  * `awk`
-  * `sed`
-  * `less`
-* Explain, with examples, how to use:
-  * `>`
-  * `>>`
-  * `|`
+## What are you going to include in your notes
 
-### For every command, include:
-* Definition
-* Usage/Formula
-* 2-3 examples
+1. For each of the following commands include: Definition, Usage/Formula, and Examples. Your markdown file should be properly formatted. Use inline code formatting, code blocks, bold, etc ... ***I will take points off for improper formatting***. Refer to [Notes 5](https://cis106.com/week_report/wr5/#2-complete-notes-5) for an example
 
-## What will you submit for your week report:
-* Complete the following practices and take a screenshot:
-  * Practice 5
-  * Practice 6
-  * Practice 7
+* `cat`
+* `tac`
+* `head `
+* `tail`
+* `cut`
+* `sort`
+* `wc`
 
+**When you finish, do the usual:**
+1. Convert the markdown file to pdf
+2. Push everything to GitHub
+3. Submit the GitHub URL of the markdown file in Blackboard
+4. Submit the PDF file in Blackboard
+
+## What will you submit for week report 8
+1. Include a screenshot of your discussion board post 
+2. Include a link to your lab 8 file
+3. Include a link to your notes 8 file
 
 
 <hr>
@@ -61,4 +63,3 @@ You are going to be using the git commands a lot. Here is a quick reference:
 * The final exam is in person. 
 * The exam is performance based and will require access to a Linux Virtual Machine. 
 * If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you.
-
