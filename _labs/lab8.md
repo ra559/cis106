@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Lab 7 - Handling Text Files part 1
+title: Lab 8 - Handling Text Files part 1
 ---
 
 # {{page.title}}
 
-## Work in progress
 
 ## Video
-PENDING
+* [Video](https://youtu.be/0LctHKP3q-E)
+* [Presentation](https://rapurl.live/iap)
 
 ## Question 1
 1. Complete the practice exercise in the presentation. Take a screenshot of your terminal after finishing each practice. 
@@ -63,10 +63,20 @@ Asimov accessed: /download
 
 
 
+## What will you submit:
+1. After placing every screenshot in your `lab8.md` file, convert the file to pdf
+2. Push everything to GitHub
+3. In Blackboard, submit the pdf file `lab8.pdf` and the URL of `lab8.md` in GitHub
+
+
+
+
 ## How I will grade you:
 * Question 1: 50 pts 
 * Question 2: 50 pts
   * Each task is worth 5 points except task 9 that is worth 10.
+
+
 
 
 <hr>
