@@ -38,10 +38,12 @@ title: Module 2 Using Ubuntu
 ## Lecture 6: Handling Text Files
 1. [Handling Text Files - Part 1](https://rapurl.live/dtc)
    1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vQinYrDhi0FcbL95aDMDQ7CSMVp_TwwlFxotFyZgr7fzJcs_didbQ8Mm1bQ406gYyrRTLZiWE6BZ5rH/pub?start=false&loop=false&delayms=3000)
-2. [The Basics of Vim](https://rapurl.live/5mi)
+2. [Handling Text Files - Part 2](https://rapurl.live/csv)
+   1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vQnsW6oddLgq6wJLRu0E_g_cuDEudz1RLnD1UAH4Xdd5Vdeqcgc9ugKLS4xDCNl4QToIjEu-wyojSHn/pub?start=false&loop=false&delayms=3000)
+3. [The Basics of Vim](https://rapurl.live/5mi)
    1. Alternative [Link](https://docs.google.com/presentation/d/e/2PACX-1vQOSwboIunBhoeFJ0UZrBdGYHC9I0MHEEzp_m68LWX2-G9fb-wHvCTL-MeZt10yTy1K-gsVrP2DHEHy/pub?start=false&loop=false&delayms=3000)
-3. [How to Use Nano on Linux / Mac](https://shorturl.at/svxD9)
-4. [Shell Scripting - Control Statements](https://rapurl.live/hh0)
+4. [How to Use Nano on Linux / Mac](https://shorturl.at/svxD9)
+5. [Shell Scripting - Control Statements](https://rapurl.live/hh0)
    1. [Alternative](https://docs.google.com/presentation/d/e/2PACX-1vRpmfX4fJA2rjOvXPx_D5bfnagHAsvD_bHfHwEJ18sAxIxMY4KPWK-KcE7WUYiXI1BK8ongkw_UDiqw/pub?start=false&loop=false&delayms=3000)
       1. Recommended reading:
          1. Part 3 - Common Tasks Essential tools - The Linux Command Line By William Shotts
