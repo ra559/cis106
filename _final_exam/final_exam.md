@@ -1,7 +1,4 @@
----
-layout: post
-title: Final Exam Study Guide
----
+
 # {{page.title}}
 
 <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
