@@ -9,7 +9,8 @@ title: Week Report 1
 ## List of Tasks
 For this week, complete the following tasks.
 
-1. Install Slack in your phone and/or computer (I suggest both) and join our Slack workspace. The Link to join is in Blackboard (Takes about 5 minutes to complete)
+1. Install Slack in your phone and/or computer (I suggest both) and join our Slack workspace. The Link to join is in Blackboard (Takes about 5 minutes to complete). The read the documentation: [How to Ask for Help on Slack](https://cis106.com/docs/help/)
+
 3. [OPTIONAL] Watch [this video](https://www.youtube.com/watch?v=wpISo9TNjfU) so that you are familiar with Git and GitHub. (10 Minutes)
 4. [OPTIONAL] Watch [this video](https://www.youtube.com/watch?v=B-s71n0dHUk) so that you are familiar with VS Code's interface  (7 Minutes)
 5. Complete [Lab 1 - Learning Markdown](https://cis106.com/labs/lab1/) (Takes about 1 hour depending on how well you can use your computer)

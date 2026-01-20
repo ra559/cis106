@@ -126,12 +126,14 @@ Here you will find all the information for the course.
 | Activity                   | Contribution |
 | -------------------------- | ------------ |
 | Final Exam & Final Project | 30%          |
-| Labs                       | 20%          |
-| Week Reports               | 5%           |
-| Class Notes                | 15%          |
+| Labs                       | 25%          |
+| Notes                      | 15%          |
 | Discussion Boards          | 10%          |
-| Lecture Quizzes            | 5%           |
-| Attendance/Participation   | 15%          |
+| Participation              | 10%          |
+| Week Reports               | 5%           |
+| Attendance                 | 5%           |
+
+> *Extra credit is not calculated here. Extra credit is applied after the final exam is given.*
 
 ## 9. <a name='AI Usage'></a>AI Usage
 

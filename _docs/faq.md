@@ -12,7 +12,7 @@ layout: page
 * Due to the limitations of associate degree programs.
 
 ## Why is this class so much work?
-* It is not. For every lecture, you will be assigned the equivalent of 2 hours of work. This is the required amount of time that a 1-credit class is designed to be studied each week. This course ensures that you study for 2 hours every week per lecture. The 2 hours of work are designed with the following assumptions:
+* It is not. For every lecture, you will be assigned the equivalent of 2 hours of work. This is the required amount of time that a 1-credit class can consume each week. This course ensures that you study for 2 hours every week per lecture. The 2 hours of work are designed with the following assumptions:
   * You understand basic computer terminology.
   * You are efficient at using your computer.
   * You can follow instructions.
@@ -22,10 +22,11 @@ layout: page
 * This guarantees fairness to everyone. It is impossible to prevent cheating if a performance-based exam is given over Zoom to some students and in person to others. Conducting the exam in person also ensures that AI is not used to answer the questions. If you have any issues, DM your professor in Slack or email them as soon as possible. To ensure that everyone has enough time to prepare, all details are provided on the first day of class and repeated throughout the semester.
 
 ## What is the format of the final exam?
-* The final exam is performance-based. You will be given 4 problems to solve using your Linux machine. Just like in the labs, you will take screenshots of your terminal to show the solutions. One of the questions will involve writing a script. You can find examples [here](https://cis106.com/final_exam/final_exam/#how-to-practice-shell-scripting-for-your-final-exam). All the commands and topics to study are available [here](https://cis106.com/final_exam/final_exam/).
+* The final exam is performance-based. You will be given 4 problems to solve using your Linux machine. Just like in the labs, you will take screenshots of your terminal to show the solutions. One of the questions will involve writing a script (not always). You can find examples [here](https://cis106.com/final_exam/final_exam/#how-to-practice-shell-scripting-for-your-final-exam). All the commands and topics to study are available [here](https://cis106.com/final_exam/final_exam/).
 
 ## What happens if I do not have a computer to bring to school?
-* I have 4 computers with Linux already installed. You can use them during class and for the exam. If needed, a dedicated user account can be created for you. All you need to do is reserve one as soon as possible, and the PC will be yours for the semester. These PCs cannot be taken out of the school, but I will bring them every Wednesday and Thursday.
+* I have 4 computers with Linux already installed. You can use them during class and for the exam. If needed, a dedicated user account can be created for you. All you need to do is reserve one as soon as possible, and the PC will be yours for the semester. These PCs cannot be taken out of the school, but I will bring them every lecture.
+* You can also use the college VDI environment but performance will depend heavily on the quality of your internet connection.
 
 ## Are there any PCs you recommend I buy?
 * If you want to have your own PC for Linux and don’t mind spending some money, I recommend buying a MiniPC. They are inexpensive, and Linux runs well on them. Here are the ones I have tested and use for the class:
@@ -35,9 +36,9 @@ layout: page
   * [Dell OptiPlex 3050 Micro Business Desktop (Intel Core i5-6500T)](https://www.amazon.com/dp/B0793JL2V8/?coliid=I2L2QKNH08CQZY&colid=1T7KW76FZVNLO&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it) – Price: about $100.
 * **Note:**
   * Regardless of which computer you get, keep the following in mind:
-    * **Memory:** DDR4 with a minimum of 8GB, upgradeable.
-    * **CPU:** Quad-core or higher. The newer, the better.
-    * **Storage:** M.2 or SSD. If it comes with an HDD, replace it with an SSD as soon as possible.
+    * **Memory:** DDR4 with a minimum of 8GB, upgradeable. (I have used DDR3 too but keep in mind that DDR3 memory is discontinued)
+    * **CPU:** Quad-core or higher. The newer, the better. (I have used dual cores too but they are too slow)
+    * **Storage:** M.2 or SSD. If it comes with an HDD, replace it with an SSD as soon as possible. Do not use a mechanical drive in 2026! 
     * Research to ensure compatibility with Linux. Most desktop PCs, especially older ones, are likely to be compatible.
 
 ## How do I take a snapshot of my virtual machine?
@@ -57,7 +58,7 @@ You can learn more about snapshots [here](https://docs.oracle.com/en/virtualizat
 * Tutoring for all CIS courses is offered in room H311 in the Hamilton building. However, I cannot guarantee that there will always be a tutor for you. Therefore, I offer my time. If you are struggling with the course material, you can schedule time with me over Zoom or in person. You can also request extra lectures and materials, and I can create a video for you. All you need to do is ask. Remember, **you paid for this class!**
 
 ## Do you recommend that I install Linux on my main PC/laptop?
-* No. This is likely not the only class you are taking. Not all necessary applications for other classes will be available for Linux. However, if you have a spare PC, I recommend installing Linux on it, provided it is a PC you are comfortable experimenting with.
+* No. This is likely not the only class you are taking. Not all necessary applications for other classes will be available for Linux. However, if you have a spare PC, I recommend installing Linux on it, as long as you are comfortable experimenting with it.
 
 ## Do you recommend dual-booting?
 * No, unless you know what you are doing. Windows is notorious for breaking GRUB (the boot manager). However, if you are confident in your technical skills, you can handle any issues that arise from dual-booting. I never dual-boot on the same drive. If your laptop/PC has more than one drive, you can install Windows on one drive and Linux on another.
