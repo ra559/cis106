@@ -1,7 +1,7 @@
----
+
 layout: "page"
 title: Lab 4 - Software Installation and Shell Scripting
----
+
 
 # {{page.title}}
 - [{{page.title}}](#pagetitle)

@@ -1,7 +1,4 @@
----
-layout: page
-title: Week Report 4
----
+
 
 ## Video
 [Week Report 4 Video Explanation](https://youtu.be/lY96atbH8mI)

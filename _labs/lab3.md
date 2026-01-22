@@ -1,7 +1,7 @@
----
+
 layout: page
 title: Lab 3 - The GNOME DE and The Bash Shell
----
+
 
 # {{page.title}}
 
