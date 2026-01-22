@@ -1,5 +1,5 @@
 
-layout: "page"
+layout: page
 title: Lab 4 - Software Installation and Shell Scripting
 
 
