@@ -1,4 +1,7 @@
-
+---
+title: Week Report 3
+layout: page
+---
 
 # {{page.title}}
 
@@ -30,6 +33,7 @@
 2. Complete [Lab 3 - The GNOME DE and The Bash Shell](https://cis106.com/labs/lab3/)
 3. [Complete Notes 3](https://cis106.com/week_report/wr3/#3-what-to-include-in-notes-3)
 4. [Complete Week Report 3](https://cis106.com/week_report/wr3/#4-complete-week-report-3)
+5. Do your first thread of Discussion board 1. If you have done so already, reply to a thread to complete discussion 1.
 
 ### 2. Complete lab 3
    1. Video [here](https://youtu.be/0FkSHt4DmRo)

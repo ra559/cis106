@@ -26,7 +26,7 @@ title: Module 1 What is Linux?
 ## Lecture 3: The desktop environment 
 * Presentations
 1. [Exploring Desktop Environments](https://bit.ly/3u1QcsC)
-2. [What is a Shell?](https://bit.ly/3jS8fNa)
+2. [What is a Shell?](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&pli=1&slide=id.p)
    1. Recommended reading: 
       1. Part 1 - Learning the shell - The Linux Command Line Fifth Edition By William Shots
          1. Pages 1 - 6 (25 - 30 of the pdf)

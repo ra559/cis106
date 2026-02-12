@@ -1,33 +1,41 @@
 
-layout: page
-title: Week Report 6
-
 
 # {{page.title}}
 
-> *video [here](https://youtu.be/8GUIwzedyoQ)*
- 
+## Video/Resources
+* [Video here](https://youtu.be/0LctHKP3q-E)
+* [Presentation](https://rapurl.live/iap)
+
 ## Complete the following tasks
-1. Complete notes 6
-2. Complete Week Report 6
-3. Complete Lab 6
-4. Work on your final project
+1. Complete 1 Discussion board
+2. Complete notes 8
+3. Complete Lab 8
+4. Complete Week Report 8
+5. Work on your final project
 
-## Notes 6
-* Explain how to use each of the wildcards (`*`, `?`, and `[]`)
-* Explain how to use brace expansion (`{}`)
-* Include at least 3 examples of each
-* There is an article in the website that can help you [here](https://cis106.com/extra/wildcards/).
-* I suggest that you copy the [table](https://cis106.com/extra/wildcards/#why-and-when-should-i-use-a-wildcard) that explains each wildcard and has an example. It will be useful in your final exam.
 
-## What will you submit for your week report:
-1. Complete every practice in the [wildcards presentation](https://rapurl.live/h69)
-2. Take a screenshot of your terminal showing most if not all of the commands used in each practice.
-3. Make sure to label each screenshot using heading 2 or 3 (just like week report 5)
-4. Convert the file to pdf
-5. Push everything to Github
-6. In Blackboard, submit the pdf file for week report 6 and the Github url of the `wr6.md` file
+## What are you going to include in your notes
 
+1. For each of the following commands include: Definition, Usage/Formula, and Examples. Your markdown file should be properly formatted. Use inline code formatting, code blocks, bold, etc ... ***I will take points off for improper formatting***. Refer to [Notes 5](https://cis106.com/week_report/wr5/#2-complete-notes-5) for an example
+
+* `cat`
+* `tac`
+* `head `
+* `tail`
+* `cut`
+* `sort`
+* `wc`
+
+**When you finish, do the usual:**
+1. Convert the markdown file to pdf
+2. Push everything to GitHub
+3. Submit the GitHub URL of the markdown file in Blackboard
+4. Submit the PDF file in Blackboard
+
+## What will you submit for week report 8
+1. Include a screenshot of your discussion board post 
+2. Include a link to your lab 8 file
+3. Include a link to your notes 8 file
 
 
 <hr>
