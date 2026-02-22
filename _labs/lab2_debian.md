@@ -7,6 +7,7 @@ title: Lab 2 - Installing Debian 13
 
 - [{{page.title}}](#pagetitle)
   - [READ ME FIRST!](#read-me-first)
+  - [Learning Outcomes](#learning-outcomes)
   - [Video Guide Here](#video-guide-here)
   - [Presentations:](#presentations)
   - [Requirements](#requirements)
@@ -66,6 +67,10 @@ title: Lab 2 - Installing Debian 13
 * **Important:** Because your computer setup may differ from mine, unexpected issues may occur. If you run into problems, alternative versions of this lab can be created upon request, and I am available to assist via Zoom or in person. **Please do not wait until the last minute!**
 * If you encounter too many problems with VirtualBox, you may use VMware Workstation Player 17 instead. I plan to create a separate guide for VMware Player in the future.
 
+## Learning Outcomes
+* Learn to make virtual machines with Virtualbox
+* Learn how to install Debian 13
+* Learn how to use Git, GitHub, and VS Code for the purpose of the course
 
 ## Video Guide Here
 [Lab 2 Installing Debian 13 ](https://youtu.be/lu159mwLfls)
