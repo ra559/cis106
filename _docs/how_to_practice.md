@@ -4,11 +4,14 @@ layout: page
 ---
 
 # {{page.title}}
- 
+
 
 > Note: The instructions here are vague on purpose. The goal is to give you ideas on how to use the technologies we are learning in class.
 
 Every lecture includes practice that you can do as many times as you want in your virtual machine. You should focus on the learning outcomes of each lecture/lab and practice them. For Instance, here I will cover how you should practice Lab 1 to Lab 3. 
+
+## Video
+* [How to practice](https://youtu.be/wRLTWqwnKUw)
 
 ## How do I practice Lab 1
 The outcome of Lab 1 is to learn Markdown. So you should practice by creating a lot of markdown documents. Here are some example documents:
