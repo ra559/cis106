@@ -1,3 +1,7 @@
+---
+title: Week Report 7
+layout: page
+---
 
 # {{page.title}}
 
@@ -16,7 +20,7 @@
 
 ## What are you going to include in your notes
 * How to use each of the wildcards. Include 2 - 3 examples. You can use any command.
-* How to use Brace Expansion to create entire directory structures. Include at least 2 examples+
+* How to use Brace Expansion to create entire directory structures. Include at least 2 examples
 
 ### When you finish, do the usual:
 1. Convert `notes7.md` to pdf
@@ -68,4 +72,3 @@ git push
 * The final exam is in person. 
 * The exam is performance based and will require access to a Linux Virtual Machine. 
 * If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you.
-7

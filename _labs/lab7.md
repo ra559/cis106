@@ -1,7 +1,7 @@
-
+---
 layout: page
 title: Lab 7 - Wildcards & Brace Expansion 
-
+---
 
 
 # {{page.title}}
