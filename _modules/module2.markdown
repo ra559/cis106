@@ -29,8 +29,8 @@ title: Module 2 Using Ubuntu
       1. Recommended reading:
          1. Part 1 - Learning the shell - The Linux Command Line Fifth Edition By William Shotts
             1. Pages 25 - 41 (49 - 65 of the PDF)
-4. [Shell Scripting - Getting user input](https://rapurl.live/ic2)
-   1. Alternative [link](https://docs.google.com/presentation/d/e/2PACX-1vQuXFxgHJnHr6w-JbrAgeCvN3cyM7-zDIkYKQ_RcEI1wX-8VRJDb5lLOACZWqHk7ze-3af6nR3yxZ06/pub?start=false&loop=false&delayms=3000)
+4. [Shell Scripting - Getting user input](https://rapurl.live/sd1)
+   1. Alternative [link](https://docs.google.com/presentation/d/e/2PACX-1vSGaFVc1w27_WXIBJUGfPFjWB0nN3jL7jNFfCGuv3JaDI0DnS0OBPZnMvNPFzoRR58ClJikkDJFZwyf/pub?start=false&loop=false&delayms=3000&slide=id.g385f7afe5f3_0_782)
       1. Recommended reading
          1. Part 4 - Writing Shell Scripts - The Linux Command Line Fifth Edition By William Shotts
             1. Reading Keyboard input - Pages 410 - 421 (434 - 445 of the PDF) 
