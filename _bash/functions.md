@@ -3,6 +3,8 @@ title: Bash Functions
 layout: page
 ---
 
+# {{page.title}}
+
 <!-- vscode-markdown-toc -->
 * 1. [Bash Basic function](#BashBasicfunction)
 * 2. [Return an exit status](#Returnanexitstatus)
@@ -21,7 +23,7 @@ layout: page
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-# {{page.title}}
+
 
 A function is just a small reusable pease of code. It does something and return its result back to the program. It can also return nothing. 
 
@@ -45,7 +47,7 @@ function_name
   * Bash functions do not return values. They can return:
     * An exit status using `return`
     * A value using a variable (global or local)
-    * value via STDOUT - This requests command substitution
+    * value via STDOUT - This requires command substitution
 
 ##  2. <a name='Returnanexitstatus'></a>Return an exit status
 
@@ -185,7 +187,7 @@ In the function 2: carla
 
 Notice that lines 1 and 2 have the arguments we passed to script but lines 3 and 4 have the arguments we passed to the function. You can passed the same arguments you gave to the script to the function too as you can see in lines 7 and 8
 
-##  6. <a name='Moveadvancedexamplesoffunctions'></a>Move advanced examples of functions
+##  6. <a name='Moveadvancedexamplesoffunctions'></a>More advanced examples of functions
 
 ###  6.1. <a name='Returningthecontentofanarray'></a>Returning the content of an array
 

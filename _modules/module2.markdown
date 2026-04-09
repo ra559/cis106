@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Module 2 Using Ubuntu
+title: Module 2 Using Debian
 ---
 # {{page.title}}
 
