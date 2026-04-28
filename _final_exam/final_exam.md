@@ -129,24 +129,7 @@ Write a shell script that will display the following output:
 * There is also a cd command in there
 
 
-### Script 2: Using user defined variables and user input
-
-> ***NOTE For Spring 25 Students:***
-> This script (script 2) does not apply to you as the concept of 
-> user input was not covered. Please skip this script during your studies.
-
-Write a shell script that will ask the user several questions, store the responses in variables and then use those variables in a single echo command. The output should look like this:
-
-![script2](https://docs.google.com/drawings/d/e/2PACX-1vRAyIXO_bFoHUEDJ-RNN5whVpO_t4nHSzb4lVxRKUkoqtbByTTKx4IUkCglkeF4tYatbF3oSwgqJkMh/pub?w=1397&h=418)
-
-<br>
-
-**The challenge here is to:**
-* Collect user information and store it in a variable
-* Use the variables in an echo command to generate a multi line message
-* You have to use a single echo command
-
-### Script 3: Drawing a box
+### Script 2: Drawing a box
 Create a script that generates this output. Here are the special characters:
 ```bash
 ┌ 
