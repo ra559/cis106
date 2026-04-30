@@ -1,0 +1,89 @@
+# Exit if not running interactively
+case $- in
+    *i*) ;;
+    *) return;;
+esac
+
+# History settings
+HISTCONTROL=ignoreboth
+shopt -s histappend
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# Terminal window size auto-check
+shopt -s checkwinsize
+
+# Lesspipe (preprocess files before viewing)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# Debian chroot name (if applicable)
+if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+
+# Enable colored prompt if terminal supports it
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes ;;
+esac
+
+# Uncomment to force color prompt
+# force_color_prompt=yes
+
+if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 &>/dev/null; then
+        color_prompt=yes
+    else
+        color_prompt=
+    fi
+fi
+
+# Prompt definition
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+unset color_prompt force_color_prompt
+
+# Set terminal title for xterm/rxvt
+case "$TERM" in
+    xterm*|rxvt*)
+        PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+        ;;
+esac
+
+# Colored GCC warnings and errors
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# Aliases
+[ -f ~/.bash_aliases ] && . ~/.bash_aliases
+
+# Bash completion
+if ! shopt -oq posix; then
+    if [ -f /usr/share/bash-completion/bash_completion ]; then
+        . /usr/share/bash-completion/bash_completion
+    elif [ -f /etc/bash_completion ]; then
+        . /etc/bash_completion
+    fi
+fi
+
+
+# --------------------------
+# Environment Variables
+# --------------------------
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH="$HOME/gdrive/projects/100shellScripts/scripts:$PATH"
+
+
+
+export PAGER=most
+export MANROFFOPT="-c"
+# Reminders
+[ -f "$HOME/.toolbox.sh" ] && source "$HOME/.toolbox.sh"
+[ -f "$HOME/.sysinfo.sh" ] && source "$HOME/.sysinfo.sh"
+
+PROMPT_COMMAND='PS1_CMD1=$(ip route get 1.1.1.1 | awk -F"src " '"'"'NR == 1{ split($2, a," ");print a[1]}'"'"')'; 
+PS1='╭(\[\e[1m\]\u\[\e[0m\]@\[\e[1m\]\h\[\e[0m\]) ─ [\[\e[96m\]\w\[\e[0m\]] ─ \[\e[92m\]\d\[\e[0m\] \[\e[92m\]\t\[\e[0m\] ─ [\[\e[38;5;196m\]${PS1_CMD1}\[\e[0m\]]\n╰\[\e[1m\]\$\[\e[0m\] '
