@@ -16,7 +16,7 @@ log_file="$HOME/${script_name}.error.log"
 if [[ "${XDG_CURRENT_DESKTOP:-}${DESKTOP_SESSION:-}" == *"GNOME"* ]]; then
 	if [[ "${DESKTOP_SESSION}" == *"ubuntu"* ]]; then
 	essential_packages=(
-		pv git gcc vim vlc
+		pv git bat gcc vim vlc
 		curl make most nemo perl tar tree wget
 		bzip2 geany samba tilix xclip
 		boxes cowsay figlet lolcat rsync snapd toilet 
@@ -31,9 +31,13 @@ if [[ "${XDG_CURRENT_DESKTOP:-}${DESKTOP_SESSION:-}" == *"GNOME"* ]]; then
 		gnome-shell-extension-manager
 
 	)
+
+
+# Option parsing
+
 	else
 	essential_packages=(
-		pv git gcc vim vlc
+		pv git batgcc vim vlc
 		curl make most nemo perl tar tree wget
 		bzip2 geany samba tilix xclip
 		boxes cowsay figlet lolcat rsync snapd toilet
@@ -54,7 +58,7 @@ if [[ "${XDG_CURRENT_DESKTOP:-}${DESKTOP_SESSION:-}" == *"GNOME"* ]]; then
 	fi
 else
 	essential_packages=(
-		pv git gcc vim vlc
+		pv git gcc bat vim vlc
 		curl make most nemo perl tar tree wget
 		bzip2 geany samba tilix xclip
 		boxes cowsay figlet lolcat rsync snapd toilet 
