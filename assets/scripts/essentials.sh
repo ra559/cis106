@@ -153,23 +153,32 @@ broom(){
 
 # Help screen
 help(){
-	echo -e "essentials.sh"
-	echo -e "\n\033[1mNAME\033[0m"
-	echo -e "\tessentials.sh - Install essential programs for cis106"
-	echo -e "\n\033[1mSYNOPSIS\033[0m"
-	echo -e "\tessentials.sh [OPTION]"
-	echo -e "\n\033[1mDESCRIPTION\033[0m"
-	echo -e "\tA basic bash script to install necessary software that will be used during the semester."
-	echo -e "\n\033[1mOPTIONS\033[0m"
-	echo -e "\t\033[1m-a\033[0m\tInstall all the necessary software and the bash_aliases"
-	echo -e "\t\033[1m-i\033{0m\tInstall all the necessary software only"
-	echo -e "\t\033[1m-b\033[0m\tInstall only the bash_aliases"
-	echo -e "\t\033[1m-h\033[0m\tDisplays this help/man makeshift message"
-	echo -e "\n\033[1mEXAMPLES\033[0m"
-	echo -e "\t./essentials.sh -a\tInstalls the programs and aliases"
-	echo -e "\t./essentials.sh -b\tInstalls only the bash_aliases"
-}
+	bold=$(tput bold)
+	reset=$(tput sgr0)
+	tab=$(printf '\t')
+	new_line=$(printf '\n')
 
+cat << EOF
+${bold}${0^^}${reset}
+${new_line}
+${bold}SYNOPSIS${reset}
+${tab}essentials.sh [OPTION]
+
+${bold}DESCRIPTION${reset}
+${tab}A basic bash script to install necessary software that will be used during the semester.
+
+${bold}OPTIONS${reset}
+${tab}-a${tab}Install all the necessary software and the bash_aliases
+${tab}-i${tab}Install all the necessary software only
+${tab}-b${tab}Install only the bash_aliases
+${tab}-f${tab}Install only the flatpak programs
+${tab}-h${tab}Displays this help/man makeshift message
+
+${bold}EXAMPLES${reset}
+${tab}./essentials.sh -a${tab}Installs the programs and aliases
+${tab}./essentials.sh -b${tab}Installs only the bash_aliases
+EOF
+}
 # Main installer
 run(){
 	sudo -v || fatal "You must have sudo privileges to run this script."
@@ -259,14 +268,20 @@ software_only(){
 	broom
 }
 
+flatpak_install(){
+	enable_flathub && update_xdg_data_dirs
+
+}
+
 
 
 # Option parsing
-while getopts ":aib:h" opt; do
+while getopts ":aibf:h" opt; do
 	case "$opt" in
 		a) run ;;
 		i) software_only ;;
 		b) set_alias ;;
+		f) flatpak_install ;;
 		h) help; exit 0 ;;
 		\?) fatal "Invalid option: -$OPTARG" ;;
 	esac
