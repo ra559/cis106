@@ -268,20 +268,14 @@ software_only(){
 	broom
 }
 
-flatpak_install(){
-	enable_flathub && update_xdg_data_dirs
-
-}
-
 
 
 # Option parsing
-while getopts ":aibf:h" opt; do
+while getopts ":aib:h" opt; do
 	case "$opt" in
 		a) run ;;
 		i) software_only ;;
 		b) set_alias ;;
-		f) flatpak_install ;;
 		h) help; exit 0 ;;
 		\?) fatal "Invalid option: -$OPTARG" ;;
 	esac
