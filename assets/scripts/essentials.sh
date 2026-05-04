@@ -37,7 +37,7 @@ if [[ "${XDG_CURRENT_DESKTOP:-}${DESKTOP_SESSION:-}" == *"GNOME"* ]]; then
 
 	else
 	essential_packages=(
-		pv git batgcc vim vlc
+		pv git bat gcc vim vlc
 		curl make most nemo perl tar tree wget
 		bzip2 geany samba tilix xclip
 		boxes cowsay figlet lolcat rsync snapd toilet
