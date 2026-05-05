@@ -75,17 +75,20 @@ fi
 spinner() {
 	local pid=$1
 	local delay=0.1
-	local spinstr='|/-\'
-	tput civis  # hide cursor
-	while kill -0 $pid 2>/dev/null; do
-		for (( i=0; i<${#spinstr}; i++ )); do
-			printf "[%c] " "${spinstr:$i:1}"
-			sleep $delay
+	local spinstr=('⠋' '⠙' '⠹' '⠸' '⠼' '⠴' '⠦' '⠧' '⠇' '⠏')
+
+	tput civis
+
+	while kill -0 "$pid" 2>/dev/null; do
+		for s in "${spinstr[@]}"; do
+			printf "[%s] " "$s"
+			sleep "$delay"
 			printf "\b\b\b\b\b\b"
 		done
 	done
+
 	printf "   \b\b\b\b"
-	tput cnorm  # restore cursor
+	tput cnorm
 }
 
 # System update
