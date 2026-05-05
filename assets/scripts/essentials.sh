@@ -75,7 +75,7 @@ fi
 spinner() {
 	local pid=$1
 	local delay=0.1
-	local spinstr='/—\|'
+	local spinstr='⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏'
 	tput civis  # hide cursor
 	while kill -0 $pid 2>/dev/null; do
 		for (( i=0; i<${#spinstr}; i++ )); do
