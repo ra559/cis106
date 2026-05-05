@@ -7,18 +7,23 @@ Follow the guide here: https://code.visualstudio.com/docs/setup/linux\nPerformin
 
 # Function to display a spinner
 spinner() {
-    local pid=$1
-    local delay=0.1
-    local spinstr='|/-\'
-    while ps -p "$pid" > /dev/null; do
-        printf "[%c]" "$spinstr"
-        spinstr=${spinstr:1}${spinstr:0:1}
-        sleep $delay
-        printf "\b\b\b"
-    done
-    printf "   \b\b\b"
-}
+	local pid=$1
+	local delay=0.1
+	local spinstr=('⠋' '⠙' '⠹' '⠸' '⠼' '⠴' '⠦' '⠧' '⠇' '⠏')
 
+	tput civis
+
+	while kill -0 "$pid" 2>/dev/null; do
+		for s in "${spinstr[@]}"; do
+			printf "[%s] " "$s"
+			sleep "$delay"
+			printf "\b\b\b\b\b\b"
+		done
+	done
+
+	printf "   \b\b\b\b"
+	tput cnorm
+}
 # First update attempt
 if ! sudo apt update &> /dev/null; then
     echo "Update failed ❌"
@@ -38,11 +43,15 @@ fi
 echo "Installing VS Code 💻"
 
 # Install VS Code
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
-echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
-rm -f packages.microsoft.gpg
-
+if [ -f '/etc/apt/sources.list.d/vscode.sources' ]; then
+	echo "VS Code repository already exists. Skipping repository setup."
+else
+	echo "Setting up VS Code repository..."
+	wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+	sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+	echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+	rm -f packages.microsoft.gpg
+fi
 # Install with spinner
 sudo apt update &> /dev/null &
 spinner $!
@@ -75,7 +84,6 @@ for ext in "${extensions[@]}"; do
     if echo "$INSTALLED" | grep -q "^$ext$"; then
         echo "Extension $ext is already installed ✅"
     else
-        echo "Installing extension: $ext...🔩"
         code --install-extension "$ext" && echo "$ext installed successfully ✅"
     fi
 done
