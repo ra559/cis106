@@ -117,7 +117,24 @@ set_alias(){
 	source "$HOME/.bashrc"
 	success "Aliases have been set!"
 }
+set_color_manpages(){
+cat << EOF
+export PAGER="less"
+export MANPAGER="less -R"
+export LESS="RSi"
 
+export LESS_TERMCAP_mb=$'\e[1;31m'
+export LESS_TERMCAP_md=$'\e[1;36m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[1;44;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;32m'
+export MANROFFOPT="-c"
+#PS1='\n╭(\[\e[1m\]\u\[\e[0m\]@\[\e[1m\]\h\[\e[0m\]) ─ [\[\e[96m\]\w\[\e[0m\]] ─ \[\e[92m\]\d\[\e[0m\] \[\e[92m\]\t\[\e[0m\] ─ [\[\e[38;5;196m\]${PS1_CMD1}\[\e[0m\]]\n╰\[\e[1m\]\$\[\e[0m\] '
+EOF >> "$HOME/.bashrc"
+
+}
 enable_flathub() {
 	if command -v flatpak &>/dev/null; then
 		info "Adding Flathub repository to Flatpak..."
@@ -225,6 +242,7 @@ run(){
 
 	broom
 	set_alias
+	set_color_manpages
 	enable_flathub
 	update_xdg_data_dirs
 
