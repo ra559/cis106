@@ -1,4 +1,3 @@
-[ -f $HOME/.myvars.sh ] && source $HOME/.myvars.sh
 case $- in
     *i*) ;;
       *) return;;
@@ -60,6 +59,24 @@ if ! shopt -oq posix; then
   fi
 fi
 export XDG_DATA_DIRS=/var/lib/flatpak/exports/share:/home/rap/.local/share/flatpak/exports/share:$XDG_DATA_DIRS
+
+# Colored mnan pages
+export PAGER="less"
+export MANPAGER="less -R"
+export LESS="RSi"
+
+export LESS_TERMCAP_mb=$'\e[1;31m'
+export LESS_TERMCAP_md=$'\e[1;36m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[1;44;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;32m'
+export MANROFFOPT="-c"
+
+# Custom PS1
+#PROMPT_COMMAND='PS1_CMD1=$(ip route get 1.1.1.1 | awk -F"src " '"'"'NR == 1{ split($2, a," ");print a[1]}'"'"')'; 
+#PS1='\n╭(\[\e[1m\]\u\[\e[0m\]@\[\e[1m\]\h\[\e[0m\]) ─ [\[\e[96m\]\w\[\e[0m\]] ─ \[\e[92m\]\d\[\e[0m\] \[\e[92m\]\t\[\e[0m\] ─ [\[\e[38;5;196m\]${PS1_CMD1}\[\e[0m\]]\n╰\[\e[1m\]\$\[\e[0m\] '
 
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"

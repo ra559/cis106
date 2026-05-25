@@ -5,7 +5,6 @@ alias update='sudo apt update; sudo apt upgrade -y; sudo apt full-upgrade -y; su
 alias search='apt search '
 alias install='sudo apt install -y '
 alias sinstall='sudo snap install '
-alias pinstall='pip3 install '
 alias remove='sudo apt autoremove -y'
 alias clean='sudo apt autoremove -y; sudo apt autoclean; sudo apt purge;'
 alias totalpack='dpkg --get-selections | wc --lines'
@@ -22,6 +21,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
+alias l1='eza -lA --time-style=+%D --no-user --no-permissions -F'
 alias ll='ls -alF'
 alias la='ls -a'
 alias lA='ls -A'

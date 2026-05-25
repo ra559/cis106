@@ -29,6 +29,11 @@ if [[ "${XDG_CURRENT_DESKTOP:-}${DESKTOP_SESSION:-}" == *"GNOME"* ]]; then
 		chrome-gnome-shell
 		gnome-software-plugin-snap gnome-software-plugin-flatpak
 		gnome-shell-extension-manager
+		firmware-linux-free
+		firmware-linux-nonfree
+		firmware-misc-nonfree
+		mesa-utils
+		xdg-utils 
 
 	)
 
@@ -54,6 +59,11 @@ if [[ "${XDG_CURRENT_DESKTOP:-}${DESKTOP_SESSION:-}" == *"GNOME"* ]]; then
 		gnome-shell-extension-dash-to-panel
 		gnome-shell-extension-system-monitor
 		gnome-shell-extension-tiling-assistant
+		firmware-linux-free
+		firmware-linux-nonfree
+		firmware-misc-nonfree
+		mesa-utils
+		xdg-utils 
 	)
 	fi
 else
@@ -68,6 +78,11 @@ else
 		gnome-tweaks python3-pip
 		build-essential fonts-symbola
 		fonts-recommended gnome-screenshot
+		firmware-linux-free
+		firmware-linux-nonfree
+		firmware-misc-nonfree
+		mesa-utils
+		xdg-utils 
 	)
 fi
 

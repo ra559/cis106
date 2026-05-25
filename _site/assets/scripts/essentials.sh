@@ -16,7 +16,7 @@ log_file="$HOME/${script_name}.error.log"
 if [[ "${XDG_CURRENT_DESKTOP:-}${DESKTOP_SESSION:-}" == *"GNOME"* ]]; then
 	if [[ "${DESKTOP_SESSION}" == *"ubuntu"* ]]; then
 	essential_packages=(
-		pv git gcc vim vlc
+		pv git bat gcc vim vlc
 		curl make most nemo perl tar tree wget
 		bzip2 geany samba tilix xclip
 		boxes cowsay figlet lolcat rsync snapd toilet 
@@ -31,9 +31,13 @@ if [[ "${XDG_CURRENT_DESKTOP:-}${DESKTOP_SESSION:-}" == *"GNOME"* ]]; then
 		gnome-shell-extension-manager
 
 	)
+
+
+# Option parsing
+
 	else
 	essential_packages=(
-		pv git gcc vim vlc
+		pv git bat gcc vim vlc
 		curl make most nemo perl tar tree wget
 		bzip2 geany samba tilix xclip
 		boxes cowsay figlet lolcat rsync snapd toilet
@@ -54,7 +58,7 @@ if [[ "${XDG_CURRENT_DESKTOP:-}${DESKTOP_SESSION:-}" == *"GNOME"* ]]; then
 	fi
 else
 	essential_packages=(
-		pv git gcc vim vlc
+		pv git gcc bat vim vlc
 		curl make most nemo perl tar tree wget
 		bzip2 geany samba tilix xclip
 		boxes cowsay figlet lolcat rsync snapd toilet 
@@ -71,17 +75,20 @@ fi
 spinner() {
 	local pid=$1
 	local delay=0.1
-	local spinstr='/-\|'
-	tput civis  # hide cursor
-	while kill -0 $pid 2>/dev/null; do
-		for (( i=0; i<${#spinstr}; i++ )); do
-			printf "[%c] " "${spinstr:$i:1}"
-			sleep $delay
+	local spinstr=('⠋' '⠙' '⠹' '⠸' '⠼' '⠴' '⠦' '⠧' '⠇' '⠏')
+
+	tput civis
+
+	while kill -0 "$pid" 2>/dev/null; do
+		for s in "${spinstr[@]}"; do
+			printf "[%s] " "$s"
+			sleep "$delay"
 			printf "\b\b\b\b\b\b"
 		done
 	done
+
 	printf "   \b\b\b\b"
-	tput cnorm  # restore cursor
+	tput cnorm
 }
 
 # System update
@@ -110,7 +117,30 @@ set_alias(){
 	source "$HOME/.bashrc"
 	success "Aliases have been set!"
 }
+set_color_manpages(){
 
+if ! grep -q "^# color manpages$" "$HOME/.bashrc"; then
+
+cat << 'EOF' >> "$HOME/.bashrc"
+# color manpages
+export PAGER="less"
+export MANPAGER="less -R"
+export LESS="RSi"
+
+export LESS_TERMCAP_mb=$'\e[1;31m'
+export LESS_TERMCAP_md=$'\e[1;36m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[1;44;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;32m'
+export MANROFFOPT="-c"
+#Custom PS1
+#PS1='\n╭(\[\e[1m\]\u\[\e[0m\]@\[\e[1m\]\h\[\e[0m\]) ─ [\[\e[96m\]\w\[\e[0m\]] ─ \[\e[92m\]\d\[\e[0m\] \[\e[92m\]\t\[\e[0m\] ─ [\[\e[38;5;196m\]${PS1_CMD1}\[\e[0m\]]\n╰\[\e[1m\]\$\[\e[0m\] '
+# End color manpages
+EOF
+fi
+}
 enable_flathub() {
 	if command -v flatpak &>/dev/null; then
 		info "Adding Flathub repository to Flatpak..."
@@ -153,23 +183,32 @@ broom(){
 
 # Help screen
 help(){
-	echo -e "essentials.sh"
-	echo -e "\n\033[1mNAME\033[0m"
-	echo -e "\tessentials.sh - Install essential programs for cis106"
-	echo -e "\n\033[1mSYNOPSIS\033[0m"
-	echo -e "\tessentials.sh [OPTION]"
-	echo -e "\n\033[1mDESCRIPTION\033[0m"
-	echo -e "\tA basic bash script to install necessary software that will be used during the semester."
-	echo -e "\n\033[1mOPTIONS\033[0m"
-	echo -e "\t\033[1m-a\033[0m\tInstall all the necessary software and the bash_aliases"
-	echo -e "\t\033[1m-i\033{0m\tInstall all the necessary software only"
-	echo -e "\t\033[1m-b\033[0m\tInstall only the bash_aliases"
-	echo -e "\t\033[1m-h\033[0m\tDisplays this help/man makeshift message"
-	echo -e "\n\033[1mEXAMPLES\033[0m"
-	echo -e "\t./essentials.sh -a\tInstalls the programs and aliases"
-	echo -e "\t./essentials.sh -b\tInstalls only the bash_aliases"
-}
+	bold=$(tput bold)
+	reset=$(tput sgr0)
+	tab=$(printf '\t')
+	new_line=$(printf '\n')
 
+cat << EOF
+${bold}${0^^}${reset}
+${new_line}
+${bold}SYNOPSIS${reset}
+${tab}essentials.sh [OPTION]
+
+${bold}DESCRIPTION${reset}
+${tab}A basic bash script to install necessary software that will be used during the semester.
+
+${bold}OPTIONS${reset}
+${tab}-a${tab}Install all the necessary software and the bash_aliases
+${tab}-i${tab}Install all the necessary software only
+${tab}-b${tab}Install only the bash_aliases
+${tab}-f${tab}Install only the flatpak programs
+${tab}-h${tab}Displays this help/man makeshift message
+
+${bold}EXAMPLES${reset}
+${tab}./essentials.sh -a${tab}Installs the programs and aliases
+${tab}./essentials.sh -b${tab}Installs only the bash_aliases
+EOF
+}
 # Main installer
 run(){
 	sudo -v || fatal "You must have sudo privileges to run this script."
@@ -209,6 +248,7 @@ run(){
 
 	broom
 	set_alias
+	set_color_manpages
 	enable_flathub
 	update_xdg_data_dirs
 

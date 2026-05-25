@@ -8,10 +8,10 @@ layout: page
 ## Video here
 [Week Report 3 ](https://youtu.be/0FkSHt4DmRo)
 
-> **Note**: This cannot be completed if you have not completed lab 2.
+
+
 
 ### 1. Study Material
-* Presentations:
   * [Exploring Desktop Environments](https://docs.google.com/presentation/d/e/2PACX-1vS8C4uEoxZc2p13pulosfU2YKC2mq7WFrQnpXq_DvBlTlNVz7UGCMG7xr4_269uUoHL-F-4pLe1-kyn/pub?start=false&loop=false&delayms=3000&slide=id.p)
   * [Gnome documentation](https://help.gnome.org/users/gnome-help/stable/)
   * [What is a Shell?](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.p)
@@ -30,10 +30,11 @@ layout: page
    6. [Practice 8: Using man](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.g2b6d39ab458_0_97)
    7. [Practice 9: Using the help option](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.g2b6d39ab458_0_102)
    8. [Practice 10: Solution](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.g2b6d39ab458_0_107)
-2. Complete [Lab 3 - The GNOME DE and The Bash Shell](https://cis106.com/labs/lab3/)
+2. [Complete Lab 3 - The GNOME DE and The Bash Shell](https://cis106.com/labs/lab3/)
 3. [Complete Notes 3](https://cis106.com/week_report/wr3/#3-what-to-include-in-notes-3)
-4. [Complete Week Report 3](https://cis106.com/week_report/wr3/#4-complete-week-report-3)
-5. Do your first thread of Discussion board 1. If you have done so already, reply to a thread to complete discussion 1.
+4. Start **Discussion Board 2**. (This means that all you have to do is create the first post)
+5. Read The Final Project Description page located [here](https://cis106.com/project/Final_Project_description/). Alternatively, you can watch the intro video.
+6. [Complete Week Report 3](https://cis106.com/week_report/wr3/#4-complete-week-report-3)
 
 ### 2. Complete lab 3
    1. Video [here](https://youtu.be/0FkSHt4DmRo)
@@ -96,7 +97,7 @@ layout: page
 > Please take a snapshot of your virtual machine after you complete the report. The virtual machine must be off before you take the snapshot. 
 
 
-## Special Note 2 – Git Command Quick Reference
+## Special Note 2 - Git Command Quick Reference
 You’ll be using Git frequently this semester. Here’s a quick reminder of the most common commands:
 
 | Command                            | Purpose                                                                                                                     |
