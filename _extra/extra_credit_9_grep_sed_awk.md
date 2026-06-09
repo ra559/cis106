@@ -1,6 +1,6 @@
 
 layout: page
-title: Extra Credit 9 - Grep, Awk, and Sed
+title: Extra Credit 9 - Handling Text 2
 
 
 # {{page.title}}
@@ -9,7 +9,7 @@ title: Extra Credit 9 - Grep, Awk, and Sed
 
 * Learn how to search for specific text patterns using `grep`
 * Practice extracting and displaying specific columns of data using `awk`
-* Learn how to mo our strongest agentic coding model yet, built to reason through large codebases, check assumptions with tools, and keep going until the work is done. It uses more quota per token than dify and replace text using `sed`
+* Learn how to modify and replace text using `sed`
 * Develop the ability to process structured text files from the Linux terminal
 * Practice combining multiple text-processing commands to solve real-world problems
 
@@ -22,6 +22,30 @@ cd ~/Documents/ && git clone https://github.com/linuxworkshop67/sample_files
 ```
 
 ## GREP
+* The `grep` command is used to search for text that matches a pattern. `Grep` will search for a specified pattern line by line in a given file(s) or from the output of a command when using the pipe. You should use `grep` any time you need to read a file line by line in search of a given string. 
+* **For example:**
+  * John needs a list of all email addresses in a csv file that are gmail.com
+
+### Usage/Formula
+* With a file(s)
+  * `grep` + `option` + `search string` + `file(s)`
+* With the pipe
+  * `command` + `|` + `grep` + `option`
+
+### Basic Examples
+
+### Exercises
+
+
+
+
+
+
+
+
+
+
+-----
 
 The `grep` command is used to search for text that matches a pattern.
 
