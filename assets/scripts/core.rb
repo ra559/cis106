@@ -1,8 +1,10 @@
 #!/usr/bin/ruby
 require 'socket'
 require 'open-uri'
+require 'uri'
 require 'optparse'
 
+# For coloring help menu
 module ANSI
   RED    = "\e[31m"
   GREEN  = "\e[32m"
@@ -10,6 +12,7 @@ module ANSI
   RESET  = "\e[0m"
 end
 
+# Get name fo Distribution
 def get_distribution_name
   # Try lsb_release first
   begin
@@ -27,10 +30,12 @@ def get_distribution_name
   end
 end
 
+# Check if system is debian based
 def debian_based?
   system("which apt > /dev/null 2>&1")
 end
 
+# check for internet connection
 def connected?
   Socket.tcp("8.8.8.8", 53, connect_timeout: 2).close
   true
@@ -38,44 +43,69 @@ rescue Errno::ENETUNREACH, Errno::ETIMEDOUT, Errno::EHOSTUNREACH
   false
 end
 
-#- Spinner function
-def spinner(cmd)
-  spinstr = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
-  print "\e[?25l"
-  
-  pid = spawn(cmd, err: :out)
-  
-  t = Thread.new do
-    i = 0
-    while true
-      # Check if process is still running
-      status = Process.waitpid(pid, Process::WNOHANG)
-      break if status  # Process finished
-      
-      print "\r#{spinstr[i % spinstr.length]} "
-      i += 1
-      sleep 0.1
-    end
-  end
-  
-  Process.wait(pid)  # Wait for process to complete
-  t.kill
-  print "\r#{' ' * 10}\r"
-  print "\e[?25h"
-end
-
+#- Perform system update
 def sys_update
-	spinner("sudo apt update")
-	spinner("sudo apt upgrade -y")
+	system("sudo", "apt", "update")
+	system("sudo", "apt", "upgrade", "-y")
 	puts "\n✓ Update & upgrade complete"
 end
 
 # package cache cleaner
 def broom 
-	spinner("sudo apt clean")
-	spinner("sudo apt autoclean")
-	spinner("sudo apt autoremove")
+	system("sudo", "apt", "clean")
+	system("sudo", "apt", "autoclean")
+	system("sudo", "apt", "autoremove")
 	puts "\nCleaning Packages"
+end
+
+# logger
+def log_error(message)
+  puts message
+
+  File.open("error.log", "a") do |file|
+    file.puts message
+  end
+end
+
+def download_files
+  puts "Downloading dot files"
+  dot_files = [
+    "https://cis106.com/assets/scripts/bashrc",
+    "https://cis106.com/assets/scripts/sysinfo.sh",
+    "https://cis106.com/assets/scripts/bash_aliases"
+  ]
+
+  dot_files.each do |url|
+    fname = url.split('/').last
+    puts "Downloading: #{fname}"
+    
+    begin
+      URI.open(url) do |remote_file|
+        File.open(fname, "wb") do |local_file|
+          local_file.write(remote_file.read)
+        end
+      end
+    rescue OpenURI::HTTPError => e
+      if e.message =~ /404/
+        abort "failed to download #{fname} - file not found (404)"
+      else
+        abort "failed to download #{fname} - HTTP error: #{e.message}"
+      end
+    rescue SocketError,
+           Errno::ECONNREFUSED,
+           Errno::ENETUNREACH,
+           Errno::EHOSTUNREACH,
+           Net::OpenTimeout,
+           Net::ReadTimeout,
+           OpenSSL::SSL::SSLError
+      abort "failed to download #{fname} - check internet connection"
+    end
+  end
+end
+
+def read_only?
+	user_home = ENV['HOME']
+	File.directory?(user_home) && !File.writable?(user_home)	
 end
 
 #- installing packages
@@ -86,7 +116,7 @@ def pkgs_install
 	  "curl", "make", "most", "perl", 
 	  "tree", "wget", "bzip2", "samba",
 	  "xclip", "boxes", "cowsay", "figlet",
-	  "lolcat", "rsync", "snapd", "topilet",
+	  "lolcat", "rsync", "snapd", "toilet",
 	  "ntfs-3g", "cmatrix", "flatpak", "fortune",
 	  "linuxlogo", "cpufetch", "exfat-fuse", 
 	  "net-tools", "smbclient", "screenfetch",
@@ -108,10 +138,10 @@ def pkgs_install
 	]
 
 
-	if de.upcase != "GNOME" 
+	if de.nil?
+	  pkgs_list = cli_pkgs
+	elsif de.upcase != "GNOME" 
 	  pkgs_list = cli_pkgs + gui_pkgs
-	elsif de.nil?
-	  pkgs_list = clik_pkgs
 	else
 	  pkgs_list = cli_pkgs + gui_pkgs + gnome_pkgs
 	end
@@ -123,70 +153,94 @@ def pkgs_install
 		puts formatted
 	end
 
+
 	pkgs_list.each_with_index do |pkg,index|
 	  print "[#{index + 1}/#{pkgs_list.length}] #{pkg}... "
-	  spinner("sudo apt install -y #{pkg} 2> error.log")  
+	  unless system("sudo", "apt", "install", "-y", pkg) 
+		message = "#{pkg} failed to install"
+		log_error(message)
+	  else
+		puts "#{pkg} sucessfully installed!"
+	  end
 	 end
+
 	puts "all done!"
 
 end
 
 #- Function to set aliases
 def set_alias
-	puts "Downloading bash_aliases file... "
-	url = "https://cis106.com/assets/scripts/bash_aliases"
-	# Backup old alias file
-	old_aliases = ENV['HOME'] + "/" +".bash_aliases"
-	old_aliases_bk = old_aliases + ".bk"
-	system("mv","-v", old_aliases, old_aliases_bk)
-	puts "Old bash_aliases file backed up to #{old_aliases_bk}"
-	system("ls","-l",old_aliases_bk)
-	puts "Installing new bash_aliases file"
-
-	# To write later: Logic to make sure the alias file is in the PWD
-	URI.open(url) do |remote_file|
-	  File.open("bash_aliases", "wb") do |local_file|
-		local_file.write(remote_file.read)
-	  end
+	# File names
+	old_aliases = ENV['HOME'] + "/" + ".bash_aliases"
+	new_aliases = ENV['HOME'] + "/" + "bash_aliases"
+	old_aliases_bk = "#{old_aliases}.bk_#{Time.now.to_i}"    
+	# Abort if home is read only 
+	abort "Home is read only." if read_only?  # added for redundancy
+	# Check if the files are present. Ideal scenario
+	if File.exist?(old_aliases) and File.exist?(new_aliases)
+		# backup the files
+		success = system("mv","-v", old_aliases, old_aliases_bk)
+		abort "backup of bash_aliases failed" unless success
+		# rename files
+		success = system("mv", "-v", new_aliases, old_aliases)
+		abort "rename of new_bash_aliases file faile" unless success
+	# Check if neither exist. 
+	elsif !File.exist?(old_aliases) and !File.exist?(new_aliases)
+		abort "Something went wrong. #{old_aliases} or #{new_aliases} do not exist"
+	# Check if old_aliases does not exist (possible in some minimal debian systems)
+	elsif !File.exist?(old_aliases)
+		puts "#{old_aliases} not found. Attempting rename now"
+		# check if new_aliases is not present. If so abort
+		if File.exist?(new_aliases)
+			success = system("mv", "-v", new_aliases, old_aliases)
+			abort "rename of new_aliases failed" unless success
+		else
+			abort "Something went wrong. #{new_aliases} do not exist"
+		end
+	elsif !File.exist?(new_aliases)
+		abort "Something went wrong. #{new_aliases} do not exist"
 	end
-	system("mv","-v", "bash_aliases", old_aliases)
-	system("source", ".bashrc")
+	
 end 
 
 #- Function to set minimal bashrc
 def set_min_bashrc
-	puts "Downloading bashrc..."
-	url = "https://cis106.com/assets/scripts/bashrc"
-	url2 = "https://cis106.com/assets/scripts/sysinfo.sh"
-	# backup old bashrc
+	# file names
 	old_bashrc = ENV['HOME'] + "/" +".bashrc"
-	old_bashrc_bk = old_bashrc + ".bk"
-	system("mv","-v", old_bashrc, old_bashrc_bk)
-	puts "Old bashrc file backed up to #{old_bashrc_bk}"
-	system("ls","-l",old_bashrc_bk)
-
-# Optimize this later. Use an array of urls
-	URI.open(url) do |remote_file|
-	  File.open("bashrc", "wb") do |local_file|
-		local_file.write(remote_file.read)
-	  end
+	old_bashrc_bk = "#{old_bashrc}.bk_#{Time.now.to_i}"
+	new_bashrc = ENV['HOME'] + "/" + "bashrc"
+	sysinfo = ENV['HOME'] + "/" + ".sysinfo.sh"
+	abort "Home is read only." if read_only? # added for redundancy
+	
+	# backup old bashrc
+	# scenario 1: If both files exist 
+	if File.exist?(old_bashrc) and File.exist?(new_bashrc)
+		success = system("mv","-v", old_bashrc, old_bashrc_bk)  
+		abort "Failed to create backup of bashrc file" unless success
+		puts "Old bashrc file backed up to #{old_bashrc_bk}"
+		success = system("mv","-v", new_bashrc, old_bashrc)  
+		abort "Failed to rename bashrc file with new file" unless success
+		
+		if File.exist?("sysinfo.sh")
+			success = system("mv","-v","sysinfo.sh", sysinfo)
+			abort "sysinfo.sh could not be renamved. Check the file manually" unless success
+		end
+	# scenario 2: if old_bashrc does not exist
+	elsif !File.exist?(old_bashrc) 
+		abort "This system does not have a #{old_bashrc} file"
+	# scenario 3: if new bashrc does not exist 
+	elsif !File.exist?(new_bashrc)
+		abort "#{new_bashrc} does not exist"
 	end
-
-	URI.open(url2) do |remote_file|
-	  File.open("sysinfo.sh", "wb") do |local_file|
-		local_file.write(remote_file.read)
-	  end
-	end
-	system("mv","-v", "bashrc", old_bashrc)
-	system("mv","-v", "sysinfo.sh", ".sysinfo.sh")
-	system("source", ".bashrc")
+	
 end
+
+
 
 #- Enable Flathub
 def enable_flatpak
 	puts "Adding Flathub repository to Flatpak..."
-	system("flatpak", "remote-add", "--if-not-exists", "flathub", "https://dl.flathub.org/repo/flathub.flatpakrepo")
-	system("")
+	system("sudo","flatpak", "remote-add", "--if-not-exists", "flathub", "https://dl.flathub.org/repo/flathub.flatpakrepo")
 end
 
 #- Help screen
@@ -196,6 +250,7 @@ def help_menu
 	puts "\tcore.rb [OPTION]"
 	puts "#{ANSI::GREEN}" +"\ndescription".upcase + "#{ANSI::RESET}"
 	puts "\tA basic bash script to install necessary software that will be used during the semester."
+	puts "\tThis script must be executed from user's home directory"
 	puts "#{ANSI::GREEN}" +"\noptions".upcase + "#{ANSI::RESET}"
 	puts "#{ANSI::RED}" + "\t-a" + "#{ANSI::RESET}"+"  Install all (essential software, bashrc, bash_aliases)"
 	puts "#{ANSI::RED}" + "\t-i" + "#{ANSI::RESET}"+"  Install basic software (CLI software only - Debain Server)"
@@ -209,15 +264,14 @@ end
 
 #- Main
 def main
+
+	abort "This script has to be run from the users home directory" if ENV['PWD'] != ENV['HOME']
+
 	distro = get_distribution_name
 	de = ENV['DESKTOP_SESSION']
 	abort "Error: This script requires an APT-based Linux distribution" unless debian_based?
 	puts "OS\t#{distro}\nDE\t#{de}"
 	abort "Error: No internet connection" unless connected?
-	options = {
-		dry_run: false
-	}
-	
 	OptionParser.new do |opts|
 		opts.banner = "Usage: ./core.rb [option]"
 		opts.on("-a","-A","--all","--ALL","--install-all") do 
@@ -226,6 +280,7 @@ def main
 			sys_update
 			pkgs_install
 			broom
+			download_files
 			set_alias
 			set_min_bashrc
 			enable_flatpak
@@ -235,21 +290,24 @@ def main
 			system("sudo -v")
 			sys_update
 			pkgs_install
-			broom		
+			broom
+			download_files	
+			set_alias
+			set_min_bashrc	
 		end
 		opts.on("-h", "-H","--help") do
 			help_menu
 		end
 		opts.on("-b","-B","--bash-config") do
 			abort "Error: No internet connection" unless connected?
+			download_files
 			set_alias
 			set_min_bashrc
 		end
-		opts.on("") do
-			help_menu
-		end
 		
 	end.parse!
+
+	puts "All done. Any error messages can be found in error.log"
 
 end
 main
