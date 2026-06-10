@@ -134,7 +134,9 @@ def pkgs_install
 	gnome_pkgs = [
 	  "gnome-tweaks", "gnome-screenshot", 
 	  "chrome-gnome-shell", "gnome-software-plugin-snap",
-	  "gnome-software-plugin-flatpak", "gnome-shell-extension-manager"
+	  "gnome-software-plugin-flatpak", "gnome-shell-extension-manager",
+	  "gnome-shell-extension-caffeine","gnome-shell-extension-dash-to-panel",
+	  "gnome-shell-extension-system-monitor", "gnome-shell-extension-tiling-assistant"
 	]
 
 
@@ -307,7 +309,7 @@ def main
 		
 	end.parse!
 
-	puts "All done. Any error messages can be found in error.log"
+	puts "All done."
 
 end
 main
