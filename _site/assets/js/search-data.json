@@ -2624,356 +2624,293 @@
     
     "relUrl": "/extra/extra_credit_8_handling_text1/#what-will-you-submit-for-extra-credit"
   },"375": {
-    "doc": "Extra Credit 9 - Grep, Awk, and Sed",
-    "title": "Extra Credit 9 - Grep, Awk, and Sed",
-    "content": " ",
-    "url": "/extra/extra_credit_9_grep_sed_awk/",
-    
-    "relUrl": "/extra/extra_credit_9_grep_sed_awk/"
-  },"376": {
-    "doc": "Extra Credit 9 - Grep, Awk, and Sed",
-    "title": "What will you learn",
-    "content": ". | Learn how to search for specific text patterns using grep | Practice extracting and displaying specific columns of data using awk | Learn how to modify and replace text using sed | Develop the ability to process structured text files from the Linux terminal | Practice combining multiple text-processing commands to solve real-world problems | . ",
-    "url": "/extra/extra_credit_9_grep_sed_awk/#what-will-you-learn",
-    
-    "relUrl": "/extra/extra_credit_9_grep_sed_awk/#what-will-you-learn"
-  },"377": {
-    "doc": "Extra Credit 9 - Grep, Awk, and Sed",
-    "title": "Before we start!",
-    "content": "Run the following command to generate the files we will use in this activity. These files are the same files used in Lab 8 and in the presentations Handling Text Files Part 1 and Handing Text Files part 2. If you have already run these commands, skip this section. cd ~/Documents/ &amp;&amp; git clone https://github.com/linuxworkshop67/sample_files . ",
-    "url": "/extra/extra_credit_9_grep_sed_awk/#before-we-start",
-    
-    "relUrl": "/extra/extra_credit_9_grep_sed_awk/#before-we-start"
-  },"378": {
-    "doc": "Extra Credit 9 - Grep, Awk, and Sed",
-    "title": "GREP",
-    "content": "The grep command is used to search for text that matches a pattern. Formula: . grep [option] \"pattern\" file . Useful options: . | Option | Description | . | -i | Ignore uppercase/lowercase differences | . | -n | Show line numbers | . | -v | Show lines that do not match | . | -r | Search recursively | . | -c | Display only the number of matches | . | o | Inverts the match | . Practice 1: Searching . | Change to the working directory to: ~/Documents/sample_files/Config/ | Search for all the key mappings in the file kitty.conf. Key map configuration lines start with the keyword “map” | Search for all the directory configuration lines in the file apache2.conf . | The name Maria | The name Robert | The name john without considering capitalization | All lines containing the word Computer | . | Display line numbers while searching for Maria . | Count the number of occurrences of the word Linux | . Take a screenshot of your terminal for later submission. ",
-    "url": "/extra/extra_credit_9_grep_sed_awk/#grep",
-    
-    "relUrl": "/extra/extra_credit_9_grep_sed_awk/#grep"
-  },"379": {
-    "doc": "Extra Credit 9 - Grep, Awk, and Sed",
-    "title": "AWK",
-    "content": "The awk command is used to process text line by line and extract specific fields. Formula: . awk 'pattern {action}' file . Useful options: . | Symbol | Meaning | . | $1 | First field | . | $2 | Second field | . | $3 | Third field | . | NF | Last field | . | NR | Current record number | . Practice 2: Extracting Data . Navigate to: . cd ~/Documents/extra9 . The file employees.csv contains employee information. | Display only employee names | Display employee names and departments | Display employee names and salaries | Display only employees whose department is IT | Display only employees with salaries greater than $60000 | . Before running commands, determine the delimiter used in the file. Take a screenshot of your terminal for later submission. ",
-    "url": "/extra/extra_credit_9_grep_sed_awk/#awk",
-    
-    "relUrl": "/extra/extra_credit_9_grep_sed_awk/#awk"
-  },"380": {
-    "doc": "Extra Credit 9 - Grep, Awk, and Sed",
-    "title": "SED",
-    "content": "The sed command is used to search, replace, and modify text. Formula: . sed 'operation' file . Useful examples: . | Command | Description | . | s/old/new/ | Replace first occurrence | . | s/old/new/g | Replace all occurrences | . | -n | Suppress automatic printing | . | p | Print matching lines | . Practice 3: Replacing Text . Navigate to: . cd ~/Documents/extra9 . The file messages.txt contains multiple lines of text. | Replace all occurrences of Windows with Linux | Replace all occurrences of student with learner | Display only lines containing the word server | Replace every occurrence of 2024 with 2026 | . Observe that the file itself is not modified. sed displays modified output in memory unless you explicitly use the -i option. Take a screenshot of your terminal for later submission. ",
-    "url": "/extra/extra_credit_9_grep_sed_awk/#sed",
-    
-    "relUrl": "/extra/extra_credit_9_grep_sed_awk/#sed"
-  },"381": {
-    "doc": "Extra Credit 9 - Grep, Awk, and Sed",
-    "title": "Challenge Practice 1: Combining Commands",
-    "content": "Navigate to: . cd ~/Documents/extra9 . The file users.csv contains user account information. | Display all users whose role is Admin | Display usernames and email addresses only | Sort users alphabetically | Display only users with IDs greater than 1000 | . You may use: . | grep | awk | sort | . ",
-    "url": "/extra/extra_credit_9_grep_sed_awk/#challenge-practice-1-combining-commands",
-    
-    "relUrl": "/extra/extra_credit_9_grep_sed_awk/#challenge-practice-1-combining-commands"
-  },"382": {
-    "doc": "Extra Credit 9 - Grep, Awk, and Sed",
-    "title": "Challenge Practice 2: Mini Investigation",
-    "content": "The file server_logs.txt contains server activity logs. | Count how many times the word ERROR appears | Display only lines containing WARNING | Replace the word FAILED with DENIED | Display only IP addresses from the file | Display line numbers for all ERROR entries | . You may combine multiple commands. ",
-    "url": "/extra/extra_credit_9_grep_sed_awk/#challenge-practice-2-mini-investigation",
-    
-    "relUrl": "/extra/extra_credit_9_grep_sed_awk/#challenge-practice-2-mini-investigation"
-  },"383": {
-    "doc": "Extra Credit 9 - Grep, Awk, and Sed",
-    "title": "What will you submit for extra credit",
-    "content": "If this is your first extra credit assignment, create a directory called ExtraCredit inside your cis106 local repository. | Inside ExtraCredit, create another directory called extra9 | Open your cis106 local repository in VS Code | Inside extra9, create a Markdown file called extra9.md | Add all screenshots using proper Markdown syntax and label each screenshot using Heading 2 Markdown headings | Your Markdown document should start with: | . # Extra Credit 9: Grep, Awk, and Sed . | Convert the Markdown file to PDF . | Run the following GitHub commands in the VS Code terminal: . | . git add . git commit -m \"Completed Extra 9\" git push . | Submit in Blackboard: | . | URL of extra9.md | extra9.pdf | . ",
-    "url": "/extra/extra_credit_9_grep_sed_awk/#what-will-you-submit-for-extra-credit",
-    
-    "relUrl": "/extra/extra_credit_9_grep_sed_awk/#what-will-you-submit-for-extra-credit"
-  },"384": {
     "doc": "Final Exam Study Guide",
     "title": "Final Exam Study Guide",
     "content": ". ",
     "url": "/final_exam/final_exam/",
     
     "relUrl": "/final_exam/final_exam/"
-  },"385": {
+  },"376": {
     "doc": "Final Exam Study Guide",
     "title": "Special Note:",
     "content": ". | The final exam is in person. | The exam is performance based and will require access to a Linux Virtual Machine. | If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you. | . ",
     "url": "/final_exam/final_exam/#special-note",
     
     "relUrl": "/final_exam/final_exam/#special-note"
-  },"386": {
+  },"377": {
     "doc": "Final Exam Study Guide",
     "title": "Recommendations",
     "content": ". | Arrive to the classroom 30 minutes before the exam starts (5:00 PM) . | This will allow you to test your virtual machine, perform any maintenance, test your internet connection, clone your repository, ask any question, and troubleshoot any hardware problem. If you cannot make it to the classroom 30 minutes earlier, try to at least get to the classroom 10 minutes before the exam start. | . | Make sure your github repository is organized . | Since you are allowed to use your notes during your exam, it is to your benefit to have all your notes organized. | I recommend creating a single document with all of notes and converting it to pdf. This will make it easier to find information. | BE AWARE that you can only use your notes - NOT YOUR LABS - for the exam. So if I catch you looking at your labs, presentations, book, or the internet during the exam, this will constitute cheating and your exam will be terminated | . | Update Windows and Debian the day before the final exam . | Before updating Debian, take a snapshot of your virtual machine. | Do not update Virtualbox. | Create a snapshot of your virtual machine after updating it. If anything goes wrong, you will be able to recover the state before and after the install. | . | If you plan on using one of my computers: . | Arrive 15 to 30 minutes early | You will need to clone your repository | You will need to make sure everything works for you before the exam starts. | The computer has a proper internet connection | All of necessary markdown extensions are installed | You can open your notes | . | . | . WARNING Your lack of preparation does not constitute an emergency for me. There are no make up exams. You are either here for the exam or your are not! There is another class after our class. Which means that the exam starts at 5:40 and ends at 7:00 on the dot! You must save the last 10 minutes of the exam to prepare your submission. ",
     "url": "/final_exam/final_exam/#recommendations",
     
     "relUrl": "/final_exam/final_exam/#recommendations"
-  },"387": {
+  },"378": {
     "doc": "Final Exam Study Guide",
     "title": "Commands to study",
     "content": ". | Make sure you understand them well. Include in your notes 3 - 5 examples that you understand and can use without any challenge. | Don’t memorize instead practice and understand the syntax and the output of each command. | awk | cat | cp | cut | grep | head | ls | man | mkdir | mv | tac | tail | touch | tr | tree | . ",
     "url": "/final_exam/final_exam/#commands-to-study",
     
     "relUrl": "/final_exam/final_exam/#commands-to-study"
-  },"388": {
+  },"379": {
     "doc": "Final Exam Study Guide",
     "title": "Concepts to study",
     "content": "Working with Git, GitHub, and Markdown . | How to clone a github repository | How to use the git commands | How to write a markdown file that contains images and proper formatting | How to convert a markdown file to pdf | . How to Practice? . | Create a repository in github. Give it any name you want. | Clone the repository in your virtual machine | Open the repository/folder/directory in vs code | Create a markdown file inside containing random text. Make sure you have headings, images, paragraphs, bullet points etc… | Convert the file to pdf | Push everything to github | Do you see the files there? | Add a couple more pdf files by repeating the process. | Did you get lost? if so, you know what you need to study! | . Linux Specific Concents . | How to compress (zip) a directory/folder (the same as in windows or mac) | The linux filesystem | Absolute path and relative path | When should you use absolute vs relative | Moving around the filesystem with absolute and relative (pwd,cd, ls, and tree) | How to work with multiple terminals open? | How to work with the manual pages (man command)? | How to parse (search) for specific words in the manual page | How to redirect output (&gt;, &gt;&gt;, and |) | How to append the output of a command to a file | How and when to redirect the output of a command to another (pipes) | How to use echo and output redirection to create a new file that contains some text | How to use wildcards . | For copying and moving multiple files at the same time | . | How to use brace expansion . | For creating entire directory structures in a single command | . | . How to practice? . | Go through the presentations and try to do the practice without looking at the solutions. | Go over all the challenge questions. Do them again using only your notes as reference. That will allow you to know if you need to enhance them or if they are good enough for the final | Did you get lost? Where? Why? Get to the answer without using google or chatgpt. Annotate and add those annotations to your notes | Need more help? Take a look at the extra section of the website and the youtube channel | . ",
     "url": "/final_exam/final_exam/#concepts-to-study",
     
     "relUrl": "/final_exam/final_exam/#concepts-to-study"
-  },"389": {
+  },"380": {
     "doc": "Final Exam Study Guide",
     "title": "Regarding shell scripting:",
     "content": ". | Shell scripting chapter 1 | Shell scripting chapter 2 | . ",
     "url": "/final_exam/final_exam/#regarding-shell-scripting",
     
     "relUrl": "/final_exam/final_exam/#regarding-shell-scripting"
-  },"390": {
+  },"381": {
     "doc": "Final Exam Study Guide",
     "title": "How to practice shell scripting for your final exam.",
     "content": "Challenge yourself to write these scripts. Try to do them on your own simply using your notes and the presentation. Every time you find yourself lost, take notes of the problem and the solution so that you can have it for reference. Script 1: Using Echo and environment variables . Write a shell script that will display the following output: . The challenge here is to: . | Use echo to display messages that include tabs and new lines | Use echo and environment variables together | In this screenshot I use HOME, USER, PWD, and OLDPWD | There is also a cd command in there | . Script 2: Drawing a box . Create a script that generates this output. Here are the special characters: . ┌ ┐ └ ┘ │ ─ . ",
     "url": "/final_exam/final_exam/#how-to-practice-shell-scripting-for-your-final-exam",
     
     "relUrl": "/final_exam/final_exam/#how-to-practice-shell-scripting-for-your-final-exam"
-  },"391": {
+  },"382": {
     "doc": "ANSI Escape Sequences",
     "title": "ANSI Escape Sequences",
     "content": "| Escape Sequence | Effect | . | \\033[0m | Reset / Normal | . | \\033[1m | Bold / Increased intensity | . | \\033[2m | Faint / Decreased intensity (may not display) | . | \\033[3m | Italicized (not supported in some terminals) | . | \\033[4m | Underlined | . | \\033[5m | Blink (often disabled or not supported) | . | \\033[7m | Inverted / Reverse video | . | \\033[8m | Hidden (conceal text) | . | \\033[9m | Strikethrough text (not widely supported) | . | \\033[10m | Primary font (not widely used) | . | \\033[11m-19m | Alternate fonts 1-9 (rarely supported) | . | \\033[21m | Bold off (reset bold) | . | \\033[22m | Normal color (no bold, no underlined) | . | \\033[23m | Not italicized (reset italic) | . | \\033[24m | Not underlined (remove underline) | . | \\033[25m | Blink off (remove blink) | . | \\033[27m | Reverse off (reset reverse video) | . | \\033[28m | Reveal (unhide text) | . | \\033[29m | Reset strikethrough (remove strikethrough effect) | . | \\033[30m | Set text color to black | . | \\033[31m | Set text color to red | . | \\033[32m | Set text color to green | . | \\033[33m | Set text color to yellow | . | \\033[34m | Set text color to blue | . | \\033[35m | Set text color to magenta | . | \\033[36m | Set text color to cyan | . | \\033[37m | Set text color to white | . | \\033[38m | Set custom text color (ANSI 256 colors or RGB values) | . | \\033[39m | Reset text color to default | . | \\033[40m | Set background color to black | . | \\033[41m | Set background color to red | . | \\033[42m | Set background color to green | . | \\033[43m | Set background color to yellow | . | \\033[44m | Set background color to blue | . | \\033[45m | Set background color to magenta | . | \\033[46m | Set background color to cyan | . | \\033[47m | Set background color to white | . | \\033[48m | Set custom background color (ANSI 256 colors or RGB) | . | \\033[49m | Reset background color to default | . | \\033[50m | Fraktur (not widely supported) | . | \\033[51m | Framed (rarely supported) | . | \\033[52m | Encircled (rarely supported) | . All unsafe sequences are bold. Unsafe means that the particular sequence is not universally supported across terminal emulators. ",
     "url": "/bash/ANSI_escape_sequences/",
     
     "relUrl": "/bash/ANSI_escape_sequences/"
-  },"392": {
+  },"383": {
     "doc": "ANSI Escape Sequences",
     "title": "What are ANSI Escape Sequences/Characters?",
     "content": "ANSI escape characters are sequences of characters used to control text formatting, color, and cursor movement in your terminal. They are used for text styling, color formatting, cursor control and screen movements. They are common in shell scripts. ",
     "url": "/bash/ANSI_escape_sequences/#what-are-ansi-escape-sequencescharacters",
     
     "relUrl": "/bash/ANSI_escape_sequences/#what-are-ansi-escape-sequencescharacters"
-  },"393": {
+  },"384": {
     "doc": "ANSI Escape Sequences",
     "title": "Structure of ANSI Escape Sequences",
     "content": "Take the following Escape Sequence: \\033[31m This is used to set the text color to RED. ANSI Escape codes follow the following formula/patter: . ESC[&lt;parameters&gt;&lt;command&gt; . | ESC (\\033 or \\x1B): Starts the sequence | [ ... ]: The Control Sequence Introducer (CSI) | &lt;parameters&gt;: (optional) Numeric values separated by semicolons (;) to define styles or actions | &lt;command&gt;: A letter that specifies the action. | . ANSI Commands: . Notice that each of text formatting ends in a lowercase m. That is because m is the command for applying the color formatting. There are formats you should be aware exist too. | H: move the cursor to a specified position. Ex. \\033[10;10H moves the cursor to row 10 column 10 | J: Clears part of the screen. Ex: \\033[2J Will clear the screen | K: Clears part of a line. Ex. \\033[3D\\033[K clears from Cursor to End of Line. | . Be aware that H,J,K, may not be supported by your terminal emulator, bash version, or operating system all together. M is more widely supported but still there are many codes that are not. How can I use these codes in my scripts? . The easiest way is to assign them to variables and then use them as you would any other value. For example, . #!/bin/bash RESET=\"\\033[0m\" BOLD=\"\\033[1m\" RED=\"\\033[31m\" echo -e $BOLD$RED\"This text is red\"$RESET . Keep in mind that you must use the reset sequence when you are done formatting otherwise it will keep the formatting for the rest of the script. The example above will set the text color to RED and the font style to bold. You can also download and import some of the sequences in the table above and use the colors as variables. Here is the source file: ansi_sequences.sh. And here is how you can add it to your scripts . Note: Your must have curl instaled . I recommend this example for times when you will the script once. #!/bin/bash curl https://cis106.com/assets/scripts/ansi_escape_codes.sh -o ansi_codes source ansi_codes # Place the rest of your script here echo -e $BackgroundYellow echo -e \"┌───────────────────────────────────────┐\" echo -e \"│ Random Text Goes in this banner │\" echo -e \"└───────────────────────────────────────┘\" echo $Reset # End of script rm ansi_codes # This will remove the ansi_codes file. If you plan on using these codes frequently, here is a better snippet that checks if the file ansi_codes is in your current directory or not. If it is, it skips the curl command. #!/bin/bash [ ! -e ansi_codes ] &amp;&amp; [ ! -s ansi_codes ] &amp;&amp; curl -s https://cis106.com/assets/scripts/ansi_escape_codes.sh -o ansi_codes source ansi_codes . Example: . #!/bin/bash [ ! -e ansi_codes ] &amp;&amp; [ ! -s ansi_codes ] &amp;&amp; curl -s https://cis106.com/assets/scripts/ansi_escape_codes.sh -o ansi_codes source ansi_codes # Place the rest of your script here echo -e $BackgroundYellow\"┌───────────────────────────────────────┐\"$Reset echo -e $BackgroundYellow\"│\"$Blue\" Random Text Goes in this banner\"$Reset$BackgroundYellow\" │\"$Reset echo -e $BackgroundYellow\"└───────────────────────────────────────┘\"$Reset # End of script . ",
     "url": "/bash/ANSI_escape_sequences/#structure-of-ansi-escape-sequences",
     
     "relUrl": "/bash/ANSI_escape_sequences/#structure-of-ansi-escape-sequences"
-  },"394": {
+  },"385": {
     "doc": "Arrays",
     "title": "Arrays",
     "content": ". | Arrays . | What is an array? | Declaring an array . | Method 1: Using Parenthesis | Method 2: Using declare command | . | Accessing elements of an array . | Examples | . | Modifying an array | Looping through an array . | Using for | Interesting example: | Using while | Using until | Interesting Example | . | Working with associative arrays . | Create an associative array: | Accessing values | . | Array operations | . | . ",
     "url": "/bash/arrays/",
     
     "relUrl": "/bash/arrays/"
-  },"395": {
+  },"386": {
     "doc": "Arrays",
     "title": "What is an array?",
     "content": "An array in Bash is a data structure that can store multiple values in a single variable. There are two types of arrays in bash: . | Indexed arrays: this type uses numeric indenes starting at 0 | Associative Arrays: this type uses keys (like a dictionary) | . ",
     "url": "/bash/arrays/#what-is-an-array",
     
     "relUrl": "/bash/arrays/#what-is-an-array"
-  },"396": {
+  },"387": {
     "doc": "Arrays",
     "title": "Declaring an array",
     "content": "Method 1: Using Parenthesis . The formula is simple: array name+=+(+elements separated by a space+). Example: . #!/bin/bash # Array declaration example users=(\"john\" \"Mary\" \"Peter\" \"Ivan\") . This method is used for creating indexed arrays. It cannot be used to create associative arrays. Method 2: Using declare command . The declare command is used to create and modify variables. It allows to control the scope of the variables as well. In the case of arrays, we can use to create indexed arrays or associative arrays. The syntax is: declare+options+array_name+=+value . Example: . #!/bin/bash # Indexed array declare -a users=(\"john\" \"peter\" \"joe\") # Accessing values echo ${users[0]}1 . #!/bin/bash declare -A user # Assign values user[\"name\"]=\"Alice\" user[\"age\"]=35 user[\"eyes\"]=\"brown\" user[\"city\"]=\"New York\" user[\"email\"]=\"alice_88@email.com\" user[\"username\"]=\"a_wa339\" # accessing values: echo -e ${user[\"name\"]} lives in ${user[\"city\"]}. She is ${user[\"age\"]} years old \\ her eyes color is ${user[\"eyes\"]}. Her email address is ${user[\"email\"]}. ",
     "url": "/bash/arrays/#declaring-an-array",
     
     "relUrl": "/bash/arrays/#declaring-an-array"
-  },"397": {
+  },"388": {
     "doc": "Arrays",
     "title": "Accessing elements of an array",
     "content": "The formula to access the an element of an array is as follows: . | $+{+name_of_array+[+index+]+} | . Examples . #!/bin/bash users=(\"john\" \"peter\" \"mario\") echo ${users[0]} # outputs john echo ${users[*]} # outputs all elements echo ${users[@]} # outputs all elements echo ${#users[@]} # Array length echo ${users[-1]} # Last element . ",
     "url": "/bash/arrays/#accessing-elements-of-an-array",
     
     "relUrl": "/bash/arrays/#accessing-elements-of-an-array"
-  },"398": {
+  },"389": {
     "doc": "Arrays",
     "title": "Modifying an array",
     "content": ". | To add an element to the end of an array: . | array_name+=(element) | Example: users+=(\"fred\") | . | To update a given element: . | array_name[index_here]=\"element\" | Example: users[0]=\"root\" | . | To remove an element: . | unset array_name[index_to_delete] | Example: unset users[-1] | . | To clear an entire array: . | unset array_name | Example: unset users | . | . #!/bin/bash users=(\"john\" \"peter\" \"mario\") echo -e \"Current size:\\t${#users[*]}\" echo -e \"Adding a new element: fred\" users+=(\"fred\") #adding element echo -e \"New size:\\t${#users[*]}\" echo -e \"All elements\\t${users[*]}\" echo -e \"Updating first element to root\" users[0]=\"root\" # updating first element echo \"All element: ${users[*]}\" echo \"Removing last element\" unset users[-1] # removing last element echo \"All elements: ${users[*]}\" echo \"Clearing array\" unset users echo \"All elements: ${users[*]}\" . ",
     "url": "/bash/arrays/#modifying-an-array",
     
     "relUrl": "/bash/arrays/#modifying-an-array"
-  },"399": {
+  },"390": {
     "doc": "Arrays",
     "title": "Looping through an array",
     "content": "Using for . Example: . #!/bin/bash users=(\"john\" \"peter\" \"mario\") for user in \"${users[*]}\" do echo \"Current user: $user\" done # Example using indexes: for i in \"${!users[@]}\" do echo \"User $i =&gt; ${users[$i]}\" done . Interesting example: . Create a script that will get an array of all the users in a system then display each user name . #!/bin/bash users=($(awk -F\":\" '{print $1}' /etc/passwd | tr '\\n' \" \")) for user in \"${users[@]}\" do echo \"User: $user\" done . Using while . Example: . #!/bin/bash users=(\"john\" \"peter\" \"mario\") index=0 while [[ $index -lt ${#users[@]} ]] do echo \"User $index =&gt; ${users[$index]}\" ((index++)) done . | This loop runs until the index is less than the length of the array | . Using until . #!/bin/bash users=(\"john\" \"peter\" \"mario\") index=0 until [[ $index -ge ${#users[@]} ]] do echo \"User $index =&gt; ${users[$index]}\" ((index++)) done . | The until loop continues until the condition becomes true. The opposite of a while loop. | . Interesting Example . | You can use until and arrays to validate user input when the input is predictable. | For example, you need the user to answer in one of the following forms: y Y Yes YES No NO n | . #!/bin/bash valid=(\"y\" \"Y\" \"YES\" \"Yes\" \"yes\" \"n\" \"N\" \"no\" \"No\" \"NO\") input=\"\" until [[ \"${valid[@]}\" =~ \"$input\" ]] do read -p \"Continue? (y/n) \" input done echo \"The answer is correct: $input\" . ",
     "url": "/bash/arrays/#looping-through-an-array",
     
     "relUrl": "/bash/arrays/#looping-through-an-array"
-  },"400": {
+  },"391": {
     "doc": "Arrays",
     "title": "Working with associative arrays",
     "content": "Create an associative array: . Associative arrays use key value pairs to store date. For instance, you can have an array of values that stores the user’s name and their corresponding ip address. Example: . #!/bin/bash declare -A users players=([bob]=\"192.168.1.16\" [mary]=\"192.168.1.17\" [joe]=\"192.168.1.18\") echo \"${players[bob]}\" . Accessing values . declare -A users users=([bob]=\"192.168.1.16\" [mary]=\"192.168.1.17\" [joe]=\"192.168.1.18\") echo \"${users[bob]}\" ## Looping through keys for key in \"${!users[@]}\" do echo \"$key's ip is: ${users[$key]}\" done . ",
     "url": "/bash/arrays/#working-with-associative-arrays",
     
     "relUrl": "/bash/arrays/#working-with-associative-arrays"
-  },"401": {
+  },"392": {
     "doc": "Arrays",
     "title": "Array operations",
     "content": "#!/bin/bash users=($(awk -F\":\" '{print $1}' /etc/passwd | tr '\\n' \" \")) # Slicing echo \"${users[@]:1:2}\" # Start at index 1, take 2 elements # Sorting sortedUsers=($(printf \"%s\\n\" \"${users[@]}\" | sort)) echo \"${sortedUsers[@]}\" # Searching for a given element search_string=$(echo $USER) for item in \"${sortedUsers[@]}\" do if [ \"$item\" == \"$search_string\" ] then echo \"array contains $search_string\" if done ## passing an array to a function print_users(){ local array=(\"$@\") for item in \"${array[@]}\" do echo \"$item\" done } print_users \"${sorted_users[@]}\" ## Reading an array from a file mapfile -t my_array &lt; file.txt echo \"${my_array[@]}\" . ",
     "url": "/bash/arrays/#array-operations",
     
     "relUrl": "/bash/arrays/#array-operations"
-  },"402": {
+  },"393": {
     "doc": "Bash Checks",
     "title": "Bash Checks",
     "content": " ",
     "url": "/bash/checks/",
     
     "relUrl": "/bash/checks/"
-  },"403": {
+  },"394": {
     "doc": "Bash Checks",
     "title": "String Checks",
     "content": "| Check | Description | Returns True If | Example | . | [ -z \"$string\" ] | String is empty | The string has zero length | [ -z \"\" ] &amp;&amp; echo \"Empty\" | . | [ -n \"$string\" ] | String is not empty | The string has non-zero length | [ -n \"Hello\" ] &amp;&amp; echo \"Not Empty\" | . | [ \"$string1\" = \"$string2\" ] | Strings are equal | Both strings are identical | [ \"Hello\" = \"Hello\" ] &amp;&amp; echo \"Equal\" | . | [ \"$string1\" != \"$string2\" ] | Strings are not equal | Both strings are different | [ \"Hello\" != \"World\" ] &amp;&amp; echo \"Not Equal\" | . ",
     "url": "/bash/checks/#string-checks",
     
     "relUrl": "/bash/checks/#string-checks"
-  },"404": {
+  },"395": {
     "doc": "Bash Checks",
     "title": "Number Checks",
     "content": "| Check | Description | Returns True If | Example | . | [ \"$num1\" -eq \"$num2\" ] | Numbers are equal | $num1 is equal to $num2 | [ 5 -eq 5 ] &amp;&amp; echo \"Equal\" | . | [ \"$num1\" -ne \"$num2\" ] | Numbers are not equal | $num1 is not equal to $num2 | [ 5 -ne 10 ] &amp;&amp; echo \"Not Equal\" | . | [ \"$num1\" -gt \"$num2\" ] | Number is greater than | $num1 is greater than $num2 | [ 10 -gt 5 ] &amp;&amp; echo \"Greater\" | . | [ \"$num1\" -lt \"$num2\" ] | Number is less than | $num1 is less than $num2 | [ 5 -lt 10 ] &amp;&amp; echo \"Less\" | . | [ \"$num1\" -ge \"$num2\" ] | Number is greater or equal | $num1 is greater than or equal to $num2 | [ 10 -ge 10 ] &amp;&amp; echo \"Greater/Equal\" | . | [ \"$num1\" -le \"$num2\" ] | Number is less or equal | $num1 is less than or equal to $num2 | [ 5 -le 10 ] &amp;&amp; echo \"Less/Equal\" | . ",
     "url": "/bash/checks/#number-checks",
     
     "relUrl": "/bash/checks/#number-checks"
-  },"405": {
+  },"396": {
     "doc": "Bash Checks",
     "title": "File Checks",
     "content": "| Check | Description | Returns True If | Example | . | [ -e \"$file\" ] | File exists | The file exists | [ -e \"file.txt\" ] &amp;&amp; echo \"Exists\" | . | [ -d \"$file\" ] | File is a directory | The file is a directory | [ -d \"folder\" ] &amp;&amp; echo \"Directory\" | . | [ -r \"$file\" ] | File is readable | The file is readable | [ -r \"file.txt\" ] &amp;&amp; echo \"Readable\" | . | [ -w \"$file\" ] | File is writable | The file is writable | [ -w \"file.txt\" ] &amp;&amp; echo \"Writable\" | . | [ -x \"$file\" ] | File is executable | The file is executable | [ -x \"script.sh\" ] &amp;&amp; echo \"Executable\" | . | [ -s \"$file\" ] | File is not empty | The file is not empty | [ -s \"file.txt\" ] &amp;&amp; echo \"Not Empty\" | . | [ -L \"$file\" ] | File is a symbolic link | The file is a symbolic link | [ -L \"link\" ] &amp;&amp; echo \"Symbolic Link\" | . ",
     "url": "/bash/checks/#file-checks",
     
     "relUrl": "/bash/checks/#file-checks"
-  },"406": {
+  },"397": {
     "doc": "Bash Comments",
     "title": "Using Comments in Bash",
     "content": "In Bash scripting, comments are used to annotate code, making it easier to understand and maintain. Bash supports single-line comments natively and provides workarounds for multi-line comments. ",
     "url": "/bash/comments/#using-comments-in-bash",
     
     "relUrl": "/bash/comments/#using-comments-in-bash"
-  },"407": {
+  },"398": {
     "doc": "Bash Comments",
     "title": "Bash Comments",
     "content": " ",
     "url": "/bash/comments/",
     
     "relUrl": "/bash/comments/"
-  },"408": {
+  },"399": {
     "doc": "Bash Comments",
     "title": "Single line",
     "content": "# This is a comment echo \"hello world\" . ",
     "url": "/bash/comments/#single-line",
     
     "relUrl": "/bash/comments/#single-line"
-  },"409": {
+  },"400": {
     "doc": "Bash Comments",
     "title": "Single in line comment",
     "content": "echo \"hello world\" # prints hello world ls -lh \"$dir\"/* # long list all files inside $dir . ",
     "url": "/bash/comments/#single-in-line-comment",
     
     "relUrl": "/bash/comments/#single-in-line-comment"
-  },"410": {
+  },"401": {
     "doc": "Bash Comments",
     "title": "Multi line comment style 1",
     "content": "# This is a multiline comment # and here is line 2 # Line 3 echo \"hello world\" . ",
     "url": "/bash/comments/#multi-line-comment-style-1",
     
     "relUrl": "/bash/comments/#multi-line-comment-style-1"
-  },"411": {
+  },"402": {
     "doc": "Bash Comments",
     "title": "Multi line comment - Here document",
     "content": ": &lt;&lt; 'COMMENT' This is a multi-line comment. We can add as much text as we want between the comment tags and it will be ignored by the shell. COMMENT echo \"hello world\" . The key word does not need to be COMMENT. It can be any string. The static part is the :, &lt;&lt; and ' around the keyword. Here is another example: . : &lt;&lt; 'HERE' this is another multiline comment See?! another line and another line HERE echo \"hello world\" . ",
     "url": "/bash/comments/#multi-line-comment---here-document",
     
     "relUrl": "/bash/comments/#multi-line-comment---here-document"
-  },"412": {
+  },"403": {
     "doc": "Control Statements",
     "title": "Control Statements",
     "content": "Control statements are used to control the flow of a script. In bash, we can use the following control statements: . | test command | if/else/elif | [] | [[]] | case | For/while/until loops | . In this guide, we will explore examples of each. ",
     "url": "/bash/controlflow/#control-statements",
     
     "relUrl": "/bash/controlflow/#control-statements"
-  },"413": {
+  },"404": {
     "doc": "Control Statements",
     "title": "test command",
     "content": "The test command in used to evaluate expressions if a expression is true or false. Examples of when this command is used includes: . | Checking file attributes (e.g., existence, permissions, size). | Comparing strings (e.g., equality, non-emptiness). | Performing numeric comparisons | . There are two ways of using test: test+ condition and [ condition ] . To use test we need to rely on the command exit status. In bash every command has an exit status. Zero (0) means that the command executed successfully where anything else other than 0 means that the command did not execute successfully. Look at the table here for a list of all bash checks . Example: . A shell script that checks if a file exist. #!/bin/bash test -e \"$1\" &amp;&amp; echo \"file $1 exist\" || echo \"file $1 does not exist\" . ",
     "url": "/bash/controlflow/#test-command",
     
     "relUrl": "/bash/controlflow/#test-command"
-  },"414": {
+  },"405": {
     "doc": "Control Statements",
     "title": "if/else/elif",
     "content": "If/else/elif statements are used to execute commands if a particular condition is true. We use if statements all the time for making decisions. For example: . if (it is raining outside) then bring an umbrella elif (it is sunny outside) bring a hat elif (it is snowing outside) wear a heavy clothes end if statement . if (hungry?) then eat else continue working end of if statement . In shell scripting, we say that something is true when it returns 0 as an exit status. False is any status code that is not 0. For example, run this command: ls downloads1. This will result in an error because we currently do not have a directory called downloads1. Now type: echo $? to display the status code of the last command that was run. Then run the command ls and repeat the echo command: echo $?. Do you see the difference? . IF statement basic fomula: . # if if (condition_command); then command1 command2 ... last_command fi # if/else if (condition_command); then command1 command2 ... last_command else command1 command2 ... last_command fi # if/elif if (condition_command); then command1 command2 ... last_command elif (condition_command); then command1 command2 ... last_command else command1 command2 ... last_command fi . The condition command can be: . | A command such as ls | Numerical comparison | String comparison | Bash checks | . If statements end with the fi keyword. This keyword is required! . Example of if statements . Basic if . #!/bin/bash if (ls); then echo \"ls command ran successfully\" fi . Notice that the output of ls is displayed in the screen and since the command executed successfully, it executed the echo command. if you do not want to see the output of the command in the condition block, the you can pipe the output ot /dev/null. Here is an example: . #!/bin/bash if (ls &amp;&gt; /dev/null); then echo -e \"\\nls command ran successfully\" fi . If with else . #!/bin/bash games=\"$HOME/games1\" if (ls \"$games\" 2&gt; /dev/null); then touch \"$games/gamelist.txt\" else mkdir \"$games\" touch \"$games/gamelist.txt\" ls $games fi . This is a basic script that lists the directory “games1” to see if the directory exits. If the directory exist, it will return 0 (true) and the touch command will be executed. If the ls command returns anything else other than 0 (false), then the else block will be executed, creating the directory and then the file gamelist.txt . There is a more efficient way of doing this. However, this example serves as a good illustration on how the if/else statements can be used. Using elif . For this example, refer to the doc: bash checks. #!/bin/bash # Check if a file, directory, or something else exists read -p \"Enter a path: \" path if [ -f \"$path\" ]; then echo \"It is a regular file.\" elif [ -d \"$path\" ]; then echo \"It is a directory.\" elif ls \"$path\" &amp;&gt; /dev/null; then echo \"It exists but is neither a file nor a directory.\" else echo \"The path does not exist.\" fi . Notice that here I am not using () but instead []. In the next session, we will discuss why. Basically, this script will simply check if the path given by the user is a regular file or a directory. If it is neither of those, then it will let the user know that the path exists but it is neither. If those 3 conditions fail, then it will default to tell the user that the given path does not exist. ",
     "url": "/bash/controlflow/#ifelseelif",
     
     "relUrl": "/bash/controlflow/#ifelseelif"
-  },"415": {
+  },"406": {
     "doc": "Control Statements",
     "title": "[] VS [[]] VS ()",
     "content": "Whats the deal with the brackets and the parenthesis? and then there is also the double brackets! . () . We use the () to start a subshell. So when you write this: . if (ls &amp;&gt; /dev/null); then #command fi . You are executing ls in a subshell and then the exit status code of said subshell is what is evaluated to true/false. THIS IS NOT REQUIRED! in fact, this approach creates unnecessary overhead by starting a new shell inside our script. It is common for programmers that do not write bash often to prefer the parenthesis approach. However, unless you really want to open a subshell, you should instead write your if statements like this: . if ls &amp;&gt; /dev/null; then #command fi . [] . we use the single brackets when we want to do bash tests. Just like the test command. See bash checks doc for a list of all tests with examples. Here is the same example we saw earlier: . #!/bin/bash # Check if a file, directory, or something else exists read -p \"Enter a path: \" path if [ -f \"$path\" ]; then echo \"It is a regular file.\" elif [ -d \"$path\" ]; then echo \"It is a directory.\" elif ls \"$path\" &amp;&gt; /dev/null; then echo \"It exists but is neither a file nor a directory.\" else echo \"The path does not exist.\" fi . This can also be used for string and number comparisons as well. [[ ]] . If the single brackets do comparison and tests, what do we need the double brackets for? The single brackets are a command ( just like test is). However, the double brackets are not. Instead, they are a bash builtin keyword. The double brackets can do the following: . | Supports pattern matching (== with * wildcard) | Supports regular expressions (=~) | Allows logical operators (&amp;&amp;, ||) without escaping | Prevents word-splitting and unintended globbing. | . Table with key difference: . | Feature | [ ] (Single Brackets) | [[ ]] (Double Brackets) | . | POSIX Standard | ✅ Yes (works in all shells) | ❌ No (Bash/Ksh/Zsh only) | . | String Comparisons | Requires quoting variables | No need to quote variables | . | Wildcards (*) | ❌ No | ✅ Yes (== supports patterns) | . | Regex Matching (=~) | ❌ No | ✅ Yes | . | Logical Operators (&amp;&amp;, ||) | ❌ No (requires separate [ ] calls) | ✅ Yes (directly usable) | . | Safer with Empty Variables | ❌ No | ✅ Yes | . if you are planning to write portable scripts, avoid [[ ]] as much as possible because it is not POSIX compliant. What Does It Mean for a Shell to Be POSIX-Compliant? It means that it follows the standards of the Portable Operating System Interface (POSIX) specified by IEEE for maintaining compatibility between operating systems. For shells it means tht that it supports a defined set of features, commands, and behaviors that allow scripts to be portable. Bash is not exactly fully POSIX compliant but it can be. Bash has some unique syntax called Bashisms. The [[]] is an example of of those bash specific syntax. ",
     "url": "/bash/controlflow/#-vs--vs-",
     
     "relUrl": "/bash/controlflow/#-vs--vs-"
-  },"416": {
+  },"407": {
     "doc": "Control Statements",
     "title": "case",
     "content": "The case statement allows you to execute different blocks of code bassed on the value of a variable or expression. It is akin to a switch statement in other programming languages. Basic Syntax of case . case variable in pattern1) code here ;; pattern2) code here ;; *) code here ;; esac . Form the snippet above: . | The ;; are required | the esac keyword ends the case statement | the * is akin to the else condition in an if/else block and it is required. This is the default case when the rest fails. | . Case statements are a good choice over if/else when the value of the variable is predictable. Example of case: . A script that displays a menu and runs the block depending on the users selection . #!/bin/bash echo -e \" Choose one of the following options: \\n \\ \\t1) List $HOME \\n \\ \\t2) List directories only in $HOME \\n \\ \\t3) List all config files in /etc \\n \\ \\t4) Exit\" read -p \"Enter a number from 1 - 3 \" num case \"$num\" in 1) echo \"User picked $num\" ls -A $HOME ;; 2) echo \"User picked $num\" ls -d $HOME/*/ ;; 3) echo \"User picked $num\" ls /etc/*.conf ;; *) exit ;; esac . ",
     "url": "/bash/controlflow/#case",
     
     "relUrl": "/bash/controlflow/#case"
-  },"417": {
+  },"408": {
     "doc": "Control Statements",
     "title": "Loops",
     "content": "For . A for loop is control structure used for iterating over a list of items and executes commands for each item in the list. The basic syntax of a for loop is: . for variable in item1 item2 item3 ...; do command here done . Here is a basic example: . #!/bin/bash fruits=(\"apple\" \"banana\" \"papaya\") for fruit in ${fruits[@]}; do echo \"I love $fruit\" done: . Now lets see an example of a loop that iterates through a list of txt files in a given directory . ``` . While . Until . ",
     "url": "/bash/controlflow/#loops",
     
     "relUrl": "/bash/controlflow/#loops"
-  },"418": {
+  },"409": {
     "doc": "Control Statements",
     "title": "Control Statements",
     "content": "Note: Work in progress . ",
     "url": "/bash/controlflow/",
     
     "relUrl": "/bash/controlflow/"
-  },"419": {
+  },"410": {
     "doc": "Bash Functions",
     "title": "Bash Functions",
     "content": ". | . | Bash Basic function | . | . | Return an exit status | . | . | Returning values with variables | . | . | Returning value with command substitution | . | . | Can I return a status code and value at the same time? . | 5.1. Whats up with the arguments? | . | . | . | Move advanced examples of functions . | 6.1. Returning the content of an array | 6.2. Returning an array with mapfile | 6.3. Using an associative array | . | . | . A function is just a small reusable pease of code. It does something and return its result back to the program. It can also return nothing. ",
     "url": "/bash/functions/",
     
     "relUrl": "/bash/functions/"
-  },"420": {
+  },"411": {
     "doc": "Bash Functions",
     "title": "1. Bash Basic function",
     "content": "# Option 1 function function_name() { # body of function here } # Option 2 function_name(){ # body of function here } # to call function: function_name . | Keep in Mind . | Bash functions do not return values. They can return: . | An exit status using return | A value using a variable (global or local) | value via STDOUT - This requires command substitution | . | . | . ",
     "url": "/bash/functions/#1-bash-basic-function",
     
     "relUrl": "/bash/functions/#1-bash-basic-function"
-  },"421": {
+  },"412": {
     "doc": "Bash Functions",
     "title": "2. Return an exit status",
     "content": "# Checks if $1 exist. 0 = true, 1 = false potato(){ [ -f \"$1\" ] &amp;&amp; return 0 || return 1 } potato \"$1\" # We can then use the $? to create logic with the exit status code. [ $? -eq 0 ] &amp;&amp; echo \"$1 exist\" || echo \"$1 doesn't exist\" . ",
     "url": "/bash/functions/#2-return-an-exit-status",
     
     "relUrl": "/bash/functions/#2-return-an-exit-status"
-  },"422": {
+  },"413": {
     "doc": "Bash Functions",
     "title": "3. Returning values with variables",
     "content": "# Using a global variable: potato(){ greeting=\"Good Morning, $1\" } potato \"Mary\" echo \"$greeting\" # Using local variable potato(){ local name=\"$1\" local age=\"$2\" local email=\"$3\" echo -e \"Hello $name\\nAt $age you will need a bigger boat.\\n\\tSent from $email\" } potato \"Mary\" \"43\" \"admin@mail.com\" . ",
     "url": "/bash/functions/#3-returning-values-with-variables",
     
     "relUrl": "/bash/functions/#3-returning-values-with-variables"
-  },"423": {
+  },"414": {
     "doc": "Bash Functions",
     "title": "4. Returning value with command substitution",
     "content": "potato() { local greeting=\"Hello, $1!\" echo \"$greeting\" } result=$(potato \"Bobby\") echo \"$result\" . ",
     "url": "/bash/functions/#4-returning-value-with-command-substitution",
     
     "relUrl": "/bash/functions/#4-returning-value-with-command-substitution"
-  },"424": {
+  },"415": {
     "doc": "Bash Functions",
     "title": "5. Can I return a status code and value at the same time?",
     "content": "Yes. Here is an example: . is_even(){ local numb=$1 if (( numb % 2 == 0 )) then echo \"even\" return 0 else echo \"not even\" return 1 fi } result=$(is_even $1) status_code=$? echo \"the $1 number is $result\" . Side Note: The example script above has a couple of gotchas. If you pass a letter instead of a number it tells you that it is even. How so?? Well, bash does arithmetic evaluation using ((...)) inside these parentheses everything is an integer. This means that every non-integer character is considered a 0 by bash. Notice that I said integer and not number. That is because bash does not support floating point numbers. You need an external utility (like bc) to handle floating point numbers. The next gotcha is the lack of $ in the numb variable. As you already know, in order to access the value of a variable, you need to preface it with a $, however, because the ((...)) are already expecting an integer, the $ becomes optional. The script below is a complete version that handles non integer input. #!/bin/bash is_even() { local numb=$1 # Ensure the input is a number if ! [[ \"$numb\" =~ ^-?[0-9]+$ ]]; then echo \"Error: Input is not an integer\" return 2 # Use a special return code for invalid input fi # Proceed with even/odd check if (( numb % 2 == 0 )); then echo \"even\" return 0 else echo \"not even\" return 1 fi } # Call the function with the user's input result=$(is_even \"$1\") status_code=$? # Check the return code if [ $status_code -eq 2 ]; then echo \"Invalid input: $1 is not an integer.\" else echo \"The $1 number is $result.\" fi . 5.1. Whats up with the arguments? . Just like your script, functions take arguments (positional parameters). These work the same way. Say that you run the script ./playground.sh john carla with the following code: . #!/bin/bash echo \"parameter/argument 1: $1\" echo \"parameter/argument 2: $2\" potato(){ echo \"In the function 1: $1\" echo \"In the function 2: $2\" } potato \"peter\" \"jane\" echo \"Passing the same parameters to the function:\" potato \"$1\" \"$2\" . The output will be: . parameter/argument 1: john parameter/argument 2: carla In the function 1: peter In the function 2: jane Passing the same parameters to the function: In the function 1: john In the function 2: carla . Notice that lines 1 and 2 have the arguments we passed to script but lines 3 and 4 have the arguments we passed to the function. You can passed the same arguments you gave to the script to the function too as you can see in lines 7 and 8 . ",
     "url": "/bash/functions/#5-can-i-return-a-status-code-and-value-at-the-same-time",
     
     "relUrl": "/bash/functions/#5-can-i-return-a-status-code-and-value-at-the-same-time"
-  },"425": {
+  },"416": {
     "doc": "Bash Functions",
     "title": "6. More advanced examples of functions",
     "content": "6.1. Returning the content of an array . #!/bin/bash all_ip_addresses() { local ips=(\"192.168.1.10\" \"192.168.1.12\" \"192.168.1.14\") echo \"${ips[@]}\" } array=($(all_ip_addresses)) for ip in ${array[@]} do ping -c 4 $ip done . 6.2. Returning an array with mapfile . #!/bin/bash potato() { local dir=\"$1\" local fname=\"$2\" find \"$dir\" -iname \"*$fname\" -type f -print0 } # Use process substitution to pass the function's output to mapfile mapfile -d '' search &lt; &lt;(potato \"$1\" \"$2\") # Access array elements echo \"First member: ${search[0]}\" echo \"Last member: ${search[-1]}\" echo \"Length: ${#search[@]}\" # Process each file for file in \"${search[@]}\"; do # Display file details in a formatted way ls -lhgG --time-style=+%D \"$file\" | grep -v \"total\" | column -t done . Side note: The print0 option of the find command command is used to handle files with special characters in the name (ex. spaces). print0 tells find to separate filenames with a null character (\\0) instead of a newline. 6.3. Using an associative array . #!/bin/bash # Function to get disk usage as an associative array get_disk_usage() { declare -A disk_info local df_output df_output=$(df -h / | tail -1) disk_info[total]=$(echo \"$df_output\" | awk '{print $2}') disk_info[used]=$(echo \"$df_output\" | awk '{print $3}') disk_info[available]=$(echo \"$df_output\" | awk '{print $4}') disk_info[usage_percent]=$(echo \"$df_output\" | awk '{print $5}') # Return the associative array echo \"$(declare -p disk_info)\" } # Call the function and capture the associative array eval \"$(get_disk_usage)\" # Access and display the values from the associative array echo \"Disk Usage Information for '/':\" echo -e \"Total Space:\\t${disk_info[total]}\" echo -e \"Used Space:\\t${disk_info[used]}\" echo -e \"Avail. Space:\\t${disk_info[available]}\" echo -e \"Usage %:\\t${disk_info[usage_percent]}\" . Side Note: declare -p disk_info outputs the array definition as a string that can be re-evaluated using eval. ",

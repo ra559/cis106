@@ -1,0 +1,246 @@
+<style>
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.45rem 0.65rem;
+    color: #27262b;
+    background: #fff;
+    border: 1px solid #e6e1e8;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(201, 126, 235, 0.35);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.8rem;
+    z-index: 30;
+  }
+
+  .theme-toggle:hover {
+    color: #7253ed;
+  }
+
+  .toc-minimap-toggle {
+    position: fixed;
+    top: 4rem;
+    right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.55rem;
+    color: #27262b;
+    background: #fff;
+    border: 1px solid #e6e1e8;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(201, 126, 235, 0.35);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.75rem;
+    z-index: 30;
+  }
+
+  .toc-minimap-toggle:hover {
+    color: #7253ed;
+  }
+
+  html[data-color-scheme="dark"] .theme-toggle {
+    color: #eeebee;
+    background: #27262b;
+    border-color: #44434d;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  }
+
+  html[data-color-scheme="dark"] .theme-toggle:hover {
+    color: #b6a3ff;
+  }
+
+  html[data-color-scheme="dark"] .toc-minimap-toggle {
+    color: #eeebee;
+    background: #27262b;
+    border-color: #44434d;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  }
+
+  html[data-color-scheme="dark"] .toc-minimap-toggle:hover {
+    color: #b6a3ff;
+  }
+
+  .toc-minimap {
+    position: fixed;
+    top: 7rem;
+    right: 1rem;
+    width: 220px;
+    max-height: calc(100vh - 7rem);
+    overflow: auto;
+    padding: 0.75rem;
+    font-size: 0.8rem;
+    background: #fff;
+    border: 1px solid #e6e1e8;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(201, 126, 235, 0.524);
+    z-index: 20;
+  }
+
+  html[data-color-scheme="dark"] .toc-minimap {
+    color: #eeebee;
+    background: #27262b;
+    border-color: #44434d;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  }
+
+  .toc-minimap-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .toc-minimap a {
+    display: block;
+    color: #5c5962;
+    text-decoration: none;
+    padding: 0.15rem 0;
+    line-height: 2;
+  }
+
+  html[data-color-scheme="dark"] .toc-minimap a {
+    color: #c9c3d1;
+  }
+
+  .toc-minimap a:hover,
+  .toc-minimap a.active {
+    color: #7253ed;
+    font-weight: 600;
+  }
+
+  html[data-color-scheme="dark"] .toc-minimap a:hover,
+  html[data-color-scheme="dark"] .toc-minimap a.active {
+    color: #b6a3ff;
+  }
+
+  .toc-minimap .toc-h3 {
+    padding-left: 0.75rem;
+  }
+
+  .toc-minimap .toc-h4 {
+    padding-left: 1.5rem;
+  }
+
+  @media (max-width: 1200px) {
+    .toc-minimap,
+    .toc-minimap-toggle {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  (() => {
+    const savedTheme = localStorage.getItem("site-theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const theme = savedTheme || (prefersDark ? "dark" : "default");
+    document.documentElement.dataset.colorScheme = theme;
+
+    const themeStylesheet = document.querySelector('link[href*="just-the-docs-"][href$=".css"]:not([href*="head-nav"])');
+    if (themeStylesheet) {
+      themeStylesheet.href = themeStylesheet.href.replace(
+        /just-the-docs-(default|light|dark)\.css/,
+        `just-the-docs-${theme}.css`
+      );
+    }
+  })();
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const addThemeToggle = () => {
+      const button = document.createElement("button");
+      button.className = "theme-toggle";
+      button.type = "button";
+
+      const setTheme = (theme) => {
+        const themeStylesheet = document.querySelector('link[href*="just-the-docs-"][href$=".css"]:not([href*="head-nav"])');
+        document.documentElement.dataset.colorScheme = theme;
+        localStorage.setItem("site-theme", theme);
+        button.setAttribute("aria-pressed", String(theme === "dark"));
+        button.innerHTML = theme === "dark" ? "Light theme" : "Dark theme";
+
+        if (themeStylesheet) {
+          themeStylesheet.href = themeStylesheet.href.replace(
+            /just-the-docs-(default|light|dark)\.css/,
+            `just-the-docs-${theme}.css`
+          );
+        }
+      };
+
+      button.addEventListener("click", () => {
+        const currentTheme = document.documentElement.dataset.colorScheme === "dark" ? "dark" : "default";
+        setTheme(currentTheme === "dark" ? "default" : "dark");
+      });
+
+      document.body.appendChild(button);
+      setTheme(document.documentElement.dataset.colorScheme === "dark" ? "dark" : "default");
+    };
+
+    addThemeToggle();
+
+    const content = document.querySelector("#main-content main");
+    if (!content) return;
+
+    const headings = [...content.querySelectorAll("h2[id], h3[id], h4[id]")];
+    if (headings.length < 2) return;
+
+    const nav = document.createElement("aside");
+    nav.className = "toc-minimap";
+    nav.setAttribute("aria-label", "Page table of contents");
+
+    nav.innerHTML = '<div class="toc-minimap-title">On this page</div>';
+
+    headings.forEach((heading) => {
+      const link = document.createElement("a");
+      link.href = `#${heading.id}`;
+      link.textContent = heading.textContent.trim();
+      link.className = `toc-${heading.tagName.toLowerCase()}`;
+      nav.appendChild(link);
+    });
+
+    document.body.appendChild(nav);
+
+    const links = [...nav.querySelectorAll("a")];
+    const minimapToggle = document.createElement("button");
+    minimapToggle.className = "toc-minimap-toggle";
+    minimapToggle.type = "button";
+    document.body.appendChild(minimapToggle);
+
+    const setMinimapVisibility = (isHidden) => {
+      nav.hidden = isHidden;
+      localStorage.setItem("toc-minimap-hidden", String(isHidden));
+      minimapToggle.setAttribute("aria-expanded", String(!isHidden));
+      minimapToggle.innerHTML = isHidden ? "Show map" : "Hide map";
+    };
+
+    minimapToggle.addEventListener("click", () => {
+      setMinimapVisibility(!nav.hidden);
+    });
+
+    setMinimapVisibility(localStorage.getItem("toc-minimap-hidden") === "true");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          links.forEach((link) => link.classList.remove("active"));
+
+          const active = nav.querySelector(`a[href="#${entry.target.id}"]`);
+          if (active) active.classList.add("active");
+        });
+      },
+      {
+        rootMargin: "-20% 0px -70% 0px",
+        threshold: 0
+      }
+    );
+
+    headings.forEach((heading) => observer.observe(heading));
+  });
+</script>
