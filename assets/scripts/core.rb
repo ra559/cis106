@@ -11,6 +11,7 @@ module ANSI
   RED    = "\e[31m"
   GREEN  = "\e[32m"
   YELLOW = "\e[33m"
+  BLUE   = "\e[34m"
   RESET  = "\e[0m"
 end
 
@@ -306,8 +307,10 @@ def main
 	abort "❌ - #{ANSI::RED}Error: This script requires an APT-based Linux distribution#{ANSI::RESET}" unless debian_based?
 	puts "OS\t#{distro}\nDE\t#{de}"
 	abort "❌ - #{ANSI::RED}Error: No internet connection#{ANSI::RESET}" unless connected?
+	basic_usage = "#{ANSI::GREEN}Usage: ./core.rb [option]#{ANSI::RESET}"
+	abort "❌ - #{ANSI::RED}NO arguments/options provided exiting now.#{basic_usage}#{ANSI::RESET}" if ARGV.empty?
 	OptionParser.new do |opts|
-		opts.banner = "Usage: ./core.rb [option]"
+		opts.banner = basic_usage
 		opts.on("-a","-A","--all","--ALL","--install-all") do 
 			info_log("Sudo access required for this script")
 			system("sudo -v")
