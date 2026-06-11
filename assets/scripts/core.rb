@@ -3,6 +3,8 @@ require 'socket'
 require 'open-uri'
 require 'uri'
 require 'optparse'
+require "digest"
+
 
 # For coloring help menu
 module ANSI
@@ -11,6 +13,23 @@ module ANSI
   YELLOW = "\e[33m"
   RESET  = "\e[0m"
 end
+
+def warn_log(msg)
+	puts "⚠️ - #{ANSI::YELLOW}#{msg}#{ANSI::RESET}"
+end
+
+def info_log(msg)
+	puts "ℹ️ - #{ANSI::BLUE}#{msg}#{ANSI::RESET}"
+end
+
+def error_log(msg)
+	puts "❌ - #{ANSI::RED}#{msg}#{ANSI::RESET}"
+end
+
+def success_log(msg)
+	puts "✅ - #{ANSI::GREEN}#{msg}#{ANSI::RESET}"
+end
+
 
 # Get name fo Distribution
 def get_distribution_name
@@ -74,6 +93,10 @@ def download_files
     "https://cis106.com/assets/scripts/sysinfo.sh",
     "https://cis106.com/assets/scripts/bash_aliases"
   ]
+	bash_aliases_hash = "f07182f137bc9597ec67669245563062b855ae6e36583dbc5f74c3fdef39ce854723460f295067fa1fed71b81b2bcc1aaa515dbb7b439890ff58c70050926e84"
+	bashrc_hash = "17a6cd9489ad921efa8c81b2ee8a0944cd7721849e0ecdcc9a1775921b727c02c555529c63a82c6c9ed7d8fa404678bfa5f93f56e9c49719a07d7811818f73de"
+	sysinfo_hash = "6491996ffeef20052303f8a8e0800179fb737896de625ccc478dd2654e1ee5a55485e4562dba6448bf4123cbc01269a7892a7ec1b30f87fc248c0b5bdf3aac2d"
+
 
   dot_files.each do |url|
     fname = url.split('/').last
@@ -101,6 +124,15 @@ def download_files
       abort "failed to download #{fname} - check internet connection"
     end
   end
+  # Check integrity of files:
+  bashrc_downloaded_hash = Digest::SHA512.file("bashrc").hexdigest
+  abort "❌ - #{ANSI::RED}bashrc file integrity failed. DELETE bashrc file and try again#{ANSI::RESET}" if bashrc_downloaded_hash != bashrc_hash
+  bash_aliases_downloaded_hash = Digest::SHA512.file("bash_aliases").hexdigest
+  abort "❌ - #{ANSI::RED}bash_aliases file integrity failed. DELETE bash_aliases and try again#{ANSI::RESET}" if bash_aliases_downloaded_hash != bash_aliases_hash
+  sysinfo_downloaded_hash = Digest::SHA512.file("sysinfo.sh").hexdigest
+  abort "❌ - #{ANSI::RED}sysinfo.sh file integrity failed. DELETE sysinfo.sh and try again#{ANSI::RESET}" if sysinfo_downloaded_hash != sysinfo_hash
+   
+  
 end
 
 def read_only?
@@ -162,11 +194,11 @@ def pkgs_install
 		message = "#{pkg} failed to install"
 		log_error(message)
 	  else
-		puts "#{pkg} sucessfully installed!"
+		success_log("#{pkg} sucessfully installed!")
 	  end
 	 end
 
-	puts "all done!"
+	success_log("all done!")
 
 end
 
@@ -177,30 +209,30 @@ def set_alias
 	new_aliases = ENV['HOME'] + "/" + "bash_aliases"
 	old_aliases_bk = "#{old_aliases}.bk_#{Time.now.to_i}"    
 	# Abort if home is read only 
-	abort "Home is read only." if read_only?  # added for redundancy
+	abort "❌ - #{ANSI::RED}Home is read only.#{ANSI::RESET}" if read_only?  # added for redundancy
 	# Check if the files are present. Ideal scenario
 	if File.exist?(old_aliases) and File.exist?(new_aliases)
 		# backup the files
 		success = system("mv","-v", old_aliases, old_aliases_bk)
-		abort "backup of bash_aliases failed" unless success
+		abort "❌ - #{ANSI::RED}backup of bash_aliases failed#{ANSI::RESET}" unless success
 		# rename files
 		success = system("mv", "-v", new_aliases, old_aliases)
-		abort "rename of new_bash_aliases file faile" unless success
+		abort "❌ - #{ANSI::RED}rename of new_bash_aliases file faile#{ANSI::RESET}" unless success
 	# Check if neither exist. 
 	elsif !File.exist?(old_aliases) and !File.exist?(new_aliases)
-		abort "Something went wrong. #{old_aliases} or #{new_aliases} do not exist"
+		abort "❌ - #{ANSI::RED}Something went wrong. #{old_aliases} or #{new_aliases} do not exist#{ANSI::RESET}"
 	# Check if old_aliases does not exist (possible in some minimal debian systems)
 	elsif !File.exist?(old_aliases)
-		puts "#{old_aliases} not found. Attempting rename now"
+		error_log("#{old_aliases} not found. Attempting rename now")
 		# check if new_aliases is not present. If so abort
 		if File.exist?(new_aliases)
 			success = system("mv", "-v", new_aliases, old_aliases)
-			abort "rename of new_aliases failed" unless success
+			abort "❌ - #{ANSI::RED}rename of new_aliases failed#{ANSI::RESET}" unless success
 		else
-			abort "Something went wrong. #{new_aliases} do not exist"
+			abort "❌ - #{ANSI::RED}Something went wrong. #{new_aliases} do not exist#{ANSI::RESET}"
 		end
 	elsif !File.exist?(new_aliases)
-		abort "Something went wrong. #{new_aliases} do not exist"
+		abort "❌ - #{ANSI::RED}Something went wrong. #{new_aliases} do not exist#{ANSI::RESET}"
 	end
 	
 end 
@@ -212,27 +244,27 @@ def set_min_bashrc
 	old_bashrc_bk = "#{old_bashrc}.bk_#{Time.now.to_i}"
 	new_bashrc = ENV['HOME'] + "/" + "bashrc"
 	sysinfo = ENV['HOME'] + "/" + ".sysinfo.sh"
-	abort "Home is read only." if read_only? # added for redundancy
+	abort "❌ - #{ANSI::RED}Home is read only.#{ANSI::RESET}" if read_only? # added for redundancy
 	
 	# backup old bashrc
 	# scenario 1: If both files exist 
 	if File.exist?(old_bashrc) and File.exist?(new_bashrc)
 		success = system("mv","-v", old_bashrc, old_bashrc_bk)  
-		abort "Failed to create backup of bashrc file" unless success
-		puts "Old bashrc file backed up to #{old_bashrc_bk}"
+		abort "❌ - #{ANSI::RED}Failed to create backup of bashrc file#{ANSI::RESET}" unless success
+		info_log("Old bashrc file backed up to #{old_bashrc_bk}")
 		success = system("mv","-v", new_bashrc, old_bashrc)  
-		abort "Failed to rename bashrc file with new file" unless success
+		abort "❌ - #{ANSI::RED}Failed to rename bashrc file with new file#{ANSI::RESET}" unless success
 		
 		if File.exist?("sysinfo.sh")
 			success = system("mv","-v","sysinfo.sh", sysinfo)
-			abort "sysinfo.sh could not be renamved. Check the file manually" unless success
+			abort "❌ - #{ANSI::RED}sysinfo.sh could not be renamved. Check the file manually#{ANSI::RESET}" unless success
 		end
 	# scenario 2: if old_bashrc does not exist
 	elsif !File.exist?(old_bashrc) 
-		abort "This system does not have a #{old_bashrc} file"
+		abort "❌ - #{ANSI::RED}This system does not have a #{old_bashrc} file#{ANSI::RESET}"
 	# scenario 3: if new bashrc does not exist 
 	elsif !File.exist?(new_bashrc)
-		abort "#{new_bashrc} does not exist"
+		abort "❌ - #{ANSI::RED}#{new_bashrc} does not exist#{ANSI::RESET}"
 	end
 	
 end
@@ -241,7 +273,7 @@ end
 
 #- Enable Flathub
 def enable_flatpak
-	puts "Adding Flathub repository to Flatpak..."
+	info_log("Adding Flathub repository to Flatpak...")
 	system("sudo","flatpak", "remote-add", "--if-not-exists", "flathub", "https://dl.flathub.org/repo/flathub.flatpakrepo")
 end
 
@@ -267,17 +299,17 @@ end
 #- Main
 def main
 
-	abort "This script has to be run from the users home directory" if ENV['PWD'] != ENV['HOME']
+	abort "❌ - #{ANSI::RED}This script has to be run from the users home directory#{ANSI::RESET}" if ENV['PWD'] != ENV['HOME']
 
 	distro = get_distribution_name
 	de = ENV['DESKTOP_SESSION']
-	abort "Error: This script requires an APT-based Linux distribution" unless debian_based?
+	abort "❌ - #{ANSI::RED}Error: This script requires an APT-based Linux distribution#{ANSI::RESET}" unless debian_based?
 	puts "OS\t#{distro}\nDE\t#{de}"
-	abort "Error: No internet connection" unless connected?
+	abort "❌ - #{ANSI::RED}Error: No internet connection#{ANSI::RESET}" unless connected?
 	OptionParser.new do |opts|
 		opts.banner = "Usage: ./core.rb [option]"
 		opts.on("-a","-A","--all","--ALL","--install-all") do 
-			puts "Sudo access required for this script"
+			info_log("Sudo access required for this script")
 			system("sudo -v")
 			sys_update
 			pkgs_install
@@ -288,7 +320,7 @@ def main
 			enable_flatpak
 		end
 		opts.on("-i", "-I","--install") do
-			puts "Sudo access required for this script"
+			info_log("Sudo access required for this script")
 			system("sudo -v")
 			sys_update
 			pkgs_install
@@ -301,7 +333,7 @@ def main
 			help_menu
 		end
 		opts.on("-b","-B","--bash-config") do
-			abort "Error: No internet connection" unless connected?
+			abort "❌ - #{ANSI::RED}Error: No internet connection#{ANSI::RESET}" unless connected?
 			download_files
 			set_alias
 			set_min_bashrc
@@ -309,7 +341,7 @@ def main
 		
 	end.parse!
 
-	puts "All done."
+	success_log("All done.")
 
 end
 main
