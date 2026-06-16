@@ -153,7 +153,7 @@ end
 ## Installing extentions
 def extentions_install
 	exts="https://cis106.com/assets/scripts/vscode_extensions.txt"
-	checksum="08cd6a27eee7316edc9b98027e20afe8dc828aa07834fe32f3de4422ebe35cb2c4793191053a00db9673e5e7d9ba7bc4892ef358427da10b95aa306526f3484a"
+	checksum="4ab9ef74d9c8adab32d3f508f051cee93fb8fadd31408b5d442630e41bd1a7235d9c7efda5bba527c695b23a4099df98f5763034c9883c11a299b3f931debfee"
 
 	begin
 		fname = exts.split('/').last
