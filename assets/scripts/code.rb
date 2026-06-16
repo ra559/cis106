@@ -32,19 +32,19 @@ rescue Errno::ENETUNREACH, Errno::ETIMEDOUT, Errno::EHOSTUNREACH
 end
 
 def warn_log(msg)
-	puts "⚠️ - #{ANSI::YELLOW}#{msg}#{ANSI::RESET}"
+	puts "⚠️ - #{ANSI::YELLOW}TYPE [WARNING]: #{msg}#{ANSI::RESET}"
 end
 
 def info_log(msg)
-	puts "ℹ️ - #{ANSI::BLUE}#{msg}#{ANSI::RESET}"
+	puts "ℹ️ - #{ANSI::BLUE}TYPE [INFO]: #{msg}#{ANSI::RESET}"
 end
 
 def error_log(msg)
-	puts "❌ - #{ANSI::RED}#{msg}#{ANSI::RESET}"
+	puts "❌ - #{ANSI::RED}TYPE [ERROR]: #{msg}#{ANSI::RESET}"
 end
 
 def success_log(msg)
-	puts "✅ - #{ANSI::GREEN}#{msg}#{ANSI::RESET}"
+	puts "✅ - #{ANSI::GREEN}TYPE [SUCCESS]: #{msg}#{ANSI::RESET}"
 end
 
 def logger(message,type)
@@ -56,15 +56,15 @@ def logger(message,type)
 	case type
 	when "error"
 		# add more verbosity in case this is run in a TTY without ANSI support
-		error_log("TYPE [ERROR]: #{message}")
+		error_log("#{message}")
 		# kills the program on any error message
 		abort
 	when "success"
-		success_log("TYPE [SUCCESS]: #{message}")
+		success_log("#{message}")
 	when "warning"
-		warn_log("TYPE [WARNING]: #{message}")
+		warn_log("#{message}")
 	when "info"
-		info_log("TYPE [INFO]: #{message}")
+		info_log("#{message}")
 	else
 		puts "TYPE [#{type}]: #{message}"
 	end
@@ -149,9 +149,10 @@ Signed-By: /usr/share/keyrings/microsoft.gpg
 
 end 
 
-
-## Installing extentions
-def extentions_install
+## Download extensions
+## This was separated from extentions_install
+## to make sure that the file downloaded is not owned by root
+def download_extensions
 	exts="https://cis106.com/assets/scripts/vscode_extensions.txt"
 	checksum="4ab9ef74d9c8adab32d3f508f051cee93fb8fadd31408b5d442630e41bd1a7235d9c7efda5bba527c695b23a4099df98f5763034c9883c11a299b3f931debfee"
 
@@ -179,6 +180,11 @@ def extentions_install
 			OpenSSL::SSL::SSLError
 		logger("failed to download #{fname} - check internet connection","error")
 	end
+end
+
+## Installing extentions
+def extentions_install
+
 
 	ext_downloaded_hash = Digest::SHA512.file("vscode_extensions.txt").hexdigest
 
@@ -205,6 +211,7 @@ def main
 	unless debian_based?
 		logger("The script failed to execute because this distribution does not have or use APT as the package manager","error")
 	end
+	download_extensions
 	logger("Sudo access required for this script","info")
 	system("sudo -v")
 	setup_repo
