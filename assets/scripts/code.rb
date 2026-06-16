@@ -114,14 +114,14 @@ def setup_repo
 	else
 		# Download key
 		key = URI.open("https://packages.microsoft.com/keys/microsoft.asc").read
-		File.write("/tmp/microsoft.asc", key)
-		if File.exist?("/tmp/microsoft.asc")
-			logger("Key was downloaded successfully to /tmp/microsoft.asc", "success")
+		File.write("microsoft.asc", key)
+		if File.exist?("microsoft.asc")
+			logger("Key was downloaded successfully to microsoft.asc", "success")
 		else
-			logger("Key did not download correctly. /tmp/microsoft.asc was not found","error")
+			logger("Key did not download correctly. microsoft.asc was not found","error")
 		end
 		# Convert to gpg format
-		if system("gpg --dearmor -o /usr/share/keyrings/microsoft.gpg /tmp/microsoft.asc") 		
+		if system("gpg --dearmor -o /usr/share/keyrings/microsoft.gpg microsoft.asc") 		
 			logger("gpg key conversion was successful","success")
 		# Create repo file
 			repo = <<~REPO
@@ -139,8 +139,8 @@ Signed-By: /usr/share/keyrings/microsoft.gpg
 				logger("The file /etc/apt/sources.list.d/vscode.sources is MISSING something went seriously wrong.","error")
 			end
 			# Cleanup
-			if File.delete("/tmp/microsoft.asc")
-				logger("File: /tmp/microsoft.asc -> deleted successfully","success")
+			if File.delete("microsoft.asc")
+				logger("File: microsoft.asc -> deleted successfully","success")
 			end
 		else
 			logger("Failed to convert microsoft key to gpg format. Ensure that gpg installed","error")
