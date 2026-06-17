@@ -159,7 +159,6 @@ end
 ## to make sure that the file downloaded is not owned by root
 def download_extensions
 	exts="https://cis106.com/assets/scripts/vscode_extensions.txt"
-	checksum="4ab9ef74d9c8adab32d3f508f051cee93fb8fadd31408b5d442630e41bd1a7235d9c7efda5bba527c695b23a4099df98f5763034c9883c11a299b3f931debfee"
 
 	begin
 		fname = exts.split('/').last
@@ -189,8 +188,7 @@ end
 
 ## Installing extentions
 def extentions_install
-
-
+	checksum="4ab9ef74d9c8adab32d3f508f051cee93fb8fadd31408b5d442630e41bd1a7235d9c7efda5bba527c695b23a4099df98f5763034c9883c11a299b3f931debfee"
 	ext_downloaded_hash = Digest::SHA512.file("vscode_extensions.txt").hexdigest
 
 	if checksum != ext_downloaded_hash
