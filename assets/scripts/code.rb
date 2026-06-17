@@ -132,8 +132,13 @@ Components: main
 Architectures: amd64,arm64,armhf
 Signed-By: /usr/share/keyrings/microsoft.gpg
 		REPO
-
-			File.write("/etc/apt/sources.list.d/vscode.sources", repo)
+			
+			File.write("vscode.sources", repo)
+			if system("mv", "-v", "vscode.sources", "/etc/apt/sources.list.d/")
+				logger("vscode.sources files set successfully","success")
+			else
+				logger("Setting vscode.sources file failed. Exiting now")
+			end
 			# Ensure that the file exist
 			unless File.exist?("/etc/apt/sources.list.d/vscode.sources")
 				logger("The file /etc/apt/sources.list.d/vscode.sources is MISSING something went seriously wrong.","error")
