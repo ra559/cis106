@@ -134,7 +134,7 @@ Signed-By: /usr/share/keyrings/microsoft.gpg
 		REPO
 			
 			File.write("vscode.sources", repo)
-			if system("mv", "-v", "vscode.sources", "/etc/apt/sources.list.d/")
+			if system("sudo","mv", "-v", "vscode.sources", "/etc/apt/sources.list.d/")
 				logger("vscode.sources files set successfully","success")
 			else
 				logger("Setting vscode.sources file failed. Exiting now")
