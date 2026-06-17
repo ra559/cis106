@@ -121,8 +121,8 @@ def setup_repo
 			logger("Key did not download correctly. microsoft.asc was not found","error")
 		end
 		# Convert to gpg format
-		if system("gpg --dearmor -o /usr/share/keyrings/microsoft.gpg microsoft.asc") 		
-			logger("sudo gpg key conversion was successful","success")
+		if system("sudo gpg --dearmor -o /usr/share/keyrings/microsoft.gpg microsoft.asc") 		
+			logger("gpg key conversion was successful","success")
 		# Create repo file
 			repo = <<~REPO
 Types: deb
