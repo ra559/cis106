@@ -6,7 +6,7 @@ title: Module 1 What is Linux?
 # {{page.title}}
 ## Lecture 1: Introduction to the course. 
 * Presentations
-1. [Introduction to the course](https://rapurl.live/0xh)
+1. [Introduction to the course](https://rapurl.live/0xh) - [CIS-106 Projection](https://docs.google.com/presentation/d/e/2PACX-1vREv2baljnYf4nca_oySMYxqSHStTp5tVhxSQ-HXRa790ZVwmEMktlTaFCKnxh3qE9W5wGrc9DgkKib/pub?start=false&loop=false&delayms=3000)
    1. How to join our Slack Workspace video [here](https://youtu.be/So9CN82ZwaY)
    2. How to create a github account repository video [here](https://youtu.be/uraJCa5V-Ao)
    3. Week Report One video [here](https://youtu.be/kBsY-uoEuBU)
