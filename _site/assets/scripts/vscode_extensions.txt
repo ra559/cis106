@@ -1,4 +1,3 @@
-adsoncicilioti.yaru-vscode
 janisdd.vscode-edit-csv
 mechatroner.rainbow-csv
 oderwat.indent-rainbow

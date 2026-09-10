@@ -9,7 +9,7 @@ title: Welcome to the course
 - [Welcome to CIS-106-Linux Fundamentals](#welcome-to-cis-106-linux-fundamentals)
   - [1. Special Note Regarding the final exam:](#1-special-note-regarding-the-final-exam)
   - [2. COURSE LEARNING OUTCOMES](#2-course-learning-outcomes)
-  - [3. Technologies Learned/Used](#3-technologies-learnedused)
+  - [3. Technologies you will learn/use](#3-technologies-you-will-learnuse)
   - [4. Requirements](#4-requirements)
   - [5. MacOS Users Read this:](#5-macos-users-read-this)
   - [6. Advice](#6-advice)
@@ -51,10 +51,10 @@ Here you will find all the information for the course.
 * Use Linux Utilities to manage data.
 * Install software and third-party utilities.
 * Managing Resources in the Linux networking environment.
-* Understanding of virtualization with Virtualbox
-* Understanding of Markdown, Git and GitHub
+* Understanding of virtualization with Virtualbox.
+* Understanding of Markdown, Git and GitHub.
 
-##  3. <a name='TechnologiesLearnedUsed'></a>Technologies Learned/Used 
+##  3. <a name='TechnologiesLearnedUsed'></a>Technologies you will learn/use 
 * [**Debian:**](https://www.debian.org/) The Linux distribution we will use
 * [**VirtualBox:**](https://www.virtualbox.org/)  is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use. 
 * [**Markdown:**](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language for creating formatted text using a plain-text editor.
@@ -68,7 +68,7 @@ Here you will find all the information for the course.
     * A mini PC
     * An old PC
 * Access to Blackboard
-* A Github account
+* A GitHub account
 * A Text editor. We will be using [VS Code](https://code.visualstudio.com/). You can use other text editors  but if you run into problems, I cannot provide help.
 * 2 Hours of study time - <b style="color:red;">MANDATORY</b>
 * Capable of adjusting to fast paced course
