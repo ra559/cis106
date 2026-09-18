@@ -1,7 +1,7 @@
-
+---
 layout: post
 title: Lab 2 - Installing Debian 13
-
+---
 
 # {{page.title}}
 
@@ -276,10 +276,12 @@ sudo apt update && sudo apt upgrade -y
 Run these commands to install required tools:
 
 ```bash
-wget https://cis106.com/assets/scripts/essentials.sh
-chmod +x essentials.sh
-./essentials.sh -a
+sudo apt install ruby
+wget https://cis106.com/assets/scripts/core.rb
+chmod +x core.rb
+./core.rb -a
 ```
+> **Note**: In the video, I do a different set of commands/scripts. That is because I migrated the script to the Ruby programming language rather than bash. You can still follow the one in the video and it will work. This version is just improved and less error prone. 
 
 > **Note**: This may take a while depending on your internet speed.
 

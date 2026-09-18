@@ -1,6 +1,7 @@
-
+---
 layout: post
 title: Week Report 2
+---
 
 # {{page.title}}
 
@@ -33,7 +34,7 @@ title: Week Report 2
 1. Complete [Lab 2 - Installing Debian 13](https://cis106.com/labs/lab2_debian/).
 2. If you have not done so, complete Week Report 1. **You cannot proceed with the course assignment without first completing Week Report 1 including Lab 1.**
 3. Finish **Discussion Board 1**. (This means you only need to reply to another student's post.)
-4. Complete Notes 2. *From this point forward, all coursework must be completed inside Debian (your virtual machine)*. <br><b style="color:red">Windows/macOS will no longer be used to complete coursework assignments. </b>You **MUST** complete Lab 2 before starting the report or notes.
+4. Complete Notes 2. <br> *From this point forward, all coursework must be completed inside Debian (your virtual machine)*. <br><b style="color:red">Windows/macOS will no longer be used to complete coursework assignments. </b><br>You **MUST** complete Lab 2 before starting the report or notes.
 5. Complete Week Report 2. This is a Markdown file that will serve as proof of completion.
 
 
