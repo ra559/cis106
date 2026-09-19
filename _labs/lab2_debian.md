@@ -144,12 +144,13 @@ Which Debian ISO Should You Download?
 
 
 > **ATTENTION MACOS USERS** <br>
-> If your mac computer has an Apple Sillicon CPU (M Series), the latest version of virtualbox 7.2 is not working. Please download version 7.1 instead. 
+> If your mac computer has an Apple Silicon CPU (M Series), the latest version of virtualbox 7.2 is not working. Please download version 7.1 instead. 
 > To obtain the installer for 7.1, follow these steps:
 > 1. In virtualbox download page, scroll down to ["Previews releases"](https://www.virtualbox.org/wiki/Download_Old_Builds)
 > 2. Select [Virtualbox 7.1](http://virtualbox.org/wiki/Download_Old_Builds_7_1)
 > 3. Then select [​macOS / Apple Silicon hosts](https://download.virtualbox.org/virtualbox/7.1.12/VirtualBox-7.1.12-169651-macOSArm64.dmg)
 > 4. Also download the [Extension Pack](https://download.virtualbox.org/virtualbox/7.1.12/Oracle_VirtualBox_Extension_Pack-7.1.12.vbox-extpack)
+> 5. **Please read the interface of Virtualbox carefully because the version in the video is  different from 7.1.**
 
 
 
