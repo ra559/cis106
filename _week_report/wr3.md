@@ -1,17 +1,30 @@
-
+---
 title: Week Report 3
 layout: page
-
+---
 
 # {{page.title}}
+
+<hr>
+
+- [{{page.title}}](#pagetitle)
+  - [Video here](#video-here)
+  - [1. Study Material](#1-study-material)
+  - [2. Tasks to complete](#2-tasks-to-complete)
+  - [2. Complete lab 3](#2-complete-lab-3)
+  - [3. What to include in notes 3:](#3-what-to-include-in-notes-3)
+  - [4. Complete week report 3](#4-complete-week-report-3)
+  - [What will you submit:](#what-will-you-submit)
+  - [Special Note 1](#special-note-1)
+  - [Special Note 2: Git Commands Quick Reference](#special-note-2-git-commands-quick-reference)
+  - [Special Note 3: Regarding the Final Exam](#special-note-3-regarding-the-final-exam)
+
 
 ## Video here
 [Week Report 3 ](https://youtu.be/0FkSHt4DmRo)
 
 
-
-
-### 1. Study Material
+## 1. Study Material
   * [Exploring Desktop Environments](https://docs.google.com/presentation/d/e/2PACX-1vS8C4uEoxZc2p13pulosfU2YKC2mq7WFrQnpXq_DvBlTlNVz7UGCMG7xr4_269uUoHL-F-4pLe1-kyn/pub?start=false&loop=false&delayms=3000&slide=id.p)
   * [Gnome documentation](https://help.gnome.org/users/gnome-help/stable/)
   * [What is a Shell?](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.p)
@@ -20,7 +33,7 @@ layout: page
       * Pages 1 - 6 (25 - 30 of the pdf)
 
 
-### 2. Tasks to complete
+## 2. Tasks to complete
 1. Complete the lectures's practice (3 to 10) and take a screenshot. Place the screenshots in the `wr3` folder/directory inside the `week_reports` folder/directory. Just take a screenshot of your terminal after running the last command in each practice. Make sure to clear your screen before you start each practice. You will use these screenshots when creating your week report 3 submission therefore place them in the correct wr3 folder. If you do not understand what this means, watch the video as there is a live demonstration there.
    1. [Practice 3: Basic Shell Usage Commands](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.g381eb9274bd_0_71)
    2. [Practice 4: Basic System Information Commands](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.g381eb9274bd_0_82)
@@ -36,11 +49,11 @@ layout: page
 5. Read The Final Project Description page located [here](https://cis106.com/project/Final_Project_description/). Alternatively, you can watch the intro video.
 6. [Complete Week Report 3](https://cis106.com/week_report/wr3/#4-complete-week-report-3)
 
-### 2. Complete lab 3
+## 2. Complete lab 3
    1. Video [here](https://youtu.be/0FkSHt4DmRo)
    2. Instructions [here](https://cis106.com/labs/lab3/)
 
-### 3. What to include in notes 3:
+## 3. What to include in notes 3:
 * Create a markdown file that includes the following:
   * **Answers to the following questions:**
     * What is a graphical user interface (GUI)?
@@ -68,7 +81,7 @@ layout: page
 
 > You can add more commands too from the presentation! This [video](https://youtu.be/MJpz6RX65Ko) contains an example from a couple of semesters ago
 
-### 4. Complete week report 3 
+## 4. Complete week report 3 
    1. Inside the `wr3` directory/folder, create a markdown file called `wr3.md`
    2. The `wr3.md` file must include the following:
       1. **Heading 1**: Week Report 3
@@ -96,20 +109,30 @@ layout: page
 ## Special Note 1
 > Please take a snapshot of your virtual machine after you complete the report. The virtual machine must be off before you take the snapshot. 
 
-
-## Special Note 2 - Git Command Quick Reference
+## Special Note 2: Git Commands Quick Reference
 You’ll be using Git frequently this semester. Here’s a quick reminder of the most common commands:
 
-| Command                            | Purpose                                                                                                                     |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| `git clone repository/url/here`    | Download a GitHub repository to your computer.                                                                              |
-| `git pull`                         | Synchronize your local repository with the latest changes from GitHub. Always run this **before** starting work in VS Code. |
-| `git add .`                        | Track all changes made to your files.                                                                                       |
-| `git commit -m "description here"` | Save a snapshot of your tracked changes with a short description.                                                           |
-| `git push`                         | Send your committed changes to GitHub.                                                                                      |
+| Command                            | Purpose                                                                  |
+| ---------------------------------- | ------------------------------------------------------------------------ |
+| `git clone repository/url/here`    | Download a GitHub repository to your computer.                           |
+| `git pull`                         | Synchronize your repository with GitHub before starting work in VS Code. |
+| `git add .`                        | Track all changes made to your files.                                    |
+| `git commit -m "description here"` | Save a snapshot of your tracked changes with a short description.        |
+| `git push`                         | Send your committed changes to GitHub.                                   |
 
+**Order of Git Commands:**
+```bash
+git pull 
+git add . 
+git commit -m "message" 
+git push
+```
 
-## Special Note 3:
-* The final exam is in person. 
-* The exam is performance based and will require access to a Linux Virtual Machine. 
-* If you do not have a laptop/computer you can bring to school, a Linux Computer will be made available to you.
+> ⚠️ Warning: ⚠️  <br> Please do not edit or upload files directly through the GitHub website. Use the VS Code terminal to commit and push changes to your repository.<br> If you make changes through the GitHub website, you must run `git pull` before continuing local work.
+
+## Special Note 3: Regarding the Final Exam
+* The final exam will be in person.
+* It is performance-based and requires access to a Linux Virtual Machine.
+* If you do not have a laptop/computer you can bring to school:
+  * A Linux workstation will be available on campus.
+  * Request access early because available computers are limited.

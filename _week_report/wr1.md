@@ -4,8 +4,7 @@ title: Week Report 1
 ---
 # {{page.title}}
 
-## Video
-[Week Report 1](https://youtu.be/rTSmOL1RiuY)
+<hr>
 
 - [{{page.title}}](#pagetitle)
   - [Video](#video)
@@ -20,6 +19,9 @@ title: Week Report 1
   - [6. Notes Grading](#6-notes-grading)
     - [Regarding Late submissions](#regarding-late-submissions)
     - [Special Note Regarding the final exam:](#special-note-regarding-the-final-exam)
+
+## Video
+[Week Report 1](https://youtu.be/rTSmOL1RiuY)
 
 
 ## 1. Study Material

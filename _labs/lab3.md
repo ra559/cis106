@@ -1,12 +1,11 @@
-
+---
 layout: page
 title: Lab 3 - The GNOME DE and The Bash Shell
-
+---
 
 # {{page.title}}
 
-## Video here
-[VIDEO](https://youtu.be/0FkSHt4DmRo)
+<hr>
 
 
 - [{{page.title}}](#pagetitle)
@@ -36,6 +35,9 @@ title: Lab 3 - The GNOME DE and The Bash Shell
   - [Special Note 1 - Practice the man command!](#special-note-1---practice-the-man-command)
   - [Special Note 2 - Git Command Quick Reference](#special-note-2---git-command-quick-reference)
   - [Special Note Regarding the Final Exam](#special-note-regarding-the-final-exam)
+
+## Video here
+[VIDEO](https://youtu.be/0FkSHt4DmRo)
 
 
 ## Learning Outcomes
@@ -307,6 +309,8 @@ In this question, we will learn how to read the manual (man) page of a command a
 > - Save it in your `lab3` folder/directory.
 
 ## Question 4: Changing the desktop environment (Optional)
+
+> During lab 2, it is possible that you did not install any other desktop environment. If that the case, then you wont see the option to switch desktop environments. I recommend that you skip this question and do the extra credit: `Trying out other desktop environments`  
 
 During the Debian installation we chose 2 desktop environments: Gnome and Gnome Classic. In Linux, we are not tied to a single desktop environment, we can install others we if want to. Since we have Gnome Classic already installed, lets take a look.
 

@@ -5,8 +5,8 @@ title: Week Report 2
 
 # {{page.title}}
 
-## Video
-[Week Report 2 Spring 24](https://youtu.be/0h1efShVND4)
+<hr>
+
 
 - [{{page.title}}](#pagetitle)
   - [Video](#video)
@@ -21,6 +21,8 @@ title: Week Report 2
   - [Special Note 2: Git Commands Quick Reference](#special-note-2-git-commands-quick-reference)
   - [Special Note 3: Regarding the Final Exam](#special-note-3-regarding-the-final-exam)
 
+## Video
+[Week Report 2 Spring 24](https://youtu.be/0h1efShVND4)
 
 ## 1. Study Material
 * [The basics of Virtualization](https://rapurl.live/est)

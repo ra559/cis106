@@ -5,6 +5,9 @@ title: Lab 1 - Learning Markdown
 
 # {{page.title}}
 
+<hr>
+
+
 - [{{page.title}}](#pagetitle)
   - [Resources](#resources)
   - [Learning Outcomes](#learning-outcomes)

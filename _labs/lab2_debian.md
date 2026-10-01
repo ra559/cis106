@@ -5,6 +5,9 @@ title: Lab 2 - Installing Debian 13
 
 # {{page.title}}
 
+<hr>
+
+
 - [{{page.title}}](#pagetitle)
   - [READ ME FIRST!](#read-me-first)
   - [Learning Outcomes](#learning-outcomes)
