@@ -43,11 +43,12 @@ layout: page
    6. [Practice 8: Using man](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.g2b6d39ab458_0_97)
    7. [Practice 9: Using the help option](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.g2b6d39ab458_0_102)
    8. [Practice 10: Solution](https://docs.google.com/presentation/d/e/2PACX-1vSMW_nt1pQzuvuV3HlZ-3gw9ObsRqnTVSPRW34tPB-cJ_iUgwuVr1iKY8MdWxh4_ctfRq9PDpXPMdif/pub?start=false&amp;loop=false&amp;delayms=3000&slide=id.g2b6d39ab458_0_107)
-2. [Complete Lab 3 - The GNOME DE and The Bash Shell](https://cis106.com/labs/lab3/)
-3. [Complete Notes 3](https://cis106.com/week_report/wr3/#3-what-to-include-in-notes-3)
-4. Start **Discussion Board 2**. (This means that all you have to do is create the first post)
-5. Read The Final Project Description page located [here](https://cis106.com/project/Final_Project_description/). Alternatively, you can watch the intro video.
-6. [Complete Week Report 3](https://cis106.com/week_report/wr3/#4-complete-week-report-3)
+2. Read the guide: [The CIS-106 workflow](https://cis106.com/guides/cis106_workflow/)
+3. [Complete Lab 3 - The GNOME DE and The Bash Shell](https://cis106.com/labs/lab3/)
+4. [Complete Notes 3](https://cis106.com/week_report/wr3/#3-what-to-include-in-notes-3)
+5. Start **Discussion Board 2**. (This means that all you have to do is create the first post)
+6. Read The Final Project Description page located [here](https://cis106.com/project/Final_Project_description/). Alternatively, you can watch the intro video.
+7. [Complete Week Report 3](https://cis106.com/week_report/wr3/#4-complete-week-report-3)
 
 ## 2. Complete lab 3
    1. Video [here](https://youtu.be/0FkSHt4DmRo)
