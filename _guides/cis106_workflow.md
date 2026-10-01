@@ -5,6 +5,9 @@ layout: page
 
 # {{page.title}}
 
+## Video
+* ![Link of video - The CIS 106 Workflow](https://youtu.be/Ocf8vWjCGYI)
+
 ## How to work with my Debian virtual machine
 1. **Memory management:** Your virtual machine does not have a lot of RAM. If you are using the recommended settings in Lab 2, you have only 4 GB of RAM. Keep open applications to a minimum. Open VS Code when you are ready to complete the assignment you are working on. VS Code is an Electron app, and Electron apps use a lot of RAM.
 2. **Git and GitHub:** Avoid making changes to your repository on GitHub. If you need to fix anything, do it in VS Code and then push the changes. You can commit and push as often as needed.
