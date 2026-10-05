@@ -1,6 +1,7 @@
+---
 layout: page
 title: Lab 4 - Software Installation and Shell Scripting
-
+---
 
 # {{page.title}}
 - [{{page.title}}](#pagetitle)
@@ -36,7 +37,7 @@ title: Lab 4 - Software Installation and Shell Scripting
 ## Question 1: Using APT 
 
 ### General formula of the apt command:
--  (`sudo` when installing/removing) `apt` + `apt command` `package name(s)`
+-  (`sudo` when installing/removing) `apt` + `apt command` + `package name(s)`
 - **Available apt commands:**
   - search
   - install
