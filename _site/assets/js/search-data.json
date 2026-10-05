@@ -435,7 +435,7 @@
   },"62": {
     "doc": "Week Report 4",
     "title": "Tasks to complete",
-    "content": ". | Complete Practice 1 from the presentation Managing Software. Take a screenshot of the terminal and place it in the wr4/ directory/folder | Complete Practice 1 from the Shell Scripting Presentation.Take a screenshot of the terminal and place it in the wr4/ directory/folder | Complete Lab 4 | Complete Notes 4 . | Video explanation here | . | Complete Week Report 4 | Finish Discussion Board 2. (This means that all you have to do is reply to someone’s post) | . ",
+    "content": ". | Complete Practice 1 from the presentation Managing Software. Take a screenshot of the terminal and place it in the wr4/ directory/folder | Complete Practice 1 from the Shell Scripting Presentation.Take a screenshot of the terminal and place it in the wr4/ directory/folder | Complete Lab 4 | Complete Notes 4 . | Video explanation here | . | Complete Week Report 4 | Finish Discussion Board 2. (This means that all you have to do is reply to someone’s post) | Start working on deliverable 1 for your final project. Here are my suggestions: . | Read the Final Project Description until the Deliverable 1 explanation. You can also watch the video. | Write down any questions you have for me and Slack me. | Created the folder/directory structure for your project and put some markdown text as placeholder. Then start working on deliverable 1. | . | . cis106/ └── finalProject ├── deliverable1 │   └── deliverable.md ├── deliverable2 │   └── deliverable.md └── deliverable3 └── deliverable.md . ",
     "url": "/week_report/wr4/#tasks-to-complete",
     
     "relUrl": "/week_report/wr4/#tasks-to-complete"

@@ -34,6 +34,21 @@ layout: page
    1. Video explanation [here](https://youtu.be/1YE6jLuxoGo)
 5. Complete [Week Report 4](https://cis106.com/week_report/wr4/#what-will-you-submit-for-week-report-4)
 6. Finish **Discussion Board 2**. (This means that all you have to do is reply to someone's post)
+7. Start working on deliverable 1 for your final project. Here are my suggestions:
+   1. Read the [Final Project Description](https://cis106.com/project/Final_Project_description/) until the Deliverable 1 explanation. You can also watch the video.
+   2. Write down any questions you have for me and Slack me.
+   3. Created the folder/directory structure for your project and put some markdown text as placeholder. Then start working on deliverable 1. 
+
+```plaintext
+cis106/
+└── finalProject
+    ├── deliverable1
+    │   └── deliverable.md
+    ├── deliverable2
+    │   └── deliverable.md
+    └── deliverable3
+        └── deliverable.md
+```
 
 
 ## What to include in Notes 4
