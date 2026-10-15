@@ -1,6 +1,7 @@
-
+---
 layout: page
 title: Lab 5 - The Linux File system
+---
 
 # {{page.title}} 
 
