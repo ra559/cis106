@@ -1,9 +1,13 @@
-
+---
 layout: page
 title: Lab 6 - Managing files and directories
-
+---
 
 # {{page.title}}
+
+> ⚠️ Warning: ⚠️  <br> The video may not match 1:1 to the instructions.
+> The video is meant as general guide. Please read the instructions of what you are required to complete and submit before you start working on your Labs/Notes/Reports.
+
 
 * Presentation [here](https://rapurl.live/f6n)
 * Video [here](https://youtu.be/c6g-n-opXRQ)

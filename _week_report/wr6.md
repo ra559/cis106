@@ -1,12 +1,30 @@
-
+---
 title: Week Report 6
 layout: page
-
+---
 
 # {{page.title}}
 
+> ⚠️ Warning: ⚠️  <br> The video may not match 1:1 to the instructions.
+> The video is meant as general guide. Please read the instructions of what you are required to complete and submit before you start working on your Labs/Notes/Reports.
+
+- [{{page.title}}](#pagetitle)
+  - [Video](#video)
+  - [Study Material](#study-material)
+  - [Tasks to complete](#tasks-to-complete)
+    - [1. Complete 1 discussion board](#1-complete-1-discussion-board)
+    - [2. Complete Notes 6](#2-complete-notes-6)
+    - [3. Complete Lab 6](#3-complete-lab-6)
+    - [4. Complete Week Report 6](#4-complete-week-report-6)
+    - [5. Work on your Final Project](#5-work-on-your-final-project)
+  - [Special Note 1 – Git Command Quick Reference](#special-note-1--git-command-quick-reference)
+  - [Special Note 2:](#special-note-2)
+
+
+
+
 ## Video
-* [Video here](#)
+* [Video here](https://www.youtube.com/watch?v=c6g-n-opXRQ)
 
 ## Study Material
 * [Presentation](https://rapurl.live/jya)
@@ -27,7 +45,7 @@ layout: page
 
 > Your markdown file should be properly formatted. Use inline code formatting, code blocks, bold, etc ...
 > ***I will take points off for improper formatting***
-> Refer to Notes 5 for an example0
+> Refer to Notes 5 for an example
 
 **When you finish, do the usual:**
 1. Convert the markdown file to pdf
