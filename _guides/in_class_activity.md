@@ -43,27 +43,52 @@ title: Managing files in class challenge activities
 1. Create a directory called `homework-files` in your `~/Documents` directory. 
 2. Change your current working directory to `~/Downloads`
 3. Download the following files from the command line using `wget`. The `wget` command only requires the file’s URL and saves the file to your current directory. <br>
-<br><br> `wget https://upload.wikimedia.org/wikipedia/commons/4/45/Linux-for-workgroups-boot.jpg`
-<br><br> `wget https://ontheline.trincoll.edu/images/bookdown/sample-local-pdf.pdf`
-<br><br> `wget https://example-files.online-convert.com/document/txt/example.txt`
+
+```bash
+wget https://upload.wikimedia.org/wikipedia/commons/4/45/Linux-for-workgroups-boot.jpg \
+    https://ontheline.trincoll.edu/images/bookdown/sample-local-pdf.pdf \
+    https://example-files.online-convert.com/document/txt/example.txt
+```
+
 ### Moving files
 1. Move the 3 files you downloaded earlier to the `homework-files` directory.
 2. Move the `homework-files` directory to the `~/Downloads` directory.
 
 ### Renaming files
 1. Rename the files you downloaded earlier in the following manner:
-* `Linux-for-workgroups-boot.jpg` -> `logo.jpg`
-* `sample-local-pdf.pdf` -> `report.pdf`
-* `example.txt` -> `notes.txt`
+
+```bash
+Linux-for-workgroups-boot.jpg -> logo.jpg
+sample-local-pdf.pdf -> report.pdf
+example.txt -> notes.txt
+```
+
 2. Rename the directory `homework-files` to `submission` and at the same time, move it to the `~/Documents` directory
+
+<button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" 
+    onclick="var x = document.getElementById('files-practice3');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
+<p align="center" style="display:none" id='files-practice3'><img src="/assets/in-class/managing_files/mv.png"/></p>
 
 > Run the command `tree ~/Documents/submission` and take a screenshot of your terminal
 
+
 ## CP
-1. Change your current working directory to `~/Downloads` and download the following files using `wget`:<br><br>`wget https://cis106.com/assets/change_font.gif`<br><br>`wget https://cis106.com/assets/example-logo.png`<br><br>`wget https://cis106.com/assets/shopping.txt`<br><br>
+1. Change your current working directory to `~/Downloads` and download the following files using `wget`:
+
+```bash
+wget https://cis106.com/assets/change_font.gif \
+    https://cis106.com/assets/example-logo.png \
+    https://cis106.com/assets/shopping.txt
+```
+
 2. Create a directory in `~/Documents` called `new-files`
 3. Copy the files you downloaded earlier to the `new-files` directory
 4. Copy the `new-files` directory to the `~/Pictures` directory.
 5. List both copies of `new-files`
+
+<button class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" name="SolutionShow" 
+    onclick="var x = document.getElementById('files-practice4');if (x.style.display === 'none') {x.style.display = 'block';} else {x.style.display = 'none';}">Show Solution</button>
+<p align="center" style="display:none" id='files-practice4'><img src="/assets/in-class/managing_files/cp.png"/></p>
+
 
 > Take a screenshot of your terminal
