@@ -1,10 +1,12 @@
-
+---
 layout: page
 title: Lab 7 - Wildcards & Brace Expansion 
-
-
+---
 
 # {{page.title}}
+
+> ⚠️ Warning: ⚠️  <br> The video may not match 1:1 to the instructions.
+> The video is meant as general guide. Please read the instructions of what you are required to complete and submit before you start working on your Labs/Notes/Reports.
 
 - [{{page.title}}](#pagetitle)
   - [A Brief description of the wildcards.](#a-brief-description-of-the-wildcards)
@@ -139,7 +141,7 @@ Organize a directory using only wildcards and brace expansion. You are not allow
 <hr>
 
 ## Special Note 1 - Regarding your final Exam
-* Focus on the steps you took to answer the challenge questions. You will have 1 question in the final that requires the same workflow.
+Focus on the steps you took to answer the challenge questions. You will have 1 question in the final that requires the same workflow.
 
 ## Special Note 2 - Git Command Quick Reference
 You’ll be using Git frequently this semester. Here’s a quick reminder of the most common commands:

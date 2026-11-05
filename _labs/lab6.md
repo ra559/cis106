@@ -8,6 +8,21 @@ title: Lab 6 - Managing files and directories
 > ⚠️ Warning: ⚠️  <br> The video may not match 1:1 to the instructions.
 > The video is meant as general guide. Please read the instructions of what you are required to complete and submit before you start working on your Labs/Notes/Reports.
 
+- [{{page.title}}](#pagetitle)
+  - [Learning outcomes](#learning-outcomes)
+  - [Reference](#reference)
+  - [Question 1](#question-1)
+  - [Challenge Question 1](#challenge-question-1)
+    - [Tips:](#tips)
+    - [Deliverable for challenge question 1](#deliverable-for-challenge-question-1)
+  - [Challenge Question 2](#challenge-question-2)
+    - [Here are the steps to complete this challenge:](#here-are-the-steps-to-complete-this-challenge)
+    - [Deliverable for challenge question 2](#deliverable-for-challenge-question-2)
+  - [What will you submit:.](#what-will-you-submit)
+  - [How I will grade you:](#how-i-will-grade-you)
+  - [Special Note 1 - Practice navigating the file system](#special-note-1---practice-navigating-the-file-system)
+  - [Special Note 2 - Git Command Quick Reference](#special-note-2---git-command-quick-reference)
+  - [Special Note Regarding the Final Exam](#special-note-regarding-the-final-exam)
 
 * Presentation [here](https://rapurl.live/f6n)
 * Video [here](https://youtu.be/c6g-n-opXRQ)

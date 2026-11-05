@@ -1,46 +1,69 @@
-
+---
 title: Week Report 7
 layout: page
-
+---
 
 # {{page.title}}
 
+> ⚠️ Warning: ⚠️  <br> The video may not match 1:1 to the instructions.
+> The video is meant as general guide. Please read the instructions of what you are required to complete and submit before you start working on your Labs/Notes/Reports.
+
+- [{{page.title}}](#pagetitle)
+  - [Video](#video)
+  - [Study material](#study-material)
+  - [Tasks to complete](#tasks-to-complete)
+    - [1. Complete 1 Discussion board](#1-complete-1-discussion-board)
+    - [2. Complete notes 7](#2-complete-notes-7)
+      - [When you finish, do the usual:](#when-you-finish-do-the-usual)
+    - [3. Complete Lab 7](#3-complete-lab-7)
+    - [4. Complete Week Report 7](#4-complete-week-report-7)
+      - [When you finish, do the usual:](#when-you-finish-do-the-usual-1)
+    - [5. Work on your Final Project](#5-work-on-your-final-project)
+  - [Special Note 1 – Git Command Quick Reference](#special-note-1--git-command-quick-reference)
+  - [Special Note 2:](#special-note-2)
+
+
 ## Video
 * [Video here](https://youtu.be/xwqAEsgFU08)
+
+## Study material
 * [Presentation](https://rapurl.live/9j6)
 * [Wildcard Extra practice/review](https://youtu.be/QyGUtNsKPPE)
 
-## Complete the following tasks
-1. Complete 1 Discussion board
-2. Complete notes 7
-3. Complete Lab 7
-4. Complete Week Report 7
-5. Take a snapshot of your virtual machine (see video for example)
-6. Work on your final project
+## Tasks to complete
 
-## What are you going to include in your notes
-* How to use each of the wildcards. Include 2 - 3 examples. You can use any command.
-* How to use Brace Expansion to create entire directory structures. Include at least 2 examples
+### 1. Complete 1 Discussion board
+* Work on your discussion boards. It should not take you more than 10 minutes to post 1 reply.
 
-### When you finish, do the usual:
+### 2. Complete notes 7
+* What are you going to include in your notes
+   * How to use each of the wildcards. Include 2 - 3 examples. You can use any command.
+   * How to use Brace Expansion to create entire directory structures. **Include at least 2 examples**
+####  When you finish, do the usual:
 1. Convert `notes7.md` to pdf
 2. Push everything to GitHub:
 3. In blackboard submit:
    1. URL to `notes7.md` in GitHub
    2. The pdf file `notes7.pdf`	
 
-## What will you submit for week report 7
-1. Include a screenshot of your discussion board post 
-2. Include a link to your lab 7 file
-3. Include a link to your notes 7 file
 
-### When you finish, do the usual:
+### 3. Complete Lab 7
+* Complete lab 7. The link is available [here](https://cis106.com/labs/lab7/)
+
+### 4. Complete Week Report 7
+* Include a link to your lab 7 file
+* Include a link to your notes 7 file
+
+####  When you finish, do the usual:
 1. Convert `wr7.md` to pdf
 2. Push everything to GitHub:
 3. In blackboard submit:
    1. URL to `wr7.md` in GitHub
    2. The pdf file `wr7.pdf`	
 
+### 5. Work on your Final Project
+* Remember to take at least 20 minutes to work on your final project.
+* 
 
 
 <p align="center" style="display:block"><img src="/assets/warning-icon.png" width="50" /></p>
