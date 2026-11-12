@@ -1,9 +1,22 @@
-
+---
 title: Week Report 8
 layout: page
-
+---
 
 # {{page.title}}
+
+> ⚠️ Warning: ⚠️  <br> The video may not match 1:1 to the instructions.
+> The video is meant as general guide. Please read the instructions of what you are required to complete and submit before you start working on your Labs/Notes/Reports.
+
+- [{{page.title}}](#pagetitle)
+  - [Video/Resources](#videoresources)
+  - [Complete the following tasks](#complete-the-following-tasks)
+  - [What are you going to include in your notes](#what-are-you-going-to-include-in-your-notes)
+  - [What will you submit for week report 8](#what-will-you-submit-for-week-report-8)
+  - [Special Note 1](#special-note-1)
+    - [Special Note 2](#special-note-2)
+  - [Special Note 3:](#special-note-3)
+
 
 ## Video/Resources
 * [Video here](https://youtu.be/0LctHKP3q-E)

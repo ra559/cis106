@@ -1,9 +1,24 @@
-
+---
 layout: page
 title: Lab 8 - Handling Text Files part 1
-
+---
 
 # {{page.title}}
+
+> ⚠️ Warning: ⚠️  <br> The video may not match 1:1 to the instructions.
+> The video is meant as general guide. Please read the instructions of what you are required to complete and submit before you start working on your Labs/Notes/Reports.
+
+- [{{page.title}}](#pagetitle)
+  - [Video](#video)
+  - [Question 1](#question-1)
+  - [Question 2: Challenge](#question-2-challenge)
+    - [Scenario](#scenario)
+  - [What will you submit:](#what-will-you-submit)
+  - [How I will grade you:](#how-i-will-grade-you)
+  - [Special Note 1 - Regarding your final exam](#special-note-1---regarding-your-final-exam)
+  - [Special Note 2 - Git Command Quick Reference](#special-note-2---git-command-quick-reference)
+  - [Special Note Regarding the Final Exam](#special-note-regarding-the-final-exam)
+
 
 
 ## Video
