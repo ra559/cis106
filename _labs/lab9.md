@@ -1,9 +1,36 @@
-
+---
 layout: page
-title: Lab 8 - Handling Text Files Part 2
-
+title: Lab 9 - Handling Text Files Part 2
+---
 
 # {{page.title}}
+
+> ⚠️ Warning: ⚠️  <br> The video may not match 1:1 to the instructions.
+> The video is meant as general guide. Please read the instructions of what you are required to complete and submit before you start working on your Labs/Notes/Reports.
+
+
+- [{{page.title}}](#pagetitle)
+  - [Input and output redirection](#input-and-output-redirection)
+  - [Video](#video)
+    - [Review](#review)
+    - [Question 1: Working with saving commands output to a file:](#question-1-working-with-saving-commands-output-to-a-file)
+    - [Question 2: Working with the `|` (pipe)](#question-2-working-with-the--pipe)
+  - [Awk and Sed](#awk-and-sed)
+    - [Question 3](#question-3)
+    - [Question 4](#question-4)
+  - [Managing Aliases](#managing-aliases)
+    - [Question 5 - Optional!](#question-5---optional)
+  - [Challenge Question](#challenge-question)
+    - [Problem Description](#problem-description)
+    - [Tips:](#tips)
+    - [What you need](#what-you-need)
+    - [What you need to provide](#what-you-need-to-provide)
+  - [What will you Submit:](#what-will-you-submit)
+  - [Special Note 1 - Regarding your final exam](#special-note-1---regarding-your-final-exam)
+  - [Special Note 2 - Git Command Quick Reference](#special-note-2---git-command-quick-reference)
+  - [Special Note Regarding the Final Exam](#special-note-regarding-the-final-exam)
+
+
 
 ## Input and output redirection
 
@@ -30,7 +57,7 @@ title: Lab 8 - Handling Text Files Part 2
 
 > **Take a screenshot showing the commands that you used to answer the question and another screenshot showing the output of the file_report.txt file**
 
-### Question 2: Working with the | (pipe)
+### Question 2: Working with the `|` (pipe)
 
 1. Write an echo command that displays the following text: **“Total number of files in my home directory”**
    1. Append the output to the file `file_report.txt`

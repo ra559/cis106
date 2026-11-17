@@ -1,9 +1,24 @@
-
+---
 title: Week Report 9
 layout: page
-
+---
 
 # {{page.title}}
+
+> ⚠️ Warning: ⚠️  <br> The video may not match 1:1 to the instructions.
+> The video is meant as general guide. Please read the instructions of what you are required to complete and submit before you start working on your Labs/Notes/Reports.
+
+
+- [{{page.title}}](#pagetitle)
+  - [Video/Resources](#videoresources)
+  - [Complete the following tasks](#complete-the-following-tasks)
+  - [What are you going to include in your notes](#what-are-you-going-to-include-in-your-notes)
+  - [What will you submit for week report 9](#what-will-you-submit-for-week-report-9)
+  - [Special Note 1](#special-note-1)
+    - [Special Note 2](#special-note-2)
+  - [Special Note 3:](#special-note-3)
+
+
 
 ## Video/Resources
 * [Video here](#)
@@ -54,11 +69,15 @@ layout: page
 
 ### Special Note 2
 You are going to be using the git commands a lot. Here is a quick reference:
-* `git clone repository/url/here`: is the command to clone a repository where cloning means downloading a repository to your computer
-* `git pull`: to pull/synchronize your repository from github to your local machine. Always run this command BEFORE you start working VS Code
-* `git add .`: to track all the changes made to your file. 
-* `git commit -m "label for your changes here"`: this command will label all the changes you added with the `add` command
-* `git push`: will send all your changes to your github repository
+
+
+| Command                            | Purpose                                                                                                                         |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `git clone repository/url/here`    | Download a GitHub repository to your computer.                                                                                  |
+| `git pull`                         | Synchronize your local repository with the latest changes from GitHub. Always run this **before** starting any work in VS Code. |
+| `git add .`                        | Track all changes made to your files.                                                                                           |
+| `git commit -m "description here"` | Save a snapshot of your tracked changes with a short description.                                                               |
+| `git push`                         | Send your committed changes to GitHub.                                                                                          |
 
 
 ## Special Note 3:
